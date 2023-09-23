@@ -1,0 +1,17 @@
+---
+title: "The Mind Walker"
+image: "head.jpg"
+color1: "#5A59A3"
+color2: "#C66060"
+angle: 130
+links:
+  - label: YouTube
+    url: "https://youtube.com/ target = '_blank'"
+  - label: Email
+    url: "mailto:email@email.com"
+output:
+  postcards::onofre
+site: distill::distill_website
+---
+ 
+Please sit down, relax, and get to know my blog. Of course, something will look familiar, and something will look bizarre. But I can assure you that you will have some fun! So leave your « Idées Reçues » apart and give a chance to change your mind.
