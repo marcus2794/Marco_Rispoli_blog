@@ -1,0 +1,10 @@
+---
+title: "Travelling following the Routard Spirit"
+description: |
+  This page contains information about travelling spots and my personal experience about them. In particular I will try to dive into the historical, geographical and cultural characteristics of the country I have visited.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+

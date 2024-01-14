@@ -9,4 +9,10 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Travel"
+      menu:
+        - text: "To Brazil"
+          href: brazil.html
+        - text: "To Piombino"
+          href: tourism_piombino.html
 output: distill::distill_article
