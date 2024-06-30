@@ -1,0 +1,5 @@
+---
+title: "The Mind Walker"
+site: distill::distill_website
+listing: posts
+---

@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/2024-06-30-brazil/",
+    "title": "Brazil: a cultural shock",
+    "description": "Coming to this wonderful country will change completely your point of view. Be ready to be \nin a rollercoaster, a good one!",
+    "author": [
+      {
+        "name": "The Mind Walker",
+        "url": {}
+      }
+    ],
+    "date": "2024-06-30",
+    "categories": [],
+    "contents": "\nI went to Brazil for the first time in October 2018. Differently from the usual touristic routes (Rio de Janeiro and São Paulo), I went to visit Brasilia and Goias. The former is the capital of Brazil located in the district of Brasilia and the latter is an importan state located in the center of the nation. From the beginning, I had the privilege to enjoy the richness and variety of this country in terms of nature and society. If you are interested in the dimension of Brazil compared to Europe, you can have a look at a Peters World Map.\nBelow you can see some of the images I took in the city of Goiás (also known as Góias Velho) which is a brazilian municipality classified as UNESCO World Heritage and ancient capital of the homonym state.\n\n\nA typical house.\n\n\n\n\nA church.\n\n\n\n\nA clothes shop\n\n\nThe city is also famous to be the place of birth of the most well-known brazilian poetess named Cora Coralina. One of his famous poetry Assim eu vejo a vida:\n                       A vida tem duas faces:\n                       Positiva e negativa\n                       O passado foi duro\n                       mas deixou o seu legado\n                       Saber viver é a grande sabedoria\n                       Que eu possa dignificar\n                       Minha condição de mulher,\n                       Aceitar suas limitações\n                       E me fazer pedra de segurança\n                       dos valores que vão desmoronando.\n                       Nasci em tempos rudes\n                       Aceitei contradições\n                       lutas e pedras\n                       como lições de vida\n                       e delas me sirvo\n                       Aprendi a viver.\n                       \n                       \nFor my second trip in Brazil, I went to the south in the state of Paranà (the one with the highest Human Development Index). The beautiful image below is a Volkswagen Beetle which we can still see in the street of Morretes, which is a small historic city of the Brazilian state of Paraná.\n\n\n\nFor a complete reflection of my trip in Brazil, currently in italian, you can have a look at the file below.\n\nDownload pdf here\n\n\n\n\n",
+    "preview": "posts/2024-06-30-brazil/brazil/house_goias.jpg",
+    "last_modified": "2024-06-30T22:25:03+02:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2024-06-30-the-sharpe-ratio/",
+    "title": "The Sharpe Ratio",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2024-06-30",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2024-06-30T22:27:48+02:00",
+    "input_file": {}
+  }
+]
