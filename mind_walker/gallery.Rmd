@@ -1,0 +1,8 @@
+---
+title: "Gallery of featured posts"
+listing:
+  posts:
+    - 2024-06-30-self-respect
+    - 2024-06-30-brazil
+    - 2024-06-30-turismo
+---

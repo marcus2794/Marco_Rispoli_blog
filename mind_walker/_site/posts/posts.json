@@ -10,27 +10,53 @@
       }
     ],
     "date": "2024-06-30",
-    "categories": [],
+    "categories": [
+      "turismo",
+      "viaggiare"
+    ],
     "contents": "\nI went to Brazil for the first time in October 2018. Differently from the usual touristic routes (Rio de Janeiro and São Paulo), I went to visit Brasilia and Goias. The former is the capital of Brazil located in the district of Brasilia and the latter is an importan state located in the center of the nation. From the beginning, I had the privilege to enjoy the richness and variety of this country in terms of nature and society. If you are interested in the dimension of Brazil compared to Europe, you can have a look at a Peters World Map.\nBelow you can see some of the images I took in the city of Goiás (also known as Góias Velho) which is a brazilian municipality classified as UNESCO World Heritage and ancient capital of the homonym state.\n\n\nA typical house.\n\n\n\n\nA church.\n\n\n\n\nA clothes shop\n\n\nThe city is also famous to be the place of birth of the most well-known brazilian poetess named Cora Coralina. One of his famous poetry Assim eu vejo a vida:\n                       A vida tem duas faces:\n                       Positiva e negativa\n                       O passado foi duro\n                       mas deixou o seu legado\n                       Saber viver é a grande sabedoria\n                       Que eu possa dignificar\n                       Minha condição de mulher,\n                       Aceitar suas limitações\n                       E me fazer pedra de segurança\n                       dos valores que vão desmoronando.\n                       Nasci em tempos rudes\n                       Aceitei contradições\n                       lutas e pedras\n                       como lições de vida\n                       e delas me sirvo\n                       Aprendi a viver.\n                       \n                       \nFor my second trip in Brazil, I went to the south in the state of Paranà (the one with the highest Human Development Index). The beautiful image below is a Volkswagen Beetle which we can still see in the street of Morretes, which is a small historic city of the Brazilian state of Paraná.\n\n\n\nFor a complete reflection of my trip in Brazil, currently in italian, you can have a look at the file below.\n\nDownload pdf here\n\n\n\n\n",
     "preview": "posts/2024-06-30-brazil/brazil/house_goias.jpg",
-    "last_modified": "2024-06-30T22:25:03+02:00",
+    "last_modified": "2024-06-30T23:41:14+02:00",
     "input_file": {}
   },
   {
-    "path": "posts/2024-06-30-the-sharpe-ratio/",
-    "title": "The Sharpe Ratio",
-    "description": "A short description of the post.",
+    "path": "posts/2024-06-30-self-respect/",
+    "title": "On the Self-Respect",
+    "description": "A beautiful text by Joan Didion, click on the link for the full text https://yale.learningu.org/download/85e1ca3695ab0e000f2c8bf10be1a59d/S574_didion_respect.pdf.",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "The Mind Walker",
+        "url": {}
       }
     ],
     "date": "2024-06-30",
-    "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2024-06-30T22:27:48+02:00",
+    "categories": [
+      "psicologia",
+      "letteratura"
+    ],
+    "contents": "\nOnce, in a dry season, I wrote in large letters across two pages of a notebook that innocence ends when one is stripped of the delusion that one likes oneself. Although now, some years later, I marvel that a mind on the outs with itself should have nonetheless made painstaking record of its every tremor, I recall with embarrassing clarity the flavor of those particular ashes. It was a matter of misplaced self-respect.\nI had not been elected to Phi Beta Kappa. This failure could scarcely have been more predictable or less ambiguous (I simply did not have the grades), but I was unnerved by it; I had somehow thought myself a kind of academic Raskolnikov, curiously exempt from the cause-effect relationships that hampered others. Although the situation must have had even then the approximate tragic stature of Scott Fitzgerald’s failure to become president of the Princeton Triangle Club, the day that I did not make Phi Beta Kappa nevertheless marked the end of something, and innocence may well be the word for it. I lost the conviction that lights would always turn green for me, the pleasant certainty that those rather passive virtues which had won me approval as a child automatically guaranteed me not only Phi Beta Kappa keys but happiness, honour, and the love of a good man (preferably a cross between Humphrey Bogart in Casablanca and one of the Murchisons in a proxy fight); lost a certain touching faith in the totem power of good manners, clean hair, and proven competence on the Stanford-Binet scale. To such doubtful amulets had my self-respect been pinned, and I faced myself that day with the nonplussed wonder of someone who has come across a vampire and found no garlands of garlic at hand.\nSource: https://www.vogue.com/article/joan-didion-self-respect-essay-1961\n\n\nCharacter, Joan Didion.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "preview": "posts/2024-06-30-self-respect/images/self.jpg",
+    "last_modified": "2024-06-30T23:50:41+02:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2024-06-30-turismo/",
+    "title": "Il Turismo a Piombino: uno sguardo ai dati",
+    "description": "Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino.",
+    "author": [
+      {
+        "name": "The Mind Walker",
+        "url": {}
+      }
+    ],
+    "date": "2024-06-30",
+    "categories": [
+      "turismo",
+      "grafici"
+    ],
+    "contents": "\nIl Turismo a Piombino\n\n\nPiazza Bovio, Faro.\n\n\n\n\nAnalisi storica dei flussi\nAndamento temporale dal 2005 al 2022\n\n\n\nEvoluzione temporale degli arrivi dalla Lombardia e dal Piemonte\n\n\n\n\n\n\n\n\n\n\nArrivi da Emilia-Romagna, Toscana e Lazio\n\n\n\n\n(#fig:totale_arrivi2)Arrivi dall’ Emilia, Toscana e Lazio\n\n\n\n\n\n(#fig:totale_arrivi2)Arrivi dall’ Emilia, Toscana e Lazio\n\n\n\n\n\n(#fig:totale_arrivi2)Arrivi dall’ Emilia, Toscana e Lazio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\n\n\nRipartizione geografica dei flussi italiani per anno (2005-2022)\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 1: Arrivi dall’ Italia Anno 2005\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 2: Arrivi dall’ Italia Anno 2006\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 3: Arrivi dall’ Italia Anno 2007\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 4: Arrivi dall’ Italia Anno 2008\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 5: Arrivi dall’ Italia Anno 2009\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 6: Arrivi dall’ Italia Anno 2010\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 7: Arrivi dall’ Italia Anno 2011\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 8: Arrivi dall’ Italia Anno 2012\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 9: Arrivi dall’ Italia Anno 2013\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 10: Arrivi dall’ Italia Anno 2014\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 11: Arrivi dall’ Italia Anno 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 12: Arrivi dall’ Italia Anno 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 13: Arrivi dall’ Italia Anno 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 14: Arrivi dall’ Italia Anno 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 15: Arrivi dall’ Italia Anno 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 16: Arrivi dall’ Italia Anno 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 17: Arrivi dall’ Italia Anno 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegend\n\n\n\n\n\nFigure 18: Arrivi dall’ Italia Anno 2022\n\n\n\nDistribuzione degli arrivi a Piombino Anno 2019\n\n\n\nCome si è evoluto il pernottamento medio nel corso del tempo?\nQuali sono i turisti che pernottano di più a Piombino\nConclusioni\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "preview": "posts/2024-06-30-turismo/images/faro_piombino.jpg",
+    "last_modified": "2024-06-30T23:41:53+02:00",
     "input_file": {}
   }
 ]

@@ -1,0 +1,798 @@
+---
+title: "Il Turismo a Piombino: uno sguardo ai dati"
+categories:
+  - turismo
+  - grafici
+description: |
+  Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino.
+author:
+  - name: The Mind Walker
+    affiliation: Data Lover
+date: 2024-06-30
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+# Il Turismo a Piombino
+
+<div style="text-align: center">
+
+<img src="images/faro_piombino.jpg" width="400px" min-width="300px" max-width="300px" />
+<p style="text-align:center;"> Piazza Bovio, Faro.</p>
+</div>
+
+<div style="text-align: center">
+
+# Analisi storica dei flussi
+
+### Andamento temporale dal 2005 al 2022
+
+```{r Data cleaning and grouping}
+library(dplyr)
+library(readxl)
+library(rAmCharts4)
+
+piombino_turismo <- as.data.frame(read_excel("~/Desktop/rmarkdown_workshop/piombino_turismo.xlsx"))
+piombino_arrivi<-piombino_turismo
+piombino_turismo[is.na(piombino_turismo)] <- 0
+
+colnames(piombino_turismo)[1] <- "group"
+list_names<-as.list(piombino_turismo[,1])
+rownames(piombino_turismo)<-list_names
+
+for (i in 1:(length(piombino_turismo["Liechtenstein",])-1)) {
+    piombino_turismo["Svizzera",i+1]<- piombino_turismo["Svizzera",i+1]  + piombino_turismo["Liechtenstein",i+1]
+    piombino_turismo["Svizzera (incluso Liechtenstein)",i+1]<- piombino_turismo["Svizzera",i+1]  + piombino_turismo["Svizzera (incluso Liechtenstein)",i+1]
+}
+
+# Introduce another column called Country to have an higher layer in the classification
+
+Italia<-list("Abruzzo","Basilicata",
+               "Bolzano", "Calabria", "Campania", "EmiliaRomagna",
+               "FriuliV. Giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise",
+               "Piemonte", "Puglia", "Regione italiana non indicata", "Sardegna",
+               "Sicilia", "Toscana", "Trento", "Umbria", "Valle d'Aosta", "Veneto")
+
+Europa<-list("Austria", "Belgio" ,"Cipro", "Islanda", "Altri Paesi Europei",
+             "Bulgaria", "Croazia", "Danimarca", "Estonia",
+             "Finlandia", "Francia", "Germania", "Grecia", "Irlanda", "Lettonia",
+             "Lituania", "Lussemburgo", "Malta", "Paesi Bassi",
+             "Portogallo", "Regno Unito", "Romania", "Spagna", "Svezia",
+             "Macedonia", "Norvegia", "Polonia", "Svizzera (incluso Liechtenstein)", "Repubblica Ceca",
+             "Repubblica di Moldova", "Slovacchia", "Slovenia", "Ucraina", "Ungheria",
+             "Albania", "Bielorussia", "Bosnia-Erzegovina")
+
+America<-list("Altri Paesi America Settentrionale", "Altri Paesi Centro-Sud America" ,
+              "Altri Paesi o territori Nord-Americani", "Argentina", "Brasile","Altri Paesi America Centrale",
+              "Canada", "Messico", "Paese Americhe non indicato","Altri Paesi America Latina",
+              "Stati Uniti d'America" , "Venezuela")
+Africa<-list("Altri Paesi Africa Mediterranea", "Altri Paesi dell'Africa" ,
+             "Altri Paesi dell'Africa centrale e del sud",
+             "Egitto", "Sud Africa")
+Asia<-list("Russia", "Turchia" ,
+           "Altri Paesi Asia Occidentale", "Altri Paesi Medio Oriente", "Giappone",
+           "Altri Paesi dell'Asia", "Altri Paesi dell'Asia orientale", "Israele", "Corea del Sud",
+           "Cina (incluso Hong Kong)", "India", 
+           "Paese dell'Asia non indicato", "Paesi dell'Asia centro-occidentale")
+Oceania<-list("Australia", "Nuova Zelanda" , "Altri Paesi o territori Oceania",
+              "Paese Oceania e Regioni polari non indicato")
+
+piombino_turismo <- piombino_turismo %>%
+  mutate(Country = case_when(group %in% unlist(Italia) ~ "Italia",
+                             group %in% unlist(Europa) ~ "Europa",
+                             group %in% unlist(Asia) ~ "Asia",
+                             group %in% unlist(Africa) ~ "Africa",
+                             group %in% unlist(America) ~ "America",
+                             group %in% unlist(Oceania) ~ "Oceania"))
+# Reorder the dataset so that Country and group are at the beginning. 
+piombino_turismo <- piombino_turismo %>% 
+    select(sort(names(.)))
+piombino_turismo <- piombino_turismo %>%
+  relocate(Country, group)
+
+piombino_turismo_italia_2005 <- piombino_turismo[1:22,c("Country","group","2005")]
+piombino_turismo_italia_2006 <- piombino_turismo[1:22,c("Country","group","2006")]
+piombino_turismo_italia_2007 <- piombino_turismo[1:22,c("Country","group","2007")]
+piombino_turismo_italia_2008 <- piombino_turismo[1:22,c("Country","group","2008")]
+piombino_turismo_italia_2009 <- piombino_turismo[1:22,c("Country","group","2009")]
+piombino_turismo_italia_2010 <- piombino_turismo[1:22,c("Country","group","2010")]
+piombino_turismo_italia_2011 <- piombino_turismo[1:22,c("Country","group","2011")]
+piombino_turismo_italia_2012 <- piombino_turismo[1:22,c("Country","group","2012")]
+piombino_turismo_italia_2013 <- piombino_turismo[1:22,c("Country","group","2013")]
+piombino_turismo_italia_2014 <- piombino_turismo[1:22,c("Country","group","2014")]
+piombino_turismo_italia_2015 <- piombino_turismo[1:22,c("Country","group","2015")]
+piombino_turismo_italia_2016 <- piombino_turismo[1:22,c("Country","group","2016")]
+piombino_turismo_italia_2017 <- piombino_turismo[1:22,c("Country","group","2017")]
+piombino_turismo_italia_2018 <- piombino_turismo[1:22,c("Country","group","2018")]
+piombino_turismo_italia_2019 <- piombino_turismo[1:22,c("Country","group","2019")]
+piombino_turismo_italia_2020 <- piombino_turismo[1:22,c("Country","group","2020")]
+piombino_turismo_italia_2021 <- piombino_turismo[1:22,c("Country","group","2021")]
+piombino_turismo_italia_2022 <- piombino_turismo[1:22,c("Country","group","2022")]
+
+```
+
+### Evoluzione temporale degli arrivi dalla Lombardia e dal Piemonte
+
+```{r totale_arrivi, fig.cap = "Arrivi dalla Lombardia e Piemonte"}
+# packages for the chunk
+library(pacman)
+library(ggplot2)
+library(tidyverse)
+library(janitor)
+library(showtext)
+library(MetBrewer)
+library(scico)
+library(ggtext)
+library(patchwork)
+library(gghighlight)
+library(htmltools)
+
+library(dplyr)
+library(readxl)
+library(rAmCharts4)
+
+
+pacman::p_load(
+  rio,       # import/export
+  here,      # filepaths
+  lubridate, # working with dates
+  plotly,    # interactive plots
+  scales,    # quick percents
+  tidyverse  # data management and visualization
+  ) 
+#plots
+
+piombino_turismo <- as.data.frame(read_excel("~/Desktop/rmarkdown_workshop/piombino_turismo.xlsx"))
+piombino_arrivi<-piombino_turismo
+
+# first remember the names
+rownames(piombino_arrivi) <- piombino_arrivi[,1]
+n <- rownames(piombino_arrivi)
+
+# transpose all but the first column (name)
+piombino_arrivi <- as.data.frame(t(piombino_arrivi[,-1]))
+colnames(piombino_arrivi) <- n
+piombino_arrivi$Anno <- 2005:2022
+
+#### MISC ####
+font <- "Gudea"
+font_add_google(family=font, font, db_cache = TRUE)
+fa_path <- systemfonts::font_info(family = "Font Awesome 6 Brands")[["path"]]
+font_add(family = "fa-brands", regular = fa_path)
+theme_set(theme_minimal(base_family = font, base_size = 10))
+bg <- "#F4F5F1"
+txt_col <- "black"
+showtext_auto(enable = TRUE)
+
+caption_text  <- str_glue("**Design:** Gilbert Fontana<br>","**Data:** OECD, 2022")
+
+total_arrivi_lombardia <- ggplot(data = piombino_arrivi)+            # begin with weekly deaths data
+  geom_line(mapping = aes(x = Anno, y = Lombardia),linetype = "solid") + 
+  geom_point(data=piombino_arrivi, aes(x= Anno, y= Lombardia), size=3.0, colour="black" ) +
+    theme(
+    axis.title = element_blank(),
+    axis.text = element_text(color=txt_col, size=7),
+    strip.text.x = element_text(face="bold"),
+    plot.title = element_markdown(hjust=.5,size=34, color=txt_col,lineheight=.8, face="bold", margin=margin(20,0,30,0)),
+    plot.subtitle = element_markdown(hjust=.5,size=18, color=txt_col,lineheight = 1, margin=margin(10,0,30,0)),
+    plot.caption = element_markdown(hjust=.5, margin=margin(60,0,0,0), size=8, color=txt_col, lineheight = 1.2),
+    plot.caption.position = "plot",
+    plot.background = element_rect(color=bg, fill=bg),
+    plot.margin = margin(10,10,10,10),
+    legend.position = "none",
+    legend.title = element_text(face="bold"),
+    panel.border = element_blank(), panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+  )# make line 
+
+total_arrivi_piemonte <- ggplot(data = piombino_arrivi)+            # begin with weekly deaths data
+  geom_line(mapping = aes(x = Anno, y = Piemonte),linetype = "solid") + 
+  geom_point(data=piombino_arrivi, aes(x= Anno, y= Piemonte), size=3.0, colour="black" ) +
+    theme(
+    axis.title = element_blank(),
+    axis.text = element_text(color=txt_col, size=7),
+    strip.text.x = element_text(face="bold"),
+    plot.title = element_markdown(hjust=.5,size=34, color=txt_col,lineheight=.8, face="bold", margin=margin(20,0,30,0)),
+    plot.subtitle = element_markdown(hjust=.5,size=18, color=txt_col,lineheight = 1, margin=margin(10,0,30,0)),
+    plot.caption = element_markdown(hjust=.5, margin=margin(60,0,0,0), size=8, color=txt_col, lineheight = 1.2),
+    plot.caption.position = "plot",
+    plot.background = element_rect(color=bg, fill=bg),
+    plot.margin = margin(10,10,10,10),
+    legend.position = "none",
+    legend.title = element_text(face="bold"),
+    panel.border = element_blank(), panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+  )# make line 
+
+p_lombardia <- total_arrivi_lombardia %>% plotly::ggplotly()
+p_piemonte <- total_arrivi_piemonte %>% plotly::ggplotly()
+
+# do side-by-side for comparison
+div(
+  style="display: flex; align-items:center;",
+  div(style="width:80%; border:1px solid #ccc;", p_lombardia),
+  div(style="width:80%; border:1px solid #ccc;", p_piemonte)
+)
+
+```
+
+### Arrivi da Emilia-Romagna, Toscana e Lazio
+```{r totale_arrivi2, fig.cap = "Arrivi dall' Emilia, Toscana e Lazio"}
+# packages for the chunk
+library(pacman)
+library(ggplot2)
+library(tidyverse)
+library(janitor)
+library(showtext)
+library(MetBrewer)
+library(scico)
+library(ggtext)
+library(patchwork)
+library(gghighlight)
+library(htmltools)
+
+library(dplyr)
+library(readxl)
+library(rAmCharts4)
+
+
+pacman::p_load(
+  rio,       # import/export
+  here,      # filepaths
+  lubridate, # working with dates
+  plotly,    # interactive plots
+  scales,    # quick percents
+  tidyverse  # data management and visualization
+  ) 
+#plots
+
+piombino_turismo <- as.data.frame(read_excel("~/Desktop/rmarkdown_workshop/piombino_turismo.xlsx"))
+piombino_arrivi<-piombino_turismo
+
+# first remember the names
+rownames(piombino_arrivi) <- piombino_arrivi[,1]
+n <- rownames(piombino_arrivi)
+
+# transpose all but the first column (name)
+piombino_arrivi <- as.data.frame(t(piombino_arrivi[,-1]))
+colnames(piombino_arrivi) <- n
+piombino_arrivi$Anno <- 2005:2022
+
+#### MISC ####
+font <- "Gudea"
+font_add_google(family=font, font, db_cache = TRUE)
+fa_path <- systemfonts::font_info(family = "Font Awesome 6 Brands")[["path"]]
+font_add(family = "fa-brands", regular = fa_path)
+theme_set(theme_minimal(base_family = font, base_size = 10))
+bg <- "#F4F5F1"
+txt_col <- "black"
+showtext_auto(enable = TRUE)
+
+caption_text  <- str_glue("**Design:** Gilbert Fontana<br>","**Data:** OECD, 2022")
+
+total_arrivi_lazio <- ggplot(data = piombino_arrivi)+            # begin with weekly deaths data
+  geom_line(mapping = aes(x = Anno, y = Lazio),linetype = "solid") + 
+  geom_point(data=piombino_arrivi, aes(x= Anno, y= Lazio), size=3.0, colour="black" ) +
+    theme(
+    axis.title = element_blank(),
+    axis.text = element_text(color=txt_col, size=7),
+    strip.text.x = element_text(face="bold"),
+    plot.title = element_markdown(hjust=.5,size=34, color=txt_col,lineheight=.8, face="bold", margin=margin(20,0,30,0)),
+    plot.subtitle = element_markdown(hjust=.5,size=18, color=txt_col,lineheight = 1, margin=margin(10,0,30,0)),
+    plot.caption = element_markdown(hjust=.5, margin=margin(60,0,0,0), size=8, color=txt_col, lineheight = 1.2),
+    plot.caption.position = "plot",
+    plot.background = element_rect(color=bg, fill=bg),
+    plot.margin = margin(10,10,10,10),
+    legend.position = "none",
+    legend.title = element_text(face="bold"),
+    panel.border = element_blank(), panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+  )# make line 
+
+total_arrivi_toscana <- ggplot(data = piombino_arrivi)+            # begin with weekly deaths data
+  geom_line(mapping = aes(x = Anno, y = Toscana),linetype = "solid") + 
+  geom_point(data=piombino_arrivi, aes(x= Anno, y= Toscana), size=3.0, colour="black" ) +
+    theme(
+    axis.title = element_blank(),
+    axis.text = element_text(color=txt_col, size=7),
+    strip.text.x = element_text(face="bold"),
+    plot.title = element_markdown(hjust=.5,size=34, color=txt_col,lineheight=.8, face="bold", margin=margin(20,0,30,0)),
+    plot.subtitle = element_markdown(hjust=.5,size=18, color=txt_col,lineheight = 1, margin=margin(10,0,30,0)),
+    plot.caption = element_markdown(hjust=.5, margin=margin(60,0,0,0), size=8, color=txt_col, lineheight = 1.2),
+    plot.caption.position = "plot",
+    plot.background = element_rect(color=bg, fill=bg),
+    plot.margin = margin(10,10,10,10),
+    legend.position = "none",
+    legend.title = element_text(face="bold"),
+    panel.border = element_blank(), panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+  )# make line 
+
+total_arrivi_emilia <- ggplot(data = piombino_arrivi)+            # begin with weekly deaths data
+  geom_line(mapping = aes(x = Anno, y = EmiliaRomagna),linetype = "solid") + 
+  geom_point(data=piombino_arrivi, aes(x= Anno, y= EmiliaRomagna), size=3.0, colour="black" ) +
+    theme(
+    axis.title = element_blank(),
+    axis.text = element_text(color=txt_col, size=7),
+    strip.text.x = element_text(face="bold"),
+    plot.title = element_markdown(hjust=.5,size=34, color=txt_col,lineheight=.8, face="bold", margin=margin(20,0,30,0)),
+    plot.subtitle = element_markdown(hjust=.5,size=18, color=txt_col,lineheight = 1, margin=margin(10,0,30,0)),
+    plot.caption = element_markdown(hjust=.5, margin=margin(60,0,0,0), size=8, color=txt_col, lineheight = 1.2),
+    plot.caption.position = "plot",
+    plot.background = element_rect(color=bg, fill=bg),
+    plot.margin = margin(10,10,10,10),
+    legend.position = "none",
+    legend.title = element_text(face="bold"),
+    panel.border = element_blank(), panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+  )# make line 
+
+total_arrivi_lazio %>% plotly::ggplotly()
+total_arrivi_toscana %>% plotly::ggplotly()
+total_arrivi_emilia %>% plotly::ggplotly()
+```
+
+
+```{r, dev='png', fig.height=6, fig.width=9.5}
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(patchwork)
+library(htmltools)
+
+library(dplyr)
+library(readxl)
+library(rAmCharts4)
+
+piombino_turismo[is.na(piombino_turismo)] <- 0
+
+colnames(piombino_turismo)[1] <- "group"
+list_names<-as.list(piombino_turismo[,1])
+rownames(piombino_turismo)<-list_names
+
+for (i in 1:(length(piombino_turismo["Liechtenstein",])-1)) {
+    piombino_turismo["Svizzera",i+1]<- piombino_turismo["Svizzera",i+1]  + piombino_turismo["Liechtenstein",i+1]
+    piombino_turismo["Svizzera (incluso Liechtenstein)",i+1]<- piombino_turismo["Svizzera",i+1]  + piombino_turismo["Svizzera (incluso Liechtenstein)",i+1]
+}
+
+# Introduce another column called Country to have an higher layer in the classification
+
+Italia<-list("Abruzzo","Basilicata",
+               "Bolzano", "Calabria", "Campania", "EmiliaRomagna",
+               "FriuliV. Giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise",
+               "Piemonte", "Puglia", "Regione italiana non indicata", "Sardegna",
+               "Sicilia", "Toscana", "Trento", "Umbria", "Valle d'Aosta", "Veneto")
+
+Europa<-list("Austria", "Belgio" ,"Cipro", "Islanda", "Altri Paesi Europei",
+             "Bulgaria", "Croazia", "Danimarca", "Estonia",
+             "Finlandia", "Francia", "Germania", "Grecia", "Irlanda", "Lettonia",
+             "Lituania", "Lussemburgo", "Malta", "Paesi Bassi",
+             "Portogallo", "Regno Unito", "Romania", "Spagna", "Svezia",
+             "Macedonia", "Norvegia", "Polonia", "Svizzera (incluso Liechtenstein)", "Repubblica Ceca",
+             "Repubblica di Moldova", "Slovacchia", "Slovenia", "Ucraina", "Ungheria",
+             "Albania", "Bielorussia", "Bosnia-Erzegovina")
+
+America<-list("Altri Paesi America Settentrionale", "Altri Paesi Centro-Sud America" ,
+              "Altri Paesi o territori Nord-Americani", "Argentina", "Brasile","Altri Paesi America Centrale",
+              "Canada", "Messico", "Paese Americhe non indicato","Altri Paesi America Latina",
+              "Stati Uniti d'America" , "Venezuela")
+Africa<-list("Altri Paesi Africa Mediterranea", "Altri Paesi dell'Africa" ,
+             "Altri Paesi dell'Africa centrale e del sud",
+             "Egitto", "Sud Africa")
+Asia<-list("Russia", "Turchia" ,
+           "Altri Paesi Asia Occidentale", "Altri Paesi Medio Oriente", "Giappone",
+           "Altri Paesi dell'Asia", "Altri Paesi dell'Asia orientale", "Israele", "Corea del Sud",
+           "Cina (incluso Hong Kong)", "India", 
+           "Paese dell'Asia non indicato", "Paesi dell'Asia centro-occidentale")
+Oceania<-list("Australia", "Nuova Zelanda" , "Altri Paesi o territori Oceania",
+              "Paese Oceania e Regioni polari non indicato")
+
+piombino_turismo <- piombino_turismo %>%
+  mutate(Country = case_when(group %in% unlist(Italia) ~ "Italia",
+                             group %in% unlist(Europa) ~ "Europa",
+                             group %in% unlist(Asia) ~ "Asia",
+                             group %in% unlist(Africa) ~ "Africa",
+                             group %in% unlist(America) ~ "America",
+                             group %in% unlist(Oceania) ~ "Oceania"))
+# Reorder the dataset so that Country and group are at the beginning. 
+piombino_turismo <- piombino_turismo %>% 
+    select(sort(names(.)))
+piombino_turismo <- piombino_turismo %>%
+  relocate(Country, group)
+
+piombino_turismo_fin<-na.omit(piombino_turismo)
+
+totale_italia <- dplyr::filter(piombino_turismo_fin, Country %in% c("Italia"))
+totale_italia <- select(totale_italia, -c(1, 2))
+
+totale_italia <- totale_italia %>%
+  replace(is.na(.), 0) %>%
+  summarise_all(sum)
+
+piombino_turismo_fin[10,] <- c("Europa", "Italia", totale_italia)
+
+plot_turismo_extra_eu <- dplyr::filter(piombino_turismo_fin, Country %in% c("America",
+                                                                            "Oceania",
+                                                                            "Asia",
+                                                                            "Africa",
+                                                                            "Europa"))
+
+#plots
+p1 <- plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2005") %>%
+  sunburst(., count = TRUE, percent = TRUE,
+             legend = FALSE,
+  width = "120%",
+  height = 450)
+
+#plots
+p2 <- plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2006") %>%
+  sunburst(., count = TRUE, percent = TRUE,
+             legend = FALSE,
+  width = "120%",
+  height = 450)
+           
+# do side-by-side for comparison
+div(
+  style="display: flex; align-items:center;",
+  div(style="width:80%; border:1px solid #ccc;", p1),
+  div(style="width:80%; border:1px solid #ccc;", p2)
+)
+
+```
+
+```{r extraeu, eval=FALSE, fig.cap=, include=FALSE}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+
+piombino_turismo_fin<-na.omit(piombino_turismo)
+
+totale_italia <- dplyr::filter(piombino_turismo_fin, Country %in% c("Italia"))
+totale_italia <- select(totale_italia, -c(1, 2))
+
+totale_italia <- totale_italia %>%
+  replace(is.na(.), 0) %>%
+  summarise_all(sum)
+
+piombino_turismo_fin[10,] <- c("Europa", "Italia", totale_italia)
+
+plot_turismo_extra_eu <- dplyr::filter(piombino_turismo_fin, Country %in% c("America",
+                                                                            "Oceania",
+                                                                            "Asia",
+                                                                            "Africa",
+                                                                            "Europa"))
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2005") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2006") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2007") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2008") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2009") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2010") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2011") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2012") %>%
+  sunburst(., count = TRUE)
+
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2018") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2019") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2020") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2021") %>%
+  sunburst(., count = TRUE)
+
+#plots
+plot_turismo_extra_eu %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2022") %>%
+  sunburst(., count = TRUE)
+```
+
+
+### Ripartizione geografica dei flussi italiani per anno (2005-2022)
+
+```{r piechart2005, fig.cap = "Arrivi dall' Italia Anno 2005"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2005 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2005") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2006, fig.cap = "Arrivi dall' Italia Anno 2006"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2006 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2006") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2007, fig.cap = "Arrivi dall' Italia Anno 2007"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2007 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2007") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2008, fig.cap = "Arrivi dall' Italia Anno 2008"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2008 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2008") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2009, fig.cap = "Arrivi dall' Italia Anno 2009"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2009 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2009") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2010, fig.cap = "Arrivi dall' Italia Anno 2010"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2010 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2010") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2011, fig.cap = "Arrivi dall' Italia Anno 2011"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2011 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2011") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2012, fig.cap = "Arrivi dall' Italia Anno 2012"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2012 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2012") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2013, fig.cap = "Arrivi dall' Italia Anno 2013"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2013 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2013") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2014, fig.cap = "Arrivi dall' Italia Anno 2014"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2014 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2014") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2015, fig.cap = "Arrivi dall' Italia Anno 2015"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2015 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2015") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2016, fig.cap = "Arrivi dall' Italia Anno 2016"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2016 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2016") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2017, fig.cap = "Arrivi dall' Italia Anno 2017"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2017 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2017") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2018, fig.cap = "Arrivi dall' Italia Anno 2018"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2018 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2018") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2019, fig.cap = "Arrivi dall' Italia Anno 2019"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2019 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2019") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2020, fig.cap = "Arrivi dall' Italia Anno 2020"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2020 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2020") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2021, fig.cap = "Arrivi dall' Italia Anno 2021"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2021 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2021") %>%
+  sunburst(., count = TRUE)
+```
+
+```{r piechart2022, fig.cap = "Arrivi dall' Italia Anno 2022"}
+# packages for the chunk
+library(sunburstR)
+library(dplyr)
+library(tidyr)
+#plots
+piombino_turismo_italia_2022 %>%
+  unite(bv, Country, group, sep = "-") %>%
+  select(bv, "2022") %>%
+  sunburst(., count = TRUE)
+```
+
+### Distribuzione degli arrivi a Piombino Anno 2019
+```{r}
+library(readxl)
+library(rAmCharts4)
+piombino_turismo <- read_excel("~/Desktop/rmarkdown_workshop/piombino_turismo.xlsx")
+colnames(piombino_turismo)[1] <- "group"
+piombino_turismo_italia <- piombino_turismo[1:22,]
+amPieChart(
+  data = piombino_turismo_italia,
+  category = "group",
+  value    = "2019",
+  threeD = TRUE,
+  variableDepth = TRUE
+)
+```
+
+# Come si è evoluto il pernottamento medio nel corso del tempo?
+
+## Quali sono i turisti che pernottano di più a Piombino
+
+# Conclusioni
+
+
+
+

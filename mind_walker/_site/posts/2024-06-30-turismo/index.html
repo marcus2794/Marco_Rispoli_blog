@@ -1,0 +1,2726 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+<title>The Mind Walker: Il Turismo a Piombino: uno sguardo ai dati</title>
+
+<meta property="description" itemprop="description" content="Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino."/>
+
+<link rel="canonical" href="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2024-06-30"/>
+<meta property="article:created" itemprop="dateCreated" content="2024-06-30"/>
+<meta name="article:author" content="The Mind Walker"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="The Mind Walker: Il Turismo a Piombino: uno sguardo ai dati"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino."/>
+<meta property="og:url" content="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/"/>
+<meta property="og:image" content="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/images/faro_piombino.jpg"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="The Mind Walker"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:title" content="The Mind Walker: Il Turismo a Piombino: uno sguardo ai dati"/>
+<meta property="twitter:description" content="Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino."/>
+<meta property="twitter:url" content="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/"/>
+<meta property="twitter:image" content="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/images/faro_piombino.jpg"/>
+
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="The Mind Walker: Il Turismo a Piombino: uno sguardo ai dati"/>
+<meta name="citation_fulltext_html_url" content="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/"/>
+<meta name="citation_online_date" content="2024/06/30"/>
+<meta name="citation_publication_date" content="2024/06/30"/>
+<meta name="citation_author" content="The Mind Walker"/>
+<meta name="citation_author_institution" content="Data Lover"/>
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Il Turismo a Piombino: uno sguardo ai dati"]},{"type":"character","attributes":{},"value":["turismo","grafici"]},{"type":"character","attributes":{},"value":["Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["The Mind Walker"]},{"type":"character","attributes":{},"value":["Data Lover"]}]}]},{"type":"character","attributes":{},"value":["2024-06-30"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/"]},{"type":"character","attributes":{},"value":["https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["images/faro_piombino.jpg","turismo_files/amChart4-binding-1.6.0/amChart4.js","turismo_files/amcharts4-css-0.0.0/amcharts4.css","turismo_files/anchor-4.2.2/anchor.min.js","turismo_files/bowser-1.9.3/bowser.min.js","turismo_files/core-js-2.5.3/LICENSE","turismo_files/core-js-2.5.3/package.json","turismo_files/core-js-2.5.3/shim.min.js","turismo_files/crosstalk-1.2.0/css/crosstalk.min.css","turismo_files/crosstalk-1.2.0/js/crosstalk.js","turismo_files/crosstalk-1.2.0/js/crosstalk.js.map","turismo_files/crosstalk-1.2.0/js/crosstalk.min.js","turismo_files/crosstalk-1.2.0/js/crosstalk.min.js.map","turismo_files/crosstalk-1.2.0/scss/crosstalk.scss","turismo_files/distill-2.2.21/template.v2.js","turismo_files/header-attrs-2.27/header-attrs.js","turismo_files/htmlwidgets-1.6.2/htmlwidgets.js","turismo_files/jquery-3.6.0/jquery-3.6.0.js","turismo_files/jquery-3.6.0/jquery-3.6.0.min.js","turismo_files/jquery-3.6.0/jquery-3.6.0.min.map","turismo_files/plotly-binding-4.10.1/plotly.js","turismo_files/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css","turismo_files/plotly-main-2.11.1/plotly-latest.min.js","turismo_files/popper-2.6.0/popper.min.js","turismo_files/react-17.0.0/AUTHORS","turismo_files/react-17.0.0/LICENSE.txt","turismo_files/react-17.0.0/react-dom.min.js","turismo_files/react-17.0.0/react.min.js","turismo_files/reactwidget-1.0.0/react-tools.js","turismo_files/reactwidget-1.0.0/react-tools.js.map","turismo_files/sequences-0.1/README.md","turismo_files/sequences-0.1/sequences.css","turismo_files/sunburst-binding-2.1.8/sunburst.js","turismo_files/tippy-6.2.7/tippy-bundle.umd.min.js","turismo_files/tippy-6.2.7/tippy-light-border.css","turismo_files/tippy-6.2.7/tippy.css","turismo_files/tippy-6.2.7/tippy.umd.min.js","turismo_files/typedarray-0.1/typedarray.min.js","turismo_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
+</style>
+
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+<script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+<script type="application/javascript">
+
+function getMeta(metaName) {
+  var metas = document.getElementsByTagName('meta');
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute('name') === metaName) {
+      return metas[i].getAttribute('content');
+    }
+  }
+  return '';
+}
+
+function offsetURL(url) {
+  var offset = getMeta('distill:offset');
+  return offset ? offset + '/' + url : url;
+}
+
+function createFuseIndex() {
+
+  // create fuse index
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
+  var fuse = new window.Fuse([], options);
+
+  // fetch the main search.json
+  return fetch(offsetURL('search.json'))
+    .then(function(response) {
+      if (response.status == 200) {
+        return response.json().then(function(json) {
+          // index main articles
+          json.articles.forEach(function(article) {
+            fuse.add(article);
+          });
+          // download collections and index their articles
+          return Promise.all(json.collections.map(function(collection) {
+            return fetch(offsetURL(collection)).then(function(response) {
+              if (response.status === 200) {
+                return response.json().then(function(articles) {
+                  articles.forEach(function(article) {
+                    fuse.add(article);
+                  });
+                })
+              } else {
+                return Promise.reject(
+                  new Error('Unexpected status from search index request: ' +
+                            response.status)
+                );
+              }
+            });
+          })).then(function() {
+            return fuse;
+          });
+        });
+
+      } else {
+        return Promise.reject(
+          new Error('Unexpected status from search index request: ' +
+                      response.status)
+        );
+      }
+    });
+}
+
+window.document.addEventListener("DOMContentLoaded", function (event) {
+
+  // get search element (bail if we don't have one)
+  var searchEl = window.document.getElementById('distill-search');
+  if (!searchEl)
+    return;
+
+  createFuseIndex()
+    .then(function(fuse) {
+
+      // make search box visible
+      searchEl.classList.remove('hidden');
+
+      // initialize autocomplete
+      var options = {
+        autoselect: true,
+        hint: false,
+        minLength: 2,
+      };
+      window.autocomplete(searchEl, options, [{
+        source: function(query, callback) {
+          const searchOptions = {
+            isCaseSensitive: false,
+            shouldSort: true,
+            minMatchCharLength: 2,
+            limit: 10,
+          };
+          var results = fuse.search(query, searchOptions);
+          callback(results
+            .map(function(result) { return result.item; })
+          );
+        },
+        templates: {
+          suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
+            var html = `
+              <div class="search-item">
+                <h3>${suggestion.title}</h3>
+                <div class="search-item-description">
+                  ${suggestion.description || ''}
+                </div>
+                <div class="search-item-preview">
+                  ${img}
+                </div>
+              </div>
+            `;
+            return html;
+          }
+        }
+      }]).on('autocomplete:selected', function(event, suggestion) {
+        window.location.href = offsetURL(suggestion.path);
+      });
+      // remove inline display style on autocompleter (we want to
+      // manage responsive display via css)
+      $('.algolia-autocomplete').css("display", "");
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+});
+
+</script>
+
+<style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
+
+/* Algolioa Autocomplete */
+
+.algolia-autocomplete {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: sub;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  border: 1px #0F2E3D solid;
+  width: 180px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-nav .algolia-autocomplete {
+    display: none;
+    visibility: hidden;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete {
+    display: inline-block;
+    visibility: visible;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+    margin-left: 0;
+    width: 400px;
+    max-height: 400px;
+  }
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 550px;
+  max-height: 70vh;
+  overflow-x: visible;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: -150px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+  overflow: hidden;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+  display: inline-block;
+  overflow: hidden;
+  height: 2.8em;
+  width: 80%;
+  margin-right: 4%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+  display: inline-block;
+  width: 15%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+  height: 3em;
+  width: auto;
+  display: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+  display: initial;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #eee;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+</style>
+
+
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+  font-size: 100%;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+hr.section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0px;
+}
+
+
+d-byline {
+  border-top: none;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+  border-top: none;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+/* tweak for Pandoc numbered line within distill */
+d-article pre.numberSource code > span {
+    left: -2em;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // separator
+  var separator = '<hr class="section-separator" style="clear: both"/>';
+  // prepend separator above appendix
+  $('.d-byline').before(separator);
+  $('.d-article').before(separator);
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme, except when numbering line
+  // in code chunk
+  $('pre:not(.numberLines) code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      var author_name = front_matter.authors[i].author
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+      }).join("\n");
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.27/header-attrs.js"></script>
+  <script src="../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+  <script src="../../site_libs/plotly-binding-4.10.1/plotly.js"></script>
+  <script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="../../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+  <script src="../../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+  <link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+  <script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+  <link href="../../site_libs/sequences-0.1/sequences.css" rel="stylesheet" />
+  <script src="../../site_libs/sunburst-binding-2.1.8/sunburst.js"></script>
+  <script src="../../site_libs/core-js-2.5.3/shim.min.js"></script>
+  <script src="../../site_libs/react-17.0.0/react.min.js"></script>
+  <script src="../../site_libs/react-17.0.0/react-dom.min.js"></script>
+  <script src="../../site_libs/reactwidget-1.0.0/react-tools.js"></script>
+  <link href="../../site_libs/amcharts4-css-0.0.0/amcharts4.css" rel="stylesheet" />
+  <script src="../../site_libs/amChart4-binding-1.6.0/amChart4.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Il Turismo a Piombino: uno sguardo ai dati","description":"Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino.","authors":[{"author":"The Mind Walker","authorURL":"#","affiliation":"Data Lover","affiliationURL":"#","orcidID":""}],"publishedDate":"2024-06-30T00:00:00.000+02:00","citationText":"Walker, 2024"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<span class="logo">
+<img src="../../images/mind.jpg"/>
+</span>
+<a href="../../index.html" class="title">The Mind Walker</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Il Turismo a Piombino: uno sguardo ai dati</h1>
+
+<!--radix_placeholder_categories-->
+<div class="dt-tags">
+  <a href="../../index.html#category:turismo" class="dt-tag">turismo</a>
+  <a href="../../index.html#category:grafici" class="dt-tag">grafici</a>
+</div>
+<!--/radix_placeholder_categories-->
+<p><p>Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo <a href="https://www.regione.toscana.it/statistiche/banca-dati-turismo" class="uri">https://www.regione.toscana.it/statistiche/banca-dati-turismo</a>. Ho cercato di fare delle infografiche per il comune di Piombino.</p></p>
+</div>
+
+<div class="d-byline">
+  The Mind Walker  (Data Lover)
+  
+<br/>2024-06-30
+</div>
+
+<div class="d-article">
+<h1 id="il-turismo-a-piombino">Il Turismo a Piombino</h1>
+<div style="text-align: center">
+<img src="images/faro_piombino.jpg" width="400px" min-width="300px" max-width="300px" />
+<p style="text-align:center;">
+Piazza Bovio, Faro.
+</p>
+</div>
+<div style="text-align: center">
+
+<h1 id="analisi-storica-dei-flussi">Analisi storica dei flussi</h1>
+<h3 id="andamento-temporale-dal-2005-al-2022">Andamento temporale dal 2005 al 2022</h3>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h3 id="evoluzione-temporale-degli-arrivi-dalla-lombardia-e-dal-piemonte">Evoluzione temporale degli arrivi dalla Lombardia e dal Piemonte</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div style="display: flex; align-items:center;">
+<div style="width:80%; border:1px solid #ccc;">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-7d1636366f61d6d7800b" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-7d1636366f61d6d7800b">{"x":{"data":[{"x":[2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[9176,9247,12723,13288,12798,13207,14059,13810,14640,14985,16674,16296,17031,17563,19659,15271,19413,21195],"text":["Anno: 2005<br />Lombardia:  9176","Anno: 2006<br />Lombardia:  9247","Anno: 2007<br />Lombardia: 12723","Anno: 2008<br />Lombardia: 13288","Anno: 2009<br />Lombardia: 12798","Anno: 2010<br />Lombardia: 13207","Anno: 2011<br />Lombardia: 14059","Anno: 2012<br />Lombardia: 13810","Anno: 2013<br />Lombardia: 14640","Anno: 2014<br />Lombardia: 14985","Anno: 2015<br />Lombardia: 16674","Anno: 2016<br />Lombardia: 16296","Anno: 2017<br />Lombardia: 17031","Anno: 2018<br />Lombardia: 17563","Anno: 2019<br />Lombardia: 19659","Anno: 2020<br />Lombardia: 15271","Anno: 2021<br />Lombardia: 19413","Anno: 2022<br />Lombardia: 21195"],"type":"scatter","mode":"lines+markers","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":11.3385826771654,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"frame":null}],"layout":{"margin":{"t":37.5857202158572,"r":13.2835201328352,"b":34.2050643420507,"l":39.8505603985056},"paper_bgcolor":"rgba(244,245,241,1)","font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":13.2835201328352},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2004.15,2022.85],"tickmode":"array","ticktext":["2005","2010","2015","2020"],"tickvals":[2005,2010,2015,2020],"categoryorder":"array","categoryarray":["2005","2010","2015","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[8575.05,21795.95],"tickmode":"array","ticktext":["9000","12000","15000","18000","21000"],"tickvals":[9000,12000,15000,18000,21000],"categoryorder":"array","categoryarray":["9000","12000","15000","18000","21000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":10.6268161062682}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"42b95afe7dd":{"x":{},"y":{},"type":"scatter"},"42b95f9f6115":{"x":{},"y":{}}},"cur_data":"42b95afe7dd","visdat":{"42b95afe7dd":["function (y) ","x"],"42b95f9f6115":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width:80%; border:1px solid #ccc;">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-a80d822ae25998bee50f" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-a80d822ae25998bee50f">{"x":{"data":[{"x":[2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[5811,5520,7376,7672,6930,8612,7205,5409,5637,5981,6700,6765,6838,6883,7119,6110,7817,8484],"text":["Anno: 2005<br />Piemonte: 5811","Anno: 2006<br />Piemonte: 5520","Anno: 2007<br />Piemonte: 7376","Anno: 2008<br />Piemonte: 7672","Anno: 2009<br />Piemonte: 6930","Anno: 2010<br />Piemonte: 8612","Anno: 2011<br />Piemonte: 7205","Anno: 2012<br />Piemonte: 5409","Anno: 2013<br />Piemonte: 5637","Anno: 2014<br />Piemonte: 5981","Anno: 2015<br />Piemonte: 6700","Anno: 2016<br />Piemonte: 6765","Anno: 2017<br />Piemonte: 6838","Anno: 2018<br />Piemonte: 6883","Anno: 2019<br />Piemonte: 7119","Anno: 2020<br />Piemonte: 6110","Anno: 2021<br />Piemonte: 7817","Anno: 2022<br />Piemonte: 8484"],"type":"scatter","mode":"lines+markers","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":11.3385826771654,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"frame":null}],"layout":{"margin":{"t":37.5857202158572,"r":13.2835201328352,"b":34.2050643420507,"l":35.2013283520133},"paper_bgcolor":"rgba(244,245,241,1)","font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":13.2835201328352},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2004.15,2022.85],"tickmode":"array","ticktext":["2005","2010","2015","2020"],"tickvals":[2005,2010,2015,2020],"categoryorder":"array","categoryarray":["2005","2010","2015","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[5248.85,8772.15],"tickmode":"array","ticktext":["6000","7000","8000"],"tickvals":[6000,7000,8000],"categoryorder":"array","categoryarray":["6000","7000","8000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":10.6268161062682}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"42b93a6761e5":{"x":{},"y":{},"type":"scatter"},"42b9594c1f57":{"x":{},"y":{}}},"cur_data":"42b93a6761e5","visdat":{"42b93a6761e5":["function (y) ","x"],"42b9594c1f57":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<h3 id="arrivi-da-emilia-romagna-toscana-e-lazio">Arrivi da Emilia-Romagna, Toscana e Lazio</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-96e64b94493467685ab7" style="width:624px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-96e64b94493467685ab7">{"x":{"data":[{"x":[2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[3284,2932,4131,4146,4047,4398,4797,3621,4468,4187,5213,4556,5391,5540,6467,4367,5493,6932],"text":["Anno: 2005<br />Lazio: 3284","Anno: 2006<br />Lazio: 2932","Anno: 2007<br />Lazio: 4131","Anno: 2008<br />Lazio: 4146","Anno: 2009<br />Lazio: 4047","Anno: 2010<br />Lazio: 4398","Anno: 2011<br />Lazio: 4797","Anno: 2012<br />Lazio: 3621","Anno: 2013<br />Lazio: 4468","Anno: 2014<br />Lazio: 4187","Anno: 2015<br />Lazio: 5213","Anno: 2016<br />Lazio: 4556","Anno: 2017<br />Lazio: 5391","Anno: 2018<br />Lazio: 5540","Anno: 2019<br />Lazio: 6467","Anno: 2020<br />Lazio: 4367","Anno: 2021<br />Lazio: 5493","Anno: 2022<br />Lazio: 6932"],"type":"scatter","mode":"lines+markers","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":11.3385826771654,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"frame":null}],"layout":{"margin":{"t":37.5857202158572,"r":13.2835201328352,"b":34.2050643420507,"l":35.2013283520133},"paper_bgcolor":"rgba(244,245,241,1)","font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":13.2835201328352},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2004.15,2022.85],"tickmode":"array","ticktext":["2005","2010","2015","2020"],"tickvals":[2005,2010,2015,2020],"categoryorder":"array","categoryarray":["2005","2010","2015","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2732,7132],"tickmode":"array","ticktext":["3000","4000","5000","6000","7000"],"tickvals":[3000,4000,5000,6000,7000],"categoryorder":"array","categoryarray":["3000","4000","5000","6000","7000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":10.6268161062682}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"42b9e493afe":{"x":{},"y":{},"type":"scatter"},"42b969c00105":{"x":{},"y":{}}},"cur_data":"42b9e493afe","visdat":{"42b9e493afe":["function (y) ","x"],"42b969c00105":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+(#fig:totale_arrivi2)Arrivi dall’ Emilia, Toscana e Lazio
+</p>
+</div>
+<div class="figure">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2bac8b4c9603e14945ff" style="width:624px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-2bac8b4c9603e14945ff">{"x":{"data":[{"x":[2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[46196,47633,63899,63613,68513,66018,72363,56669,55332,55995,65554,68764,79034,68780,68220,55381,64477,67524],"text":["Anno: 2005<br />Toscana: 46196","Anno: 2006<br />Toscana: 47633","Anno: 2007<br />Toscana: 63899","Anno: 2008<br />Toscana: 63613","Anno: 2009<br />Toscana: 68513","Anno: 2010<br />Toscana: 66018","Anno: 2011<br />Toscana: 72363","Anno: 2012<br />Toscana: 56669","Anno: 2013<br />Toscana: 55332","Anno: 2014<br />Toscana: 55995","Anno: 2015<br />Toscana: 65554","Anno: 2016<br />Toscana: 68764","Anno: 2017<br />Toscana: 79034","Anno: 2018<br />Toscana: 68780","Anno: 2019<br />Toscana: 68220","Anno: 2020<br />Toscana: 55381","Anno: 2021<br />Toscana: 64477","Anno: 2022<br />Toscana: 67524"],"type":"scatter","mode":"lines+markers","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":11.3385826771654,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"frame":null}],"layout":{"margin":{"t":37.5857202158572,"r":13.2835201328352,"b":34.2050643420507,"l":39.8505603985056},"paper_bgcolor":"rgba(244,245,241,1)","font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":13.2835201328352},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2004.15,2022.85],"tickmode":"array","ticktext":["2005","2010","2015","2020"],"tickvals":[2005,2010,2015,2020],"categoryorder":"array","categoryarray":["2005","2010","2015","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[44554.1,80675.9],"tickmode":"array","ticktext":["50000","60000","70000","80000"],"tickvals":[50000,60000,70000,80000],"categoryorder":"array","categoryarray":["50000","60000","70000","80000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":10.6268161062682}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"42b96495fad6":{"x":{},"y":{},"type":"scatter"},"42b932872b31":{"x":{},"y":{}}},"cur_data":"42b96495fad6","visdat":{"42b96495fad6":["function (y) ","x"],"42b932872b31":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+(#fig:totale_arrivi2)Arrivi dall’ Emilia, Toscana e Lazio
+</p>
+</div>
+<div class="figure">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-e615f302f3d1ba705794" style="width:624px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-e615f302f3d1ba705794">{"x":{"data":[{"x":[2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[2556,2356,3695,3666,3661,3905,3688,3691,3910,4176,5064,4751,5259,5323,6335,4634,5584,6247],"text":["Anno: 2005<br />EmiliaRomagna: 2556","Anno: 2006<br />EmiliaRomagna: 2356","Anno: 2007<br />EmiliaRomagna: 3695","Anno: 2008<br />EmiliaRomagna: 3666","Anno: 2009<br />EmiliaRomagna: 3661","Anno: 2010<br />EmiliaRomagna: 3905","Anno: 2011<br />EmiliaRomagna: 3688","Anno: 2012<br />EmiliaRomagna: 3691","Anno: 2013<br />EmiliaRomagna: 3910","Anno: 2014<br />EmiliaRomagna: 4176","Anno: 2015<br />EmiliaRomagna: 5064","Anno: 2016<br />EmiliaRomagna: 4751","Anno: 2017<br />EmiliaRomagna: 5259","Anno: 2018<br />EmiliaRomagna: 5323","Anno: 2019<br />EmiliaRomagna: 6335","Anno: 2020<br />EmiliaRomagna: 4634","Anno: 2021<br />EmiliaRomagna: 5584","Anno: 2022<br />EmiliaRomagna: 6247"],"type":"scatter","mode":"lines+markers","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":11.3385826771654,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"frame":null}],"layout":{"margin":{"t":37.5857202158572,"r":13.2835201328352,"b":34.2050643420507,"l":35.2013283520133},"paper_bgcolor":"rgba(244,245,241,1)","font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":13.2835201328352},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2004.15,2022.85],"tickmode":"array","ticktext":["2005","2010","2015","2020"],"tickvals":[2005,2010,2015,2020],"categoryorder":"array","categoryarray":["2005","2010","2015","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2157.05,6533.95],"tickmode":"array","ticktext":["3000","4000","5000","6000"],"tickvals":[3000,4000,5000,6000],"categoryorder":"array","categoryarray":["3000","4000","5000","6000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.3208800332088,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"Gudea","size":9.29846409298464},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Gudea","size":10.6268161062682}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"42b95b05198c":{"x":{},"y":{},"type":"scatter"},"42b92bd06503":{"x":{},"y":{}}},"cur_data":"42b95b05198c","visdat":{"42b95b05198c":["function (y) ","x"],"42b92bd06503":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+(#fig:totale_arrivi2)Arrivi dall’ Emilia, Toscana e Lazio
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div style="display: flex; align-items:center;">
+<div style="width:80%; border:1px solid #ccc;">
+<div class="sunburst html-widget " id="htmlwidget-d09262d0fdcfb3dd5625" style="width:120%;height:450px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-d09262d0fdcfb3dd5625">{"x":{"data":{"children":[{"name":"Europa","children":[{"name":"Italia","children":[],"size":87225,"colname":"X2"},{"name":"Albania","children":[],"size":39,"colname":"X2"},{"name":"Altri Paesi Europei","children":[],"size":80,"colname":"X2"},{"name":"Bielorussia","children":[],"size":3,"colname":"X2"},{"name":"Bosnia","children":[{"name":"Erzegovina","size":2,"colname":"X3"}],"colname":"X2"},{"name":"Islanda","children":[],"size":3,"colname":"X2"},{"name":"Macedonia","children":[],"size":0,"colname":"X2"},{"name":"Norvegia","children":[],"size":121,"colname":"X2"},{"name":"Polonia","children":[],"size":513,"colname":"X2"},{"name":"Repubblica Ceca","children":[],"size":135,"colname":"X2"},{"name":"Repubblica di Moldova","children":[],"size":13,"colname":"X2"},{"name":"Slovacchia","children":[],"size":14,"colname":"X2"},{"name":"Slovenia","children":[],"size":154,"colname":"X2"},{"name":"Svizzera (incluso Liechtenstein)","children":[],"size":3938,"colname":"X2"},{"name":"Ucraina","children":[],"size":29,"colname":"X2"},{"name":"Ungheria","children":[],"size":71,"colname":"X2"},{"name":"Austria","children":[],"size":518,"colname":"X2"},{"name":"Belgio","children":[],"size":282,"colname":"X2"},{"name":"Bulgaria","children":[],"size":15,"colname":"X2"},{"name":"Cipro","children":[],"size":1,"colname":"X2"},{"name":"Croazia","children":[],"size":41,"colname":"X2"},{"name":"Danimarca","children":[],"size":761,"colname":"X2"},{"name":"Estonia","children":[],"size":0,"colname":"X2"},{"name":"Finlandia","children":[],"size":26,"colname":"X2"},{"name":"Francia","children":[],"size":1162,"colname":"X2"},{"name":"Germania","children":[],"size":6493,"colname":"X2"},{"name":"Grecia","children":[],"size":111,"colname":"X2"},{"name":"Irlanda","children":[],"size":56,"colname":"X2"},{"name":"Lettonia","children":[],"size":1,"colname":"X2"},{"name":"Lituania","children":[],"size":2,"colname":"X2"},{"name":"Lussemburgo","children":[],"size":18,"colname":"X2"},{"name":"Malta","children":[],"size":0,"colname":"X2"},{"name":"Paesi Bassi","children":[],"size":1950,"colname":"X2"},{"name":"Portogallo","children":[],"size":22,"colname":"X2"},{"name":"Regno Unito","children":[],"size":285,"colname":"X2"},{"name":"Romania","children":[],"size":112,"colname":"X2"},{"name":"Spagna","children":[],"size":223,"colname":"X2"},{"name":"Svezia","children":[],"size":182,"colname":"X2"}],"colname":"X1"},{"name":"Asia","children":[{"name":"Russia","children":[],"size":132,"colname":"X2"},{"name":"Turchia","children":[],"size":18,"colname":"X2"},{"name":"Altri Paesi Asia Occidentale","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi Medio Oriente","children":[],"size":16,"colname":"X2"},{"name":"Altri Paesi dell'Asia","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi dell'Asia orientale","children":[],"size":1,"colname":"X2"},{"name":"Cina (incluso Hong Kong)","children":[],"size":17,"colname":"X2"},{"name":"Corea del Sud","children":[],"size":6,"colname":"X2"},{"name":"Giappone","children":[],"size":22,"colname":"X2"},{"name":"India","children":[],"size":28,"colname":"X2"},{"name":"Israele","children":[],"size":15,"colname":"X2"},{"name":"Paese dell'Asia non indicato","children":[],"size":12,"colname":"X2"},{"name":"Paesi dell'Asia centro","children":[{"name":"occidentale","size":0,"colname":"X3"}],"colname":"X2"}],"colname":"X1"},{"name":"Africa","children":[{"name":"Altri Paesi Africa Mediterranea","children":[],"size":3,"colname":"X2"},{"name":"Altri Paesi dell'Africa","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi dell'Africa centrale e del sud","children":[],"size":111,"colname":"X2"},{"name":"Egitto","children":[],"size":12,"colname":"X2"},{"name":"Sud Africa","children":[],"size":7,"colname":"X2"}],"colname":"X1"},{"name":"Oceania","children":[{"name":"Altri Paesi o territori Oceania","children":[],"size":0,"colname":"X2"},{"name":"Australia","children":[],"size":47,"colname":"X2"},{"name":"Nuova Zelanda","children":[],"size":7,"colname":"X2"},{"name":"Paese Oceania e Regioni polari non indicato","children":[],"size":0,"colname":"X2"}],"colname":"X1"},{"name":"America","children":[{"name":"Altri Paesi America Centrale","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi America Latina","children":[],"size":43,"colname":"X2"},{"name":"Altri Paesi America Settentrionale","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi Centro","children":[{"name":"Sud America","size":0,"colname":"X3"}],"colname":"X2"},{"name":"Altri Paesi o territori Nord","children":[{"name":"Americani","size":0,"colname":"X3"}],"colname":"X2"},{"name":"Argentina","children":[],"size":15,"colname":"X2"},{"name":"Brasile","children":[],"size":44,"colname":"X2"},{"name":"Canada","children":[],"size":52,"colname":"X2"},{"name":"Messico","children":[],"size":3,"colname":"X2"},{"name":"Paese Americhe non indicato","children":[],"size":0,"colname":"X2"},{"name":"Stati Uniti d'America","children":[],"size":217,"colname":"X2"},{"name":"Venezuela","children":[],"size":2,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":false,"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width:80%; border:1px solid #ccc;">
+<div class="sunburst html-widget " id="htmlwidget-23964a3693dea22a3b7c" style="width:120%;height:450px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-23964a3693dea22a3b7c">{"x":{"data":{"children":[{"name":"Europa","children":[{"name":"Italia","children":[],"size":91961,"colname":"X2"},{"name":"Albania","children":[],"size":45,"colname":"X2"},{"name":"Altri Paesi Europei","children":[],"size":84,"colname":"X2"},{"name":"Bielorussia","children":[],"size":1,"colname":"X2"},{"name":"Bosnia","children":[{"name":"Erzegovina","size":1,"colname":"X3"}],"colname":"X2"},{"name":"Islanda","children":[],"size":1,"colname":"X2"},{"name":"Macedonia","children":[],"size":6,"colname":"X2"},{"name":"Norvegia","children":[],"size":143,"colname":"X2"},{"name":"Polonia","children":[],"size":525,"colname":"X2"},{"name":"Repubblica Ceca","children":[],"size":222,"colname":"X2"},{"name":"Repubblica di Moldova","children":[],"size":3,"colname":"X2"},{"name":"Slovacchia","children":[],"size":7,"colname":"X2"},{"name":"Slovenia","children":[],"size":417,"colname":"X2"},{"name":"Svizzera (incluso Liechtenstein)","children":[],"size":4685,"colname":"X2"},{"name":"Ucraina","children":[],"size":35,"colname":"X2"},{"name":"Ungheria","children":[],"size":56,"colname":"X2"},{"name":"Austria","children":[],"size":664,"colname":"X2"},{"name":"Belgio","children":[],"size":366,"colname":"X2"},{"name":"Bulgaria","children":[],"size":9,"colname":"X2"},{"name":"Cipro","children":[],"size":0,"colname":"X2"},{"name":"Croazia","children":[],"size":123,"colname":"X2"},{"name":"Danimarca","children":[],"size":1150,"colname":"X2"},{"name":"Estonia","children":[],"size":6,"colname":"X2"},{"name":"Finlandia","children":[],"size":50,"colname":"X2"},{"name":"Francia","children":[],"size":1287,"colname":"X2"},{"name":"Germania","children":[],"size":7302,"colname":"X2"},{"name":"Grecia","children":[],"size":93,"colname":"X2"},{"name":"Irlanda","children":[],"size":65,"colname":"X2"},{"name":"Lettonia","children":[],"size":2,"colname":"X2"},{"name":"Lituania","children":[],"size":22,"colname":"X2"},{"name":"Lussemburgo","children":[],"size":33,"colname":"X2"},{"name":"Malta","children":[],"size":2,"colname":"X2"},{"name":"Paesi Bassi","children":[],"size":1657,"colname":"X2"},{"name":"Portogallo","children":[],"size":18,"colname":"X2"},{"name":"Regno Unito","children":[],"size":393,"colname":"X2"},{"name":"Romania","children":[],"size":105,"colname":"X2"},{"name":"Spagna","children":[],"size":170,"colname":"X2"},{"name":"Svezia","children":[],"size":160,"colname":"X2"}],"colname":"X1"},{"name":"Asia","children":[{"name":"Russia","children":[],"size":275,"colname":"X2"},{"name":"Turchia","children":[],"size":28,"colname":"X2"},{"name":"Altri Paesi Asia Occidentale","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi Medio Oriente","children":[],"size":15,"colname":"X2"},{"name":"Altri Paesi dell'Asia","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi dell'Asia orientale","children":[],"size":1,"colname":"X2"},{"name":"Cina (incluso Hong Kong)","children":[],"size":31,"colname":"X2"},{"name":"Corea del Sud","children":[],"size":2,"colname":"X2"},{"name":"Giappone","children":[],"size":26,"colname":"X2"},{"name":"India","children":[],"size":61,"colname":"X2"},{"name":"Israele","children":[],"size":18,"colname":"X2"},{"name":"Paese dell'Asia non indicato","children":[],"size":32,"colname":"X2"},{"name":"Paesi dell'Asia centro","children":[{"name":"occidentale","size":0,"colname":"X3"}],"colname":"X2"}],"colname":"X1"},{"name":"Africa","children":[{"name":"Altri Paesi Africa Mediterranea","children":[],"size":1,"colname":"X2"},{"name":"Altri Paesi dell'Africa","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi dell'Africa centrale e del sud","children":[],"size":69,"colname":"X2"},{"name":"Egitto","children":[],"size":21,"colname":"X2"},{"name":"Sud Africa","children":[],"size":12,"colname":"X2"}],"colname":"X1"},{"name":"Oceania","children":[{"name":"Altri Paesi o territori Oceania","children":[],"size":0,"colname":"X2"},{"name":"Australia","children":[],"size":36,"colname":"X2"},{"name":"Nuova Zelanda","children":[],"size":47,"colname":"X2"},{"name":"Paese Oceania e Regioni polari non indicato","children":[],"size":0,"colname":"X2"}],"colname":"X1"},{"name":"America","children":[{"name":"Altri Paesi America Centrale","children":[],"size":1,"colname":"X2"},{"name":"Altri Paesi America Latina","children":[],"size":57,"colname":"X2"},{"name":"Altri Paesi America Settentrionale","children":[],"size":0,"colname":"X2"},{"name":"Altri Paesi Centro","children":[{"name":"Sud America","size":0,"colname":"X3"}],"colname":"X2"},{"name":"Altri Paesi o territori Nord","children":[{"name":"Americani","size":0,"colname":"X3"}],"colname":"X2"},{"name":"Argentina","children":[],"size":29,"colname":"X2"},{"name":"Brasile","children":[],"size":27,"colname":"X2"},{"name":"Canada","children":[],"size":84,"colname":"X2"},{"name":"Messico","children":[],"size":7,"colname":"X2"},{"name":"Paese Americhe non indicato","children":[],"size":0,"colname":"X2"},{"name":"Stati Uniti d'America","children":[],"size":237,"colname":"X2"},{"name":"Venezuela","children":[],"size":10,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":false,"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<h3 id="ripartizione-geografica-dei-flussi-italiani-per-anno-2005-2022">Ripartizione geografica dei flussi italiani per anno (2005-2022)</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2005"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-006ff97b2eb579f796ca" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-006ff97b2eb579f796ca">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":331,"colname":"X2"},{"name":"Basilicata","size":88,"colname":"X2"},{"name":"Bolzano","size":257,"colname":"X2"},{"name":"Calabria","size":162,"colname":"X2"},{"name":"Campania","size":1631,"colname":"X2"},{"name":"EmiliaRomagna","size":2556,"colname":"X2"},{"name":"FriuliV. Giulia","size":419,"colname":"X2"},{"name":"Lazio","size":3284,"colname":"X2"},{"name":"Liguria","size":1463,"colname":"X2"},{"name":"Lombardia","size":9176,"colname":"X2"},{"name":"Marche","size":555,"colname":"X2"},{"name":"Molise","size":63,"colname":"X2"},{"name":"Piemonte","size":5811,"colname":"X2"},{"name":"Puglia","size":701,"colname":"X2"},{"name":"Regione italiana non indicata","size":10533,"colname":"X2"},{"name":"Sardegna","size":342,"colname":"X2"},{"name":"Sicilia","size":753,"colname":"X2"},{"name":"Toscana","size":46196,"colname":"X2"},{"name":"Trento","size":288,"colname":"X2"},{"name":"Umbria","size":687,"colname":"X2"},{"name":"Valle d'Aosta","size":119,"colname":"X2"},{"name":"Veneto","size":1810,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 1: Arrivi dall’ Italia Anno 2005
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2006"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-927b96c714e2cf462c66" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-927b96c714e2cf462c66">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":304,"colname":"X2"},{"name":"Basilicata","size":69,"colname":"X2"},{"name":"Bolzano","size":169,"colname":"X2"},{"name":"Calabria","size":155,"colname":"X2"},{"name":"Campania","size":1907,"colname":"X2"},{"name":"EmiliaRomagna","size":2356,"colname":"X2"},{"name":"FriuliV. Giulia","size":310,"colname":"X2"},{"name":"Lazio","size":2932,"colname":"X2"},{"name":"Liguria","size":1399,"colname":"X2"},{"name":"Lombardia","size":9247,"colname":"X2"},{"name":"Marche","size":364,"colname":"X2"},{"name":"Molise","size":96,"colname":"X2"},{"name":"Piemonte","size":5520,"colname":"X2"},{"name":"Puglia","size":801,"colname":"X2"},{"name":"Regione italiana non indicata","size":14954,"colname":"X2"},{"name":"Sardegna","size":221,"colname":"X2"},{"name":"Sicilia","size":440,"colname":"X2"},{"name":"Toscana","size":47633,"colname":"X2"},{"name":"Trento","size":397,"colname":"X2"},{"name":"Umbria","size":708,"colname":"X2"},{"name":"Valle d'Aosta","size":90,"colname":"X2"},{"name":"Veneto","size":1889,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 2: Arrivi dall’ Italia Anno 2006
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2007"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b8713c320a042291f663" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-b8713c320a042291f663">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":487,"colname":"X2"},{"name":"Basilicata","size":131,"colname":"X2"},{"name":"Bolzano","size":192,"colname":"X2"},{"name":"Calabria","size":383,"colname":"X2"},{"name":"Campania","size":2743,"colname":"X2"},{"name":"EmiliaRomagna","size":3695,"colname":"X2"},{"name":"FriuliV. Giulia","size":510,"colname":"X2"},{"name":"Lazio","size":4131,"colname":"X2"},{"name":"Liguria","size":1821,"colname":"X2"},{"name":"Lombardia","size":12723,"colname":"X2"},{"name":"Marche","size":793,"colname":"X2"},{"name":"Molise","size":281,"colname":"X2"},{"name":"Piemonte","size":7376,"colname":"X2"},{"name":"Puglia","size":1139,"colname":"X2"},{"name":"Regione italiana non indicata","size":739,"colname":"X2"},{"name":"Sardegna","size":448,"colname":"X2"},{"name":"Sicilia","size":685,"colname":"X2"},{"name":"Toscana","size":63899,"colname":"X2"},{"name":"Trento","size":558,"colname":"X2"},{"name":"Umbria","size":1071,"colname":"X2"},{"name":"Valle d'Aosta","size":124,"colname":"X2"},{"name":"Veneto","size":2837,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 3: Arrivi dall’ Italia Anno 2007
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2008"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-befd51ff1f3045cbdabd" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-befd51ff1f3045cbdabd">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":499,"colname":"X2"},{"name":"Basilicata","size":168,"colname":"X2"},{"name":"Bolzano","size":260,"colname":"X2"},{"name":"Calabria","size":371,"colname":"X2"},{"name":"Campania","size":2797,"colname":"X2"},{"name":"EmiliaRomagna","size":3666,"colname":"X2"},{"name":"FriuliV. Giulia","size":845,"colname":"X2"},{"name":"Lazio","size":4146,"colname":"X2"},{"name":"Liguria","size":2190,"colname":"X2"},{"name":"Lombardia","size":13288,"colname":"X2"},{"name":"Marche","size":898,"colname":"X2"},{"name":"Molise","size":82,"colname":"X2"},{"name":"Piemonte","size":7672,"colname":"X2"},{"name":"Puglia","size":1278,"colname":"X2"},{"name":"Regione italiana non indicata","size":468,"colname":"X2"},{"name":"Sardegna","size":524,"colname":"X2"},{"name":"Sicilia","size":1104,"colname":"X2"},{"name":"Toscana","size":63613,"colname":"X2"},{"name":"Trento","size":581,"colname":"X2"},{"name":"Umbria","size":1021,"colname":"X2"},{"name":"Valle d'Aosta","size":141,"colname":"X2"},{"name":"Veneto","size":3226,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 4: Arrivi dall’ Italia Anno 2008
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2009"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-3f4b6b735a47aa6fbd5e" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-3f4b6b735a47aa6fbd5e">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":520,"colname":"X2"},{"name":"Basilicata","size":132,"colname":"X2"},{"name":"Bolzano","size":252,"colname":"X2"},{"name":"Calabria","size":351,"colname":"X2"},{"name":"Campania","size":2456,"colname":"X2"},{"name":"EmiliaRomagna","size":3661,"colname":"X2"},{"name":"FriuliV. Giulia","size":750,"colname":"X2"},{"name":"Lazio","size":4047,"colname":"X2"},{"name":"Liguria","size":1735,"colname":"X2"},{"name":"Lombardia","size":12798,"colname":"X2"},{"name":"Marche","size":575,"colname":"X2"},{"name":"Molise","size":43,"colname":"X2"},{"name":"Piemonte","size":6930,"colname":"X2"},{"name":"Puglia","size":1149,"colname":"X2"},{"name":"Regione italiana non indicata","size":657,"colname":"X2"},{"name":"Sardegna","size":418,"colname":"X2"},{"name":"Sicilia","size":780,"colname":"X2"},{"name":"Toscana","size":68513,"colname":"X2"},{"name":"Trento","size":553,"colname":"X2"},{"name":"Umbria","size":856,"colname":"X2"},{"name":"Valle d'Aosta","size":107,"colname":"X2"},{"name":"Veneto","size":2957,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 5: Arrivi dall’ Italia Anno 2009
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2010"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-e475449650860b3b00b7" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-e475449650860b3b00b7">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":676,"colname":"X2"},{"name":"Basilicata","size":235,"colname":"X2"},{"name":"Bolzano","size":250,"colname":"X2"},{"name":"Calabria","size":361,"colname":"X2"},{"name":"Campania","size":2706,"colname":"X2"},{"name":"EmiliaRomagna","size":3905,"colname":"X2"},{"name":"FriuliV. Giulia","size":506,"colname":"X2"},{"name":"Lazio","size":4398,"colname":"X2"},{"name":"Liguria","size":2025,"colname":"X2"},{"name":"Lombardia","size":13207,"colname":"X2"},{"name":"Marche","size":569,"colname":"X2"},{"name":"Molise","size":64,"colname":"X2"},{"name":"Piemonte","size":8612,"colname":"X2"},{"name":"Puglia","size":869,"colname":"X2"},{"name":"Regione italiana non indicata","size":550,"colname":"X2"},{"name":"Sardegna","size":305,"colname":"X2"},{"name":"Sicilia","size":897,"colname":"X2"},{"name":"Toscana","size":66018,"colname":"X2"},{"name":"Trento","size":647,"colname":"X2"},{"name":"Umbria","size":1016,"colname":"X2"},{"name":"Valle d'Aosta","size":159,"colname":"X2"},{"name":"Veneto","size":2705,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6: Arrivi dall’ Italia Anno 2010
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2011"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5e6e399a6cb972ace47e" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-5e6e399a6cb972ace47e">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":573,"colname":"X2"},{"name":"Basilicata","size":80,"colname":"X2"},{"name":"Bolzano","size":188,"colname":"X2"},{"name":"Calabria","size":394,"colname":"X2"},{"name":"Campania","size":2291,"colname":"X2"},{"name":"EmiliaRomagna","size":3688,"colname":"X2"},{"name":"FriuliV. Giulia","size":521,"colname":"X2"},{"name":"Lazio","size":4797,"colname":"X2"},{"name":"Liguria","size":2144,"colname":"X2"},{"name":"Lombardia","size":14059,"colname":"X2"},{"name":"Marche","size":805,"colname":"X2"},{"name":"Molise","size":85,"colname":"X2"},{"name":"Piemonte","size":7205,"colname":"X2"},{"name":"Puglia","size":823,"colname":"X2"},{"name":"Regione italiana non indicata","size":806,"colname":"X2"},{"name":"Sardegna","size":190,"colname":"X2"},{"name":"Sicilia","size":1030,"colname":"X2"},{"name":"Toscana","size":72363,"colname":"X2"},{"name":"Trento","size":773,"colname":"X2"},{"name":"Umbria","size":924,"colname":"X2"},{"name":"Valle d'Aosta","size":211,"colname":"X2"},{"name":"Veneto","size":3215,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 7: Arrivi dall’ Italia Anno 2011
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2012"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6f828703fdaf8256dd05" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-6f828703fdaf8256dd05">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":423,"colname":"X2"},{"name":"Basilicata","size":103,"colname":"X2"},{"name":"Bolzano","size":371,"colname":"X2"},{"name":"Calabria","size":259,"colname":"X2"},{"name":"Campania","size":1706,"colname":"X2"},{"name":"EmiliaRomagna","size":3691,"colname":"X2"},{"name":"FriuliV. Giulia","size":366,"colname":"X2"},{"name":"Lazio","size":3621,"colname":"X2"},{"name":"Liguria","size":1778,"colname":"X2"},{"name":"Lombardia","size":13810,"colname":"X2"},{"name":"Marche","size":440,"colname":"X2"},{"name":"Molise","size":74,"colname":"X2"},{"name":"Piemonte","size":5409,"colname":"X2"},{"name":"Puglia","size":738,"colname":"X2"},{"name":"Regione italiana non indicata","size":1025,"colname":"X2"},{"name":"Sardegna","size":164,"colname":"X2"},{"name":"Sicilia","size":795,"colname":"X2"},{"name":"Toscana","size":56669,"colname":"X2"},{"name":"Trento","size":508,"colname":"X2"},{"name":"Umbria","size":815,"colname":"X2"},{"name":"Valle d'Aosta","size":175,"colname":"X2"},{"name":"Veneto","size":2723,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 8: Arrivi dall’ Italia Anno 2012
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2013"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-f476130033f34839e602" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-f476130033f34839e602">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":547,"colname":"X2"},{"name":"Basilicata","size":107,"colname":"X2"},{"name":"Bolzano","size":603,"colname":"X2"},{"name":"Calabria","size":265,"colname":"X2"},{"name":"Campania","size":1847,"colname":"X2"},{"name":"EmiliaRomagna","size":3910,"colname":"X2"},{"name":"FriuliV. Giulia","size":462,"colname":"X2"},{"name":"Lazio","size":4468,"colname":"X2"},{"name":"Liguria","size":2167,"colname":"X2"},{"name":"Lombardia","size":14640,"colname":"X2"},{"name":"Marche","size":379,"colname":"X2"},{"name":"Molise","size":82,"colname":"X2"},{"name":"Piemonte","size":5637,"colname":"X2"},{"name":"Puglia","size":827,"colname":"X2"},{"name":"Regione italiana non indicata","size":38,"colname":"X2"},{"name":"Sardegna","size":176,"colname":"X2"},{"name":"Sicilia","size":846,"colname":"X2"},{"name":"Toscana","size":55332,"colname":"X2"},{"name":"Trento","size":540,"colname":"X2"},{"name":"Umbria","size":885,"colname":"X2"},{"name":"Valle d'Aosta","size":156,"colname":"X2"},{"name":"Veneto","size":3079,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 9: Arrivi dall’ Italia Anno 2013
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2014"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-09a56bd23d44138adfac" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-09a56bd23d44138adfac">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":474,"colname":"X2"},{"name":"Basilicata","size":99,"colname":"X2"},{"name":"Bolzano","size":553,"colname":"X2"},{"name":"Calabria","size":374,"colname":"X2"},{"name":"Campania","size":1679,"colname":"X2"},{"name":"EmiliaRomagna","size":4176,"colname":"X2"},{"name":"FriuliV. Giulia","size":461,"colname":"X2"},{"name":"Lazio","size":4187,"colname":"X2"},{"name":"Liguria","size":2042,"colname":"X2"},{"name":"Lombardia","size":14985,"colname":"X2"},{"name":"Marche","size":471,"colname":"X2"},{"name":"Molise","size":54,"colname":"X2"},{"name":"Piemonte","size":5981,"colname":"X2"},{"name":"Puglia","size":631,"colname":"X2"},{"name":"Regione italiana non indicata","size":36,"colname":"X2"},{"name":"Sardegna","size":473,"colname":"X2"},{"name":"Sicilia","size":606,"colname":"X2"},{"name":"Toscana","size":55995,"colname":"X2"},{"name":"Trento","size":587,"colname":"X2"},{"name":"Umbria","size":708,"colname":"X2"},{"name":"Valle d'Aosta","size":231,"colname":"X2"},{"name":"Veneto","size":2890,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 10: Arrivi dall’ Italia Anno 2014
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2015"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8edb72f9f68f77226289" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-8edb72f9f68f77226289">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":531,"colname":"X2"},{"name":"Basilicata","size":121,"colname":"X2"},{"name":"Bolzano","size":584,"colname":"X2"},{"name":"Calabria","size":386,"colname":"X2"},{"name":"Campania","size":2117,"colname":"X2"},{"name":"EmiliaRomagna","size":5064,"colname":"X2"},{"name":"FriuliV. Giulia","size":626,"colname":"X2"},{"name":"Lazio","size":5213,"colname":"X2"},{"name":"Liguria","size":2691,"colname":"X2"},{"name":"Lombardia","size":16674,"colname":"X2"},{"name":"Marche","size":639,"colname":"X2"},{"name":"Molise","size":60,"colname":"X2"},{"name":"Piemonte","size":6700,"colname":"X2"},{"name":"Puglia","size":830,"colname":"X2"},{"name":"Regione italiana non indicata","size":2804,"colname":"X2"},{"name":"Sardegna","size":285,"colname":"X2"},{"name":"Sicilia","size":766,"colname":"X2"},{"name":"Toscana","size":65554,"colname":"X2"},{"name":"Trento","size":703,"colname":"X2"},{"name":"Umbria","size":895,"colname":"X2"},{"name":"Valle d'Aosta","size":178,"colname":"X2"},{"name":"Veneto","size":3107,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 11: Arrivi dall’ Italia Anno 2015
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2016"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1bfc80700ea3f48787cb" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-1bfc80700ea3f48787cb">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":431,"colname":"X2"},{"name":"Basilicata","size":128,"colname":"X2"},{"name":"Bolzano","size":590,"colname":"X2"},{"name":"Calabria","size":258,"colname":"X2"},{"name":"Campania","size":1577,"colname":"X2"},{"name":"EmiliaRomagna","size":4751,"colname":"X2"},{"name":"FriuliV. Giulia","size":529,"colname":"X2"},{"name":"Lazio","size":4556,"colname":"X2"},{"name":"Liguria","size":2523,"colname":"X2"},{"name":"Lombardia","size":16296,"colname":"X2"},{"name":"Marche","size":807,"colname":"X2"},{"name":"Molise","size":39,"colname":"X2"},{"name":"Piemonte","size":6765,"colname":"X2"},{"name":"Puglia","size":667,"colname":"X2"},{"name":"Regione italiana non indicata","size":3572,"colname":"X2"},{"name":"Sardegna","size":172,"colname":"X2"},{"name":"Sicilia","size":512,"colname":"X2"},{"name":"Toscana","size":68764,"colname":"X2"},{"name":"Trento","size":625,"colname":"X2"},{"name":"Umbria","size":814,"colname":"X2"},{"name":"Valle d'Aosta","size":195,"colname":"X2"},{"name":"Veneto","size":3029,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 12: Arrivi dall’ Italia Anno 2016
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2017"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b1ab4e863b3239025728" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-b1ab4e863b3239025728">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":586,"colname":"X2"},{"name":"Basilicata","size":123,"colname":"X2"},{"name":"Bolzano","size":616,"colname":"X2"},{"name":"Calabria","size":300,"colname":"X2"},{"name":"Campania","size":1704,"colname":"X2"},{"name":"EmiliaRomagna","size":5259,"colname":"X2"},{"name":"FriuliV. Giulia","size":733,"colname":"X2"},{"name":"Lazio","size":5391,"colname":"X2"},{"name":"Liguria","size":2664,"colname":"X2"},{"name":"Lombardia","size":17031,"colname":"X2"},{"name":"Marche","size":874,"colname":"X2"},{"name":"Molise","size":47,"colname":"X2"},{"name":"Piemonte","size":6838,"colname":"X2"},{"name":"Puglia","size":693,"colname":"X2"},{"name":"Regione italiana non indicata","size":341,"colname":"X2"},{"name":"Sardegna","size":301,"colname":"X2"},{"name":"Sicilia","size":618,"colname":"X2"},{"name":"Toscana","size":79034,"colname":"X2"},{"name":"Trento","size":713,"colname":"X2"},{"name":"Umbria","size":970,"colname":"X2"},{"name":"Valle d'Aosta","size":146,"colname":"X2"},{"name":"Veneto","size":3084,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 13: Arrivi dall’ Italia Anno 2017
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2018"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2eae256d31958bc0b346" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-2eae256d31958bc0b346">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":440,"colname":"X2"},{"name":"Basilicata","size":168,"colname":"X2"},{"name":"Bolzano","size":732,"colname":"X2"},{"name":"Calabria","size":384,"colname":"X2"},{"name":"Campania","size":2174,"colname":"X2"},{"name":"EmiliaRomagna","size":5323,"colname":"X2"},{"name":"FriuliV. Giulia","size":605,"colname":"X2"},{"name":"Lazio","size":5540,"colname":"X2"},{"name":"Liguria","size":2593,"colname":"X2"},{"name":"Lombardia","size":17563,"colname":"X2"},{"name":"Marche","size":523,"colname":"X2"},{"name":"Molise","size":101,"colname":"X2"},{"name":"Piemonte","size":6883,"colname":"X2"},{"name":"Puglia","size":780,"colname":"X2"},{"name":"Regione italiana non indicata","size":1452,"colname":"X2"},{"name":"Sardegna","size":320,"colname":"X2"},{"name":"Sicilia","size":715,"colname":"X2"},{"name":"Toscana","size":68780,"colname":"X2"},{"name":"Trento","size":679,"colname":"X2"},{"name":"Umbria","size":982,"colname":"X2"},{"name":"Valle d'Aosta","size":179,"colname":"X2"},{"name":"Veneto","size":3075,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 14: Arrivi dall’ Italia Anno 2018
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2019"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-bf2b44c54685d9f47694" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-bf2b44c54685d9f47694">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":500,"colname":"X2"},{"name":"Basilicata","size":244,"colname":"X2"},{"name":"Bolzano","size":856,"colname":"X2"},{"name":"Calabria","size":400,"colname":"X2"},{"name":"Campania","size":2394,"colname":"X2"},{"name":"EmiliaRomagna","size":6335,"colname":"X2"},{"name":"FriuliV. Giulia","size":639,"colname":"X2"},{"name":"Lazio","size":6467,"colname":"X2"},{"name":"Liguria","size":3038,"colname":"X2"},{"name":"Lombardia","size":19659,"colname":"X2"},{"name":"Marche","size":690,"colname":"X2"},{"name":"Molise","size":99,"colname":"X2"},{"name":"Piemonte","size":7119,"colname":"X2"},{"name":"Puglia","size":1188,"colname":"X2"},{"name":"Regione italiana non indicata","size":132,"colname":"X2"},{"name":"Sardegna","size":394,"colname":"X2"},{"name":"Sicilia","size":607,"colname":"X2"},{"name":"Toscana","size":68220,"colname":"X2"},{"name":"Trento","size":811,"colname":"X2"},{"name":"Umbria","size":1264,"colname":"X2"},{"name":"Valle d'Aosta","size":224,"colname":"X2"},{"name":"Veneto","size":3935,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 15: Arrivi dall’ Italia Anno 2019
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2020"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-0ac0d25334e9918f15d8" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-0ac0d25334e9918f15d8">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":339,"colname":"X2"},{"name":"Basilicata","size":152,"colname":"X2"},{"name":"Bolzano","size":746,"colname":"X2"},{"name":"Calabria","size":221,"colname":"X2"},{"name":"Campania","size":1473,"colname":"X2"},{"name":"EmiliaRomagna","size":4634,"colname":"X2"},{"name":"FriuliV. Giulia","size":497,"colname":"X2"},{"name":"Lazio","size":4367,"colname":"X2"},{"name":"Liguria","size":2352,"colname":"X2"},{"name":"Lombardia","size":15271,"colname":"X2"},{"name":"Marche","size":410,"colname":"X2"},{"name":"Molise","size":62,"colname":"X2"},{"name":"Piemonte","size":6110,"colname":"X2"},{"name":"Puglia","size":520,"colname":"X2"},{"name":"Regione italiana non indicata","size":223,"colname":"X2"},{"name":"Sardegna","size":189,"colname":"X2"},{"name":"Sicilia","size":518,"colname":"X2"},{"name":"Toscana","size":55381,"colname":"X2"},{"name":"Trento","size":700,"colname":"X2"},{"name":"Umbria","size":1175,"colname":"X2"},{"name":"Valle d'Aosta","size":199,"colname":"X2"},{"name":"Veneto","size":2854,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 16: Arrivi dall’ Italia Anno 2020
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2021"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-708bd63f4d5bcfcf6b83" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-708bd63f4d5bcfcf6b83">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":405,"colname":"X2"},{"name":"Basilicata","size":299,"colname":"X2"},{"name":"Bolzano","size":874,"colname":"X2"},{"name":"Calabria","size":366,"colname":"X2"},{"name":"Campania","size":2302,"colname":"X2"},{"name":"EmiliaRomagna","size":5584,"colname":"X2"},{"name":"FriuliV. Giulia","size":576,"colname":"X2"},{"name":"Lazio","size":5493,"colname":"X2"},{"name":"Liguria","size":2894,"colname":"X2"},{"name":"Lombardia","size":19413,"colname":"X2"},{"name":"Marche","size":666,"colname":"X2"},{"name":"Molise","size":86,"colname":"X2"},{"name":"Piemonte","size":7817,"colname":"X2"},{"name":"Puglia","size":903,"colname":"X2"},{"name":"Regione italiana non indicata","size":441,"colname":"X2"},{"name":"Sardegna","size":222,"colname":"X2"},{"name":"Sicilia","size":695,"colname":"X2"},{"name":"Toscana","size":64477,"colname":"X2"},{"name":"Trento","size":1044,"colname":"X2"},{"name":"Umbria","size":1072,"colname":"X2"},{"name":"Valle d'Aosta","size":279,"colname":"X2"},{"name":"Veneto","size":3893,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 17: Arrivi dall’ Italia Anno 2021
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:piechart2022"></span>
+<div class="sunburst html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-263340cd13fa8e7eb95a" style="width:624px;height:384px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-263340cd13fa8e7eb95a">{"x":{"data":{"children":[{"name":"Italia","children":[{"name":"Abruzzo","size":448,"colname":"X2"},{"name":"Basilicata","size":352,"colname":"X2"},{"name":"Bolzano","size":1001,"colname":"X2"},{"name":"Calabria","size":475,"colname":"X2"},{"name":"Campania","size":2762,"colname":"X2"},{"name":"EmiliaRomagna","size":6247,"colname":"X2"},{"name":"FriuliV. Giulia","size":601,"colname":"X2"},{"name":"Lazio","size":6932,"colname":"X2"},{"name":"Liguria","size":3353,"colname":"X2"},{"name":"Lombardia","size":21195,"colname":"X2"},{"name":"Marche","size":964,"colname":"X2"},{"name":"Molise","size":100,"colname":"X2"},{"name":"Piemonte","size":8484,"colname":"X2"},{"name":"Puglia","size":1096,"colname":"X2"},{"name":"Regione italiana non indicata","size":880,"colname":"X2"},{"name":"Sardegna","size":323,"colname":"X2"},{"name":"Sicilia","size":923,"colname":"X2"},{"name":"Toscana","size":67524,"colname":"X2"},{"name":"Trento","size":1011,"colname":"X2"},{"name":"Umbria","size":1283,"colname":"X2"},{"name":"Valle d'Aosta","size":240,"colname":"X2"},{"name":"Veneto","size":4199,"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":[],"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 18: Arrivi dall’ Italia Anno 2022
+</p>
+</div>
+</div>
+<h3 id="distribuzione-degli-arrivi-a-piombino-anno-2019">Distribuzione degli arrivi a Piombino Anno 2019</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-efb6c677cdf040f233f7" class="amChart4 html-widget " style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-efb6c677cdf040f233f7">{"x":{"tag":{"name":"AmPieChart","attribs":{"data":{"group":["Abruzzo","Basilicata","Bolzano","Calabria","Campania","EmiliaRomagna","FriuliV. Giulia","Lazio","Liguria","Lombardia","Marche","Molise","Piemonte","Puglia","Regione italiana non indicata","Sardegna","Sicilia","Toscana","Trento","Umbria","Valle d'Aosta","Veneto"],"2005":[331,88,257,162,1631,2556,419,3284,1463,9176,555,63,5811,701,10533,342,753,46196,288,687,119,1810],"2006":[304,69,169,155,1907,2356,310,2932,1399,9247,364,96,5520,801,14954,221,440,47633,397,708,90,1889],"2007":[487,131,192,383,2743,3695,510,4131,1821,12723,793,281,7376,1139,739,448,685,63899,558,1071,124,2837],"2008":[499,168,260,371,2797,3666,845,4146,2190,13288,898,82,7672,1278,468,524,1104,63613,581,1021,141,3226],"2009":[520,132,252,351,2456,3661,750,4047,1735,12798,575,43,6930,1149,657,418,780,68513,553,856,107,2957],"2010":[676,235,250,361,2706,3905,506,4398,2025,13207,569,64,8612,869,550,305,897,66018,647,1016,159,2705],"2011":[573,80,188,394,2291,3688,521,4797,2144,14059,805,85,7205,823,806,190,1030,72363,773,924,211,3215],"2012":[423,103,371,259,1706,3691,366,3621,1778,13810,440,74,5409,738,1025,164,795,56669,508,815,175,2723],"2013":[547,107,603,265,1847,3910,462,4468,2167,14640,379,82,5637,827,38,176,846,55332,540,885,156,3079],"2014":[474,99,553,374,1679,4176,461,4187,2042,14985,471,54,5981,631,36,473,606,55995,587,708,231,2890],"2015":[531,121,584,386,2117,5064,626,5213,2691,16674,639,60,6700,830,2804,285,766,65554,703,895,178,3107],"2016":[431,128,590,258,1577,4751,529,4556,2523,16296,807,39,6765,667,3572,172,512,68764,625,814,195,3029],"2017":[586,123,616,300,1704,5259,733,5391,2664,17031,874,47,6838,693,341,301,618,79034,713,970,146,3084],"2018":[440,168,732,384,2174,5323,605,5540,2593,17563,523,101,6883,780,1452,320,715,68780,679,982,179,3075],"2019":[500,244,856,400,2394,6335,639,6467,3038,19659,690,99,7119,1188,132,394,607,68220,811,1264,224,3935],"2020":[339,152,746,221,1473,4634,497,4367,2352,15271,410,62,6110,520,223,189,518,55381,700,1175,199,2854],"2021":[405,299,874,366,2302,5584,576,5493,2894,19413,666,86,7817,903,441,222,695,64477,1044,1072,279,3893],"2022":[448,352,1001,475,2762,6247,601,6932,3353,21195,964,100,8484,1096,880,323,923,67524,1011,1283,240,4199]},"category":"group","value":"2019","innerRadius":0,"threeD":true,"depth":100,"colorStep":3,"variableRadius":false,"variableDepth":true,"animated":true,"legend":{"position":"bottom","scrollable":false,"maxWidth":220,"itemsWidth":20,"itemsHeight":20},"width":"100%","height":"400px","export":false,"chartId":"piechart-9w22VHwxalOncQI"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+<h1 id="come-si-è-evoluto-il-pernottamento-medio-nel-corso-del-tempo">Come si è evoluto il pernottamento medio nel corso del tempo?</h1>
+<h2 id="quali-sono-i-turisti-che-pernottano-di-più-a-piombino">Quali sono i turisti che pernottano di più a Piombino</h2>
+<h1 id="conclusioni">Conclusioni</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Walker (2024, June 30). The Mind Walker: Il Turismo a Piombino: uno sguardo ai dati. Retrieved from https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{walker2024il,
+  author = {Walker, The Mind},
+  title = {The Mind Walker: Il Turismo a Piombino: uno sguardo ai dati},
+  url = {https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/},
+  year = {2024}
+}</pre>
+</div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

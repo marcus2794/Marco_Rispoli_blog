@@ -14,17 +14,33 @@
       <link>https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-brazil</link>
       <description>Coming to this wonderful country will change completely your point of view. Be ready to be 
 in a rollercoaster, a good one!</description>
+      <category>turismo</category>
+      <category>viaggiare</category>
       <guid>https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-brazil</guid>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <media:content url="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-brazil/brazil/house_goias.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
-      <title>The Sharpe Ratio</title>
-      <dc:creator>Nora Jones</dc:creator>
-      <link>https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-the-sharpe-ratio</link>
-      <description>A short description of the post.</description>
-      <guid>https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-the-sharpe-ratio</guid>
+      <title>On the Self-Respect</title>
+      <dc:creator>The Mind Walker</dc:creator>
+      <link>https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-self-respect</link>
+      <description>A beautiful text by Joan Didion, click on the link for the full text https://yale.learningu.org/download/85e1ca3695ab0e000f2c8bf10be1a59d/S574_didion_respect.pdf.</description>
+      <category>psicologia</category>
+      <category>letteratura</category>
+      <guid>https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-self-respect</guid>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-self-respect/images/self.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Il Turismo a Piombino: uno sguardo ai dati</title>
+      <dc:creator>The Mind Walker</dc:creator>
+      <link>https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo</link>
+      <description>Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino.</description>
+      <category>turismo</category>
+      <category>grafici</category>
+      <guid>https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo</guid>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://beta.rstudioconnect.com/content/11424/posts/2024-06-30-turismo/images/faro_piombino.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

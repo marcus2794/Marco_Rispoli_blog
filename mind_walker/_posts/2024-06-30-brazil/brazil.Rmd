@@ -1,5 +1,9 @@
 ---
 title: "Brazil: a cultural shock"
+categories:
+  - turismo
+  - viaggiare
+  - letteratura
 description: |
   Coming to this wonderful country will change completely your point of view. Be ready to be 
   in a rollercoaster, a good one!
