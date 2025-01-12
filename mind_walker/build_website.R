@@ -6,6 +6,3 @@ library("markdown")
 
 rmarkdown::clean_site()
 rmarkdown::render_site()
-
-# create a new post
-create_post("self-respect")

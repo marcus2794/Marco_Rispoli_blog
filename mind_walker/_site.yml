@@ -1,9 +1,8 @@
-name: "mind_walker"
+name: "."
 title: "The Mind Walker"
 description: |
   The Mind Walker
-output_dir: "_site"
-base_url: https://beta.rstudioconnect.com/content/11424/
+output_dir: "docs"
 navbar:
   logo: images/mind.jpg
   right:
@@ -11,5 +10,6 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Posts"
+      href: gallery.html      
 output: distill::distill_article
-

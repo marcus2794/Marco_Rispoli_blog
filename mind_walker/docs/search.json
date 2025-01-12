@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2025-01-12T23:25:01+01:00"
+    },
+    {
+      "path": "gallery.html",
+      "title": "Gallery of featured posts",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2025-01-12T23:25:03+01:00"
+    },
+    {
+      "path": "index.html",
+      "title": "The Mind Walker",
+      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2025-01-12T23:25:04+01:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
