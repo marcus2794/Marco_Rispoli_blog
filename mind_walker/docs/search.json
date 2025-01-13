@@ -3,25 +3,25 @@
     {
       "path": "about.html",
       "title": "About this site",
-      "description": "Some additional details about the website",
+      "description": "I am an eager walker in real life, it makes me thinking and clear my thoughts; but what I like even more is to walk with my mind and tracks my experiences. I hope this blog made you thinking and motivate you to do small extraordinary things in life. Be humble and proud of yourself!",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2025-01-12T23:25:01+01:00"
+      "contents": "\n\n\nA Walker.\n\n\n\n\n\n\n\n",
+      "last_modified": "2025-01-14T00:24:35+01:00"
     },
     {
       "path": "gallery.html",
       "title": "Gallery of featured posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2025-01-12T23:25:03+01:00"
+      "last_modified": "2025-01-14T00:24:36+01:00"
     },
     {
       "path": "index.html",
-      "title": "The Mind Walker",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "title": "Walk on the Wild Side",
+      "description": "Welcome to the Mind Walker blog, be ready to walk and to be surprised. I hope you enjoy it!\n",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2025-01-12T23:25:04+01:00"
+      "contents": "\n\nShe says, “Hey babe, take a walk on the wild side”\n\nMind-blowing.\n\n\n\n\n\n\n\n",
+      "last_modified": "2025-01-14T00:24:37+01:00"
     }
   ],
   "collections": ["posts/posts.json"]

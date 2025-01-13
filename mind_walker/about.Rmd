@@ -1,10 +1,15 @@
 ---
 title: "About this site"
 description: |
-  Some additional details about the website
+  I am an eager walker in real life, it makes me thinking and clear my thoughts; but what I like even more is to walk with my mind and tracks my experiences. I hope this blog made you thinking and motivate you to do small extraordinary things in life. Be humble and proud of yourself!
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+<div style="text-align: center">
+
+<img src="images/walker.jpg" width="400px" min-width="300px" max-width="300px" />
+<p style="text-align:center;"> A Walker.</p>
+</div>
+
+<div style="text-align: center">
+
 

@@ -8,8 +8,8 @@ description: |
   Coming to this wonderful country will change completely your point of view. Be ready to be 
   in a rollercoaster, a good one!
 author:
-  - name: John Doe
-    affiliation: Independent Writer
+  - name: The Mind Walker
+    affiliation: Indipendent Traveler
 date: 2024-06-30
 output:
   distill::distill_article:

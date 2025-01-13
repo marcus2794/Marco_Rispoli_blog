@@ -1,18 +1,17 @@
 ---
-title: "The Mind Walker"
+title: "Walk on the Wild Side"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Welcome to the Mind Walker blog, be ready to walk and to be surprised. I hope you enjoy it!
 site: distill::distill_website
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
+<div style="text-align: center">
 
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
+She says, "Hey babe, take a walk on the wild side"
 
-```
+<img src="images/mind.jpg" width="500px" min-width="400px" max-width="400px" />
+<p style="text-align:center;"> Mind-blowing.</p>
+</div>
 
+<div style="text-align: center">

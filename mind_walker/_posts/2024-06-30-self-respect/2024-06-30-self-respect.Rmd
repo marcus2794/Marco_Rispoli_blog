@@ -4,7 +4,7 @@ categories:
   - psicologia
   - letteratura
 description: |
-  A beautiful text by Joan Didion, click on the link for the full text https://yale.learningu.org/download/85e1ca3695ab0e000f2c8bf10be1a59d/S574_didion_respect.pdf.
+  A beautiful text by Joan Didion, an American writer and journalist. If you search a way to understand where self-esteem comes from and the true meaning of self-respect, read this.
 author:
   - name: The Mind Walker
 date: 2024-06-30

@@ -7,7 +7,6 @@ description: |
   Il sito della regione Toscana mette a disposizione i dati sui flussi di turismo https://www.regione.toscana.it/statistiche/banca-dati-turismo. Ho cercato di fare delle infografiche per il comune di Piombino.
 author:
   - name: The Mind Walker
-    affiliation: Data Lover
 date: 2024-06-30
 output:
   distill::distill_article:
