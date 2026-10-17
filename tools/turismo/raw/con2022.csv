@@ -1,0 +1,517 @@
+Anno;Comune;Cod Istat Comune;Sigla Provincia;Tipologia Macro;media_strutture;media_camere;media_letti;media_bagni
+2022;Abbadia San Salvatore;052001;SI;Esercizi Alberghieri;19;419;855;460
+2022;Abbadia San Salvatore;052001;SI;Esercizi Extralberghieri;12;62;142;62
+2022;Abetone Cutigliano;047023;PT;Esercizi Alberghieri;19;471;930;489
+2022;Abetone Cutigliano;047023;PT;Esercizi Extralberghieri;27;394;1395;224
+2022;Agliana;047002;PT;Esercizi Alberghieri;1;9;21;10
+2022;Agliana;047002;PT;Esercizi Extralberghieri;4;25;40;22
+2022;Altopascio;046001;LU;Esercizi Alberghieri;4;131;219;140
+2022;Altopascio;046001;LU;Esercizi Extralberghieri;24;106;240;82
+2022;Anghiari;051001;AR;Esercizi Alberghieri;4;109;302;109
+2022;Anghiari;051001;AR;Esercizi Extralberghieri;55;214;511;199
+2022;Arcidosso;053001;GR;Esercizi Alberghieri;8;243;564;252
+2022;Arcidosso;053001;GR;Esercizi Extralberghieri;35;211;482;202
+2022;Arezzo;051002;AR;Esercizi Alberghieri;26;1051;2207;1081
+2022;Arezzo;051002;AR;Esercizi Extralberghieri;253;997;2355;946
+2022;Asciano;052002;SI;Esercizi Alberghieri;7;166;365;188
+2022;Asciano;052002;SI;Esercizi Extralberghieri;67;407;984;425
+2022;Aulla;045001;MS;Esercizi Alberghieri;2;54;105;62
+2022;Aulla;045001;MS;Esercizi Extralberghieri;16;49;120;46
+2022;Badia Tedalda;051003;AR;Esercizi Alberghieri;5;52;100;47
+2022;Badia Tedalda;051003;AR;Esercizi Extralberghieri;6;44;143;46
+2022;Bagni di Lucca;046002;LU;Esercizi Alberghieri;8;131;216;134
+2022;Bagni di Lucca;046002;LU;Esercizi Extralberghieri;27;120;257;96
+2022;Bagno a Ripoli;048001;FI;Esercizi Alberghieri;3;149;323;165
+2022;Bagno a Ripoli;048001;FI;Esercizi Extralberghieri;44;268;610;276
+2022;Bagnone;045002;MS;Esercizi Extralberghieri;17;94;220;90
+2022;Barberino di Mugello;048002;FI;Esercizi Alberghieri;7;235;506;245
+2022;Barberino di Mugello;048002;FI;Esercizi Extralberghieri;36;333;754;246
+2022;Barberino Tavarnelle;048054;FI;Esercizi Alberghieri;7;285;613;331
+2022;Barberino Tavarnelle;048054;FI;Esercizi Extralberghieri;144;1166;2553;966
+2022;Barga;046003;LU;Esercizi Alberghieri;7;329;627;361
+2022;Barga;046003;LU;Esercizi Extralberghieri;49;233;498;189
+2022;Bibbiena;051004;AR;Esercizi Alberghieri;4;66;126;59
+2022;Bibbiena;051004;AR;Esercizi Extralberghieri;34;218;503;184
+2022;Bibbona;049001;LI;Esercizi Alberghieri;9;425;1054;465
+2022;Bibbona;049001;LI;Esercizi Extralberghieri;86;4655;17444;2433
+2022;Bientina;050001;PI;Esercizi Alberghieri;3;64;141;67
+2022;Bientina;050001;PI;Esercizi Extralberghieri;3;7;13;7
+2022;Borgo a Mozzano;046004;LU;Esercizi Alberghieri;2;31;64;32
+2022;Borgo a Mozzano;046004;LU;Esercizi Extralberghieri;14;86;172;75
+2022;Borgo San Lorenzo;048004;FI;Esercizi Alberghieri;7;270;535;284
+2022;Borgo San Lorenzo;048004;FI;Esercizi Extralberghieri;32;220;602;180
+2022;Bucine;051005;AR;Esercizi Alberghieri;2;18;40;27
+2022;Bucine;051005;AR;Esercizi Extralberghieri;79;753;2350;728
+2022;Buggiano;047003;PT;Esercizi Alberghieri;2;15;28;15
+2022;Buggiano;047003;PT;Esercizi Extralberghieri;20;87;164;83
+2022;Buonconvento;052003;SI;Esercizi Alberghieri;2;33;77;40
+2022;Buonconvento;052003;SI;Esercizi Extralberghieri;35;220;611;268
+2022;Buti;050002;PI;Esercizi Extralberghieri;17;72;191;80
+2022;Calci;050003;PI;Esercizi Alberghieri;1;9;19;4
+2022;Calci;050003;PI;Esercizi Extralberghieri;21;139;298;166
+2022;Calcinaia;050004;PI;Esercizi Alberghieri;1;21;43;23
+2022;Calcinaia;050004;PI;Esercizi Extralberghieri;4;14;31;15
+2022;Calenzano;048005;FI;Esercizi Alberghieri;8;585;1219;607
+2022;Calenzano;048005;FI;Esercizi Extralberghieri;13;79;170;63
+2022;Camaiore;046005;LU;Esercizi Alberghieri;79;2320;4655;2494
+2022;Camaiore;046005;LU;Esercizi Extralberghieri;90;525;1334;459
+2022;Campagnatico;053002;GR;Esercizi Alberghieri;2;5;21;9
+2022;Campagnatico;053002;GR;Esercizi Extralberghieri;48;230;498;218
+2022;Campi Bisenzio;048006;FI;Esercizi Alberghieri;7;420;852;450
+2022;Campi Bisenzio;048006;FI;Esercizi Extralberghieri;17;101;201;87
+2022;Campiglia Marittima;049002;LI;Esercizi Alberghieri;9;147;327;176
+2022;Campiglia Marittima;049002;LI;Esercizi Extralberghieri;81;690;1996;610
+2022;Campo nell'Elba;049003;LI;Esercizi Alberghieri;42;1333;3058;1446
+2022;Campo nell'Elba;049003;LI;Esercizi Extralberghieri;55;846;3204;627
+2022;Camporgiano;046006;LU;Esercizi Alberghieri;0;2;5;3
+2022;Camporgiano;046006;LU;Esercizi Extralberghieri;15;85;263;78
+2022;Cantagallo;100001;PO;Esercizi Extralberghieri;7;22;82;21
+2022;Capalbio;053003;GR;Esercizi Alberghieri;8;173;528;198
+2022;Capalbio;053003;GR;Esercizi Extralberghieri;72;741;2240;493
+2022;Capannoli;050005;PI;Esercizi Alberghieri;1;11;36;9
+2022;Capannoli;050005;PI;Esercizi Extralberghieri;6;52;116;51
+2022;Capannori;046007;LU;Esercizi Alberghieri;5;180;350;187
+2022;Capannori;046007;LU;Esercizi Extralberghieri;113;522;1186;572
+2022;Capoliveri;049004;LI;Esercizi Alberghieri;43;1385;3886;1521
+2022;Capoliveri;049004;LI;Esercizi Extralberghieri;117;2671;10073;1509
+2022;Capolona;051006;AR;Esercizi Extralberghieri;19;136;304;131
+2022;Capraia e Limite;048008;FI;Esercizi Alberghieri;2;29;50;31
+2022;Capraia e Limite;048008;FI;Esercizi Extralberghieri;12;217;591;109
+2022;Capraia Isola;049005;LI;Esercizi Alberghieri;3;87;198;93
+2022;Capraia Isola;049005;LI;Esercizi Extralberghieri;5;78;308;48
+2022;Caprese Michelangelo;051007;AR;Esercizi Alberghieri;3;35;89;60
+2022;Caprese Michelangelo;051007;AR;Esercizi Extralberghieri;22;164;492;120
+2022;Careggine;046008;LU;Esercizi Alberghieri;3;33;70;35
+2022;Careggine;046008;LU;Esercizi Extralberghieri;4;16;34;15
+2022;Carmignano;100002;PO;Esercizi Alberghieri;3;60;116;64
+2022;Carmignano;100002;PO;Esercizi Extralberghieri;38;240;517;225
+2022;Carrara;045003;MS;Esercizi Alberghieri;12;229;464;244
+2022;Carrara;045003;MS;Esercizi Extralberghieri;62;316;988;238
+2022;Casale Marittimo;050006;PI;Esercizi Alberghieri;1;58;217;58
+2022;Casale Marittimo;050006;PI;Esercizi Extralberghieri;12;324;1195;151
+2022;Casciana Terme Lari;050040;PI;Esercizi Alberghieri;12;272;596;305
+2022;Casciana Terme Lari;050040;PI;Esercizi Extralberghieri;49;247;630;237
+2022;Cascina;050008;PI;Esercizi Alberghieri;2;86;184;90
+2022;Cascina;050008;PI;Esercizi Extralberghieri;36;126;259;111
+2022;Casola in Lunigiana;045004;MS;Esercizi Extralberghieri;8;42;105;36
+2022;Casole d'Elsa;052004;SI;Esercizi Alberghieri;5;103;214;110
+2022;Casole d'Elsa;052004;SI;Esercizi Extralberghieri;63;387;1222;555
+2022;Castagneto Carducci;049006;LI;Esercizi Alberghieri;18;631;1547;672
+2022;Castagneto Carducci;049006;LI;Esercizi Extralberghieri;101;2997;11042;1962
+2022;Castel del Piano;053004;GR;Esercizi Alberghieri;6;148;310;165
+2022;Castel del Piano;053004;GR;Esercizi Extralberghieri;36;236;650;218
+2022;Castelfiorentino;048010;FI;Esercizi Alberghieri;4;57;109;59
+2022;Castelfiorentino;048010;FI;Esercizi Extralberghieri;34;227;488;192
+2022;Castel Focognano;051008;AR;Esercizi Extralberghieri;8;37;73;37
+2022;Castelfranco di Sotto;050009;PI;Esercizi Alberghieri;1;15;39;15
+2022;Castelfranco di Sotto;050009;PI;Esercizi Extralberghieri;17;74;172;66
+2022;Castelfranco Piandiscò;051040;AR;Esercizi Alberghieri;2;26;33;22
+2022;Castelfranco Piandiscò;051040;AR;Esercizi Extralberghieri;33;174;457;188
+2022;Castell'Azzara;053005;GR;Esercizi Extralberghieri;9;60;134;54
+2022;Castellina in Chianti;052005;SI;Esercizi Alberghieri;10;167;446;183
+2022;Castellina in Chianti;052005;SI;Esercizi Extralberghieri;88;637;1755;599
+2022;Castellina Marittima;050010;PI;Esercizi Alberghieri;4;59;105;57
+2022;Castellina Marittima;050010;PI;Esercizi Extralberghieri;15;81;213;92
+2022;Castelnuovo Berardenga;052006;SI;Esercizi Alberghieri;9;301;683;344
+2022;Castelnuovo Berardenga;052006;SI;Esercizi Extralberghieri;112;716;1870;852
+2022;Castelnuovo di Garfagnana;046009;LU;Esercizi Alberghieri;6;103;204;103
+2022;Castelnuovo di Garfagnana;046009;LU;Esercizi Extralberghieri;19;95;200;80
+2022;Castelnuovo di Val di Cecina;050011;PI;Esercizi Alberghieri;2;27;55;34
+2022;Castelnuovo di Val di Cecina;050011;PI;Esercizi Extralberghieri;28;139;354;129
+2022;Castel San Niccolò;051010;AR;Esercizi Extralberghieri;13;76;151;80
+2022;Castiglione della Pescaia;053006;GR;Esercizi Alberghieri;42;1385;3559;1493
+2022;Castiglione della Pescaia;053006;GR;Esercizi Extralberghieri;122;4927;16458;2440
+2022;Castiglione di Garfagnana;046010;LU;Esercizi Alberghieri;1;38;99;38
+2022;Castiglione di Garfagnana;046010;LU;Esercizi Extralberghieri;17;63;200;55
+2022;Castiglione d'Orcia;052007;SI;Esercizi Alberghieri;4;68;138;74
+2022;Castiglione d'Orcia;052007;SI;Esercizi Extralberghieri;71;349;823;360
+2022;Castiglion Fibocchi;051011;AR;Esercizi Alberghieri;1;7;21;7
+2022;Castiglion Fibocchi;051011;AR;Esercizi Extralberghieri;12;49;154;59
+2022;Castiglion Fiorentino;051012;AR;Esercizi Alberghieri;4;151;332;157
+2022;Castiglion Fiorentino;051012;AR;Esercizi Extralberghieri;85;356;955;384
+2022;Cavriglia;051013;AR;Esercizi Alberghieri;2;54;73;35
+2022;Cavriglia;051013;AR;Esercizi Extralberghieri;43;511;1745;492
+2022;Cecina;049007;LI;Esercizi Alberghieri;25;725;2002;842
+2022;Cecina;049007;LI;Esercizi Extralberghieri;56;2572;8418;1403
+2022;Cerreto Guidi;048011;FI;Esercizi Alberghieri;1;20;34;21
+2022;Cerreto Guidi;048011;FI;Esercizi Extralberghieri;25;232;488;217
+2022;Certaldo;048012;FI;Esercizi Alberghieri;2;40;90;44
+2022;Certaldo;048012;FI;Esercizi Extralberghieri;62;537;1268;370
+2022;Cetona;052008;SI;Esercizi Alberghieri;1;12;25;13
+2022;Cetona;052008;SI;Esercizi Extralberghieri;32;161;406;177
+2022;Chianciano Terme;052009;SI;Esercizi Alberghieri;129;5458;11392;5870
+2022;Chianciano Terme;052009;SI;Esercizi Extralberghieri;37;245;626;259
+2022;Chianni;050012;PI;Esercizi Extralberghieri;25;141;422;156
+2022;Chiesina Uzzanese;047022;PT;Esercizi Alberghieri;2;137;251;139
+2022;Chiesina Uzzanese;047022;PT;Esercizi Extralberghieri;2;8;15;9
+2022;Chitignano;051014;AR;Esercizi Alberghieri;2;31;59;32
+2022;Chitignano;051014;AR;Esercizi Extralberghieri;5;33;60;27
+2022;Chiusdino;052010;SI;Esercizi Alberghieri;2;28;61;29
+2022;Chiusdino;052010;SI;Esercizi Extralberghieri;35;330;991;338
+2022;Chiusi;052011;SI;Esercizi Alberghieri;12;291;649;297
+2022;Chiusi;052011;SI;Esercizi Extralberghieri;35;264;616;204
+2022;Chiusi della Verna;051015;AR;Esercizi Alberghieri;4;51;91;61
+2022;Chiusi della Verna;051015;AR;Esercizi Extralberghieri;19;359;765;313
+2022;Cinigiano;053007;GR;Esercizi Alberghieri;5;58;148;64
+2022;Cinigiano;053007;GR;Esercizi Extralberghieri;43;346;878;283
+2022;Civitella in Val di Chiana;051016;AR;Esercizi Alberghieri;2;29;55;33
+2022;Civitella in Val di Chiana;051016;AR;Esercizi Extralberghieri;46;194;494;211
+2022;Civitella Paganico;053008;GR;Esercizi Alberghieri;4;142;307;156
+2022;Civitella Paganico;053008;GR;Esercizi Extralberghieri;52;282;578;259
+2022;Colle di Val d'Elsa;052012;SI;Esercizi Alberghieri;7;190;444;208
+2022;Colle di Val d'Elsa;052012;SI;Esercizi Extralberghieri;58;348;816;345
+2022;Collesalvetti;049008;LI;Esercizi Alberghieri;1;55;116;57
+2022;Collesalvetti;049008;LI;Esercizi Extralberghieri;33;174;478;186
+2022;Comano;045005;MS;Esercizi Alberghieri;2;25;47;27
+2022;Comano;045005;MS;Esercizi Extralberghieri;3;8;28;14
+2022;Coreglia Antelminelli;046011;LU;Esercizi Alberghieri;4;56;123;47
+2022;Coreglia Antelminelli;046011;LU;Esercizi Extralberghieri;19;130;414;95
+2022;Cortona;051017;AR;Esercizi Alberghieri;18;380;831;431
+2022;Cortona;051017;AR;Esercizi Extralberghieri;252;1268;2942;1251
+2022;Crespina Lorenzana;050041;PI;Esercizi Alberghieri;2;17;34;15
+2022;Crespina Lorenzana;050041;PI;Esercizi Extralberghieri;21;115;268;105
+2022;Dicomano;048013;FI;Esercizi Alberghieri;2;44;77;39
+2022;Dicomano;048013;FI;Esercizi Extralberghieri;26;167;358;140
+2022;Empoli;048014;FI;Esercizi Alberghieri;3;47;93;50
+2022;Empoli;048014;FI;Esercizi Extralberghieri;54;212;474;187
+2022;Fabbriche di Vergemoli;046036;LU;Esercizi Extralberghieri;12;40;140;54
+2022;Fauglia;050014;PI;Esercizi Alberghieri;1;14;42;14
+2022;Fauglia;050014;PI;Esercizi Extralberghieri;26;154;315;134
+2022;Fiesole;048015;FI;Esercizi Alberghieri;9;257;551;272
+2022;Fiesole;048015;FI;Esercizi Extralberghieri;38;371;883;229
+2022;Figline e Incisa Valdarno;048052;FI;Esercizi Alberghieri;7;255;543;240
+2022;Figline e Incisa Valdarno;048052;FI;Esercizi Extralberghieri;53;1513;5344;464
+2022;Filattiera;045006;MS;Esercizi Extralberghieri;8;29;71;27
+2022;Firenze;048017;FI;Esercizi Alberghieri;349;13743;30441;14505
+2022;Firenze;048017;FI;Esercizi Extralberghieri;1345;8005;17549;7451
+2022;Firenzuola;048018;FI;Esercizi Alberghieri;6;65;130;62
+2022;Firenzuola;048018;FI;Esercizi Extralberghieri;24;210;611;143
+2022;Fivizzano;045007;MS;Esercizi Alberghieri;7;65;119;62
+2022;Fivizzano;045007;MS;Esercizi Extralberghieri;40;193;454;184
+2022;Foiano della Chiana;051018;AR;Esercizi Alberghieri;2;56;116;59
+2022;Foiano della Chiana;051018;AR;Esercizi Extralberghieri;25;113;261;116
+2022;Follonica;053009;GR;Esercizi Alberghieri;25;732;1729;783
+2022;Follonica;053009;GR;Esercizi Extralberghieri;60;1898;6296;1125
+2022;Forte dei Marmi;046013;LU;Esercizi Alberghieri;57;1849;3721;2031
+2022;Forte dei Marmi;046013;LU;Esercizi Extralberghieri;18;223;449;167
+2022;Fosciandora;046014;LU;Esercizi Extralberghieri;9;37;89;26
+2022;Fosdinovo;045008;MS;Esercizi Alberghieri;2;37;86;40
+2022;Fosdinovo;045008;MS;Esercizi Extralberghieri;24;90;200;89
+2022;Fucecchio;048019;FI;Esercizi Alberghieri;4;68;132;73
+2022;Fucecchio;048019;FI;Esercizi Extralberghieri;33;110;241;90
+2022;Gaiole in Chianti;052013;SI;Esercizi Alberghieri;9;126;303;140
+2022;Gaiole in Chianti;052013;SI;Esercizi Extralberghieri;77;424;1144;490
+2022;Gallicano;046015;LU;Esercizi Alberghieri;3;39;71;41
+2022;Gallicano;046015;LU;Esercizi Extralberghieri;11;43;82;37
+2022;Gambassi Terme;048020;FI;Esercizi Alberghieri;4;41;74;35
+2022;Gambassi Terme;048020;FI;Esercizi Extralberghieri;58;456;906;390
+2022;Gavorrano;053010;GR;Esercizi Alberghieri;4;171;592;175
+2022;Gavorrano;053010;GR;Esercizi Extralberghieri;60;421;940;352
+2022;Greve in Chianti;048021;FI;Esercizi Alberghieri;9;127;260;145
+2022;Greve in Chianti;048021;FI;Esercizi Extralberghieri;196;1156;2531;1053
+2022;Grosseto;053011;GR;Esercizi Alberghieri;50;1640;3800;1818
+2022;Grosseto;053011;GR;Esercizi Extralberghieri;296;5070;15656;2904
+2022;Guardistallo;050015;PI;Esercizi Alberghieri;2;60;254;69
+2022;Guardistallo;050015;PI;Esercizi Extralberghieri;16;227;708;189
+2022;Impruneta;048022;FI;Esercizi Alberghieri;3;77;152;87
+2022;Impruneta;048022;FI;Esercizi Extralberghieri;64;651;1468;403
+2022;Isola del Giglio;053012;GR;Esercizi Alberghieri;12;277;573;289
+2022;Isola del Giglio;053012;GR;Esercizi Extralberghieri;17;135;350;108
+2022;Lajatico;050016;PI;Esercizi Alberghieri;1;12;21;12
+2022;Lajatico;050016;PI;Esercizi Extralberghieri;17;222;488;224
+2022;Lamporecchio;047005;PT;Esercizi Alberghieri;5;97;201;100
+2022;Lamporecchio;047005;PT;Esercizi Extralberghieri;40;480;1484;261
+2022;Larciano;047006;PT;Esercizi Alberghieri;1;33;69;33
+2022;Larciano;047006;PT;Esercizi Extralberghieri;19;104;221;93
+2022;Lastra a Signa;048024;FI;Esercizi Alberghieri;2;96;156;76
+2022;Lastra a Signa;048024;FI;Esercizi Extralberghieri;58;266;587;229
+2022;Laterina Pergine Valdarno;051042;AR;Esercizi Alberghieri;2;68;181;94
+2022;Laterina Pergine Valdarno;051042;AR;Esercizi Extralberghieri;35;229;571;199
+2022;Licciana Nardi;045009;MS;Esercizi Alberghieri;1;14;25;17
+2022;Licciana Nardi;045009;MS;Esercizi Extralberghieri;13;71;158;78
+2022;Livorno;049009;LI;Esercizi Alberghieri;32;834;1693;886
+2022;Livorno;049009;LI;Esercizi Extralberghieri;99;736;2121;531
+2022;Londa;048025;FI;Esercizi Extralberghieri;14;88;304;54
+2022;Loro Ciuffenna;051020;AR;Esercizi Alberghieri;4;58;105;57
+2022;Loro Ciuffenna;051020;AR;Esercizi Extralberghieri;35;263;732;302
+2022;Lucca;046017;LU;Esercizi Alberghieri;32;954;1884;1029
+2022;Lucca;046017;LU;Esercizi Extralberghieri;302;1413;3094;1382
+2022;Lucignano;051021;AR;Esercizi Alberghieri;2;18;44;15
+2022;Lucignano;051021;AR;Esercizi Extralberghieri;32;140;366;147
+2022;Magliano in Toscana;053013;GR;Esercizi Alberghieri;3;77;153;82
+2022;Magliano in Toscana;053013;GR;Esercizi Extralberghieri;107;676;1403;653
+2022;Manciano;053014;GR;Esercizi Alberghieri;29;468;1013;485
+2022;Manciano;053014;GR;Esercizi Extralberghieri;191;1516;2839;1091
+2022;Marciana;049010;LI;Esercizi Alberghieri;30;919;2195;972
+2022;Marciana;049010;LI;Esercizi Extralberghieri;22;131;443;139
+2022;Marciana Marina;049011;LI;Esercizi Alberghieri;12;422;1038;446
+2022;Marciana Marina;049011;LI;Esercizi Extralberghieri;8;38;125;38
+2022;Marciano della Chiana;051022;AR;Esercizi Alberghieri;1;10;19;10
+2022;Marciano della Chiana;051022;AR;Esercizi Extralberghieri;6;28;81;37
+2022;Marliana;047007;PT;Esercizi Alberghieri;2;24;49;23
+2022;Marliana;047007;PT;Esercizi Extralberghieri;13;78;158;62
+2022;Marradi;048026;FI;Esercizi Alberghieri;2;23;34;22
+2022;Marradi;048026;FI;Esercizi Extralberghieri;23;125;351;85
+2022;Massa;045010;MS;Esercizi Alberghieri;68;1475;3338;1544
+2022;Massa;045010;MS;Esercizi Extralberghieri;99;6083;23179;2473
+2022;Massa e Cozzile;047008;PT;Esercizi Extralberghieri;14;65;135;60
+2022;Massa Marittima;053015;GR;Esercizi Alberghieri;7;296;866;309
+2022;Massa Marittima;053015;GR;Esercizi Extralberghieri;113;830;2048;766
+2022;Massarosa;046018;LU;Esercizi Alberghieri;5;75;141;77
+2022;Massarosa;046018;LU;Esercizi Extralberghieri;41;276;599;210
+2022;Minucciano;046019;LU;Esercizi Alberghieri;6;117;253;122
+2022;Minucciano;046019;LU;Esercizi Extralberghieri;11;108;310;60
+2022;Molazzana;046020;LU;Esercizi Extralberghieri;17;66;179;56
+2022;Monsummano Terme;047009;PT;Esercizi Alberghieri;2;77;158;79
+2022;Monsummano Terme;047009;PT;Esercizi Extralberghieri;34;131;260;127
+2022;Montaione;048027;FI;Esercizi Alberghieri;5;250;534;254
+2022;Montaione;048027;FI;Esercizi Extralberghieri;101;1482;3106;1163
+2022;Montalcino;052037;SI;Esercizi Alberghieri;13;262;604;288
+2022;Montalcino;052037;SI;Esercizi Extralberghieri;174;931;2618;1045
+2022;Montale;047010;PT;Esercizi Alberghieri;1;15;25;16
+2022;Montale;047010;PT;Esercizi Extralberghieri;7;38;72;42
+2022;Monte Argentario;053016;GR;Esercizi Alberghieri;21;610;1326;679
+2022;Monte Argentario;053016;GR;Esercizi Extralberghieri;38;368;1133;213
+2022;Montecarlo;046021;LU;Esercizi Extralberghieri;19;114;226;106
+2022;Montecatini Terme;047011;PT;Esercizi Alberghieri;123;4648;9308;4882
+2022;Montecatini Terme;047011;PT;Esercizi Extralberghieri;33;381;1048;204
+2022;Montecatini Val di Cecina;050019;PI;Esercizi Alberghieri;2;102;224;103
+2022;Montecatini Val di Cecina;050019;PI;Esercizi Extralberghieri;47;291;706;280
+2022;Montelupo Fiorentino;048028;FI;Esercizi Alberghieri;1;19;34;19
+2022;Montelupo Fiorentino;048028;FI;Esercizi Extralberghieri;11;93;194;71
+2022;Montemignaio;051023;AR;Esercizi Alberghieri;2;50;111;43
+2022;Montemignaio;051023;AR;Esercizi Extralberghieri;3;22;48;31
+2022;Montemurlo;100003;PO;Esercizi Alberghieri;1;15;42;14
+2022;Montemurlo;100003;PO;Esercizi Extralberghieri;14;64;140;53
+2022;Montepulciano;052015;SI;Esercizi Alberghieri;21;385;849;432
+2022;Montepulciano;052015;SI;Esercizi Extralberghieri;180;1029;2516;1166
+2022;Monterchi;051024;AR;Esercizi Extralberghieri;10;52;126;47
+2022;Monteriggioni;052016;SI;Esercizi Alberghieri;8;219;547;279
+2022;Monteriggioni;052016;SI;Esercizi Extralberghieri;85;407;962;362
+2022;Monteroni d'Arbia;052017;SI;Esercizi Alberghieri;3;61;107;64
+2022;Monteroni d'Arbia;052017;SI;Esercizi Extralberghieri;44;235;623;272
+2022;Monterotondo Marittimo;053027;GR;Esercizi Extralberghieri;20;154;349;155
+2022;Monte San Savino;051025;AR;Esercizi Alberghieri;5;65;123;96
+2022;Monte San Savino;051025;AR;Esercizi Extralberghieri;51;241;590;256
+2022;Montescudaio;050020;PI;Esercizi Alberghieri;1;9;22;10
+2022;Montescudaio;050020;PI;Esercizi Extralberghieri;28;1843;4795;856
+2022;Montespertoli;048030;FI;Esercizi Alberghieri;4;61;186;72
+2022;Montespertoli;048030;FI;Esercizi Extralberghieri;76;728;1681;615
+2022;Montevarchi;051026;AR;Esercizi Alberghieri;4;123;247;128
+2022;Montevarchi;051026;AR;Esercizi Extralberghieri;22;119;251;114
+2022;Monteverdi Marittimo;050021;PI;Esercizi Alberghieri;2;58;90;43
+2022;Monteverdi Marittimo;050021;PI;Esercizi Extralberghieri;13;86;219;82
+2022;Monticiano;052018;SI;Esercizi Alberghieri;3;84;180;85
+2022;Monticiano;052018;SI;Esercizi Extralberghieri;26;141;330;158
+2022;Montieri;053017;GR;Esercizi Alberghieri;3;42;91;42
+2022;Montieri;053017;GR;Esercizi Extralberghieri;21;107;285;102
+2022;Montignoso;045011;MS;Esercizi Alberghieri;14;390;1123;436
+2022;Montignoso;045011;MS;Esercizi Extralberghieri;11;46;93;40
+2022;Montopoli in Val d'Arno;050022;PI;Esercizi Alberghieri;1;24;52;24
+2022;Montopoli in Val d'Arno;050022;PI;Esercizi Extralberghieri;30;319;1034;220
+2022;Mulazzo;045012;MS;Esercizi Alberghieri;4;61;149;75
+2022;Mulazzo;045012;MS;Esercizi Extralberghieri;17;75;208;69
+2022;Murlo;052019;SI;Esercizi Alberghieri;4;123;308;132
+2022;Murlo;052019;SI;Esercizi Extralberghieri;26;291;757;221
+2022;Orbetello;053018;GR;Esercizi Alberghieri;39;1042;2590;1086
+2022;Orbetello;053018;GR;Esercizi Extralberghieri;136;4681;16892;2131
+2022;Orciano Pisano;050023;PI;Esercizi Extralberghieri;1;3;6;4
+2022;Ortignano Raggiolo;051027;AR;Esercizi Extralberghieri;9;37;97;31
+2022;Palaia;050024;PI;Esercizi Alberghieri;2;25;46;26
+2022;Palaia;050024;PI;Esercizi Extralberghieri;55;372;984;438
+2022;Palazzuolo sul Senio;048031;FI;Esercizi Alberghieri;2;43;84;51
+2022;Palazzuolo sul Senio;048031;FI;Esercizi Extralberghieri;13;259;750;179
+2022;Peccioli;050025;PI;Esercizi Alberghieri;1;30;65;30
+2022;Peccioli;050025;PI;Esercizi Extralberghieri;37;214;582;233
+2022;Pelago;048032;FI;Esercizi Extralberghieri;34;305;665;269
+2022;Pescaglia;046022;LU;Esercizi Alberghieri;1;37;69;39
+2022;Pescaglia;046022;LU;Esercizi Extralberghieri;24;111;210;90
+2022;Pescia;047012;PT;Esercizi Alberghieri;2;198;426;211
+2022;Pescia;047012;PT;Esercizi Extralberghieri;36;178;341;145
+2022;Piancastagnaio;052020;SI;Esercizi Alberghieri;4;51;95;50
+2022;Piancastagnaio;052020;SI;Esercizi Extralberghieri;12;66;130;64
+2022;Piazza al Serchio;046023;LU;Esercizi Alberghieri;2;19;46;22
+2022;Piazza al Serchio;046023;LU;Esercizi Extralberghieri;4;19;48;24
+2022;Pienza;052021;SI;Esercizi Alberghieri;5;100;209;107
+2022;Pienza;052021;SI;Esercizi Extralberghieri;131;694;1607;748
+2022;Pietrasanta;046024;LU;Esercizi Alberghieri;93;2460;5563;2601
+2022;Pietrasanta;046024;LU;Esercizi Extralberghieri;66;302;589;315
+2022;Pieve a Nievole;047013;PT;Esercizi Alberghieri;2;25;42;25
+2022;Pieve a Nievole;047013;PT;Esercizi Extralberghieri;12;58;126;44
+2022;Pieve Fosciana;046025;LU;Esercizi Extralberghieri;13;78;157;70
+2022;Pieve Santo Stefano;051030;AR;Esercizi Alberghieri;3;98;215;109
+2022;Pieve Santo Stefano;051030;AR;Esercizi Extralberghieri;20;133;366;123
+2022;Piombino;049012;LI;Esercizi Alberghieri;20;776;2679;889
+2022;Piombino;049012;LI;Esercizi Extralberghieri;95;2662;9487;1664
+2022;Pisa;050026;PI;Esercizi Alberghieri;73;2846;6259;2934
+2022;Pisa;050026;PI;Esercizi Extralberghieri;448;4370;10286;2799
+2022;Pistoia;047014;PT;Esercizi Alberghieri;11;272;563;278
+2022;Pistoia;047014;PT;Esercizi Extralberghieri;103;490;1079;448
+2022;Pitigliano;053019;GR;Esercizi Alberghieri;3;44;84;51
+2022;Pitigliano;053019;GR;Esercizi Extralberghieri;59;254;541;236
+2022;Podenzana;045013;MS;Esercizi Alberghieri;2;30;69;30
+2022;Podenzana;045013;MS;Esercizi Extralberghieri;8;38;78;26
+2022;Poggibonsi;052022;SI;Esercizi Alberghieri;8;346;713;364
+2022;Poggibonsi;052022;SI;Esercizi Extralberghieri;60;270;742;302
+2022;Poggio a Caiano;100004;PO;Esercizi Alberghieri;1;59;114;61
+2022;Poggio a Caiano;100004;PO;Esercizi Extralberghieri;5;24;44;24
+2022;Pomarance;050027;PI;Esercizi Alberghieri;1;28;69;28
+2022;Pomarance;050027;PI;Esercizi Extralberghieri;63;434;1157;410
+2022;Ponsacco;050028;PI;Esercizi Alberghieri;2;36;70;40
+2022;Ponsacco;050028;PI;Esercizi Extralberghieri;17;71;176;77
+2022;Pontassieve;048033;FI;Esercizi Alberghieri;1;7;16;5
+2022;Pontassieve;048033;FI;Esercizi Extralberghieri;47;411;877;359
+2022;Ponte Buggianese;047016;PT;Esercizi Alberghieri;1;9;16;9
+2022;Ponte Buggianese;047016;PT;Esercizi Extralberghieri;1;13;25;10
+2022;Pontedera;050029;PI;Esercizi Alberghieri;6;222;430;245
+2022;Pontedera;050029;PI;Esercizi Extralberghieri;28;121;274;114
+2022;Pontremoli;045014;MS;Esercizi Alberghieri;2;58;140;58
+2022;Pontremoli;045014;MS;Esercizi Extralberghieri;28;116;277;113
+2022;Poppi;051031;AR;Esercizi Alberghieri;16;348;737;351
+2022;Poppi;051031;AR;Esercizi Extralberghieri;56;657;1620;384
+2022;Porcari;046026;LU;Esercizi Alberghieri;2;49;108;46
+2022;Porcari;046026;LU;Esercizi Extralberghieri;5;21;39;20
+2022;Porto Azzurro;049013;LI;Esercizi Alberghieri;18;426;1174;463
+2022;Porto Azzurro;049013;LI;Esercizi Extralberghieri;35;447;1557;335
+2022;Portoferraio;049014;LI;Esercizi Alberghieri;30;1204;2882;1295
+2022;Portoferraio;049014;LI;Esercizi Extralberghieri;59;992;3018;688
+2022;Prato;100005;PO;Esercizi Alberghieri;20;733;1379;766
+2022;Prato;100005;PO;Esercizi Extralberghieri;79;400;710;364
+2022;Pratovecchio Stia;051041;AR;Esercizi Alberghieri;2;27;60;26
+2022;Pratovecchio Stia;051041;AR;Esercizi Extralberghieri;48;223;661;204
+2022;Quarrata;047017;PT;Esercizi Alberghieri;2;21;38;21
+2022;Quarrata;047017;PT;Esercizi Extralberghieri;25;118;235;109
+2022;Radda in Chianti;052023;SI;Esercizi Alberghieri;12;244;579;276
+2022;Radda in Chianti;052023;SI;Esercizi Extralberghieri;57;300;796;368
+2022;Radicofani;052024;SI;Esercizi Alberghieri;1;10;18;10
+2022;Radicofani;052024;SI;Esercizi Extralberghieri;28;141;410;180
+2022;Radicondoli;052025;SI;Esercizi Alberghieri;2;22;45;24
+2022;Radicondoli;052025;SI;Esercizi Extralberghieri;37;186;504;216
+2022;Rapolano Terme;052026;SI;Esercizi Alberghieri;5;179;397;205
+2022;Rapolano Terme;052026;SI;Esercizi Extralberghieri;56;324;899;379
+2022;Reggello;048035;FI;Esercizi Alberghieri;15;709;1567;712
+2022;Reggello;048035;FI;Esercizi Extralberghieri;66;518;1099;446
+2022;Rignano sull'Arno;048036;FI;Esercizi Alberghieri;1;22;65;68
+2022;Rignano sull'Arno;048036;FI;Esercizi Extralberghieri;38;515;1449;382
+2022;Rio;049021;LI;Esercizi Alberghieri;12;377;839;397
+2022;Rio;049021;LI;Esercizi Extralberghieri;32;791;2465;618
+2022;Riparbella;050030;PI;Esercizi Alberghieri;8;208;371;156
+2022;Riparbella;050030;PI;Esercizi Extralberghieri;29;401;1131;340
+2022;Roccalbegna;053020;GR;Esercizi Alberghieri;2;20;46;21
+2022;Roccalbegna;053020;GR;Esercizi Extralberghieri;30;115;254;116
+2022;Roccastrada;053021;GR;Esercizi Alberghieri;3;39;92;42
+2022;Roccastrada;053021;GR;Esercizi Extralberghieri;77;381;822;381
+2022;Rosignano Marittimo;049017;LI;Esercizi Alberghieri;33;849;2101;942
+2022;Rosignano Marittimo;049017;LI;Esercizi Extralberghieri;66;2100;7959;1279
+2022;Rufina;048037;FI;Esercizi Alberghieri;2;24;39;26
+2022;Rufina;048037;FI;Esercizi Extralberghieri;11;82;160;68
+2022;Sambuca Pistoiese;047018;PT;Esercizi Extralberghieri;3;18;36;15
+2022;San Casciano dei Bagni;052027;SI;Esercizi Alberghieri;4;105;216;108
+2022;San Casciano dei Bagni;052027;SI;Esercizi Extralberghieri;50;243;627;279
+2022;San Casciano in Val di Pesa;048038;FI;Esercizi Alberghieri;4;32;78;33
+2022;San Casciano in Val di Pesa;048038;FI;Esercizi Extralberghieri;77;606;1327;527
+2022;San Gimignano;052028;SI;Esercizi Alberghieri;20;593;1301;665
+2022;San Gimignano;052028;SI;Esercizi Extralberghieri;270;1573;4033;1595
+2022;San Giovanni Valdarno;051033;AR;Esercizi Alberghieri;1;29;68;22
+2022;San Giovanni Valdarno;051033;AR;Esercizi Extralberghieri;9;39;117;41
+2022;San Giuliano Terme;050031;PI;Esercizi Alberghieri;7;151;416;164
+2022;San Giuliano Terme;050031;PI;Esercizi Extralberghieri;52;800;1509;751
+2022;San Godenzo;048039;FI;Esercizi Alberghieri;1;7;13;5
+2022;San Godenzo;048039;FI;Esercizi Extralberghieri;16;72;200;64
+2022;San Marcello Piteglio;047024;PT;Esercizi Alberghieri;10;183;318;192
+2022;San Marcello Piteglio;047024;PT;Esercizi Extralberghieri;27;374;1147;287
+2022;San Miniato;050032;PI;Esercizi Alberghieri;6;89;183;98
+2022;San Miniato;050032;PI;Esercizi Extralberghieri;80;363;831;360
+2022;San Quirico d'Orcia;052030;SI;Esercizi Alberghieri;9;320;815;358
+2022;San Quirico d'Orcia;052030;SI;Esercizi Extralberghieri;56;225;525;250
+2022;San Romano in Garfagnana;046027;LU;Esercizi Alberghieri;1;16;24;16
+2022;San Romano in Garfagnana;046027;LU;Esercizi Extralberghieri;10;67;121;52
+2022;Sansepolcro;051034;AR;Esercizi Alberghieri;7;194;358;198
+2022;Sansepolcro;051034;AR;Esercizi Extralberghieri;44;215;612;223
+2022;Santa Croce sull'Arno;050033;PI;Esercizi Alberghieri;2;26;38;27
+2022;Santa Croce sull'Arno;050033;PI;Esercizi Extralberghieri;2;3;7;3
+2022;Santa Fiora;053022;GR;Esercizi Alberghieri;6;137;259;145
+2022;Santa Fiora;053022;GR;Esercizi Extralberghieri;15;74;151;64
+2022;Santa Luce;050034;PI;Esercizi Alberghieri;2;24;65;25
+2022;Santa Luce;050034;PI;Esercizi Extralberghieri;33;305;769;217
+2022;Santa Maria a Monte;050035;PI;Esercizi Alberghieri;2;79;148;85
+2022;Santa Maria a Monte;050035;PI;Esercizi Extralberghieri;18;38;91;33
+2022;San Vincenzo;049018;LI;Esercizi Alberghieri;28;1271;3061;1382
+2022;San Vincenzo;049018;LI;Esercizi Extralberghieri;62;2615;10646;2400
+2022;Sarteano;052031;SI;Esercizi Alberghieri;7;117;267;139
+2022;Sarteano;052031;SI;Esercizi Extralberghieri;40;923;2466;582
+2022;Sassetta;049019;LI;Esercizi Alberghieri;1;4;14;4
+2022;Sassetta;049019;LI;Esercizi Extralberghieri;16;140;378;150
+2022;Scandicci;048041;FI;Esercizi Alberghieri;4;84;154;90
+2022;Scandicci;048041;FI;Esercizi Extralberghieri;43;188;396;156
+2022;Scansano;053023;GR;Esercizi Alberghieri;4;82;159;81
+2022;Scansano;053023;GR;Esercizi Extralberghieri;70;353;807;342
+2022;Scarlino;053024;GR;Esercizi Alberghieri;9;386;1168;402
+2022;Scarlino;053024;GR;Esercizi Extralberghieri;48;1579;5579;1002
+2022;Scarperia e San Piero;048053;FI;Esercizi Alberghieri;6;107;198;101
+2022;Scarperia e San Piero;048053;FI;Esercizi Extralberghieri;50;337;935;258
+2022;Seggiano;053025;GR;Esercizi Alberghieri;3;28;63;29
+2022;Seggiano;053025;GR;Esercizi Extralberghieri;28;192;380;183
+2022;Semproniano;053028;GR;Esercizi Alberghieri;2;22;43;24
+2022;Semproniano;053028;GR;Esercizi Extralberghieri;33;307;603;281
+2022;Seravezza;046028;LU;Esercizi Alberghieri;2;148;482;190
+2022;Seravezza;046028;LU;Esercizi Extralberghieri;9;35;68;36
+2022;Serravalle Pistoiese;047020;PT;Esercizi Alberghieri;3;103;249;112
+2022;Serravalle Pistoiese;047020;PT;Esercizi Extralberghieri;30;158;348;137
+2022;Sestino;051035;AR;Esercizi Extralberghieri;11;40;106;34
+2022;Sesto Fiorentino;048043;FI;Esercizi Alberghieri;5;605;1203;612
+2022;Sesto Fiorentino;048043;FI;Esercizi Extralberghieri;16;111;332;54
+2022;Siena;052032;SI;Esercizi Alberghieri;45;1563;3720;1698
+2022;Siena;052032;SI;Esercizi Extralberghieri;268;1568;3977;1453
+2022;Signa;048044;FI;Esercizi Alberghieri;4;127;263;137
+2022;Signa;048044;FI;Esercizi Extralberghieri;26;100;178;90
+2022;Sillano Giuncugnano;046037;LU;Esercizi Extralberghieri;9;103;344;48
+2022;Sinalunga;052033;SI;Esercizi Alberghieri;5;116;249;116
+2022;Sinalunga;052033;SI;Esercizi Extralberghieri;50;240;632;257
+2022;Sorano;053026;GR;Esercizi Alberghieri;7;84;174;101
+2022;Sorano;053026;GR;Esercizi Extralberghieri;50;262;699;282
+2022;Sovicille;052034;SI;Esercizi Alberghieri;5;88;207;110
+2022;Sovicille;052034;SI;Esercizi Extralberghieri;64;417;1250;455
+2022;Stazzema;046030;LU;Esercizi Alberghieri;4;40;78;42
+2022;Stazzema;046030;LU;Esercizi Extralberghieri;15;60;169;55
+2022;Subbiano;051037;AR;Esercizi Alberghieri;3;70;145;67
+2022;Subbiano;051037;AR;Esercizi Extralberghieri;25;172;343;169
+2022;Suvereto;049020;LI;Esercizi Alberghieri;3;169;664;180
+2022;Suvereto;049020;LI;Esercizi Extralberghieri;46;260;750;265
+2022;Talla;051038;AR;Esercizi Extralberghieri;8;89;287;33
+2022;Terranuova Bracciolini;051039;AR;Esercizi Alberghieri;5;202;369;202
+2022;Terranuova Bracciolini;051039;AR;Esercizi Extralberghieri;35;187;468;218
+2022;Terricciola;050036;PI;Esercizi Alberghieri;1;22;37;22
+2022;Terricciola;050036;PI;Esercizi Extralberghieri;31;178;457;190
+2022;Torrita di Siena;052035;SI;Esercizi Alberghieri;4;56;112;69
+2022;Torrita di Siena;052035;SI;Esercizi Extralberghieri;44;232;534;251
+2022;Trequanda;052036;SI;Esercizi Alberghieri;3;24;59;29
+2022;Trequanda;052036;SI;Esercizi Extralberghieri;37;268;691;302
+2022;Tresana;045015;MS;Esercizi Alberghieri;1;14;25;16
+2022;Tresana;045015;MS;Esercizi Extralberghieri;7;20;54;18
+2022;Uzzano;047021;PT;Esercizi Extralberghieri;9;36;73;33
+2022;Vaglia;048046;FI;Esercizi Alberghieri;6;179;433;181
+2022;Vaglia;048046;FI;Esercizi Extralberghieri;13;142;443;67
+2022;Vagli Sotto;046031;LU;Esercizi Alberghieri;3;23;49;18
+2022;Vagli Sotto;046031;LU;Esercizi Extralberghieri;6;20;85;20
+2022;Vaiano;100006;PO;Esercizi Extralberghieri;12;42;92;44
+2022;Vecchiano;050037;PI;Esercizi Alberghieri;1;62;134;67
+2022;Vecchiano;050037;PI;Esercizi Extralberghieri;15;65;143;58
+2022;Vernio;100007;PO;Esercizi Alberghieri;1;28;50;30
+2022;Vernio;100007;PO;Esercizi Extralberghieri;14;62;128;59
+2022;Viareggio;046033;LU;Esercizi Alberghieri;76;1838;3907;1957
+2022;Viareggio;046033;LU;Esercizi Extralberghieri;79;3286;11631;1333
+2022;Vicchio;048049;FI;Esercizi Alberghieri;2;37;76;37
+2022;Vicchio;048049;FI;Esercizi Extralberghieri;42;329;794;260
+2022;Vicopisano;050038;PI;Esercizi Extralberghieri;31;86;213;77
+2022;Villa Basilica;046034;LU;Esercizi Extralberghieri;4;10;32;6
+2022;Villa Collemandina;046035;LU;Esercizi Alberghieri;5;119;233;132
+2022;Villa Collemandina;046035;LU;Esercizi Extralberghieri;16;86;272;60
+2022;Villafranca in Lunigiana;045016;MS;Esercizi Alberghieri;1;13;29;12
+2022;Villafranca in Lunigiana;045016;MS;Esercizi Extralberghieri;10;125;348;80
+2022;Vinci;048050;FI;Esercizi Alberghieri;3;141;228;141
+2022;Vinci;048050;FI;Esercizi Extralberghieri;55;339;695;288
+2022;Volterra;050039;PI;Esercizi Alberghieri;25;517;1078;584
+2022;Volterra;050039;PI;Esercizi Extralberghieri;133;928;2346;851
+2022;Zeri;045017;MS;Esercizi Alberghieri;3;42;77;56
+2022;Zeri;045017;MS;Esercizi Extralberghieri;6;61;118;36

@@ -1,0 +1,18 @@
+name: "."
+title: "The Mind Walker"
+description: |
+  The Mind Walker
+output_dir: "docs"
+include: ["turismo"]
+navbar:
+  logo: images/mind.jpg
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Posts"
+      href: gallery.html
+    - text: "Turismo in Toscana"
+      href: turismo/index.html      
+output: distill::distill_article

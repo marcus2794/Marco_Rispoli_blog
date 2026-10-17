@@ -1,0 +1,543 @@
+"Anno";"Comune";"Cod Istat Comune";"Ambito";"Sigla Provincia";"Italiano-Straniero";"Arrivi";"Presenze"
+2022;"Abbadia San Salvatore";52001;"Amiata";"SI";"ITA";26747;62126
+2022;"Abbadia San Salvatore";52001;"Amiata";"SI";"STR";1906;3774
+2022;"Abetone Cutigliano";47023;"Pistoia e Montagna Pistoiese";"PT";"ITA";34891;86620
+2022;"Abetone Cutigliano";47023;"Pistoia e Montagna Pistoiese";"PT";"STR";2069;5467
+2022;"Agliana";47002;"Pistoia e Montagna Pistoiese";"PT";"ITA";1360;9066
+2022;"Agliana";47002;"Pistoia e Montagna Pistoiese";"PT";"STR";193;762
+2022;"Altopascio";46001;"Piana di Lucca";"LU";"ITA";7844;16256
+2022;"Altopascio";46001;"Piana di Lucca";"LU";"STR";2869;8718
+2022;"Anghiari";51001;"Valtiberina Toscana";"AR";"ITA";5955;11588
+2022;"Anghiari";51001;"Valtiberina Toscana";"AR";"STR";2161;10284
+2022;"Arcidosso";53001;"Amiata";"GR";"ITA";3516;8786
+2022;"Arcidosso";53001;"Amiata";"GR";"STR";1433;7586
+2022;"Arezzo";51002;"Arezzo";"AR";"ITA";151124;260431
+2022;"Arezzo";51002;"Arezzo";"AR";"STR";61774;174587
+2022;"Asciano";52002;"Terre di Siena";"SI";"ITA";21432;44335
+2022;"Asciano";52002;"Terre di Siena";"SI";"STR";18691;69666
+2022;"Aulla";45001;"Lunigiana";"MS";"ITA";1329;3091
+2022;"Aulla";45001;"Lunigiana";"MS";"STR";635;946
+2022;"Badia Tedalda";51003;"Valtiberina Toscana";"AR";"ITA";937;4976
+2022;"Badia Tedalda";51003;"Valtiberina Toscana";"AR";"STR";154;781
+2022;"Bagni di Lucca";46002;"Garfagnana e media valle del Serchio";"LU";"ITA";3890;8602
+2022;"Bagni di Lucca";46002;"Garfagnana e media valle del Serchio";"LU";"STR";1986;8924
+2022;"Bagno a Ripoli";48001;"Firenze e Area Fiorentina";"FI";"ITA";15320;40671
+2022;"Bagno a Ripoli";48001;"Firenze e Area Fiorentina";"FI";"STR";22854;70146
+2022;"Bagnone";45002;"Lunigiana";"MS";"ITA";238;526
+2022;"Bagnone";45002;"Lunigiana";"MS";"STR";503;3336
+2022;"Barberino di Mugello";48002;"Mugello";"FI";"ITA";31693;72869
+2022;"Barberino di Mugello";48002;"Mugello";"FI";"STR";11647;25842
+2022;"Barberino Tavarnelle";48054;"Chianti";"FI";"ITA";23109;52101
+2022;"Barberino Tavarnelle";48054;"Chianti";"FI";"STR";46688;203672
+2022;"Barga";46003;"Garfagnana e media valle del Serchio";"LU";"ITA";11524;33591
+2022;"Barga";46003;"Garfagnana e media valle del Serchio";"LU";"STR";14679;57852
+2022;"Bibbiena";51004;"Casentino";"AR";"ITA";5603;15570
+2022;"Bibbiena";51004;"Casentino";"AR";"STR";2285;14611
+2022;"Bibbona";49001;"Costa degli Etruschi";"LI";"ITA";109210;905434
+2022;"Bibbona";49001;"Costa degli Etruschi";"LI";"STR";56680;396825
+2022;"Bientina";50001;"Terre di Pisa";"PI";"ITA";6523;14530
+2022;"Bientina";50001;"Terre di Pisa";"PI";"STR";918;2099
+2022;"Borgo a Mozzano";46004;"Garfagnana e media valle del Serchio";"LU";"ITA";1510;9997
+2022;"Borgo a Mozzano";46004;"Garfagnana e media valle del Serchio";"LU";"STR";725;2925
+2022;"Borgo San Lorenzo";48004;"Mugello";"FI";"ITA";13201;24451
+2022;"Borgo San Lorenzo";48004;"Mugello";"FI";"STR";12893;40559
+2022;"Bucine";51005;"Valdarno Aretino";"AR";"ITA";4380;11909
+2022;"Bucine";51005;"Valdarno Aretino";"AR";"STR";16758;94051
+2022;"Buonconvento";52003;"Terre di Siena";"SI";"ITA";6862;22510
+2022;"Buonconvento";52003;"Terre di Siena";"SI";"STR";6681;26973
+2022;"Buti";50002;"Terre di Pisa";"PI";"ITA";587;3261
+2022;"Buti";50002;"Terre di Pisa";"PI";"STR";731;5074
+2022;"Calci";50003;"Terre di Pisa";"PI";"ITA";651;1662
+2022;"Calci";50003;"Terre di Pisa";"PI";"STR";1336;9496
+2022;"Calcinaia";50004;"Terre di Pisa";"PI";"ITA";2177;4121
+2022;"Calcinaia";50004;"Terre di Pisa";"PI";"STR";534;1011
+2022;"Calenzano";48005;"Firenze e Area Fiorentina";"FI";"ITA";58312;128379
+2022;"Calenzano";48005;"Firenze e Area Fiorentina";"FI";"STR";39698;74464
+2022;"Camaiore";46005;"Versilia";"LU";"ITA";85039;306891
+2022;"Camaiore";46005;"Versilia";"LU";"STR";54074;220984
+2022;"Campagnatico";53002;"Maremma Toscana Area Sud";"GR";"ITA";1487;5368
+2022;"Campagnatico";53002;"Maremma Toscana Area Sud";"GR";"STR";1673;11183
+2022;"Campi Bisenzio";48006;"Firenze e Area Fiorentina";"FI";"ITA";40600;70728
+2022;"Campi Bisenzio";48006;"Firenze e Area Fiorentina";"FI";"STR";29682;56909
+2022;"Campiglia Marittima";49002;"Costa degli Etruschi";"LI";"ITA";27693;101086
+2022;"Campiglia Marittima";49002;"Costa degli Etruschi";"LI";"STR";10267;57779
+2022;"Campo nell'Elba";49003;"Elba e Isole di Toscana";"LI";"ITA";59320;352546
+2022;"Campo nell'Elba";49003;"Elba e Isole di Toscana";"LI";"STR";26534;185210
+2022;"Camporgiano";46006;"Garfagnana e media valle del Serchio";"LU";"ITA";2234;4350
+2022;"Camporgiano";46006;"Garfagnana e media valle del Serchio";"LU";"STR";1395;9805
+2022;"Cantagallo";100001;"Area Pratese";"PO";"ITA";351;951
+2022;"Cantagallo";100001;"Area Pratese";"PO";"STR";120;650
+2022;"Capalbio";53003;"Maremma Toscana Area Sud";"GR";"ITA";26760;128482
+2022;"Capalbio";53003;"Maremma Toscana Area Sud";"GR";"STR";4414;18741
+2022;"Capannoli";50005;"Terre di Pisa";"PI";"ITA";163;307
+2022;"Capannoli";50005;"Terre di Pisa";"PI";"STR";374;1986
+2022;"Capannori";46007;"Piana di Lucca";"LU";"ITA";15763;38006
+2022;"Capannori";46007;"Piana di Lucca";"LU";"STR";11944;56831
+2022;"Capoliveri";49004;"Elba e Isole di Toscana";"LI";"ITA";86616;565370
+2022;"Capoliveri";49004;"Elba e Isole di Toscana";"LI";"STR";61547;468480
+2022;"Capolona";51006;"Arezzo";"AR";"ITA";534;1488
+2022;"Capolona";51006;"Arezzo";"AR";"STR";1349;9211
+2022;"Capraia e Limite";48008;"Empolese Valdelsa e Montalbano";"FI";"ITA";3494;15302
+2022;"Capraia e Limite";48008;"Empolese Valdelsa e Montalbano";"FI";"STR";3304;14382
+2022;"Capraia Isola";49005;"Livorno";"LI";"ITA";1939;13389
+2022;"Capraia Isola";49005;"Livorno";"LI";"STR";11;71
+2022;"Caprese Michelangelo";51007;"Valtiberina Toscana";"AR";"ITA";1562;3832
+2022;"Caprese Michelangelo";51007;"Valtiberina Toscana";"AR";"STR";698;3246
+2022;"Careggine";46008;"Garfagnana e media valle del Serchio";"LU";"ITA";1053;2249
+2022;"Careggine";46008;"Garfagnana e media valle del Serchio";"LU";"STR";185;615
+2022;"Carmignano";100002;"Area Pratese";"PO";"ITA";6672;13025
+2022;"Carmignano";100002;"Area Pratese";"PO";"STR";9522;28728
+2022;"Carrara";45003;"Riviera Apuana";"MS";"ITA";20931;56829
+2022;"Carrara";45003;"Riviera Apuana";"MS";"STR";8949;23432
+2022;"Casale Marittimo";50006;"Costa degli Etruschi";"PI";"ITA";1423;5587
+2022;"Casale Marittimo";50006;"Costa degli Etruschi";"PI";"STR";6233;65325
+2022;"Casciana Terme Lari";50040;"Terre di Pisa";"PI";"ITA";5712;19063
+2022;"Casciana Terme Lari";50040;"Terre di Pisa";"PI";"STR";6290;27524
+2022;"Cascina";50008;"Terre di Pisa";"PI";"ITA";12645;28612
+2022;"Cascina";50008;"Terre di Pisa";"PI";"STR";5969;12686
+2022;"Casola in Lunigiana";45004;"Lunigiana";"MS";"ITA";267;741
+2022;"Casola in Lunigiana";45004;"Lunigiana";"MS";"STR";542;2394
+2022;"Casole d'Elsa";52004;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"ITA";5077;17721
+2022;"Casole d'Elsa";52004;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"STR";15305;82120
+2022;"Castagneto Carducci";49006;"Costa degli Etruschi";"LI";"ITA";89612;577840
+2022;"Castagneto Carducci";49006;"Costa degli Etruschi";"LI";"STR";65230;502621
+2022;"Castel del Piano";53004;"Amiata";"GR";"ITA";9411;19371
+2022;"Castel del Piano";53004;"Amiata";"GR";"STR";1803;7107
+2022;"Castelfiorentino";48010;"Empolese Valdelsa e Montalbano";"FI";"ITA";3591;9603
+2022;"Castelfiorentino";48010;"Empolese Valdelsa e Montalbano";"FI";"STR";4114;21660
+2022;"Castel Focognano";51008;"Casentino";"AR";"ITA";89;301
+2022;"Castel Focognano";51008;"Casentino";"AR";"STR";240;2265
+2022;"Castelfranco di Sotto";50009;"Terre di Pisa";"PI";"ITA";594;2242
+2022;"Castelfranco di Sotto";50009;"Terre di Pisa";"PI";"STR";1515;10252
+2022;"Castelfranco Piandiscï¿½";51040;"Valdarno Aretino";"AR";"ITA";801;2744
+2022;"Castelfranco Piandiscï¿½";51040;"Valdarno Aretino";"AR";"STR";1416;9491
+2022;"Castell'Azzara";53005;"Amiata";"GR";"ITA";924;3514
+2022;"Castell'Azzara";53005;"Amiata";"GR";"STR";417;2859
+2022;"Castellina in Chianti";52005;"Chianti";"SI";"ITA";11321;23509
+2022;"Castellina in Chianti";52005;"Chianti";"SI";"STR";35166;138268
+2022;"Castellina Marittima";50010;"Costa degli Etruschi";"PI";"ITA";4587;11349
+2022;"Castellina Marittima";50010;"Costa degli Etruschi";"PI";"STR";1467;4814
+2022;"Castelnuovo Berardenga";52006;"Chianti";"SI";"ITA";19158;41821
+2022;"Castelnuovo Berardenga";52006;"Chianti";"SI";"STR";47741;156289
+2022;"Castelnuovo di Garfagnana";46009;"Garfagnana e media valle del Serchio";"LU";"ITA";8445;18389
+2022;"Castelnuovo di Garfagnana";46009;"Garfagnana e media valle del Serchio";"LU";"STR";2433;7587
+2022;"Castelnuovo di Val di Cecina";50011;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"ITA";1839;4960
+2022;"Castelnuovo di Val di Cecina";50011;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"STR";2241;16675
+2022;"Castel San Niccolï¿½";51010;"Casentino";"AR";"ITA";968;3108
+2022;"Castel San Niccolï¿½";51010;"Casentino";"AR";"STR";538;3082
+2022;"Castiglione della Pescaia";53006;"Maremma Toscana Area Nord";"GR";"ITA";152673;851503
+2022;"Castiglione della Pescaia";53006;"Maremma Toscana Area Nord";"GR";"STR";76209;523830
+2022;"Castiglione di Garfagnana";46010;"Garfagnana e media valle del Serchio";"LU";"ITA";4730;27384
+2022;"Castiglione di Garfagnana";46010;"Garfagnana e media valle del Serchio";"LU";"STR";786;4389
+2022;"Castiglione d'Orcia";52007;"Val d'Orcia";"SI";"ITA";11861;29273
+2022;"Castiglione d'Orcia";52007;"Val d'Orcia";"SI";"STR";7396;26611
+2022;"Castiglion Fibocchi";51011;"Arezzo";"AR";"ITA";853;2363
+2022;"Castiglion Fibocchi";51011;"Arezzo";"AR";"STR";1360;8391
+2022;"Castiglion Fiorentino";51012;"Val di Chiana Aretina";"AR";"ITA";16328;32675
+2022;"Castiglion Fiorentino";51012;"Val di Chiana Aretina";"AR";"STR";17481;60778
+2022;"Cavriglia";51013;"Valdarno Aretino";"AR";"ITA";13591;55347
+2022;"Cavriglia";51013;"Valdarno Aretino";"AR";"STR";8416;45403
+2022;"Cecina";49007;"Costa degli Etruschi";"LI";"ITA";73652;472752
+2022;"Cecina";49007;"Costa degli Etruschi";"LI";"STR";36629;232823
+2022;"Cerreto Guidi";48011;"Empolese Valdelsa e Montalbano";"FI";"ITA";3452;8898
+2022;"Cerreto Guidi";48011;"Empolese Valdelsa e Montalbano";"FI";"STR";5734;23002
+2022;"Certaldo";48012;"Empolese Valdelsa e Montalbano";"FI";"ITA";9545;23662
+2022;"Certaldo";48012;"Empolese Valdelsa e Montalbano";"FI";"STR";18644;68941
+2022;"Cetona";52008;"Val di Chiana Senese";"SI";"ITA";2485;7625
+2022;"Cetona";52008;"Val di Chiana Senese";"SI";"STR";2170;12604
+2022;"Chianciano Terme";52009;"Val di Chiana Senese";"SI";"ITA";129864;297386
+2022;"Chianciano Terme";52009;"Val di Chiana Senese";"SI";"STR";58688;124772
+2022;"Chianni";50012;"Terre di Pisa";"PI";"ITA";887;2421
+2022;"Chianni";50012;"Terre di Pisa";"PI";"STR";1552;10732
+2022;"Chiesina Uzzanese";47022;"Valdinievole";"PT";"ITA";24803;33059
+2022;"Chiesina Uzzanese";47022;"Valdinievole";"PT";"STR";1301;2449
+2022;"Chitignano";51014;"Casentino";"AR";"ITA";309;1203
+2022;"Chitignano";51014;"Casentino";"AR";"STR";79;305
+2022;"Chiusdino";52010;"Terre di Siena";"SI";"ITA";7136;18839
+2022;"Chiusdino";52010;"Terre di Siena";"SI";"STR";14379;88256
+2022;"Chiusi";52011;"Val di Chiana Senese";"SI";"ITA";19422;37159
+2022;"Chiusi";52011;"Val di Chiana Senese";"SI";"STR";11001;27501
+2022;"Chiusi della Verna";51015;"Casentino";"AR";"ITA";8232;17431
+2022;"Chiusi della Verna";51015;"Casentino";"AR";"STR";2602;5786
+2022;"Cinigiano";53007;"Maremma Toscana Area Sud";"GR";"ITA";3011;10296
+2022;"Cinigiano";53007;"Maremma Toscana Area Sud";"GR";"STR";4984;19885
+2022;"Civitella in Val di Chiana";51016;"Val di Chiana Aretina";"AR";"ITA";6281;14916
+2022;"Civitella in Val di Chiana";51016;"Val di Chiana Aretina";"AR";"STR";2773;15277
+2022;"Civitella Paganico";53008;"Maremma Toscana Area Sud";"GR";"ITA";4125;13704
+2022;"Civitella Paganico";53008;"Maremma Toscana Area Sud";"GR";"STR";2405;14735
+2022;"Colle di Val d'Elsa";52012;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"ITA";27364;60114
+2022;"Colle di Val d'Elsa";52012;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"STR";22754;71667
+2022;"Collesalvetti";49008;"Livorno";"LI";"ITA";9795;24157
+2022;"Collesalvetti";49008;"Livorno";"LI";"STR";5702;14704
+2022;"Comano";45005;"Lunigiana";"MS";"ITA";388;944
+2022;"Comano";45005;"Lunigiana";"MS";"STR";1456;4580
+2022;"Coreglia Antelminelli";46011;"Garfagnana e media valle del Serchio";"LU";"ITA";614;3273
+2022;"Coreglia Antelminelli";46011;"Garfagnana e media valle del Serchio";"LU";"STR";1072;7411
+2022;"Cortona";51017;"Val di Chiana Aretina";"AR";"ITA";23317;50473
+2022;"Cortona";51017;"Val di Chiana Aretina";"AR";"STR";30099;144897
+2022;"Crespina Lorenzana";50041;"Terre di Pisa";"PI";"ITA";1571;6451
+2022;"Crespina Lorenzana";50041;"Terre di Pisa";"PI";"STR";1554;10695
+2022;"Dicomano";48013;"Mugello";"FI";"ITA";1150;4536
+2022;"Dicomano";48013;"Mugello";"FI";"STR";1455;8780
+2022;"Empoli";48014;"Empolese Valdelsa e Montalbano";"FI";"ITA";8815;20421
+2022;"Empoli";48014;"Empolese Valdelsa e Montalbano";"FI";"STR";3030;9760
+2022;"Fabbriche di Vergemoli";46036;"Garfagnana e media valle del Serchio";"LU";"ITA";161;542
+2022;"Fabbriche di Vergemoli";46036;"Garfagnana e media valle del Serchio";"LU";"STR";419;3743
+2022;"Fiesole";48015;"Firenze e Area Fiorentina";"FI";"ITA";17913;37268
+2022;"Fiesole";48015;"Firenze e Area Fiorentina";"FI";"STR";35690;105430
+2022;"Figline e Incisa Valdarno";48052;"Firenze e Area Fiorentina";"FI";"ITA";32971;88319
+2022;"Figline e Incisa Valdarno";48052;"Firenze e Area Fiorentina";"FI";"STR";53539;397263
+2022;"Filattiera";45006;"Lunigiana";"MS";"ITA";354;500
+2022;"Filattiera";45006;"Lunigiana";"MS";"STR";461;1449
+2022;"Firenze";48017;"Firenze e Area Fiorentina";"FI";"ITA";1037437;1911743
+2022;"Firenze";48017;"Firenze e Area Fiorentina";"FI";"STR";2220924;5502897
+2022;"Firenzuola";48018;"Mugello";"FI";"ITA";5503;10240
+2022;"Firenzuola";48018;"Mugello";"FI";"STR";2226;5943
+2022;"Fivizzano";45007;"Lunigiana";"MS";"ITA";1672;3607
+2022;"Fivizzano";45007;"Lunigiana";"MS";"STR";1711;9138
+2022;"Foiano della Chiana";51018;"Val di Chiana Aretina";"AR";"ITA";6354;10697
+2022;"Foiano della Chiana";51018;"Val di Chiana Aretina";"AR";"STR";2861;13589
+2022;"Follonica";53009;"Maremma Toscana Area Nord";"GR";"ITA";78160;385565
+2022;"Follonica";53009;"Maremma Toscana Area Nord";"GR";"STR";22174;151747
+2022;"Forte dei Marmi";46013;"Versilia";"LU";"ITA";57125;177311
+2022;"Forte dei Marmi";46013;"Versilia";"LU";"STR";46552;198841
+2022;"Fosciandora";46014;"Garfagnana e media valle del Serchio";"LU";"ITA";45;143
+2022;"Fosciandora";46014;"Garfagnana e media valle del Serchio";"LU";"STR";137;1236
+2022;"Fosdinovo";45008;"Lunigiana";"MS";"ITA";3988;7309
+2022;"Fosdinovo";45008;"Lunigiana";"MS";"STR";2457;5519
+2022;"Fucecchio";48019;"Empolese Valdelsa e Montalbano";"FI";"ITA";2704;6952
+2022;"Fucecchio";48019;"Empolese Valdelsa e Montalbano";"FI";"STR";1941;9876
+2022;"Gaiole in Chianti";52013;"Chianti";"SI";"ITA";8070;15638
+2022;"Gaiole in Chianti";52013;"Chianti";"SI";"STR";20050;72349
+2022;"Gallicano";46015;"Garfagnana e media valle del Serchio";"LU";"ITA";2206;4307
+2022;"Gallicano";46015;"Garfagnana e media valle del Serchio";"LU";"STR";801;3799
+2022;"Gambassi Terme";48020;"Empolese Valdelsa e Montalbano";"FI";"ITA";6353;11091
+2022;"Gambassi Terme";48020;"Empolese Valdelsa e Montalbano";"FI";"STR";10691;50690
+2022;"Gavorrano";53010;"Maremma Toscana Area Nord";"GR";"ITA";7684;27408
+2022;"Gavorrano";53010;"Maremma Toscana Area Nord";"GR";"STR";7756;47845
+2022;"Greve in Chianti";48021;"Chianti";"FI";"ITA";13190;29377
+2022;"Greve in Chianti";48021;"Chianti";"FI";"STR";45274;165370
+2022;"Grosseto";53011;"Maremma Toscana Area Sud";"GR";"ITA";195386;903736
+2022;"Grosseto";53011;"Maremma Toscana Area Sud";"GR";"STR";40110;201610
+2022;"Guardistallo";50015;"Costa degli Etruschi";"PI";"ITA";3127;12908
+2022;"Guardistallo";50015;"Costa degli Etruschi";"PI";"STR";4126;30736
+2022;"Impruneta";48022;"Firenze e Area Fiorentina";"FI";"ITA";16890;36557
+2022;"Impruneta";48022;"Firenze e Area Fiorentina";"FI";"STR";23155;69760
+2022;"Isola del Giglio";53012;"Maremma Toscana Area Sud";"GR";"ITA";18904;74280
+2022;"Isola del Giglio";53012;"Maremma Toscana Area Sud";"GR";"STR";3544;15611
+2022;"Lajatico";50016;"Terre di Pisa";"PI";"ITA";1881;6054
+2022;"Lajatico";50016;"Terre di Pisa";"PI";"STR";3601;19517
+2022;"Lamporecchio";47005;"Valdinievole";"PT";"ITA";7436;16888
+2022;"Lamporecchio";47005;"Valdinievole";"PT";"STR";12574;71722
+2022;"Larciano";47006;"Valdinievole";"PT";"ITA";4267;9546
+2022;"Larciano";47006;"Valdinievole";"PT";"STR";2581;12440
+2022;"Lastra a Signa";48024;"Firenze e Area Fiorentina";"FI";"ITA";7669;17344
+2022;"Lastra a Signa";48024;"Firenze e Area Fiorentina";"FI";"STR";5298;22967
+2022;"Laterina Pergine Valdarno";51042;"Valdarno Aretino";"AR";"ITA";9226;20293
+2022;"Laterina Pergine Valdarno";51042;"Valdarno Aretino";"AR";"STR";6158;32390
+2022;"Licciana Nardi";45009;"Lunigiana";"MS";"ITA";2410;5184
+2022;"Licciana Nardi";45009;"Lunigiana";"MS";"STR";1101;5349
+2022;"Livorno";49009;"Livorno";"LI";"ITA";111655;231788
+2022;"Livorno";49009;"Livorno";"LI";"STR";74029;166635
+2022;"Londa";48025;"Firenze e Area Fiorentina";"FI";"ITA";436;953
+2022;"Londa";48025;"Firenze e Area Fiorentina";"FI";"STR";648;3342
+2022;"Loro Ciuffenna";51020;"Valdarno Aretino";"AR";"ITA";2431;5960
+2022;"Loro Ciuffenna";51020;"Valdarno Aretino";"AR";"STR";8497;39150
+2022;"Lucca";46017;"Piana di Lucca";"LU";"ITA";112879;201479
+2022;"Lucca";46017;"Piana di Lucca";"LU";"STR";129807;319358
+2022;"Lucignano";51021;"Val di Chiana Aretina";"AR";"ITA";1427;3946
+2022;"Lucignano";51021;"Val di Chiana Aretina";"AR";"STR";2044;13296
+2022;"Magliano in Toscana";53013;"Maremma Toscana Area Sud";"GR";"ITA";17095;60319
+2022;"Magliano in Toscana";53013;"Maremma Toscana Area Sud";"GR";"STR";5034;22446
+2022;"Manciano";53014;"Maremma Toscana Area Sud";"GR";"ITA";68526;164159
+2022;"Manciano";53014;"Maremma Toscana Area Sud";"GR";"STR";19130;47404
+2022;"Marciana";49010;"Elba e Isole di Toscana";"LI";"ITA";33215;159704
+2022;"Marciana";49010;"Elba e Isole di Toscana";"LI";"STR";14215;76227
+2022;"Marciana Marina";49011;"Elba e Isole di Toscana";"LI";"ITA";17337;70114
+2022;"Marciana Marina";49011;"Elba e Isole di Toscana";"LI";"STR";7325;27148
+2022;"Marciano della Chiana";51022;"Val di Chiana Aretina";"AR";"ITA";424;1174
+2022;"Marciano della Chiana";51022;"Val di Chiana Aretina";"AR";"STR";271;1590
+2022;"Marliana";47007;"Pistoia e Montagna Pistoiese";"PT";"ITA";1489;3162
+2022;"Marliana";47007;"Pistoia e Montagna Pistoiese";"PT";"STR";1248;4025
+2022;"Marradi";48026;"Mugello";"FI";"ITA";2703;15625
+2022;"Marradi";48026;"Mugello";"FI";"STR";815;5559
+2022;"Massa";45010;"Riviera Apuana";"MS";"ITA";160448;703000
+2022;"Massa";45010;"Riviera Apuana";"MS";"STR";45674;172986
+2022;"Massa e Cozzile";47008;"Valdinievole";"PT";"ITA";297;822
+2022;"Massa e Cozzile";47008;"Valdinievole";"PT";"STR";696;3850
+2022;"Massa Marittima";53015;"Maremma Toscana Area Nord";"GR";"ITA";22747;71648
+2022;"Massa Marittima";53015;"Maremma Toscana Area Nord";"GR";"STR";16484;104074
+2022;"Massarosa";46018;"Versilia";"LU";"ITA";7090;17130
+2022;"Massarosa";46018;"Versilia";"LU";"STR";3275;14576
+2022;"Minucciano";46019;"Garfagnana e media valle del Serchio";"LU";"ITA";2667;7887
+2022;"Minucciano";46019;"Garfagnana e media valle del Serchio";"LU";"STR";1268;6059
+2022;"Molazzana";46020;"Garfagnana e media valle del Serchio";"LU";"ITA";316;2471
+2022;"Molazzana";46020;"Garfagnana e media valle del Serchio";"LU";"STR";727;6017
+2022;"Monsummano Terme";47009;"Valdinievole";"PT";"ITA";5571;12680
+2022;"Monsummano Terme";47009;"Valdinievole";"PT";"STR";8906;28931
+2022;"Montaione";48027;"Empolese Valdelsa e Montalbano";"FI";"ITA";11753;32860
+2022;"Montaione";48027;"Empolese Valdelsa e Montalbano";"FI";"STR";38617;228449
+2022;"Montalcino";52037;"Val d'Orcia";"SI";"ITA";33417;66701
+2022;"Montalcino";52037;"Val d'Orcia";"SI";"STR";48835;143476
+2022;"Montale";47010;"Pistoia e Montagna Pistoiese";"PT";"ITA";775;1843
+2022;"Montale";47010;"Pistoia e Montagna Pistoiese";"PT";"STR";149;441
+2022;"Monte Argentario";53016;"Maremma Toscana Area Sud";"GR";"ITA";32033;109056
+2022;"Monte Argentario";53016;"Maremma Toscana Area Sud";"GR";"STR";16261;52088
+2022;"Montecarlo";46021;"Piana di Lucca";"LU";"ITA";5307;11979
+2022;"Montecarlo";46021;"Piana di Lucca";"LU";"STR";3070;12252
+2022;"Montecatini Terme";47011;"Valdinievole";"PT";"ITA";184880;434175
+2022;"Montecatini Terme";47011;"Valdinievole";"PT";"STR";234387;750998
+2022;"Montecatini Val di Cecina";50019;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"ITA";8639;23596
+2022;"Montecatini Val di Cecina";50019;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"STR";6843;42304
+2022;"Montelupo Fiorentino";48028;"Empolese Valdelsa e Montalbano";"FI";"ITA";3754;18837
+2022;"Montelupo Fiorentino";48028;"Empolese Valdelsa e Montalbano";"FI";"STR";1678;8386
+2022;"Montemignaio";51023;"Casentino";"AR";"ITA";637;8067
+2022;"Montemignaio";51023;"Casentino";"AR";"STR";707;2028
+2022;"Montemurlo";100003;"Area Pratese";"PO";"ITA";2536;4281
+2022;"Montemurlo";100003;"Area Pratese";"PO";"STR";2085;5611
+2022;"Montepulciano";52015;"Val di Chiana Senese";"SI";"ITA";52616;102895
+2022;"Montepulciano";52015;"Val di Chiana Senese";"SI";"STR";57055;164555
+2022;"Monterchi";51024;"Valtiberina Toscana";"AR";"ITA";25;124
+2022;"Monterchi";51024;"Valtiberina Toscana";"AR";"STR";203;1770
+2022;"Monteriggioni";52016;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"ITA";34802;65621
+2022;"Monteriggioni";52016;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"STR";29931;108101
+2022;"Monteroni d'Arbia";52017;"Terre di Siena";"SI";"ITA";8206;24740
+2022;"Monteroni d'Arbia";52017;"Terre di Siena";"SI";"STR";8289;38433
+2022;"Monterotondo Marittimo";53027;"Maremma Toscana Area Nord";"GR";"ITA";1090;4119
+2022;"Monterotondo Marittimo";53027;"Maremma Toscana Area Nord";"GR";"STR";1245;9249
+2022;"Monte San Savino";51025;"Val di Chiana Aretina";"AR";"ITA";6907;19177
+2022;"Monte San Savino";51025;"Val di Chiana Aretina";"AR";"STR";5144;21310
+2022;"Montescudaio";50020;"Costa degli Etruschi";"PI";"ITA";6339;32741
+2022;"Montescudaio";50020;"Costa degli Etruschi";"PI";"STR";11800;114562
+2022;"Montespertoli";48030;"Empolese Valdelsa e Montalbano";"FI";"ITA";7546;22508
+2022;"Montespertoli";48030;"Empolese Valdelsa e Montalbano";"FI";"STR";15749;71666
+2022;"Montevarchi";51026;"Valdarno Aretino";"AR";"ITA";14629;25439
+2022;"Montevarchi";51026;"Valdarno Aretino";"AR";"STR";5997;15577
+2022;"Monteverdi Marittimo";50021;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"ITA";4575;10418
+2022;"Monteverdi Marittimo";50021;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"STR";1728;7465
+2022;"Monticiano";52018;"Terre di Siena";"SI";"ITA";2901;5627
+2022;"Monticiano";52018;"Terre di Siena";"SI";"STR";2086;10547
+2022;"Montieri";53017;"Maremma Toscana Area Nord";"GR";"ITA";2015;6062
+2022;"Montieri";53017;"Maremma Toscana Area Nord";"GR";"STR";1183;7179
+2022;"Montignoso";45011;"Riviera Apuana";"MS";"ITA";13074;49870
+2022;"Montignoso";45011;"Riviera Apuana";"MS";"STR";5316;23049
+2022;"Montopoli in Val d'Arno";50022;"Terre di Pisa";"PI";"ITA";4127;12413
+2022;"Montopoli in Val d'Arno";50022;"Terre di Pisa";"PI";"STR";3952;18714
+2022;"Mulazzo";45012;"Lunigiana";"MS";"ITA";4767;14904
+2022;"Mulazzo";45012;"Lunigiana";"MS";"STR";3223;10426
+2022;"Murlo";52019;"Terre di Siena";"SI";"ITA";6824;16500
+2022;"Murlo";52019;"Terre di Siena";"SI";"STR";8738;37203
+2022;"Orbetello";53018;"Maremma Toscana Area Sud";"GR";"ITA";180526;912183
+2022;"Orbetello";53018;"Maremma Toscana Area Sud";"GR";"STR";33019;152658
+2022;"Ortignano Raggiolo";51027;"Casentino";"AR";"ITA";399;1042
+2022;"Ortignano Raggiolo";51027;"Casentino";"AR";"STR";749;4765
+2022;"Palaia";50024;"Terre di Pisa";"PI";"ITA";3719;9142
+2022;"Palaia";50024;"Terre di Pisa";"PI";"STR";9828;52823
+2022;"Palazzuolo sul Senio";48031;"Mugello";"FI";"ITA";3474;11242
+2022;"Palazzuolo sul Senio";48031;"Mugello";"FI";"STR";1659;12246
+2022;"Peccioli";50025;"Terre di Pisa";"PI";"ITA";4004;8469
+2022;"Peccioli";50025;"Terre di Pisa";"PI";"STR";5342;38200
+2022;"Pelago";48032;"Firenze e Area Fiorentina";"FI";"ITA";3203;8764
+2022;"Pelago";48032;"Firenze e Area Fiorentina";"FI";"STR";3759;16791
+2022;"Pescaglia";46022;"Garfagnana e media valle del Serchio";"LU";"ITA";294;967
+2022;"Pescaglia";46022;"Garfagnana e media valle del Serchio";"LU";"STR";927;6433
+2022;"Pescia";47012;"Valdinievole";"PT";"ITA";8515;17036
+2022;"Pescia";47012;"Valdinievole";"PT";"STR";7063;29758
+2022;"Piancastagnaio";52020;"Amiata";"SI";"ITA";2770;7619
+2022;"Piancastagnaio";52020;"Amiata";"SI";"STR";723;1568
+2022;"Piazza al Serchio";46023;"Garfagnana e media valle del Serchio";"LU";"ITA";366;1612
+2022;"Piazza al Serchio";46023;"Garfagnana e media valle del Serchio";"LU";"STR";289;2014
+2022;"Pienza";52021;"Val d'Orcia";"SI";"ITA";28210;60924
+2022;"Pienza";52021;"Val d'Orcia";"SI";"STR";35534;104518
+2022;"Pietrasanta";46024;"Versilia";"LU";"ITA";71555;258414
+2022;"Pietrasanta";46024;"Versilia";"LU";"STR";41156;177797
+2022;"Pieve a Nievole";47013;"Valdinievole";"PT";"ITA";1684;2723
+2022;"Pieve a Nievole";47013;"Valdinievole";"PT";"STR";489;1950
+2022;"Pieve Fosciana";46025;"Garfagnana e media valle del Serchio";"LU";"ITA";1491;6468
+2022;"Pieve Fosciana";46025;"Garfagnana e media valle del Serchio";"LU";"STR";1096;6256
+2022;"Pieve Santo Stefano";51030;"Valtiberina Toscana";"AR";"ITA";7428;16039
+2022;"Pieve Santo Stefano";51030;"Valtiberina Toscana";"AR";"STR";2718;6307
+2022;"Piombino";49012;"Costa degli Etruschi";"LI";"ITA";130393;681037
+2022;"Piombino";49012;"Costa degli Etruschi";"LI";"STR";35642;201039
+2022;"Pisa";50026;"Terre di Pisa";"PI";"ITA";283942;846386
+2022;"Pisa";50026;"Terre di Pisa";"PI";"STR";436990;839683
+2022;"Pistoia";47014;"Pistoia e Montagna Pistoiese";"PT";"ITA";45013;82973
+2022;"Pistoia";47014;"Pistoia e Montagna Pistoiese";"PT";"STR";24442;74842
+2022;"Pitigliano";53019;"Maremma Toscana Area Sud";"GR";"ITA";7721;15128
+2022;"Pitigliano";53019;"Maremma Toscana Area Sud";"GR";"STR";2609;5303
+2022;"Podenzana";45013;"Lunigiana";"MS";"ITA";656;1437
+2022;"Podenzana";45013;"Lunigiana";"MS";"STR";333;1379
+2022;"Poggibonsi";52022;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"ITA";30796;64920
+2022;"Poggibonsi";52022;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"STR";21700;74670
+2022;"Poggio a Caiano";100004;"Area Pratese";"PO";"ITA";4602;9436
+2022;"Poggio a Caiano";100004;"Area Pratese";"PO";"STR";3799;8203
+2022;"Pomarance";50027;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"ITA";5335;16636
+2022;"Pomarance";50027;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"STR";7664;46273
+2022;"Ponsacco";50028;"Terre di Pisa";"PI";"ITA";4525;8818
+2022;"Ponsacco";50028;"Terre di Pisa";"PI";"STR";1981;8288
+2022;"Pontassieve";48033;"Firenze e Area Fiorentina";"FI";"ITA";6011;13234
+2022;"Pontassieve";48033;"Firenze e Area Fiorentina";"FI";"STR";9873;41032
+2022;"Pontedera";50029;"Terre di Pisa";"PI";"ITA";12472;24392
+2022;"Pontedera";50029;"Terre di Pisa";"PI";"STR";4705;15277
+2022;"Pontremoli";45014;"Lunigiana";"MS";"ITA";4836;8449
+2022;"Pontremoli";45014;"Lunigiana";"MS";"STR";2107;6218
+2022;"Poppi";51031;"Casentino";"AR";"ITA";18243;44060
+2022;"Poppi";51031;"Casentino";"AR";"STR";7693;33181
+2022;"Porcari";46026;"Piana di Lucca";"LU";"ITA";4484;10499
+2022;"Porcari";46026;"Piana di Lucca";"LU";"STR";758;2082
+2022;"Porto Azzurro";49013;"Elba e Isole di Toscana";"LI";"ITA";27351;141609
+2022;"Porto Azzurro";49013;"Elba e Isole di Toscana";"LI";"STR";12725;80027
+2022;"Portoferraio";49014;"Elba e Isole di Toscana";"LI";"ITA";67911;329296
+2022;"Portoferraio";49014;"Elba e Isole di Toscana";"LI";"STR";43500;263739
+2022;"Prato";100005;"Area Pratese";"PO";"ITA";96171;186876
+2022;"Prato";100005;"Area Pratese";"PO";"STR";62009;147388
+2022;"Pratovecchio Stia";51041;"Casentino";"AR";"ITA";3404;7580
+2022;"Pratovecchio Stia";51041;"Casentino";"AR";"STR";1507;8096
+2022;"Quarrata";47017;"Pistoia e Montagna Pistoiese";"PT";"ITA";2224;10159
+2022;"Quarrata";47017;"Pistoia e Montagna Pistoiese";"PT";"STR";1406;4789
+2022;"Radda in Chianti";52023;"Chianti";"SI";"ITA";9696;19067
+2022;"Radda in Chianti";52023;"Chianti";"SI";"STR";20978;73423
+2022;"Radicofani";52024;"Val d'Orcia";"SI";"ITA";4325;7964
+2022;"Radicofani";52024;"Val d'Orcia";"SI";"STR";3621;11424
+2022;"Radicondoli";52025;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"ITA";1347;3926
+2022;"Radicondoli";52025;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"STR";3568;23991
+2022;"Rapolano Terme";52026;"Terre di Siena";"SI";"ITA";35708;74477
+2022;"Rapolano Terme";52026;"Terre di Siena";"SI";"STR";11480;45886
+2022;"Reggello";48035;"Firenze e Area Fiorentina";"FI";"ITA";22537;60536
+2022;"Reggello";48035;"Firenze e Area Fiorentina";"FI";"STR";20631;75217
+2022;"Rignano sull'Arno";48036;"Firenze e Area Fiorentina";"FI";"ITA";7441;16461
+2022;"Rignano sull'Arno";48036;"Firenze e Area Fiorentina";"FI";"STR";22075;80720
+2022;"Rio";49021;"Elba e Isole di Toscana";"LI";"ITA";24407;143712
+2022;"Rio";49021;"Elba e Isole di Toscana";"LI";"STR";8465;56832
+2022;"Riparbella";50030;"Costa degli Etruschi";"PI";"ITA";6957;24051
+2022;"Riparbella";50030;"Costa degli Etruschi";"PI";"STR";8851;64457
+2022;"Roccalbegna";53020;"Amiata";"GR";"ITA";1000;2408
+2022;"Roccalbegna";53020;"Amiata";"GR";"STR";676;3177
+2022;"Roccastrada";53021;"Maremma Toscana Area Nord";"GR";"ITA";4452;14641
+2022;"Roccastrada";53021;"Maremma Toscana Area Nord";"GR";"STR";6922;33860
+2022;"Rosignano Marittimo";49017;"Costa degli Etruschi";"LI";"ITA";66516;335099
+2022;"Rosignano Marittimo";49017;"Costa degli Etruschi";"LI";"STR";51913;312268
+2022;"Rufina";48037;"Firenze e Area Fiorentina";"FI";"ITA";1350;4831
+2022;"Rufina";48037;"Firenze e Area Fiorentina";"FI";"STR";1234;5162
+2022;"Sambuca Pistoiese";47018;"Pistoia e Montagna Pistoiese";"PT";"ITA";160;247
+2022;"Sambuca Pistoiese";47018;"Pistoia e Montagna Pistoiese";"PT";"STR";22;32
+2022;"San Casciano dei Bagni";52027;"Val di Chiana Senese";"SI";"ITA";16266;36710
+2022;"San Casciano dei Bagni";52027;"Val di Chiana Senese";"SI";"STR";4916;22353
+2022;"San Casciano in Val di Pesa";48038;"Chianti";"FI";"ITA";13016;32226
+2022;"San Casciano in Val di Pesa";48038;"Chianti";"FI";"STR";23102;92104
+2022;"San Gimignano";52028;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"ITA";69409;131217
+2022;"San Gimignano";52028;"Terre di Valdelsa e dellEtruria Volterrana";"SI";"STR";127678;378501
+2022;"San Giovanni Valdarno";51033;"Valdarno Aretino";"AR";"ITA";1593;6974
+2022;"San Giovanni Valdarno";51033;"Valdarno Aretino";"AR";"STR";962;4200
+2022;"San Giuliano Terme";50031;"Terre di Pisa";"PI";"ITA";24923;217172
+2022;"San Giuliano Terme";50031;"Terre di Pisa";"PI";"STR";23180;70471
+2022;"San Godenzo";48039;"Mugello";"FI";"ITA";1317;4482
+2022;"San Godenzo";48039;"Mugello";"FI";"STR";183;993
+2022;"San Marcello Piteglio";47024;"Pistoia e Montagna Pistoiese";"PT";"ITA";12792;50024
+2022;"San Marcello Piteglio";47024;"Pistoia e Montagna Pistoiese";"PT";"STR";1760;8577
+2022;"San Miniato";50032;"Terre di Pisa";"PI";"ITA";8388;16273
+2022;"San Miniato";50032;"Terre di Pisa";"PI";"STR";6082;22291
+2022;"San Quirico d'Orcia";52030;"Val d'Orcia";"SI";"ITA";55150;126073
+2022;"San Quirico d'Orcia";52030;"Val d'Orcia";"SI";"STR";25419;77176
+2022;"San Romano in Garfagnana";46027;"Garfagnana e media valle del Serchio";"LU";"ITA";410;1997
+2022;"San Romano in Garfagnana";46027;"Garfagnana e media valle del Serchio";"LU";"STR";412;2633
+2022;"Sansepolcro";51034;"Valtiberina Toscana";"AR";"ITA";19859;40118
+2022;"Sansepolcro";51034;"Valtiberina Toscana";"AR";"STR";6298;23031
+2022;"Santa Croce sull'Arno";50033;"Terre di Pisa";"PI";"ITA";97;1686
+2022;"Santa Croce sull'Arno";50033;"Terre di Pisa";"PI";"STR";60;497
+2022;"Santa Fiora";53022;"Amiata";"GR";"ITA";568;2168
+2022;"Santa Fiora";53022;"Amiata";"GR";"STR";272;2657
+2022;"Santa Luce";50034;"Costa degli Etruschi";"PI";"ITA";4439;14215
+2022;"Santa Luce";50034;"Costa degli Etruschi";"PI";"STR";2195;14082
+2022;"Santa Maria a Monte";50035;"Terre di Pisa";"PI";"ITA";1789;5937
+2022;"Santa Maria a Monte";50035;"Terre di Pisa";"PI";"STR";500;1834
+2022;"San Vincenzo";49018;"Costa degli Etruschi";"LI";"ITA";102935;519752
+2022;"San Vincenzo";49018;"Costa degli Etruschi";"LI";"STR";75994;610002
+2022;"Sarteano";52031;"Val di Chiana Senese";"SI";"ITA";10504;30107
+2022;"Sarteano";52031;"Val di Chiana Senese";"SI";"STR";11904;54758
+2022;"Sassetta";49019;"Costa degli Etruschi";"LI";"ITA";7953;14185
+2022;"Sassetta";49019;"Costa degli Etruschi";"LI";"STR";3998;18262
+2022;"Scandicci";48041;"Firenze e Area Fiorentina";"FI";"ITA";17179;36882
+2022;"Scandicci";48041;"Firenze e Area Fiorentina";"FI";"STR";6646;20777
+2022;"Scansano";53023;"Maremma Toscana Area Sud";"GR";"ITA";7681;22603
+2022;"Scansano";53023;"Maremma Toscana Area Sud";"GR";"STR";2569;13330
+2022;"Scarlino";53024;"Maremma Toscana Area Nord";"GR";"ITA";43980;226878
+2022;"Scarlino";53024;"Maremma Toscana Area Nord";"GR";"STR";15664;108734
+2022;"Scarperia e San Piero";48053;"Mugello";"FI";"ITA";28177;44699
+2022;"Scarperia e San Piero";48053;"Mugello";"FI";"STR";12724;32224
+2022;"Seggiano";53025;"Amiata";"GR";"ITA";2969;6998
+2022;"Seggiano";53025;"Amiata";"GR";"STR";2664;11612
+2022;"Semproniano";53028;"Maremma Toscana Area Sud";"GR";"ITA";5642;12674
+2022;"Semproniano";53028;"Maremma Toscana Area Sud";"GR";"STR";1469;3946
+2022;"Seravezza";46028;"Versilia";"LU";"ITA";2094;6879
+2022;"Seravezza";46028;"Versilia";"LU";"STR";368;1217
+2022;"Serravalle Pistoiese";47020;"Pistoia e Montagna Pistoiese";"PT";"ITA";12690;29419
+2022;"Serravalle Pistoiese";47020;"Pistoia e Montagna Pistoiese";"PT";"STR";7278;22436
+2022;"Sestino";51035;"Valtiberina Toscana";"AR";"ITA";143;390
+2022;"Sestino";51035;"Valtiberina Toscana";"AR";"STR";29;254
+2022;"Sesto Fiorentino";48043;"Firenze e Area Fiorentina";"FI";"ITA";57238;96508
+2022;"Sesto Fiorentino";48043;"Firenze e Area Fiorentina";"FI";"STR";56119;86978
+2022;"Siena";52032;"Terre di Siena";"SI";"ITA";206030;428312
+2022;"Siena";52032;"Terre di Siena";"SI";"STR";255347;574114
+2022;"Signa";48044;"Firenze e Area Fiorentina";"FI";"ITA";17130;40452
+2022;"Signa";48044;"Firenze e Area Fiorentina";"FI";"STR";9269;21169
+2022;"Sillano Giuncugnano";46037;"Garfagnana e media valle del Serchio";"LU";"ITA";3011;10315
+2022;"Sillano Giuncugnano";46037;"Garfagnana e media valle del Serchio";"LU";"STR";1111;2701
+2022;"Sinalunga";52033;"Val di Chiana Senese";"SI";"ITA";11432;21165
+2022;"Sinalunga";52033;"Val di Chiana Senese";"SI";"STR";5768;22550
+2022;"Sorano";53026;"Maremma Toscana Area Sud";"GR";"ITA";11340;24847
+2022;"Sorano";53026;"Maremma Toscana Area Sud";"GR";"STR";3564;8654
+2022;"Sovicille";52034;"Terre di Siena";"SI";"ITA";12983;29983
+2022;"Sovicille";52034;"Terre di Siena";"SI";"STR";17623;84251
+2022;"Stazzema";46030;"Versilia";"LU";"ITA";1868;4607
+2022;"Stazzema";46030;"Versilia";"LU";"STR";231;738
+2022;"Subbiano";51037;"Casentino";"AR";"ITA";4548;7679
+2022;"Subbiano";51037;"Casentino";"AR";"STR";1668;8050
+2022;"Suvereto";49020;"Costa degli Etruschi";"LI";"ITA";8289;31977
+2022;"Suvereto";49020;"Costa degli Etruschi";"LI";"STR";4635;32520
+2022;"Talla";51038;"Casentino";"AR";"ITA";1019;2670
+2022;"Talla";51038;"Casentino";"AR";"STR";129;989
+2022;"Terranuova Bracciolini";51039;"Valdarno Aretino";"AR";"ITA";22381;55237
+2022;"Terranuova Bracciolini";51039;"Valdarno Aretino";"AR";"STR";7794;22499
+2022;"Terricciola";50036;"Terre di Pisa";"PI";"ITA";724;1870
+2022;"Terricciola";50036;"Terre di Pisa";"PI";"STR";3656;24496
+2022;"Torrita di Siena";52035;"Val di Chiana Senese";"SI";"ITA";4756;10981
+2022;"Torrita di Siena";52035;"Val di Chiana Senese";"SI";"STR";7321;31215
+2022;"Trequanda";52036;"Val di Chiana Senese";"SI";"ITA";10918;27093
+2022;"Trequanda";52036;"Val di Chiana Senese";"SI";"STR";13217;44638
+2022;"Tresana";45015;"Lunigiana";"MS";"ITA";514;2424
+2022;"Tresana";45015;"Lunigiana";"MS";"STR";227;418
+2022;"Uzzano";47021;"Valdinievole";"PT";"ITA";406;1060
+2022;"Uzzano";47021;"Valdinievole";"PT";"STR";670;3402
+2022;"Vaglia";48046;"Firenze e Area Fiorentina";"FI";"ITA";4117;8490
+2022;"Vaglia";48046;"Firenze e Area Fiorentina";"FI";"STR";2783;7986
+2022;"Vagli Sotto";46031;"Garfagnana e media valle del Serchio";"LU";"ITA";235;935
+2022;"Vagli Sotto";46031;"Garfagnana e media valle del Serchio";"LU";"STR";174;830
+2022;"Vaiano";100006;"Area Pratese";"PO";"ITA";958;3932
+2022;"Vaiano";100006;"Area Pratese";"PO";"STR";893;4679
+2022;"Vecchiano";50037;"Terre di Pisa";"PI";"ITA";3808;7762
+2022;"Vecchiano";50037;"Terre di Pisa";"PI";"STR";2901;8836
+2022;"Vernio";100007;"Area Pratese";"PO";"ITA";1670;6919
+2022;"Vernio";100007;"Area Pratese";"PO";"STR";266;736
+2022;"Viareggio";46033;"Versilia";"LU";"ITA";161737;637160
+2022;"Viareggio";46033;"Versilia";"LU";"STR";79734;311006
+2022;"Vicchio";48049;"Mugello";"FI";"ITA";2865;9615
+2022;"Vicchio";48049;"Mugello";"FI";"STR";4510;21576
+2022;"Vicopisano";50038;"Terre di Pisa";"PI";"ITA";794;3170
+2022;"Vicopisano";50038;"Terre di Pisa";"PI";"STR";585;2585
+2022;"Villa Basilica";46034;"Piana di Lucca";"LU";"ITA";126;375
+2022;"Villa Basilica";46034;"Piana di Lucca";"LU";"STR";142;900
+2022;"Villa Collemandina";46035;"Garfagnana e media valle del Serchio";"LU";"ITA";1695;6606
+2022;"Villa Collemandina";46035;"Garfagnana e media valle del Serchio";"LU";"STR";495;4526
+2022;"Villafranca in Lunigiana";45016;"Lunigiana";"MS";"ITA";1192;3561
+2022;"Villafranca in Lunigiana";45016;"Lunigiana";"MS";"STR";582;1852
+2022;"Vinci";48050;"Empolese Valdelsa e Montalbano";"FI";"ITA";19277;34292
+2022;"Vinci";48050;"Empolese Valdelsa e Montalbano";"FI";"STR";10457;39868
+2022;"Volterra";50039;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"ITA";41108;85730
+2022;"Volterra";50039;"Terre di Valdelsa e dellEtruria Volterrana";"PI";"STR";45002;159235
+2022;"Zeri";45017;"Lunigiana";"MS";"ITA";1451;2611
+2022;"Zeri";45017;"Lunigiana";"MS";"STR";357;454
+2022;"Fauglia e Orciano Pisano";"50014+50023";"Terre di Pisa";"PI";"ITA";1795;6520
+2022;"Fauglia e Orciano Pisano";"50014+50024";"Terre di Pisa";"PI";"STR";1611;9906
+2022;"Buggiano e Ponte Buggianese";"47003+47016";"Valdinievole";"PT";"ITA";3474;9351
+2022;"Buggiano e Ponte Buggianese";"47003+47017";"Valdinievole";"PT";"STR";3778;14612

@@ -1,0 +1,15 @@
+---
+title: "Walk on the Wild Side"
+description: |
+  Welcome to the Mind Walker blog, be ready to walk and to be surprised.
+site: distill::distill_website
+---
+
+
+<div style="text-align: center">
+
+She says, "Hey babe, take a walk on the wild side"
+
+<img src="images/mind.jpg" width="500px" min-width="400px" max-width="400px" />
+<p style="text-align:center;"> Mind-blowing.</p>
+</div>

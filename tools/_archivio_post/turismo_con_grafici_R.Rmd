@@ -1,0 +1,743 @@
+---
+title: "Il Turismo a Piombino: uno sguardo ai dati"
+categories:
+  - turismo
+  - grafici
+description: |
+ Piombino è da sempre un polo industriale, ma negli ultimi anni il turismo è cresciuto molto. Dal 2005 al 2024 i dati mostrano che la maggior parte dei turisti viene dalla Toscana, ma aumentano anche i visitatori dal Nord Italia, in particolare Lombardia, Piemonte ed Emilia-Romagna. Crescono soprattutto campeggi e agriturismi, che attirano gran parte dei turisti grazie alla loro offerta più ampia, mentre gli alloggi privati, dopo un boom fino al 2015, hanno subito un calo e non si sono più ripresi dopo il Covid. In generale, il turismo a Piombino si sta diversificando e diventando sempre più importante accanto all’industria.
+ Fonte: Elaborazione su dati https://www.regione.toscana.it/statistiche/banca-dati-turismo.
+author:
+  - name: The Mind Walker
+date: 2024-06-30
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+<style>
+/* Layout più ampio */
+d-article { max-width: 1100px; }
+
+/* Card per grafici */
+.figure-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 18px 0 26px 0;
+  background: #fff;
+}
+.figure-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+.figure-subtitle {
+  font-size: 1rem;
+  color: #444;
+  margin: 0 0 14px 0;
+}
+.figure-note {
+  font-size: 0.95rem;
+  color: #333;
+  border-left: 4px solid #eee;
+  padding-left: 10px;
+  margin-top: 12px;
+}
+
+/* Forza gli htmlwidget (plotly, sunburst) a stare larghi */
+.html-widget { width: 100% !important; }
+.plotly, .sunburst { width: 100% !important; }
+
+/* Griglie responsive */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(dplyr)
+library(readxl)
+library(tidyr)
+library(htmltools)
+
+library(ggplot2)
+library(plotly)
+library(sunburstR)
+library(rAmCharts4)
+
+# Card HTML per titoli + widget + note/commenti
+figure_card <- function(title, subtitle = NULL, widget, note = NULL) {
+  div(
+    class = "figure-card",
+    div(class = "figure-title", title),
+    if (!is.null(subtitle)) div(class = "figure-subtitle", subtitle),
+    widget,
+    if (!is.null(note)) div(class = "figure-note", HTML(note))
+  )
+}
+
+# ggplot -> plotly (line)
+make_line_plot <- function(df, var, titolo) {
+  p <- ggplot(df, aes(x = Anno, y = .data[[var]])) +
+    geom_line() +
+    geom_point(size = 2.2) +
+    labs(title = titolo) +
+    theme_minimal(base_size = 12) +
+    theme(
+      plot.title = element_text(face="bold", hjust = 0),
+      axis.title = element_blank()
+    )
+  ggplotly(p, height = 400) %>% 
+    layout(margin = list(l=40, r=10, b=40, t=60))
+}
+
+# Percorso dati: gli Excel di Piombino stanno in tools/turismo/piombino (fuori dal sito pubblicato)
+data_dir <- here::here("..", "tools", "turismo", "piombino")
+if (!dir.exists(data_dir)) data_dir <- "~/Desktop/rmarkdown_workshop"
+excel_path <- file.path(data_dir, "piombino_turismo.xlsx")
+```
+
+# Il Turismo a Piombino
+
+<div style="text-align: center"> <img src="images/faro_piombino.jpg" width="400px" min-width="300px" max-width="300px" /> <p style="text-align:center;"> Piazza Bovio, Faro.</p> </div>
+
+
+# Analisi storica dei flussi
+
+### Andamento temporale dal 2005 al 2022
+
+```{r Data cleaning and grouping}
+piombino_turismo <- as.data.frame(read_excel(excel_path))
+piombino_turismo[is.na(piombino_turismo)] <- 0
+
+colnames(piombino_turismo)[1] <- "group"
+rownames(piombino_turismo) <- piombino_turismo$group
+
+if ("Liechtenstein" %in% rownames(piombino_turismo) && "Svizzera" %in% rownames(piombino_turismo)) {
+for (i in 1:(ncol(piombino_turismo)-1)) {
+piombino_turismo["Svizzera", i+1] <- piombino_turismo["Svizzera", i+1] + piombino_turismo["Liechtenstein", i+1]
+if (!("Svizzera (incluso Liechtenstein)" %in% rownames(piombino_turismo))) {
+piombino_turismo["Svizzera (incluso Liechtenstein)", ] <- 0
+piombino_turismo["Svizzera (incluso Liechtenstein)", "group"] <- "Svizzera (incluso Liechtenstein)"
+}
+piombino_turismo["Svizzera (incluso Liechtenstein)", i+1] <-
+piombino_turismo["Svizzera", i+1] + piombino_turismo["Svizzera (incluso Liechtenstein)", i+1]
+}
+}
+
+Italia <- list("Abruzzo","Basilicata","Bolzano", "Calabria", "Campania", "EmiliaRomagna",
+"FriuliV. Giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise",
+"Piemonte", "Puglia", "Regione italiana non indicata", "Sardegna",
+"Sicilia", "Toscana", "Trento", "Umbria", "Valle d'Aosta", "Veneto")
+
+Europa <- list("Austria", "Belgio" ,"Cipro", "Islanda", "Altri Paesi Europei",
+"Bulgaria", "Croazia", "Danimarca", "Estonia",
+"Finlandia", "Francia", "Germania", "Grecia", "Irlanda", "Lettonia",
+"Lituania", "Lussemburgo", "Malta", "Paesi Bassi",
+"Portogallo", "Regno Unito", "Romania", "Spagna", "Svezia",
+"Macedonia", "Norvegia", "Polonia", "Svizzera (incluso Liechtenstein)", "Repubblica Ceca",
+"Repubblica di Moldova", "Slovacchia", "Slovenia", "Ucraina", "Ungheria",
+"Albania", "Bielorussia", "Bosnia-Erzegovina")
+
+America <- list("Altri Paesi America Settentrionale", "Altri Paesi Centro-Sud America" ,
+"Altri Paesi o territori Nord-Americani", "Argentina", "Brasile","Altri Paesi America Centrale",
+"Canada", "Messico", "Paese Americhe non indicato","Altri Paesi America Latina",
+"Stati Uniti d'America" , "Venezuela")
+
+Africa <- list("Altri Paesi Africa Mediterranea", "Altri Paesi dell'Africa" ,
+"Altri Paesi dell'Africa centrale e del sud",
+"Egitto", "Sud Africa")
+
+Asia <- list("Russia", "Turchia",
+"Altri Paesi Asia Occidentale", "Altri Paesi Medio Oriente", "Giappone",
+"Altri Paesi dell'Asia", "Altri Paesi dell'Asia orientale", "Israele", "Corea del Sud",
+"Cina (incluso Hong Kong)", "India",
+"Paese dell'Asia non indicato", "Paesi dell'Asia centro-occidentale")
+
+Oceania <- list("Australia", "Nuova Zelanda", "Altri Paesi o territori Oceania",
+"Paese Oceania e Regioni polari non indicato")
+
+piombino_turismo_class <- piombino_turismo %>%
+tibble::rownames_to_column("rn") %>%
+mutate(group = rn) %>%
+select(-rn) %>%
+mutate(Country = case_when(
+group %in% unlist(Italia) ~ "Italia",
+group %in% unlist(Europa) ~ "Europa",
+group %in% unlist(Asia) ~ "Asia",
+group %in% unlist(Africa) ~ "Africa",
+group %in% unlist(America) ~ "America",
+group %in% unlist(Oceania) ~ "Oceania",
+TRUE ~ NA_character_
+)) %>%
+relocate(Country, group)
+
+piombino_italia <- piombino_turismo_class[1:22, c("Country","group", as.character(2005:2022))]
+
+piombino_arrivi <- as.data.frame(read_excel(excel_path))
+rownames(piombino_arrivi) <- piombino_arrivi[,1]
+n <- rownames(piombino_arrivi)
+piombino_arrivi <- as.data.frame(t(piombino_arrivi[,-1]))
+colnames(piombino_arrivi) <- n
+piombino_arrivi$Anno <- 2005:2022
+
+```
+
+### Evoluzione temporale degli arrivi dalla Lombardia e dal Piemonte
+
+```{r totale_arrivi, fig.cap = "Arrivi dalla Lombardia e Piemonte"}
+library(plotly)
+library(htmltools)
+
+p_lombardia <- make_line_plot(piombino_arrivi, "Lombardia", "Arrivi dalla Lombardia")
+p_piemonte <- make_line_plot(piombino_arrivi, "Piemonte", "Arrivi dal Piemonte")
+
+# Render side by side
+browsable(
+  div(
+    style="display: flex; gap: 16px; align-items: start;",
+    div(style="flex: 1; min-width: 0;", p_lombardia),
+    div(style="flex: 1; min-width: 0;", p_piemonte)
+  )
+)
+```
+
+### Arrivi da Emilia-Romagna, Toscana e Lazio
+```{r totale_arrivi2, fig.cap = "Arrivi dall' Emilia, Toscana e Lazio"}
+p_lazio <- make_line_plot(piombino_arrivi, "Lazio", "Arrivi dal Lazio")
+p_toscana <- make_line_plot(piombino_arrivi, "Toscana", "Arrivi dalla Toscana")
+p_emilia <- make_line_plot(piombino_arrivi, "EmiliaRomagna", "Arrivi dall'Emilia-Romagna")
+
+browsable(
+  div(
+    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;",
+    div(p_lazio),
+    div(p_toscana),
+    div(p_emilia)
+  )
+)
+```
+
+
+```{r sunburst_extraeu, fig.height=6, fig.width=9.5}
+library(sunburstR)
+library(htmltools)
+
+piombino_turismo_fin <- na.omit(piombino_turismo_class)
+
+totale_italia <- dplyr::filter(piombino_turismo_fin, Country %in% c("Italia")) %>%
+select(-c(1,2)) %>%
+replace(is.na(.), 0) %>%
+summarise_all(sum)
+
+piombino_turismo_fin[10,] <- c("Europa", "Italia", totale_italia)
+
+plot_turismo_extra_eu <- dplyr::filter(piombino_turismo_fin, Country %in% c("America","Oceania","Asia","Africa","Europa"))
+
+sb_long <- plot_turismo_extra_eu %>%
+unite(bv, Country, group, sep = "-") %>%
+pivot_longer(cols = as.character(2005:2022), names_to = "Anno", values_to = "value") %>%
+mutate(Anno = as.integer(Anno), value = as.numeric(value))
+
+# Create widgets for each year
+years <- 2005:2022
+widgets_list <- lapply(years, function(y) {
+  data_year <- sb_long %>%
+    filter(Anno == y) %>%
+    select(bv, value)
+  
+  sb <- sunburst(data_year, count = FALSE, percent = TRUE, legend = FALSE, 
+                 width = "100%", height = 520)
+  
+  div(
+    id = paste0("sb_", y),
+    class = "sunburst-slide",
+    style = if (y == 2005) "display:block; opacity: 1;" else "display:none; opacity: 0;",
+    sb
+  )
+})
+
+slider <- tags$input(
+  id = "sb_slider", 
+  type = "range",
+  min = 2005, 
+  max = 2022,
+  value = 2005, 
+  step = 1,
+  style = "width:100%; margin: 20px 0;"
+)
+
+label <- div(
+  id="sb_year_label",
+  style="font-weight:700; font-size: 1.2em; margin:10px 0;",
+  "Anno: 2005"
+)
+
+script <- tags$script(HTML("
+setTimeout(function() {
+  var slider = document.getElementById('sb_slider');
+  var label = document.getElementById('sb_year_label');
+  
+  if (!slider || !label) return;
+  
+  function showYear(y) {
+    label.textContent = 'Anno: ' + y;
+    
+    // Hide all
+    for (var yr = 2005; yr <= 2022; yr++) {
+      var el = document.getElementById('sb_' + yr);
+      if (el) {
+        el.style.display = 'none';
+        el.style.opacity = '0';
+      }
+    }
+    
+    // Show selected with small delay to force re-render
+    setTimeout(function() {
+      var el = document.getElementById('sb_' + y);
+      if (el) {
+        el.style.display = 'block';
+        // Force reflow
+        el.offsetHeight;
+        el.style.opacity = '1';
+        
+        // Trigger resize event to redraw sunburst
+        window.dispatchEvent(new Event('resize'));
+      }
+    }, 50);
+  }
+  
+  slider.addEventListener('input', function() { 
+    showYear(parseInt(this.value)); 
+  });
+  
+  showYear(2005);
+}, 800);
+"))
+
+style_tag <- tags$style(HTML("
+.sunburst-slide {
+  transition: opacity 0.3s ease-in-out;
+}
+"))
+
+browsable(
+  tagList(
+    style_tag,
+    div(
+      style="border: 1px solid #e6e6e6; border-radius: 10px; padding: 20px; background: #fff;",
+      h3("Ripartizione geografica extra-Italia (2005–2022)", style="margin-top: 0;"),
+      p("Usa lo slider per cambiare anno.", style="color: #666;"),
+      label,
+      slider,
+      div(style="margin-top:20px; position: relative;", widgets_list),
+      script
+    )
+  )
+)
+```
+
+
+### Ripartizione geografica dei flussi italiani per anno (2005-2022)
+
+```{r piechart_italia, fig.cap = "Arrivi dall' Italia"}
+library(sunburstR)
+library(htmltools)
+
+piombino_italia <- piombino_turismo_class[1:22, c("Country","group", as.character(2005:2022))]
+
+it_long <- piombino_italia %>%
+unite(bv, Country, group, sep = "-") %>%
+pivot_longer(cols = as.character(2005:2022), names_to = "Anno", values_to = "value") %>%
+mutate(Anno = as.integer(Anno), value = as.numeric(value))
+
+# Create widgets for each year
+years <- 2005:2022
+it_widgets_list <- lapply(years, function(y) {
+  data_year <- it_long %>%
+    filter(Anno == y) %>%
+    select(bv, value)
+  
+  sb <- sunburst(data_year, count = FALSE, percent = TRUE, legend = FALSE, 
+                 width = "100%", height = 520)
+  
+  div(
+    id = paste0("it_", y),
+    class = "sunburst-slide",
+    style = if (y == 2005) "display:block; opacity: 1;" else "display:none; opacity: 0;",
+    sb
+  )
+})
+
+slider <- tags$input(
+  id = "it_slider", 
+  type = "range",
+  min = 2005, 
+  max = 2022,
+  value = 2005, 
+  step = 1,
+  style = "width:100%; margin: 20px 0;"
+)
+
+label <- div(
+  id="it_year_label",
+  style="font-weight:700; font-size: 1.2em; margin:10px 0;",
+  "Anno: 2005"
+)
+
+script <- tags$script(HTML("
+setTimeout(function() {
+  var slider = document.getElementById('it_slider');
+  var label = document.getElementById('it_year_label');
+  
+  if (!slider || !label) return;
+  
+  function showYear(y) {
+    label.textContent = 'Anno: ' + y;
+    
+    // Hide all
+    for (var yr = 2005; yr <= 2022; yr++) {
+      var el = document.getElementById('it_' + yr);
+      if (el) {
+        el.style.display = 'none';
+        el.style.opacity = '0';
+      }
+    }
+    
+    // Show selected with small delay to force re-render
+    setTimeout(function() {
+      var el = document.getElementById('it_' + y);
+      if (el) {
+        el.style.display = 'block';
+        // Force reflow
+        el.offsetHeight;
+        el.style.opacity = '1';
+        
+        // Trigger resize event to redraw sunburst
+        window.dispatchEvent(new Event('resize'));
+      }
+    }, 50);
+  }
+  
+  slider.addEventListener('input', function() { 
+    showYear(parseInt(this.value)); 
+  });
+  
+  showYear(2005);
+}, 800);
+"))
+
+style_tag <- tags$style(HTML("
+.sunburst-slide {
+  transition: opacity 0.3s ease-in-out;
+}
+"))
+
+browsable(
+  tagList(
+    style_tag,
+    div(
+      style="border: 1px solid #e6e6e6; border-radius: 10px; padding: 20px; background: #fff;",
+      h3("Ripartizione geografica Italia (2005–2022)", style="margin-top: 0;"),
+      p("Seleziona l'anno con lo slider.", style="color: #666;"),
+      label,
+      slider,
+      div(style="margin-top:20px; position: relative;", it_widgets_list),
+      script
+    )
+  )
+)
+```
+
+### Distribuzione degli arrivi per regione italiana 
+
+```{r barplot2022, fig.cap = "Arrivi dall'Italia, anno 2022", fig.width=10, fig.height=7}
+library(ggplot2)
+library(plotly)
+library(dplyr)
+
+piombino_turismo_raw <- read_excel(excel_path)
+colnames(piombino_turismo_raw)[1] <- "group"
+piombino_turismo_italia_raw <- piombino_turismo_raw[1:22,]
+
+# Prepara i dati per il bar chart
+italia_2022 <- piombino_turismo_italia_raw %>%
+  select(group, `2022`) %>%
+  mutate(`2022` = as.numeric(`2022`)) %>%
+  arrange(`2022`) %>%
+  mutate(group = factor(group, levels = group))
+
+# Crea il grafico a barre
+p <- ggplot(italia_2022, aes(x = `2022`, y = group, text = paste0(group, ": ", format(`2022`, big.mark=".")))) +
+  geom_col(fill = "#3498db", alpha = 0.8) +
+  labs(
+    title = "Arrivi per regione - Anno 2022",
+    x = "Numero di arrivi",
+    y = ""
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0, size = 16),
+    axis.text.y = element_text(size = 11),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+
+# Converti in plotly per interattività
+ggplotly(p, tooltip = "text", height = 600) %>%
+  layout(
+    margin = list(l = 120, r = 40, t = 80, b = 60),
+    hoverlabel = list(bgcolor = "white", font = list(size = 12))
+  )
+```
+
+```{r turismo_piombino_dinamico, echo=FALSE, message=FALSE, warning=FALSE, eval=file.exists(file.path(data_dir, "Piombino_strutture_2005_2024.xlsx"))}
+# Il blocco gira solo se c'è il file delle strutture; altrimenti vedi la dashboard.
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(htmltools)
+library(crosstalk)
+
+# ======================
+# PARAMETRI
+# ======================
+file_strutture <- file.path(data_dir, "Piombino_strutture_2005_2024.xlsx")
+# ATTENZIONE: file_arrivi punta allo stesso file delle strutture, quindi il grafico
+# "Arrivi per tipologia di struttura" mostra le strutture, non gli arrivi.
+# Sostituire con il file degli arrivi per tipologia quando disponibile.
+file_arrivi    <- file.path(data_dir, "Piombino_strutture_2005_2024.xlsx")
+id_col         <- "Classificazione micro"
+anno_pie       <- 2024
+
+# ======================
+# FUNZIONI
+# ======================
+to_long <- function(df, id_col) {
+  df %>%
+    rename(Classe = all_of(id_col)) %>%
+    mutate(Classe = as.character(Classe)) %>%
+    filter(!is.na(Classe)) %>%
+    filter(tolower(trimws(Classe)) != "totale") %>%
+    pivot_longer(
+      cols = -Classe,
+      names_to = "Anno",
+      values_to = "Valore"
+    ) %>%
+    mutate(
+      Anno   = as.integer(gsub("[^0-9]", "", Anno)),
+      Valore = as.numeric(Valore)
+    ) %>%
+    filter(!is.na(Anno), !is.na(Valore))
+}
+
+clean_layout <- function(p, titolo, xlab = NULL, ylab = NULL) {
+  p %>%
+    layout(
+      title = list(text = titolo, x = 0),
+      margin = list(l = 60, r = 25, t = 70, b = 60),
+      paper_bgcolor = "white",
+      plot_bgcolor  = "white",
+      font = list(size = 13),
+      xaxis = if (!is.null(xlab)) list(title = xlab, zeroline = FALSE, showgrid = TRUE) else NULL,
+      yaxis = if (!is.null(ylab)) list(title = ylab, zeroline = FALSE, showgrid = TRUE) else NULL,
+      legend = list(orientation = "h", x = 0, y = -0.2)
+    ) %>%
+    config(displayModeBar = TRUE, displaylogo = FALSE)
+}
+
+# wrap leggibile per legenda (evita legenda “sballata” con label lunghissime)
+wrap_legend <- function(x, width = 22) {
+  x <- trimws(as.character(x))
+  stringr::str_wrap(x, width = width)
+}
+
+# ====== DATI ======
+strutture_raw  <- read_excel(file_strutture)
+strutture_long <- to_long(strutture_raw, id_col)
+
+df_pie <- strutture_long %>%
+  filter(Anno == anno_pie) %>%
+  group_by(Classe) %>%
+  summarise(Valore = sum(Valore, na.rm = TRUE), .groups = "drop") %>%
+  filter(Valore > 0) %>%
+  mutate(
+    Classe_leg = wrap_legend(Classe, 24)
+  ) %>%
+  arrange(desc(Valore)) %>%
+  mutate(
+    Classe_leg = factor(Classe_leg, levels = unique(Classe_leg)),
+    Share = Valore / sum(Valore)
+  )
+
+# ====== GRAFICO DONUT “PULITO” ======
+p_pie <- plot_ly(
+  data = df_pie,
+  labels = ~Classe_leg,     # legenda “wrappata”
+  values = ~Valore,
+  type = "pie",
+  hole = 0.62,
+  sort = FALSE,
+  direction = "clockwise",
+  # Niente label fuori (che rovinano tutto): percentuali dentro e basta
+  textinfo = "percent",
+  textposition = "inside",
+  insidetextorientation = "radial",
+  textfont = list(size = 13),
+  # Hover informativo e pulito
+  hovertemplate = paste0(
+    "<b>%{label}</b><br>",
+    "Valore: %{value}<br>",
+    "Quota: %{percent}<extra></extra>"
+  ),
+  # Bordo bianco tra fette per “stacco” elegante
+  marker = list(line = list(color = "white", width = 2))
+) %>%
+  layout(
+    title = list(text = paste0("Distribuzione strutture ricettive per tipologia (", anno_pie, ")"), x = 0),
+    paper_bgcolor = "white",
+    plot_bgcolor  = "white",
+    margin = list(l = 20, r = 260, t = 70, b = 20),   # spazio a destra per legenda
+    uniformtext = list(minsize = 11, mode = "hide"),
+    legend = list(
+      x = 1.02, y = 1,
+      xanchor = "left", yanchor = "top",
+      orientation = "v",
+      font = list(size = 12),
+      itemsizing = "constant"
+    ),
+    # Nota centrale (effetto “professionale”)
+    annotations = list(
+      list(
+        x = 0.5, y = 0.5, xref = "paper", yref = "paper",
+        text = paste0("<b>", anno_pie, "</b><br><span style='font-size:12px;color:#666'>composizione</span>"),
+        showarrow = FALSE,
+        align = "center"
+      )
+    )
+  ) %>%
+  config(displayModeBar = TRUE, displaylogo = FALSE)
+
+# ======================
+# DATI ARRIVI → SERIE STORICA CON SELEZIONE
+# ======================
+arrivi_raw  <- read_excel(file_arrivi)
+arrivi_long <- to_long(arrivi_raw, id_col)
+
+sd <- SharedData$new(arrivi_long, key = ~Classe, group = "arrivi")
+
+filtro <- filter_select(
+  id = "struttura",
+  label = "Seleziona tipologia di struttura:",
+  sharedData = sd,
+  group = ~Classe,
+  multiple = FALSE,
+  allLevels = TRUE
+)
+
+ts_arrivi <- plot_ly(
+  sd,
+  x = ~Anno,
+  y = ~Valore,
+  color = ~Classe,
+  type = "scatter",
+  mode = "lines",
+  hovertemplate = paste0(
+    "<b>%{text}</b><br>",
+    "Anno: %{x}<br>",
+    "Arrivi: %{y}<extra></extra>"
+  ),
+  text = ~Classe
+) %>%
+  clean_layout(
+    titolo = "Arrivi turistici a Piombino per tipologia di struttura",
+    xlab = "Anno",
+    ylab = "Arrivi"
+  )
+
+# ======================
+# OUTPUT HTML
+# ======================
+
+browsable(
+  tagList(
+
+    # --- COMMENTO TESTUALE ---
+    div(
+      style = "
+        max-width: 1000px;
+        margin: 0 0 25px 0;
+        padding: 14px 18px;
+        background: #f8f9fa;
+        border-left: 5px solid #3498db;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #333;
+      ",
+      HTML(paste0(
+        "<b>Come leggere il grafico</b><br>",
+        "Il grafico a torta mostra la composizione delle <b>strutture ricettive a Piombino nel ",
+        anno_pie,
+        "</b>. ",
+        "Ogni fetta rappresenta una tipologia di struttura; ",
+        "le percentuali indicano il peso relativo sul totale comunale. ",
+        "Il valore <i>Totale</i> è escluso per rendere il confronto più leggibile."
+      ))
+    ),
+
+    # --- GRAFICO A TORTA (UNA SOLA VOLTA) ---
+    div(
+      style = "max-width: 1000px; margin-bottom: 40px;",
+      p_pie
+    ),
+
+    # --- COMMENTO SERIE STORICA ---
+    div(
+      style = "
+        max-width: 1000px;
+        margin: 0 0 15px 0;
+        padding: 12px 18px;
+        background: #ffffff;
+        border-left: 5px solid #2ecc71;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        color: #333;
+      ",
+      HTML(
+        "<b>Analisi temporale</b><br>
+         Seleziona una tipologia di struttura per osservare
+         come si è evoluto il numero di arrivi nel tempo.
+         Questo consente di confrontare dinamiche diverse
+         tra alberghi, campeggi, agriturismi e altre forme di ospitalità."
+      )
+    ),
+
+    # --- FILTRO + SERIE STORICA ---
+    div(style = "max-width: 1000px; margin-bottom: 10px;", filtro),
+    div(style = "max-width: 1000px;", ts_arrivi)
+  )
+)
+
+```
+
+# Piombino e il resto della Toscana
+
+Come si colloca Piombino rispetto agli altri comuni toscani? Quanto si fermano i turisti, quanti sono stranieri, quanto sono pieni i posti letto? Per rispondere ho costruito una **[dashboard interattiva](../../turismo/index.html)** con i dati aperti della Regione Toscana dal 2012 a oggi: si può scegliere qualunque comune e confrontarlo con il suo ambito turistico, la provincia o tutta la regione.
+
+<p style="text-align:center; margin: 24px 0;"><a href="../../turismo/index.html" style="display:inline-block; padding:10px 18px; border-radius:8px; background:#2a78d6; color:#fff; text-decoration:none; font-weight:600;">Apri la dashboard sul turismo in Toscana →</a></p>

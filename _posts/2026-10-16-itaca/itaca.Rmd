@@ -1,0 +1,187 @@
+---
+title: "Tre Itache"
+subtitle: "Kavafis, il postino di Troisi e il marinaio di Lucio Dalla"
+categories:
+  - poesia
+  - letteratura
+  - cinema
+  - musica
+  - viaggiare
+description: |
+  Un poeta di Alessandria dice che conta il viaggio, non l'arrivo. Un postino di un'isola del Sud trova il viaggio senza mai partire. Un marinaio senza nome vorrebbe soltanto tornare a casa. Tre modi di cercare la stessa isola.
+author:
+  - name: The Mind Walker
+date: 2026-10-16
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=GFS+Didot&display=swap');
+d-article p, d-article li { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.28rem; line-height: 1.7; }
+d-article h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 1.9rem; margin-top: 2.6rem; }
+.epigraph { margin: 1.2rem 0 2.4rem auto; max-width: 30rem; text-align: right; font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 1.3rem; color: #555; }
+.epigraph span { display: block; font-style: normal; font-size: .9rem; letter-spacing: .12em; text-transform: uppercase; margin-top: .4rem; color: #1f6f78; }
+.dropcap::first-letter { float: left; font-family: "Cormorant Garamond", Georgia, serif; font-size: 4.6rem; line-height: .82; padding: .35rem .5rem 0 0; color: #1f6f78; }
+.ornament { text-align: center; color: #1f6f78; letter-spacing: 1.2rem; margin: 2.4rem 0; }
+.pull { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.75rem; line-height: 1.35; font-style: italic; text-align: center; color: #1c4f55; margin: 2.6rem 1rem; }
+.approdo { font-family: "Cormorant Garamond", Georgia, serif; text-transform: uppercase; letter-spacing: .3em; font-size: .85rem; color: #1f6f78; margin: 3rem 0 -.6rem; }
+.itaca-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: 28px 0 36px; padding: 28px 0; border-top: 1px solid #d8e3e4; border-bottom: 1px solid #d8e3e4; }
+.itaca-grid div { font-size: 1.08rem; line-height: 1.75; }
+.itaca-grid .gr { font-family: "GFS Didot", "Cormorant Garamond", Georgia, serif; }
+.itaca-grid .it { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; color: #333; font-size: 1.16rem; }
+.itaca-grid h4 { margin: 0 0 12px; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: #1f6f78; font-style: normal; font-family: Georgia, serif; }
+.cartoline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 2rem 0 2.6rem; }
+.cartolina { background: #f4f1ea; border: 1px solid #ddd5c4; padding: 1.2rem 1.2rem 1rem; font-family: "Cormorant Garamond", Georgia, serif; box-shadow: 0 6px 16px rgba(30,40,40,.08); }
+.cartolina .anno { font-size: .8rem; letter-spacing: .2em; text-transform: uppercase; color: #1f6f78; }
+.cartolina .chi { font-size: 1.35rem; font-weight: 600; margin: .2rem 0 .6rem; }
+.cartolina p { font-size: 1.1rem !important; line-height: 1.5 !important; margin: .35rem 0; }
+.cartolina p b { font-weight: 600; color: #1c4f55; }
+.quarta { margin: 2.6rem auto 2rem; max-width: 30rem; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.3rem; line-height: 1.75; font-style: italic; }
+.quarta .t { font-style: normal; font-size: .85rem; letter-spacing: .2em; text-transform: uppercase; color: #1f6f78; margin-bottom: 1rem; }
+@media (max-width: 760px) { .itaca-grid, .cartoline { grid-template-columns: 1fr; } }
+</style>
+
+<p class="dropcap">Itaca è uno scoglio dello Ionio, poco più di cento chilometri quadrati di rocce, ulivi e baie strette. Eppure da tremila anni è il luogo più cercato della letteratura. Omero ci mise un uomo che voleva tornarci e impiegò vent'anni. Da allora il suo nome ha smesso di indicare un'isola e ha cominciato a indicare qualunque meta capace di metterci in cammino.</p>
+
+In questo post la seguo in tre approdi molto diversi: una poesia scritta ad Alessandria d'Egitto nel 1911, un film girato tra Procida e Salina nel 1994, una canzone uscita a Bologna nel 1971. Tre Itache che non si somigliano, e che proprio per questo si completano.
+
+<div class="approdo">Primo approdo · Alessandria, 1911</div>
+
+## Il poeta che augurava strade lunghe
+
+Konstantinos Kavafis passò quasi tutta la vita ad Alessandria, impiegato in un ufficio dell'irrigazione, poeta di notte. Pubblicava poco, in fogli stampati a sue spese che distribuiva agli amici. Scrisse *Itaca* nel 1910 e la pubblicò nel 1911. Ne esisteva un abbozzo molto più vecchio, *Seconda odissea*, del 1894, che non volle mai far uscire: come se gli fossero serviti sedici anni di viaggio per capire che cosa voleva dire dell'arrivo.
+
+Ecco il testo originale e una mia traduzione, fatta cercando di restare vicino al greco più che di renderlo elegante.
+
+<div class="itaca-grid">
+<div class="gr">
+<h4>Ιθάκη (1911)</h4>
+Σα βγεις στον πηγαιμό για την Ιθάκη,<br>
+να εύχεσαι νάναι μακρύς ο δρόμος,<br>
+γεμάτος περιπέτειες, γεμάτος γνώσεις.<br>
+Τους Λαιστρυγόνας και τους Κύκλωπας,<br>
+τον θυμωμένο Ποσειδώνα μη φοβάσαι,<br>
+τέτοια στον δρόμο σου ποτέ σου δεν θα βρείς,<br>
+αν μέν' η σκέψις σου υψηλή, αν εκλεκτή<br>
+συγκίνησις το πνεύμα και το σώμα σου αγγίζει.<br>
+Τους Λαιστρυγόνας και τους Κύκλωπας,<br>
+τον άγριο Ποσειδώνα δεν θα συναντήσεις,<br>
+αν δεν τους κουβανείς μες στην ψυχή σου,<br>
+αν η ψυχή σου δεν τους στήνει εμπρός σου.<br>
+<br>
+Να εύχεσαι νάναι μακρύς ο δρόμος.<br>
+Πολλά τα καλοκαιρινά πρωϊά να είναι<br>
+που με τι ευχαρίστησι, με τι χαρά<br>
+θα μπαίνεις σε λιμένας πρωτοειδωμένους·<br>
+να σταματήσεις σ' εμπορεία Φοινικικά,<br>
+και τες καλές πραγμάτειες ν' αποκτήσεις,<br>
+σεντέφια και κοράλλια, κεχριμπάρια κ' έβενους,<br>
+και ηδονικά μυρωδικά κάθε λογής,<br>
+όσο μπορείς πιο άφθονα ηδονικά μυρωδικά·<br>
+σε πόλεις Αιγυπτιακές πολλές να πας,<br>
+να μάθεις και να μάθεις απ' τους σπουδασμένους.<br>
+<br>
+Πάντα στον νου σου νάχεις την Ιθάκη.<br>
+Το φθάσιμον εκεί είν' ο προορισμός σου.<br>
+Αλλά μη βιάζεις το ταξίδι διόλου.<br>
+Καλλίτερα χρόνια πολλά να διαρκέσει·<br>
+και γέρος πια ν' αράξεις στο νησί,<br>
+πλούσιος με όσα κέρδισες στον δρόμο,<br>
+μη προσδοκώντας πλούτη να σε δώσει η Ιθάκη.<br>
+<br>
+Η Ιθάκη σ' έδωσε το ωραίο ταξίδι.<br>
+Χωρίς αυτήν δεν θάβγαινες στον δρόμο.<br>
+Αλλο δεν έχει να σε δώσει πια.<br>
+<br>
+Κι αν πτωχική την βρεις, η Ιθάκη δεν σε γέλασε.<br>
+Ετσι σοφός που έγινες, με τόση πείρα,<br>
+ήδη θα το κατάλαβες οι Ιθάκες τι σημαίνουν.
+</div>
+<div class="it">
+<h4>Itaca (traduzione di The Mind Walker)</h4>
+Quando ti metterai in viaggio per Itaca,<br>
+augurati che la strada sia lunga,<br>
+piena di avventure, piena di conoscenze.<br>
+I Lestrigoni e i Ciclopi,<br>
+l'irato Poseidone non temerli,<br>
+non troverai mai nulla di simile sulla tua strada,<br>
+se il tuo pensiero resta alto, se un'emozione<br>
+scelta tocca il tuo spirito e il tuo corpo.<br>
+I Lestrigoni e i Ciclopi,<br>
+il feroce Poseidone non li incontrerai,<br>
+se non li porti dentro la tua anima,<br>
+se non è la tua anima a metterteli davanti.<br>
+<br>
+Augurati che la strada sia lunga.<br>
+Che siano molte le mattine d'estate<br>
+in cui, con quale piacere, con quale gioia,<br>
+entrerai in porti mai visti prima;<br>
+fermati negli empori dei Fenici<br>
+e compra le belle merci,<br>
+madreperle e coralli, ambre ed ebani,<br>
+e profumi voluttuosi di ogni sorta,<br>
+quanti più profumi voluttuosi puoi;<br>
+va' in molte città d'Egitto,<br>
+a imparare e imparare ancora da chi ha studiato.<br>
+<br>
+Tieni sempre Itaca nella mente.<br>
+Arrivarci è la tua meta.<br>
+Ma non affrettare per nulla il viaggio.<br>
+Meglio che duri molti anni;<br>
+e che tu approdi all'isola ormai vecchio,<br>
+ricco di tutto ciò che hai guadagnato per strada,<br>
+senza aspettarti che Itaca ti dia ricchezze.<br>
+<br>
+Itaca ti ha dato il bel viaggio.<br>
+Senza di lei non ti saresti messo in cammino.<br>
+Non ha altro da darti.<br>
+<br>
+E se la trovi povera, Itaca non ti ha ingannato.<br>
+Diventato così saggio, con tanta esperienza,<br>
+avrai già capito che cosa vogliono dire le Itache.
+</div>
+</div>
+
+La poesia ribalta l'*Odissea*. Omero racconta un uomo che vuole tornare a casa e maledice ogni anno perduto; Kavafis ci chiede di augurarci che quegli anni siano tanti. La meta serve a una cosa sola: a farci partire. E i mostri non stanno sul mare. I Ciclopi li incontra solo chi se li porta dentro.
+
+<div class="pull">Itaca può anche rivelarsi povera. Non ci ha ingannati: ci ha dato esattamente quello che aveva promesso, il viaggio.</div>
+
+Il plurale dell'ultimo verso è la chiave di tutto. Non *Itaca*, ma *le Itache*. Ognuno ha la sua, e la riconosce solo dopo averla raggiunta.
+
+<div class="approdo">Secondo approdo · un'isola del Sud, 1994</div>
+
+## Il postino che non partì mai
+
+*Il postino*, diretto da Michael Radford e tratto dal romanzo di Antonio Skármeta *Ardiente paciencia*, racconta Mario Ruoppolo, figlio di pescatori, che diventa il postino personale di Pablo Neruda, esule su una piccola isola. Il film fu girato tra Procida e Salina. Massimo Troisi, già gravemente malato di cuore, rimandò l'operazione per finirlo, e morì poche ore dopo l'ultimo giorno di riprese. Il suo volto stanco e luminoso in ogni inquadratura è anche questo: un uomo che sapeva di essere quasi arrivato.
+
+Mario non parte mai. All'inizio vuole andarsene da un posto dove non succede niente, e se gli chiedi che cosa ci sia di bello sulla sua isola non sa rispondere. Poi arrivano le metafore. Neruda gli insegna che le parole possono toccare le cose, e Mario comincia a vedere. Dopo la partenza del poeta, registra per lui su un nastro i suoni del suo mondo: le onde piccole e quelle grandi, il vento tra gli scogli, le reti tristi del padre, le campane, il cielo stellato, il battito del figlio che deve nascere.
+
+<div class="pull">La bellezza era sempre stata lì. Mancava soltanto qualcuno che gli insegnasse a darle un nome.</div>
+
+È la lezione di Kavafis vista dall'altro lato del mare. Per il poeta di Alessandria bisogna partire per diventare saggi; per il postino il viaggio è tutto interiore, e la meta coincide con il punto di partenza. Itaca era il molo da cui guardava le navi.
+
+<div class="approdo">Terzo approdo · Bologna, 1971</div>
+
+## Il marinaio che voleva tornare
+
+*Itaca* apre l'album *Storie di casa mia*, uscito nel 1971. La musica è di Lucio Dalla, il testo di Gianfranco Baldazzi e Sergio Bardotti. Comincia con corde pizzicate che sanno di Grecia e di Mediterraneo, poi entra un coro che ha il passo dei remi.
+
+E qui accade il rovesciamento più radicale. A cantare non è Ulisse, ma uno dei suoi marinai: uno di quelli che non hanno nome nei poemi, che remano mentre il capitano insegue gloria e avventura. Per lui il viaggio non è una ricchezza ma una fatica e un pericolo. Il mare non insegna, porta via. A casa ci sono una moglie e dei figli che aspettano, e Itaca non è un simbolo da decifrare: è semplicemente il posto dove si dorme nel proprio letto.
+
+La canzone ha una dolcezza amara e una rabbia trattenuta. Dentro c'è una domanda che nessun poema epico si era fatto: chi paga il viaggio dell'eroe? Ogni avventura che diventa leggenda ha sotto una fila di schiene curve sui remi.
+
+<div class="ornament">· · ·</div>
+
+## Tre cartoline dalla stessa isola
+
+<div class="cartoline">
+<div class="cartolina"><div class="anno">1911</div><div class="chi">Kavafis</div><p><b>Chi viaggia:</b> un "tu" che può essere ognuno di noi.</p><p><b>Itaca è:</b> il pretesto per partire.</p><p><b>La lezione:</b> non avere fretta di arrivare.</p></div>
+<div class="cartolina"><div class="anno">1994</div><div class="chi">Il postino</div><p><b>Chi viaggia:</b> un uomo che non lascia mai l'isola.</p><p><b>Itaca è:</b> la poesia, e alla fine l'isola stessa.</p><p><b>La lezione:</b> a volte il viaggio più lungo si fa restando fermi.</p></div>
+<div class="cartolina"><div class="anno">1971</div><div class="chi">Dalla</div><p><b>Chi viaggia:</b> un marinaio senza nome.</p><p><b>Itaca è:</b> casa, la famiglia, il letto.</p><p><b>La lezione:</b> chiediti sempre chi rema mentre tu viaggi.</p></div>
+</div>
+
+Messe una accanto all'altra, le tre opere non si contraddicono. Il poeta ci libera dall'ossessione dell'arrivo, il postino ci insegna a guardare ciò che abbiamo sotto gli occhi, il marinaio ci ricorda che nessun viaggio è solo nostro.
+
+Buon viaggio, ovunque sia la vostra.

@@ -1,0 +1,552 @@
+anno;Provincia;Comune (cod. Istat);Comune (denominazione);Provenienza;arrivi;presenze
+2014;AR;51001;Anghiari;Italiani;4377;13825
+2014;AR;51001;Anghiari;Stranieri;1050;5649
+2014;AR;51002;Arezzo;Italiani;83122;155011
+2014;AR;51002;Arezzo;Stranieri;52880;122189
+2014;AR;51003;Badia Tedalda;Italiani;655;3069
+2014;AR;51003;Badia Tedalda;Stranieri;31;157
+2014;AR;51004;Bibbiena;Italiani;3111;7853
+2014;AR;51004;Bibbiena;Stranieri;1256;6924
+2014;AR;51005;Bucine;Italiani;1367;4749
+2014;AR;51005;Bucine;Stranieri;9355;79853
+2014;AR;51006;Capolona;Italiani;143;261
+2014;AR;51006;Capolona;Stranieri;289;2286
+2014;AR;51007;Caprese Michelangelo;Italiani;692;1811
+2014;AR;51007;Caprese Michelangelo;Stranieri;580;3007
+2014;AR;51008;Castel Focognano;Italiani;10;14
+2014;AR;51008;Castel Focognano;Stranieri;232;1926
+2014;AR;51010;Castel San Niccol•;Italiani;11;38
+2014;AR;51010;Castel San Niccol•;Stranieri;171;1621
+2014;AR;51012;Castiglion Fiorentino;Italiani;5674;12082
+2014;AR;51012;Castiglion Fiorentino;Stranieri;13604;39454
+2014;AR;51013;Cavriglia;Italiani;4273;14164
+2014;AR;51013;Cavriglia;Stranieri;12918;85164
+2014;AR;51014;Chitignano;Italiani;239;1579
+2014;AR;51014;Chitignano;Stranieri;22;762
+2014;AR;51015;Chiusi della Verna;Italiani;9725;19504
+2014;AR;51015;Chiusi della Verna;Stranieri;2822;4975
+2014;AR;51016;Civitella in Val di Chiana;Italiani;7190;20195
+2014;AR;51016;Civitella in Val di Chiana;Stranieri;2318;12621
+2014;AR;51017;Cortona;Italiani;20172;41102
+2014;AR;51017;Cortona;Stranieri;27078;115779
+2014;AR;51018;Foiano della Chiana;Italiani;2606;13059
+2014;AR;51018;Foiano della Chiana;Stranieri;1447;8120
+2014;AR;51019;Laterina;Italiani;6255;10789
+2014;AR;51019;Laterina;Stranieri;3806;9813
+2014;AR;51020;Loro Ciuffenna;Italiani;1059;2565
+2014;AR;51020;Loro Ciuffenna;Stranieri;5652;21448
+2014;AR;51021;Lucignano;Italiani;1214;2720
+2014;AR;51021;Lucignano;Stranieri;1050;13655
+2014;AR;51022;Marciano della Chiana;Italiani;78;293
+2014;AR;51022;Marciano della Chiana;Stranieri;446;3741
+2014;AR;51023;Montemignaio;Italiani;12;696
+2014;AR;51023;Montemignaio;Stranieri;50;1908
+2014;AR;51024;Monterchi;Italiani;78;210
+2014;AR;51024;Monterchi;Stranieri;77;772
+2014;AR;51025;Monte San Savino;Italiani;5139;9752
+2014;AR;51025;Monte San Savino;Stranieri;3377;13708
+2014;AR;51026;Montevarchi;Italiani;8906;17081
+2014;AR;51026;Montevarchi;Stranieri;5597;16948
+2014;AR;51027;Ortignano Raggiolo;Italiani;24;69
+2014;AR;51027;Ortignano Raggiolo;Stranieri;137;2728
+2014;AR;51028;Pergine Valdarno;Italiani;1195;3370
+2014;AR;51028;Pergine Valdarno;Stranieri;2037;16888
+2014;AR;51030;Pieve Santo Stefano;Italiani;6745;18805
+2014;AR;51030;Pieve Santo Stefano;Stranieri;2921;5858
+2014;AR;51031;Poppi;Italiani;10103;35751
+2014;AR;51031;Poppi;Stranieri;3206;18851
+2014;AR;51033;San Giovanni Valdarno;Italiani;2922;10687
+2014;AR;51033;San Giovanni Valdarno;Stranieri;1251;8906
+2014;AR;51034;Sansepolcro;Italiani;14015;26548
+2014;AR;51034;Sansepolcro;Stranieri;3495;6855
+2014;AR;51037;Subbiano;Italiani;3429;6658
+2014;AR;51037;Subbiano;Stranieri;2157;11300
+2014;AR;51038;Talla;Italiani;240;634
+2014;AR;51038;Talla;Stranieri;37;148
+2014;AR;51039;Terranuova Bracciolini;Italiani;16864;31442
+2014;AR;51039;Terranuova Bracciolini;Stranieri;6523;19837
+2014;AR;51040;Castelfranco Piandisc•;Italiani;1463;3929
+2014;AR;51040;Castelfranco Piandisc•;Stranieri;1204;8532
+2014;AR;51041;Pratovecchio Stia;Italiani;2547;7271
+2014;AR;51041;Pratovecchio Stia;Stranieri;1313;5545
+2014;FI;48001;Bagno a Ripoli;Italiani;13525;34878
+2014;FI;48001;Bagno a Ripoli;Stranieri;19676;67567
+2014;FI;48002;Barberino di Mugello;Italiani;27906;87808
+2014;FI;48002;Barberino di Mugello;Stranieri;13787;58972
+2014;FI;48003;Barberino Val d'Elsa;Italiani;10056;23706
+2014;FI;48003;Barberino Val d'Elsa;Stranieri;27174;127446
+2014;FI;48004;Borgo San Lorenzo;Italiani;10531;21135
+2014;FI;48004;Borgo San Lorenzo;Stranieri;10116;37150
+2014;FI;48005;Calenzano;Italiani;46143;95256
+2014;FI;48005;Calenzano;Stranieri;137454;198119
+2014;FI;48006;Campi Bisenzio;Italiani;43903;118119
+2014;FI;48006;Campi Bisenzio;Stranieri;54958;157556
+2014;FI;48008;Capraia e Limite;Italiani;2936;14285
+2014;FI;48008;Capraia e Limite;Stranieri;5402;27865
+2014;FI;48010;Castelfiorentino;Italiani;2561;6937
+2014;FI;48010;Castelfiorentino;Stranieri;5001;33420
+2014;FI;48011;Cerreto Guidi;Italiani;1956;9150
+2014;FI;48011;Cerreto Guidi;Stranieri;3144;28112
+2014;FI;48012;Certaldo;Italiani;6711;16789
+2014;FI;48012;Certaldo;Stranieri;15387;87449
+2014;FI;48013;Dicomano;Italiani;542;4633
+2014;FI;48013;Dicomano;Stranieri;1934;15843
+2014;FI;48014;Empoli;Italiani;8393;29850
+2014;FI;48014;Empoli;Stranieri;3017;13843
+2014;FI;48015;Fiesole;Italiani;13299;28019
+2014;FI;48015;Fiesole;Stranieri;37442;110900
+2014;FI;48017;Firenze;Italiani;940150;2149526
+2014;FI;48017;Firenze;Stranieri;2560449;6535408
+2014;FI;48018;Firenzuola;Italiani;3382;15633
+2014;FI;48018;Firenzuola;Stranieri;1132;5196
+2014;FI;48019;Fucecchio;Italiani;4925;19039
+2014;FI;48019;Fucecchio;Stranieri;2396;14641
+2014;FI;48020;Gambassi Terme;Italiani;3560;8765
+2014;FI;48020;Gambassi Terme;Stranieri;9363;76178
+2014;FI;48021;Greve in Chianti;Italiani;7431;23122
+2014;FI;48021;Greve in Chianti;Stranieri;32566;138103
+2014;FI;48022;Impruneta;Italiani;14410;59376
+2014;FI;48022;Impruneta;Stranieri;27656;93806
+2014;FI;48024;Lastra a Signa;Italiani;9805;27637
+2014;FI;48024;Lastra a Signa;Stranieri;11438;49245
+2014;FI;48025;Londa;Italiani;180;1833
+2014;FI;48025;Londa;Stranieri;424;2732
+2014;FI;48026;Marradi;Italiani;2518;16785
+2014;FI;48026;Marradi;Stranieri;776;6840
+2014;FI;48027;Montaione;Italiani;7861;25627
+2014;FI;48027;Montaione;Stranieri;30483;242042
+2014;FI;48028;Montelupo Fiorentino;Italiani;6604;14237
+2014;FI;48028;Montelupo Fiorentino;Stranieri;2907;10968
+2014;FI;48030;Montespertoli;Italiani;6220;25494
+2014;FI;48030;Montespertoli;Stranieri;14344;106367
+2014;FI;48031;Palazzuolo sul Senio;Italiani;3617;10723
+2014;FI;48031;Palazzuolo sul Senio;Stranieri;1696;14131
+2014;FI;48032;Pelago;Italiani;2372;6464
+2014;FI;48032;Pelago;Stranieri;4352;24442
+2014;FI;48033;Pontassieve;Italiani;9744;23469
+2014;FI;48033;Pontassieve;Stranieri;32670;76870
+2014;FI;48035;Reggello;Italiani;19299;56966
+2014;FI;48035;Reggello;Stranieri;54540;126404
+2014;FI;48036;Rignano sull'Arno;Italiani;3061;11681
+2014;FI;48036;Rignano sull'Arno;Stranieri;17339;88325
+2014;FI;48037;Rufina;Italiani;1193;5350
+2014;FI;48037;Rufina;Stranieri;735;3160
+2014;FI;48038;San Casciano in Val di Pesa;Italiani;10229;33248
+2014;FI;48038;San Casciano in Val di Pesa;Stranieri;21780;108862
+2014;FI;48039;San Godenzo;Italiani;1808;7212
+2014;FI;48039;San Godenzo;Stranieri;423;3016
+2014;FI;48041;Scandicci;Italiani;13873;35603
+2014;FI;48041;Scandicci;Stranieri;5001;24788
+2014;FI;48043;Sesto Fiorentino;Italiani;48217;94851
+2014;FI;48043;Sesto Fiorentino;Stranieri;106416;198390
+2014;FI;48044;Signa;Italiani;20293;62467
+2014;FI;48044;Signa;Stranieri;26005;50274
+2014;FI;48045;Tavarnelle Val di Pesa;Italiani;11671;28338
+2014;FI;48045;Tavarnelle Val di Pesa;Stranieri;26687;130540
+2014;FI;48046;Vaglia;Italiani;3488;13526
+2014;FI;48046;Vaglia;Stranieri;5166;14946
+2014;FI;48049;Vicchio;Italiani;2833;11121
+2014;FI;48049;Vicchio;Stranieri;4886;24753
+2014;FI;48050;Vinci;Italiani;9181;18804
+2014;FI;48050;Vinci;Stranieri;9940;32820
+2014;FI;48052;Figline e Incisa Valdarno;Italiani;25732;90080
+2014;FI;48052;Figline e Incisa Valdarno;Stranieri;52552;377070
+2014;FI;48053;Scarperia e San Piero;Italiani;16046;42556
+2014;FI;48053;Scarperia e San Piero;Stranieri;13396;49957
+2014;GR;53001;Arcidosso;Italiani;6447;20354
+2014;GR;53001;Arcidosso;Stranieri;1457;10083
+2014;GR;53002;Campagnatico;Italiani;598;2315
+2014;GR;53002;Campagnatico;Stranieri;845;6510
+2014;GR;53003;Capalbio;Italiani;24943;110613
+2014;GR;53003;Capalbio;Stranieri;4098;19030
+2014;GR;53004;Castel del Piano;Italiani;6593;16716
+2014;GR;53004;Castel del Piano;Stranieri;2586;9208
+2014;GR;53005;Castell'Azzara;Italiani;980;3629
+2014;GR;53005;Castell'Azzara;Stranieri;376;2286
+2014;GR;53006;Castiglione della Pescaia;Italiani;136114;814160
+2014;GR;53006;Castiglione della Pescaia;Stranieri;63550;457869
+2014;GR;53007;Cinigiano;Italiani;1368;4660
+2014;GR;53007;Cinigiano;Stranieri;2534;14895
+2014;GR;53008;Civitella Paganico;Italiani;5552;14346
+2014;GR;53008;Civitella Paganico;Stranieri;2665;14159
+2014;GR;53009;Follonica;Italiani;61155;389677
+2014;GR;53009;Follonica;Stranieri;19697;146817
+2014;GR;53010;Gavorrano;Italiani;6196;27532
+2014;GR;53010;Gavorrano;Stranieri;10184;81393
+2014;GR;53011;Grosseto;Italiani;182759;901755
+2014;GR;53011;Grosseto;Stranieri;35899;237540
+2014;GR;53012;Isola del Giglio;Italiani;15973;63468
+2014;GR;53012;Isola del Giglio;Stranieri;1998;21823
+2014;GR;53013;Magliano in Toscana;Italiani;15068;59592
+2014;GR;53013;Magliano in Toscana;Stranieri;4943;38184
+2014;GR;53014;Manciano;Italiani;59591;151264
+2014;GR;53014;Manciano;Stranieri;10592;39723
+2014;GR;53015;Massa Marittima;Italiani;15864;57047
+2014;GR;53015;Massa Marittima;Stranieri;13253;83729
+2014;GR;53016;Monte Argentario;Italiani;36540;112881
+2014;GR;53016;Monte Argentario;Stranieri;15032;57139
+2014;GR;53017;Montieri;Italiani;2384;7325
+2014;GR;53017;Montieri;Stranieri;1124;7247
+2014;GR;53018;Orbetello;Italiani;165977;938221
+2014;GR;53018;Orbetello;Stranieri;28599;193991
+2014;GR;53019;Pitigliano;Italiani;7772;16263
+2014;GR;53019;Pitigliano;Stranieri;2894;8371
+2014;GR;53020;Roccalbegna;Italiani;1424;3208
+2014;GR;53020;Roccalbegna;Stranieri;563;3184
+2014;GR;53021;Roccastrada;Italiani;5479;16260
+2014;GR;53021;Roccastrada;Stranieri;3422;22631
+2014;GR;53022;Santa Fiora;Italiani;2944;8653
+2014;GR;53022;Santa Fiora;Stranieri;508;2192
+2014;GR;53023;Scansano;Italiani;7268;18588
+2014;GR;53023;Scansano;Stranieri;2227;13853
+2014;GR;53024;Scarlino;Italiani;35489;189853
+2014;GR;53024;Scarlino;Stranieri;13550;116824
+2014;GR;53025;Seggiano;Italiani;1695;3814
+2014;GR;53025;Seggiano;Stranieri;1180;6224
+2014;GR;53026;Sorano;Italiani;10151;24486
+2014;GR;53026;Sorano;Stranieri;3832;17761
+2014;GR;53027;Monterotondo Marittimo;Italiani;1032;4658
+2014;GR;53027;Monterotondo Marittimo;Stranieri;977;9288
+2014;GR;53028;Semproniano;Italiani;5820;12829
+2014;GR;53028;Semproniano;Stranieri;1533;5156
+2014;LI;49001;Bibbona;Italiani;81200;612318
+2014;LI;49001;Bibbona;Stranieri;50322;387270
+2014;LI;49002;Campiglia Marittima;Italiani;21363;77335
+2014;LI;49002;Campiglia Marittima;Stranieri;9208;63540
+2014;LI;49003;Campo nell'Elba;Italiani;53058;341791
+2014;LI;49003;Campo nell'Elba;Stranieri;23270;174137
+2014;LI;49004;Capoliveri;Italiani;70674;522774
+2014;LI;49004;Capoliveri;Stranieri;43855;371072
+2014;LI;49005;Capraia Isola;Italiani;4297;14139
+2014;LI;49005;Capraia Isola;Stranieri;197;710
+2014;LI;49006;Castagneto Carducci;Italiani;57521;479165
+2014;LI;49006;Castagneto Carducci;Stranieri;29575;213098
+2014;LI;49007;Cecina;Italiani;69550;462791
+2014;LI;49007;Cecina;Stranieri;30916;225784
+2014;LI;49008;Collesalvetti;Italiani;7361;14830
+2014;LI;49008;Collesalvetti;Stranieri;4553;8933
+2014;LI;49009;Livorno;Italiani;84845;214631
+2014;LI;49009;Livorno;Stranieri;56358;130530
+2014;LI;49010;Marciana;Italiani;28063;151322
+2014;LI;49010;Marciana;Stranieri;15000;84626
+2014;LI;49011;Marciana Marina;Italiani;18039;94293
+2014;LI;49011;Marciana Marina;Stranieri;6766;26651
+2014;LI;49012;Piombino;Italiani;97693;571362
+2014;LI;49012;Piombino;Stranieri;25720;185626
+2014;LI;49013;Porto Azzurro;Italiani;20209;122160
+2014;LI;49013;Porto Azzurro;Stranieri;9433;67958
+2014;LI;49014;Portoferraio;Italiani;59806;296544
+2014;LI;49014;Portoferraio;Stranieri;38276;242062
+2014;LI;49015;Rio Marina;Italiani;17479;113631
+2014;LI;49015;Rio Marina;Stranieri;4025;26580
+2014;LI;49016;Rio nell'Elba;Italiani;7823;56565
+2014;LI;49016;Rio nell'Elba;Stranieri;3846;33051
+2014;LI;49017;Rosignano Marittimo;Italiani;53104;290277
+2014;LI;49017;Rosignano Marittimo;Stranieri;39141;292760
+2014;LI;49018;San Vincenzo;Italiani;73168;432758
+2014;LI;49018;San Vincenzo;Stranieri;63340;581844
+2014;LI;49019;Sassetta;Italiani;3943;8659
+2014;LI;49019;Sassetta;Stranieri;1576;9498
+2014;LI;49020;Suvereto;Italiani;7357;32301
+2014;LI;49020;Suvereto;Stranieri;4586;34866
+2014;LU;46001;Altopascio;Italiani;17354;35163
+2014;LU;46001;Altopascio;Stranieri;5205;14311
+2014;LU;46002;Bagni di Lucca;Italiani;6306;13419
+2014;LU;46002;Bagni di Lucca;Stranieri;2827;13680
+2014;LU;46003;Barga;Italiani;12556;31059
+2014;LU;46003;Barga;Stranieri;16592;63421
+2014;LU;46004;Borgo a Mozzano;Italiani;3421;9805
+2014;LU;46004;Borgo a Mozzano;Stranieri;2373;10632
+2014;LU;46005;Camaiore;Italiani;68419;273633
+2014;LU;46005;Camaiore;Stranieri;53797;237647
+2014;LU;46006;Camporgiano;Italiani;737;4133
+2014;LU;46006;Camporgiano;Stranieri;1047;9142
+2014;LU;46008;Careggine;Italiani;626;1586
+2014;LU;46008;Careggine;Stranieri;63;267
+2014;LU;46009;Castelnuovo di Garfagnana;Italiani;6922;18019
+2014;LU;46009;Castelnuovo di Garfagnana;Stranieri;2424;14136
+2014;LU;46010;Castiglione di Garfagnana;Italiani;4606;14555
+2014;LU;46010;Castiglione di Garfagnana;Stranieri;626;4707
+2014;LU;46011;Coreglia Antelminelli;Italiani;276;913
+2014;LU;46011;Coreglia Antelminelli;Stranieri;1930;15875
+2014;LU;46013;Forte dei Marmi;Italiani;57608;174259
+2014;LU;46013;Forte dei Marmi;Stranieri;48352;224618
+2014;LU;46014;Fosciandora;Italiani;150;540
+2014;LU;46014;Fosciandora;Stranieri;105;985
+2014;LU;46015;Gallicano;Italiani;1797;3705
+2014;LU;46015;Gallicano;Stranieri;834;3817
+2014;LU;46016;Giuncugnano;Italiani;667;2170
+2014;LU;46016;Giuncugnano;Stranieri;283;637
+2014;LU;46017;Lucca;Italiani;101564;204145
+2014;LU;46017;Lucca;Stranieri;129423;317239
+2014;LU;46018;Massarosa;Italiani;5553;13384
+2014;LU;46018;Massarosa;Stranieri;2833;18536
+2014;LU;46019;Minucciano;Italiani;2479;6997
+2014;LU;46019;Minucciano;Stranieri;1142;5899
+2014;LU;46020;Molazzana;Italiani;189;652
+2014;LU;46020;Molazzana;Stranieri;694;4854
+2014;LU;46021;Montecarlo;Italiani;3161;6958
+2014;LU;46021;Montecarlo;Stranieri;2016;9623
+2014;LU;46022;Pescaglia;Italiani;619;1675
+2014;LU;46022;Pescaglia;Stranieri;936;6440
+2014;LU;46023;Piazza al Serchio;Italiani;329;1039
+2014;LU;46023;Piazza al Serchio;Stranieri;306;1815
+2014;LU;46024;Pietrasanta;Italiani;65236;300575
+2014;LU;46024;Pietrasanta;Stranieri;57862;250310
+2014;LU;46025;Pieve Fosciana;Italiani;594;1720
+2014;LU;46025;Pieve Fosciana;Stranieri;1539;11257
+2014;LU;46026;Porcari;Italiani;3708;8119
+2014;LU;46026;Porcari;Stranieri;797;1831
+2014;LU;46027;San Romano in Garfagnana;Italiani;707;4750
+2014;LU;46027;San Romano in Garfagnana;Stranieri;247;2198
+2014;LU;46028;Seravezza;Italiani;1955;23188
+2014;LU;46028;Seravezza;Stranieri;387;1980
+2014;LU;46029;Sillano;Italiani;187;1155
+2014;LU;46029;Sillano;Stranieri;5;11
+2014;LU;46030;Stazzema;Italiani;2121;4554
+2014;LU;46030;Stazzema;Stranieri;289;1438
+2014;LU;46031;Vagli Sotto;Italiani;277;637
+2014;LU;46031;Vagli Sotto;Stranieri;305;1891
+2014;LU;46033;Viareggio;Italiani;124234;570768
+2014;LU;46033;Viareggio;Stranieri;87285;373037
+2014;LU;46035;Villa Collemandina;Italiani;2001;7745
+2014;LU;46035;Villa Collemandina;Stranieri;414;2899
+2014;LU;46036;Fabbriche di Vergemoli;Stranieri;61;720
+2014;MS;45001;Aulla;Italiani;2975;9484
+2014;MS;45001;Aulla;Stranieri;1452;4145
+2014;MS;45002;Bagnone;Italiani;519;1244
+2014;MS;45002;Bagnone;Stranieri;168;359
+2014;MS;45003;Carrara;Italiani;15582;39575
+2014;MS;45003;Carrara;Stranieri;6899;17648
+2014;MS;45005;Comano;Italiani;216;909
+2014;MS;45005;Comano;Stranieri;344;944
+2014;MS;45006;Filattiera;Italiani;130;277
+2014;MS;45006;Filattiera;Stranieri;298;1254
+2014;MS;45008;Fosdinovo;Italiani;1595;3114
+2014;MS;45008;Fosdinovo;Stranieri;845;2881
+2014;MS;45009;Licciana Nardi;Italiani;1086;2174
+2014;MS;45009;Licciana Nardi;Stranieri;567;2079
+2014;MS;45010;Massa;Italiani;141288;703466
+2014;MS;45010;Massa;Stranieri;43415;151718
+2014;MS;45011;Montignoso;Italiani;14435;59022
+2014;MS;45011;Montignoso;Stranieri;4832;20955
+2014;MS;45012;Mulazzo;Italiani;3631;7960
+2014;MS;45012;Mulazzo;Stranieri;1743;7746
+2014;MS;45013;Podenzana;Italiani;1004;4776
+2014;MS;45013;Podenzana;Stranieri;363;944
+2014;MS;45014;Pontremoli;Italiani;3273;7409
+2014;MS;45014;Pontremoli;Stranieri;2404;7064
+2014;MS;45015;Tresana;Italiani;239;1295
+2014;MS;45015;Tresana;Stranieri;56;221
+2014;MS;45016;Villafranca in Lunigiana;Italiani;1774;6763
+2014;MS;45016;Villafranca in Lunigiana;Stranieri;1012;2457
+2014;MS;45017;Zeri;Italiani;346;660
+2014;MS;45017;Zeri;Stranieri;33;53
+2014;PI;50001;Bientina;Italiani;4465;12625
+2014;PI;50001;Bientina;Stranieri;976;2227
+2014;PI;50002;Buti;Italiani;170;315
+2014;PI;50002;Buti;Stranieri;466;3421
+2014;PI;50003;Calci;Italiani;1410;3400
+2014;PI;50003;Calci;Stranieri;1305;9804
+2014;PI;50004;Calcinaia;Italiani;4148;7635
+2014;PI;50004;Calcinaia;Stranieri;3247;10027
+2014;PI;50005;Capannoli;Italiani;238;701
+2014;PI;50005;Capannoli;Stranieri;541;3692
+2014;PI;50006;Casale Marittimo;Italiani;1073;6017
+2014;PI;50006;Casale Marittimo;Stranieri;7226;77113
+2014;PI;50008;Cascina;Italiani;6876;12842
+2014;PI;50008;Cascina;Stranieri;7178;10492
+2014;PI;50009;Castelfranco di Sotto;Italiani;269;663
+2014;PI;50009;Castelfranco di Sotto;Stranieri;675;5163
+2014;PI;50010;Castellina Marittima;Italiani;2964;9271
+2014;PI;50010;Castellina Marittima;Stranieri;731;2646
+2014;PI;50011;Castelnuovo di Val di Cecina;Italiani;2034;4185
+2014;PI;50011;Castelnuovo di Val di Cecina;Stranieri;1243;8014
+2014;PI;50012;Chianni;Italiani;810;2694
+2014;PI;50012;Chianni;Stranieri;1939;12303
+2014;PI;50014;Fauglia;Italiani;1064;2716
+2014;PI;50014;Fauglia;Stranieri;831;5553
+2014;PI;50015;Guardistallo;Italiani;1479;8067
+2014;PI;50015;Guardistallo;Stranieri;4056;35657
+2014;PI;50016;Lajatico;Italiani;575;1483
+2014;PI;50016;Lajatico;Stranieri;1941;14785
+2014;PI;50019;Montecatini Val di Cecina;Italiani;5196;15267
+2014;PI;50019;Montecatini Val di Cecina;Stranieri;7396;47531
+2014;PI;50020;Montescudaio;Italiani;2550;12101
+2014;PI;50020;Montescudaio;Stranieri;6723;60595
+2014;PI;50021;Monteverdi Marittimo;Italiani;1118;3110
+2014;PI;50021;Monteverdi Marittimo;Stranieri;1625;12529
+2014;PI;50022;Montopoli in Val d'Arno;Italiani;2673;6628
+2014;PI;50022;Montopoli in Val d'Arno;Stranieri;6525;39735
+2014;PI;50024;Palaia;Italiani;2580;22842
+2014;PI;50024;Palaia;Stranieri;6818;48417
+2014;PI;50025;Peccioli;Italiani;2654;4700
+2014;PI;50025;Peccioli;Stranieri;3820;22239
+2014;PI;50026;Pisa;Italiani;280991;989693
+2014;PI;50026;Pisa;Stranieri;379256;771612
+2014;PI;50027;Pomarance;Italiani;6468;15525
+2014;PI;50027;Pomarance;Stranieri;4995;32201
+2014;PI;50028;Ponsacco;Italiani;3785;7749
+2014;PI;50028;Ponsacco;Stranieri;1180;4302
+2014;PI;50029;Pontedera;Italiani;10401;31936
+2014;PI;50029;Pontedera;Stranieri;3868;11585
+2014;PI;50030;Riparbella;Italiani;4094;13832
+2014;PI;50030;Riparbella;Stranieri;6936;66623
+2014;PI;50031;San Giuliano Terme;Italiani;24891;266947
+2014;PI;50031;San Giuliano Terme;Stranieri;26153;109632
+2014;PI;50032;San Miniato;Italiani;8504;17398
+2014;PI;50032;San Miniato;Stranieri;6735;25170
+2014;PI;50034;Santa Luce;Italiani;907;3413
+2014;PI;50034;Santa Luce;Stranieri;1599;12300
+2014;PI;50035;Santa Maria a Monte;Italiani;2007;16554
+2014;PI;50035;Santa Maria a Monte;Stranieri;951;4151
+2014;PI;50036;Terricciola;Italiani;931;2070
+2014;PI;50036;Terricciola;Stranieri;3095;21552
+2014;PI;50037;Vecchiano;Italiani;6933;12045
+2014;PI;50037;Vecchiano;Stranieri;10055;14159
+2014;PI;50038;Vicopisano;Italiani;280;4117
+2014;PI;50038;Vicopisano;Stranieri;518;1902
+2014;PI;50039;Volterra;Italiani;25195;55723
+2014;PI;50039;Volterra;Stranieri;35852;122448
+2014;PI;50040;Casciana Terme Lari;Italiani;7762;23056
+2014;PI;50040;Casciana Terme Lari;Stranieri;4300;20794
+2014;PI;50041;Crespina Lorenzana;Italiani;1214;4198
+2014;PI;50041;Crespina Lorenzana;Stranieri;2045;16643
+2014;PO;100001;Cantagallo;Italiani;587;1599
+2014;PO;100001;Cantagallo;Stranieri;162;734
+2014;PO;100002;Carmignano;Italiani;8175;16799
+2014;PO;100002;Carmignano;Stranieri;9127;42951
+2014;PO;100003;Montemurlo;Italiani;1068;14453
+2014;PO;100003;Montemurlo;Stranieri;427;3190
+2014;PO;100004;Poggio a Caiano;Italiani;5592;14636
+2014;PO;100004;Poggio a Caiano;Stranieri;5024;8791
+2014;PO;100005;Prato;Italiani;62559;167965
+2014;PO;100005;Prato;Stranieri;150309;249310
+2014;PO;100006;Vaiano;Italiani;872;1968
+2014;PO;100006;Vaiano;Stranieri;317;1839
+2014;PO;100007;Vernio;Italiani;1237;6768
+2014;PO;100007;Vernio;Stranieri;193;4628
+2014;PT;47001;Abetone;Italiani;23604;61058
+2014;PT;47001;Abetone;Stranieri;2154;7105
+2014;PT;47002;Agliana;Italiani;2329;5229
+2014;PT;47002;Agliana;Stranieri;318;762
+2014;PT;47003;Buggiano;Italiani;719;1848
+2014;PT;47003;Buggiano;Stranieri;1486;5281
+2014;PT;47004;Cutigliano;Italiani;10028;34745
+2014;PT;47004;Cutigliano;Stranieri;649;2753
+2014;PT;47005;Lamporecchio;Italiani;3929;8639
+2014;PT;47005;Lamporecchio;Stranieri;14660;100250
+2014;PT;47006;Larciano;Italiani;1682;4160
+2014;PT;47006;Larciano;Stranieri;1737;10473
+2014;PT;47007;Marliana;Italiani;648;1476
+2014;PT;47007;Marliana;Stranieri;539;3057
+2014;PT;47008;Massa e Cozzile;Italiani;306;724
+2014;PT;47008;Massa e Cozzile;Stranieri;827;6282
+2014;PT;47009;Monsummano Terme;Italiani;13055;24779
+2014;PT;47009;Monsummano Terme;Stranieri;5487;25794
+2014;PT;47010;Montale;Italiani;2027;3442
+2014;PT;47010;Montale;Stranieri;564;1791
+2014;PT;47011;Montecatini Terme;Italiani;211267;487100
+2014;PT;47011;Montecatini Terme;Stranieri;438452;1180783
+2014;PT;47012;Pescia;Italiani;10238;20081
+2014;PT;47012;Pescia;Stranieri;11060;39957
+2014;PT;47013;Pieve a Nievole;Italiani;4216;5294
+2014;PT;47013;Pieve a Nievole;Stranieri;571;2292
+2014;PT;47014;Pistoia;Italiani;29957;54927
+2014;PT;47014;Pistoia;Stranieri;20589;69304
+2014;PT;47015;Piteglio;Italiani;657;1078
+2014;PT;47015;Piteglio;Stranieri;237;1534
+2014;PT;47016;Ponte Buggianese;Italiani;1290;2576
+2014;PT;47016;Ponte Buggianese;Stranieri;224;906
+2014;PT;47017;Quarrata;Italiani;3409;6979
+2014;PT;47017;Quarrata;Stranieri;1501;4884
+2014;PT;47018;Sambuca Pistoiese;Italiani;337;689
+2014;PT;47018;Sambuca Pistoiese;Stranieri;10;12
+2014;PT;47019;San Marcello Pistoiese;Italiani;8080;32977
+2014;PT;47019;San Marcello Pistoiese;Stranieri;1915;10296
+2014;PT;47020;Serravalle Pistoiese;Italiani;13250;21544
+2014;PT;47020;Serravalle Pistoiese;Stranieri;9517;22484
+2014;PT;47021;Uzzano;Italiani;79;299
+2014;PT;47021;Uzzano;Stranieri;236;1915
+2014;PT;47022;Chiesina Uzzanese;Italiani;32134;34329
+2014;PT;47022;Chiesina Uzzanese;Stranieri;1666;2035
+2014;SI;52001;Abbadia San Salvatore;Italiani;14532;41950
+2014;SI;52001;Abbadia San Salvatore;Stranieri;786;5564
+2014;SI;52002;Asciano;Italiani;18879;45743
+2014;SI;52002;Asciano;Stranieri;16025;60205
+2014;SI;52003;Buonconvento;Italiani;4502;12393
+2014;SI;52003;Buonconvento;Stranieri;5038;25078
+2014;SI;52004;Casole d'Elsa;Italiani;6645;23173
+2014;SI;52004;Casole d'Elsa;Stranieri;18282;106646
+2014;SI;52005;Castellina in Chianti;Italiani;6952;17624
+2014;SI;52005;Castellina in Chianti;Stranieri;30610;141812
+2014;SI;52006;Castelnuovo Berardenga;Italiani;12510;30805
+2014;SI;52006;Castelnuovo Berardenga;Stranieri;25925;98364
+2014;SI;52007;Castiglione d'Orcia;Italiani;9952;27141
+2014;SI;52007;Castiglione d'Orcia;Stranieri;4375;20045
+2014;SI;52008;Cetona;Italiani;2017;4829
+2014;SI;52008;Cetona;Stranieri;1468;9936
+2014;SI;52009;Chianciano Terme;Italiani;141151;436614
+2014;SI;52009;Chianciano Terme;Stranieri;89387;227021
+2014;SI;52010;Chiusdino;Italiani;4170;14848
+2014;SI;52010;Chiusdino;Stranieri;10691;90012
+2014;SI;52011;Chiusi;Italiani;16203;35110
+2014;SI;52011;Chiusi;Stranieri;19624;45405
+2014;SI;52012;Colle di Val d'Elsa;Italiani;18622;46411
+2014;SI;52012;Colle di Val d'Elsa;Stranieri;18881;71891
+2014;SI;52013;Gaiole in Chianti;Italiani;6340;14314
+2014;SI;52013;Gaiole in Chianti;Stranieri;16092;70125
+2014;SI;52014;Montalcino;Italiani;15077;32579
+2014;SI;52014;Montalcino;Stranieri;27383;81833
+2014;SI;52015;Montepulciano;Italiani;36998;82111
+2014;SI;52015;Montepulciano;Stranieri;41672;133724
+2014;SI;52016;Monteriggioni;Italiani;27506;64753
+2014;SI;52016;Monteriggioni;Stranieri;27813;92745
+2014;SI;52017;Monteroni d'Arbia;Italiani;7272;15300
+2014;SI;52017;Monteroni d'Arbia;Stranieri;5167;23587
+2014;SI;52018;Monticiano;Italiani;4607;11484
+2014;SI;52018;Monticiano;Stranieri;4036;14346
+2014;SI;52019;Murlo;Italiani;6382;15434
+2014;SI;52019;Murlo;Stranieri;5448;38085
+2014;SI;52020;Piancastagnaio;Italiani;946;3547
+2014;SI;52020;Piancastagnaio;Stranieri;99;378
+2014;SI;52021;Pienza;Italiani;18819;43278
+2014;SI;52021;Pienza;Stranieri;20166;65115
+2014;SI;52022;Poggibonsi;Italiani;22257;42571
+2014;SI;52022;Poggibonsi;Stranieri;20196;71470
+2014;SI;52023;Radda in Chianti;Italiani;7785;15118
+2014;SI;52023;Radda in Chianti;Stranieri;22375;82729
+2014;SI;52024;Radicofani;Italiani;3050;6766
+2014;SI;52024;Radicofani;Stranieri;1650;7702
+2014;SI;52025;Radicondoli;Italiani;450;1678
+2014;SI;52025;Radicondoli;Stranieri;2199;19551
+2014;SI;52026;Rapolano Terme;Italiani;30990;68556
+2014;SI;52026;Rapolano Terme;Stranieri;8352;34955
+2014;SI;52027;San Casciano dei Bagni;Italiani;14680;34449
+2014;SI;52027;San Casciano dei Bagni;Stranieri;5165;26082
+2014;SI;52028;San Gimignano;Italiani;47896;94423
+2014;SI;52028;San Gimignano;Stranieri;110379;374945
+2014;SI;52029;San Giovanni d'Asso;Italiani;3792;10259
+2014;SI;52029;San Giovanni d'Asso;Stranieri;5097;30821
+2014;SI;52030;San Quirico d'Orcia;Italiani;40544;112487
+2014;SI;52030;San Quirico d'Orcia;Stranieri;15269;58503
+2014;SI;52031;Sarteano;Italiani;7768;25955
+2014;SI;52031;Sarteano;Stranieri;8740;57074
+2014;SI;52032;Siena;Italiani;172605;563997
+2014;SI;52032;Siena;Stranieri;239278;564876
+2014;SI;52033;Sinalunga;Italiani;11062;22181
+2014;SI;52033;Sinalunga;Stranieri;7599;27427
+2014;SI;52034;Sovicille;Italiani;8831;23837
+2014;SI;52034;Sovicille;Stranieri;12893;68618
+2014;SI;52035;Torrita di Siena;Italiani;5792;10912
+2014;SI;52035;Torrita di Siena;Stranieri;4010;17934
+2014;SI;52036;Trequanda;Italiani;4215;23787
+2014;SI;52036;Trequanda;Stranieri;3973;20841
+2014;AR;51011+51035;Castiglion Fibocchi e Sestino;Italiani;118;354
+2014;AR;51011+51035;Castiglion Fibocchi e Sestino;Stranieri;452;2670
+2014;LU;46007+46034;Capannori e Villa Basilica;Italiani;19197;44909
+2014;LU;46007+46034;Capannori e Villa Basilica;Stranieri;11871;53947
+2014;PI;50033+50023;Santa Croce sull'Arno e Orciano Pisano;Italiani;626;977
+2014;PI;50033+50023;Santa Croce sull'Arno e Orciano Pisano;Stranieri;108;145
+2014;MS;45004+45007;Casola in Lunigiana e Fivizzano;Italiani;929;2797
+2014;MS;45004+45007;Casola in Lunigiana e Fivizzano;Stranieri;772;2994

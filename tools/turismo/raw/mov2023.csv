@@ -1,0 +1,543 @@
+Anno	Comune	CodIstatComune	Ambito	SiglaProvincia	ProvenienzaMacro	Arrivi	Presenze
+2023	Abbadia San Salvatore	52001	Amiata	SI	ITA	28465	66445
+2023	Abbadia San Salvatore	52001	Amiata	SI	STR	2835	4865
+2023	Abetone Cutigliano	47023	Pistoia e Montagna Pistoiese	PT	ITA	35352	89997
+2023	Abetone Cutigliano	47023	Pistoia e Montagna Pistoiese	PT	STR	2000	5097
+2023	Agliana	47002	Pistoia e Montagna Pistoiese	PT	ITA	1568	8418
+2023	Agliana	47002	Pistoia e Montagna Pistoiese	PT	STR	494	1813
+2023	Altopascio	46001	Piana di Lucca	LU	ITA	7512	14242
+2023	Altopascio	46001	Piana di Lucca	LU	STR	3878	11445
+2023	Anghiari	51001	Valtiberina Toscana	AR	ITA	5895	12998
+2023	Anghiari	51001	Valtiberina Toscana	AR	STR	2517	11712
+2023	Arcidosso	53001	Amiata	GR	ITA	5200	13189
+2023	Arcidosso	53001	Amiata	GR	STR	2093	12033
+2023	Arezzo	51002	Arezzo	AR	ITA	159822	292380
+2023	Arezzo	51002	Arezzo	AR	STR	79112	186038
+2023	Asciano	52002	Terre di Siena	SI	ITA	14512	29527
+2023	Asciano	52002	Terre di Siena	SI	STR	25643	82633
+2023	Aulla	45001	Lunigiana	MS	ITA	1316	4388
+2023	Aulla	45001	Lunigiana	MS	STR	742	1062
+2023	Badia Tedalda	51003	Valtiberina Toscana	AR	ITA	1007	3849
+2023	Badia Tedalda	51003	Valtiberina Toscana	AR	STR	168	943
+2023	Bagni di Lucca	46002	Garfagnana e media valle del Serchio	LU	ITA	3527	9120
+2023	Bagni di Lucca	46002	Garfagnana e media valle del Serchio	LU	STR	2072	9175
+2023	Bagno a Ripoli	48001	Firenze e Area Fiorentina	FI	ITA	11810	37919
+2023	Bagno a Ripoli	48001	Firenze e Area Fiorentina	FI	STR	24099	72660
+2023	Bagnone	45002	Lunigiana	MS	ITA	218	461
+2023	Bagnone	45002	Lunigiana	MS	STR	514	3345
+2023	Barberino di Mugello	48002	Mugello	FI	ITA	31770	62573
+2023	Barberino di Mugello	48002	Mugello	FI	STR	12335	25210
+2023	Barberino Tavarnelle	48054	Chianti	FI	ITA	25591	50626
+2023	Barberino Tavarnelle	48054	Chianti	FI	STR	53012	212288
+2023	Barga	46003	Garfagnana e media valle del Serchio	LU	ITA	12282	30467
+2023	Barga	46003	Garfagnana e media valle del Serchio	LU	STR	18932	60790
+2023	Bibbiena	51004	Casentino	AR	ITA	5444	13250
+2023	Bibbiena	51004	Casentino	AR	STR	2828	20447
+2023	Bibbona	49001	Costa degli Etruschi	LI	ITA	111807	690817
+2023	Bibbona	49001	Costa degli Etruschi	LI	STR	63919	432307
+2023	Bientina	50001	Terre di Pisa	PI	ITA	5358	12567
+2023	Bientina	50001	Terre di Pisa	PI	STR	906	2032
+2023	Borgo a Mozzano	46004	Garfagnana e media valle del Serchio	LU	ITA	2959	5991
+2023	Borgo a Mozzano	46004	Garfagnana e media valle del Serchio	LU	STR	2519	8648
+2023	Borgo San Lorenzo	48004	Mugello	FI	ITA	13087	27757
+2023	Borgo San Lorenzo	48004	Mugello	FI	STR	16694	48682
+2023	Bucine	51005	Valdarno Aretino	AR	ITA	5589	15606
+2023	Bucine	51005	Valdarno Aretino	AR	STR	18881	98758
+2023	Buggiano	47003	Valdinievole	PT	ITA	1542	4995
+2023	Buggiano	47003	Valdinievole	PT	STR	3821	15015
+2023	Buonconvento	52003	Terre di Siena	SI	ITA	6204	20866
+2023	Buonconvento	52003	Terre di Siena	SI	STR	7373	29019
+2023	Buti	50002	Terre di Pisa	PI	ITA	367	1143
+2023	Buti	50002	Terre di Pisa	PI	STR	875	5030
+2023	Calci	50003	Terre di Pisa	PI	ITA	805	1846
+2023	Calci	50003	Terre di Pisa	PI	STR	2238	11854
+2023	Calcinaia	50004	Terre di Pisa	PI	ITA	1953	3289
+2023	Calcinaia	50004	Terre di Pisa	PI	STR	459	934
+2023	Calenzano	48005	Firenze e Area Fiorentina	FI	ITA	61170	132614
+2023	Calenzano	48005	Firenze e Area Fiorentina	FI	STR	77143	117103
+2023	Camaiore	46005	Versilia	LU	ITA	83300	275893
+2023	Camaiore	46005	Versilia	LU	STR	58145	231179
+2023	Campagnatico	53002	Maremma Toscana Area Sud	GR	ITA	1534	4106
+2023	Campagnatico	53002	Maremma Toscana Area Sud	GR	STR	1853	10577
+2023	Campi Bisenzio	48006	Firenze e Area Fiorentina	FI	ITA	46544	85371
+2023	Campi Bisenzio	48006	Firenze e Area Fiorentina	FI	STR	59407	86734
+2023	Campiglia Marittima	49002	Costa degli Etruschi	LI	ITA	34258	111251
+2023	Campiglia Marittima	49002	Costa degli Etruschi	LI	STR	13860	69319
+2023	Campo nell'Elba	49003	Elba e Isole di Toscana	LI	ITA	55599	316122
+2023	Campo nell'Elba	49003	Elba e Isole di Toscana	LI	STR	26709	182436
+2023	Camporgiano	46006	Garfagnana e media valle del Serchio	LU	ITA	1011	2087
+2023	Camporgiano	46006	Garfagnana e media valle del Serchio	LU	STR	1869	12328
+2023	Cantagallo	100001	Area Pratese	PO	ITA	591	899
+2023	Cantagallo	100001	Area Pratese	PO	STR	194	773
+2023	Capalbio	53003	Maremma Toscana Area Sud	GR	ITA	27488	82821
+2023	Capalbio	53003	Maremma Toscana Area Sud	GR	STR	6115	21645
+2023	Capannoli	50005	Terre di Pisa	PI	ITA	231	666
+2023	Capannoli	50005	Terre di Pisa	PI	STR	884	4150
+2023	Capannori	46007	Piana di Lucca	LU	ITA	22376	50274
+2023	Capannori	46007	Piana di Lucca	LU	STR	14600	64295
+2023	Capoliveri	49004	Elba e Isole di Toscana	LI	ITA	89772	558637
+2023	Capoliveri	49004	Elba e Isole di Toscana	LI	STR	62504	463062
+2023	Capolona	51006	Arezzo	AR	ITA	929	3183
+2023	Capolona	51006	Arezzo	AR	STR	1700	13408
+2023	Capraia e Limite	48008	Empolese Valdelsa e Montalbano	FI	ITA	3482	16421
+2023	Capraia e Limite	48008	Empolese Valdelsa e Montalbano	FI	STR	3090	13181
+2023	Capraia Isola	49005	Livorno	LI	ITA	2972	7785
+2023	Capraia Isola	49005	Livorno	LI	STR	1525	3687
+2023	Caprese Michelangelo	51007	Valtiberina Toscana	AR	ITA	1460	3401
+2023	Caprese Michelangelo	51007	Valtiberina Toscana	AR	STR	966	3585
+2023	Careggine	46008	Garfagnana e media valle del Serchio	LU	ITA	1095	1960
+2023	Careggine	46008	Garfagnana e media valle del Serchio	LU	STR	150	851
+2023	Carmignano	100002	Area Pratese	PO	ITA	6820	13745
+2023	Carmignano	100002	Area Pratese	PO	STR	11994	34814
+2023	Carrara	45003	Riviera Apuana	MS	ITA	20986	54836
+2023	Carrara	45003	Riviera Apuana	MS	STR	11143	26920
+2023	Casale Marittimo	50006	Costa degli Etruschi	PI	ITA	1665	6276
+2023	Casale Marittimo	50006	Costa degli Etruschi	PI	STR	6124	61865
+2023	Casciana Terme Lari	50040	Terre di Pisa	PI	ITA	5241	14930
+2023	Casciana Terme Lari	50040	Terre di Pisa	PI	STR	6178	24055
+2023	Cascina	50008	Terre di Pisa	PI	ITA	13742	32552
+2023	Cascina	50008	Terre di Pisa	PI	STR	9426	18047
+2023	Casola in Lunigiana	45004	Lunigiana	MS	ITA	189	347
+2023	Casola in Lunigiana	45004	Lunigiana	MS	STR	348	1307
+2023	Casole d'Elsa	52004	Terre di Valdelsa e dell?Etruria Volterrana	SI	ITA	4792	15325
+2023	Casole d'Elsa	52004	Terre di Valdelsa e dell?Etruria Volterrana	SI	STR	15145	77193
+2023	Castagneto Carducci	49006	Costa degli Etruschi	LI	ITA	88886	587448
+2023	Castagneto Carducci	49006	Costa degli Etruschi	LI	STR	65334	472220
+2023	Castel del Piano	53004	Amiata	GR	ITA	9454	22794
+2023	Castel del Piano	53004	Amiata	GR	STR	2224	8873
+2023	Castelfiorentino	48010	Empolese Valdelsa e Montalbano	FI	ITA	1794	5173
+2023	Castelfiorentino	48010	Empolese Valdelsa e Montalbano	FI	STR	3508	18916
+2023	Castel Focognano	51008	Casentino	AR	ITA	73	265
+2023	Castel Focognano	51008	Casentino	AR	STR	263	2302
+2023	Castelfranco di Sotto	50009	Terre di Pisa	PI	ITA	572	1845
+2023	Castelfranco di Sotto	50009	Terre di Pisa	PI	STR	1853	11668
+2023	Castelfranco Piandiscò	51040	Valdarno Aretino	AR	ITA	904	3570
+2023	Castelfranco Piandiscò	51040	Valdarno Aretino	AR	STR	1647	10467
+2023	Castell'Azzara	53005	Amiata	GR	ITA	854	2909
+2023	Castell'Azzara	53005	Amiata	GR	STR	397	2543
+2023	Castellina in Chianti	52005	Chianti	SI	ITA	12756	26020
+2023	Castellina in Chianti	52005	Chianti	SI	STR	41503	149513
+2023	Castellina Marittima	50010	Costa degli Etruschi	PI	ITA	4661	11216
+2023	Castellina Marittima	50010	Costa degli Etruschi	PI	STR	1872	6042
+2023	Castelnuovo Berardenga	52006	Chianti	SI	ITA	18787	43847
+2023	Castelnuovo Berardenga	52006	Chianti	SI	STR	48885	150252
+2023	Castelnuovo di Garfagnana	46009	Garfagnana e media valle del Serchio	LU	ITA	10287	30898
+2023	Castelnuovo di Garfagnana	46009	Garfagnana e media valle del Serchio	LU	STR	2442	10923
+2023	Castelnuovo di Val di Cecina	50011	Terre di Valdelsa e dell?Etruria Volterrana	PI	ITA	1845	5587
+2023	Castelnuovo di Val di Cecina	50011	Terre di Valdelsa e dell?Etruria Volterrana	PI	STR	2351	15847
+2023	Castel San Niccolò	51010	Casentino	AR	ITA	1001	2507
+2023	Castel San Niccolò	51010	Casentino	AR	STR	396	2336
+2023	Castiglione della Pescaia	53006	Maremma Toscana Area Nord	GR	ITA	163846	858231
+2023	Castiglione della Pescaia	53006	Maremma Toscana Area Nord	GR	STR	86316	559333
+2023	Castiglione di Garfagnana	46010	Garfagnana e media valle del Serchio	LU	ITA	4559	10421
+2023	Castiglione di Garfagnana	46010	Garfagnana e media valle del Serchio	LU	STR	781	3980
+2023	Castiglione d'Orcia	52007	Val d'Orcia	SI	ITA	10528	28511
+2023	Castiglione d'Orcia	52007	Val d'Orcia	SI	STR	9131	31313
+2023	Castiglion Fibocchi	51011	Arezzo	AR	ITA	723	2804
+2023	Castiglion Fibocchi	51011	Arezzo	AR	STR	1446	8200
+2023	Castiglion Fiorentino	51012	Val di Chiana Aretina	AR	ITA	17761	34500
+2023	Castiglion Fiorentino	51012	Val di Chiana Aretina	AR	STR	27791	76332
+2023	Cavriglia	51013	Valdarno Aretino	AR	ITA	11248	37484
+2023	Cavriglia	51013	Valdarno Aretino	AR	STR	10603	65403
+2023	Cecina	49007	Costa degli Etruschi	LI	ITA	74976	469136
+2023	Cecina	49007	Costa degli Etruschi	LI	STR	40604	253153
+2023	Cerreto Guidi	48011	Empolese Valdelsa e Montalbano	FI	ITA	3672	8634
+2023	Cerreto Guidi	48011	Empolese Valdelsa e Montalbano	FI	STR	8059	27752
+2023	Certaldo	48012	Empolese Valdelsa e Montalbano	FI	ITA	10011	24747
+2023	Certaldo	48012	Empolese Valdelsa e Montalbano	FI	STR	23984	86479
+2023	Cetona	52008	Val di Chiana Senese	SI	ITA	2384	7110
+2023	Cetona	52008	Val di Chiana Senese	SI	STR	2178	11538
+2023	Chianciano Terme	52009	Val di Chiana Senese	SI	ITA	131918	298115
+2023	Chianciano Terme	52009	Val di Chiana Senese	SI	STR	92057	184080
+2023	Chianni	50012	Terre di Pisa	PI	ITA	633	2017
+2023	Chianni	50012	Terre di Pisa	PI	STR	1739	11497
+2023	Chitignano	51014	Casentino	AR	ITA	299	2191
+2023	Chitignano	51014	Casentino	AR	STR	24	197
+2023	Chiusdino	52010	Terre di Siena	SI	ITA	6526	17262
+2023	Chiusdino	52010	Terre di Siena	SI	STR	15611	90512
+2023	Chiusi	52011	Val di Chiana Senese	SI	ITA	18676	29791
+2023	Chiusi	52011	Val di Chiana Senese	SI	STR	14679	31387
+2023	Chiusi della Verna	51015	Casentino	AR	ITA	9994	21199
+2023	Chiusi della Verna	51015	Casentino	AR	STR	3225	7459
+2023	Cinigiano	53007	Maremma Toscana Area Sud	GR	ITA	2497	6754
+2023	Cinigiano	53007	Maremma Toscana Area Sud	GR	STR	6115	23149
+2023	Civitella in Val di Chiana	51016	Val di Chiana Aretina	AR	ITA	5665	13960
+2023	Civitella in Val di Chiana	51016	Val di Chiana Aretina	AR	STR	2908	16345
+2023	Civitella Paganico	53008	Maremma Toscana Area Sud	GR	ITA	4480	11932
+2023	Civitella Paganico	53008	Maremma Toscana Area Sud	GR	STR	2961	13671
+2023	Colle di Val d'Elsa	52012	Terre di Valdelsa e dell?Etruria Volterrana	SI	ITA	27614	59743
+2023	Colle di Val d'Elsa	52012	Terre di Valdelsa e dell?Etruria Volterrana	SI	STR	28527	84116
+2023	Collesalvetti	49008	Livorno	LI	ITA	10702	26528
+2023	Collesalvetti	49008	Livorno	LI	STR	5828	13899
+2023	Comano	45005	Lunigiana	MS	ITA	360	641
+2023	Comano	45005	Lunigiana	MS	STR	315	640
+2023	Coreglia Antelminelli	46011	Garfagnana e media valle del Serchio	LU	ITA	616	2333
+2023	Coreglia Antelminelli	46011	Garfagnana e media valle del Serchio	LU	STR	1171	7188
+2023	Cortona	51017	Val di Chiana Aretina	AR	ITA	19827	43812
+2023	Cortona	51017	Val di Chiana Aretina	AR	STR	31675	151474
+2023	Crespina Lorenzana	50041	Terre di Pisa	PI	ITA	1372	6948
+2023	Crespina Lorenzana	50041	Terre di Pisa	PI	STR	1732	13224
+2023	Dicomano	48013	Mugello	FI	ITA	1050	3692
+2023	Dicomano	48013	Mugello	FI	STR	1516	8759
+2023	Empoli	48014	Empolese Valdelsa e Montalbano	FI	ITA	8629	21211
+2023	Empoli	48014	Empolese Valdelsa e Montalbano	FI	STR	4262	13096
+2023	Fabbriche di Vergemoli	46036	Garfagnana e media valle del Serchio	LU	ITA	185	572
+2023	Fabbriche di Vergemoli	46036	Garfagnana e media valle del Serchio	LU	STR	406	3081
+2023	Fiesole	48015	Firenze e Area Fiorentina	FI	ITA	17093	36617
+2023	Fiesole	48015	Firenze e Area Fiorentina	FI	STR	36616	104199
+2023	Figline e Incisa Valdarno	48052	Firenze e Area Fiorentina	FI	ITA	34814	82327
+2023	Figline e Incisa Valdarno	48052	Firenze e Area Fiorentina	FI	STR	63523	438099
+2023	Filattiera	45006	Lunigiana	MS	ITA	454	745
+2023	Filattiera	45006	Lunigiana	MS	STR	613	1889
+2023	Firenze	48017	Firenze e Area Fiorentina	FI	ITA	953763	1751553
+2023	Firenze	48017	Firenze e Area Fiorentina	FI	STR	2974299	7176219
+2023	Firenzuola	48018	Mugello	FI	ITA	4278	8645
+2023	Firenzuola	48018	Mugello	FI	STR	2028	4723
+2023	Fivizzano	45007	Lunigiana	MS	ITA	1667	3835
+2023	Fivizzano	45007	Lunigiana	MS	STR	1724	9735
+2023	Foiano della Chiana	51018	Val di Chiana Aretina	AR	ITA	7564	13029
+2023	Foiano della Chiana	51018	Val di Chiana Aretina	AR	STR	6531	21633
+2023	Follonica	53009	Maremma Toscana Area Nord	GR	ITA	87188	397822
+2023	Follonica	53009	Maremma Toscana Area Nord	GR	STR	30453	181327
+2023	Forte dei Marmi	46013	Versilia	LU	ITA	55468	156652
+2023	Forte dei Marmi	46013	Versilia	LU	STR	51444	193985
+2023	Fosciandora	46014	Garfagnana e media valle del Serchio	LU	ITA	85	187
+2023	Fosciandora	46014	Garfagnana e media valle del Serchio	LU	STR	385	2888
+2023	Fosdinovo	45008	Lunigiana	MS	ITA	2931	4686
+2023	Fosdinovo	45008	Lunigiana	MS	STR	3186	8004
+2023	Fucecchio	48019	Empolese Valdelsa e Montalbano	FI	ITA	3208	7876
+2023	Fucecchio	48019	Empolese Valdelsa e Montalbano	FI	STR	2267	10586
+2023	Gaiole in Chianti	52013	Chianti	SI	ITA	8355	17297
+2023	Gaiole in Chianti	52013	Chianti	SI	STR	25187	83364
+2023	Gallicano	46015	Garfagnana e media valle del Serchio	LU	ITA	2568	5710
+2023	Gallicano	46015	Garfagnana e media valle del Serchio	LU	STR	866	3969
+2023	Gambassi Terme	48020	Empolese Valdelsa e Montalbano	FI	ITA	6878	12302
+2023	Gambassi Terme	48020	Empolese Valdelsa e Montalbano	FI	STR	11539	51706
+2023	Gavorrano	53010	Maremma Toscana Area Nord	GR	ITA	8327	29839
+2023	Gavorrano	53010	Maremma Toscana Area Nord	GR	STR	7477	41563
+2023	Greve in Chianti	48021	Chianti	FI	ITA	13950	29724
+2023	Greve in Chianti	48021	Chianti	FI	STR	51953	179679
+2023	Grosseto	53011	Maremma Toscana Area Sud	GR	ITA	194488	881841
+2023	Grosseto	53011	Maremma Toscana Area Sud	GR	STR	41435	203153
+2023	Guardistallo	50015	Costa degli Etruschi	PI	ITA	3704	15023
+2023	Guardistallo	50015	Costa degli Etruschi	PI	STR	4320	29920
+2023	Impruneta	48022	Firenze e Area Fiorentina	FI	ITA	14189	34602
+2023	Impruneta	48022	Firenze e Area Fiorentina	FI	STR	27685	74595
+2023	Isola del Giglio	53012	Maremma Toscana Area Sud	GR	ITA	16917	64141
+2023	Isola del Giglio	53012	Maremma Toscana Area Sud	GR	STR	2714	11928
+2023	Lajatico	50016	Terre di Pisa	PI	ITA	1919	4843
+2023	Lajatico	50016	Terre di Pisa	PI	STR	3041	15319
+2023	Lamporecchio	47005	Valdinievole	PT	ITA	7518	16252
+2023	Lamporecchio	47005	Valdinievole	PT	STR	14658	85039
+2023	Larciano	47006	Valdinievole	PT	ITA	5050	9718
+2023	Larciano	47006	Valdinievole	PT	STR	4919	16325
+2023	Lastra a Signa	48024	Firenze e Area Fiorentina	FI	ITA	7915	16791
+2023	Lastra a Signa	48024	Firenze e Area Fiorentina	FI	STR	6615	23905
+2023	Laterina Pergine Valdarno	51042	Valdarno Aretino	AR	ITA	8935	20451
+2023	Laterina Pergine Valdarno	51042	Valdarno Aretino	AR	STR	11171	33077
+2023	Licciana Nardi	45009	Lunigiana	MS	ITA	2276	4379
+2023	Licciana Nardi	45009	Lunigiana	MS	STR	1474	5330
+2023	Livorno	49009	Livorno	LI	ITA	117839	256069
+2023	Livorno	49009	Livorno	LI	STR	85837	185787
+2023	Londa	48025	Firenze e Area Fiorentina	FI	ITA	431	802
+2023	Londa	48025	Firenze e Area Fiorentina	FI	STR	829	4118
+2023	Loro Ciuffenna	51020	Valdarno Aretino	AR	ITA	2869	6210
+2023	Loro Ciuffenna	51020	Valdarno Aretino	AR	STR	8300	37949
+2023	Lucca	46017	Piana di Lucca	LU	ITA	112048	196520
+2023	Lucca	46017	Piana di Lucca	LU	STR	157843	368965
+2023	Lucignano	51021	Val di Chiana Aretina	AR	ITA	1165	3307
+2023	Lucignano	51021	Val di Chiana Aretina	AR	STR	1642	10465
+2023	Magliano in Toscana	53013	Maremma Toscana Area Sud	GR	ITA	13822	48133
+2023	Magliano in Toscana	53013	Maremma Toscana Area Sud	GR	STR	4683	22656
+2023	Manciano	53014	Maremma Toscana Area Sud	GR	ITA	64489	148165
+2023	Manciano	53014	Maremma Toscana Area Sud	GR	STR	24942	58408
+2023	Marciana	49010	Elba e Isole di Toscana	LI	ITA	28426	136071
+2023	Marciana	49010	Elba e Isole di Toscana	LI	STR	12040	64192
+2023	Marciana Marina	49011	Elba e Isole di Toscana	LI	ITA	15588	58911
+2023	Marciana Marina	49011	Elba e Isole di Toscana	LI	STR	7429	26723
+2023	Marciano della Chiana	51022	Val di Chiana Aretina	AR	ITA	342	913
+2023	Marciano della Chiana	51022	Val di Chiana Aretina	AR	STR	314	1998
+2023	Marliana	47007	Pistoia e Montagna Pistoiese	PT	ITA	1489	4117
+2023	Marliana	47007	Pistoia e Montagna Pistoiese	PT	STR	1346	4962
+2023	Marradi	48026	Mugello	FI	ITA	2334	16050
+2023	Marradi	48026	Mugello	FI	STR	799	5134
+2023	Massa	45010	Riviera Apuana	MS	ITA	145337	664524
+2023	Massa	45010	Riviera Apuana	MS	STR	50449	194265
+2023	Massa e Cozzile	47008	Valdinievole	PT	ITA	942	1593
+2023	Massa e Cozzile	47008	Valdinievole	PT	STR	2167	11614
+2023	Massa Marittima	53015	Maremma Toscana Area Nord	GR	ITA	20577	66449
+2023	Massa Marittima	53015	Maremma Toscana Area Nord	GR	STR	16156	94295
+2023	Massarosa	46018	Versilia	LU	ITA	6922	17146
+2023	Massarosa	46018	Versilia	LU	STR	3667	17961
+2023	Minucciano	46019	Garfagnana e media valle del Serchio	LU	ITA	2881	7199
+2023	Minucciano	46019	Garfagnana e media valle del Serchio	LU	STR	1304	6093
+2023	Molazzana	46020	Garfagnana e media valle del Serchio	LU	ITA	345	1200
+2023	Molazzana	46020	Garfagnana e media valle del Serchio	LU	STR	784	5863
+2023	Monsummano Terme	47009	Valdinievole	PT	ITA	8953	18340
+2023	Monsummano Terme	47009	Valdinievole	PT	STR	12022	37824
+2023	Montaione	48027	Empolese Valdelsa e Montalbano	FI	ITA	11520	31895
+2023	Montaione	48027	Empolese Valdelsa e Montalbano	FI	STR	41485	237512
+2023	Montalcino	52037	Val d'Orcia	SI	ITA	30566	60264
+2023	Montalcino	52037	Val d'Orcia	SI	STR	59423	158628
+2023	Montale	47010	Pistoia e Montagna Pistoiese	PT	ITA	2127	4930
+2023	Montale	47010	Pistoia e Montagna Pistoiese	PT	STR	542	1101
+2023	Monte Argentario	53016	Maremma Toscana Area Sud	GR	ITA	36564	111091
+2023	Monte Argentario	53016	Maremma Toscana Area Sud	GR	STR	20403	58141
+2023	Montecarlo	46021	Piana di Lucca	LU	ITA	4755	9365
+2023	Montecarlo	46021	Piana di Lucca	LU	STR	3201	12915
+2023	Montecatini Terme	47011	Valdinievole	PT	ITA	199825	458009
+2023	Montecatini Terme	47011	Valdinievole	PT	STR	388628	1087026
+2023	Montecatini Val di Cecina	50019	Terre di Valdelsa e dell?Etruria Volterrana	PI	ITA	9546	24056
+2023	Montecatini Val di Cecina	50019	Terre di Valdelsa e dell?Etruria Volterrana	PI	STR	9077	47350
+2023	Montelupo Fiorentino	48028	Empolese Valdelsa e Montalbano	FI	ITA	3313	15360
+2023	Montelupo Fiorentino	48028	Empolese Valdelsa e Montalbano	FI	STR	1980	8850
+2023	Montemignaio	51023	Casentino	AR	ITA	942	8665
+2023	Montemignaio	51023	Casentino	AR	STR	692	3578
+2023	Montemurlo	100003	Area Pratese	PO	ITA	3319	4939
+2023	Montemurlo	100003	Area Pratese	PO	STR	3706	9587
+2023	Montepulciano	52015	Val di Chiana Senese	SI	ITA	53640	99559
+2023	Montepulciano	52015	Val di Chiana Senese	SI	STR	75110	202692
+2023	Monterchi	51024	Valtiberina Toscana	AR	ITA	116	426
+2023	Monterchi	51024	Valtiberina Toscana	AR	STR	151	1288
+2023	Monteriggioni	52016	Terre di Valdelsa e dell?Etruria Volterrana	SI	ITA	35292	64016
+2023	Monteriggioni	52016	Terre di Valdelsa e dell?Etruria Volterrana	SI	STR	37180	117827
+2023	Monteroni d'Arbia	52017	Terre di Siena	SI	ITA	8453	23571
+2023	Monteroni d'Arbia	52017	Terre di Siena	SI	STR	10966	43648
+2023	Monterotondo Marittimo	53027	Maremma Toscana Area Nord	GR	ITA	1617	5093
+2023	Monterotondo Marittimo	53027	Maremma Toscana Area Nord	GR	STR	1904	10683
+2023	Monte San Savino	51025	Val di Chiana Aretina	AR	ITA	8414	22697
+2023	Monte San Savino	51025	Val di Chiana Aretina	AR	STR	6978	30470
+2023	Montescudaio	50020	Costa degli Etruschi	PI	ITA	6364	30289
+2023	Montescudaio	50020	Costa degli Etruschi	PI	STR	12933	122905
+2023	Montespertoli	48030	Empolese Valdelsa e Montalbano	FI	ITA	8938	27605
+2023	Montespertoli	48030	Empolese Valdelsa e Montalbano	FI	STR	17166	75056
+2023	Montevarchi	51026	Valdarno Aretino	AR	ITA	15233	27107
+2023	Montevarchi	51026	Valdarno Aretino	AR	STR	6810	19242
+2023	Monteverdi Marittimo	50021	Terre di Valdelsa e dell?Etruria Volterrana	PI	ITA	3738	8956
+2023	Monteverdi Marittimo	50021	Terre di Valdelsa e dell?Etruria Volterrana	PI	STR	1654	7237
+2023	Monticiano	52018	Terre di Siena	SI	ITA	4010	7361
+2023	Monticiano	52018	Terre di Siena	SI	STR	2525	11076
+2023	Montieri	53017	Maremma Toscana Area Nord	GR	ITA	2049	5531
+2023	Montieri	53017	Maremma Toscana Area Nord	GR	STR	1130	6476
+2023	Montignoso	45011	Riviera Apuana	MS	ITA	10338	46812
+2023	Montignoso	45011	Riviera Apuana	MS	STR	5295	22640
+2023	Montopoli in Val d'Arno	50022	Terre di Pisa	PI	ITA	3793	11886
+2023	Montopoli in Val d'Arno	50022	Terre di Pisa	PI	STR	5451	22289
+2023	Mulazzo	45012	Lunigiana	MS	ITA	3523	10798
+2023	Mulazzo	45012	Lunigiana	MS	STR	3051	8702
+2023	Murlo	52019	Terre di Siena	SI	ITA	7229	16350
+2023	Murlo	52019	Terre di Siena	SI	STR	9941	37737
+2023	Orbetello	53018	Maremma Toscana Area Sud	GR	ITA	178709	959867
+2023	Orbetello	53018	Maremma Toscana Area Sud	GR	STR	35843	166652
+2023	Ortignano Raggiolo	51027	Casentino	AR	ITA	468	1056
+2023	Ortignano Raggiolo	51027	Casentino	AR	STR	771	4603
+2023	Palaia	50024	Terre di Pisa	PI	ITA	4088	9694
+2023	Palaia	50024	Terre di Pisa	PI	STR	12900	63672
+2023	Palazzuolo sul Senio	48031	Mugello	FI	ITA	2574	8026
+2023	Palazzuolo sul Senio	48031	Mugello	FI	STR	1135	7937
+2023	Peccioli	50025	Terre di Pisa	PI	ITA	4187	9621
+2023	Peccioli	50025	Terre di Pisa	PI	STR	5363	34182
+2023	Pelago	48032	Firenze e Area Fiorentina	FI	ITA	4689	11141
+2023	Pelago	48032	Firenze e Area Fiorentina	FI	STR	5881	20839
+2023	Pescaglia	46022	Garfagnana e media valle del Serchio	LU	ITA	341	1166
+2023	Pescaglia	46022	Garfagnana e media valle del Serchio	LU	STR	1054	6921
+2023	Pescia	47012	Valdinievole	PT	ITA	8093	17856
+2023	Pescia	47012	Valdinievole	PT	STR	11277	37208
+2023	Piancastagnaio	52020	Amiata	SI	ITA	3181	7203
+2023	Piancastagnaio	52020	Amiata	SI	STR	1060	2330
+2023	Piazza al Serchio	46023	Garfagnana e media valle del Serchio	LU	ITA	597	2754
+2023	Piazza al Serchio	46023	Garfagnana e media valle del Serchio	LU	STR	110	628
+2023	Pienza	52021	Val d'Orcia	SI	ITA	27827	59542
+2023	Pienza	52021	Val d'Orcia	SI	STR	45387	125729
+2023	Pietrasanta	46024	Versilia	LU	ITA	72603	244662
+2023	Pietrasanta	46024	Versilia	LU	STR	48645	183358
+2023	Pieve a Nievole	47013	Valdinievole	PT	ITA	1833	3394
+2023	Pieve a Nievole	47013	Valdinievole	PT	STR	777	3479
+2023	Pieve Fosciana	46025	Garfagnana e media valle del Serchio	LU	ITA	1902	4631
+2023	Pieve Fosciana	46025	Garfagnana e media valle del Serchio	LU	STR	1365	6504
+2023	Pieve Santo Stefano	51030	Valtiberina Toscana	AR	ITA	7355	15488
+2023	Pieve Santo Stefano	51030	Valtiberina Toscana	AR	STR	4198	8316
+2023	Piombino	49012	Costa degli Etruschi	LI	ITA	132161	808640
+2023	Piombino	49012	Costa degli Etruschi	LI	STR	36776	206990
+2023	Pisa	50026	Terre di Pisa	PI	ITA	284017	850472
+2023	Pisa	50026	Terre di Pisa	PI	STR	534146	973042
+2023	Pistoia	47014	Pistoia e Montagna Pistoiese	PT	ITA	44642	78554
+2023	Pistoia	47014	Pistoia e Montagna Pistoiese	PT	STR	29433	92067
+2023	Pitigliano	53019	Maremma Toscana Area Sud	GR	ITA	6552	12518
+2023	Pitigliano	53019	Maremma Toscana Area Sud	GR	STR	2948	6551
+2023	Podenzana	45013	Lunigiana	MS	ITA	812	1540
+2023	Podenzana	45013	Lunigiana	MS	STR	248	1295
+2023	Poggibonsi	52022	Terre di Valdelsa e dell?Etruria Volterrana	SI	ITA	35273	73610
+2023	Poggibonsi	52022	Terre di Valdelsa e dell?Etruria Volterrana	SI	STR	34312	94508
+2023	Poggio a Caiano	100004	Area Pratese	PO	ITA	5969	10907
+2023	Poggio a Caiano	100004	Area Pratese	PO	STR	5755	13237
+2023	Pomarance	50027	Terre di Valdelsa e dell?Etruria Volterrana	PI	ITA	6670	19271
+2023	Pomarance	50027	Terre di Valdelsa e dell?Etruria Volterrana	PI	STR	9001	49588
+2023	Ponsacco	50028	Terre di Pisa	PI	ITA	5556	10142
+2023	Ponsacco	50028	Terre di Pisa	PI	STR	2514	9309
+2023	Pontassieve	48033	Firenze e Area Fiorentina	FI	ITA	5335	10789
+2023	Pontassieve	48033	Firenze e Area Fiorentina	FI	STR	11088	41511
+2023	Pontedera	50029	Terre di Pisa	PI	ITA	12875	26332
+2023	Pontedera	50029	Terre di Pisa	PI	STR	5833	15535
+2023	Pontremoli	45014	Lunigiana	MS	ITA	6119	10297
+2023	Pontremoli	45014	Lunigiana	MS	STR	2591	6192
+2023	Poppi	51031	Casentino	AR	ITA	21550	58420
+2023	Poppi	51031	Casentino	AR	STR	7028	29044
+2023	Porcari	46026	Piana di Lucca	LU	ITA	4950	11813
+2023	Porcari	46026	Piana di Lucca	LU	STR	885	2280
+2023	Porto Azzurro	49013	Elba e Isole di Toscana	LI	ITA	26134	126745
+2023	Porto Azzurro	49013	Elba e Isole di Toscana	LI	STR	13044	83591
+2023	Portoferraio	49014	Elba e Isole di Toscana	LI	ITA	66709	313350
+2023	Portoferraio	49014	Elba e Isole di Toscana	LI	STR	42939	241201
+2023	Prato	100005	Area Pratese	PO	ITA	96918	172667
+2023	Prato	100005	Area Pratese	PO	STR	106306	211937
+2023	Pratovecchio Stia	51041	Casentino	AR	ITA	5119	10008
+2023	Pratovecchio Stia	51041	Casentino	AR	STR	2358	9548
+2023	Quarrata	47017	Pistoia e Montagna Pistoiese	PT	ITA	2026	9968
+2023	Quarrata	47017	Pistoia e Montagna Pistoiese	PT	STR	1579	5446
+2023	Radda in Chianti	52023	Chianti	SI	ITA	8415	18577
+2023	Radda in Chianti	52023	Chianti	SI	STR	23862	79067
+2023	Radicofani	52024	Val d'Orcia	SI	ITA	3291	7108
+2023	Radicofani	52024	Val d'Orcia	SI	STR	3324	10882
+2023	Radicondoli	52025	Terre di Valdelsa e dell?Etruria Volterrana	SI	ITA	1465	5316
+2023	Radicondoli	52025	Terre di Valdelsa e dell?Etruria Volterrana	SI	STR	4017	27782
+2023	Rapolano Terme	52026	Terre di Siena	SI	ITA	34732	73237
+2023	Rapolano Terme	52026	Terre di Siena	SI	STR	10769	42519
+2023	Reggello	48035	Firenze e Area Fiorentina	FI	ITA	23126	61036
+2023	Reggello	48035	Firenze e Area Fiorentina	FI	STR	29332	89257
+2023	Rignano sull'Arno	48036	Firenze e Area Fiorentina	FI	ITA	8059	18909
+2023	Rignano sull'Arno	48036	Firenze e Area Fiorentina	FI	STR	26021	86167
+2023	Rio	49021	Elba e Isole di Toscana	LI	ITA	26410	143939
+2023	Rio	49021	Elba e Isole di Toscana	LI	STR	7289	47728
+2023	Riparbella	50030	Costa degli Etruschi	PI	ITA	7462	25897
+2023	Riparbella	50030	Costa degli Etruschi	PI	STR	8945	61871
+2023	Roccalbegna	53020	Amiata	GR	ITA	738	1626
+2023	Roccalbegna	53020	Amiata	GR	STR	931	4772
+2023	Roccastrada	53021	Maremma Toscana Area Nord	GR	ITA	3740	11856
+2023	Roccastrada	53021	Maremma Toscana Area Nord	GR	STR	6704	34263
+2023	Rosignano Marittimo	49017	Costa degli Etruschi	LI	ITA	61605	330992
+2023	Rosignano Marittimo	49017	Costa degli Etruschi	LI	STR	57987	369084
+2023	Rufina	48037	Firenze e Area Fiorentina	FI	ITA	1202	4208
+2023	Rufina	48037	Firenze e Area Fiorentina	FI	STR	1421	5462
+2023	Sambuca Pistoiese	47018	Pistoia e Montagna Pistoiese	PT	ITA	200	392
+2023	Sambuca Pistoiese	47018	Pistoia e Montagna Pistoiese	PT	STR	26	47
+2023	San Casciano dei Bagni	52027	Val di Chiana Senese	SI	ITA	18179	38987
+2023	San Casciano dei Bagni	52027	Val di Chiana Senese	SI	STR	5997	23639
+2023	San Casciano in Val di Pesa	48038	Chianti	FI	ITA	10885	24096
+2023	San Casciano in Val di Pesa	48038	Chianti	FI	STR	25289	94140
+2023	San Gimignano	52028	Terre di Valdelsa e dell?Etruria Volterrana	SI	ITA	62825	115623
+2023	San Gimignano	52028	Terre di Valdelsa e dell?Etruria Volterrana	SI	STR	145950	410189
+2023	San Giovanni Valdarno	51033	Valdarno Aretino	AR	ITA	1639	5025
+2023	San Giovanni Valdarno	51033	Valdarno Aretino	AR	STR	891	3747
+2023	San Giuliano Terme	50031	Terre di Pisa	PI	ITA	23459	262255
+2023	San Giuliano Terme	50031	Terre di Pisa	PI	STR	27330	92272
+2023	San Godenzo	48039	Mugello	FI	ITA	1884	5549
+2023	San Godenzo	48039	Mugello	FI	STR	198	1057
+2023	San Marcello Piteglio	47024	Pistoia e Montagna Pistoiese	PT	ITA	13432	52410
+2023	San Marcello Piteglio	47024	Pistoia e Montagna Pistoiese	PT	STR	1970	9135
+2023	San Miniato	50032	Terre di Pisa	PI	ITA	10488	19564
+2023	San Miniato	50032	Terre di Pisa	PI	STR	10372	32874
+2023	San Quirico d'Orcia	52030	Val d'Orcia	SI	ITA	53767	122204
+2023	San Quirico d'Orcia	52030	Val d'Orcia	SI	STR	29727	84271
+2023	San Romano in Garfagnana	46027	Garfagnana e media valle del Serchio	LU	ITA	347	1170
+2023	San Romano in Garfagnana	46027	Garfagnana e media valle del Serchio	LU	STR	313	2147
+2023	Sansepolcro	51034	Valtiberina Toscana	AR	ITA	19677	38062
+2023	Sansepolcro	51034	Valtiberina Toscana	AR	STR	6435	21772
+2023	Santa Croce sull'Arno	50033	Terre di Pisa	PI	ITA	15	78
+2023	Santa Croce sull'Arno	50033	Terre di Pisa	PI	STR	50	296
+2023	Santa Fiora	53022	Amiata	GR	ITA	3386	9134
+2023	Santa Fiora	53022	Amiata	GR	STR	543	4710
+2023	Santa Luce	50034	Costa degli Etruschi	PI	ITA	4727	14183
+2023	Santa Luce	50034	Costa degli Etruschi	PI	STR	2399	15389
+2023	Santa Maria a Monte	50035	Terre di Pisa	PI	ITA	1668	4673
+2023	Santa Maria a Monte	50035	Terre di Pisa	PI	STR	433	1513
+2023	San Vincenzo	49018	Costa degli Etruschi	LI	ITA	96264	459532
+2023	San Vincenzo	49018	Costa degli Etruschi	LI	STR	74091	596640
+2023	Sarteano	52031	Val di Chiana Senese	SI	ITA	10476	29134
+2023	Sarteano	52031	Val di Chiana Senese	SI	STR	12755	54051
+2023	Sassetta	49019	Costa degli Etruschi	LI	ITA	7965	12982
+2023	Sassetta	49019	Costa degli Etruschi	LI	STR	4397	18623
+2023	Scandicci	48041	Firenze e Area Fiorentina	FI	ITA	16550	32407
+2023	Scandicci	48041	Firenze e Area Fiorentina	FI	STR	8401	24791
+2023	Scansano	53023	Maremma Toscana Area Sud	GR	ITA	8361	21842
+2023	Scansano	53023	Maremma Toscana Area Sud	GR	STR	4254	17940
+2023	Scarlino	53024	Maremma Toscana Area Nord	GR	ITA	43451	271768
+2023	Scarlino	53024	Maremma Toscana Area Nord	GR	STR	16320	113591
+2023	Scarperia e San Piero	48053	Mugello	FI	ITA	27555	45049
+2023	Scarperia e San Piero	48053	Mugello	FI	STR	17054	38661
+2023	Seggiano	53025	Amiata	GR	ITA	3504	7722
+2023	Seggiano	53025	Amiata	GR	STR	3477	14250
+2023	Semproniano	53028	Maremma Toscana Area Sud	GR	ITA	5141	13696
+2023	Semproniano	53028	Maremma Toscana Area Sud	GR	STR	1666	6702
+2023	Seravezza	46028	Versilia	LU	ITA	2167	7630
+2023	Seravezza	46028	Versilia	LU	STR	334	909
+2023	Serravalle Pistoiese	47020	Pistoia e Montagna Pistoiese	PT	ITA	14434	29838
+2023	Serravalle Pistoiese	47020	Pistoia e Montagna Pistoiese	PT	STR	9788	24793
+2023	Sestino	51035	Valtiberina Toscana	AR	ITA	165	480
+2023	Sestino	51035	Valtiberina Toscana	AR	STR	82	463
+2023	Sesto Fiorentino	48043	Firenze e Area Fiorentina	FI	ITA	56556	94120
+2023	Sesto Fiorentino	48043	Firenze e Area Fiorentina	FI	STR	92623	131095
+2023	Siena	52032	Terre di Siena	SI	ITA	195879	415711
+2023	Siena	52032	Terre di Siena	SI	STR	301336	681992
+2023	Signa	48044	Firenze e Area Fiorentina	FI	ITA	20530	46915
+2023	Signa	48044	Firenze e Area Fiorentina	FI	STR	24704	43274
+2023	Sillano Giuncugnano	46037	Garfagnana e media valle del Serchio	LU	ITA	2661	7715
+2023	Sillano Giuncugnano	46037	Garfagnana e media valle del Serchio	LU	STR	903	1929
+2023	Sinalunga	52033	Val di Chiana Senese	SI	ITA	12032	25316
+2023	Sinalunga	52033	Val di Chiana Senese	SI	STR	5586	20604
+2023	Sorano	53026	Maremma Toscana Area Sud	GR	ITA	12391	26844
+2023	Sorano	53026	Maremma Toscana Area Sud	GR	STR	4372	11166
+2023	Sovicille	52034	Terre di Siena	SI	ITA	13833	33105
+2023	Sovicille	52034	Terre di Siena	SI	STR	21004	91072
+2023	Stazzema	46030	Versilia	LU	ITA	2214	4306
+2023	Stazzema	46030	Versilia	LU	STR	247	575
+2023	Subbiano	51037	Casentino	AR	ITA	4608	7702
+2023	Subbiano	51037	Casentino	AR	STR	1808	8099
+2023	Suvereto	49020	Costa degli Etruschi	LI	ITA	9621	36991
+2023	Suvereto	49020	Costa degli Etruschi	LI	STR	4715	32095
+2023	Talla	51038	Casentino	AR	ITA	786	2526
+2023	Talla	51038	Casentino	AR	STR	109	1026
+2023	Terranuova Bracciolini	51039	Valdarno Aretino	AR	ITA	29792	67535
+2023	Terranuova Bracciolini	51039	Valdarno Aretino	AR	STR	13447	33527
+2023	Terricciola	50036	Terre di Pisa	PI	ITA	1642	4004
+2023	Terricciola	50036	Terre di Pisa	PI	STR	4965	29475
+2023	Torrita di Siena	52035	Val di Chiana Senese	SI	ITA	4096	8727
+2023	Torrita di Siena	52035	Val di Chiana Senese	SI	STR	7968	31328
+2023	Trequanda	52036	Val di Chiana Senese	SI	ITA	8484	22304
+2023	Trequanda	52036	Val di Chiana Senese	SI	STR	13536	43732
+2023	Tresana	45015	Lunigiana	MS	ITA	699	4063
+2023	Tresana	45015	Lunigiana	MS	STR	383	885
+2023	Uzzano	47021	Valdinievole	PT	ITA	458	1153
+2023	Uzzano	47021	Valdinievole	PT	STR	1021	4813
+2023	Vaglia	48046	Firenze e Area Fiorentina	FI	ITA	4893	11176
+2023	Vaglia	48046	Firenze e Area Fiorentina	FI	STR	4459	10768
+2023	Vagli Sotto	46031	Garfagnana e media valle del Serchio	LU	ITA	776	2232
+2023	Vagli Sotto	46031	Garfagnana e media valle del Serchio	LU	STR	348	1775
+2023	Vaiano	100006	Area Pratese	PO	ITA	1405	3911
+2023	Vaiano	100006	Area Pratese	PO	STR	987	4506
+2023	Vecchiano	50037	Terre di Pisa	PI	ITA	3681	7190
+2023	Vecchiano	50037	Terre di Pisa	PI	STR	2677	7560
+2023	Vernio	100007	Area Pratese	PO	ITA	2175	9315
+2023	Vernio	100007	Area Pratese	PO	STR	260	499
+2023	Viareggio	46033	Versilia	LU	ITA	141357	798167
+2023	Viareggio	46033	Versilia	LU	STR	87721	312859
+2023	Vicchio	48049	Mugello	FI	ITA	2013	7154
+2023	Vicchio	48049	Mugello	FI	STR	2814	15105
+2023	Vicopisano	50038	Terre di Pisa	PI	ITA	705	2444
+2023	Vicopisano	50038	Terre di Pisa	PI	STR	657	2448
+2023	Villa Basilica	46034	Piana di Lucca	LU	ITA	131	335
+2023	Villa Basilica	46034	Piana di Lucca	LU	STR	146	770
+2023	Villa Collemandina	46035	Garfagnana e media valle del Serchio	LU	ITA	2284	6140
+2023	Villa Collemandina	46035	Garfagnana e media valle del Serchio	LU	STR	764	4651
+2023	Villafranca in Lunigiana	45016	Lunigiana	MS	ITA	1213	2986
+2023	Villafranca in Lunigiana	45016	Lunigiana	MS	STR	697	1971
+2023	Vinci	48050	Empolese Valdelsa e Montalbano	FI	ITA	20313	36317
+2023	Vinci	48050	Empolese Valdelsa e Montalbano	FI	STR	14695	47977
+2023	Volterra	50039	Terre di Valdelsa e dell?Etruria Volterrana	PI	ITA	35900	72269
+2023	Volterra	50039	Terre di Valdelsa e dell?Etruria Volterrana	PI	STR	47190	156995
+2023	Zeri	45017	Lunigiana	MS	ITA	1450	2604
+2023	Zeri	45017	Lunigiana	MS	STR	379	520
+2023	Chiesina Uzzanese e Ponte Buggianese	47022+47016	Valdinievole	PT	ITA	28157	40657
+2023	Chiesina Uzzanese e Ponte Buggianese	47022+47016	Valdinievole	PT	STR	1733	3220
+2023	Fauglia e Orciano Pisano	50014+50023	Terre di Pisa	PI	ITA	1083	4084
+2023	Fauglia e Orciano Pisano	50014+50023	Terre di Pisa	PI	STR	1603	8425

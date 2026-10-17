@@ -1,0 +1,97 @@
+---
+title: "On Self-Respect"
+subtitle: "The price of the alibi"
+categories:
+  - psicologia
+  - letteratura
+description: |
+  In 1961 Joan Didion filled an empty page of Vogue with an essay about the lies we tell ourselves. Sixty years later it still reads like a letter addressed to whoever is standing, right now, in front of their own mirror.
+author:
+  - name: The Mind Walker
+date: 2024-06-30
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+d-article p, d-article li { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.28rem; line-height: 1.7; }
+d-article h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 1.9rem; letter-spacing: .01em; margin-top: 2.6rem; }
+.epigraph { margin: 1.2rem 0 2.4rem auto; max-width: 30rem; text-align: right; font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 1.3rem; color: #555; }
+.epigraph span { display: block; font-style: normal; font-size: .95rem; letter-spacing: .12em; text-transform: uppercase; margin-top: .4rem; color: #8a6d3b; }
+.dropcap::first-letter { float: left; font-family: "Cormorant Garamond", Georgia, serif; font-size: 4.6rem; line-height: .82; padding: .35rem .5rem 0 0; color: #8a6d3b; }
+.ornament { text-align: center; color: #8a6d3b; letter-spacing: 1.2rem; margin: 2.4rem 0; font-size: 1.1rem; }
+.didion { border-left: 2px solid #c9b48a; padding: .2rem 0 .2rem 1.4rem; margin: 1.6rem 0 .6rem; }
+.didion p { font-style: italic; color: #333; }
+.source { font-family: Georgia, serif; font-size: .92rem !important; color: #777; margin-bottom: 2rem; }
+.pull { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.75rem; line-height: 1.35; font-style: italic; text-align: center; color: #5b4a2e; margin: 2.6rem 1rem; }
+figure.portrait { text-align: center; margin: 2.4rem 0; }
+figure.portrait img { max-width: 340px; width: 100%; filter: grayscale(.15); }
+figure.portrait figcaption { font-family: Georgia, serif; font-size: .9rem; color: #777; margin-top: .6rem; }
+</style>
+
+<div class="epigraph">Some essays you read.<br>Others read you.<span>Note in a walker's notebook</span></div>
+
+<p class="dropcap">Joan Didion's piece on self-respect is one that reads you. You open it expecting a lesson on confidence and find instead a quiet, unsparing inventory of the ways we cheat with ourselves: the excuses we polish, the debts we pretend not to have, the mirrors we avoid.</p>
+
+It was born almost by accident. In 1961 Didion was twenty-six and worked at *Vogue* in New York. Another writer had failed to deliver a piece on the same subject, the issue was about to close, and someone had to fill the hole. She wrote to an exact number of characters, so that it would fit the page. It ran as *Self-Respect: Its Source, Its Power* and became famous seven years later, simply as *On Self-Respect*, in her first collection, *Slouching Towards Bethlehem*.
+
+There is a kind of justice in that origin. An essay about not lying to yourself was written against a deadline, with no room for padding and no time to look for an alibi.
+
+<div class="ornament">· · ·</div>
+
+## The dry season
+
+This is how it begins:
+
+<div class="didion">
+__DIDION_P1__
+
+__DIDION_P2__
+</div>
+
+<p class="source">From <a href="https://www.vogue.com/article/joan-didion-self-respect-essay-1961">Joan Didion, <em>On Self-Respect</em>, Vogue, 1961</a>.</p>
+
+Look at what she chooses as the starting point. Not a tragedy, not a betrayal: a rejected application to an honour society, the kind of small humiliation most of us would rather forget. Didion keeps it, turns it over, and finds inside it the end of an illusion. Until that day she believed that good manners, clean hair and good grades worked like amulets. Do what is expected, and the world will keep its side of the bargain. Then the lights stop turning green.
+
+<div class="pull">Innocence ends not when we discover that the world is unfair, but when we discover that we were never as honest with ourselves as we thought.</div>
+
+## Character, or the courage to pay
+
+What she finds after the illusion is a distinction that is easy to state and hard to live. Self-respect has nothing to do with reputation, with the approval of others, with the warm feeling of liking yourself. Those are weather. Self-respect is climate.
+
+For Didion it grows out of *character*, a word that sounds old-fashioned until you hear how she uses it: the willingness to accept responsibility for your own life. To own the choices you made, including the bad ones. To pay their price without sending the bill to someone else, to bad luck, to circumstance.
+
+People who have it, she suggests, are not people without mistakes. They are people who know which mistakes are theirs. They can say *I did this*, and then go on living without either denying it or drowning in it.
+
+<figure class="portrait">
+<img src="images/self.jpg" alt="Portrait for the essay on self-respect">
+<figcaption>Character, Joan Didion.</figcaption>
+</figure>
+
+## The cost of the alibi
+
+The opposite of self-respect, in this essay, is not failure. It is self-deception, and Didion describes its price with the precision of an accountant.
+
+The first cost is that you can never close the books. Without self-respect you keep reliving every error, replaying every scene, a night that never ends because nobody is willing to sign the receipt. The second cost is subtler and worse: you lose the ability to say no. When you do not know who you are, you depend on everyone else's idea of you. You agree, you accommodate, you become what is projected onto you, and you call it kindness.
+
+<div class="pull">Whoever cannot say no to others has usually, long before, failed to say yes to themselves.</div>
+
+## A discipline, not a gift
+
+The most hopeful part of the essay is also the least quoted. Self-respect, Didion insists, is not something you are born with or without. It is a discipline, a habit of the mind. It cannot be faked, but it can be trained, the way any muscle is trained: by small daily choices that nobody else sees. Keeping a promise made only to yourself. Admitting a mistake when no one would have noticed it. Doing the boring thing you said you would do.
+
+There is nothing heroic in this, and that is the point. Self-respect is built where there is no audience.
+
+<div class="ornament">· · ·</div>
+
+## Walking alone
+
+Sixty years later, the essay reads almost like a reply to our own time. We measure ourselves constantly through other people's eyes; we count approvals the way Didion's younger self counted grades. The language of self-esteem has become a kind of marketing, and the mirror has become a screen.
+
+Didion goes in the opposite direction. She does not promise that we will like ourselves more. She asks us to stop needing to be liked in order to stand up straight.
+
+That is why this essay belongs on a blog about walking. Self-respect, in her sense, is what allows you to take a road nobody else is taking without having to explain it at every crossroads. It is the quiet certainty that you are the one who chose the path, and that if the path turns out to be wrong, the walk back is yours too.
+
+You can read the whole essay on [Vogue's website](https://www.vogue.com/article/joan-didion-self-respect-essay-1961) and in *Slouching Towards Bethlehem*, still in print. Read it slowly. Then read it again in ten years: it will have changed, because you will have.

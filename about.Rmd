@@ -1,0 +1,11 @@
+---
+title: "About this site"
+description: |
+  I am an eager walker in real life, it makes me think and clears my thoughts; but what I like even more is to walk with my mind and track my experiences. I hope this blog makes you think and motivates you to do small extraordinary things in life. Be humble and proud of yourself!
+---
+
+<div style="text-align: center">
+
+<img src="images/walker.jpg" width="400px" min-width="300px" max-width="300px" />
+<p style="text-align:center;"> A Walker.</p>
+</div>

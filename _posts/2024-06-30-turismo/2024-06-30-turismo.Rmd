@@ -1,0 +1,60 @@
+---
+title: "Il Turismo a Piombino: uno sguardo ai dati"
+categories:
+  - turismo
+  - grafici
+description: |
+  Da città dell'acciaio a meta di vacanze: in vent'anni Piombino ha raddoppiato i posti letto, gli agriturismi sono cresciuti di sei volte e d'estate ci sono più di venti turisti ogni cento abitanti. Un racconto in numeri, con una dashboard per esplorare tutti i comuni toscani.
+author:
+  - name: The Mind Walker
+date: 2024-06-30
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+<style>
+.numero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 26px 0 30px; }
+.numero div { border: 1px solid #e6e6e6; border-radius: 10px; padding: 14px 16px; background: #fff; }
+.numero b { display: block; font-size: 1.9rem; line-height: 1.1; font-family: Georgia, serif; color: #1c4f8a; }
+.numero span { font-size: .92rem; color: #555; }
+.cta { text-align: center; margin: 34px 0; }
+.cta a { display: inline-block; padding: 12px 22px; border-radius: 8px; background: #2a78d6; color: #fff !important; text-decoration: none; font-weight: 600; }
+@media (max-width: 700px) { .numero { grid-template-columns: 1fr; } }
+</style>
+
+<div style="text-align: center"> <img src="images/faro_piombino.jpg" width="400px" /> <p style="text-align:center;"> Piazza Bovio, il faro.</p> </div>
+
+Per gran parte del Novecento Piombino è stata soprattutto una cosa: l'acciaio. Altoforni, laminatoi, il porto per l'Elba. Il turismo c'era, ma stava ai margini, schiacciato tra la fabbrica e i traghetti. Negli ultimi vent'anni qualcosa è cambiato, e i dati della Regione Toscana permettono di vederlo con precisione.
+
+<div class="numero">
+<div><b>1,01 milioni</b><span>notti di turisti nel 2025, 10° comune toscano</span></div>
+<div><b>+15%</b><span>notti rispetto al 2019, prima della pandemia</span></div>
+<div><b>13.145</b><span>posti letto, il doppio del 2005</span></div>
+</div>
+
+## Chi arriva
+
+Nel 2025 sono arrivati 167.342 ospiti, che si sono fermati in media sei notti: un soggiorno lungo, da vacanza vera, molto più dei due-tre giorni tipici delle città d'arte. È un turismo soprattutto italiano. Gli stranieri valgono il 18% delle notti, contro il 43% del resto della Costa degli Etruschi.
+
+La prima provenienza è la Toscana stessa, con mezzo milione di notti: è il mare di chi abita a Firenze, Pisa, Siena. Poi vengono Lombardia, Germania, Svizzera e Piemonte. Tra gli stranieri pesano soprattutto tedeschi e svizzeri, mentre gli olandesi sono calati molto rispetto al 2012.
+
+## Dove dorme
+
+Più della metà dei posti letto è nei campeggi e nei villaggi turistici, che restano il cuore dell'ospitalità di Piombino. Ma la storia più sorprendente è un'altra: gli agriturismi. Nel 2005 offrivano circa 330 posti letto, oggi più di 2.100. Sono cresciuti di quasi sette volte e sono diventati il terzo tipo di struttura, dopo campeggi e alberghi a tre stelle. Nello stesso periodo gli alberghi di categoria alta sono diminuiti.
+
+## Quando arriva
+
+Il turismo di Piombino è concentratissimo. Due notti su tre si passano tra luglio e settembre. In un giorno medio d'estate ci sono quasi 23 turisti ogni 100 abitanti; tra gennaio e marzo meno di uno. Su un anno intero, ogni residente "ospita" circa 31 notti di turisti, due volte e mezzo la media toscana, ma meno dei vicini della costa: a San Vincenzo, Castagneto Carducci o Bibbona la pressione è molto più forte.
+
+## Quanto lavoro dà
+
+Nel 2023 alberghi, campeggi, ristoranti e bar davano lavoro a circa 1.250 persone, il 12% degli addetti delle imprese private del comune. L'industria resta il primo settore, con circa 2.800 addetti, ma la distanza si accorcia anno dopo anno. Ed è una stima per difetto: gli agriturismi sono contati nell'agricoltura, e una parte del commercio vive anch'essa dei turisti.
+
+## Esplora tutti i comuni
+
+Tutti questi numeri, e molti altri, sono in una dashboard interattiva costruita con i dati aperti e la banca dati turismo della Regione Toscana. Si può scegliere qualunque comune toscano e confrontarlo con il suo ambito turistico, la provincia o la regione: arrivi e notti dal 2012, provenienze per regione e paese, tipi di struttura dal 2005, stagionalità, pressione sui residenti e peso sul lavoro.
+
+<div class="cta"><a href="../../turismo/index.html">Apri la dashboard sul turismo in Toscana →</a></div>
+
+Fonti: Regione Toscana, open data su [dati.toscana.it](https://dati.toscana.it) e [banca dati turismo](https://www.regione.toscana.it/statistiche/banca-dati-turismo); ISTAT, archivio ASIA delle unità locali.

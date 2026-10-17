@@ -1,0 +1,4 @@
+Versioni precedenti dei post, conservate prima delle riscritture di ottobre 2026.
+- turismo_con_grafici_R.Rmd: il post sul turismo con i grafici in R (richiede gli Excel in tools/turismo/piombino/).
+- *_prima.Rmd: le versioni precedenti dei post su Didion, Liberté e Itaca.
+- _bozze/: i file usati per la riscrittura.

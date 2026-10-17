@@ -1,0 +1,156 @@
+---
+title: "Tre Itache: Kavafis, il postino e il marinaio di Dalla"
+categories:
+  - poesia
+  - letteratura
+  - cinema
+  - musica
+  - viaggiare
+description: |
+  La poesia di Kavafis dice che conta il viaggio, non l'arrivo. Il postino di Troisi trova il viaggio senza lasciare la sua isola. Il marinaio di Lucio Dalla vorrebbe solo tornare a casa. Tre modi di cercare Itaca.
+author:
+  - name: The Mind Walker
+date: 2026-10-16
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+<style>
+.itaca-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 24px 0 32px; }
+.itaca-grid div { font-size: 0.98rem; line-height: 1.65; }
+.itaca-grid .gr { font-family: "Georgia", serif; }
+.itaca-grid .it { font-style: italic; color: #333; }
+.itaca-grid h4 { margin: 0 0 10px; font-size: 0.8rem; letter-spacing: .08em; text-transform: uppercase; color: #888; font-style: normal; }
+@media (max-width: 760px) { .itaca-grid { grid-template-columns: 1fr; } }
+table.itaca { width: 100%; border-collapse: collapse; font-size: 0.95rem; margin: 18px 0 28px; }
+table.itaca th, table.itaca td { border-bottom: 1px solid #e6e6e6; padding: 8px 10px; text-align: left; vertical-align: top; }
+table.itaca th { font-weight: 600; }
+</style>
+
+Ogni tanto una parola diventa un luogo dell'anima. Itaca è l'isola di Ulisse, ma da più di un secolo è anche il nome di qualunque meta che ci mette in cammino. In questo post la seguo in tre opere molto diverse: una poesia greca del 1911, un film italiano del 1994 e una canzone di Lucio Dalla del 1971.
+
+## 1. La poesia: Kavafis
+
+Konstantinos Kavafis (Alessandria d'Egitto, 1863–1933) scrisse *Itaca* nel 1910 e la pubblicò nel 1911. Ne esisteva un abbozzo molto più vecchio, *Seconda odissea*, del 1894, che il poeta non pubblicò mai. Ecco il testo originale e una mia traduzione, fatta cercando di restare vicino al greco più che di renderlo elegante.
+
+<div class="itaca-grid">
+<div class="gr">
+<h4>Ιθάκη (1911)</h4>
+Σα βγεις στον πηγαιμό για την Ιθάκη,<br>
+να εύχεσαι νάναι μακρύς ο δρόμος,<br>
+γεμάτος περιπέτειες, γεμάτος γνώσεις.<br>
+Τους Λαιστρυγόνας και τους Κύκλωπας,<br>
+τον θυμωμένο Ποσειδώνα μη φοβάσαι,<br>
+τέτοια στον δρόμο σου ποτέ σου δεν θα βρείς,<br>
+αν μέν' η σκέψις σου υψηλή, αν εκλεκτή<br>
+συγκίνησις το πνεύμα και το σώμα σου αγγίζει.<br>
+Τους Λαιστρυγόνας και τους Κύκλωπας,<br>
+τον άγριο Ποσειδώνα δεν θα συναντήσεις,<br>
+αν δεν τους κουβανείς μες στην ψυχή σου,<br>
+αν η ψυχή σου δεν τους στήνει εμπρός σου.<br>
+<br>
+Να εύχεσαι νάναι μακρύς ο δρόμος.<br>
+Πολλά τα καλοκαιρινά πρωϊά να είναι<br>
+που με τι ευχαρίστησι, με τι χαρά<br>
+θα μπαίνεις σε λιμένας πρωτοειδωμένους·<br>
+να σταματήσεις σ' εμπορεία Φοινικικά,<br>
+και τες καλές πραγμάτειες ν' αποκτήσεις,<br>
+σεντέφια και κοράλλια, κεχριμπάρια κ' έβενους,<br>
+και ηδονικά μυρωδικά κάθε λογής,<br>
+όσο μπορείς πιο άφθονα ηδονικά μυρωδικά·<br>
+σε πόλεις Αιγυπτιακές πολλές να πας,<br>
+να μάθεις και να μάθεις απ' τους σπουδασμένους.<br>
+<br>
+Πάντα στον νου σου νάχεις την Ιθάκη.<br>
+Το φθάσιμον εκεί είν' ο προορισμός σου.<br>
+Αλλά μη βιάζεις το ταξίδι διόλου.<br>
+Καλλίτερα χρόνια πολλά να διαρκέσει·<br>
+και γέρος πια ν' αράξεις στο νησί,<br>
+πλούσιος με όσα κέρδισες στον δρόμο,<br>
+μη προσδοκώντας πλούτη να σε δώσει η Ιθάκη.<br>
+<br>
+Η Ιθάκη σ' έδωσε το ωραίο ταξίδι.<br>
+Χωρίς αυτήν δεν θάβγαινες στον δρόμο.<br>
+Αλλο δεν έχει να σε δώσει πια.<br>
+<br>
+Κι αν πτωχική την βρεις, η Ιθάκη δεν σε γέλασε.<br>
+Ετσι σοφός που έγινες, με τόση πείρα,<br>
+ήδη θα το κατάλαβες οι Ιθάκες τι σημαίνουν.
+</div>
+<div class="it">
+<h4>Itaca (traduzione di The Mind Walker)</h4>
+Quando ti metterai in viaggio per Itaca,<br>
+augurati che la strada sia lunga,<br>
+piena di avventure, piena di conoscenze.<br>
+I Lestrigoni e i Ciclopi,<br>
+l'irato Poseidone non temerli,<br>
+non troverai mai nulla di simile sulla tua strada,<br>
+se il tuo pensiero resta alto, se un'emozione<br>
+scelta tocca il tuo spirito e il tuo corpo.<br>
+I Lestrigoni e i Ciclopi,<br>
+il feroce Poseidone non li incontrerai,<br>
+se non li porti dentro la tua anima,<br>
+se non è la tua anima a metterteli davanti.<br>
+<br>
+Augurati che la strada sia lunga.<br>
+Che siano molte le mattine d'estate<br>
+in cui, con quale piacere, con quale gioia,<br>
+entrerai in porti mai visti prima;<br>
+fermati negli empori dei Fenici<br>
+e compra le belle merci,<br>
+madreperle e coralli, ambre ed ebani,<br>
+e profumi voluttuosi di ogni sorta,<br>
+quanti più profumi voluttuosi puoi;<br>
+va' in molte città d'Egitto,<br>
+a imparare e imparare ancora da chi ha studiato.<br>
+<br>
+Tieni sempre Itaca nella mente.<br>
+Arrivarci è la tua meta.<br>
+Ma non affrettare per nulla il viaggio.<br>
+Meglio che duri molti anni;<br>
+e che tu approdi all'isola ormai vecchio,<br>
+ricco di tutto ciò che hai guadagnato per strada,<br>
+senza aspettarti che Itaca ti dia ricchezze.<br>
+<br>
+Itaca ti ha dato il bel viaggio.<br>
+Senza di lei non ti saresti messo in cammino.<br>
+Non ha altro da darti.<br>
+<br>
+E se la trovi povera, Itaca non ti ha ingannato.<br>
+Diventato così saggio, con tanta esperienza,<br>
+avrai già capito che cosa vogliono dire le Itache.
+</div>
+</div>
+
+La poesia ribalta l'*Odissea*. Omero racconta un uomo che vuole tornare a casa e ci mette vent'anni; Kavafis ci chiede di augurarci che quei vent'anni siano lunghi. La meta serve a una cosa sola: a farci partire. I mostri, poi, non stanno sul mare ma dentro di noi: i Ciclopi li incontra solo chi se li porta dietro.
+
+E il finale è di una delicatezza rara. Itaca può anche rivelarsi povera, ma non ci ha ingannati. Ci ha dato quello che aveva promesso, cioè il viaggio. Il plurale dell'ultimo verso, *le Itache*, dice che ognuno ha la sua.
+
+## 2. Il film: *Il postino* di Massimo Troisi
+
+*Il postino* (1994), diretto da Michael Radford e tratto dal romanzo di Antonio Skármeta *Ardiente paciencia*, racconta Mario Ruoppolo, figlio di pescatori su una piccola isola del Sud, che diventa il postino personale di Pablo Neruda, esule in Italia. Il film fu girato tra Procida e Salina. Troisi, già gravemente malato, morì poche ore dopo la fine delle riprese.
+
+Mario non parte mai. La sua Itaca non è un'isola lontana ma la poesia, e il viaggio per arrivarci passa dalle metafore che Neruda gli insegna. All'inizio vuole andarsene da un posto dove non succede niente, e non saprebbe dire che cosa ci sia di bello. Dopo la partenza del poeta, invece, registra su un nastro per lui i suoni del suo mondo: le onde, il vento tra gli scogli, le reti del padre, le campane, il battito del figlio che deve nascere. Scopre così che la bellezza era sempre stata lì, sotto i suoi occhi.
+
+È la lezione di Kavafis vista dal lato opposto. Per Kavafis bisogna partire per diventare saggi; per Mario il viaggio è tutto interiore, e la meta coincide con il punto di partenza. Le Itache, appunto, sono tante.
+
+## 3. La canzone: *Itaca* di Lucio Dalla
+
+*Itaca* apre l'album *Storie di casa mia* (1971). La musica è di Lucio Dalla, il testo di Gianfranco Baldazzi e Sergio Bardotti. A cantare non è Ulisse ma uno dei suoi marinai, uno di quelli che remano mentre il capitano insegue gloria e avventura.
+
+È un rovesciamento ancora più radicale. Per il marinaio il viaggio non è una ricchezza ma una fatica e un pericolo; il mare non insegna niente, porta via. A casa ci sono una moglie e dei figli che aspettano, e Itaca non è un simbolo: è semplicemente il posto dove tornare. Il ritornello, cantato in coro, ha il passo dei remi e il tono di una supplica. Dentro c'è anche una critica sociale: l'eroe ha un nome e una storia, chi rema no.
+
+## Tre Itache a confronto
+
+<table class="itaca">
+<tr><th></th><th>Kavafis (1911)</th><th>Il postino (1994)</th><th>Dalla (1971)</th></tr>
+<tr><td><b>Chi viaggia</b></td><td>Un "tu" che può essere ognuno di noi</td><td>Mario, un postino che non lascia l'isola</td><td>Un marinaio senza nome</td></tr>
+<tr><td><b>Che cos'è Itaca</b></td><td>Il pretesto per partire</td><td>La poesia, e alla fine l'isola stessa</td><td>Casa, la famiglia</td></tr>
+<tr><td><b>Il viaggio</b></td><td>Un dono da far durare</td><td>Interiore, fatto di parole</td><td>Una fatica imposta da altri</td></tr>
+<tr><td><b>La lezione</b></td><td>Conta la strada, non l'arrivo</td><td>La bellezza era già qui</td><td>Il viaggio di uno è il prezzo di tanti</td></tr>
+</table>
+
+Messe una accanto all'altra, le tre opere non si contraddicono: si completano. Kavafis ci ricorda di non avere fretta di arrivare. Il postino ci ricorda che a volte il viaggio più lungo si fa restando fermi. Il marinaio di Dalla ci ricorda di chiederci chi rema mentre noi viaggiamo.
+
+Per chi cammina, come chi scrive questo blog, sono tre buone ragioni per rimettersi in strada. Magari senza sapere ancora bene quale sia la propria Itaca.

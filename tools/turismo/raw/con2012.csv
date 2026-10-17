@@ -1,0 +1,862 @@
+anno,codistat,comune,prov,tipo,Esercizi,Camere,Letti,Bagni
+2012,045001,Aulla,ms,alberghiero,3,64,125,48
+2012,045001,Aulla,ms,extra-alberghiero,22,82,215,69
+2012,045001,Aulla,ms,totale,25,146,340,117
+2012,045002,Bagnone,ms,alberghiero,1,7,18,10
+2012,045002,Bagnone,ms,extra-alberghiero,12,77,197,76
+2012,045002,Bagnone,ms,totale,13,84,215,86
+2012,045003,Carrara,ms,alberghiero,14,278,577,290
+2012,045003,Carrara,ms,extra-alberghiero,30,333,969,140
+2012,045003,Carrara,ms,totale,44,611,1546,430
+2012,045004,Casola in Lunigiana,ms,alberghiero,0,0,0,0
+2012,045004,Casola in Lunigiana,ms,extra-alberghiero,5,30,66,29
+2012,045004,Casola in Lunigiana,ms,totale,5,30,66,29
+2012,045005,Comano,ms,alberghiero,3,50,93,54
+2012,045005,Comano,ms,extra-alberghiero,4,17,40,19
+2012,045005,Comano,ms,totale,7,67,133,73
+2012,045006,Filattiera,ms,alberghiero,0,0,0,0
+2012,045006,Filattiera,ms,extra-alberghiero,8,39,100,36
+2012,045006,Filattiera,ms,totale,8,39,100,36
+2012,045007,Fivizzano,ms,alberghiero,7,85,162,87
+2012,045007,Fivizzano,ms,extra-alberghiero,26,131,326,121
+2012,045007,Fivizzano,ms,totale,33,216,488,208
+2012,045008,Fosdinovo,ms,alberghiero,2,39,83,49
+2012,045008,Fosdinovo,ms,extra-alberghiero,17,65,148,57
+2012,045008,Fosdinovo,ms,totale,19,104,231,105
+2012,045009,Licciana Nardi,ms,alberghiero,0,0,0,0
+2012,045009,Licciana Nardi,ms,extra-alberghiero,13,224,804,88
+2012,045009,Licciana Nardi,ms,totale,13,224,804,88
+2012,045010,Massa,ms,alberghiero,75,1692,3483,1706
+2012,045010,Massa,ms,extra-alberghiero,75,6144,23028,1774
+2012,045010,Massa,ms,totale,150,7835,26511,3480
+2012,045011,Montignoso,ms,alberghiero,20,567,1604,625
+2012,045011,Montignoso,ms,extra-alberghiero,6,34,74,25
+2012,045011,Montignoso,ms,totale,26,601,1678,651
+2012,045012,Mulazzo,ms,alberghiero,4,65,131,65
+2012,045012,Mulazzo,ms,extra-alberghiero,15,76,200,59
+2012,045012,Mulazzo,ms,totale,19,141,331,124
+2012,045013,Podenzana,ms,alberghiero,2,30,69,30
+2012,045013,Podenzana,ms,extra-alberghiero,4,19,46,16
+2012,045013,Podenzana,ms,totale,6,49,115,46
+2012,045014,Pontremoli,ms,alberghiero,3,59,126,65
+2012,045014,Pontremoli,ms,extra-alberghiero,23,101,228,84
+2012,045014,Pontremoli,ms,totale,26,160,354,149
+2012,045015,Tresana,ms,alberghiero,2,23,40,19
+2012,045015,Tresana,ms,extra-alberghiero,8,28,67,23
+2012,045015,Tresana,ms,totale,10,51,107,42
+2012,045016,Villafranca in Lunigiana,ms,alberghiero,2,21,43,15
+2012,045016,Villafranca in Lunigiana,ms,extra-alberghiero,8,119,415,51
+2012,045016,Villafranca in Lunigiana,ms,totale,10,140,458,66
+2012,045017,Zeri,ms,alberghiero,6,83,158,91
+2012,045017,Zeri,ms,extra-alberghiero,3,48,99,26
+2012,045017,Zeri,ms,totale,9,131,257,117
+2012,046001,Altopascio,lu,alberghiero,6,223,401,248
+2012,046001,Altopascio,lu,extra-alberghiero,18,102,190,82
+2012,046001,Altopascio,lu,totale,25,324,591,329
+2012,046002,Bagni di Lucca,lu,alberghiero,7,119,198,113
+2012,046002,Bagni di Lucca,lu,extra-alberghiero,26,132,270,111
+2012,046002,Bagni di Lucca,lu,totale,34,252,468,224
+2012,046003,Barga,lu,alberghiero,9,362,697,370
+2012,046003,Barga,lu,extra-alberghiero,48,205,449,150
+2012,046003,Barga,lu,totale,57,567,1146,520
+2012,046004,Borgo a Mozzano,lu,alberghiero,2,31,64,32
+2012,046004,Borgo a Mozzano,lu,extra-alberghiero,18,120,202,89
+2012,046004,Borgo a Mozzano,lu,totale,20,151,266,121
+2012,046005,Camaiore,lu,alberghiero,82,2428,4793,2530
+2012,046005,Camaiore,lu,extra-alberghiero,48,373,971,312
+2012,046005,Camaiore,lu,totale,130,2801,5764,2842
+2012,046006,Camporgiano,lu,alberghiero,0,0,0,0
+2012,046006,Camporgiano,lu,extra-alberghiero,13,92,203,56
+2012,046006,Camporgiano,lu,totale,13,92,203,56
+2012,046007,Capannori,lu,alberghiero,4,167,320,174
+2012,046007,Capannori,lu,extra-alberghiero,67,336,657,286
+2012,046007,Capannori,lu,totale,71,503,977,460
+2012,046008,Careggine,lu,alberghiero,3,32,65,34
+2012,046008,Careggine,lu,extra-alberghiero,4,19,33,16
+2012,046008,Careggine,lu,totale,7,51,98,50
+2012,046009,Castelnuovo di Garfagnana,lu,alberghiero,6,105,209,103
+2012,046009,Castelnuovo di Garfagnana,lu,extra-alberghiero,18,85,171,69
+2012,046009,Castelnuovo di Garfagnana,lu,totale,24,190,380,172
+2012,046010,Castiglione di Garfagnana,lu,alberghiero,3,75,177,81
+2012,046010,Castiglione di Garfagnana,lu,extra-alberghiero,16,73,165,47
+2012,046010,Castiglione di Garfagnana,lu,totale,19,148,342,128
+2012,046011,Coreglia Antelminelli,lu,alberghiero,3,51,110,43
+2012,046011,Coreglia Antelminelli,lu,extra-alberghiero,12,138,373,81
+2012,046011,Coreglia Antelminelli,lu,totale,15,189,483,124
+2012,046012,Fabbriche di Vallico,lu,alberghiero,0,0,0,0
+2012,046012,Fabbriche di Vallico,lu,extra-alberghiero,6,23,39,11
+2012,046012,Fabbriche di Vallico,lu,totale,6,23,39,11
+2012,046013,Forte dei Marmi,lu,alberghiero,59,1925,3723,2076
+2012,046013,Forte dei Marmi,lu,extra-alberghiero,6,182,349,113
+2012,046013,Forte dei Marmi,lu,totale,65,2107,4072,2189
+2012,046014,Fosciandora,lu,alberghiero,0,0,0,0
+2012,046014,Fosciandora,lu,extra-alberghiero,8,36,76,23
+2012,046014,Fosciandora,lu,totale,8,36,76,23
+2012,046015,Gallicano,lu,alberghiero,3,39,71,41
+2012,046015,Gallicano,lu,extra-alberghiero,15,59,120,53
+2012,046015,Gallicano,lu,totale,18,99,192,94
+2012,046016,Giuncugnano,lu,alberghiero,1,10,20,11
+2012,046016,Giuncugnano,lu,extra-alberghiero,4,81,232,27
+2012,046016,Giuncugnano,lu,totale,5,91,252,38
+2012,046017,Lucca,lu,alberghiero,33,964,1856,1025
+2012,046017,Lucca,lu,extra-alberghiero,182,1005,2084,898
+2012,046017,Lucca,lu,totale,215,1969,3940,1923
+2012,046018,Massarosa,lu,alberghiero,5,56,102,58
+2012,046018,Massarosa,lu,extra-alberghiero,35,262,477,192
+2012,046018,Massarosa,lu,totale,40,318,579,250
+2012,046019,Minucciano,lu,alberghiero,6,117,253,122
+2012,046019,Minucciano,lu,extra-alberghiero,8,114,307,40
+2012,046019,Minucciano,lu,totale,14,231,560,162
+2012,046020,Molazzana,lu,alberghiero,1,7,12,2
+2012,046020,Molazzana,lu,extra-alberghiero,16,68,165,51
+2012,046020,Molazzana,lu,totale,17,75,177,53
+2012,046021,Montecarlo,lu,alberghiero,0,0,0,0
+2012,046021,Montecarlo,lu,extra-alberghiero,21,105,198,92
+2012,046021,Montecarlo,lu,totale,21,105,198,92
+2012,046022,Pescaglia,lu,alberghiero,1,4,7,2
+2012,046022,Pescaglia,lu,extra-alberghiero,14,66,124,50
+2012,046022,Pescaglia,lu,totale,14,70,131,52
+2012,046023,Piazza al Serchio,lu,alberghiero,2,30,49,36
+2012,046023,Piazza al Serchio,lu,extra-alberghiero,6,31,63,28
+2012,046023,Piazza al Serchio,lu,totale,8,61,112,64
+2012,046024,Pietrasanta,lu,alberghiero,95,2472,5563,2582
+2012,046024,Pietrasanta,lu,extra-alberghiero,36,323,703,323
+2012,046024,Pietrasanta,lu,totale,131,2795,6266,2906
+2012,046025,Pieve Fosciana,lu,alberghiero,0,0,0,0
+2012,046025,Pieve Fosciana,lu,extra-alberghiero,20,87,179,75
+2012,046025,Pieve Fosciana,lu,totale,20,87,179,75
+2012,046026,Porcari,lu,alberghiero,3,55,113,48
+2012,046026,Porcari,lu,extra-alberghiero,6,21,33,17
+2012,046026,Porcari,lu,totale,9,76,146,65
+2012,046027,San Romano in Garfagnana,lu,alberghiero,1,16,24,16
+2012,046027,San Romano in Garfagnana,lu,extra-alberghiero,12,77,146,56
+2012,046027,San Romano in Garfagnana,lu,totale,13,93,170,72
+2012,046028,Seravezza,lu,alberghiero,2,148,482,190
+2012,046028,Seravezza,lu,extra-alberghiero,3,18,34,20
+2012,046028,Seravezza,lu,totale,5,166,516,210
+2012,046029,Sillano,lu,alberghiero,1,14,25,14
+2012,046029,Sillano,lu,extra-alberghiero,6,39,135,17
+2012,046029,Sillano,lu,totale,7,53,160,31
+2012,046030,Stazzema,lu,alberghiero,4,48,87,50
+2012,046030,Stazzema,lu,extra-alberghiero,15,64,172,55
+2012,046030,Stazzema,lu,totale,19,112,259,105
+2012,046031,Vagli Sotto,lu,alberghiero,4,41,87,35
+2012,046031,Vagli Sotto,lu,extra-alberghiero,7,46,157,28
+2012,046031,Vagli Sotto,lu,totale,11,87,244,63
+2012,046032,Vergemoli,lu,alberghiero,0,0,0,0
+2012,046032,Vergemoli,lu,extra-alberghiero,3,15,32,18
+2012,046032,Vergemoli,lu,totale,3,15,32,18
+2012,046033,Viareggio,lu,alberghiero,87,1891,3944,2029
+2012,046033,Viareggio,lu,extra-alberghiero,54,3193,12870,1023
+2012,046033,Viareggio,lu,totale,140,5083,16814,3052
+2012,046034,Villa Basilica,lu,alberghiero,0,0,0,0
+2012,046034,Villa Basilica,lu,extra-alberghiero,2,8,16,3
+2012,046034,Villa Basilica,lu,totale,2,8,16,3
+2012,046035,Villa Collemandina,lu,alberghiero,4,115,223,128
+2012,046035,Villa Collemandina,lu,extra-alberghiero,12,48,109,45
+2012,046035,Villa Collemandina,lu,totale,16,163,332,173
+2012,047001,Abetone,pt,alberghiero,15,451,1078,456
+2012,047001,Abetone,pt,extra-alberghiero,8,166,630,78
+2012,047001,Abetone,pt,totale,23,617,1708,534
+2012,047002,Agliana,pt,alberghiero,3,40,72,40
+2012,047002,Agliana,pt,extra-alberghiero,2,6,9,6
+2012,047002,Agliana,pt,totale,5,46,81,46
+2012,047003,Buggiano,pt,alberghiero,1,8,16,9
+2012,047003,Buggiano,pt,extra-alberghiero,17,66,143,65
+2012,047003,Buggiano,pt,totale,18,74,159,74
+2012,047004,Cutigliano,pt,alberghiero,10,238,490,240
+2012,047004,Cutigliano,pt,extra-alberghiero,19,246,856,176
+2012,047004,Cutigliano,pt,totale,29,484,1346,416
+2012,047005,Lamporecchio,pt,alberghiero,5,92,196,96
+2012,047005,Lamporecchio,pt,extra-alberghiero,45,494,1415,268
+2012,047005,Lamporecchio,pt,totale,50,586,1611,364
+2012,047006,Larciano,pt,alberghiero,2,45,90,49
+2012,047006,Larciano,pt,extra-alberghiero,21,92,188,76
+2012,047006,Larciano,pt,totale,23,137,278,125
+2012,047007,Marliana,pt,alberghiero,4,54,107,53
+2012,047007,Marliana,pt,extra-alberghiero,12,72,143,54
+2012,047007,Marliana,pt,totale,16,126,250,107
+2012,047008,Massa e Cozzile,pt,alberghiero,0,0,0,0
+2012,047008,Massa e Cozzile,pt,extra-alberghiero,14,60,96,44
+2012,047008,Massa e Cozzile,pt,totale,14,60,96,44
+2012,047009,Monsummano Terme,pt,alberghiero,4,116,241,120
+2012,047009,Monsummano Terme,pt,extra-alberghiero,27,128,262,118
+2012,047009,Monsummano Terme,pt,totale,31,244,503,238
+2012,047010,Montale,pt,alberghiero,1,15,25,16
+2012,047010,Montale,pt,extra-alberghiero,6,39,73,41
+2012,047010,Montale,pt,totale,7,54,98,57
+2012,047011,Montecatini-Terme,pt,alberghiero,173,6460,12966,6760
+2012,047011,Montecatini-Terme,pt,extra-alberghiero,28,321,814,189
+2012,047011,Montecatini-Terme,pt,totale,201,6781,13780,6949
+2012,047012,Pescia,pt,alberghiero,3,234,498,256
+2012,047012,Pescia,pt,extra-alberghiero,33,177,373,155
+2012,047012,Pescia,pt,totale,36,411,871,411
+2012,047013,Pieve a Nievole,pt,alberghiero,4,81,192,84
+2012,047013,Pieve a Nievole,pt,extra-alberghiero,6,39,64,22
+2012,047013,Pieve a Nievole,pt,totale,10,120,256,106
+2012,047014,Pistoia,pt,alberghiero,15,376,739,377
+2012,047014,Pistoia,pt,extra-alberghiero,90,449,1051,418
+2012,047014,Pistoia,pt,totale,105,825,1790,795
+2012,047015,Piteglio,pt,alberghiero,3,52,119,49
+2012,047015,Piteglio,pt,extra-alberghiero,9,29,53,31
+2012,047015,Piteglio,pt,totale,12,81,172,80
+2012,047016,Ponte Buggianese,pt,alberghiero,2,24,39,30
+2012,047016,Ponte Buggianese,pt,extra-alberghiero,2,9,17,9
+2012,047016,Ponte Buggianese,pt,totale,4,33,56,39
+2012,047017,Quarrata,pt,alberghiero,2,21,38,21
+2012,047017,Quarrata,pt,extra-alberghiero,20,89,216,91
+2012,047017,Quarrata,pt,totale,22,110,254,112
+2012,047018,Sambuca Pistoiese,pt,alberghiero,1,44,85,46
+2012,047018,Sambuca Pistoiese,pt,extra-alberghiero,5,23,56,20
+2012,047018,Sambuca Pistoiese,pt,totale,6,67,141,66
+2012,047019,San Marcello Pistoiese,pt,alberghiero,16,261,463,263
+2012,047019,San Marcello Pistoiese,pt,extra-alberghiero,24,227,813,137
+2012,047019,San Marcello Pistoiese,pt,totale,40,488,1276,400
+2012,047020,Serravalle Pistoiese,pt,alberghiero,3,112,267,122
+2012,047020,Serravalle Pistoiese,pt,extra-alberghiero,39,183,407,168
+2012,047020,Serravalle Pistoiese,pt,totale,42,295,674,290
+2012,047021,Uzzano,pt,alberghiero,0,0,0,0
+2012,047021,Uzzano,pt,extra-alberghiero,4,18,35,13
+2012,047021,Uzzano,pt,totale,4,18,35,13
+2012,047022,Chiesina Uzzanese,pt,alberghiero,2,137,251,139
+2012,047022,Chiesina Uzzanese,pt,extra-alberghiero,2,7,14,8
+2012,047022,Chiesina Uzzanese,pt,totale,4,144,265,147
+2012,048001,Bagno a Ripoli,fi,alberghiero,3,130,272,150
+2012,048001,Bagno a Ripoli,fi,extra-alberghiero,47,239,521,228
+2012,048001,Bagno a Ripoli,fi,totale,50,369,793,378
+2012,048002,Barberino di Mugello,fi,alberghiero,7,237,507,245
+2012,048002,Barberino di Mugello,fi,extra-alberghiero,32,267,578,182
+2012,048002,Barberino di Mugello,fi,totale,39,504,1085,427
+2012,048003,Barberino Val d'Elsa,fi,alberghiero,3,112,254,128
+2012,048003,Barberino Val d'Elsa,fi,extra-alberghiero,90,670,1550,522
+2012,048003,Barberino Val d'Elsa,fi,totale,93,782,1804,650
+2012,048004,Borgo San Lorenzo,fi,alberghiero,8,305,592,308
+2012,048004,Borgo San Lorenzo,fi,extra-alberghiero,36,257,656,213
+2012,048004,Borgo San Lorenzo,fi,totale,45,562,1248,522
+2012,048005,Calenzano,fi,alberghiero,8,647,1250,665
+2012,048005,Calenzano,fi,extra-alberghiero,10,73,152,53
+2012,048005,Calenzano,fi,totale,18,720,1402,718
+2012,048006,Campi Bisenzio,fi,alberghiero,8,442,886,468
+2012,048006,Campi Bisenzio,fi,extra-alberghiero,16,72,146,63
+2012,048006,Campi Bisenzio,fi,totale,24,513,1032,530
+2012,048008,Capraia e Limite,fi,alberghiero,2,29,50,31
+2012,048008,Capraia e Limite,fi,extra-alberghiero,11,210,535,102
+2012,048008,Capraia e Limite,fi,totale,13,239,585,133
+2012,048010,Castelfiorentino,fi,alberghiero,4,57,109,59
+2012,048010,Castelfiorentino,fi,extra-alberghiero,30,230,497,197
+2012,048010,Castelfiorentino,fi,totale,34,287,606,256
+2012,048011,Cerreto Guidi,fi,alberghiero,1,20,39,21
+2012,048011,Cerreto Guidi,fi,extra-alberghiero,26,205,416,179
+2012,048011,Cerreto Guidi,fi,totale,27,225,455,200
+2012,048012,Certaldo,fi,alberghiero,4,70,150,82
+2012,048012,Certaldo,fi,extra-alberghiero,73,505,1179,382
+2012,048012,Certaldo,fi,totale,77,575,1329,464
+2012,048013,Dicomano,fi,alberghiero,0,0,0,0
+2012,048013,Dicomano,fi,extra-alberghiero,25,207,383,155
+2012,048013,Dicomano,fi,totale,25,207,383,155
+2012,048014,Empoli,fi,alberghiero,4,87,189,89
+2012,048014,Empoli,fi,extra-alberghiero,38,153,314,134
+2012,048014,Empoli,fi,totale,42,240,503,223
+2012,048015,Fiesole,fi,alberghiero,10,263,567,278
+2012,048015,Fiesole,fi,extra-alberghiero,33,250,746,169
+2012,048015,Fiesole,fi,totale,43,513,1313,447
+2012,048016,Figline Valdarno,fi,alberghiero,5,138,265,148
+2012,048016,Figline Valdarno,fi,extra-alberghiero,34,1370,3426,603
+2012,048016,Figline Valdarno,fi,totale,39,1508,3690,751
+2012,048017,Firenze,fi,alberghiero,378,14075,31720,14617
+2012,048017,Firenze,fi,extra-alberghiero,666,4785,10820,4231
+2012,048017,Firenze,fi,totale,1044,18861,42540,18847
+2012,048018,Firenzuola,fi,alberghiero,7,98,230,101
+2012,048018,Firenzuola,fi,extra-alberghiero,21,158,416,114
+2012,048018,Firenzuola,fi,totale,28,256,646,215
+2012,048019,Fucecchio,fi,alberghiero,3,60,119,65
+2012,048019,Fucecchio,fi,extra-alberghiero,12,63,139,56
+2012,048019,Fucecchio,fi,totale,15,123,258,121
+2012,048020,Gambassi Terme,fi,alberghiero,5,56,98,61
+2012,048020,Gambassi Terme,fi,extra-alberghiero,57,509,968,428
+2012,048020,Gambassi Terme,fi,totale,62,565,1066,489
+2012,048021,Greve in Chianti,fi,alberghiero,9,129,258,136
+2012,048021,Greve in Chianti,fi,extra-alberghiero,163,954,1980,828
+2012,048021,Greve in Chianti,fi,totale,172,1083,2238,964
+2012,048022,Impruneta,fi,alberghiero,4,87,165,84
+2012,048022,Impruneta,fi,extra-alberghiero,60,612,1403,366
+2012,048022,Impruneta,fi,totale,64,699,1568,450
+2012,048023,Incisa in Val d'Arno,fi,alberghiero,2,26,57,26
+2012,048023,Incisa in Val d'Arno,fi,extra-alberghiero,16,113,232,93
+2012,048023,Incisa in Val d'Arno,fi,totale,18,139,289,119
+2012,048024,Lastra a Signa,fi,alberghiero,2,81,156,81
+2012,048024,Lastra a Signa,fi,extra-alberghiero,52,221,460,156
+2012,048024,Lastra a Signa,fi,totale,54,302,616,237
+2012,048025,Londa,fi,alberghiero,0,0,0,0
+2012,048025,Londa,fi,extra-alberghiero,10,84,317,42
+2012,048025,Londa,fi,totale,10,84,317,42
+2012,048026,Marradi,fi,alberghiero,2,23,34,22
+2012,048026,Marradi,fi,extra-alberghiero,23,126,345,89
+2012,048026,Marradi,fi,totale,25,149,379,111
+2012,048027,Montaione,fi,alberghiero,4,104,223,110
+2012,048027,Montaione,fi,extra-alberghiero,95,1395,2872,1050
+2012,048027,Montaione,fi,totale,99,1499,3095,1160
+2012,048028,Montelupo Fiorentino,fi,alberghiero,4,75,147,77
+2012,048028,Montelupo Fiorentino,fi,extra-alberghiero,13,102,212,85
+2012,048028,Montelupo Fiorentino,fi,totale,17,177,359,162
+2012,048030,Montespertoli,fi,alberghiero,4,61,179,67
+2012,048030,Montespertoli,fi,extra-alberghiero,78,705,1560,599
+2012,048030,Montespertoli,fi,totale,82,766,1739,666
+2012,048031,Palazzuolo sul Senio,fi,alberghiero,3,55,107,60
+2012,048031,Palazzuolo sul Senio,fi,extra-alberghiero,13,335,713,160
+2012,048031,Palazzuolo sul Senio,fi,totale,16,390,820,220
+2012,048032,Pelago,fi,alberghiero,1,14,25,16
+2012,048032,Pelago,fi,extra-alberghiero,20,183,367,178
+2012,048032,Pelago,fi,totale,21,197,392,194
+2012,048033,Pontassieve,fi,alberghiero,4,181,362,189
+2012,048033,Pontassieve,fi,extra-alberghiero,52,308,638,260
+2012,048033,Pontassieve,fi,totale,56,489,1000,449
+2012,048035,Reggello,fi,alberghiero,17,823,1763,842
+2012,048035,Reggello,fi,extra-alberghiero,54,396,823,327
+2012,048035,Reggello,fi,totale,71,1219,2586,1169
+2012,048036,Rignano sull'Arno,fi,alberghiero,0,0,0,0
+2012,048036,Rignano sull'Arno,fi,extra-alberghiero,41,525,1290,331
+2012,048036,Rignano sull'Arno,fi,totale,41,525,1290,331
+2012,048037,Rufina,fi,alberghiero,1,12,15,7
+2012,048037,Rufina,fi,extra-alberghiero,10,59,119,49
+2012,048037,Rufina,fi,totale,11,71,134,56
+2012,048038,San Casciano in Val di Pesa,fi,alberghiero,7,65,140,63
+2012,048038,San Casciano in Val di Pesa,fi,extra-alberghiero,93,641,1370,592
+2012,048038,San Casciano in Val di Pesa,fi,totale,100,706,1510,655
+2012,048039,San Godenzo,fi,alberghiero,3,42,79,40
+2012,048039,San Godenzo,fi,extra-alberghiero,15,69,182,64
+2012,048039,San Godenzo,fi,totale,18,111,261,104
+2012,048040,San Piero a Sieve,fi,alberghiero,3,45,93,39
+2012,048040,San Piero a Sieve,fi,extra-alberghiero,6,118,430,69
+2012,048040,San Piero a Sieve,fi,totale,9,163,523,108
+2012,048041,Scandicci,fi,alberghiero,5,183,398,188
+2012,048041,Scandicci,fi,extra-alberghiero,46,184,368,154
+2012,048041,Scandicci,fi,totale,51,367,766,342
+2012,048042,Scarperia,fi,alberghiero,4,132,259,156
+2012,048042,Scarperia,fi,extra-alberghiero,34,157,330,127
+2012,048042,Scarperia,fi,totale,38,289,589,283
+2012,048043,Sesto Fiorentino,fi,alberghiero,9,738,1467,748
+2012,048043,Sesto Fiorentino,fi,extra-alberghiero,24,96,264,66
+2012,048043,Sesto Fiorentino,fi,totale,33,834,1731,814
+2012,048044,Signa,fi,alberghiero,4,193,400,202
+2012,048044,Signa,fi,extra-alberghiero,21,96,168,89
+2012,048044,Signa,fi,totale,25,289,568,291
+2012,048045,Tavarnelle Val di Pesa,fi,alberghiero,5,190,424,218
+2012,048045,Tavarnelle Val di Pesa,fi,extra-alberghiero,77,505,1092,420
+2012,048045,Tavarnelle Val di Pesa,fi,totale,82,695,1516,637
+2012,048046,Vaglia,fi,alberghiero,6,195,416,204
+2012,048046,Vaglia,fi,extra-alberghiero,7,102,349,35
+2012,048046,Vaglia,fi,totale,13,297,765,239
+2012,048049,Vicchio,fi,alberghiero,2,32,70,32
+2012,048049,Vicchio,fi,extra-alberghiero,45,418,948,262
+2012,048049,Vicchio,fi,totale,47,450,1018,294
+2012,048050,Vinci,fi,alberghiero,3,140,263,145
+2012,048050,Vinci,fi,extra-alberghiero,36,206,412,168
+2012,048050,Vinci,fi,totale,39,346,674,313
+2012,049001,Bibbona,li,alberghiero,10,425,1011,461
+2012,049001,Bibbona,li,extra-alberghiero,67,4452,17430,2120
+2012,049001,Bibbona,li,totale,77,4877,18441,2581
+2012,049002,Campiglia Marittima,li,alberghiero,8,175,373,194
+2012,049002,Campiglia Marittima,li,extra-alberghiero,59,616,1649,468
+2012,049002,Campiglia Marittima,li,totale,67,791,2022,662
+2012,049003,Campo nell'Elba,li,alberghiero,42,1374,3021,1438
+2012,049003,Campo nell'Elba,li,extra-alberghiero,42,810,2998,562
+2012,049003,Campo nell'Elba,li,totale,84,2183,6019,2001
+2012,049004,Capoliveri,li,alberghiero,45,1354,3794,1445
+2012,049004,Capoliveri,li,extra-alberghiero,94,2453,9273,1304
+2012,049004,Capoliveri,li,totale,140,3808,13068,2748
+2012,049005,Capraia Isola,li,alberghiero,3,89,186,101
+2012,049005,Capraia Isola,li,extra-alberghiero,4,79,303,46
+2012,049005,Capraia Isola,li,totale,7,168,489,147
+2012,049006,Castagneto Carducci,li,alberghiero,15,613,1544,659
+2012,049006,Castagneto Carducci,li,extra-alberghiero,71,2425,8979,1022
+2012,049006,Castagneto Carducci,li,totale,86,3038,10523,1681
+2012,049007,Cecina,li,alberghiero,20,638,1791,714
+2012,049007,Cecina,li,extra-alberghiero,42,2455,8065,1285
+2012,049007,Cecina,li,totale,62,3093,9856,1999
+2012,049008,Collesalvetti,li,alberghiero,2,65,137,66
+2012,049008,Collesalvetti,li,extra-alberghiero,30,183,402,147
+2012,049008,Collesalvetti,li,totale,32,248,539,213
+2012,049009,Livorno,li,alberghiero,38,986,2056,1033
+2012,049009,Livorno,li,extra-alberghiero,50,562,1797,344
+2012,049009,Livorno,li,totale,88,1548,3853,1377
+2012,049010,Marciana,li,alberghiero,31,896,2127,946
+2012,049010,Marciana,li,extra-alberghiero,21,154,452,147
+2012,049010,Marciana,li,totale,52,1050,2579,1093
+2012,049011,Marciana Marina,li,alberghiero,13,460,1119,484
+2012,049011,Marciana Marina,li,extra-alberghiero,8,65,200,59
+2012,049011,Marciana Marina,li,totale,21,525,1319,543
+2012,049012,Piombino,li,alberghiero,21,776,2656,891
+2012,049012,Piombino,li,extra-alberghiero,57,2212,8311,1147
+2012,049012,Piombino,li,totale,78,2988,10967,2038
+2012,049013,Porto Azzurro,li,alberghiero,18,412,1156,445
+2012,049013,Porto Azzurro,li,extra-alberghiero,30,461,1481,316
+2012,049013,Porto Azzurro,li,totale,48,873,2637,761
+2012,049014,Portoferraio,li,alberghiero,31,1297,3036,1370
+2012,049014,Portoferraio,li,extra-alberghiero,45,797,2906,548
+2012,049014,Portoferraio,li,totale,76,2094,5942,1917
+2012,049015,Rio Marina,li,alberghiero,12,357,787,377
+2012,049015,Rio Marina,li,extra-alberghiero,14,424,877,278
+2012,049015,Rio Marina,li,totale,26,781,1664,655
+2012,049016,Rio nell'Elba,li,alberghiero,3,66,143,70
+2012,049016,Rio nell'Elba,li,extra-alberghiero,11,350,1198,280
+2012,049016,Rio nell'Elba,li,totale,14,416,1341,350
+2012,049017,Rosignano Marittimo,li,alberghiero,32,794,1973,860
+2012,049017,Rosignano Marittimo,li,extra-alberghiero,60,2009,7332,1013
+2012,049017,Rosignano Marittimo,li,totale,92,2802,9304,1873
+2012,049018,San Vincenzo,li,alberghiero,26,1257,2839,1364
+2012,049018,San Vincenzo,li,extra-alberghiero,59,2212,9003,2053
+2012,049018,San Vincenzo,li,totale,85,3469,11842,3417
+2012,049019,Sassetta,li,alberghiero,1,20,38,17
+2012,049019,Sassetta,li,extra-alberghiero,16,113,268,123
+2012,049019,Sassetta,li,totale,17,133,306,140
+2012,049020,Suvereto,li,alberghiero,1,135,540,135
+2012,049020,Suvereto,li,extra-alberghiero,47,292,749,271
+2012,049020,Suvereto,li,totale,48,427,1289,406
+2012,050001,Bientina,pi,alberghiero,3,63,143,67
+2012,050001,Bientina,pi,extra-alberghiero,1,6,9,6
+2012,050001,Bientina,pi,totale,4,69,152,73
+2012,050002,Buti,pi,alberghiero,0,0,0,0
+2012,050002,Buti,pi,extra-alberghiero,13,60,133,50
+2012,050002,Buti,pi,totale,13,60,133,50
+2012,050003,Calci,pi,alberghiero,1,9,19,4
+2012,050003,Calci,pi,extra-alberghiero,29,172,312,159
+2012,050003,Calci,pi,totale,30,181,331,163
+2012,050004,Calcinaia,pi,alberghiero,1,67,182,76
+2012,050004,Calcinaia,pi,extra-alberghiero,3,13,26,11
+2012,050004,Calcinaia,pi,totale,4,80,208,87
+2012,050005,Capannoli,pi,alberghiero,2,36,98,23
+2012,050005,Capannoli,pi,extra-alberghiero,7,41,81,41
+2012,050005,Capannoli,pi,totale,9,77,179,64
+2012,050006,Casale Marittimo,pi,alberghiero,1,58,217,58
+2012,050006,Casale Marittimo,pi,extra-alberghiero,11,314,1163,130
+2012,050006,Casale Marittimo,pi,totale,12,372,1380,188
+2012,050007,Casciana Terme,pi,alberghiero,10,359,733,381
+2012,050007,Casciana Terme,pi,extra-alberghiero,15,59,124,56
+2012,050007,Casciana Terme,pi,totale,25,418,857,437
+2012,050008,Cascina,pi,alberghiero,3,95,205,107
+2012,050008,Cascina,pi,extra-alberghiero,18,67,140,60
+2012,050008,Cascina,pi,totale,21,162,345,167
+2012,050009,Castelfranco di Sotto,pi,alberghiero,1,8,22,8
+2012,050009,Castelfranco di Sotto,pi,extra-alberghiero,6,29,75,28
+2012,050009,Castelfranco di Sotto,pi,totale,6,37,96,36
+2012,050010,Castellina Marittima,pi,alberghiero,5,57,104,56
+2012,050010,Castellina Marittima,pi,extra-alberghiero,3,12,26,12
+2012,050010,Castellina Marittima,pi,totale,8,69,130,68
+2012,050011,Castelnuovo di Val di Cecina,pi,alberghiero,1,18,34,18
+2012,050011,Castelnuovo di Val di Cecina,pi,extra-alberghiero,19,93,236,87
+2012,050011,Castelnuovo di Val di Cecina,pi,totale,20,110,269,104
+2012,050012,Chianni,pi,alberghiero,0,0,0,0
+2012,050012,Chianni,pi,extra-alberghiero,22,140,305,131
+2012,050012,Chianni,pi,totale,22,140,305,131
+2012,050013,Crespina,pi,alberghiero,1,11,22,11
+2012,050013,Crespina,pi,extra-alberghiero,11,56,107,52
+2012,050013,Crespina,pi,totale,12,67,129,63
+2012,050014,Fauglia,pi,alberghiero,1,14,42,14
+2012,050014,Fauglia,pi,extra-alberghiero,13,87,161,73
+2012,050014,Fauglia,pi,totale,14,101,203,87
+2012,050015,Guardistallo,pi,alberghiero,3,64,208,57
+2012,050015,Guardistallo,pi,extra-alberghiero,13,191,614,148
+2012,050015,Guardistallo,pi,totale,16,255,822,205
+2012,050016,Lajatico,pi,alberghiero,2,23,60,26
+2012,050016,Lajatico,pi,extra-alberghiero,14,133,281,128
+2012,050016,Lajatico,pi,totale,16,156,341,154
+2012,050017,Lari,pi,alberghiero,1,7,15,7
+2012,050017,Lari,pi,extra-alberghiero,21,96,226,89
+2012,050017,Lari,pi,totale,22,103,241,96
+2012,050018,Lorenzana,pi,alberghiero,0,0,0,0
+2012,050018,Lorenzana,pi,extra-alberghiero,8,44,131,42
+2012,050018,Lorenzana,pi,totale,8,44,131,42
+2012,050019,Montecatini Val di Cecina,pi,alberghiero,2,66,158,65
+2012,050019,Montecatini Val di Cecina,pi,extra-alberghiero,39,253,608,236
+2012,050019,Montecatini Val di Cecina,pi,totale,41,319,766,301
+2012,050020,Montescudaio,pi,alberghiero,1,10,22,11
+2012,050020,Montescudaio,pi,extra-alberghiero,19,167,554,134
+2012,050020,Montescudaio,pi,totale,20,177,576,145
+2012,050021,Monteverdi Marittimo,pi,alberghiero,2,42,90,43
+2012,050021,Monteverdi Marittimo,pi,extra-alberghiero,12,82,171,74
+2012,050021,Monteverdi Marittimo,pi,totale,14,124,261,117
+2012,050022,Montopoli in Val d'Arno,pi,alberghiero,2,46,75,47
+2012,050022,Montopoli in Val d'Arno,pi,extra-alberghiero,27,327,1000,210
+2012,050022,Montopoli in Val d'Arno,pi,totale,29,373,1075,257
+2012,050023,Orciano Pisano,pi,alberghiero,0,0,0,0
+2012,050023,Orciano Pisano,pi,extra-alberghiero,1,2,5,3
+2012,050023,Orciano Pisano,pi,totale,1,2,5,3
+2012,050024,Palaia,pi,alberghiero,2,21,42,25
+2012,050024,Palaia,pi,extra-alberghiero,47,313,751,355
+2012,050024,Palaia,pi,totale,49,334,793,380
+2012,050025,Peccioli,pi,alberghiero,1,30,65,30
+2012,050025,Peccioli,pi,extra-alberghiero,37,222,481,207
+2012,050025,Peccioli,pi,totale,38,252,546,237
+2012,050026,Pisa,pi,alberghiero,67,2733,6093,2808
+2012,050026,Pisa,pi,extra-alberghiero,246,3714,8848,2232
+2012,050026,Pisa,pi,totale,313,6447,14941,5039
+2012,050027,Pomarance,pi,alberghiero,3,54,99,57
+2012,050027,Pomarance,pi,extra-alberghiero,60,444,925,366
+2012,050027,Pomarance,pi,totale,63,498,1024,423
+2012,050028,Ponsacco,pi,alberghiero,3,47,88,49
+2012,050028,Ponsacco,pi,extra-alberghiero,8,54,116,51
+2012,050028,Ponsacco,pi,totale,11,101,204,100
+2012,050029,Pontedera,pi,alberghiero,5,154,296,174
+2012,050029,Pontedera,pi,extra-alberghiero,18,81,171,74
+2012,050029,Pontedera,pi,totale,23,235,467,248
+2012,050030,Riparbella,pi,alberghiero,6,120,303,115
+2012,050030,Riparbella,pi,extra-alberghiero,20,307,754,234
+2012,050030,Riparbella,pi,totale,26,428,1057,349
+2012,050031,San Giuliano Terme,pi,alberghiero,8,364,808,383
+2012,050031,San Giuliano Terme,pi,extra-alberghiero,37,672,1166,661
+2012,050031,San Giuliano Terme,pi,totale,44,1036,1974,1044
+2012,050032,San Miniato,pi,alberghiero,9,125,273,131
+2012,050032,San Miniato,pi,extra-alberghiero,36,210,436,211
+2012,050032,San Miniato,pi,totale,45,335,709,342
+2012,050033,Santa Croce sull'Arno,pi,alberghiero,2,20,31,20
+2012,050033,Santa Croce sull'Arno,pi,extra-alberghiero,0,0,0,0
+2012,050033,Santa Croce sull'Arno,pi,totale,2,20,31,20
+2012,050034,Santa Luce,pi,alberghiero,2,14,65,25
+2012,050034,Santa Luce,pi,extra-alberghiero,21,141,445,125
+2012,050034,Santa Luce,pi,totale,23,155,510,150
+2012,050035,Santa Maria a Monte,pi,alberghiero,2,79,154,83
+2012,050035,Santa Maria a Monte,pi,extra-alberghiero,8,18,40,17
+2012,050035,Santa Maria a Monte,pi,totale,10,97,194,100
+2012,050036,Terricciola,pi,alberghiero,1,22,37,22
+2012,050036,Terricciola,pi,extra-alberghiero,25,172,400,164
+2012,050036,Terricciola,pi,totale,26,194,437,186
+2012,050037,Vecchiano,pi,alberghiero,1,62,124,67
+2012,050037,Vecchiano,pi,extra-alberghiero,16,61,134,48
+2012,050037,Vecchiano,pi,totale,17,123,258,115
+2012,050038,Vicopisano,pi,alberghiero,0,0,0,0
+2012,050038,Vicopisano,pi,extra-alberghiero,26,87,196,72
+2012,050038,Vicopisano,pi,totale,26,87,196,72
+2012,050039,Volterra,pi,alberghiero,20,476,934,505
+2012,050039,Volterra,pi,extra-alberghiero,124,791,1758,648
+2012,050039,Volterra,pi,totale,144,1267,2693,1153
+2012,051001,Anghiari,ar,alberghiero,3,70,166,72
+2012,051001,Anghiari,ar,extra-alberghiero,28,175,362,146
+2012,051001,Anghiari,ar,totale,31,245,528,218
+2012,051002,Arezzo,ar,alberghiero,25,1079,2182,1156
+2012,051002,Arezzo,ar,extra-alberghiero,152,720,1647,560
+2012,051002,Arezzo,ar,totale,177,1799,3829,1716
+2012,051003,Badia Tedalda,ar,alberghiero,6,70,124,66
+2012,051003,Badia Tedalda,ar,extra-alberghiero,6,38,113,43
+2012,051003,Badia Tedalda,ar,totale,12,108,237,109
+2012,051004,Bibbiena,ar,alberghiero,5,82,153,87
+2012,051004,Bibbiena,ar,extra-alberghiero,20,145,323,139
+2012,051004,Bibbiena,ar,totale,25,227,476,226
+2012,051005,Bucine,ar,alberghiero,3,36,60,40
+2012,051005,Bucine,ar,extra-alberghiero,69,716,1661,625
+2012,051005,Bucine,ar,totale,72,753,1721,665
+2012,051006,Capolona,ar,alberghiero,1,42,108,45
+2012,051006,Capolona,ar,extra-alberghiero,13,90,180,74
+2012,051006,Capolona,ar,totale,14,132,288,119
+2012,051007,Caprese Michelangelo,ar,alberghiero,4,53,117,74
+2012,051007,Caprese Michelangelo,ar,extra-alberghiero,18,162,486,108
+2012,051007,Caprese Michelangelo,ar,totale,22,215,603,182
+2012,051008,Castel Focognano,ar,alberghiero,0,0,0,0
+2012,051008,Castel Focognano,ar,extra-alberghiero,5,28,45,23
+2012,051008,Castel Focognano,ar,totale,5,28,45,23
+2012,051009,Castelfranco di Sopra,ar,alberghiero,1,11,18,13
+2012,051009,Castelfranco di Sopra,ar,extra-alberghiero,16,128,322,117
+2012,051009,Castelfranco di Sopra,ar,totale,17,139,340,130
+2012,051010,Castel San Niccolo',ar,alberghiero,1,10,17,10
+2012,051010,Castel San Niccolo',ar,extra-alberghiero,8,36,80,34
+2012,051010,Castel San Niccolo',ar,totale,9,46,97,44
+2012,051011,Castiglion Fibocchi,ar,alberghiero,1,7,21,7
+2012,051011,Castiglion Fibocchi,ar,extra-alberghiero,3,23,43,16
+2012,051011,Castiglion Fibocchi,ar,totale,4,30,64,23
+2012,051012,Castiglion Fiorentino,ar,alberghiero,6,200,381,196
+2012,051012,Castiglion Fiorentino,ar,extra-alberghiero,53,278,545,236
+2012,051012,Castiglion Fiorentino,ar,totale,59,478,925,432
+2012,051013,Cavriglia,ar,alberghiero,2,54,73,35
+2012,051013,Cavriglia,ar,extra-alberghiero,31,551,1607,360
+2012,051013,Cavriglia,ar,totale,33,605,1680,395
+2012,051014,Chitignano,ar,alberghiero,2,31,59,32
+2012,051014,Chitignano,ar,extra-alberghiero,5,33,60,27
+2012,051014,Chitignano,ar,totale,7,64,119,59
+2012,051015,Chiusi della Verna,ar,alberghiero,4,53,103,64
+2012,051015,Chiusi della Verna,ar,extra-alberghiero,17,364,765,310
+2012,051015,Chiusi della Verna,ar,totale,21,417,867,374
+2012,051016,Civitella in Val di Chiana,ar,alberghiero,3,75,184,79
+2012,051016,Civitella in Val di Chiana,ar,extra-alberghiero,28,151,285,130
+2012,051016,Civitella in Val di Chiana,ar,totale,31,226,469,209
+2012,051017,Cortona,ar,alberghiero,21,430,903,460
+2012,051017,Cortona,ar,extra-alberghiero,160,1056,2159,931
+2012,051017,Cortona,ar,totale,182,1486,3061,1390
+2012,051018,Foiano della Chiana,ar,alberghiero,3,65,129,70
+2012,051018,Foiano della Chiana,ar,extra-alberghiero,15,96,201,78
+2012,051018,Foiano della Chiana,ar,totale,18,162,330,148
+2012,051019,Laterina,ar,alberghiero,2,69,184,96
+2012,051019,Laterina,ar,extra-alberghiero,4,26,53,24
+2012,051019,Laterina,ar,totale,6,95,237,120
+2012,051020,Loro Ciuffenna,ar,alberghiero,4,53,98,48
+2012,051020,Loro Ciuffenna,ar,extra-alberghiero,28,249,557,238
+2012,051020,Loro Ciuffenna,ar,totale,32,302,655,286
+2012,051021,Lucignano,ar,alberghiero,2,24,68,20
+2012,051021,Lucignano,ar,extra-alberghiero,26,124,280,105
+2012,051021,Lucignano,ar,totale,28,148,348,125
+2012,051022,Marciano della Chiana,ar,alberghiero,1,10,19,10
+2012,051022,Marciano della Chiana,ar,extra-alberghiero,6,28,85,31
+2012,051022,Marciano della Chiana,ar,totale,7,38,104,41
+2012,051023,Montemignaio,ar,alberghiero,3,68,151,62
+2012,051023,Montemignaio,ar,extra-alberghiero,2,26,42,25
+2012,051023,Montemignaio,ar,totale,5,94,193,87
+2012,051024,Monterchi,ar,alberghiero,0,0,0,0
+2012,051024,Monterchi,ar,extra-alberghiero,8,38,100,36
+2012,051024,Monterchi,ar,totale,8,38,100,36
+2012,051025,Monte San Savino,ar,alberghiero,5,68,121,99
+2012,051025,Monte San Savino,ar,extra-alberghiero,29,195,384,168
+2012,051025,Monte San Savino,ar,totale,34,263,505,267
+2012,051026,Montevarchi,ar,alberghiero,5,125,263,133
+2012,051026,Montevarchi,ar,extra-alberghiero,15,93,177,80
+2012,051026,Montevarchi,ar,totale,20,218,440,213
+2012,051027,Ortignano Raggiolo,ar,alberghiero,0,0,0,0
+2012,051027,Ortignano Raggiolo,ar,extra-alberghiero,6,40,65,27
+2012,051027,Ortignano Raggiolo,ar,totale,6,40,65,27
+2012,051028,Pergine Valdarno,ar,alberghiero,1,12,23,11
+2012,051028,Pergine Valdarno,ar,extra-alberghiero,19,196,371,153
+2012,051028,Pergine Valdarno,ar,totale,20,208,394,164
+2012,051029,Pian di Sco,ar,alberghiero,1,15,15,9
+2012,051029,Pian di Sco,ar,extra-alberghiero,9,55,111,41
+2012,051029,Pian di Sco,ar,totale,10,70,126,50
+2012,051030,Pieve Santo Stefano,ar,alberghiero,6,88,197,92
+2012,051030,Pieve Santo Stefano,ar,extra-alberghiero,13,118,293,103
+2012,051030,Pieve Santo Stefano,ar,totale,19,206,490,195
+2012,051031,Poppi,ar,alberghiero,16,333,716,339
+2012,051031,Poppi,ar,extra-alberghiero,36,530,984,207
+2012,051031,Poppi,ar,totale,52,863,1700,546
+2012,051032,Pratovecchio,ar,alberghiero,0,0,0,0
+2012,051032,Pratovecchio,ar,extra-alberghiero,20,115,246,96
+2012,051032,Pratovecchio,ar,totale,20,115,246,96
+2012,051033,San Giovanni Valdarno,ar,alberghiero,3,97,193,100
+2012,051033,San Giovanni Valdarno,ar,extra-alberghiero,10,67,142,76
+2012,051033,San Giovanni Valdarno,ar,totale,13,164,335,176
+2012,051034,Sansepolcro,ar,alberghiero,10,225,435,243
+2012,051034,Sansepolcro,ar,extra-alberghiero,29,220,504,215
+2012,051034,Sansepolcro,ar,totale,39,445,939,458
+2012,051035,Sestino,ar,alberghiero,0,0,0,0
+2012,051035,Sestino,ar,extra-alberghiero,1,2,4,1
+2012,051035,Sestino,ar,totale,1,2,4,1
+2012,051036,Stia,ar,alberghiero,2,34,74,12
+2012,051036,Stia,ar,extra-alberghiero,5,66,238,36
+2012,051036,Stia,ar,totale,7,100,312,48
+2012,051037,Subbiano,ar,alberghiero,3,61,122,61
+2012,051037,Subbiano,ar,extra-alberghiero,35,182,348,168
+2012,051037,Subbiano,ar,totale,38,243,470,229
+2012,051038,Talla,ar,alberghiero,1,14,24,10
+2012,051038,Talla,ar,extra-alberghiero,7,70,250,21
+2012,051038,Talla,ar,totale,8,84,274,31
+2012,051039,Terranuova Bracciolini,ar,alberghiero,5,137,280,147
+2012,051039,Terranuova Bracciolini,ar,extra-alberghiero,24,212,436,193
+2012,051039,Terranuova Bracciolini,ar,totale,29,349,716,340
+2012,052001,Abbadia San Salvatore,si,alberghiero,21,481,956,519
+2012,052001,Abbadia San Salvatore,si,extra-alberghiero,5,30,64,31
+2012,052001,Abbadia San Salvatore,si,totale,26,511,1020,550
+2012,052002,Asciano,si,alberghiero,7,170,365,188
+2012,052002,Asciano,si,extra-alberghiero,69,448,967,417
+2012,052002,Asciano,si,totale,76,618,1332,605
+2012,052003,Buonconvento,si,alberghiero,2,37,83,44
+2012,052003,Buonconvento,si,extra-alberghiero,40,275,567,264
+2012,052003,Buonconvento,si,totale,42,312,650,308
+2012,052004,Casole d'Elsa,si,alberghiero,7,168,410,175
+2012,052004,Casole d'Elsa,si,extra-alberghiero,63,457,1071,470
+2012,052004,Casole d'Elsa,si,totale,70,625,1480,645
+2012,052005,Castellina in Chianti,si,alberghiero,11,183,487,204
+2012,052005,Castellina in Chianti,si,extra-alberghiero,94,719,1802,571
+2012,052005,Castellina in Chianti,si,totale,105,901,2289,774
+2012,052006,Castelnuovo Berardenga,si,alberghiero,8,203,479,236
+2012,052006,Castelnuovo Berardenga,si,extra-alberghiero,114,839,1727,788
+2012,052006,Castelnuovo Berardenga,si,totale,122,1042,2206,1024
+2012,052007,Castiglione d'Orcia,si,alberghiero,5,77,156,86
+2012,052007,Castiglione d'Orcia,si,extra-alberghiero,65,349,731,314
+2012,052007,Castiglione d'Orcia,si,totale,70,426,887,400
+2012,052008,Cetona,si,alberghiero,1,12,25,13
+2012,052008,Cetona,si,extra-alberghiero,33,176,383,161
+2012,052008,Cetona,si,totale,34,188,408,174
+2012,052009,Chianciano Terme,si,alberghiero,139,5973,12419,6402
+2012,052009,Chianciano Terme,si,extra-alberghiero,40,256,460,229
+2012,052009,Chianciano Terme,si,totale,178,6229,12879,6631
+2012,052010,Chiusdino,si,alberghiero,1,7,14,6
+2012,052010,Chiusdino,si,extra-alberghiero,37,361,1008,331
+2012,052010,Chiusdino,si,totale,38,368,1022,337
+2012,052011,Chiusi,si,alberghiero,12,276,616,281
+2012,052011,Chiusi,si,extra-alberghiero,34,275,606,173
+2012,052011,Chiusi,si,totale,46,551,1222,454
+2012,052012,Colle di Val d'Elsa,si,alberghiero,8,201,450,221
+2012,052012,Colle di Val d'Elsa,si,extra-alberghiero,77,440,866,374
+2012,052012,Colle di Val d'Elsa,si,totale,85,641,1316,595
+2012,052013,Gaiole in Chianti,si,alberghiero,10,138,330,150
+2012,052013,Gaiole in Chianti,si,extra-alberghiero,78,429,874,387
+2012,052013,Gaiole in Chianti,si,totale,88,567,1204,537
+2012,052014,Montalcino,si,alberghiero,10,210,533,250
+2012,052014,Montalcino,si,extra-alberghiero,102,536,1239,541
+2012,052014,Montalcino,si,totale,112,746,1772,791
+2012,052015,Montepulciano,si,alberghiero,25,502,1107,556
+2012,052015,Montepulciano,si,extra-alberghiero,159,956,2038,934
+2012,052015,Montepulciano,si,totale,184,1457,3145,1490
+2012,052016,Monteriggioni,si,alberghiero,10,243,609,304
+2012,052016,Monteriggioni,si,extra-alberghiero,77,398,823,329
+2012,052016,Monteriggioni,si,totale,87,641,1431,633
+2012,052017,Monteroni d'Arbia,si,alberghiero,3,61,107,64
+2012,052017,Monteroni d'Arbia,si,extra-alberghiero,43,279,611,254
+2012,052017,Monteroni d'Arbia,si,totale,46,340,718,318
+2012,052018,Monticiano,si,alberghiero,4,108,228,109
+2012,052018,Monticiano,si,extra-alberghiero,24,135,264,144
+2012,052018,Monticiano,si,totale,28,243,493,253
+2012,052019,Murlo,si,alberghiero,4,144,370,153
+2012,052019,Murlo,si,extra-alberghiero,33,328,783,236
+2012,052019,Murlo,si,totale,37,472,1153,389
+2012,052020,Piancastagnaio,si,alberghiero,4,57,112,58
+2012,052020,Piancastagnaio,si,extra-alberghiero,11,61,153,66
+2012,052020,Piancastagnaio,si,totale,15,118,265,124
+2012,052021,Pienza,si,alberghiero,5,101,207,108
+2012,052021,Pienza,si,extra-alberghiero,115,689,1413,655
+2012,052021,Pienza,si,totale,120,790,1620,763
+2012,052022,Poggibonsi,si,alberghiero,8,346,712,366
+2012,052022,Poggibonsi,si,extra-alberghiero,58,315,722,291
+2012,052022,Poggibonsi,si,totale,66,661,1434,657
+2012,052023,Radda in Chianti,si,alberghiero,12,242,552,260
+2012,052023,Radda in Chianti,si,extra-alberghiero,48,270,563,262
+2012,052023,Radda in Chianti,si,totale,60,512,1115,521
+2012,052024,Radicofani,si,alberghiero,2,17,33,21
+2012,052024,Radicofani,si,extra-alberghiero,24,151,307,143
+2012,052024,Radicofani,si,totale,26,168,340,164
+2012,052025,Radicondoli,si,alberghiero,2,18,34,20
+2012,052025,Radicondoli,si,extra-alberghiero,41,236,496,208
+2012,052025,Radicondoli,si,totale,42,253,529,228
+2012,052026,Rapolano Terme,si,alberghiero,5,193,422,217
+2012,052026,Rapolano Terme,si,extra-alberghiero,39,332,707,310
+2012,052026,Rapolano Terme,si,totale,44,525,1129,527
+2012,052027,San Casciano dei Bagni,si,alberghiero,4,105,221,108
+2012,052027,San Casciano dei Bagni,si,extra-alberghiero,31,238,480,221
+2012,052027,San Casciano dei Bagni,si,totale,35,343,702,329
+2012,052028,San Gimignano,si,alberghiero,20,600,1307,662
+2012,052028,San Gimignano,si,extra-alberghiero,304,1747,3991,1617
+2012,052028,San Gimignano,si,totale,324,2347,5299,2280
+2012,052029,San Giovanni d'Asso,si,alberghiero,4,60,152,65
+2012,052029,San Giovanni d'Asso,si,extra-alberghiero,32,201,437,176
+2012,052029,San Giovanni d'Asso,si,totale,36,261,589,241
+2012,052030,San Quirico d'Orcia,si,alberghiero,7,296,772,332
+2012,052030,San Quirico d'Orcia,si,extra-alberghiero,39,211,421,190
+2012,052030,San Quirico d'Orcia,si,totale,46,507,1193,522
+2012,052031,Sarteano,si,alberghiero,7,112,256,129
+2012,052031,Sarteano,si,extra-alberghiero,34,769,2337,387
+2012,052031,Sarteano,si,totale,41,881,2592,516
+2012,052032,Siena,si,alberghiero,46,1635,3921,1779
+2012,052032,Siena,si,extra-alberghiero,255,1672,3808,1231
+2012,052032,Siena,si,totale,301,3307,7729,3010
+2012,052033,Sinalunga,si,alberghiero,6,128,268,136
+2012,052033,Sinalunga,si,extra-alberghiero,52,325,706,304
+2012,052033,Sinalunga,si,totale,58,453,974,440
+2012,052034,Sovicille,si,alberghiero,6,107,248,129
+2012,052034,Sovicille,si,extra-alberghiero,72,590,1371,469
+2012,052034,Sovicille,si,totale,78,697,1619,598
+2012,052035,Torrita di Siena,si,alberghiero,4,56,122,57
+2012,052035,Torrita di Siena,si,extra-alberghiero,38,203,403,188
+2012,052035,Torrita di Siena,si,totale,42,259,525,245
+2012,052036,Trequanda,si,alberghiero,5,40,92,46
+2012,052036,Trequanda,si,extra-alberghiero,28,232,480,204
+2012,052036,Trequanda,si,totale,33,272,572,250
+2012,053001,Arcidosso,gr,alberghiero,8,258,603,268
+2012,053001,Arcidosso,gr,extra-alberghiero,26,171,388,181
+2012,053001,Arcidosso,gr,totale,34,429,991,449
+2012,053002,Campagnatico,gr,alberghiero,0,0,0,0
+2012,053002,Campagnatico,gr,extra-alberghiero,45,235,412,183
+2012,053002,Campagnatico,gr,totale,45,235,412,183
+2012,053003,Capalbio,gr,alberghiero,7,146,439,161
+2012,053003,Capalbio,gr,extra-alberghiero,58,720,2426,404
+2012,053003,Capalbio,gr,totale,65,866,2865,565
+2012,053004,Castel del Piano,gr,alberghiero,5,162,319,174
+2012,053004,Castel del Piano,gr,extra-alberghiero,31,315,935,212
+2012,053004,Castel del Piano,gr,totale,36,477,1254,386
+2012,053005,Castell'Azzara,gr,alberghiero,0,0,0,0
+2012,053005,Castell'Azzara,gr,extra-alberghiero,9,53,99,47
+2012,053005,Castell'Azzara,gr,totale,9,53,99,47
+2012,053006,Castiglione della Pescaia,gr,alberghiero,42,1617,3542,1507
+2012,053006,Castiglione della Pescaia,gr,extra-alberghiero,82,4519,15646,1897
+2012,053006,Castiglione della Pescaia,gr,totale,124,6135,19188,3404
+2012,053007,Cinigiano,gr,alberghiero,1,10,23,11
+2012,053007,Cinigiano,gr,extra-alberghiero,36,307,723,220
+2012,053007,Cinigiano,gr,totale,37,317,746,231
+2012,053008,Civitella Paganico,gr,alberghiero,7,205,477,303
+2012,053008,Civitella Paganico,gr,extra-alberghiero,33,207,370,184
+2012,053008,Civitella Paganico,gr,totale,40,412,847,487
+2012,053009,Follonica,gr,alberghiero,22,544,1362,575
+2012,053009,Follonica,gr,extra-alberghiero,38,1864,6240,963
+2012,053009,Follonica,gr,totale,60,2408,7602,1538
+2012,053010,Gavorrano,gr,alberghiero,5,232,617,184
+2012,053010,Gavorrano,gr,extra-alberghiero,48,455,1027,281
+2012,053010,Gavorrano,gr,totale,53,687,1644,465
+2012,053011,Grosseto,gr,alberghiero,47,1650,3757,1755
+2012,053011,Grosseto,gr,extra-alberghiero,272,4883,14836,2606
+2012,053011,Grosseto,gr,totale,319,6533,18594,4361
+2012,053012,Isola del Giglio,gr,alberghiero,13,281,589,293
+2012,053012,Isola del Giglio,gr,extra-alberghiero,12,101,280,73
+2012,053012,Isola del Giglio,gr,totale,25,382,869,366
+2012,053013,Magliano in Toscana,gr,alberghiero,3,77,153,82
+2012,053013,Magliano in Toscana,gr,extra-alberghiero,84,632,1122,551
+2012,053013,Magliano in Toscana,gr,totale,87,709,1275,633
+2012,053014,Manciano,gr,alberghiero,29,467,995,490
+2012,053014,Manciano,gr,extra-alberghiero,175,1403,2145,999
+2012,053014,Manciano,gr,totale,203,1869,3140,1489
+2012,053015,Massa Marittima,gr,alberghiero,6,279,587,300
+2012,053015,Massa Marittima,gr,extra-alberghiero,89,692,1519,614
+2012,053015,Massa Marittima,gr,totale,95,971,2105,915
+2012,053016,Monte Argentario,gr,alberghiero,20,672,1381,694
+2012,053016,Monte Argentario,gr,extra-alberghiero,25,291,879,144
+2012,053016,Monte Argentario,gr,totale,45,962,2260,838
+2012,053017,Montieri,gr,alberghiero,3,42,90,27
+2012,053017,Montieri,gr,extra-alberghiero,17,98,246,88
+2012,053017,Montieri,gr,totale,20,140,336,115
+2012,053018,Orbetello,gr,alberghiero,37,992,2468,1030
+2012,053018,Orbetello,gr,extra-alberghiero,110,4931,17111,2122
+2012,053018,Orbetello,gr,totale,146,5923,19579,3152
+2012,053019,Pitigliano,gr,alberghiero,5,95,197,107
+2012,053019,Pitigliano,gr,extra-alberghiero,46,185,352,169
+2012,053019,Pitigliano,gr,totale,51,280,549,276
+2012,053020,Roccalbegna,gr,alberghiero,2,31,61,34
+2012,053020,Roccalbegna,gr,extra-alberghiero,29,132,273,126
+2012,053020,Roccalbegna,gr,totale,31,163,334,160
+2012,053021,Roccastrada,gr,alberghiero,3,39,92,42
+2012,053021,Roccastrada,gr,extra-alberghiero,56,339,617,322
+2012,053021,Roccastrada,gr,totale,59,378,709,364
+2012,053022,Santa Fiora,gr,alberghiero,7,180,362,192
+2012,053022,Santa Fiora,gr,extra-alberghiero,15,76,140,66
+2012,053022,Santa Fiora,gr,totale,22,255,501,258
+2012,053023,Scansano,gr,alberghiero,5,102,210,102
+2012,053023,Scansano,gr,extra-alberghiero,59,279,576,269
+2012,053023,Scansano,gr,totale,64,381,786,371
+2012,053024,Scarlino,gr,alberghiero,8,375,1055,385
+2012,053024,Scarlino,gr,extra-alberghiero,35,1485,4985,853
+2012,053024,Scarlino,gr,totale,43,1860,6040,1238
+2012,053025,Seggiano,gr,alberghiero,4,49,126,57
+2012,053025,Seggiano,gr,extra-alberghiero,22,127,278,112
+2012,053025,Seggiano,gr,totale,26,176,404,169
+2012,053026,Sorano,gr,alberghiero,8,107,218,122
+2012,053026,Sorano,gr,extra-alberghiero,45,282,665,281
+2012,053026,Sorano,gr,totale,53,389,883,402
+2012,053027,Monterotondo Marittimo,gr,alberghiero,1,23,32,22
+2012,053027,Monterotondo Marittimo,gr,extra-alberghiero,15,93,207,103
+2012,053027,Monterotondo Marittimo,gr,totale,16,116,239,125
+2012,053028,Semproniano,gr,alberghiero,2,22,43,24
+2012,053028,Semproniano,gr,extra-alberghiero,31,228,423,213
+2012,053028,Semproniano,gr,totale,33,250,466,237
+2012,100001,Cantagallo,po,alberghiero,0,0,0,0
+2012,100001,Cantagallo,po,extra-alberghiero,8,33,101,48
+2012,100001,Cantagallo,po,totale,8,33,101,48
+2012,100002,Carmignano,po,alberghiero,3,57,133,60
+2012,100002,Carmignano,po,extra-alberghiero,37,259,564,241
+2012,100002,Carmignano,po,totale,40,316,697,301
+2012,100003,Montemurlo,po,alberghiero,0,0,0,0
+2012,100003,Montemurlo,po,extra-alberghiero,13,63,141,49
+2012,100003,Montemurlo,po,totale,13,63,141,49
+2012,100004,Poggio a Caiano,po,alberghiero,1,64,132,63
+2012,100004,Poggio a Caiano,po,extra-alberghiero,4,19,39,18
+2012,100004,Poggio a Caiano,po,totale,5,83,171,81
+2012,100005,Prato,po,alberghiero,17,763,1596,796
+2012,100005,Prato,po,extra-alberghiero,62,355,709,322
+2012,100005,Prato,po,totale,78,1118,2305,1118
+2012,100006,Vaiano,po,alberghiero,0,0,0,0
+2012,100006,Vaiano,po,extra-alberghiero,8,28,62,30
+2012,100006,Vaiano,po,totale,8,28,62,30
+2012,100007,Vernio,po,alberghiero,2,38,71,43
+2012,100007,Vernio,po,extra-alberghiero,17,66,148,60
+2012,100007,Vernio,po,totale,19,104,219,103

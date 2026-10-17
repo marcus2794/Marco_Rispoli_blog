@@ -1,0 +1,47 @@
+---
+title: "Liberté: la poesia caduta dal cielo"
+categories:
+  - poesia
+  - letteratura
+  - storia
+description: |
+  Paul Éluard la scrisse come una poesia d'amore e la trasformò in un grido di resistenza. Nel 1942 la RAF la lanciò sulla Francia occupata. Storia di una poesia che ha viaggiato più di qualunque soldato.
+author:
+  - name: The Mind Walker
+date: 2026-10-16
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Ci sono poesie che si leggono e poesie che si attraversano. *Liberté* di Paul Éluard appartiene alla seconda specie: ventuno strofe che camminano, una dopo l'altra, sempre con lo stesso passo, finché all'ultima riga non capisci dove ti hanno portato.
+
+## Una poesia d'amore che cambiò destinatario
+
+Éluard la scrisse durante l'occupazione tedesca della Francia. Il titolo originale era *Une seule pensée*, "un solo pensiero", e il progetto era semplice: un lungo elenco di luoghi su cui il poeta scrive un nome, fino a rivelare alla fine quello della donna amata. Per Éluard quella donna era Nusch, sua moglie.
+
+Strada facendo, però, si accorse che la parola che aveva in testa era un'altra. Nella Francia del 1941 e del 1942 c'era un desiderio più grande di qualunque amore privato, condiviso da tutti quelli che vivevano sotto l'occupazione. Così l'ultima parola della poesia diventò *Liberté*, e la poesia d'amore diventò una poesia per tutti.
+
+## Come è fatta
+
+La struttura è la sua forza. Sono ventuno quartine costruite tutte allo stesso modo: tre versi che nominano una superficie su cui scrivere e un quarto verso che ritorna identico, come un ritornello. È un'anafora ostinata, quasi una preghiera.
+
+Le superfici cambiano e raccontano una vita intera. Si parte dai quaderni e dal banco di scuola, si passa alla natura (gli alberi, la sabbia, la neve, il mare), poi alla città, alla casa, al corpo dell'amata, e infine ai luoghi più fragili: la stanchezza, l'assenza, la solitudine, la morte stessa. Il nome viene scritto ovunque, anche dove sembrerebbe impossibile. È il modo di Éluard di dire che la libertà non è un'idea astratta: si scrive su ogni cosa che tocchiamo.
+
+Solo nell'ultima strofa la parola arriva, come una porta che si apre in fondo a un lungo corridoio.
+
+## Il viaggio clandestino
+
+La poesia uscì il 3 aprile 1942 nella raccolta *Poésie et vérité 1942*, stampata clandestinamente dalle edizioni de la Main à plume. A giugno Max-Pol Fouchet la ripubblicò nella rivista *Fontaine*, che usciva ad Algeri, perché arrivasse anche nella zona non occupata.
+
+Poi accadde la cosa più straordinaria. A Londra la ristampò *La France libre*, la rivista della Francia di de Gaulle, e la Royal Air Force ne lanciò migliaia di copie con il paracadute sulla Francia occupata. Alcune arrivarono ai partigiani del maquis insieme alle casse di armi. Una poesia era diventata, letteralmente, un rifornimento.
+
+## La musica
+
+Nel 1943 Francis Poulenc mise in musica *Liberté* insieme ad altre sette poesie di Éluard nella cantata *Figure humaine*, per doppio coro misto a dodici voci. Scritta sotto l'occupazione, in Francia non poteva essere eseguita: la prima esecuzione avvenne alla radio della BBC, in inglese, il 25 marzo 1945.
+
+## Perché leggerla oggi
+
+*Liberté* si impara a memoria facilmente, ed è per questo che ha viaggiato tanto: nelle scuole francesi, sui muri, sui cartelli delle manifestazioni. Ma la sua lezione più bella sta nella forma. Ripetere lo stesso gesto ventuno volte, su ventuno superfici diverse, è un esercizio di pazienza e di ostinazione. La libertà, dice Éluard, non si conquista una volta sola: si scrive ogni giorno, su tutto.
+
+Il testo integrale si trova facilmente nelle antologie di Éluard e online; per la storia della poesia, una buona sintesi è la [voce di Wikipedia](https://en.wikipedia.org/wiki/Libert%C3%A9_(poem)).

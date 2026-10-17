@@ -1,0 +1,12 @@
+---
+title: "Gallery of featured posts"
+listing:
+  posts:
+    - 2024-06-30-self-respect
+    - 2024-06-30-brazil
+    - 2024-06-30-turismo
+    - 2025-01-12-palermo
+    - 2025-01-18-capoliveri
+    - 2026-10-16-liberte
+    - 2026-10-16-itaca
+---
