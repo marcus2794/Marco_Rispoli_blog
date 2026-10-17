@@ -1,0 +1,271 @@
+anno;sigla_provincia;comune;codi_istat_comune;ambito;arrivi_italiani;arrivi_stranieri;presenze_italiane;presenze_straniere
+2025;AR;Anghiari;51001;Valtiberina Toscana;5703;3233;11619;14705
+2025;AR;Arezzo;51002;Arezzo;161666;78172;279756;166611
+2025;AR;Badia Tedalda;51003;Valtiberina Toscana;1135;53;6130;443
+2025;AR;Bibbiena;51004;Casentino;6288;4041;15725;22294
+2025;AR;Bucine;51005;Valdarno Aretino;3719;19866;10635;92673
+2025;AR;Capolona;51006;Arezzo;1212;1899;2970;11150
+2025;AR;Caprese Michelangelo;51007;Valtiberina Toscana;808;707;1946;3474
+2025;AR;Castel Focognano;51008;Casentino;115;840;404;5704
+2025;AR;Castel San Niccol•;51010;Casentino;1101;469;2863;2392
+2025;AR;Castelfranco Piandisc•;51040;Valdarno Aretino;762;2129;3506;13004
+2025;AR;Castiglion Fibocchi;51011;Arezzo;703;1935;2518;12215
+2025;AR;Castiglion Fiorentino;51012;Val di Chiana Aretina;15181;31874;32055;84049
+2025;AR;Cavriglia;51013;Valdarno Aretino;9590;13987;27678;80937
+2025;AR;Chitignano;51014;Casentino;229;28;959;103
+2025;AR;Chiusi della Verna;51015;Casentino;14636;7093;29475;12224
+2025;AR;Civitella in Val di Chiana;51016;Val di Chiana Aretina;8427;4685;16004;17480
+2025;AR;Cortona;51017;Val di Chiana Aretina;15314;31037;33751;152284
+2025;AR;Foiano della Chiana;51018;Val di Chiana Aretina;8090;8100;12781;21940
+2025;AR;Laterina Pergine Valdarno;51042;Valdarno Aretino;6238;7096;13723;28730
+2025;AR;Loro Ciuffenna;51020;Valdarno Aretino;3508;12682;6793;45569
+2025;AR;Lucignano;51021;Val di Chiana Aretina;1275;2396;2905;13855
+2025;AR;Marciano della Chiana;51022;Val di Chiana Aretina;366;335;859;1728
+2025;AR;Monte San Savino;51025;Val di Chiana Aretina;5872;6348;11735;28373
+2025;AR;Montemignaio;51023;Casentino;342;118;9134;2753
+2025;AR;Monterchi;51024;Valtiberina Toscana;9;154;19;1253
+2025;AR;Montevarchi;51026;Valdarno Aretino;14762;7816;24858;19288
+2025;AR;Ortignano Raggiolo;51027;Casentino;516;894;1274;5290
+2025;AR;Pieve Santo Stefano;51030;Valtiberina Toscana;6753;3706;12621;6956
+2025;AR;Poppi;51031;Casentino;30330;9231;70778;37951
+2025;AR;Pratovecchio Stia;51041;Casentino;5664;3287;15965;14102
+2025;AR;San Giovanni Valdarno;51033;Valdarno Aretino;1603;607;5634;2766
+2025;AR;Sansepolcro;51034;Valtiberina Toscana;20245;7767;39849;24560
+2025;AR;Sestino;51035;Valtiberina Toscana;113;63;274;433
+2025;AR;Subbiano;51037;Casentino;6219;1922;11548;9724
+2025;AR;Talla;51038;Casentino;766;569;2363;4225
+2025;AR;Terranuova Bracciolini;51039;Valdarno Aretino;29339;12143;63508;31385
+2025;FI;Bagno a Ripoli;48001;Firenze e Area Fiorentina;11891;26686;30109;75784
+2025;FI;Barberino di Mugello;48002;Mugello;31467;11829;58239;25481
+2025;FI;Barberino Tavarnelle;48054;Chianti;24699;53395;46771;204485
+2025;FI;Borgo San Lorenzo;48004;Mugello;11287;15702;23889;41226
+2025;FI;Calenzano;48005;Firenze e Area Fiorentina;50904;47640;138439;81554
+2025;FI;Campi Bisenzio;48006;Firenze e Area Fiorentina;38003;57926;67208;84174
+2025;FI;Capraia e Limite;48008;Empolese Valdelsa e Montalbano;4818;2248;15187;11322
+2025;FI;Castelfiorentino;48010;Empolese Valdelsa e Montalbano;2450;3651;6720;21138
+2025;FI;Cerreto Guidi;48011;Empolese Valdelsa e Montalbano;3553;6891;7655;28249
+2025;FI;Certaldo;48012;Empolese Valdelsa e Montalbano;9045;20981;22759;78223
+2025;FI;Dicomano;48013;Mugello;1259;1543;4190;9290
+2025;FI;Empoli;48014;Empolese Valdelsa e Montalbano;11175;4652;24602;13004
+2025;FI;Fiesole;48015;Firenze e Area Fiorentina;16327;30417;35835;81713
+2025;FI;Figline e Incisa Valdarno;48052;Firenze e Area Fiorentina;41967;65738;105354;415113
+2025;FI;Firenze;48017;Firenze e Area Fiorentina;918540;3258795;1672245;7979834
+2025;FI;Firenzuola;48018;Mugello;6200;3488;11195;6553
+2025;FI;Fucecchio;48019;Empolese Valdelsa e Montalbano;3788;2615;7655;9657
+2025;FI;Gambassi Terme;48020;Empolese Valdelsa e Montalbano;6433;15619;12159;61916
+2025;FI;Greve in Chianti;48021;Chianti;16665;56468;34034;183315
+2025;FI;Impruneta;48022;Firenze e Area Fiorentina;11115;13136;25301;41745
+2025;FI;Lastra a Signa;48024;Firenze e Area Fiorentina;8110;6156;23021;25554
+2025;FI;Londa;48025;Firenze e Area Fiorentina;483;914;735;4431
+2025;FI;Marradi;48026;Mugello;2511;706;17060;4555
+2025;FI;Montaione;48027;Empolese Valdelsa e Montalbano;9360;42821;24739;235533
+2025;FI;Montelupo Fiorentino;48028;Empolese Valdelsa e Montalbano;2975;2538;16242;11151
+2025;FI;Montespertoli;48030;Empolese Valdelsa e Montalbano;9092;20546;24585;84064
+2025;FI;Palazzuolo sul Senio;48031;Mugello;1655;326;4735;1214
+2025;FI;Pelago;48032;Firenze e Area Fiorentina;3972;8028;9000;26448
+2025;FI;Pontassieve;48033;Firenze e Area Fiorentina;5481;11348;10215;42379
+2025;FI;Reggello;48035;Firenze e Area Fiorentina;14893;25394;38477;73611
+2025;FI;Rignano sull'Arno;48036;Firenze e Area Fiorentina;9063;26867;22170;92430
+2025;FI;Rufina;48037;Firenze e Area Fiorentina;1209;1280;6297;5624
+2025;FI;San Casciano in Val di Pesa;48038;Chianti;9376;24316;23116;87783
+2025;FI;San Godenzo;48039;Mugello;2038;250;5713;1313
+2025;FI;Scandicci;48041;Firenze e Area Fiorentina;17215;7078;30929;19596
+2025;FI;Scarperia e San Piero;48053;Mugello;25657;15692;43314;40361
+2025;FI;Sesto Fiorentino;48043;Firenze e Area Fiorentina;51998;110530;83580;151003
+2025;FI;Signa;48044;Firenze e Area Fiorentina;16249;25691;37561;39604
+2025;FI;Vaglia;48046;Firenze e Area Fiorentina;4871;4140;9822;10260
+2025;FI;Vicchio;48049;Mugello;3006;5768;8665;24531
+2025;FI;Vinci;48050;Empolese Valdelsa e Montalbano;17817;13270;29740;43319
+2025;GR;Arcidosso;53001;Amiata;2956;1770;7284;10648
+2025;GR;Campagnatico;53002;Maremma Toscana Area Sud;1704;2246;4131;11180
+2025;GR;Capalbio;53003;Maremma Toscana Area Sud;32773;9207;107696;32406
+2025;GR;Castel del Piano;53004;Amiata;11781;3200;24348;11684
+2025;GR;Castell'Azzara;53005;Amiata;709;519;2748;3386
+2025;GR;Castiglione della Pescaia;53006;Maremma Toscana Area Nord;140447;75876;687115;490910
+2025;GR;Cinigiano;53007;Maremma Toscana Area Sud;1992;6450;6132;27085
+2025;GR;Civitella Paganico;53008;Maremma Toscana Area Sud;5312;3845;11525;16469
+2025;GR;Follonica;53009;Maremma Toscana Area Nord;79987;25794;391431;151417
+2025;GR;Gavorrano;53010;Maremma Toscana Area Nord;4644;5015;16105;28686
+2025;GR;Grosseto;53011;Maremma Toscana Area Sud;195456;49921;781596;213961
+2025;GR;Isola del Giglio;53012;Maremma Toscana Area Sud;14598;2523;45015;9222
+2025;GR;Magliano in Toscana;53013;Maremma Toscana Area Sud;7975;2735;29832;11767
+2025;GR;Manciano;53014;Maremma Toscana Area Sud;50055;22434;105088;47250
+2025;GR;Massa Marittima;53015;Maremma Toscana Area Nord;21611;17953;60278;102700
+2025;GR;Monte Argentario;53016;Maremma Toscana Area Sud;33123;23294;90244;60444
+2025;GR;Monterotondo Marittimo;53027;Maremma Toscana Area Nord;1375;2059;4078;11896
+2025;GR;Montieri;53017;Maremma Toscana Area Nord;1756;1339;4259;6517
+2025;GR;Orbetello;53018;Maremma Toscana Area Sud;157811;35367;814436;155076
+2025;GR;Pitigliano;53019;Maremma Toscana Area Sud;8082;5267;14236;9669
+2025;GR;Roccalbegna;53020;Amiata;857;1298;1606;4405
+2025;GR;Roccastrada;53021;Maremma Toscana Area Nord;4090;7483;12533;35530
+2025;GR;Santa Fiora;53022;Amiata;3784;2945;10296;6977
+2025;GR;Scansano;53023;Maremma Toscana Area Sud;7602;5014;17686;19979
+2025;GR;Scarlino;53024;Maremma Toscana Area Nord;37503;16118;170938;96980
+2025;GR;Seggiano;53025;Amiata;2752;4582;5440;15257
+2025;GR;Semproniano;53028;Maremma Toscana Area Sud;4403;1941;9565;4598
+2025;GR;Sorano;53026;Maremma Toscana Area Sud;12459;5354;26650;15101
+2025;LI;Bibbona;49001;Costa degli Etruschi;106144;66394;669301;467214
+2025;LI;Campiglia Marittima;49002;Costa degli Etruschi;40617;18394;119074;76488
+2025;LI;Campo nell'Elba;49003;Elba e Isole di Toscana;60577;33496;339131;218639
+2025;LI;Capoliveri;49004;Elba e Isole di Toscana;100358;71077;603222;502894
+2025;LI;Capraia Isola;49005;Livorno;1836;2813;4676;6471
+2025;LI;Castagneto Carducci;49006;Costa degli Etruschi;84587;73605;531789;512896
+2025;LI;Cecina;49007;Costa degli Etruschi;80489;41310;518230;244159
+2025;LI;Collesalvetti;49008;Livorno;10546;5368;26465;12744
+2025;LI;Livorno;49009;Livorno;126167;97219;256441;207743
+2025;LI;Marciana;49010;Elba e Isole di Toscana;30764;16291;152513;85020
+2025;LI;Marciana Marina;49011;Elba e Isole di Toscana;13668;6838;52702;26913
+2025;LI;Piombino;49012;Costa degli Etruschi;132746;34596;824087;183539
+2025;LI;Porto Azzurro;49013;Elba e Isole di Toscana;25803;14486;122457;85045
+2025;LI;Portoferraio;49014;Elba e Isole di Toscana;65920;47859;307793;259689
+2025;LI;Rio;49021;Elba e Isole di Toscana;24995;8214;140861;50504
+2025;LI;Rosignano Marittimo;49017;Costa degli Etruschi;62388;61439;321309;356429
+2025;LI;San Vincenzo;49018;Costa degli Etruschi;123449;76516;594677;592602
+2025;LI;Sassetta;49019;Costa degli Etruschi;9275;3875;15074;15753
+2025;LI;Suvereto;49020;Costa degli Etruschi;10282;5584;34490;33720
+2025;LU;Altopascio;46001;Piana di Lucca;13632;8711;26491;20422
+2025;LU;Bagni di Lucca;46002;Garfagnana e media valle del Serchio;3604;3187;6317;11761
+2025;LU;Barga;46003;Garfagnana e media valle del Serchio;15946;15347;38659;53589
+2025;LU;Borgo a Mozzano;46004;Garfagnana e media valle del Serchio;4356;3563;7947;10637
+2025;LU;Camaiore;46005;Versilia;91892;62801;284330;244191
+2025;LU;Camporgiano;46006;Garfagnana e media valle del Serchio;1276;2700;2318;16689
+2025;LU;Capannori e Villa Basilica;046007 - 046034;Piana di Lucca;20114;20158;44085;79762
+2025;LU;Careggine;46008;Garfagnana e media valle del Serchio;902;166;1331;896
+2025;LU;Castelnuovo di Garfagnana;46009;Garfagnana e media valle del Serchio;7222;2299;16687;7860
+2025;LU;Castiglione di Garfagnana;46010;Garfagnana e media valle del Serchio;5451;1179;13194;5136
+2025;LU;Coreglia Antelminelli;46011;Garfagnana e media valle del Serchio;569;1410;1429;9495
+2025;LU;Fabbriche di Vergemoli;46036;Garfagnana e media valle del Serchio;158;590;453;4275
+2025;LU;Forte dei Marmi;46013;Versilia;50975;57349;134276;216264
+2025;LU;Fosciandora;46014;Garfagnana e media valle del Serchio;66;863;152;5958
+2025;LU;Gallicano;46015;Garfagnana e media valle del Serchio;2137;956;3660;4204
+2025;LU;Lucca;46017;Piana di Lucca;109278;178827;188866;418652
+2025;LU;Massarosa;46018;Versilia;6145;3791;19768;18130
+2025;LU;Minucciano;46019;Garfagnana e media valle del Serchio;1966;897;5696;4220
+2025;LU;Molazzana;46020;Garfagnana e media valle del Serchio;923;1148;1687;7641
+2025;LU;Montecarlo;46021;Piana di Lucca;3706;3024;7323;12968
+2025;LU;Pescaglia;46022;Garfagnana e media valle del Serchio;180;1119;584;7352
+2025;LU;Piazza al Serchio;46023;Garfagnana e media valle del Serchio;228;102;967;551
+2025;LU;Pietrasanta;46024;Versilia;76096;52604;245180;190648
+2025;LU;Pieve Fosciana;46025;Garfagnana e media valle del Serchio;1592;1068;4174;5821
+2025;LU;Porcari;46026;Piana di Lucca;4397;1060;11195;3602
+2025;LU;San Romano in Garfagnana;46027;Garfagnana e media valle del Serchio;1602;209;3871;1051
+2025;LU;Seravezza;46028;Versilia;2770;479;7908;1683
+2025;LU;Sillano Giuncugnano;46037;Garfagnana e media valle del Serchio;2017;610;6977;1379
+2025;LU;Stazzema;46030;Versilia;1902;345;3353;1336
+2025;LU;Vagli Sotto;46031;Garfagnana e media valle del Serchio;474;451;592;2534
+2025;LU;Viareggio;46033;Versilia;131844;92366;512595;346270
+2025;LU;Villa Collemandina;46035;Garfagnana e media valle del Serchio;2341;611;7025;3739
+2025;MS;Aulla;45001;Lunigiana;1868;1178;4397;2442
+2025;MS;Bagnone;45002;Lunigiana;279;805;584;4768
+2025;MS;Carrara;45003;Riviera Apuana;19979;10641;50308;28713
+2025;MS;Casola in Lunigiana;45004;Lunigiana;195;528;502;2884
+2025;MS;Comano;45005;Lunigiana;332;271;886;1021
+2025;MS;Filattiera;45006;Lunigiana;685;1235;1061;3724
+2025;MS;Fivizzano;45007;Lunigiana;1549;1496;3459;7461
+2025;MS;Fosdinovo;45008;Lunigiana;3344;2847;6174;8111
+2025;MS;Licciana Nardi;45009;Lunigiana;2496;1023;5267;3815
+2025;MS;Massa;45010;Riviera Apuana;151758;51302;628777;183636
+2025;MS;Montignoso;45011;Riviera Apuana;10864;5430;44725;25963
+2025;MS;Mulazzo;45012;Lunigiana;2914;2810;6503;7189
+2025;MS;Podenzana;45013;Lunigiana;1212;768;2019;1862
+2025;MS;Pontremoli;45014;Lunigiana;9003;3755;17101;8178
+2025;MS;Tresana;45015;Lunigiana;369;93;1828;258
+2025;MS;Villafranca in Lunigiana;45016;Lunigiana;1089;580;3194;1814
+2025;MS;Zeri;45017;Lunigiana;1269;326;2773;365
+2025;PI;Bientina;50001;Terre di Pisa;6175;748;14417;1955
+2025;PI;Buti;50002;Terre di Pisa;532;2228;1135;8929
+2025;PI;Calci;50003;Terre di Pisa;758;2601;2301;13215
+2025;PI;Calcinaia;50004;Terre di Pisa;1979;400;3335;1610
+2025;PI;Capannoli;50005;Terre di Pisa;242;733;389;3034
+2025;PI;Casale Marittimo;50006;Costa degli Etruschi;1161;7383;4081;71500
+2025;PI;Casciana Terme Lari;50040;Terre di Pisa;5289;6546;14188;25425
+2025;PI;Cascina;50008;Terre di Pisa;13318;10340;29260;17133
+2025;PI;Castelfranco di Sotto;50009;Terre di Pisa;443;1467;1420;9793
+2025;PI;Castellina Marittima;50010;Costa degli Etruschi;4046;2257;10191;9100
+2025;PI;Castelnuovo di Val di Cecina;50011;Terre di Valdelsa e dell'Etruria Volterrana;2261;1901;8068;12264
+2025;PI;Chianni;50012;Terre di Pisa;526;2369;1681;15272
+2025;PI;Crespina Lorenzana;50041;Terre di Pisa;1386;1611;5783;10992
+2025;PI;Fauglia e Orciano Pisano;050014 - 050023;Terre di Pisa;1716;1701;6820;8372
+2025;PI;Guardistallo;50015;Costa degli Etruschi;3747;4466;12608;28289
+2025;PI;Lajatico;50016;Terre di Pisa;2203;4255;5572;19831
+2025;PI;Montecatini Val di Cecina;50019;Terre di Valdelsa e dell'Etruria Volterrana;12656;10292;29176;48978
+2025;PI;Montescudaio;50020;Costa degli Etruschi;5969;14714;27008;121863
+2025;PI;Monteverdi Marittimo;50021;Terre di Valdelsa e dell'Etruria Volterrana;2479;1429;5845;5870
+2025;PI;Montopoli in Val d'Arno;50022;Terre di Pisa;1264;1976;5446;13294
+2025;PI;Palaia;50024;Terre di Pisa;3640;13698;8080;65561
+2025;PI;Peccioli;50025;Terre di Pisa;5109;6476;9077;38408
+2025;PI;Pisa;50026;Terre di Pisa;288771;569795;772351;1039538
+2025;PI;Pomarance;50027;Terre di Valdelsa e dell'Etruria Volterrana;6596;10168;26883;50438
+2025;PI;Ponsacco;50028;Terre di Pisa;5199;2648;11349;8013
+2025;PI;Pontedera;50029;Terre di Pisa;15832;12668;33191;25222
+2025;PI;Riparbella;50030;Costa degli Etruschi;9391;13823;28793;87742
+2025;PI;San Giuliano Terme;50031;Terre di Pisa;25150;31770;149526;123888
+2025;PI;San Miniato;50032;Terre di Pisa;13398;14243;22812;36268
+2025;PI;Santa Croce sull'Arno;50033;Terre di Pisa;158;8;924;80
+2025;PI;Santa Luce;50034;Costa degli Etruschi;5509;3203;18564;19143
+2025;PI;Santa Maria a Monte;50035;Terre di Pisa;2605;828;5085;1612
+2025;PI;Terricciola;50036;Terre di Pisa;1129;5167;2845;28669
+2025;PI;Vecchiano;50037;Terre di Pisa;3176;2650;6451;8191
+2025;PI;Vicopisano;50038;Terre di Pisa;1111;997;1831;3820
+2025;PI;Volterra;50039;Terre di Valdelsa e dell'Etruria Volterrana;32413;51454;59769;166656
+2025;PO;Cantagallo;100001;Area Pratese;363;63;549;373
+2025;PO;Carmignano;100002;Area Pratese;7148;12294;12093;34139
+2025;PO;Montemurlo;100003;Area Pratese;3422;5376;5400;13330
+2025;PO;Poggio a Caiano;100004;Area Pratese;5649;6377;9768;14022
+2025;PO;Prato;100005;Area Pratese;102219;134164;178722;243901
+2025;PO;Vaiano;100006;Area Pratese;1509;801;3915;3900
+2025;PO;Vernio;100007;Area Pratese;1880;281;11668;3142
+2025;PT;Abetone Cutigliano;47023;Pistoia e Montagna Pistoiese;32469;2097;83568;5052
+2025;PT;Agliana;47002;Pistoia e Montagna Pistoiese;1908;466;8017;2224
+2025;PT;Buggiano;47003;Valdinievole;1824;5734;4707;19449
+2025;PT;Chiesina Uzzanese e Ponte Buggianese;047022 - 047016;Valdinievole;26678;1939;41579;4963
+2025;PT;Lamporecchio;47005;Valdinievole;4504;12664;8701;72339
+2025;PT;Larciano;47006;Valdinievole;4148;5003;8522;16023
+2025;PT;Marliana;47007;Pistoia e Montagna Pistoiese;1279;1023;3317;3848
+2025;PT;Massa e Cozzile;47008;Valdinievole;1249;2157;2072;11871
+2025;PT;Monsummano Terme;47009;Valdinievole;8423;10694;16665;32861
+2025;PT;Montale;47010;Pistoia e Montagna Pistoiese;1694;455;3331;1359
+2025;PT;Montecatini Terme;47011;Valdinievole;176259;410334;407606;1085868
+2025;PT;Pescia;47012;Valdinievole;9130;15029;22020;46343
+2025;PT;Pieve a Nievole;47013;Valdinievole;1903;871;3613;4049
+2025;PT;Pistoia;47014;Pistoia e Montagna Pistoiese;43887;31775;79898;92999
+2025;PT;Quarrata;47017;Pistoia e Montagna Pistoiese;2619;1695;9309;5132
+2025;PT;Sambuca Pistoiese;47018;Pistoia e Montagna Pistoiese;369;44;884;210
+2025;PT;San Marcello Piteglio;47024;Pistoia e Montagna Pistoiese;14987;2036;52542;9105
+2025;PT;Serravalle Pistoiese;47020;Pistoia e Montagna Pistoiese;14605;9071;29786;26694
+2025;PT;Uzzano;47021;Valdinievole;382;879;873;3983
+2025;SI;Abbadia San Salvatore;52001;Amiata;23934;2213;63724;4402
+2025;SI;Asciano;52002;Terre di Siena;13749;26723;30456;80158
+2025;SI;Buonconvento;52003;Terre di Siena;5533;8571;17351;32601
+2025;SI;Casole d'Elsa;52004;Terre di Valdelsa e dell'Etruria Volterrana;4917;17011;17131;84809
+2025;SI;Castellina in Chianti;52005;Chianti;11019;38902;22528;137581
+2025;SI;Castelnuovo Berardenga;52006;Chianti;20378;57266;45151;171453
+2025;SI;Castiglione d'Orcia;52007;Val d'Orcia;12469;12543;29591;37343
+2025;SI;Cetona;52008;Val di Chiana Senese;2381;2807;7154;14446
+2025;SI;Chianciano Terme;52009;Val di Chiana Senese;109719;107075;239240;199111
+2025;SI;Chiusdino;52010;Terre di Siena;5772;15871;16364;86275
+2025;SI;Chiusi;52011;Val di Chiana Senese;18231;14670;30083;31569
+2025;SI;Colle di Val d'Elsa;52012;Terre di Valdelsa e dell'Etruria Volterrana;27284;33568;53553;94574
+2025;SI;Gaiole in Chianti;52013;Chianti;11084;29628;21529;95250
+2025;SI;Montalcino;52037;Val d'Orcia;33768;65324;64772;169679
+2025;SI;Montepulciano;52015;Val di Chiana Senese;48409;83662;90172;220668
+2025;SI;Monteriggioni;52016;Terre di Valdelsa e dell'Etruria Volterrana;30333;42883;54761;130365
+2025;SI;Monteroni d'Arbia;52017;Terre di Siena;8090;12302;21739;45592
+2025;SI;Monticiano;52018;Terre di Siena;2083;1586;5148;7399
+2025;SI;Murlo;52019;Terre di Siena;7233;11569;16237;44509
+2025;SI;Piancastagnaio;52020;Amiata;2294;1622;5517;3923
+2025;SI;Pienza;52021;Val d'Orcia;26705;58492;55735;144214
+2025;SI;Poggibonsi;52022;Terre di Valdelsa e dell'Etruria Volterrana;35898;48375;68340;110241
+2025;SI;Radda in Chianti;52023;Chianti;7138;26492;13156;84869
+2025;SI;Radicofani;52024;Val d'Orcia;3559;4585;7513;11720
+2025;SI;Radicondoli;52025;Terre di Valdelsa e dell'Etruria Volterrana;1703;4877;4559;32941
+2025;SI;Rapolano Terme;52026;Terre di Siena;37517;12321;74305;44465
+2025;SI;San Casciano dei Bagni;52027;Val di Chiana Senese;16169;6649;32375;23680
+2025;SI;San Gimignano;52028;Terre di Valdelsa e dell'Etruria Volterrana;54428;147012;99731;402763
+2025;SI;San Quirico d'Orcia;52030;Val d'Orcia;51836;36376;117843;98352
+2025;SI;Sarteano;52031;Val di Chiana Senese;7827;11926;24875;51691
+2025;SI;Siena;52032;Terre di Siena;176480;304575;366563;683265
+2025;SI;Sinalunga;52033;Val di Chiana Senese;10410;7184;21440;25062
+2025;SI;Sovicille;52034;Terre di Siena;14436;22419;35510;93401
+2025;SI;Torrita di Siena;52035;Val di Chiana Senese;3670;9539;8459;35326
+2025;SI;Trequanda;52036;Val di Chiana Senese;7915;17614;19525;49883

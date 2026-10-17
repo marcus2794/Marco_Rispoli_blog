@@ -1,0 +1,529 @@
+anno;codistat;comune;prov;tipo;Esercizi;Camere;Letti;Bagni
+2015;045001;Aulla;Massa-Carrara;Esercizi Alberghieri;3;74;138;92
+2015;045001;Aulla;Massa-Carrara;Esercizi Extralberghieri;17;84;204;80
+2015;045002;Bagnone;Massa-Carrara;Esercizi Alberghieri;1;7;20;7
+2015;045002;Bagnone;Massa-Carrara;Esercizi Extralberghieri;13;96;258;94
+2015;045003;Carrara;Massa-Carrara;Esercizi Alberghieri;13;238;499;246
+2015;045003;Carrara;Massa-Carrara;Esercizi Extralberghieri;39;320;990;196
+2015;045004;Casola in Lunigiana;Massa-Carrara;Esercizi Extralberghieri;6;29;63;33
+2015;045005;Comano;Massa-Carrara;Esercizi Alberghieri;2;25;47;27
+2015;045005;Comano;Massa-Carrara;Esercizi Extralberghieri;5;19;44;21
+2015;045006;Filattiera;Massa-Carrara;Esercizi Extralberghieri;7;40;95;38
+2015;045007;Fivizzano;Massa-Carrara;Esercizi Alberghieri;6;55;97;54
+2015;045007;Fivizzano;Massa-Carrara;Esercizi Extralberghieri;33;169;409;160
+2015;045008;Fosdinovo;Massa-Carrara;Esercizi Alberghieri;2;39;84;46
+2015;045008;Fosdinovo;Massa-Carrara;Esercizi Extralberghieri;22;84;171;73
+2015;045009;Licciana Nardi;Massa-Carrara;Esercizi Extralberghieri;12;59;128;57
+2015;045010;Massa;Massa-Carrara;Esercizi Alberghieri;77;1.729;3.690;1.808
+2015;045010;Massa;Massa-Carrara;Esercizi Extralberghieri;83;5.817;22.479;2.117
+2015;045011;Montignoso;Massa-Carrara;Esercizi Alberghieri;19;534;1.545;611
+2015;045011;Montignoso;Massa-Carrara;Esercizi Extralberghieri;9;35;72;31
+2015;045012;Mulazzo;Massa-Carrara;Esercizi Alberghieri;4;66;149;75
+2015;045012;Mulazzo;Massa-Carrara;Esercizi Extralberghieri;15;74;195;65
+2015;045013;Podenzana;Massa-Carrara;Esercizi Alberghieri;2;30;69;30
+2015;045013;Podenzana;Massa-Carrara;Esercizi Extralberghieri;7;35;68;26
+2015;045014;Pontremoli;Massa-Carrara;Esercizi Alberghieri;3;71;165;72
+2015;045014;Pontremoli;Massa-Carrara;Esercizi Extralberghieri;24;114;269;109
+2015;045015;Tresana;Massa-Carrara;Esercizi Alberghieri;2;23;41;20
+2015;045015;Tresana;Massa-Carrara;Esercizi Extralberghieri;9;28;67;25
+2015;045016;Villafranca in Lunigiana;Massa-Carrara;Esercizi Alberghieri;2;21;43;15
+2015;045016;Villafranca in Lunigiana;Massa-Carrara;Esercizi Extralberghieri;10;127;414;83
+2015;045017;Zeri;Massa-Carrara;Esercizi Alberghieri;2;27;52;31
+2015;045017;Zeri;Massa-Carrara;Esercizi Extralberghieri;7;63;125;37
+2015;046001;Altopascio;Lucca;Esercizi Alberghieri;6;192;334;217
+2015;046001;Altopascio;Lucca;Esercizi Extralberghieri;23;135;288;101
+2015;046002;Bagni di Lucca;Lucca;Esercizi Alberghieri;8;119;221;119
+2015;046002;Bagni di Lucca;Lucca;Esercizi Extralberghieri;28;114;249;91
+2015;046003;Barga;Lucca;Esercizi Alberghieri;9;363;699;374
+2015;046003;Barga;Lucca;Esercizi Extralberghieri;53;251;512;187
+2015;046004;Borgo a Mozzano;Lucca;Esercizi Alberghieri;2;31;64;32
+2015;046004;Borgo a Mozzano;Lucca;Esercizi Extralberghieri;18;102;190;88
+2015;046005;Camaiore;Lucca;Esercizi Alberghieri;81;2.428;4.757;2.537
+2015;046005;Camaiore;Lucca;Esercizi Extralberghieri;58;458;1.192;370
+2015;046006;Camporgiano;Lucca;Esercizi Extralberghieri;16;110;266;85
+2015;046007;Capannori;Lucca;Esercizi Alberghieri;4;167;323;174
+2015;046007;Capannori;Lucca;Esercizi Extralberghieri;83;421;822;385
+2015;046008;Careggine;Lucca;Esercizi Alberghieri;3;33;70;35
+2015;046008;Careggine;Lucca;Esercizi Extralberghieri;4;17;30;14
+2015;046009;Castelnuovo di Garfagnana;Lucca;Esercizi Alberghieri;6;101;201;100
+2015;046009;Castelnuovo di Garfagnana;Lucca;Esercizi Extralberghieri;20;115;217;87
+2015;046010;Castiglione di Garfagnana;Lucca;Esercizi Alberghieri;3;75;177;81
+2015;046010;Castiglione di Garfagnana;Lucca;Esercizi Extralberghieri;19;84;210;59
+2015;046011;Coreglia Antelminelli;Lucca;Esercizi Alberghieri;3;51;110;43
+2015;046011;Coreglia Antelminelli;Lucca;Esercizi Extralberghieri;15;140;373;85
+2015;046013;Forte dei Marmi;Lucca;Esercizi Alberghieri;58;1.856;3.635;2.011
+2015;046013;Forte dei Marmi;Lucca;Esercizi Extralberghieri;11;205;394;135
+2015;046014;Fosciandora;Lucca;Esercizi Extralberghieri;8;35;74;23
+2015;046015;Gallicano;Lucca;Esercizi Alberghieri;3;40;74;42
+2015;046015;Gallicano;Lucca;Esercizi Extralberghieri;13;51;97;43
+2015;046017;Lucca;Lucca;Esercizi Alberghieri;30;919;1.786;979
+2015;046017;Lucca;Lucca;Esercizi Extralberghieri;224;1.153;2.435;1.064
+2015;046018;Massarosa;Lucca;Esercizi Alberghieri;5;61;113;63
+2015;046018;Massarosa;Lucca;Esercizi Extralberghieri;38;290;546;208
+2015;046019;Minucciano;Lucca;Esercizi Alberghieri;6;117;253;122
+2015;046019;Minucciano;Lucca;Esercizi Extralberghieri;8;108;267;42
+2015;046020;Molazzana;Lucca;Esercizi Alberghieri;1;7;12;2
+2015;046020;Molazzana;Lucca;Esercizi Extralberghieri;17;70;166;51
+2015;046021;Montecarlo;Lucca;Esercizi Extralberghieri;22;116;216;100
+2015;046022;Pescaglia;Lucca;Esercizi Alberghieri;1;37;69;39
+2015;046022;Pescaglia;Lucca;Esercizi Extralberghieri;18;89;163;68
+2015;046023;Piazza al Serchio;Lucca;Esercizi Alberghieri;2;32;68;38
+2015;046023;Piazza al Serchio;Lucca;Esercizi Extralberghieri;5;28;56;24
+2015;046024;Pietrasanta;Lucca;Esercizi Alberghieri;96;2.537;5.684;2.648
+2015;046024;Pietrasanta;Lucca;Esercizi Extralberghieri;48;309;625;314
+2015;046025;Pieve Fosciana;Lucca;Esercizi Extralberghieri;19;102;197;92
+2015;046026;Porcari;Lucca;Esercizi Alberghieri;3;55;113;48
+2015;046026;Porcari;Lucca;Esercizi Extralberghieri;5;21;35;19
+2015;046027;San Romano in Garfagnana;Lucca;Esercizi Alberghieri;1;16;24;16
+2015;046027;San Romano in Garfagnana;Lucca;Esercizi Extralberghieri;11;66;123;55
+2015;046028;Seravezza;Lucca;Esercizi Alberghieri;2;148;482;190
+2015;046028;Seravezza;Lucca;Esercizi Extralberghieri;6;28;51;29
+2015;046030;Stazzema;Lucca;Esercizi Alberghieri;4;40;78;42
+2015;046030;Stazzema;Lucca;Esercizi Extralberghieri;13;60;163;50
+2015;046031;Vagli Sotto;Lucca;Esercizi Alberghieri;2;18;39;13
+2015;046031;Vagli Sotto;Lucca;Esercizi Extralberghieri;6;45;155;26
+2015;046033;Viareggio;Lucca;Esercizi Alberghieri;85;1.953;4.098;2.092
+2015;046033;Viareggio;Lucca;Esercizi Extralberghieri;60;3.686;13.014;1.228
+2015;046034;Villa Basilica;Lucca;Esercizi Extralberghieri;2;5;10;2
+2015;046035;Villa Collemandina;Lucca;Esercizi Alberghieri;4;115;223;128
+2015;046035;Villa Collemandina;Lucca;Esercizi Extralberghieri;13;53;119;46
+2015;046036;Fabbriche di Vergemoli;Lucca;Esercizi Extralberghieri;8;38;74;31
+2015;046037;Sillano Giuncugnano;Lucca;Esercizi Alberghieri;2;24;45;25
+2015;046037;Sillano Giuncugnano;Lucca;Esercizi Extralberghieri;10;121;374;48
+2015;047001;Abetone;Pistoia;Esercizi Alberghieri;14;418;911;429
+2015;047001;Abetone;Pistoia;Esercizi Extralberghieri;10;197;740;103
+2015;047002;Agliana;Pistoia;Esercizi Alberghieri;3;40;72;41
+2015;047002;Agliana;Pistoia;Esercizi Extralberghieri;2;7;9;6
+2015;047003;Buggiano;Pistoia;Esercizi Alberghieri;1;8;16;9
+2015;047003;Buggiano;Pistoia;Esercizi Extralberghieri;21;83;168;82
+2015;047004;Cutigliano;Pistoia;Esercizi Alberghieri;9;224;460;228
+2015;047004;Cutigliano;Pistoia;Esercizi Extralberghieri;17;236;852;168
+2015;047005;Lamporecchio;Pistoia;Esercizi Alberghieri;6;97;208;101
+2015;047005;Lamporecchio;Pistoia;Esercizi Extralberghieri;43;482;1.518;259
+2015;047006;Larciano;Pistoia;Esercizi Alberghieri;2;45;91;44
+2015;047006;Larciano;Pistoia;Esercizi Extralberghieri;23;100;206;88
+2015;047007;Marliana;Pistoia;Esercizi Alberghieri;3;48;95;47
+2015;047007;Marliana;Pistoia;Esercizi Extralberghieri;16;85;169;65
+2015;047008;Massa e Cozzile;Pistoia;Esercizi Extralberghieri;15;49;102;47
+2015;047009;Monsummano Terme;Pistoia;Esercizi Alberghieri;4;116;239;120
+2015;047009;Monsummano Terme;Pistoia;Esercizi Extralberghieri;37;152;311;146
+2015;047010;Montale;Pistoia;Esercizi Alberghieri;1;15;25;16
+2015;047010;Montale;Pistoia;Esercizi Extralberghieri;6;39;69;41
+2015;047011;Montecatini Terme;Pistoia;Esercizi Alberghieri;167;6.232;12.505;6.530
+2015;047011;Montecatini Terme;Pistoia;Esercizi Extralberghieri;28;336;919;195
+2015;047012;Pescia;Pistoia;Esercizi Alberghieri;3;234;498;256
+2015;047012;Pescia;Pistoia;Esercizi Extralberghieri;40;207;400;169
+2015;047013;Pieve a Nievole;Pistoia;Esercizi Alberghieri;3;33;62;34
+2015;047013;Pieve a Nievole;Pistoia;Esercizi Extralberghieri;9;52;91;36
+2015;047014;Pistoia;Pistoia;Esercizi Alberghieri;13;327;654;330
+2015;047014;Pistoia;Pistoia;Esercizi Extralberghieri;106;485;1.066;451
+2015;047015;Piteglio;Pistoia;Esercizi Alberghieri;3;52;119;49
+2015;047015;Piteglio;Pistoia;Esercizi Extralberghieri;10;57;119;47
+2015;047016;Ponte Buggianese;Pistoia;Esercizi Alberghieri;2;24;39;30
+2015;047016;Ponte Buggianese;Pistoia;Esercizi Extralberghieri;1;6;14;8
+2015;047017;Quarrata;Pistoia;Esercizi Alberghieri;2;21;38;21
+2015;047017;Quarrata;Pistoia;Esercizi Extralberghieri;24;104;234;103
+2015;047018;Sambuca Pistoiese;Pistoia;Esercizi Alberghieri;1;44;85;46
+2015;047018;Sambuca Pistoiese;Pistoia;Esercizi Extralberghieri;8;32;85;31
+2015;047019;San Marcello Pistoiese;Pistoia;Esercizi Alberghieri;14;233;418;240
+2015;047019;San Marcello Pistoiese;Pistoia;Esercizi Extralberghieri;26;273;882;159
+2015;047020;Serravalle Pistoiese;Pistoia;Esercizi Alberghieri;3;112;267;122
+2015;047020;Serravalle Pistoiese;Pistoia;Esercizi Extralberghieri;38;169;393;170
+2015;047021;Uzzano;Pistoia;Esercizi Extralberghieri;7;28;60;27
+2015;047022;Chiesina Uzzanese;Pistoia;Esercizi Alberghieri;2;137;251;139
+2015;047022;Chiesina Uzzanese;Pistoia;Esercizi Extralberghieri;2;7;16;9
+2015;048001;Bagno a Ripoli;Firenze;Esercizi Alberghieri;3;130;272;150
+2015;048001;Bagno a Ripoli;Firenze;Esercizi Extralberghieri;48;275;590;275
+2015;048002;Barberino di Mugello;Firenze;Esercizi Alberghieri;7;235;506;245
+2015;048002;Barberino di Mugello;Firenze;Esercizi Extralberghieri;32;274;582;189
+2015;048003;Barberino Val d'Elsa;Firenze;Esercizi Alberghieri;3;112;254;128
+2015;048003;Barberino Val d'Elsa;Firenze;Esercizi Extralberghieri;94;721;1.652;534
+2015;048004;Borgo San Lorenzo;Firenze;Esercizi Alberghieri;8;287;561;289
+2015;048004;Borgo San Lorenzo;Firenze;Esercizi Extralberghieri;41;281;708;220
+2015;048005;Calenzano;Firenze;Esercizi Alberghieri;8;653;1.262;671
+2015;048005;Calenzano;Firenze;Esercizi Extralberghieri;11;77;160;57
+2015;048006;Campi Bisenzio;Firenze;Esercizi Alberghieri;8;439;877;465
+2015;048006;Campi Bisenzio;Firenze;Esercizi Extralberghieri;17;107;218;103
+2015;048008;Capraia e Limite;Firenze;Esercizi Alberghieri;2;29;50;31
+2015;048008;Capraia e Limite;Firenze;Esercizi Extralberghieri;14;219;595;101
+2015;048010;Castelfiorentino;Firenze;Esercizi Alberghieri;4;57;109;59
+2015;048010;Castelfiorentino;Firenze;Esercizi Extralberghieri;33;233;453;203
+2015;048011;Cerreto Guidi;Firenze;Esercizi Alberghieri;1;20;39;21
+2015;048011;Cerreto Guidi;Firenze;Esercizi Extralberghieri;24;200;392;176
+2015;048012;Certaldo;Firenze;Esercizi Alberghieri;4;70;150;82
+2015;048012;Certaldo;Firenze;Esercizi Extralberghieri;78;563;1.303;434
+2015;048013;Dicomano;Firenze;Esercizi Extralberghieri;28;188;359;143
+2015;048014;Empoli;Firenze;Esercizi Alberghieri;4;87;189;89
+2015;048014;Empoli;Firenze;Esercizi Extralberghieri;47;177;391;156
+2015;048015;Fiesole;Firenze;Esercizi Alberghieri;10;263;566;279
+2015;048015;Fiesole;Firenze;Esercizi Extralberghieri;43;311;883;248
+2015;048017;Firenze;Firenze;Esercizi Alberghieri;382;14.199;31.832;14.853
+2015;048017;Firenze;Firenze;Esercizi Extralberghieri;903;5.817;13.542;5.278
+2015;048018;Firenzuola;Firenze;Esercizi Alberghieri;6;90;214;93
+2015;048018;Firenzuola;Firenze;Esercizi Extralberghieri;27;208;603;156
+2015;048019;Fucecchio;Firenze;Esercizi Alberghieri;4;67;136;70
+2015;048019;Fucecchio;Firenze;Esercizi Extralberghieri;12;59;134;52
+2015;048020;Gambassi Terme;Firenze;Esercizi Alberghieri;5;58;101;60
+2015;048020;Gambassi Terme;Firenze;Esercizi Extralberghieri;64;553;1.046;465
+2015;048021;Greve in Chianti;Firenze;Esercizi Alberghieri;8;115;226;126
+2015;048021;Greve in Chianti;Firenze;Esercizi Extralberghieri;182;1.063;2.190;932
+2015;048022;Impruneta;Firenze;Esercizi Alberghieri;3;75;147;82
+2015;048022;Impruneta;Firenze;Esercizi Extralberghieri;55;613;1.389;371
+2015;048024;Lastra a Signa;Firenze;Esercizi Alberghieri;2;81;156;81
+2015;048024;Lastra a Signa;Firenze;Esercizi Extralberghieri;52;231;482;173
+2015;048025;Londa;Firenze;Esercizi Extralberghieri;12;95;337;51
+2015;048026;Marradi;Firenze;Esercizi Alberghieri;2;23;34;22
+2015;048026;Marradi;Firenze;Esercizi Extralberghieri;25;148;404;102
+2015;048027;Montaione;Firenze;Esercizi Alberghieri;4;100;222;119
+2015;048027;Montaione;Firenze;Esercizi Extralberghieri;101;1.425;2.971;1.096
+2015;048028;Montelupo Fiorentino;Firenze;Esercizi Alberghieri;4;75;147;77
+2015;048028;Montelupo Fiorentino;Firenze;Esercizi Extralberghieri;16;116;235;97
+2015;048030;Montespertoli;Firenze;Esercizi Alberghieri;4;61;179;67
+2015;048030;Montespertoli;Firenze;Esercizi Extralberghieri;80;744;1.617;619
+2015;048031;Palazzuolo sul Senio;Firenze;Esercizi Alberghieri;3;55;107;60
+2015;048031;Palazzuolo sul Senio;Firenze;Esercizi Extralberghieri;14;258;756;182
+2015;048032;Pelago;Firenze;Esercizi Extralberghieri;23;242;474;231
+2015;048033;Pontassieve;Firenze;Esercizi Alberghieri;4;181;362;189
+2015;048033;Pontassieve;Firenze;Esercizi Extralberghieri;47;343;711;293
+2015;048035;Reggello;Firenze;Esercizi Alberghieri;17;801;1.734;817
+2015;048035;Reggello;Firenze;Esercizi Extralberghieri;63;432;914;358
+2015;048036;Rignano sull'Arno;Firenze;Esercizi Extralberghieri;42;518;1.270;330
+2015;048037;Rufina;Firenze;Esercizi Alberghieri;2;27;37;23
+2015;048037;Rufina;Firenze;Esercizi Extralberghieri;12;73;148;67
+2015;048038;San Casciano in Val di Pesa;Firenze;Esercizi Alberghieri;5;44;102;45
+2015;048038;San Casciano in Val di Pesa;Firenze;Esercizi Extralberghieri;91;660;1.413;602
+2015;048039;San Godenzo;Firenze;Esercizi Alberghieri;2;32;60;27
+2015;048039;San Godenzo;Firenze;Esercizi Extralberghieri;17;76;201;68
+2015;048041;Scandicci;Firenze;Esercizi Alberghieri;4;82;150;87
+2015;048041;Scandicci;Firenze;Esercizi Extralberghieri;51;198;397;170
+2015;048043;Sesto Fiorentino;Firenze;Esercizi Alberghieri;9;744;1.486;753
+2015;048043;Sesto Fiorentino;Firenze;Esercizi Extralberghieri;28;135;390;78
+2015;048044;Signa;Firenze;Esercizi Alberghieri;4;181;377;193
+2015;048044;Signa;Firenze;Esercizi Extralberghieri;24;98;176;91
+2015;048045;Tavarnelle Val di Pesa;Firenze;Esercizi Alberghieri;5;210;467;244
+2015;048045;Tavarnelle Val di Pesa;Firenze;Esercizi Extralberghieri;88;571;1.267;473
+2015;048046;Vaglia;Firenze;Esercizi Alberghieri;7;209;441;218
+2015;048046;Vaglia;Firenze;Esercizi Extralberghieri;9;110;360;40
+2015;048049;Vicchio;Firenze;Esercizi Alberghieri;2;32;70;32
+2015;048049;Vicchio;Firenze;Esercizi Extralberghieri;44;424;952;267
+2015;048050;Vinci;Firenze;Esercizi Alberghieri;3;141;220;141
+2015;048050;Vinci;Firenze;Esercizi Extralberghieri;42;236;493;193
+2015;048052;Figline e Incisa Valdarno;Firenze;Esercizi Alberghieri;7;167;341;175
+2015;048052;Figline e Incisa Valdarno;Firenze;Esercizi Extralberghieri;58;1.184;4.389;641
+2015;048053;Scarperia e San Piero;Firenze;Esercizi Alberghieri;7;177;354;195
+2015;048053;Scarperia e San Piero;Firenze;Esercizi Extralberghieri;45;294;805;216
+2015;049001;Bibbona;Livorno;Esercizi Alberghieri;9;419;1.041;466
+2015;049001;Bibbona;Livorno;Esercizi Extralberghieri;74;4.610;17.543;2.147
+2015;049002;Campiglia Marittima;Livorno;Esercizi Alberghieri;7;170;363;187
+2015;049002;Campiglia Marittima;Livorno;Esercizi Extralberghieri;76;703;1.925;573
+2015;049003;Campo nell'Elba;Livorno;Esercizi Alberghieri;42;1.330;3.031;1.437
+2015;049003;Campo nell'Elba;Livorno;Esercizi Extralberghieri;51;825;3.094;564
+2015;049004;Capoliveri;Livorno;Esercizi Alberghieri;46;1.401;3.973;1.509
+2015;049004;Capoliveri;Livorno;Esercizi Extralberghieri;106;2.567;9.617;1.397
+2015;049005;Capraia Isola;Livorno;Esercizi Alberghieri;2;47;90;58
+2015;049005;Capraia Isola;Livorno;Esercizi Extralberghieri;4;70;272;36
+2015;049006;Castagneto Carducci;Livorno;Esercizi Alberghieri;17;631;1.632;671
+2015;049006;Castagneto Carducci;Livorno;Esercizi Extralberghieri;86;2.660;9.727;1.257
+2015;049007;Cecina;Livorno;Esercizi Alberghieri;21;654;1.828;733
+2015;049007;Cecina;Livorno;Esercizi Extralberghieri;42;2.514;8.344;1.340
+2015;049008;Collesalvetti;Livorno;Esercizi Alberghieri;2;65;137;66
+2015;049008;Collesalvetti;Livorno;Esercizi Extralberghieri;32;194;431;154
+2015;049009;Livorno;Livorno;Esercizi Alberghieri;35;925;1.909;984
+2015;049009;Livorno;Livorno;Esercizi Extralberghieri;57;611;1.854;396
+2015;049010;Marciana;Livorno;Esercizi Alberghieri;31;901;2.137;955
+2015;049010;Marciana;Livorno;Esercizi Extralberghieri;20;154;452;145
+2015;049011;Marciana Marina;Livorno;Esercizi Alberghieri;13;462;1.127;487
+2015;049011;Marciana Marina;Livorno;Esercizi Extralberghieri;8;69;211;62
+2015;049012;Piombino;Livorno;Esercizi Alberghieri;19;754;2.644;871
+2015;049012;Piombino;Livorno;Esercizi Extralberghieri;71;2.390;8.896;1.231
+2015;049013;Porto Azzurro;Livorno;Esercizi Alberghieri;18;417;1.154;453
+2015;049013;Porto Azzurro;Livorno;Esercizi Extralberghieri;32;449;1.500;323
+2015;049014;Portoferraio;Livorno;Esercizi Alberghieri;31;1.285;3.036;1.371
+2015;049014;Portoferraio;Livorno;Esercizi Extralberghieri;44;896;2.878;559
+2015;049015;Rio Marina;Livorno;Esercizi Alberghieri;12;361;825;380
+2015;049015;Rio Marina;Livorno;Esercizi Extralberghieri;18;448;1.176;312
+2015;049016;Rio nell'Elba;Livorno;Esercizi Alberghieri;3;66;143;70
+2015;049016;Rio nell'Elba;Livorno;Esercizi Extralberghieri;12;330;1.197;278
+2015;049017;Rosignano Marittimo;Livorno;Esercizi Alberghieri;32;820;2.090;904
+2015;049017;Rosignano Marittimo;Livorno;Esercizi Extralberghieri;57;2.100;7.791;1.083
+2015;049018;San Vincenzo;Livorno;Esercizi Alberghieri;27;1.269;2.883;1.375
+2015;049018;San Vincenzo;Livorno;Esercizi Extralberghieri;58;2.232;9.078;2.069
+2015;049019;Sassetta;Livorno;Esercizi Extralberghieri;14;111;267;122
+2015;049020;Suvereto;Livorno;Esercizi Alberghieri;2;155;615;164
+2015;049020;Suvereto;Livorno;Esercizi Extralberghieri;48;305;794;288
+2015;050001;Bientina;Pisa;Esercizi Alberghieri;3;63;141;67
+2015;050001;Bientina;Pisa;Esercizi Extralberghieri;2;11;18;9
+2015;050002;Buti;Pisa;Esercizi Extralberghieri;17;89;197;77
+2015;050003;Calci;Pisa;Esercizi Alberghieri;1;9;19;4
+2015;050003;Calci;Pisa;Esercizi Extralberghieri;29;175;327;167
+2015;050004;Calcinaia;Pisa;Esercizi Alberghieri;1;67;182;76
+2015;050004;Calcinaia;Pisa;Esercizi Extralberghieri;4;15;30;12
+2015;050005;Capannoli;Pisa;Esercizi Alberghieri;2;36;98;23
+2015;050005;Capannoli;Pisa;Esercizi Extralberghieri;9;45;92;44
+2015;050006;Casale Marittimo;Pisa;Esercizi Alberghieri;1;58;217;58
+2015;050006;Casale Marittimo;Pisa;Esercizi Extralberghieri;11;319;1.175;141
+2015;050008;Cascina;Pisa;Esercizi Alberghieri;3;95;205;99
+2015;050008;Cascina;Pisa;Esercizi Extralberghieri;29;106;220;91
+2015;050009;Castelfranco di Sotto;Pisa;Esercizi Alberghieri;1;13;37;13
+2015;050009;Castelfranco di Sotto;Pisa;Esercizi Extralberghieri;12;62;142;55
+2015;050010;Castellina Marittima;Pisa;Esercizi Alberghieri;5;59;107;58
+2015;050010;Castellina Marittima;Pisa;Esercizi Extralberghieri;7;27;71;25
+2015;050011;Castelnuovo di Val di Cecina;Pisa;Esercizi Alberghieri;1;18;37;22
+2015;050011;Castelnuovo di Val di Cecina;Pisa;Esercizi Extralberghieri;21;107;249;97
+2015;050012;Chianni;Pisa;Esercizi Extralberghieri;24;160;351;143
+2015;050014;Fauglia;Pisa;Esercizi Alberghieri;1;14;42;14
+2015;050014;Fauglia;Pisa;Esercizi Extralberghieri;15;109;204;92
+2015;050015;Guardistallo;Pisa;Esercizi Alberghieri;2;58;242;66
+2015;050015;Guardistallo;Pisa;Esercizi Extralberghieri;14;211;664;177
+2015;050016;Lajatico;Pisa;Esercizi Alberghieri;1;11;20;13
+2015;050016;Lajatico;Pisa;Esercizi Extralberghieri;14;192;360;168
+2015;050019;Montecatini Val di Cecina;Pisa;Esercizi Alberghieri;2;104;224;103
+2015;050019;Montecatini Val di Cecina;Pisa;Esercizi Extralberghieri;41;279;650;262
+2015;050020;Montescudaio;Pisa;Esercizi Alberghieri;1;7;26;10
+2015;050020;Montescudaio;Pisa;Esercizi Extralberghieri;22;790;3.023;432
+2015;050021;Monteverdi Marittimo;Pisa;Esercizi Alberghieri;2;58;90;43
+2015;050021;Monteverdi Marittimo;Pisa;Esercizi Extralberghieri;13;85;186;79
+2015;050022;Montopoli in Val d'Arno;Pisa;Esercizi Alberghieri;2;46;75;47
+2015;050022;Montopoli in Val d'Arno;Pisa;Esercizi Extralberghieri;29;331;1.013;224
+2015;050023;Orciano Pisano;Pisa;Esercizi Extralberghieri;1;3;6;4
+2015;050024;Palaia;Pisa;Esercizi Alberghieri;2;22;44;26
+2015;050024;Palaia;Pisa;Esercizi Extralberghieri;47;369;807;375
+2015;050025;Peccioli;Pisa;Esercizi Alberghieri;1;30;65;30
+2015;050025;Peccioli;Pisa;Esercizi Extralberghieri;40;257;544;260
+2015;050026;Pisa;Pisa;Esercizi Alberghieri;71;2.701;6.054;2.806
+2015;050026;Pisa;Pisa;Esercizi Extralberghieri;323;4.002;9.465;2.468
+2015;050027;Pomarance;Pisa;Esercizi Alberghieri;2;47;81;52
+2015;050027;Pomarance;Pisa;Esercizi Extralberghieri;65;479;1.013;394
+2015;050028;Ponsacco;Pisa;Esercizi Alberghieri;3;46;89;50
+2015;050028;Ponsacco;Pisa;Esercizi Extralberghieri;11;49;129;57
+2015;050029;Pontedera;Pisa;Esercizi Alberghieri;6;205;398;227
+2015;050029;Pontedera;Pisa;Esercizi Extralberghieri;24;97;218;91
+2015;050030;Riparbella;Pisa;Esercizi Alberghieri;8;145;343;138
+2015;050030;Riparbella;Pisa;Esercizi Extralberghieri;26;341;899;274
+2015;050031;San Giuliano Terme;Pisa;Esercizi Alberghieri;7;271;659;290
+2015;050031;San Giuliano Terme;Pisa;Esercizi Extralberghieri;42;700;1.252;685
+2015;050032;San Miniato;Pisa;Esercizi Alberghieri;9;125;273;131
+2015;050032;San Miniato;Pisa;Esercizi Extralberghieri;56;290;608;291
+2015;050033;Santa Croce sull'Arno;Pisa;Esercizi Alberghieri;2;20;31;20
+2015;050033;Santa Croce sull'Arno;Pisa;Esercizi Extralberghieri;0;1;1;1
+2015;050034;Santa Luce;Pisa;Esercizi Alberghieri;2;24;65;25
+2015;050034;Santa Luce;Pisa;Esercizi Extralberghieri;27;181;564;158
+2015;050035;Santa Maria a Monte;Pisa;Esercizi Alberghieri;2;79;154;83
+2015;050035;Santa Maria a Monte;Pisa;Esercizi Extralberghieri;11;27;63;24
+2015;050036;Terricciola;Pisa;Esercizi Alberghieri;1;22;37;22
+2015;050036;Terricciola;Pisa;Esercizi Extralberghieri;31;187;436;174
+2015;050037;Vecchiano;Pisa;Esercizi Alberghieri;1;62;131;67
+2015;050037;Vecchiano;Pisa;Esercizi Extralberghieri;16;67;145;53
+2015;050038;Vicopisano;Pisa;Esercizi Extralberghieri;31;86;194;79
+2015;050039;Volterra;Pisa;Esercizi Alberghieri;24;510;985;565
+2015;050039;Volterra;Pisa;Esercizi Extralberghieri;129;867;1.947;716
+2015;050040;Casciana Terme Lari;Pisa;Esercizi Alberghieri;11;361;754;379
+2015;050040;Casciana Terme Lari;Pisa;Esercizi Extralberghieri;43;234;535;216
+2015;050041;Crespina Lorenzana;Pisa;Esercizi Alberghieri;1;11;22;11
+2015;050041;Crespina Lorenzana;Pisa;Esercizi Extralberghieri;22;128;284;112
+2015;051001;Anghiari;Arezzo;Esercizi Alberghieri;3;70;166;72
+2015;051001;Anghiari;Arezzo;Esercizi Extralberghieri;38;230;463;196
+2015;051002;Arezzo;Arezzo;Esercizi Alberghieri;28;1.123;2.249;1.202
+2015;051002;Arezzo;Arezzo;Esercizi Extralberghieri;178;814;1.797;638
+2015;051003;Badia Tedalda;Arezzo;Esercizi Alberghieri;6;70;124;66
+2015;051003;Badia Tedalda;Arezzo;Esercizi Extralberghieri;8;43;121;49
+2015;051004;Bibbiena;Arezzo;Esercizi Alberghieri;5;82;151;84
+2015;051004;Bibbiena;Arezzo;Esercizi Extralberghieri;21;197;420;171
+2015;051005;Bucine;Arezzo;Esercizi Alberghieri;4;43;72;49
+2015;051005;Bucine;Arezzo;Esercizi Extralberghieri;73;791;1.797;676
+2015;051006;Capolona;Arezzo;Esercizi Extralberghieri;14;95;174;71
+2015;051007;Caprese Michelangelo;Arezzo;Esercizi Alberghieri;4;53;117;74
+2015;051007;Caprese Michelangelo;Arezzo;Esercizi Extralberghieri;18;162;487;112
+2015;051008;Castel Focognano;Arezzo;Esercizi Extralberghieri;6;35;58;31
+2015;051010;Castel San Niccol•;Arezzo;Esercizi Alberghieri;1;10;17;10
+2015;051010;Castel San Niccol•;Arezzo;Esercizi Extralberghieri;10;66;135;64
+2015;051011;Castiglion Fibocchi;Arezzo;Esercizi Alberghieri;1;7;21;7
+2015;051011;Castiglion Fibocchi;Arezzo;Esercizi Extralberghieri;5;36;81;31
+2015;051012;Castiglion Fiorentino;Arezzo;Esercizi Alberghieri;6;165;350;171
+2015;051012;Castiglion Fiorentino;Arezzo;Esercizi Extralberghieri;62;324;655;277
+2015;051013;Cavriglia;Arezzo;Esercizi Alberghieri;2;54;73;35
+2015;051013;Cavriglia;Arezzo;Esercizi Extralberghieri;34;660;2.117;495
+2015;051014;Chitignano;Arezzo;Esercizi Alberghieri;2;31;59;32
+2015;051014;Chitignano;Arezzo;Esercizi Extralberghieri;5;33;60;27
+2015;051015;Chiusi della Verna;Arezzo;Esercizi Alberghieri;5;62;113;77
+2015;051015;Chiusi della Verna;Arezzo;Esercizi Extralberghieri;13;364;764;311
+2015;051016;Civitella in Val di Chiana;Arezzo;Esercizi Alberghieri;4;85;202;91
+2015;051016;Civitella in Val di Chiana;Arezzo;Esercizi Extralberghieri;35;195;384;178
+2015;051017;Cortona;Arezzo;Esercizi Alberghieri;22;458;970;501
+2015;051017;Cortona;Arezzo;Esercizi Extralberghieri;195;1.205;2.452;1.066
+2015;051018;Foiano della Chiana;Arezzo;Esercizi Alberghieri;3;66;130;71
+2015;051018;Foiano della Chiana;Arezzo;Esercizi Extralberghieri;18;108;228;87
+2015;051019;Laterina;Arezzo;Esercizi Alberghieri;2;69;184;96
+2015;051019;Laterina;Arezzo;Esercizi Extralberghieri;4;45;85;26
+2015;051020;Loro Ciuffenna;Arezzo;Esercizi Alberghieri;4;53;98;48
+2015;051020;Loro Ciuffenna;Arezzo;Esercizi Extralberghieri;30;285;627;262
+2015;051021;Lucignano;Arezzo;Esercizi Alberghieri;2;24;68;20
+2015;051021;Lucignano;Arezzo;Esercizi Extralberghieri;32;143;313;125
+2015;051022;Marciano della Chiana;Arezzo;Esercizi Alberghieri;1;10;19;10
+2015;051022;Marciano della Chiana;Arezzo;Esercizi Extralberghieri;6;35;76;32
+2015;051023;Montemignaio;Arezzo;Esercizi Alberghieri;3;68;151;62
+2015;051023;Montemignaio;Arezzo;Esercizi Extralberghieri;2;28;45;25
+2015;051024;Monterchi;Arezzo;Esercizi Extralberghieri;8;38;100;36
+2015;051025;Monte San Savino;Arezzo;Esercizi Alberghieri;5;68;121;99
+2015;051025;Monte San Savino;Arezzo;Esercizi Extralberghieri;35;210;420;181
+2015;051026;Montevarchi;Arezzo;Esercizi Alberghieri;5;126;262;134
+2015;051026;Montevarchi;Arezzo;Esercizi Extralberghieri;15;94;197;84
+2015;051027;Ortignano Raggiolo;Arezzo;Esercizi Extralberghieri;7;42;76;29
+2015;051028;Pergine Valdarno;Arezzo;Esercizi Alberghieri;1;12;23;11
+2015;051028;Pergine Valdarno;Arezzo;Esercizi Extralberghieri;22;214;410;164
+2015;051030;Pieve Santo Stefano;Arezzo;Esercizi Alberghieri;7;130;274;138
+2015;051030;Pieve Santo Stefano;Arezzo;Esercizi Extralberghieri;16;131;324;108
+2015;051031;Poppi;Arezzo;Esercizi Alberghieri;16;332;715;339
+2015;051031;Poppi;Arezzo;Esercizi Extralberghieri;44;591;1.067;276
+2015;051033;San Giovanni Valdarno;Arezzo;Esercizi Alberghieri;3;96;196;92
+2015;051033;San Giovanni Valdarno;Arezzo;Esercizi Extralberghieri;10;75;179;77
+2015;051034;Sansepolcro;Arezzo;Esercizi Alberghieri;10;225;432;244
+2015;051034;Sansepolcro;Arezzo;Esercizi Extralberghieri;30;211;481;204
+2015;051035;Sestino;Arezzo;Esercizi Extralberghieri;3;6;10;3
+2015;051037;Subbiano;Arezzo;Esercizi Alberghieri;3;61;122;61
+2015;051037;Subbiano;Arezzo;Esercizi Extralberghieri;38;216;397;193
+2015;051038;Talla;Arezzo;Esercizi Alberghieri;1;11;20;9
+2015;051038;Talla;Arezzo;Esercizi Extralberghieri;8;80;285;28
+2015;051039;Terranuova Bracciolini;Arezzo;Esercizi Alberghieri;6;183;356;186
+2015;051039;Terranuova Bracciolini;Arezzo;Esercizi Extralberghieri;28;231;483;213
+2015;051040;Castelfranco Piandisc•;Arezzo;Esercizi Alberghieri;2;26;33;22
+2015;051040;Castelfranco Piandisc•;Arezzo;Esercizi Extralberghieri;26;189;451;167
+2015;051041;Pratovecchio Stia;Arezzo;Esercizi Alberghieri;2;34;74;12
+2015;051041;Pratovecchio Stia;Arezzo;Esercizi Extralberghieri;27;194;519;144
+2015;052001;Abbadia San Salvatore;Siena;Esercizi Alberghieri;20;454;928;500
+2015;052001;Abbadia San Salvatore;Siena;Esercizi Extralberghieri;5;29;58;32
+2015;052002;Asciano;Siena;Esercizi Alberghieri;7;170;365;188
+2015;052002;Asciano;Siena;Esercizi Extralberghieri;77;473;990;449
+2015;052003;Buonconvento;Siena;Esercizi Alberghieri;2;37;83;44
+2015;052003;Buonconvento;Siena;Esercizi Extralberghieri;39;265;588;281
+2015;052004;Casole d'Elsa;Siena;Esercizi Alberghieri;8;190;417;206
+2015;052004;Casole d'Elsa;Siena;Esercizi Extralberghieri;64;449;1.244;545
+2015;052005;Castellina in Chianti;Siena;Esercizi Alberghieri;10;183;484;202
+2015;052005;Castellina in Chianti;Siena;Esercizi Extralberghieri;89;723;1.698;593
+2015;052006;Castelnuovo Berardenga;Siena;Esercizi Alberghieri;8;210;497;244
+2015;052006;Castelnuovo Berardenga;Siena;Esercizi Extralberghieri;114;823;1.847;833
+2015;052007;Castiglione d'Orcia;Siena;Esercizi Alberghieri;5;77;156;86
+2015;052007;Castiglione d'Orcia;Siena;Esercizi Extralberghieri;70;368;767;336
+2015;052008;Cetona;Siena;Esercizi Alberghieri;1;12;25;13
+2015;052008;Cetona;Siena;Esercizi Extralberghieri;32;176;387;164
+2015;052009;Chianciano Terme;Siena;Esercizi Alberghieri;135;5.763;12.011;6.218
+2015;052009;Chianciano Terme;Siena;Esercizi Extralberghieri;39;237;476;234
+2015;052010;Chiusdino;Siena;Esercizi Alberghieri;2;16;30;17
+2015;052010;Chiusdino;Siena;Esercizi Extralberghieri;36;353;987;324
+2015;052011;Chiusi;Siena;Esercizi Alberghieri;12;284;626;292
+2015;052011;Chiusi;Siena;Esercizi Extralberghieri;38;280;626;191
+2015;052012;Colle di Val d'Elsa;Siena;Esercizi Alberghieri;8;213;467;234
+2015;052012;Colle di Val d'Elsa;Siena;Esercizi Extralberghieri;78;451;948;410
+2015;052013;Gaiole in Chianti;Siena;Esercizi Alberghieri;10;138;329;149
+2015;052013;Gaiole in Chianti;Siena;Esercizi Extralberghieri;79;459;992;435
+2015;052014;Montalcino;Siena;Esercizi Alberghieri;10;213;485;251
+2015;052014;Montalcino;Siena;Esercizi Extralberghieri;120;577;1.337;608
+2015;052015;Montepulciano;Siena;Esercizi Alberghieri;23;481;1.075;538
+2015;052015;Montepulciano;Siena;Esercizi Extralberghieri;166;999;2.199;1.011
+2015;052016;Monteriggioni;Siena;Esercizi Alberghieri;8;217;543;280
+2015;052016;Monteriggioni;Siena;Esercizi Extralberghieri;82;432;926;365
+2015;052017;Monteroni d'Arbia;Siena;Esercizi Alberghieri;3;61;107;64
+2015;052017;Monteroni d'Arbia;Siena;Esercizi Extralberghieri;42;274;589;259
+2015;052018;Monticiano;Siena;Esercizi Alberghieri;4;108;228;108
+2015;052018;Monticiano;Siena;Esercizi Extralberghieri;25;149;300;149
+2015;052019;Murlo;Siena;Esercizi Alberghieri;4;144;376;151
+2015;052019;Murlo;Siena;Esercizi Extralberghieri;33;336;810;244
+2015;052020;Piancastagnaio;Siena;Esercizi Alberghieri;4;50;93;51
+2015;052020;Piancastagnaio;Siena;Esercizi Extralberghieri;12;52;110;52
+2015;052021;Pienza;Siena;Esercizi Alberghieri;5;101;204;108
+2015;052021;Pienza;Siena;Esercizi Extralberghieri;125;734;1.536;725
+2015;052022;Poggibonsi;Siena;Esercizi Alberghieri;8;346;705;366
+2015;052022;Poggibonsi;Siena;Esercizi Extralberghieri;61;319;741;308
+2015;052023;Radda in Chianti;Siena;Esercizi Alberghieri;12;242;568;268
+2015;052023;Radda in Chianti;Siena;Esercizi Extralberghieri;53;290;662;304
+2015;052024;Radicofani;Siena;Esercizi Alberghieri;2;17;33;21
+2015;052024;Radicofani;Siena;Esercizi Extralberghieri;30;196;406;184
+2015;052025;Radicondoli;Siena;Esercizi Alberghieri;2;22;44;24
+2015;052025;Radicondoli;Siena;Esercizi Extralberghieri;44;262;562;237
+2015;052026;Rapolano Terme;Siena;Esercizi Alberghieri;5;187;399;212
+2015;052026;Rapolano Terme;Siena;Esercizi Extralberghieri;48;338;807;353
+2015;052027;San Casciano dei Bagni;Siena;Esercizi Alberghieri;4;105;221;108
+2015;052027;San Casciano dei Bagni;Siena;Esercizi Extralberghieri;43;261;520;248
+2015;052028;San Gimignano;Siena;Esercizi Alberghieri;21;614;1.344;682
+2015;052028;San Gimignano;Siena;Esercizi Extralberghieri;302;1.697;3.975;1.610
+2015;052029;San Giovanni d'Asso;Siena;Esercizi Alberghieri;4;60;151;65
+2015;052029;San Giovanni d'Asso;Siena;Esercizi Extralberghieri;39;248;628;225
+2015;052030;San Quirico d'Orcia;Siena;Esercizi Alberghieri;7;296;772;332
+2015;052030;San Quirico d'Orcia;Siena;Esercizi Extralberghieri;45;239;479;228
+2015;052031;Sarteano;Siena;Esercizi Alberghieri;7;116;251;135
+2015;052031;Sarteano;Siena;Esercizi Extralberghieri;37;814;2.431;419
+2015;052032;Siena;Siena;Esercizi Alberghieri;48;1.643;3.913;1.791
+2015;052032;Siena;Siena;Esercizi Extralberghieri;266;1.818;4.198;1.424
+2015;052033;Sinalunga;Siena;Esercizi Alberghieri;6;132;283;132
+2015;052033;Sinalunga;Siena;Esercizi Extralberghieri;53;333;739;320
+2015;052034;Sovicille;Siena;Esercizi Alberghieri;6;107;248;129
+2015;052034;Sovicille;Siena;Esercizi Extralberghieri;74;554;1.414;522
+2015;052035;Torrita di Siena;Siena;Esercizi Alberghieri;4;49;102;50
+2015;052035;Torrita di Siena;Siena;Esercizi Extralberghieri;42;236;472;228
+2015;052036;Trequanda;Siena;Esercizi Alberghieri;3;23;58;29
+2015;052036;Trequanda;Siena;Esercizi Extralberghieri;30;259;567;253
+2015;053001;Arcidosso;Grosseto;Esercizi Alberghieri;8;257;601;269
+2015;053001;Arcidosso;Grosseto;Esercizi Extralberghieri;28;209;431;194
+2015;053002;Campagnatico;Grosseto;Esercizi Extralberghieri;41;212;389;173
+2015;053003;Capalbio;Grosseto;Esercizi Alberghieri;7;151;451;170
+2015;053003;Capalbio;Grosseto;Esercizi Extralberghieri;63;758;2.495;444
+2015;053004;Castel del Piano;Grosseto;Esercizi Alberghieri;5;135;267;145
+2015;053004;Castel del Piano;Grosseto;Esercizi Extralberghieri;34;243;649;219
+2015;053005;Castell'Azzara;Grosseto;Esercizi Extralberghieri;9;58;124;50
+2015;053006;Castiglione della Pescaia;Grosseto;Esercizi Alberghieri;42;1.601;3.544;1.498
+2015;053006;Castiglione della Pescaia;Grosseto;Esercizi Extralberghieri;99;4.721;15.872;2.122
+2015;053007;Cinigiano;Grosseto;Esercizi Alberghieri;3;29;62;31
+2015;053007;Cinigiano;Grosseto;Esercizi Extralberghieri;39;323;772;247
+2015;053008;Civitella Paganico;Grosseto;Esercizi Alberghieri;6;159;389;254
+2015;053008;Civitella Paganico;Grosseto;Esercizi Extralberghieri;37;210;401;206
+2015;053009;Follonica;Grosseto;Esercizi Alberghieri;22;540;1.348;578
+2015;053009;Follonica;Grosseto;Esercizi Extralberghieri;42;2.294;7.895;1.112
+2015;053010;Gavorrano;Grosseto;Esercizi Alberghieri;4;218;592;175
+2015;053010;Gavorrano;Grosseto;Esercizi Extralberghieri;49;470;1.074;344
+2015;053011;Grosseto;Grosseto;Esercizi Alberghieri;48;1.707;3.764;1.781
+2015;053011;Grosseto;Grosseto;Esercizi Extralberghieri;276;4.880;14.938;2.685
+2015;053012;Isola del Giglio;Grosseto;Esercizi Alberghieri;13;279;594;292
+2015;053012;Isola del Giglio;Grosseto;Esercizi Extralberghieri;11;96;279;68
+2015;053013;Magliano in Toscana;Grosseto;Esercizi Alberghieri;3;77;153;82
+2015;053013;Magliano in Toscana;Grosseto;Esercizi Extralberghieri;91;623;1.189;581
+2015;053014;Manciano;Grosseto;Esercizi Alberghieri;30;478;1.048;520
+2015;053014;Manciano;Grosseto;Esercizi Extralberghieri;181;1.465;2.628;1.051
+2015;053015;Massa Marittima;Grosseto;Esercizi Alberghieri;7;309;827;322
+2015;053015;Massa Marittima;Grosseto;Esercizi Extralberghieri;89;712;1.601;648
+2015;053016;Monte Argentario;Grosseto;Esercizi Alberghieri;21;599;1.343;673
+2015;053016;Monte Argentario;Grosseto;Esercizi Extralberghieri;30;280;922;165
+2015;053017;Montieri;Grosseto;Esercizi Alberghieri;3;42;91;42
+2015;053017;Montieri;Grosseto;Esercizi Extralberghieri;20;109;273;96
+2015;053018;Orbetello;Grosseto;Esercizi Alberghieri;38;1.032;2.545;1.068
+2015;053018;Orbetello;Grosseto;Esercizi Extralberghieri;113;4.958;17.410;2.192
+2015;053019;Pitigliano;Grosseto;Esercizi Alberghieri;5;95;197;107
+2015;053019;Pitigliano;Grosseto;Esercizi Extralberghieri;49;213;418;199
+2015;053020;Roccalbegna;Grosseto;Esercizi Alberghieri;2;31;61;34
+2015;053020;Roccalbegna;Grosseto;Esercizi Extralberghieri;29;119;265;123
+2015;053021;Roccastrada;Grosseto;Esercizi Alberghieri;3;39;92;42
+2015;053021;Roccastrada;Grosseto;Esercizi Extralberghieri;61;333;636;316
+2015;053022;Santa Fiora;Grosseto;Esercizi Alberghieri;5;139;284;153
+2015;053022;Santa Fiora;Grosseto;Esercizi Extralberghieri;15;76;145;69
+2015;053023;Scansano;Grosseto;Esercizi Alberghieri;5;102;201;102
+2015;053023;Scansano;Grosseto;Esercizi Extralberghieri;66;310;659;304
+2015;053024;Scarlino;Grosseto;Esercizi Alberghieri;9;387;1.120;392
+2015;053024;Scarlino;Grosseto;Esercizi Extralberghieri;40;1.526;5.217;892
+2015;053025;Seggiano;Grosseto;Esercizi Alberghieri;3;28;63;29
+2015;053025;Seggiano;Grosseto;Esercizi Extralberghieri;23;150;316;135
+2015;053026;Sorano;Grosseto;Esercizi Alberghieri;8;107;222;123
+2015;053026;Sorano;Grosseto;Esercizi Extralberghieri;50;289;686;284
+2015;053027;Monterotondo Marittimo;Grosseto;Esercizi Alberghieri;1;23;32;22
+2015;053027;Monterotondo Marittimo;Grosseto;Esercizi Extralberghieri;16;127;235;114
+2015;053028;Semproniano;Grosseto;Esercizi Alberghieri;2;22;43;24
+2015;053028;Semproniano;Grosseto;Esercizi Extralberghieri;34;270;499;235
+2015;100001;Cantagallo;Prato;Esercizi Extralberghieri;8;33;109;49
+2015;100002;Carmignano;Prato;Esercizi Alberghieri;3;57;133;60
+2015;100002;Carmignano;Prato;Esercizi Extralberghieri;36;256;586;241
+2015;100003;Montemurlo;Prato;Esercizi Extralberghieri;17;73;159;57
+2015;100004;Poggio a Caiano;Prato;Esercizi Alberghieri;1;64;132;63
+2015;100004;Poggio a Caiano;Prato;Esercizi Extralberghieri;4;21;44;20
+2015;100005;Prato;Prato;Esercizi Alberghieri;16;756;1.582;790
+2015;100005;Prato;Prato;Esercizi Extralberghieri;59;346;681;312
+2015;100006;Vaiano;Prato;Esercizi Extralberghieri;10;37;84;37
+2015;100007;Vernio;Prato;Esercizi Alberghieri;2;38;71;42
+2015;100007;Vernio;Prato;Esercizi Extralberghieri;17;62;136;54

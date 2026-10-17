@@ -1,0 +1,862 @@
+codistat,comune,prov,tipo,Bagni,Camere,Esercizi,Letti
+045001,Aulla,ms,alberghiero,91,73,3,137
+045001,Aulla,ms,extra_alberghiero,76,84,19,203
+045001,Aulla,ms,totale,167,157,22,340
+045002,Bagnone,ms,alberghiero,7,7,1,20
+045002,Bagnone,ms,extra_alberghiero,79,80,12,199
+045002,Bagnone,ms,totale,86,87,13,219
+045003,Carrara,ms,alberghiero,286,275,14,578
+045003,Carrara,ms,extra_alberghiero,174,325,35,980
+045003,Carrara,ms,totale,460,600,49,1558
+045004,Casola in Lunigiana,ms,alberghiero,0,0,0,0
+045004,Casola in Lunigiana,ms,extra_alberghiero,29,28,5,64
+045004,Casola in Lunigiana,ms,totale,29,28,5,64
+045005,Comano,ms,alberghiero,43,38,3,69
+045005,Comano,ms,extra_alberghiero,19,18,4,39
+045005,Comano,ms,totale,62,56,7,108
+045006,Filattiera,ms,alberghiero,0,0,0,0
+045006,Filattiera,ms,extra_alberghiero,39,40,8,101
+045006,Filattiera,ms,totale,39,40,8,101
+045007,Fivizzano,ms,alberghiero,83,84,7,160
+045007,Fivizzano,ms,extra_alberghiero,132,141,27,348
+045007,Fivizzano,ms,totale,215,226,34,508
+045008,Fosdinovo,ms,alberghiero,47,39,2,81
+045008,Fosdinovo,ms,extra_alberghiero,62,68,19,153
+045008,Fosdinovo,ms,totale,109,107,21,234
+045009,Licciana Nardi,ms,alberghiero,0,0,0,0
+045009,Licciana Nardi,ms,extra_alberghiero,89,225,13,807
+045009,Licciana Nardi,ms,totale,89,225,13,807
+045010,Massa,ms,alberghiero,1733,1682,76,3493
+045010,Massa,ms,extra_alberghiero,2006,5970,77,22477
+045010,Massa,ms,totale,3739,7652,153,25970
+045011,Montignoso,ms,alberghiero,631,544,20,1586
+045011,Montignoso,ms,extra_alberghiero,30,36,8,72
+045011,Montignoso,ms,totale,661,580,28,1657
+045012,Mulazzo,ms,alberghiero,73,66,4,149
+045012,Mulazzo,ms,extra_alberghiero,59,71,15,190
+045012,Mulazzo,ms,totale,132,137,19,339
+045013,Podenzana,ms,alberghiero,30,30,2,69
+045013,Podenzana,ms,extra_alberghiero,20,22,4,50
+045013,Podenzana,ms,totale,50,52,6,119
+045014,Pontremoli,ms,alberghiero,72,71,3,165
+045014,Pontremoli,ms,extra_alberghiero,93,108,25,243
+045014,Pontremoli,ms,totale,165,179,28,408
+045015,Tresana,ms,alberghiero,19,23,2,39
+045015,Tresana,ms,extra_alberghiero,24,28,9,66
+045015,Tresana,ms,totale,43,51,11,105
+045016,Villafranca in Lunigiana,ms,alberghiero,15,21,2,43
+045016,Villafranca in Lunigiana,ms,extra_alberghiero,67,117,9,418
+045016,Villafranca in Lunigiana,ms,totale,82,138,11,461
+045017,Zeri,ms,alberghiero,86,78,6,142
+045017,Zeri,ms,extra_alberghiero,26,48,3,99
+045017,Zeri,ms,totale,112,126,9,241
+046001,Altopascio,lu,alberghiero,249,221,6,399
+046001,Altopascio,lu,extra_alberghiero,85,112,20,219
+046001,Altopascio,lu,totale,335,334,26,618
+046002,Bagni di Lucca,lu,alberghiero,135,138,8,227
+046002,Bagni di Lucca,lu,extra_alberghiero,89,113,26,245
+046002,Bagni di Lucca,lu,totale,224,251,34,472
+046003,Barga,lu,alberghiero,370,362,9,697
+046003,Barga,lu,extra_alberghiero,173,240,51,499
+046003,Barga,lu,totale,543,602,60,1196
+046004,Borgo a Mozzano,lu,alberghiero,32,31,2,64
+046004,Borgo a Mozzano,lu,extra_alberghiero,85,114,17,187
+046004,Borgo a Mozzano,lu,totale,117,145,19,251
+046005,Camaiore,lu,alberghiero,2537,2431,82,4801
+046005,Camaiore,lu,extra_alberghiero,320,380,51,985
+046005,Camaiore,lu,totale,2856,2811,133,5786
+046006,Camporgiano,lu,alberghiero,0,0,0,0
+046006,Camporgiano,lu,extra_alberghiero,71,96,15,221
+046006,Camporgiano,lu,totale,71,96,15,221
+046007,Capannori,lu,alberghiero,174,167,4,320
+046007,Capannori,lu,extra_alberghiero,306,357,69,691
+046007,Capannori,lu,totale,480,524,73,1011
+046008,Careggine,lu,alberghiero,35,33,3,70
+046008,Careggine,lu,extra_alberghiero,16,19,4,33
+046008,Careggine,lu,totale,51,52,7,103
+046009,Castelnuovo di Garfagnana,lu,alberghiero,103,105,6,209
+046009,Castelnuovo di Garfagnana,lu,extra_alberghiero,84,109,20,207
+046009,Castelnuovo di Garfagnana,lu,totale,187,214,26,416
+046010,Castiglione di Garfagnana,lu,alberghiero,81,75,3,177
+046010,Castiglione di Garfagnana,lu,extra_alberghiero,48,74,16,166
+046010,Castiglione di Garfagnana,lu,totale,129,149,19,343
+046011,Coreglia Antelminelli,lu,alberghiero,43,51,3,110
+046011,Coreglia Antelminelli,lu,extra_alberghiero,81,138,12,373
+046011,Coreglia Antelminelli,lu,totale,124,189,15,483
+046012,Fabbriche di Vallico,lu,alberghiero,0,0,0,0
+046012,Fabbriche di Vallico,lu,extra_alberghiero,11,23,6,39
+046012,Fabbriche di Vallico,lu,totale,11,23,6,39
+046013,Forte dei Marmi,lu,alberghiero,2068,1910,58,3719
+046013,Forte dei Marmi,lu,extra_alberghiero,119,189,7,361
+046013,Forte dei Marmi,lu,totale,2187,2099,65,4081
+046014,Fosciandora,lu,alberghiero,0,0,0,0
+046014,Fosciandora,lu,extra_alberghiero,22,35,8,74
+046014,Fosciandora,lu,totale,22,35,8,74
+046015,Gallicano,lu,alberghiero,42,40,3,74
+046015,Gallicano,lu,extra_alberghiero,50,57,14,115
+046015,Gallicano,lu,totale,92,97,17,189
+046016,Giuncugnano,lu,alberghiero,11,10,1,20
+046016,Giuncugnano,lu,extra_alberghiero,27,81,4,232
+046016,Giuncugnano,lu,totale,38,91,5,252
+046017,Lucca,lu,alberghiero,1018,957,32,1837
+046017,Lucca,lu,extra_alberghiero,945,1058,193,2185
+046017,Lucca,lu,totale,1964,2015,225,4022
+046018,Massarosa,lu,alberghiero,63,61,5,113
+046018,Massarosa,lu,extra_alberghiero,194,268,36,494
+046018,Massarosa,lu,totale,257,329,41,607
+046019,Minucciano,lu,alberghiero,122,117,6,253
+046019,Minucciano,lu,extra_alberghiero,42,111,8,283
+046019,Minucciano,lu,totale,164,228,14,536
+046020,Molazzana,lu,alberghiero,2,7,1,12
+046020,Molazzana,lu,extra_alberghiero,51,69,16,165
+046020,Molazzana,lu,totale,53,76,17,177
+046021,Montecarlo,lu,alberghiero,0,0,0,0
+046021,Montecarlo,lu,extra_alberghiero,93,109,21,202
+046021,Montecarlo,lu,totale,93,109,21,202
+046022,Pescaglia,lu,alberghiero,39,37,1,69
+046022,Pescaglia,lu,extra_alberghiero,55,71,15,132
+046022,Pescaglia,lu,totale,94,108,16,201
+046023,Piazza al Serchio,lu,alberghiero,36,30,2,49
+046023,Piazza al Serchio,lu,extra_alberghiero,28,31,6,63
+046023,Piazza al Serchio,lu,totale,64,61,8,112
+046024,Pietrasanta,lu,alberghiero,2596,2487,95,5597
+046024,Pietrasanta,lu,extra_alberghiero,327,326,37,707
+046024,Pietrasanta,lu,totale,2923,2813,132,6304
+046025,Pieve Fosciana,lu,alberghiero,0,0,0,0
+046025,Pieve Fosciana,lu,extra_alberghiero,79,94,19,193
+046025,Pieve Fosciana,lu,totale,79,94,19,193
+046026,Porcari,lu,alberghiero,48,55,3,113
+046026,Porcari,lu,extra_alberghiero,17,21,6,33
+046026,Porcari,lu,totale,65,76,9,146
+046027,San Romano in Garfagnana,lu,alberghiero,16,16,1,24
+046027,San Romano in Garfagnana,lu,extra_alberghiero,55,73,12,138
+046027,San Romano in Garfagnana,lu,totale,71,89,13,162
+046028,Seravezza,lu,alberghiero,190,148,2,482
+046028,Seravezza,lu,extra_alberghiero,21,19,3,36
+046028,Seravezza,lu,totale,211,167,5,518
+046029,Sillano,lu,alberghiero,14,14,1,25
+046029,Sillano,lu,extra_alberghiero,20,41,7,139
+046029,Sillano,lu,totale,34,55,8,164
+046030,Stazzema,lu,alberghiero,42,40,4,78
+046030,Stazzema,lu,extra_alberghiero,52,61,14,165
+046030,Stazzema,lu,totale,94,101,18,243
+046031,Vagli Sotto,lu,alberghiero,28,34,3,72
+046031,Vagli Sotto,lu,extra_alberghiero,25,44,6,153
+046031,Vagli Sotto,lu,totale,53,78,9,225
+046032,Vergemoli,lu,alberghiero,0,0,0,0
+046032,Vergemoli,lu,extra_alberghiero,18,15,3,32
+046032,Vergemoli,lu,totale,18,15,3,32
+046033,Viareggio,lu,alberghiero,2017,1875,85,3906
+046033,Viareggio,lu,extra_alberghiero,1085,3564,55,12892
+046033,Viareggio,lu,totale,3102,5439,140,16798
+046034,Villa Basilica,lu,alberghiero,0,0,0,0
+046034,Villa Basilica,lu,extra_alberghiero,4,10,3,20
+046034,Villa Basilica,lu,totale,4,10,3,20
+046035,Villa Collemandina,lu,alberghiero,128,115,4,223
+046035,Villa Collemandina,lu,extra_alberghiero,45,48,12,112
+046035,Villa Collemandina,lu,totale,173,163,16,335
+047001,Abetone,pt,alberghiero,431,422,14,978
+047001,Abetone,pt,extra_alberghiero,100,194,9,733
+047001,Abetone,pt,totale,531,616,23,1711
+047002,Agliana,pt,alberghiero,41,40,3,72
+047002,Agliana,pt,extra_alberghiero,6,6,2,9
+047002,Agliana,pt,totale,47,46,5,81
+047003,Buggiano,pt,alberghiero,9,8,1,16
+047003,Buggiano,pt,extra_alberghiero,79,79,20,160
+047003,Buggiano,pt,totale,88,87,21,176
+047004,Cutigliano,pt,alberghiero,240,238,10,490
+047004,Cutigliano,pt,extra_alberghiero,166,238,18,838
+047004,Cutigliano,pt,totale,406,476,28,1328
+047005,Lamporecchio,pt,alberghiero,96,92,5,196
+047005,Lamporecchio,pt,extra_alberghiero,270,496,45,1420
+047005,Lamporecchio,pt,totale,366,588,50,1616
+047006,Larciano,pt,alberghiero,49,45,2,90
+047006,Larciano,pt,extra_alberghiero,77,101,21,188
+047006,Larciano,pt,totale,126,146,23,278
+047007,Marliana,pt,alberghiero,53,54,4,107
+047007,Marliana,pt,extra_alberghiero,59,77,13,154
+047007,Marliana,pt,totale,112,131,17,261
+047008,Massa e Cozzile,pt,alberghiero,0,0,0,0
+047008,Massa e Cozzile,pt,extra_alberghiero,49,53,16,105
+047008,Massa e Cozzile,pt,totale,49,53,16,105
+047009,Monsummano Terme,pt,alberghiero,120,116,4,241
+047009,Monsummano Terme,pt,extra_alberghiero,127,135,28,268
+047009,Monsummano Terme,pt,totale,247,251,32,509
+047010,Montale,pt,alberghiero,16,15,1,25
+047010,Montale,pt,extra_alberghiero,41,39,6,73
+047010,Montale,pt,totale,57,54,7,98
+047011,Montecatini-Terme,pt,alberghiero,6424,6135,162,12372
+047011,Montecatini-Terme,pt,extra_alberghiero,181,304,26,800
+047011,Montecatini-Terme,pt,totale,6604,6438,188,13173
+047012,Pescia,pt,alberghiero,256,234,3,498
+047012,Pescia,pt,extra_alberghiero,139,168,30,327
+047012,Pescia,pt,totale,395,402,33,825
+047013,Pieve a Nievole,pt,alberghiero,34,33,3,62
+047013,Pieve a Nievole,pt,extra_alberghiero,23,39,6,67
+047013,Pieve a Nievole,pt,totale,57,72,9,129
+047014,Pistoia,pt,alberghiero,358,355,14,697
+047014,Pistoia,pt,extra_alberghiero,435,442,90,969
+047014,Pistoia,pt,totale,793,797,104,1666
+047015,Piteglio,pt,alberghiero,49,52,3,119
+047015,Piteglio,pt,extra_alberghiero,40,27,9,84
+047015,Piteglio,pt,totale,89,79,12,203
+047016,Ponte Buggianese,pt,alberghiero,30,24,2,39
+047016,Ponte Buggianese,pt,extra_alberghiero,8,6,1,14
+047016,Ponte Buggianese,pt,totale,38,30,3,53
+047017,Quarrata,pt,alberghiero,21,21,2,38
+047017,Quarrata,pt,extra_alberghiero,94,97,21,227
+047017,Quarrata,pt,totale,115,118,23,265
+047018,Sambuca Pistoiese,pt,alberghiero,46,44,1,85
+047018,Sambuca Pistoiese,pt,extra_alberghiero,25,26,6,73
+047018,Sambuca Pistoiese,pt,totale,71,70,7,158
+047019,San Marcello Pistoiese,pt,alberghiero,244,234,14,420
+047019,San Marcello Pistoiese,pt,extra_alberghiero,135,221,24,786
+047019,San Marcello Pistoiese,pt,totale,378,454,38,1207
+047020,Serravalle Pistoiese,pt,alberghiero,122,112,3,267
+047020,Serravalle Pistoiese,pt,extra_alberghiero,149,159,33,341
+047020,Serravalle Pistoiese,pt,totale,271,271,36,608
+047021,Uzzano,pt,alberghiero,0,0,0,0
+047021,Uzzano,pt,extra_alberghiero,14,18,4,35
+047021,Uzzano,pt,totale,14,18,4,35
+047022,Chiesina Uzzanese,pt,alberghiero,139,137,2,251
+047022,Chiesina Uzzanese,pt,extra_alberghiero,8,7,2,14
+047022,Chiesina Uzzanese,pt,totale,147,144,4,265
+048001,Bagno a Ripoli,fi,alberghiero,150,130,3,272
+048001,Bagno a Ripoli,fi,extra_alberghiero,234,243,47,525
+048001,Bagno a Ripoli,fi,totale,384,373,50,797
+048002,Barberino di Mugello,fi,alberghiero,245,237,7,507
+048002,Barberino di Mugello,fi,extra_alberghiero,189,273,33,586
+048002,Barberino di Mugello,fi,totale,434,510,40,1093
+048003,Barberino Val d'Elsa,fi,alberghiero,128,112,3,254
+048003,Barberino Val d'Elsa,fi,extra_alberghiero,535,692,93,1597
+048003,Barberino Val d'Elsa,fi,totale,663,804,96,1851
+048004,Borgo San Lorenzo,fi,alberghiero,289,287,8,561
+048004,Borgo San Lorenzo,fi,extra_alberghiero,214,265,37,670
+048004,Borgo San Lorenzo,fi,totale,503,552,45,1231
+048005,Calenzano,fi,alberghiero,669,651,8,1258
+048005,Calenzano,fi,extra_alberghiero,53,73,10,152
+048005,Calenzano,fi,totale,722,724,18,1410
+048006,Campi Bisenzio,fi,alberghiero,465,439,8,877
+048006,Campi Bisenzio,fi,extra_alberghiero,90,94,16,192
+048006,Campi Bisenzio,fi,totale,555,533,24,1069
+048008,Capraia e Limite,fi,alberghiero,31,29,2,50
+048008,Capraia e Limite,fi,extra_alberghiero,93,204,11,542
+048008,Capraia e Limite,fi,totale,124,233,13,592
+048010,Castelfiorentino,fi,alberghiero,59,57,4,109
+048010,Castelfiorentino,fi,extra_alberghiero,212,246,33,515
+048010,Castelfiorentino,fi,totale,271,303,37,624
+048011,Cerreto Guidi,fi,alberghiero,21,20,1,39
+048011,Cerreto Guidi,fi,extra_alberghiero,172,197,24,388
+048011,Cerreto Guidi,fi,totale,193,217,25,427
+048012,Certaldo,fi,alberghiero,82,70,4,150
+048012,Certaldo,fi,extra_alberghiero,402,519,73,1227
+048012,Certaldo,fi,totale,484,589,77,1377
+048013,Dicomano,fi,alberghiero,0,0,0,0
+048013,Dicomano,fi,extra_alberghiero,135,187,24,353
+048013,Dicomano,fi,totale,135,187,24,353
+048014,Empoli,fi,alberghiero,89,87,4,189
+048014,Empoli,fi,extra_alberghiero,140,160,41,335
+048014,Empoli,fi,totale,229,247,45,524
+048015,Fiesole,fi,alberghiero,280,264,10,568
+048015,Fiesole,fi,extra_alberghiero,190,264,35,779
+048015,Fiesole,fi,totale,469,528,45,1347
+048016,Figline Valdarno,fi,alberghiero,116,110,4,222
+048016,Figline Valdarno,fi,extra_alberghiero,598,1365,33,3409
+048016,Figline Valdarno,fi,totale,714,1474,38,3631
+048017,Firenze,fi,alberghiero,14620,14038,377,31656
+048017,Firenze,fi,extra_alberghiero,4467,5021,713,11283
+048017,Firenze,fi,totale,19087,19060,1089,42939
+048018,Firenzuola,fi,alberghiero,101,98,7,230
+048018,Firenzuola,fi,extra_alberghiero,119,145,23,377
+048018,Firenzuola,fi,totale,220,243,30,607
+048019,Fucecchio,fi,alberghiero,65,60,3,119
+048019,Fucecchio,fi,extra_alberghiero,52,59,11,135
+048019,Fucecchio,fi,totale,117,119,14,254
+048020,Gambassi Terme,fi,alberghiero,56,51,4,94
+048020,Gambassi Terme,fi,extra_alberghiero,432,514,58,978
+048020,Gambassi Terme,fi,totale,488,565,62,1072
+048021,Greve in Chianti,fi,alberghiero,127,118,8,238
+048021,Greve in Chianti,fi,extra_alberghiero,847,983,167,2017
+048021,Greve in Chianti,fi,totale,974,1101,175,2255
+048022,Impruneta,fi,alberghiero,79,80,4,151
+048022,Impruneta,fi,extra_alberghiero,384,629,60,1436
+048022,Impruneta,fi,totale,463,709,64,1588
+048023,Incisa in Val d'Arno,fi,alberghiero,26,26,2,57
+048023,Incisa in Val d'Arno,fi,extra_alberghiero,96,116,17,240
+048023,Incisa in Val d'Arno,fi,totale,122,142,19,297
+048024,Lastra a Signa,fi,alberghiero,81,81,2,156
+048024,Lastra a Signa,fi,extra_alberghiero,161,229,54,474
+048024,Lastra a Signa,fi,totale,242,310,56,630
+048025,Londa,fi,alberghiero,0,0,0,0
+048025,Londa,fi,extra_alberghiero,47,91,11,331
+048025,Londa,fi,totale,47,91,11,331
+048026,Marradi,fi,alberghiero,22,23,2,34
+048026,Marradi,fi,extra_alberghiero,92,129,23,353
+048026,Marradi,fi,totale,114,152,25,387
+048027,Montaione,fi,alberghiero,110,101,4,223
+048027,Montaione,fi,extra_alberghiero,1052,1395,98,2858
+048027,Montaione,fi,totale,1162,1496,102,3081
+048028,Montelupo Fiorentino,fi,alberghiero,77,75,4,147
+048028,Montelupo Fiorentino,fi,extra_alberghiero,93,115,15,240
+048028,Montelupo Fiorentino,fi,totale,170,190,19,387
+048030,Montespertoli,fi,alberghiero,67,61,4,179
+048030,Montespertoli,fi,extra_alberghiero,599,715,76,1570
+048030,Montespertoli,fi,totale,666,776,80,1749
+048031,Palazzuolo sul Senio,fi,alberghiero,60,55,3,107
+048031,Palazzuolo sul Senio,fi,extra_alberghiero,166,252,14,740
+048031,Palazzuolo sul Senio,fi,totale,226,307,17,847
+048032,Pelago,fi,alberghiero,16,14,1,25
+048032,Pelago,fi,extra_alberghiero,187,192,19,387
+048032,Pelago,fi,totale,203,206,20,412
+048033,Pontassieve,fi,alberghiero,189,181,4,362
+048033,Pontassieve,fi,extra_alberghiero,267,318,50,663
+048033,Pontassieve,fi,totale,456,499,54,1025
+048035,Reggello,fi,alberghiero,842,827,17,1763
+048035,Reggello,fi,extra_alberghiero,338,406,56,838
+048035,Reggello,fi,totale,1180,1233,73,2601
+048036,Rignano sull'Arno,fi,alberghiero,0,0,0,0
+048036,Rignano sull'Arno,fi,extra_alberghiero,342,531,43,1299
+048036,Rignano sull'Arno,fi,totale,342,531,43,1299
+048037,Rufina,fi,alberghiero,15,20,2,26
+048037,Rufina,fi,extra_alberghiero,52,61,10,122
+048037,Rufina,fi,totale,67,81,12,148
+048038,San Casciano in Val di Pesa,fi,alberghiero,61,62,7,136
+048038,San Casciano in Val di Pesa,fi,extra_alberghiero,593,648,92,1402
+048038,San Casciano in Val di Pesa,fi,totale,654,710,99,1538
+048039,San Godenzo,fi,alberghiero,40,42,3,79
+048039,San Godenzo,fi,extra_alberghiero,66,71,16,192
+048039,San Godenzo,fi,totale,106,113,19,271
+048040,San Piero a Sieve,fi,alberghiero,39,45,3,93
+048040,San Piero a Sieve,fi,extra_alberghiero,70,119,7,434
+048040,San Piero a Sieve,fi,totale,109,164,10,527
+048041,Scandicci,fi,alberghiero,163,158,5,336
+048041,Scandicci,fi,extra_alberghiero,156,188,47,377
+048041,Scandicci,fi,totale,319,346,51,713
+048042,Scarperia,fi,alberghiero,156,132,4,261
+048042,Scarperia,fi,extra_alberghiero,130,160,34,334
+048042,Scarperia,fi,totale,286,292,38,595
+048043,Sesto Fiorentino,fi,alberghiero,878,868,10,1734
+048043,Sesto Fiorentino,fi,extra_alberghiero,74,131,26,389
+048043,Sesto Fiorentino,fi,totale,952,999,36,2122
+048044,Signa,fi,alberghiero,201,191,4,396
+048044,Signa,fi,extra_alberghiero,90,96,23,172
+048044,Signa,fi,totale,290,287,27,568
+048045,Tavarnelle Val di Pesa,fi,alberghiero,244,210,5,467
+048045,Tavarnelle Val di Pesa,fi,extra_alberghiero,431,513,78,1119
+048045,Tavarnelle Val di Pesa,fi,totale,675,723,83,1586
+048046,Vaglia,fi,alberghiero,210,201,6,426
+048046,Vaglia,fi,extra_alberghiero,35,102,7,349
+048046,Vaglia,fi,totale,245,303,13,775
+048049,Vicchio,fi,alberghiero,32,32,2,70
+048049,Vicchio,fi,extra_alberghiero,260,417,46,937
+048049,Vicchio,fi,totale,292,449,48,1007
+048050,Vinci,fi,alberghiero,141,141,3,220
+048050,Vinci,fi,extra_alberghiero,184,225,40,461
+048050,Vinci,fi,totale,325,366,43,681
+049001,Bibbona,li,alberghiero,462,425,10,1011
+049001,Bibbona,li,extra_alberghiero,2112,4474,69,17489
+049001,Bibbona,li,totale,2574,4899,79,18500
+049002,Campiglia Marittima,li,alberghiero,198,179,8,383
+049002,Campiglia Marittima,li,extra_alberghiero,494,643,65,1715
+049002,Campiglia Marittima,li,totale,692,822,73,2098
+049003,Campo nell'Elba,li,alberghiero,1439,1361,42,3033
+049003,Campo nell'Elba,li,extra_alberghiero,561,817,45,3024
+049003,Campo nell'Elba,li,totale,2000,2178,87,6057
+049004,Capoliveri,li,alberghiero,1462,1371,45,3863
+049004,Capoliveri,li,extra_alberghiero,1337,2510,100,9457
+049004,Capoliveri,li,totale,2799,3881,145,13320
+049005,Capraia Isola,li,alberghiero,101,89,3,188
+049005,Capraia Isola,li,extra_alberghiero,46,79,4,303
+049005,Capraia Isola,li,totale,147,168,7,491
+049006,Castagneto Carducci,li,alberghiero,671,625,15,1591
+049006,Castagneto Carducci,li,extra_alberghiero,1075,2515,76,9266
+049006,Castagneto Carducci,li,totale,1746,3140,92,10857
+049007,Cecina,li,alberghiero,732,656,21,1826
+049007,Cecina,li,extra_alberghiero,1294,2450,40,8089
+049007,Cecina,li,totale,2026,3106,61,9916
+049008,Collesalvetti,li,alberghiero,66,65,2,137
+049008,Collesalvetti,li,extra_alberghiero,152,189,32,422
+049008,Collesalvetti,li,totale,218,254,34,559
+049009,Livorno,li,alberghiero,1012,965,36,2007
+049009,Livorno,li,extra_alberghiero,393,604,51,1858
+049009,Livorno,li,totale,1406,1570,87,3866
+049010,Marciana,li,alberghiero,947,896,31,2124
+049010,Marciana,li,extra_alberghiero,147,156,21,459
+049010,Marciana,li,totale,1094,1052,52,2584
+049011,Marciana Marina,li,alberghiero,486,461,13,1122
+049011,Marciana Marina,li,extra_alberghiero,59,65,8,200
+049011,Marciana Marina,li,totale,545,526,21,1322
+049012,Piombino,li,alberghiero,916,802,22,2724
+049012,Piombino,li,extra_alberghiero,1175,2275,62,8513
+049012,Piombino,li,totale,2091,3078,84,11237
+049013,Porto Azzurro,li,alberghiero,439,406,17,1141
+049013,Porto Azzurro,li,extra_alberghiero,330,463,33,1528
+049013,Porto Azzurro,li,totale,769,869,50,2669
+049014,Portoferraio,li,alberghiero,1372,1290,31,3039
+049014,Portoferraio,li,extra_alberghiero,553,833,44,2905
+049014,Portoferraio,li,totale,1925,2123,75,5945
+049015,Rio Marina,li,alberghiero,380,360,12,820
+049015,Rio Marina,li,extra_alberghiero,286,436,16,1045
+049015,Rio Marina,li,totale,666,796,28,1865
+049016,Rio nell'Elba,li,alberghiero,70,66,3,143
+049016,Rio nell'Elba,li,extra_alberghiero,285,351,12,1215
+049016,Rio nell'Elba,li,totale,355,417,15,1358
+049017,Rosignano Marittimo,li,alberghiero,891,818,32,2042
+049017,Rosignano Marittimo,li,extra_alberghiero,1047,2066,62,7516
+049017,Rosignano Marittimo,li,totale,1938,2883,94,9558
+049018,San Vincenzo,li,alberghiero,1375,1268,27,2861
+049018,San Vincenzo,li,extra_alberghiero,2063,2226,60,9053
+049018,San Vincenzo,li,totale,3438,3494,87,11913
+049019,Sassetta,li,alberghiero,17,20,1,38
+049019,Sassetta,li,extra_alberghiero,123,114,16,271
+049019,Sassetta,li,totale,140,134,17,309
+049020,Suvereto,li,alberghiero,149,145,2,579
+049020,Suvereto,li,extra_alberghiero,273,294,46,747
+049020,Suvereto,li,totale,421,439,47,1327
+050001,Bientina,pi,alberghiero,63,59,3,133
+050001,Bientina,pi,extra_alberghiero,6,6,1,9
+050001,Bientina,pi,totale,69,65,4,142
+050002,Buti,pi,alberghiero,0,0,0,0
+050002,Buti,pi,extra_alberghiero,52,65,14,142
+050002,Buti,pi,totale,52,65,14,142
+050003,Calci,pi,alberghiero,4,8,1,17
+050003,Calci,pi,extra_alberghiero,153,166,28,297
+050003,Calci,pi,totale,157,174,29,315
+050004,Calcinaia,pi,alberghiero,70,61,1,167
+050004,Calcinaia,pi,extra_alberghiero,11,13,3,25
+050004,Calcinaia,pi,totale,80,74,4,192
+050005,Capannoli,pi,alberghiero,22,34,2,92
+050005,Capannoli,pi,extra_alberghiero,41,42,9,87
+050005,Capannoli,pi,totale,63,76,11,178
+050006,Casale Marittimo,pi,alberghiero,58,58,1,217
+050006,Casale Marittimo,pi,extra_alberghiero,130,310,11,1149
+050006,Casale Marittimo,pi,totale,188,368,12,1366
+050007,Casciana Terme,pi,alberghiero,350,332,10,694
+050007,Casciana Terme,pi,extra_alberghiero,54,56,15,116
+050007,Casciana Terme,pi,totale,404,388,25,809
+050008,Cascina,pi,alberghiero,93,89,3,193
+050008,Cascina,pi,extra_alberghiero,68,78,21,162
+050008,Cascina,pi,totale,161,167,24,355
+050009,Castelfranco di Sotto,pi,alberghiero,13,13,1,37
+050009,Castelfranco di Sotto,pi,extra_alberghiero,32,34,7,82
+050009,Castelfranco di Sotto,pi,totale,45,47,8,119
+050010,Castellina Marittima,pi,alberghiero,54,55,5,100
+050010,Castellina Marittima,pi,extra_alberghiero,11,10,3,23
+050010,Castellina Marittima,pi,totale,65,65,8,123
+050011,Castelnuovo di Val di Cecina,pi,alberghiero,19,18,1,36
+050011,Castelnuovo di Val di Cecina,pi,extra_alberghiero,96,103,21,257
+050011,Castelnuovo di Val di Cecina,pi,totale,115,121,22,293
+050012,Chianni,pi,alberghiero,0,0,0,0
+050012,Chianni,pi,extra_alberghiero,138,148,24,332
+050012,Chianni,pi,totale,138,148,24,332
+050013,Crespina,pi,alberghiero,11,11,1,22
+050013,Crespina,pi,extra_alberghiero,55,61,12,116
+050013,Crespina,pi,totale,66,72,13,138
+050014,Fauglia,pi,alberghiero,13,13,1,39
+050014,Fauglia,pi,extra_alberghiero,78,90,14,173
+050014,Fauglia,pi,totale,91,103,15,211
+050015,Guardistallo,pi,alberghiero,50,48,3,186
+050015,Guardistallo,pi,extra_alberghiero,159,199,13,630
+050015,Guardistallo,pi,totale,210,247,16,816
+050016,Lajatico,pi,alberghiero,17,15,1,33
+050016,Lajatico,pi,extra_alberghiero,152,169,14,320
+050016,Lajatico,pi,totale,169,184,16,353
+050017,Lari,pi,alberghiero,7,7,1,15
+050017,Lari,pi,extra_alberghiero,93,102,22,242
+050017,Lari,pi,totale,100,109,23,257
+050018,Lorenzana,pi,alberghiero,0,0,0,0
+050018,Lorenzana,pi,extra_alberghiero,43,46,9,133
+050018,Lorenzana,pi,totale,43,46,9,133
+050019,Montecatini Val di Cecina,pi,alberghiero,60,61,2,145
+050019,Montecatini Val di Cecina,pi,extra_alberghiero,225,238,39,566
+050019,Montecatini Val di Cecina,pi,totale,285,298,41,711
+050020,Montescudaio,pi,alberghiero,8,8,1,22
+050020,Montescudaio,pi,extra_alberghiero,302,521,19,1965
+050020,Montescudaio,pi,totale,309,529,20,1987
+050021,Monteverdi Marittimo,pi,alberghiero,42,41,2,87
+050021,Monteverdi Marittimo,pi,extra_alberghiero,73,79,13,173
+050021,Monteverdi Marittimo,pi,totale,116,120,15,260
+050022,Montopoli in Val d'Arno,pi,alberghiero,45,44,2,71
+050022,Montopoli in Val d'Arno,pi,extra_alberghiero,204,311,27,936
+050022,Montopoli in Val d'Arno,pi,totale,249,355,29,1007
+050023,Orciano Pisano,pi,alberghiero,0,0,0,0
+050023,Orciano Pisano,pi,extra_alberghiero,4,3,1,6
+050023,Orciano Pisano,pi,totale,4,3,1,6
+050024,Palaia,pi,alberghiero,24,20,2,40
+050024,Palaia,pi,extra_alberghiero,364,338,48,773
+050024,Palaia,pi,totale,388,358,50,813
+050025,Peccioli,pi,alberghiero,28,28,1,60
+050025,Peccioli,pi,extra_alberghiero,201,215,37,442
+050025,Peccioli,pi,totale,229,242,38,501
+050026,Pisa,pi,alberghiero,2643,2560,69,5710
+050026,Pisa,pi,extra_alberghiero,2210,3692,278,8793
+050026,Pisa,pi,totale,4853,6253,346,14502
+050027,Pomarance,pi,alberghiero,56,51,3,89
+050027,Pomarance,pi,extra_alberghiero,365,437,62,936
+050027,Pomarance,pi,totale,421,488,65,1025
+050028,Ponsacco,pi,alberghiero,48,46,3,86
+050028,Ponsacco,pi,extra_alberghiero,57,56,11,127
+050028,Ponsacco,pi,totale,104,102,14,213
+050029,Pontedera,pi,alberghiero,165,146,5,281
+050029,Pontedera,pi,extra_alberghiero,74,80,19,170
+050029,Pontedera,pi,totale,240,226,24,451
+050030,Riparbella,pi,alberghiero,109,115,6,268
+050030,Riparbella,pi,extra_alberghiero,231,297,20,769
+050030,Riparbella,pi,totale,339,412,26,1037
+050031,San Giuliano Terme,pi,alberghiero,377,358,8,792
+050031,San Giuliano Terme,pi,extra_alberghiero,626,642,41,1125
+050031,San Giuliano Terme,pi,totale,1003,1000,49,1917
+050032,San Miniato,pi,alberghiero,126,120,9,261
+050032,San Miniato,pi,extra_alberghiero,244,240,44,500
+050032,San Miniato,pi,totale,370,359,53,760
+050033,Santa Croce sull'Arno,pi,alberghiero,19,19,2,30
+050033,Santa Croce sull'Arno,pi,extra_alberghiero,0,0,0,0
+050033,Santa Croce sull'Arno,pi,totale,19,19,2,30
+050034,Santa Luce,pi,alberghiero,24,23,2,62
+050034,Santa Luce,pi,extra_alberghiero,128,144,22,464
+050034,Santa Luce,pi,totale,151,167,24,525
+050035,Santa Maria a Monte,pi,alberghiero,81,77,2,149
+050035,Santa Maria a Monte,pi,extra_alberghiero,18,20,9,45
+050035,Santa Maria a Monte,pi,totale,99,97,11,194
+050036,Terricciola,pi,alberghiero,22,22,1,37
+050036,Terricciola,pi,extra_alberghiero,163,170,26,400
+050036,Terricciola,pi,totale,185,192,27,437
+050037,Vecchiano,pi,alberghiero,61,57,1,114
+050037,Vecchiano,pi,extra_alberghiero,51,64,18,138
+050037,Vecchiano,pi,totale,113,121,19,252
+050038,Vicopisano,pi,alberghiero,0,0,0,0
+050038,Vicopisano,pi,extra_alberghiero,69,80,26,181
+050038,Vicopisano,pi,totale,69,80,26,181
+050039,Volterra,pi,alberghiero,488,453,20,891
+050039,Volterra,pi,extra_alberghiero,655,801,125,1782
+050039,Volterra,pi,totale,1143,1254,145,2673
+051001,Anghiari,ar,alberghiero,72,70,3,166
+051001,Anghiari,ar,extra_alberghiero,166,197,31,396
+051001,Anghiari,ar,totale,238,267,34,562
+051002,Arezzo,ar,alberghiero,1156,1079,25,2182
+051002,Arezzo,ar,extra_alberghiero,592,755,162,1717
+051002,Arezzo,ar,totale,1748,1834,187,3898
+051003,Badia Tedalda,ar,alberghiero,66,70,6,124
+051003,Badia Tedalda,ar,extra_alberghiero,45,39,7,115
+051003,Badia Tedalda,ar,totale,111,109,13,239
+051004,Bibbiena,ar,alberghiero,84,82,5,149
+051004,Bibbiena,ar,extra_alberghiero,143,151,20,335
+051004,Bibbiena,ar,totale,227,233,25,484
+051005,Bucine,ar,alberghiero,49,43,4,72
+051005,Bucine,ar,extra_alberghiero,643,742,72,1705
+051005,Bucine,ar,totale,692,785,76,1777
+051006,Capolona,ar,alberghiero,0,0,0,0
+051006,Capolona,ar,extra_alberghiero,112,124,15,265
+051006,Capolona,ar,totale,112,124,15,265
+051007,Caprese Michelangelo,ar,alberghiero,74,53,4,117
+051007,Caprese Michelangelo,ar,extra_alberghiero,110,164,19,490
+051007,Caprese Michelangelo,ar,totale,184,217,23,607
+051008,Castel Focognano,ar,alberghiero,0,0,0,0
+051008,Castel Focognano,ar,extra_alberghiero,31,35,6,58
+051008,Castel Focognano,ar,totale,31,35,6,58
+051009,Castelfranco di Sopra,ar,alberghiero,13,11,1,18
+051009,Castelfranco di Sopra,ar,extra_alberghiero,117,128,16,322
+051009,Castelfranco di Sopra,ar,totale,130,139,17,340
+051010,Castel San Niccolo',ar,alberghiero,10,10,1,17
+051010,Castel San Niccolo',ar,extra_alberghiero,37,41,9,90
+051010,Castel San Niccolo',ar,totale,47,51,10,107
+051011,Castiglion Fibocchi,ar,alberghiero,7,7,1,21
+051011,Castiglion Fibocchi,ar,extra_alberghiero,21,29,5,59
+051011,Castiglion Fibocchi,ar,totale,28,36,6,80
+051012,Castiglion Fiorentino,ar,alberghiero,194,192,6,400
+051012,Castiglion Fiorentino,ar,extra_alberghiero,254,297,57,589
+051012,Castiglion Fiorentino,ar,totale,448,489,63,989
+051013,Cavriglia,ar,alberghiero,35,54,2,73
+051013,Cavriglia,ar,extra_alberghiero,349,605,31,1823
+051013,Cavriglia,ar,totale,384,659,33,1896
+051014,Chitignano,ar,alberghiero,32,31,2,59
+051014,Chitignano,ar,extra_alberghiero,27,33,5,60
+051014,Chitignano,ar,totale,59,64,7,119
+051015,Chiusi della Verna,ar,alberghiero,74,62,5,113
+051015,Chiusi della Verna,ar,extra_alberghiero,311,365,17,766
+051015,Chiusi della Verna,ar,totale,385,427,22,879
+051016,Civitella in Val di Chiana,ar,alberghiero,91,82,4,202
+051016,Civitella in Val di Chiana,ar,extra_alberghiero,196,233,34,484
+051016,Civitella in Val di Chiana,ar,totale,287,315,38,686
+051017,Cortona,ar,alberghiero,486,447,22,939
+051017,Cortona,ar,extra_alberghiero,965,1097,169,2257
+051017,Cortona,ar,totale,1451,1543,191,3196
+051018,Foiano della Chiana,ar,alberghiero,71,66,3,130
+051018,Foiano della Chiana,ar,extra_alberghiero,89,108,19,230
+051018,Foiano della Chiana,ar,totale,160,174,22,360
+051019,Laterina,ar,alberghiero,96,69,2,184
+051019,Laterina,ar,extra_alberghiero,24,26,4,53
+051019,Laterina,ar,totale,120,95,6,237
+051020,Loro Ciuffenna,ar,alberghiero,48,53,4,98
+051020,Loro Ciuffenna,ar,extra_alberghiero,244,258,28,574
+051020,Loro Ciuffenna,ar,totale,292,311,32,672
+051021,Lucignano,ar,alberghiero,20,24,2,68
+051021,Lucignano,ar,extra_alberghiero,103,122,26,274
+051021,Lucignano,ar,totale,123,146,28,342
+051022,Marciano della Chiana,ar,alberghiero,10,10,1,19
+051022,Marciano della Chiana,ar,extra_alberghiero,31,31,6,82
+051022,Marciano della Chiana,ar,totale,41,41,7,101
+051023,Montemignaio,ar,alberghiero,62,68,3,151
+051023,Montemignaio,ar,extra_alberghiero,25,26,2,42
+051023,Montemignaio,ar,totale,87,94,5,193
+051024,Monterchi,ar,alberghiero,0,0,0,0
+051024,Monterchi,ar,extra_alberghiero,36,38,8,100
+051024,Monterchi,ar,totale,36,38,8,100
+051025,Monte San Savino,ar,alberghiero,99,68,5,121
+051025,Monte San Savino,ar,extra_alberghiero,171,198,30,390
+051025,Monte San Savino,ar,totale,270,266,35,511
+051026,Montevarchi,ar,alberghiero,134,126,5,262
+051026,Montevarchi,ar,extra_alberghiero,85,99,15,193
+051026,Montevarchi,ar,totale,219,225,20,455
+051027,Ortignano Raggiolo,ar,alberghiero,0,0,0,0
+051027,Ortignano Raggiolo,ar,extra_alberghiero,27,40,6,65
+051027,Ortignano Raggiolo,ar,totale,27,40,6,65
+051028,Pergine Valdarno,ar,alberghiero,11,12,1,23
+051028,Pergine Valdarno,ar,extra_alberghiero,160,206,20,391
+051028,Pergine Valdarno,ar,totale,171,218,21,414
+051029,Pian di Sco,ar,alberghiero,9,15,1,15
+051029,Pian di Sco,ar,extra_alberghiero,42,56,9,113
+051029,Pian di Sco,ar,totale,51,71,10,128
+051030,Pieve Santo Stefano,ar,alberghiero,137,130,8,269
+051030,Pieve Santo Stefano,ar,extra_alberghiero,104,124,14,306
+051030,Pieve Santo Stefano,ar,totale,241,254,22,575
+051031,Poppi,ar,alberghiero,338,332,16,715
+051031,Poppi,ar,extra_alberghiero,210,537,37,999
+051031,Poppi,ar,totale,548,869,53,1714
+051032,Pratovecchio,ar,alberghiero,0,0,0,0
+051032,Pratovecchio,ar,extra_alberghiero,99,117,20,252
+051032,Pratovecchio,ar,totale,99,117,20,252
+051033,San Giovanni Valdarno,ar,alberghiero,100,97,3,193
+051033,San Giovanni Valdarno,ar,extra_alberghiero,76,67,10,142
+051033,San Giovanni Valdarno,ar,totale,176,164,13,335
+051034,Sansepolcro,ar,alberghiero,243,225,10,435
+051034,Sansepolcro,ar,extra_alberghiero,214,218,29,502
+051034,Sansepolcro,ar,totale,457,443,39,937
+051035,Sestino,ar,alberghiero,0,0,0,0
+051035,Sestino,ar,extra_alberghiero,1,3,1,4
+051035,Sestino,ar,totale,1,3,1,4
+051036,Stia,ar,alberghiero,12,34,2,74
+051036,Stia,ar,extra_alberghiero,32,62,5,234
+051036,Stia,ar,totale,44,96,7,308
+051037,Subbiano,ar,alberghiero,61,61,3,122
+051037,Subbiano,ar,extra_alberghiero,167,187,35,343
+051037,Subbiano,ar,totale,228,248,38,465
+051038,Talla,ar,alberghiero,10,14,1,24
+051038,Talla,ar,extra_alberghiero,27,77,8,275
+051038,Talla,ar,totale,37,91,9,299
+051039,Terranuova Bracciolini,ar,alberghiero,146,143,5,276
+051039,Terranuova Bracciolini,ar,extra_alberghiero,200,219,26,454
+051039,Terranuova Bracciolini,ar,totale,346,362,31,730
+052001,Abbadia San Salvatore,si,alberghiero,504,462,20,937
+052001,Abbadia San Salvatore,si,extra_alberghiero,30,29,5,61
+052001,Abbadia San Salvatore,si,totale,534,490,25,998
+052002,Asciano,si,alberghiero,188,170,7,365
+052002,Asciano,si,extra_alberghiero,414,446,70,935
+052002,Asciano,si,totale,602,616,77,1300
+052003,Buonconvento,si,alberghiero,44,37,2,83
+052003,Buonconvento,si,extra_alberghiero,267,273,38,572
+052003,Buonconvento,si,totale,311,310,40,655
+052004,Casole d'Elsa,si,alberghiero,195,192,8,438
+052004,Casole d'Elsa,si,extra_alberghiero,537,460,64,1200
+052004,Casole d'Elsa,si,totale,733,652,72,1638
+052005,Castellina in Chianti,si,alberghiero,205,184,11,490
+052005,Castellina in Chianti,si,extra_alberghiero,592,728,96,1747
+052005,Castellina in Chianti,si,totale,796,912,107,2237
+052006,Castelnuovo Berardenga,si,alberghiero,237,203,8,483
+052006,Castelnuovo Berardenga,si,extra_alberghiero,793,800,113,1744
+052006,Castelnuovo Berardenga,si,totale,1030,1003,121,2227
+052007,Castiglione d'Orcia,si,alberghiero,86,77,5,156
+052007,Castiglione d'Orcia,si,extra_alberghiero,322,355,67,739
+052007,Castiglione d'Orcia,si,totale,408,432,72,895
+052008,Cetona,si,alberghiero,13,12,1,25
+052008,Cetona,si,extra_alberghiero,165,181,33,391
+052008,Cetona,si,totale,178,193,34,416
+052009,Chianciano Terme,si,alberghiero,6282,5828,136,12181
+052009,Chianciano Terme,si,extra_alberghiero,230,250,39,465
+052009,Chianciano Terme,si,totale,6512,6078,174,12647
+052010,Chiusdino,si,alberghiero,6,7,1,14
+052010,Chiusdino,si,extra_alberghiero,334,362,38,1011
+052010,Chiusdino,si,totale,340,369,39,1025
+052011,Chiusi,si,alberghiero,289,281,12,622
+052011,Chiusi,si,extra_alberghiero,182,277,37,611
+052011,Chiusi,si,totale,471,558,49,1233
+052012,Colle di Val d'Elsa,si,alberghiero,233,212,8,466
+052012,Colle di Val d'Elsa,si,extra_alberghiero,378,434,79,878
+052012,Colle di Val d'Elsa,si,totale,611,646,87,1343
+052013,Gaiole in Chianti,si,alberghiero,150,138,10,330
+052013,Gaiole in Chianti,si,extra_alberghiero,405,436,79,906
+052013,Gaiole in Chianti,si,totale,555,574,89,1236
+052014,Montalcino,si,alberghiero,251,213,10,485
+052014,Montalcino,si,extra_alberghiero,525,518,107,1172
+052014,Montalcino,si,totale,776,731,117,1657
+052015,Montepulciano,si,alberghiero,560,503,25,1116
+052015,Montepulciano,si,extra_alberghiero,989,991,162,2157
+052015,Montepulciano,si,totale,1549,1494,187,3273
+052016,Monteriggioni,si,alberghiero,286,225,9,555
+052016,Monteriggioni,si,extra_alberghiero,339,407,78,857
+052016,Monteriggioni,si,totale,625,632,87,1412
+052017,Monteroni d'Arbia,si,alberghiero,64,61,3,107
+052017,Monteroni d'Arbia,si,extra_alberghiero,240,265,40,564
+052017,Monteroni d'Arbia,si,totale,304,326,43,671
+052018,Monticiano,si,alberghiero,108,108,4,228
+052018,Monticiano,si,extra_alberghiero,154,149,26,295
+052018,Monticiano,si,totale,262,257,30,523
+052019,Murlo,si,alberghiero,148,139,4,362
+052019,Murlo,si,extra_alberghiero,244,335,34,805
+052019,Murlo,si,totale,392,474,38,1167
+052020,Piancastagnaio,si,alberghiero,57,56,4,110
+052020,Piancastagnaio,si,extra_alberghiero,61,57,11,144
+052020,Piancastagnaio,si,totale,118,114,15,255
+052021,Pienza,si,alberghiero,108,101,5,207
+052021,Pienza,si,extra_alberghiero,691,715,117,1469
+052021,Pienza,si,totale,799,816,122,1676
+052022,Poggibonsi,si,alberghiero,366,346,8,712
+052022,Poggibonsi,si,extra_alberghiero,298,313,59,734
+052022,Poggibonsi,si,totale,664,659,67,1446
+052023,Radda in Chianti,si,alberghiero,266,242,12,568
+052023,Radda in Chianti,si,extra_alberghiero,274,276,50,598
+052023,Radda in Chianti,si,totale,541,518,62,1166
+052024,Radicofani,si,alberghiero,21,17,2,33
+052024,Radicofani,si,extra_alberghiero,157,171,26,335
+052024,Radicofani,si,totale,178,188,28,368
+052025,Radicondoli,si,alberghiero,17,15,1,27
+052025,Radicondoli,si,extra_alberghiero,221,245,44,524
+052025,Radicondoli,si,totale,238,259,45,551
+052026,Rapolano Terme,si,alberghiero,222,197,5,432
+052026,Rapolano Terme,si,extra_alberghiero,320,333,40,723
+052026,Rapolano Terme,si,totale,542,530,45,1155
+052027,San Casciano dei Bagni,si,alberghiero,108,105,4,222
+052027,San Casciano dei Bagni,si,extra_alberghiero,232,252,41,500
+052027,San Casciano dei Bagni,si,totale,340,357,45,721
+052028,San Gimignano,si,alberghiero,666,603,20,1315
+052028,San Gimignano,si,extra_alberghiero,1594,1704,295,3936
+052028,San Gimignano,si,totale,2260,2307,315,5251
+052029,San Giovanni d'Asso,si,alberghiero,65,60,4,151
+052029,San Giovanni d'Asso,si,extra_alberghiero,195,226,35,559
+052029,San Giovanni d'Asso,si,totale,260,286,39,710
+052030,San Quirico d'Orcia,si,alberghiero,332,296,7,772
+052030,San Quirico d'Orcia,si,extra_alberghiero,200,213,40,435
+052030,San Quirico d'Orcia,si,totale,532,509,47,1207
+052031,Sarteano,si,alberghiero,140,123,8,277
+052031,Sarteano,si,extra_alberghiero,385,766,33,2335
+052031,Sarteano,si,totale,526,888,41,2611
+052032,Siena,si,alberghiero,1783,1643,46,3929
+052032,Siena,si,extra_alberghiero,1266,1689,257,3903
+052032,Siena,si,totale,3049,3332,304,7832
+052033,Sinalunga,si,alberghiero,138,133,6,281
+052033,Sinalunga,si,extra_alberghiero,314,330,51,732
+052033,Sinalunga,si,totale,452,463,57,1013
+052034,Sovicille,si,alberghiero,129,107,6,248
+052034,Sovicille,si,extra_alberghiero,488,588,73,1375
+052034,Sovicille,si,totale,617,695,79,1623
+052035,Torrita di Siena,si,alberghiero,57,56,4,122
+052035,Torrita di Siena,si,extra_alberghiero,196,208,39,410
+052035,Torrita di Siena,si,totale,253,264,43,532
+052036,Trequanda,si,alberghiero,45,39,5,89
+052036,Trequanda,si,extra_alberghiero,237,255,31,533
+052036,Trequanda,si,totale,281,294,36,622
+053001,Arcidosso,gr,alberghiero,268,258,8,603
+053001,Arcidosso,gr,extra_alberghiero,187,182,27,402
+053001,Arcidosso,gr,totale,455,440,35,1005
+053002,Campagnatico,gr,alberghiero,0,0,0,0
+053002,Campagnatico,gr,extra_alberghiero,184,231,44,408
+053002,Campagnatico,gr,totale,184,231,44,408
+053003,Capalbio,gr,alberghiero,164,147,7,441
+053003,Capalbio,gr,extra_alberghiero,421,735,60,2453
+053003,Capalbio,gr,totale,585,882,67,2894
+053004,Castel del Piano,gr,alberghiero,172,160,5,312
+053004,Castel del Piano,gr,extra_alberghiero,215,317,32,941
+053004,Castel del Piano,gr,totale,386,476,37,1253
+053005,Castell'Azzara,gr,alberghiero,0,0,0,0
+053005,Castell'Azzara,gr,extra_alberghiero,47,53,9,104
+053005,Castell'Azzara,gr,totale,47,53,9,104
+053006,Castiglione della Pescaia,gr,alberghiero,1502,1613,42,3546
+053006,Castiglione della Pescaia,gr,extra_alberghiero,2020,4609,91,15776
+053006,Castiglione della Pescaia,gr,totale,3521,6222,133,19321
+053007,Cinigiano,gr,alberghiero,13,11,1,26
+053007,Cinigiano,gr,extra_alberghiero,239,325,38,759
+053007,Cinigiano,gr,totale,251,336,39,785
+053008,Civitella Paganico,gr,alberghiero,262,167,6,405
+053008,Civitella Paganico,gr,extra_alberghiero,196,216,35,387
+053008,Civitella Paganico,gr,totale,458,382,41,792
+053009,Follonica,gr,alberghiero,576,544,22,1361
+053009,Follonica,gr,extra_alberghiero,969,1880,40,6262
+053009,Follonica,gr,totale,1545,2424,62,7624
+053010,Gavorrano,gr,alberghiero,178,225,5,605
+053010,Gavorrano,gr,extra_alberghiero,294,475,52,1058
+053010,Gavorrano,gr,totale,472,700,56,1663
+053011,Grosseto,gr,alberghiero,1767,1690,47,3743
+053011,Grosseto,gr,extra_alberghiero,2648,4918,277,14883
+053011,Grosseto,gr,totale,4415,6608,324,18625
+053012,Isola del Giglio,gr,alberghiero,292,279,13,594
+053012,Isola del Giglio,gr,extra_alberghiero,70,98,12,281
+053012,Isola del Giglio,gr,totale,362,377,25,875
+053013,Magliano in Toscana,gr,alberghiero,82,77,3,153
+053013,Magliano in Toscana,gr,extra_alberghiero,566,649,87,1152
+053013,Magliano in Toscana,gr,totale,648,726,90,1305
+053014,Manciano,gr,alberghiero,505,472,30,1014
+053014,Manciano,gr,extra_alberghiero,1027,1440,179,2220
+053014,Manciano,gr,totale,1532,1912,209,3234
+053015,Massa Marittima,gr,alberghiero,323,302,7,668
+053015,Massa Marittima,gr,extra_alberghiero,636,711,90,1564
+053015,Massa Marittima,gr,totale,959,1013,96,2231
+053016,Monte Argentario,gr,alberghiero,701,679,20,1402
+053016,Monte Argentario,gr,extra_alberghiero,161,304,31,901
+053016,Monte Argentario,gr,totale,862,983,51,2303
+053017,Montieri,gr,alberghiero,28,42,3,90
+053017,Montieri,gr,extra_alberghiero,93,105,18,262
+053017,Montieri,gr,totale,121,147,21,352
+053018,Orbetello,gr,alberghiero,1059,1024,38,2531
+053018,Orbetello,gr,extra_alberghiero,2181,4908,110,17211
+053018,Orbetello,gr,totale,3241,5931,148,19742
+053019,Pitigliano,gr,alberghiero,107,95,5,197
+053019,Pitigliano,gr,extra_alberghiero,180,194,48,373
+053019,Pitigliano,gr,totale,287,289,53,570
+053020,Roccalbegna,gr,alberghiero,34,31,2,61
+053020,Roccalbegna,gr,extra_alberghiero,130,127,30,276
+053020,Roccalbegna,gr,totale,164,158,32,337
+053021,Roccastrada,gr,alberghiero,42,39,3,92
+053021,Roccastrada,gr,extra_alberghiero,309,326,59,614
+053021,Roccastrada,gr,totale,351,365,62,706
+053022,Santa Fiora,gr,alberghiero,159,149,5,303
+053022,Santa Fiora,gr,extra_alberghiero,71,79,15,151
+053022,Santa Fiora,gr,totale,230,227,20,454
+053023,Scansano,gr,alberghiero,102,102,5,210
+053023,Scansano,gr,extra_alberghiero,288,303,63,627
+053023,Scansano,gr,totale,390,405,68,837
+053024,Scarlino,gr,alberghiero,384,373,8,1055
+053024,Scarlino,gr,extra_alberghiero,877,1496,38,5128
+053024,Scarlino,gr,totale,1261,1869,46,6182
+053025,Seggiano,gr,alberghiero,43,39,4,95
+053025,Seggiano,gr,extra_alberghiero,127,144,22,302
+053025,Seggiano,gr,totale,170,182,26,396
+053026,Sorano,gr,alberghiero,121,107,8,219
+053026,Sorano,gr,extra_alberghiero,280,280,47,661
+053026,Sorano,gr,totale,401,387,55,880
+053027,Monterotondo Marittimo,gr,alberghiero,22,23,1,32
+053027,Monterotondo Marittimo,gr,extra_alberghiero,110,111,16,221
+053027,Monterotondo Marittimo,gr,totale,132,134,17,253
+053028,Semproniano,gr,alberghiero,24,22,2,43
+053028,Semproniano,gr,extra_alberghiero,222,250,32,454
+053028,Semproniano,gr,totale,246,272,34,497
+100001,Cantagallo,po,alberghiero,0,0,0,0
+100001,Cantagallo,po,extra_alberghiero,48,33,8,111
+100001,Cantagallo,po,totale,48,33,8,111
+100002,Carmignano,po,alberghiero,60,57,3,133
+100002,Carmignano,po,extra_alberghiero,247,265,37,579
+100002,Carmignano,po,totale,307,322,40,712
+100003,Montemurlo,po,alberghiero,0,0,0,0
+100003,Montemurlo,po,extra_alberghiero,54,68,15,153
+100003,Montemurlo,po,totale,54,68,15,153
+100004,Poggio a Caiano,po,alberghiero,63,64,1,132
+100004,Poggio a Caiano,po,extra_alberghiero,18,19,4,39
+100004,Poggio a Caiano,po,totale,81,83,5,171
+100005,Prato,po,alberghiero,790,756,16,1582
+100005,Prato,po,extra_alberghiero,321,351,58,702
+100005,Prato,po,totale,1111,1107,74,2284
+100006,Vaiano,po,alberghiero,0,0,0,0
+100006,Vaiano,po,extra_alberghiero,32,30,9,67
+100006,Vaiano,po,totale,32,30,9,67
+100007,Vernio,po,alberghiero,43,38,2,71
+100007,Vernio,po,extra_alberghiero,56,63,17,139
+100007,Vernio,po,totale,99,101,19,210

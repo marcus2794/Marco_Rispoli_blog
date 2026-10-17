@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turismo in Toscana</title>
+<meta name="description" content="Dashboard interattiva: arrivi, presenze, provenienza e strutture ricettive di tutti i comuni toscani, con Piombino in primo piano. Dati Regione Toscana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f6f4ef; --surface:#fcfcfb; --surface-2:#f0eee8; --line:#e2dfd7; --grid:#ebe8e1;
+  --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#7c7a74;
+  --sel:#2a78d6; --cmp:#1baf7a; --ref:#8a8984;
+  --ita:#eb6834; --str:#6250d6;
+  --up:#1c7a3e; --down:#c23b3b;
+  --null:#e6e3dc;
+  --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+  --div-n3:#c93f3e; --div-n2:#ee8f8e; --div-n1:#f6c6c5; --div-0:#f0efec; --div-p1:#b7d3f6; --div-p2:#5598e7; --div-p3:#1c5cab;
+  --accent:#a8552b;
+  --t1:#2a78d6; --t2:#eb6834; --t3:#1baf7a; --t4:#eda100; --t5:#e87ba4;
+  --shadow:0 1px 2px rgba(20,18,12,.05), 0 4px 16px rgba(20,18,12,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2f2f2c; --grid:#2a2a28;
+    --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8e86;
+    --sel:#3987e5; --cmp:#199e70; --ref:#8f8e86;
+    --ita:#d95926; --str:#9085e9;
+    --up:#4cbb6c; --down:#e66767;
+    --null:#2a2a28;
+    --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+    --div-n3:#e66767; --div-n2:#a94444; --div-n1:#5e3332; --div-0:#383835; --div-p1:#24406a; --div-p2:#2f6bbd; --div-p3:#6da7ec;
+    --accent:#e0915f;
+    --t1:#3987e5; --t2:#d95926; --t3:#199e70; --t4:#c98500; --t5:#d55181;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2f2f2c; --grid:#2a2a28;
+  --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8e86;
+  --sel:#3987e5; --cmp:#199e70; --ref:#8f8e86;
+  --ita:#d95926; --str:#9085e9;
+  --up:#4cbb6c; --down:#e66767;
+  --null:#2a2a28;
+  --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+  --div-n3:#e66767; --div-n2:#a94444; --div-n1:#5e3332; --div-0:#383835; --div-p1:#24406a; --div-p2:#2f6bbd; --div-p3:#6da7ec;
+  --accent:#e0915f;
+  --t1:#3987e5; --t2:#d95926; --t3:#199e70; --t4:#c98500; --t5:#d55181;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.num,td.n,.kpi .v{font-variant-numeric:tabular-nums}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+header.hero{padding:40px 0 26px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:center}
+.hero-map{margin:0;text-align:center}
+.hero-map svg path{fill:color-mix(in srgb,var(--ink) 9%,var(--bg));stroke:var(--bg);stroke-width:.6}
+.hero-map svg path.on{fill:var(--accent);stroke:var(--accent)}
+.hero-map svg path.amb{fill:color-mix(in srgb,var(--accent) 35%,var(--bg))}
+.hero-map figcaption{font-size:12.5px;color:var(--ink-3);margin-top:6px}
+.guide{margin-top:16px;max-width:720px;font-size:14px;color:var(--ink-2)}
+.guide summary{cursor:pointer;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:6px;list-style:none;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::before{content:"?";display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px}
+.guide ol{margin:12px 0 0;padding-left:20px;line-height:1.6}
+.btn{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 12px;border-radius:8px;cursor:pointer}
+.btn:hover{border-color:var(--ink-3)}
+.secnav{display:flex;gap:4px;overflow-x:auto;padding-top:0 !important;padding-bottom:10px !important;scrollbar-width:none}
+.secnav::-webkit-scrollbar{display:none}
+.secnav a{flex:none;font-size:13px;text-decoration:none;color:var(--ink-2);padding:5px 11px;border-radius:999px}
+.secnav a:hover{background:var(--surface-2);color:var(--ink)}
+.secnav a.on{background:var(--ink);color:var(--bg)}
+section{scroll-margin-top:150px}
+.facts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:0 0 14px}
+.fact{border-left:3px solid var(--accent);padding:4px 0 4px 12px}
+.fact .fk{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.fact .fv{font-size:14.5px;line-height:1.45;margin-top:4px;color:var(--ink)}
+.fact .fv b{font-weight:600}
+.back{font-size:13px;color:var(--ink-3);text-decoration:none}
+.back:hover{color:var(--ink)}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:18px 0 8px}
+h1{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:clamp(32px,5vw,52px);line-height:1.04;margin:0;letter-spacing:-.01em;max-width:880px}
+.lede{font-family:Newsreader,Georgia,serif;font-size:20px;line-height:1.45;color:var(--ink-2);max-width:760px;margin:14px 0 0}
+.meta{font-size:13px;color:var(--ink-3);margin-top:14px}
+h2{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:28px;line-height:1.15;margin:0 0 4px}
+.sub{color:var(--ink-2);margin:0 0 18px;max-width:760px}
+section{padding:34px 0 8px}
+
+/* controls */
+.controls{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.controls .wrap{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end;padding-top:12px;padding-bottom:12px}
+.ctl{display:flex;flex-direction:column;gap:4px;min-width:0}
+.ctl label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.ctl input,.ctl select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0}
+.ctl input:focus,.ctl select:focus{outline:2px solid var(--sel);outline-offset:1px}
+#comune{width:220px}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink-2);padding:6px 11px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:500}
+.theme{margin-left:auto}
+
+/* cards */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.grid>*{min-width:0}
+.g-map{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+.chart-card{padding:18px 18px 12px}
+.chart-card h3{font-size:15px;font-weight:600;margin:0}
+.chart-card .note{font-size:13px;color:var(--ink-3);margin:2px 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2);margin:6px 0 4px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.key-line{width:16px;height:0;border-top:2px solid}
+.key-line.dash{border-top-style:dashed}
+.key-rect{width:11px;height:11px;border-radius:3px}
+
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.kpi{padding:14px 16px 13px}
+.kpi .l{font-size:12px;color:var(--ink-3);font-weight:500;letter-spacing:.02em}
+.kpi .v{font-family:Newsreader,Georgia,serif;font-size:32px;font-weight:600;line-height:1.1;margin:4px 0 6px;letter-spacing:-.01em}
+.kpi .d{font-size:12.5px;color:var(--ink-2);display:flex;flex-direction:column;gap:2px}
+.up{color:var(--up)} .down{color:var(--down)}
+.kpi .c{font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--line);margin-top:9px;padding-top:7px}
+.headline{font-family:Newsreader,Georgia,serif;font-size:21px;line-height:1.4;color:var(--ink);margin:0 0 18px;max-width:900px}
+.headline b{font-weight:600}
+
+/* map */
+#map svg path.c{stroke:var(--surface);stroke-width:.5;cursor:pointer;transition:opacity .15s}
+#map svg path.c:hover{stroke:var(--ink);stroke-width:1.2}
+#map svg path.sel{stroke:var(--ink);stroke-width:2.2}
+#map svg path.prov{fill:none;stroke:var(--ink-2);stroke-width:.9;opacity:.55;pointer-events:none}
+.map-legend{display:flex;align-items:stretch;gap:2px;margin:8px 0 2px;max-width:420px}
+.map-legend div{flex:1;display:flex;flex-direction:column;font-size:11px;color:var(--ink-3);gap:4px}
+.map-legend i{display:block;height:9px;border-radius:2px}
+.rank-list{list-style:none;margin:0;padding:0;font-size:14px}
+.rank-list li{display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:6px 4px;border-bottom:1px solid var(--grid);cursor:pointer;border-radius:6px}
+.rank-list li:hover{background:var(--surface-2)}
+.rank-list li.me{background:color-mix(in srgb,var(--sel) 12%,transparent);font-weight:600}
+.rank-list .r{color:var(--ink-3);font-size:12px;text-align:right}
+.rank-list .bar{height:4px;border-radius:2px;background:var(--seq-3);margin-top:3px}
+.rank-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.yearpill{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--ink);color:var(--bg);margin-left:8px;vertical-align:3px}
+.explain{background:var(--surface-2);border-radius:12px;padding:16px 18px;font-size:15px;line-height:1.6;color:var(--ink);margin:0 0 16px;max-width:900px}
+.explain b{font-weight:600}
+.pill{display:inline-block;font-size:12px;padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink-2)}
+
+/* charts */
+svg text{fill:var(--ink-3);font:11.5px Inter,system-ui,sans-serif}
+svg .axis path{display:none}
+svg .axis line{stroke:var(--grid)}
+svg .grid line{stroke:var(--grid)}
+svg .lbl{font-size:12px;font-weight:600}
+.annot line{stroke:var(--ink-3);stroke-dasharray:2 3}
+.annot text{fill:var(--ink-3);font-size:10.5px}
+.hair{stroke:var(--ink-3);stroke-width:1}
+.tip{position:fixed;pointer-events:none;z-index:50;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:13px;box-shadow:0 6px 24px rgba(0,0,0,.14);min-width:150px;max-width:280px;opacity:0;transition:opacity .08s}
+.tip .t{font-weight:600;margin-bottom:5px;color:var(--ink)}
+.tip .row{display:flex;align-items:center;gap:8px;color:var(--ink-2);line-height:1.6}
+.tip .row b{color:var(--ink);font-weight:600;margin-left:auto;font-variant-numeric:tabular-nums}
+.tip .k{width:12px;height:0;border-top:2px solid}
+
+/* table */
+.table-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin-bottom:12px}
+.tbl-wrap{overflow:auto;max-height:620px;border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+thead th{position:sticky;top:0;background:var(--surface);text-align:right;font-weight:600;font-size:12px;color:var(--ink-2);padding:10px 8px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+thead th:first-child,thead th:nth-child(2),thead th:nth-child(3){text-align:left}
+thead th[aria-sort]::after{content:" ↓";color:var(--ink)}
+thead th[aria-sort="ascending"]::after{content:" ↑"}
+tbody td{padding:7px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
+tbody td:first-child,tbody td:nth-child(2),tbody td:nth-child(3){text-align:left}
+tbody td:nth-child(3){color:var(--ink-3);max-width:220px;overflow:hidden;text-overflow:ellipsis}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--surface-2)}
+tbody tr.me{background:color-mix(in srgb,var(--sel) 12%,transparent);font-weight:600}
+td .spark{vertical-align:middle}
+.kpis3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.kpis4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mini-tbl{width:100%;border-collapse:collapse;font-size:13px}
+.mini-tbl th{font-size:11.5px;color:var(--ink-3);font-weight:600;text-align:right;padding:6px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+.mini-tbl th:first-child,.mini-tbl td:first-child{text-align:left}
+.mini-tbl td{padding:6px 6px;border-bottom:1px solid var(--grid);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mini-tbl td .sw{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:7px;vertical-align:0}
+.mini-tbl tr.tot td{font-weight:600;border-top:1px solid var(--line)}
+.multi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 16px;margin-top:6px}
+.mini .mn{font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini .mv{font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.mini svg{display:block;margin-top:4px;overflow:visible}
+@media (max-width:760px){.multi{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.notes{font-size:13.5px;color:var(--ink-2);max-width:880px}
+.notes li{margin:6px 0}
+footer{padding:30px 0 60px;color:var(--ink-3);font-size:13px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:1060px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid{grid-template-columns:minmax(0,1fr) 220px}.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.kpis3{grid-template-columns:repeat(3,minmax(0,1fr))}.g-map{grid-template-columns:1fr}}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .g2{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpis3{grid-template-columns:1fr}
+  .kpis4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts{grid-template-columns:1fr}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-map{display:none}
+  section{scroll-margin-top:20px}
+  .kpi .v{font-size:26px}
+  .controls{position:static}
+  #comune{width:100%}
+  .ctl{flex:1 1 140px}
+  .theme{margin-left:0}
+  h2{font-size:24px}
+  .lede{font-size:18px}
+}
+</style>
+</head>
+<body>
+<header class="hero wrap">
+  <a class="back" href="../index.html">← The Mind Walker</a>
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Dati della Regione Toscana · 273 comuni</div>
+      <h1>Il turismo in Toscana, comune per comune</h1>
+      <p class="lede">Quanti turisti arrivano, da dove, dove dormono, quando, quanto pesano su chi ci abita e quanto lavoro danno. Si parte da Piombino, ma si può scegliere qualunque comune e confrontarlo con il suo ambito turistico, la provincia o tutta la regione.</p>
+      <div class="meta" id="meta"></div>
+      <details class="guide">
+        <summary>Come si usa</summary>
+        <ol>
+          <li><b>Scegli un comune</b> nella casella in alto (si può scrivere il nome) oppure cliccalo sulla mappa.</li>
+          <li><b>Scegli con chi confrontarlo</b>: il suo ambito turistico, la provincia, la Toscana o un altro comune.</li>
+          <li><b>Scegli l'anno</b>: tutte le sezioni si aggiornano insieme. Passa sopra grafici e barre per vedere i numeri esatti.</li>
+          <li>Usa il menu delle sezioni per saltare da un argomento all'altro, e <b>Copia link</b> per mandare a qualcuno la pagina già aperta sul comune che stai guardando.</li>
+        </ol>
+      </details>
+    </div>
+    <figure class="hero-map" aria-hidden="true"><div id="hero-map"></div><figcaption id="hero-cap"></figcaption></figure>
+  </div>
+</header>
+
+<div class="controls" role="region" aria-label="Filtri">
+  <div class="wrap">
+    <div class="ctl"><label for="comune">Comune</label>
+      <input id="comune" list="comuni" autocomplete="off" spellcheck="false"><datalist id="comuni"></datalist></div>
+    <div class="ctl"><label for="cmp">Confronta con</label><select id="cmp"></select></div>
+    <div class="ctl"><label for="anno">Anno</label><select id="anno"></select></div>
+    <div class="ctl"><label>Misura</label>
+      <div class="seg" id="metric" role="group" aria-label="Misura">
+        <button data-v="pre" aria-pressed="true">Presenze (notti)</button><button data-v="arr" aria-pressed="false">Arrivi</button></div></div>
+    <div class="ctl"><label>&nbsp;</label><button class="btn" id="share" type="button">Copia link</button></div>
+    <div class="ctl theme"><label>Tema</label>
+      <div class="seg" id="theme" role="group" aria-label="Tema">
+        <button data-v="auto" aria-pressed="true">Auto</button><button data-v="light" aria-pressed="false">Chiaro</button><button data-v="dark" aria-pressed="false">Scuro</button></div></div>
+  </div>
+  <nav class="wrap secnav" id="secnav" aria-label="Sezioni">
+    <a href="#s-kpi">Sintesi</a><a href="#s-map">Mappa</a><a href="#s-time">Nel tempo</a><a href="#s-pio">Provenienze</a><a href="#s-str">Strutture</a><a href="#s-press">Pressione</a><a href="#s-eco">Il comune</a><a href="#s-tab">Tutti i comuni</a><a href="#s-notes">Note</a>
+  </nav>
+</div>
+
+<main class="wrap">
+  <section id="s-kpi" aria-labelledby="h-kpi">
+    <h2 id="h-kpi" class="sr">In sintesi</h2>
+    <p class="headline" id="headline"></p>
+    <div class="facts" id="facts"></div>
+    <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section id="s-map" aria-labelledby="h-map">
+    <h2 id="h-map">La mappa</h2>
+    <p class="sub">Clicca su un comune per selezionarlo. Le province sono tracciate in grigio.</p>
+    <div class="grid g-map">
+      <div class="card chart-card">
+        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:flex-end">
+          <div class="ctl"><label for="ind">Indicatore</label><select id="ind"></select></div>
+          <span class="pill" id="map-year"></span>
+        </div>
+        <div class="map-legend" id="map-legend" aria-hidden="true"></div>
+        <div id="map"></div>
+      </div>
+      <div class="card chart-card">
+        <div class="rank-head"><h3 id="rank-title">Classifica</h3><span class="pill" id="rank-me"></span></div>
+        <p class="note" id="rank-note"></p>
+        <ol class="rank-list" id="rank"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="s-time" aria-labelledby="h-time">
+    <h2 id="h-time">Nel tempo</h2>
+    <p class="sub" id="time-sub"></p>
+    <div class="grid g2">
+      <div class="card chart-card">
+        <h3 id="t1"></h3><p class="note">Italiani e stranieri, valori assoluti</p>
+        <div class="legend"><span><i class="key-rect" style="background:var(--ita)"></i>Italiani</span><span><i class="key-rect" style="background:var(--str)"></i>Stranieri</span></div>
+        <div id="c-stack"></div>
+      </div>
+      <div class="card chart-card">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap">
+          <div><h3>Chi cresce di più</h3><p class="note" id="idx-note"></p></div>
+          <div class="seg" id="base" role="group" aria-label="Anno base"><button data-v="2019" aria-pressed="true">2019 = 100</button><button data-v="first" aria-pressed="false" id="base-first">2012 = 100</button></div>
+        </div>
+        <div class="legend" id="lg-idx"></div>
+        <div id="c-idx"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="s-orig" aria-labelledby="h-orig">
+    <h2 id="h-orig">Da dove arrivano</h2>
+    <p class="sub">I dati regionali per comune distinguono solo tra italiani e stranieri. Qui la loro quota e quanto si fermano.</p>
+    <div class="grid g2">
+      <div class="card chart-card">
+        <h3>Quota di stranieri</h3><p class="note" id="share-note"></p>
+        <div class="legend" id="lg-share"></div>
+        <div id="c-share"></div>
+      </div>
+      <div class="card chart-card">
+        <h3>Permanenza media</h3><p class="note">Notti per arrivo</p>
+        <div class="legend" id="lg-stay"></div>
+        <div id="c-stay"></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-pio" id="s-pio">
+    <h2 id="h-pio">Da dove arrivano, regione per regione e paese per paese</h2>
+    <p class="sub" id="pio-sub">Caricamento dei dati sulle provenienze…</p>
+    <div class="table-tools">
+      <div class="ctl"><label for="pio-year">Anno</label><select id="pio-year"></select></div>
+      <div class="ctl"><label>Provenienza</label><div class="seg" id="pio-g"><button data-v="all" aria-pressed="true">Tutte</button><button data-v="Italia" aria-pressed="false">Regioni italiane</button><button data-v="Estero" aria-pressed="false">Paesi esteri</button></div></div>
+    </div>
+    <div class="grid g2">
+      <div class="card chart-card">
+        <h3 id="pio-t1"></h3><p class="note" id="pio-n1"></p>
+        <div class="legend"><span><i class="key-rect" style="background:var(--ita)"></i>Regioni italiane</span><span><i class="key-rect" style="background:var(--str)"></i>Paesi esteri</span></div>
+        <div id="c-pio-bars"></div>
+      </div>
+      <div class="card chart-card">
+        <h3>Come sono cambiate</h3><p class="note" id="pio-n2"></p>
+        <div id="c-pio-multi" class="multi"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="s-str" aria-labelledby="h-str">
+    <h2 id="h-str">Strutture ricettive<span class="yearpill" id="str-year"></span></h2>
+    <p class="sub">Posti letto medi dell'anno per tipo di struttura, dal 2005. Agriturismi, campeggi, case vacanze e B&amp;B sono separati.</p>
+    <div class="grid g2">
+      <div class="card chart-card">
+        <h3 id="t-beds"></h3><p class="note">Posti letto per gruppo di strutture; passa sopra una barra per i dettagli</p>
+        <div class="legend" id="lg-beds"></div>
+        <div id="c-beds"></div>
+      </div>
+      <div class="card chart-card">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap">
+          <div><h3>Quali strutture crescono di più</h3><p class="note" id="grow-note"></p></div>
+          <div class="seg" id="gbase" role="group" aria-label="Anno di partenza"><button data-v="2005" aria-pressed="true">dal 2005</button><button data-v="2012" aria-pressed="false">dal 2012</button><button data-v="2019" aria-pressed="false">dal 2019</button></div>
+        </div>
+        <div id="c-grow"></div>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card chart-card">
+        <h3 id="t-tipi"></h3><p class="note">Strutture e posti letto medi per tipo</p>
+        <div style="overflow-x:auto"><table class="mini-tbl" id="tbl-tipi"></table></div>
+      </div>
+      <div class="card chart-card">
+        <h3>Quanto sono pieni i letti</h3><p class="note">Utilizzo lordo: presenze ÷ (posti letto × 365)</p>
+        <div class="legend" id="lg-occ"></div>
+        <div id="c-occ"></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-press" id="s-press">
+    <h2 id="h-press">Quanto pesa il turismo su chi ci vive<span class="yearpill" id="press-year"></span></h2>
+    <p class="sub" id="press-sub"></p>
+    <div class="explain" id="press-explain"></div>
+    <div class="kpis kpis3" id="press-kpis"></div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card chart-card">
+        <h3>Turisti ogni 100 residenti, stagione per stagione</h3><p class="note" id="season-note"></p>
+        <div class="legend" id="lg-season"></div>
+        <div id="c-season"></div>
+      </div>
+      <div class="card chart-card">
+        <div class="rank-head"><h3>Dove la pressione estiva è più forte</h3><span class="pill" id="press-me"></span></div>
+        <p class="note">Turisti presenti in media ogni 100 residenti, luglio–settembre</p>
+        <ol class="rank-list" id="press-rank"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-eco" id="s-eco">
+    <h2 id="h-eco">Il comune oltre il turismo<span class="yearpill" id="eco-year"></span></h2>
+    <p class="sub" id="eco-sub">Chi ci abita, quante imprese ci sono e in quali settori si lavora: i numeri che danno contesto al turismo.</p>
+    <div class="explain" id="eco-explain"></div>
+    <div class="kpis kpis4" id="eco-kpis"></div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card chart-card">
+        <h3>Residenti nel tempo</h3><p class="note" id="pop-note"></p>
+        <div class="legend" id="lg-pop"></div>
+        <div id="c-pop"></div>
+      </div>
+      <div class="card chart-card">
+        <h3 id="saldi-t">Nati, morti e chi arriva da fuori</h3><p class="note">Saldo naturale (nati meno morti) e saldo migratorio (iscritti meno cancellati), per anno</p>
+        <div class="legend"><span><i class="key-rect" style="background:var(--t1)"></i>Saldo naturale</span><span><i class="key-rect" style="background:var(--t3)"></i>Saldo migratorio</span></div>
+        <div id="c-saldi"></div>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card chart-card">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap">
+          <div><h3 id="eco-t1"></h3><p class="note" id="eco-n1"></p></div>
+          <div class="seg" id="eco-m" role="group" aria-label="Misura"><button data-v="add" aria-pressed="true">Addetti</button><button data-v="ul" aria-pressed="false">Imprese</button></div>
+        </div>
+        <div id="c-eco-bars"></div>
+      </div>
+      <div class="card chart-card">
+        <h3>Come cambiano i settori</h3><p class="note" id="eco-n2"></p>
+        <div id="c-eco-multi" class="multi"></div>
+      </div>
+    </div>
+    <div class="grid" style="margin-top:16px">
+      <div class="card chart-card">
+        <h3>Peso di alloggio e ristorazione sul lavoro</h3><p class="note">Addetti in alberghi, campeggi, ristoranti e bar sul totale degli addetti delle imprese</p>
+        <div class="legend" id="lg-eco"></div>
+        <div id="c-eco-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="s-tab" aria-labelledby="h-tab">
+    <h2 id="h-tab">Tutti i comuni</h2>
+    <p class="sub">Clicca su un'intestazione per ordinare, su una riga per selezionare il comune.</p>
+    <div class="table-tools">
+      <div class="ctl"><label for="q">Cerca</label><input id="q" placeholder="Nome del comune" style="width:200px"></div>
+      <div class="ctl"><label for="f-amb">Ambito turistico</label><select id="f-amb"><option value="">Tutti</option></select></div>
+      <div class="ctl"><label>Righe</label><div class="seg" id="rows-kind"><button data-v="com" aria-pressed="true">Comuni</button><button data-v="amb" aria-pressed="false">Ambiti</button></div></div>
+    </div>
+    <div class="card tbl-wrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+  </section>
+
+  <section id="s-notes" aria-labelledby="h-notes">
+    <h2 id="h-notes">Note sui dati</h2>
+    <ul class="notes">
+      <li><b>Fonte</b>: Regione Toscana, open data su <a href="https://dati.toscana.it">dati.toscana.it</a>, su rilevazione Istat "Movimento dei clienti negli esercizi ricettivi". Dataset annuali "Movimento dei clienti e struttura dell'offerta ricettiva" (arrivi e presenze per comune, italiani e stranieri) e "Consistenza media" (esercizi e posti letto).</li>
+      <li><b>Arrivi</b> = clienti registrati nelle strutture; <b>presenze</b> = notti trascorse. La permanenza media è presenze ÷ arrivi.</li>
+      <li><b>Affitti brevi esclusi</b>: i dati sono al netto delle locazioni turistiche, che la Regione rileva dal 2019 ma non include in questi file. Le notti passate in appartamenti affittati online quindi non compaiono qui.</li>
+      <li><b>Ultimo anno provvisorio</b>: secondo la Regione i dati più recenti restano provvisori finché Istat non li diffonde. 2020 e 2021 risentono della pandemia.</li>
+      <li><b>Consistenza</b>: esercizi e posti letto sono medie annue e possono differire leggermente dai dati pubblicati altrove per arrotondamenti.</li>
+      <li><b>Segreto statistico</b>: in alcuni anni la Regione accorpa due comuni piccoli in un'unica riga. In quegli anni i singoli comuni restano vuoti, ma i loro numeri sono contati nei totali di ambito, provincia e regione.</li>
+      <li><b>Fusioni</b>: i comuni nati da una fusione (es. Rio, Montalcino, Abetone Cutigliano) hanno la serie ricostruita sommando i comuni d'origine.</li>
+      <li><b>Provenienze e tipi di struttura</b>: il dettaglio per regione e paese di provenienza (2012–2025) e i posti letto per tipo di struttura (2005–2025) vengono dalla <a href="https://www.regione.toscana.it/statistiche/banca-dati-turismo">banca dati turismo pubblica della Regione Toscana</a>, che arriva fino al singolo comune. Gli open data in formato CSV invece distinguono solo italiani e stranieri e solo alberghiero ed extra-alberghiero. I totali delle due fonti coincidono. Dati estratti a ottobre 2026.</li>
+      <li><b>Imprese e lavoro</b>: sedi (unità locali) e addetti medi annui delle imprese per settore ATECO (ISTAT, archivio ASIA, open data della Regione Toscana), 2017–2023. ASIA non comprende agricoltura (quindi nemmeno gli agriturismi) e pubblica amministrazione.</li>
+      <li><b>Popolazione</b>: residenti al 31 dicembre, saldo naturale e migratorio dal bilancio demografico ISTAT (banca dati Demografia della Regione Toscana), 2002–2024; età media e indice di vecchiaia al 31/12/2024 (open data Regione Toscana).</li>
+      <li><b>Stagioni</b>: presenze per trimestre dalla banca dati turismo regionale, divise per i giorni del trimestre e per i residenti.</li>
+      <li><b>Pressione turistica</b>: notti turistiche dell'anno divise per i residenti al 31 dicembre (bilancio demografico, banca dati Demografia della Regione Toscana). "Turisti presenti ogni 100 abitanti" è la stessa misura spalmata sui 365 giorni: in estate il valore reale è molto più alto. Per gli anni non ancora pubblicati si usa l'ultima popolazione disponibile.</li>
+    </ul>
+  </section>
+</main>
+<footer class="wrap" id="foot"></footer>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const TOPO = /*__TOPO__*/null;
+
+(function(){
+"use strict";
+const $ = s => document.querySelector(s);
+const it = d3.formatLocale({decimal:",",thousands:".",grouping:[3],currency:["€",""]});
+const fInt = it.format(",.0f"), f1 = it.format(",.1f"), fPct = it.format(".0%"), fPct1 = it.format(".1%");
+const fShort = v => { const a=Math.abs(v); return a>=1e6? it.format(a>=1e7?",.1~f":",.2~f")(v/1e6)+" mln" : a>=1e4? fInt(Math.round(v/1e3))+" mila" : fInt(v); };
+const fAxis = v => { const a=Math.abs(v); return a>=1e6? it.format(",.1~f")(v/1e6)+" mln" : a>=1e3? it.format(",.0f")(v/1e3)+"k" : fInt(v); };
+const fSigned = (v,fmt) => { const t=fmt(Math.abs(v)); return (/^0([,.]0+)?(%| punti)?$/.test(t)?"±":v>0?"+":"−")+t; };
+const YEARS = DATA.years, Y0 = YEARS[0], YN = YEARS[YEARS.length-1];
+const U = new Map(DATA.units.map(u=>[u.id,u]));
+const byName = new Map(DATA.units.map(u=>[u.n.toLowerCase(),u.id]));
+const AMBITI = [...new Set(DATA.units.map(u=>u.a).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"it"));
+const PROV = {AR:"Arezzo",FI:"Firenze",GR:"Grosseto",LI:"Livorno",LU:"Lucca",MS:"Massa-Carrara",PI:"Pisa",PO:"Prato",PT:"Pistoia",SI:"Siena"};
+
+/* ---------- state ---------- */
+const st = { id:"049012", cmp:"amb", year:YN, metric:"pre", ind:"pre", base:"2019", tblKind:"com", sort:{k:"v",dir:-1} };
+try{ const h=new URLSearchParams(location.hash.slice(1)); if(h.get("c")&&U.has(h.get("c"))) st.id=h.get("c"); if(h.get("y")&&YEARS.includes(+h.get("y"))) st.year=+h.get("y"); if(h.get("m")==="arr") st.metric="arr"; if(h.get("v")) st.cmp=h.get("v"); }catch(e){}
+
+/* ---------- data access ---------- */
+// row = [arrIt, preIt, arrStr, preStr] ; con = [esAlb, lettiAlb, esExt, lettiExt]
+function entity(key){
+  if(key.startsWith("C:")){ const id=key.slice(2), u=U.get(id); return {key, name:u.n, mov:DATA.mov[id]||[], con:DATA.con[id]||[]}; }
+  if(key==="TOS") return {key, name:"Toscana", mov:DATA.agg.TOS.mov, con:DATA.agg.TOS.con};
+  if(key.startsWith("A:")) return {key, name:"Ambito "+key.slice(2), short:key.slice(2), mov:(DATA.agg[key]||{}).mov||[], con:(DATA.agg[key]||{}).con||[]};
+  if(key.startsWith("P:")) return {key, name:"Provincia di "+(PROV[key.slice(2)]||key.slice(2)), mov:(DATA.agg[key]||{}).mov||[], con:(DATA.agg[key]||{}).con||[]};
+}
+const yi = y => YEARS.indexOf(y);
+function val(e, y, what){
+  const r = e.mov[yi(y)], c = e.con[yi(y)];
+  switch(what){
+    case "arr": return r? r[0]+r[2] : null;
+    case "pre": return r? r[1]+r[3] : null;
+    case "arrI": return r? r[0]:null; case "arrS": return r? r[2]:null;
+    case "preI": return r? r[1]:null; case "preS": return r? r[3]:null;
+    case "perm": return r && (r[0]+r[2])>0 ? (r[1]+r[3])/(r[0]+r[2]) : null;
+    case "permI": return r && r[0]>0 ? r[1]/r[0] : null;
+    case "permS": return r && r[2]>0 ? r[3]/r[2] : null;
+    case "shS_arr": return r && (r[0]+r[2])>0 ? r[2]/(r[0]+r[2]) : null;
+    case "shS_pre": return r && (r[1]+r[3])>0 ? r[3]/(r[1]+r[3]) : null;
+    case "letti": return c? c[1]+c[3] : null;
+    case "lettiA": return c? c[1]:null; case "lettiE": return c? c[3]:null;
+    case "es": return c? c[0]+c[2] : null;
+    case "occ": { const l = c? c[1]+c[3]:0; return r && l>0 ? (r[1]+r[3])/(l*365) : null; }
+    case "pab": { const p=popOf(e.key,y), pr=r? r[1]+r[3]:null; return p&&pr!=null? pr/p : null; }
+    case "t100": { const p=popOf(e.key,y), pr=r? r[1]+r[3]:null; return p&&pr!=null? pr/365/p*100 : null; }
+    case "lab": { const p=popOf(e.key,y), l=c? c[1]+c[3]:null; return p&&l!=null? l/p*100 : null; }
+    case "agri": { if(!TIPI) return null; const T=tipiOf(e.key), j=TY.indexOf(y); if(j<0) return null; const tot=d3.sum(T,a=>a[j]); return tot>0? T[3][j]/tot : null; }
+    case "var19": { const a=val(e,y,st.metric), b=val(e,2019,st.metric); return a!=null&&b>0? a/b-1 : null; }
+    case "varPrev": { if(y===Y0) return null; const a=val(e,y,st.metric), b=val(e,y-1,st.metric); return a!=null&&b>0? a/b-1 : null; }
+  }
+}
+const sel = () => entity("C:"+st.id);
+
+/* ---------- strutture per tipo, popolazione ---------- */
+const TIPI = DATA.tipi, TY = TIPI ? TIPI.years : [];
+const GRUPPI = [
+  {n:"Alberghi", idx:[0,1,2], c:"--t1"},
+  {n:"Campeggi e villaggi", idx:[4], c:"--t2"},
+  {n:"Agriturismi", idx:[3], c:"--t3"},
+  {n:"Case e appartamenti vacanze", idx:[5], c:"--t4"},
+  {n:"Altre extra-alberghiere", idx:[6,7,8,9,10,11], c:"--t5"}];
+const tipoGruppo = k => GRUPPI.find(g=>g.idx.includes(k));
+const unitsOf = key => key.startsWith("C:") ? [key.slice(2)] : key==="TOS" ? DATA.units.map(u=>u.id)
+  : key.startsWith("A:") ? DATA.units.filter(u=>u.a===key.slice(2)).map(u=>u.id)
+  : key.startsWith("P:") ? DATA.units.filter(u=>u.p===key.slice(2)).map(u=>u.id) : [];
+const _tc = new Map();
+function tipiOf(key, which="l"){
+  const ck=key+"|"+which; if(_tc.has(ck)) return _tc.get(ck);
+  const out = (TIPI? TIPI.names:[]).map(()=>TY.map(()=>0));
+  if(TIPI) for(const id of unitsOf(key)){ const o=TIPI[which][id]; if(!o) continue; for(const k in o) o[k].forEach((v,i)=>out[+k][i]+=v); }
+  _tc.set(ck,out); return out;
+}
+const POP = DATA.pop;
+function popOf(key, y){
+  if(!POP) return null; const i=YEARS.indexOf(y); if(i<0) return null;
+  let s=0, ok=false; for(const id of unitsOf(key)){ const v=POP.v[id]; if(v&&v[i]){ s+=v[i]; ok=true; } } return ok? s : null;
+}
+function cmpKey(){
+  const u=U.get(st.id);
+  if(st.cmp==="amb") return u.a? "A:"+u.a : "TOS";
+  if(st.cmp==="prov") return "P:"+u.p;
+  if(st.cmp==="tos") return "TOS";
+  if(st.cmp.startsWith("C:")) return st.cmp;
+  return "TOS";
+}
+const mName = () => st.metric==="pre" ? "presenze" : "arrivi";
+
+/* ---------- tooltip ---------- */
+const tip = $("#tip");
+function showTip(ev, title, rows){
+  tip.replaceChildren();
+  const t=document.createElement("div"); t.className="t"; t.textContent=title; tip.append(t);
+  for(const r of rows){
+    const d=document.createElement("div"); d.className="row";
+    if(r.color){ const k=document.createElement("i"); k.className="k"; k.style.borderColor=r.color; if(r.dash) k.style.borderTopStyle="dashed"; d.append(k); }
+    const s=document.createElement("span"); s.textContent=r.label; d.append(s);
+    const b=document.createElement("b"); b.textContent=r.value; d.append(b);
+    tip.append(d);
+  }
+  tip.style.opacity=1; moveTip(ev);
+}
+function moveTip(ev){
+  const w=tip.offsetWidth, h=tip.offsetHeight; let x=ev.clientX+14, y=ev.clientY+14;
+  if(x+w>innerWidth-8) x=ev.clientX-w-14; if(y+h>innerHeight-8) y=ev.clientY-h-14;
+  tip.style.left=x+"px"; tip.style.top=y+"px";
+}
+const hideTip = () => tip.style.opacity=0;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+/* ---------- generic charts ---------- */
+function frame(el, h){
+  const w = Math.max(280, el.clientWidth || el.parentNode.clientWidth-36);
+  el.replaceChildren();
+  const m = {t:10,r:14,b:24,l:46};
+  const svg = d3.select(el).append("svg").attr("width",w).attr("height",h).attr("viewBox",[0,0,w,h]);
+  return {svg, w, h, m, iw:w-m.l-m.r, ih:h-m.t-m.b};
+}
+function annotations(g, x, ih){
+  const notes=[[2020,"Covid"]].filter(([y])=>YEARS.includes(y));
+  const a=g.append("g").attr("class","annot");
+  for(const [y,t] of notes){ const xx=x(y); a.append("line").attr("x1",xx).attr("x2",xx).attr("y1",0).attr("y2",ih); a.append("text").attr("x",xx+4).attr("y",10).text(t); }
+}
+/* line chart: series=[{name,color,dash,values:[{y,v}]}] */
+function lineChart(el, series, {fmt=fInt, axisFmt=fAxis, h=260, zero=true, refLine=null, years:YS=YEARS}={}){
+  const F=frame(el,h), {svg,iw,ih,m}=F, g=svg.append("g").attr("transform",`translate(${m.l},${m.t})`);
+  const x=d3.scalePoint().domain(YS).range([0,iw]).padding(.15);
+  const all=series.flatMap(s=>s.values.filter(d=>d.v!=null).map(d=>d.v));
+  if(refLine!=null) all.push(refLine);
+  let lo=d3.min(all)??0, hi=d3.max(all)??1; if(zero) lo=Math.min(0,lo);
+  const pad=(hi-lo)*.08||1; const y=d3.scaleLinear().domain([zero?lo:lo-pad,hi+pad]).nice().range([ih,0]);
+  g.append("g").attr("class","grid").call(d3.axisLeft(y).ticks(5).tickSize(-iw).tickFormat("")).call(s=>s.select(".domain").remove());
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).ticks(5).tickSize(0).tickPadding(8).tickFormat(axisFmt));
+  const step = iw<420 ? 3 : iw<620 ? 2 : 1;
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${ih})`).call(d3.axisBottom(x).tickSize(0).tickPadding(8).tickValues(YS.filter((d,i)=>(i%step===0&&YS.length-1-i>=Math.max(2,step))||d===YS[YS.length-1])).tickFormat(d=>d));
+  annotations(g,x,ih);
+  if(refLine!=null) g.append("line").attr("x1",0).attr("x2",iw).attr("y1",y(refLine)).attr("y2",y(refLine)).attr("stroke",css("--ink-3")).attr("stroke-width",1);
+  const line=d3.line().defined(d=>d.v!=null).x(d=>x(d.y)).y(d=>y(d.v)).curve(d3.curveMonotoneX);
+  for(const s of series){
+    g.append("path").attr("fill","none").attr("stroke",s.color).attr("stroke-width",s.w||2).attr("stroke-dasharray",s.dash?"5 4":null).attr("stroke-linejoin","round").attr("stroke-linecap","round").attr("d",line(s.values));
+    const last=[...s.values].reverse().find(d=>d.v!=null);
+    if(last) g.append("circle").attr("cx",x(last.y)).attr("cy",y(last.v)).attr("r",3.5).attr("fill",s.color).attr("stroke",css("--surface")).attr("stroke-width",2);
+  }
+  // selected year marker
+  if(YS.includes(st.year)) g.insert("rect",":first-child").attr("x",x(st.year)-x.step()/2).attr("width",x.step()).attr("y",0).attr("height",ih).attr("fill",css("--surface-2"));
+  // hover
+  const hair=g.append("line").attr("class","hair").attr("y1",0).attr("y2",ih).style("opacity",0);
+  const dots=g.append("g");
+  g.append("rect").attr("width",iw).attr("height",ih).attr("fill","transparent")
+    .on("pointermove",ev=>{
+      const [mx]=d3.pointer(ev); const yr=YS[Math.max(0,Math.min(YS.length-1,Math.round((mx-x(YS[0]))/x.step())))];
+      hair.attr("x1",x(yr)).attr("x2",x(yr)).style("opacity",1);
+      dots.selectAll("circle").data(series.map(s=>({s,d:s.values.find(d=>d.y===yr)})).filter(o=>o.d&&o.d.v!=null))
+        .join("circle").attr("r",4).attr("cx",x(yr)).attr("cy",o=>y(o.d.v)).attr("fill",o=>o.s.color).attr("stroke",css("--surface")).attr("stroke-width",2);
+      showTip(ev,String(yr),series.map(s=>{const d=s.values.find(d=>d.y===yr);return {label:s.name,color:s.color,dash:s.dash,value:d&&d.v!=null?fmt(d.v):"n.d."};}));
+    })
+    .on("pointerleave",()=>{hair.style("opacity",0);dots.selectAll("*").remove();hideTip();});
+  return F;
+}
+/* stacked bars: parts=[{name,color,get(y)}] */
+function stackChart(el, parts, {h=260, fmt=fInt, years:YS=YEARS, onPick=null}={}){
+  const F=frame(el,h), {svg,iw,ih,m}=F, g=svg.append("g").attr("transform",`translate(${m.l},${m.t})`);
+  const x=d3.scaleBand().domain(YS).range([0,iw]).padding(.22);
+  const rows=YS.map(yr=>{const vals=parts.map(p=>p.get(yr)); return {yr, vals, tot: vals.some(v=>v==null)?null:d3.sum(vals)};});
+  const y=d3.scaleLinear().domain([0,d3.max(rows,r=>r.tot)||1]).nice().range([ih,0]);
+  g.append("g").attr("class","grid").call(d3.axisLeft(y).ticks(5).tickSize(-iw).tickFormat("")).call(s=>s.select(".domain").remove());
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).ticks(5).tickSize(0).tickPadding(8).tickFormat(fAxis));
+  const step = iw<420 ? 3 : iw<620 ? 2 : 1;
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${ih})`).call(d3.axisBottom(x).tickSize(0).tickPadding(8).tickValues(YS.filter((d,i)=>(i%step===0&&YS.length-1-i>=Math.max(2,step))||d===YS[YS.length-1])));
+  const gap=2;
+  for(const r of rows){
+    if(r.tot==null){ g.append("text").attr("x",x(r.yr)+x.bandwidth()/2).attr("y",ih-4).attr("text-anchor","middle").text("n.d."); continue; }
+    let acc=0; const cell=g.append("g").style("opacity", r.yr===st.year?1:.78);
+    r.vals.forEach((v,i)=>{
+      const y0=y(acc), y1=y(acc+v); acc+=v;
+      const hgt=Math.max(0,y0-y1-(i<r.vals.length-1&&v>0?gap:0));
+      const isTop=i===r.vals.length-1;
+      const top=y1+(i<r.vals.length-1?0:0);
+      if(hgt<=0) return;
+      const rad=isTop?Math.min(4,hgt/2,x.bandwidth()/2):0;
+      const xx=x(r.yr), bw=x.bandwidth();
+      const p=d3.path(); const yy=y0-hgt;
+      p.moveTo(xx,y0); p.lineTo(xx,yy+rad); if(rad) p.quadraticCurveTo(xx,yy,xx+rad,yy); p.lineTo(xx+bw-rad,yy); if(rad) p.quadraticCurveTo(xx+bw,yy,xx+bw,yy+rad); p.lineTo(xx+bw,y0); p.closePath();
+      cell.append("path").attr("d",p.toString()).attr("fill",parts[i].color);
+    });
+    g.append("rect").attr("x",x(r.yr)-x.step()*x.paddingInner()/2).attr("width",x.step()).attr("y",0).attr("height",ih).attr("fill","transparent")
+      .on("pointerenter",function(){cell.style("opacity",1)})
+      .on("pointermove",ev=>showTip(ev,String(r.yr),[...parts.map((p,i)=>({label:p.name,color:p.color,value:fmt(r.vals[i])})).reverse(),{label:"Totale",value:fmt(r.tot)}]))
+      .on("pointerleave",function(){cell.style("opacity",r.yr===st.year?1:.78);hideTip();})
+      ; /* niente clic: l'anno si sceglie solo in alto */
+  }
+  return F;
+}
+function legend(el, items){
+  el.replaceChildren();
+  for(const it2 of items){ const s=document.createElement("span"); const k=document.createElement("i"); k.className="key-line"+(it2.dash?" dash":""); k.style.borderColor=it2.color; s.append(k, document.createTextNode(it2.name)); el.append(s); }
+}
+
+/* ---------- controls ---------- */
+function setupControls(){
+  const dl=$("#comuni"); for(const u of DATA.units){ const o=document.createElement("option"); o.value=u.n; dl.append(o); }
+  const inp=$("#comune"); inp.value=U.get(st.id).n;
+  const pick=()=>{ const id=byName.get(inp.value.trim().toLowerCase()); if(id){ st.id=id; if(st.cmp.startsWith("C:")&&st.cmp==="C:"+id) st.cmp="amb"; fillCmp(); render(); inp.blur(); } };
+  inp.addEventListener("change",pick); inp.addEventListener("keydown",e=>{ if(e.key==="Enter") pick(); });
+  inp.addEventListener("focus",()=>inp.select());
+  const ys=$("#anno"); for(const y of [...YEARS].reverse()){ const o=document.createElement("option"); o.value=y; o.textContent=y; ys.append(o); }
+  ys.value=st.year; ys.onchange=()=>{st.year=+ys.value; render();};
+  fillCmp(); $("#cmp").onchange=e=>{st.cmp=e.target.value; render();};
+  segs("#metric",v=>{st.metric=v; if(["pre","arr"].includes(st.ind)) st.ind=v; fillInd(); render();}, st.metric);
+  segs("#base",v=>{st.base=v; renderTime();}, st.base);
+  $("#base-first").textContent=Y0+" = 100";
+  segs("#rows-kind",v=>{st.tblKind=v; renderTable();}, st.tblKind);
+  segs("#theme",v=>{ if(v==="auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme",v); try{localStorage.setItem("tt-theme",v)}catch(e){} render(); }, (()=>{try{return localStorage.getItem("tt-theme")||"auto"}catch(e){return "auto"}})());
+  fillInd(); $("#ind").onchange=e=>{st.ind=e.target.value; renderMap();};
+  const fa=$("#f-amb"); for(const a of AMBITI){ const o=document.createElement("option"); o.value=a; o.textContent=a; fa.append(o); }
+  fa.onchange=renderTable; $("#q").oninput=renderTable;
+  let t; addEventListener("resize",()=>{clearTimeout(t); t=setTimeout(render,150);});
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",render);
+}
+function segs(sel, on, initial){
+  const el=$(sel); const btns=[...el.querySelectorAll("button")];
+  const set=v=>btns.forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===v));
+  btns.forEach(b=>b.onclick=()=>{set(b.dataset.v); on(b.dataset.v);}); set(initial);
+  if(sel==="#theme" && initial!=="auto") document.documentElement.setAttribute("data-theme",initial);
+}
+function fillCmp(){
+  const u=U.get(st.id), s=$("#cmp"); s.replaceChildren();
+  const add=(v,t)=>{const o=document.createElement("option"); o.value=v; o.textContent=t; s.append(o);};
+  add("amb", u.a? "Ambito: "+u.a : "Ambito (n.d.)"); add("prov","Provincia di "+PROV[u.p]); add("tos","Toscana");
+  const og=document.createElement("optgroup"); og.label="Un altro comune";
+  const nearby = DATA.units.filter(x=>x.a===u.a && x.id!==u.id).sort((a,b)=>(val(entity("C:"+b.id),YN,"pre")||0)-(val(entity("C:"+a.id),YN,"pre")||0));
+  const others = DATA.units.filter(x=>x.a!==u.a);
+  for(const x of [...nearby, ...others]){ const o=document.createElement("option"); o.value="C:"+x.id; o.textContent=x.n+(x.a===u.a?" · stesso ambito":""); og.append(o); }
+  s.append(og);
+  if(st.cmp.startsWith("C:") && !U.has(st.cmp.slice(2))) st.cmp="amb";
+  s.value=st.cmp;
+}
+const INDS = () => [
+  ["pre","Presenze (notti)"],["arr","Arrivi"],["perm","Permanenza media"],["sh","Quota stranieri ("+mName()+")"],
+  ["occ","Utilizzo dei posti letto"],["letti","Posti letto"],["pab","Notti turistiche per abitante"],["est","Turisti ogni 100 residenti d'estate"],["lav","Quota di addetti in alloggio e ristorazione"],["lab","Posti letto ogni 100 abitanti"],["agri","Quota di posti letto in agriturismo"],["var19","Variazione "+mName()+" sul 2019"],["varPrev","Variazione "+mName()+" sull'anno prima"]];
+function fillInd(){
+  const s=$("#ind"), cur=st.ind; s.replaceChildren();
+  for(const [v,t] of INDS()){ const o=document.createElement("option"); o.value=v; o.textContent=t; s.append(o); }
+  s.value=cur;
+}
+function indVal(e,y,ind){
+  if(ind==="sh") return val(e,y,"shS_"+st.metric);
+  if(ind==="est") return (seasonPer100(e.key,y)||[])[2]??null;
+  if(ind==="lav") return ASIA? turShare(e.key, Math.min(y, ASIA.years[ASIA.years.length-1])) : null;
+  return val(e,y,ind); }
+function indFmt(ind){ return ({perm:v=>f1(v)+" notti", pab:v=>f1(v), lab:v=>f1(v), est:v=>f1(v), lav:fPct1, agri:fPct, sh:fPct, occ:fPct, var19:v=>fSigned(v,fPct), varPrev:v=>fSigned(v,fPct)})[ind] || fInt; }
+
+/* ---------- KPI + headline ---------- */
+function deltaSpan(cur, prev, label){
+  const s=document.createElement("span");
+  if(cur==null||prev==null||prev===0){ s.textContent=label+": n.d."; return s; }
+  const d=cur/prev-1; const b=document.createElement("b"); b.className=d>=0?"up":"down"; b.textContent=(d>=0?"▲ ":"▼ ")+fSigned(d,fPct1);
+  s.append(b, document.createTextNode(" "+label)); return s;
+}
+function deltaPts(cur, prev, label){
+  const s=document.createElement("span");
+  if(cur==null||prev==null){ s.textContent=label+": n.d."; return s; }
+  const d=(cur-prev)*100; const b=document.createElement("b"); b.className=d>=0?"up":"down"; b.textContent=(d>=0?"▲ ":"▼ ")+fSigned(d,f1)+" punti";
+  s.append(b, document.createTextNode(" "+label)); return s;
+}
+function renderKPI(){
+  const e=sel(), c=entity(cmpKey()), y=st.year, py=y-1, has=y=>YEARS.includes(y);
+  const cards=[
+    {l:"Presenze (notti)", k:"pre", f:fShort, full:fInt},
+    {l:"Arrivi", k:"arr", f:fShort, full:fInt},
+    {l:"Permanenza media", k:"perm", f:v=>f1(v), unit:" notti", full:v=>f1(v)+" notti"},
+    {l:"Quota stranieri ("+mName()+")", k:"shS_"+st.metric, f:fPct, pts:true, full:fPct},
+    {l:"Posti letto", k:"letti", f:fShort, full:fInt},
+    {l:"Utilizzo posti letto", k:"occ", f:fPct, pts:true, full:fPct},
+  ];
+  const box=$("#kpis"); box.replaceChildren();
+  for(const k of cards){
+    const v=val(e,y,k.k), card=document.createElement("div"); card.className="card kpi";
+    const l=document.createElement("div"); l.className="l"; l.textContent=k.l;
+    const vv=document.createElement("div"); vv.className="v"; vv.textContent=v==null?"n.d.":k.f(v); if(v!=null) vv.title=k.full(v);
+    if(k.unit&&v!=null){ const u=document.createElement("span"); u.style.cssText="font-size:15px;font-family:Inter;font-weight:500;color:var(--ink-3)"; u.textContent=k.unit; vv.append(u); }
+    const d=document.createElement("div"); d.className="d";
+    if(has(py)) d.append(k.pts? deltaPts(v,val(e,py,k.k),"sul "+py) : deltaSpan(v,val(e,py,k.k),"sul "+py));
+    if(y!==2019) d.append(k.pts? deltaPts(v,val(e,2019,k.k),"sul 2019") : deltaSpan(v,val(e,2019,k.k),"sul 2019"));
+    const cc=document.createElement("div"); cc.className="c";
+    const cv=val(c,y,k.k);
+    if(["pre","arr","letti"].includes(k.k)){
+      cc.textContent = cv? `${fPct1(v/cv)} del totale di ${c.short||c.name}`.replace(/^NaN.*/,"") : "";
+      if(c.key.startsWith("C:")) cc.textContent = cv!=null? `${c.name}: ${k.full(cv)}` : `${c.name}: n.d.`;
+    } else cc.textContent = `${c.short||c.name}: ${cv==null?"n.d.":k.full(cv)}`;
+    card.append(l,vv,d,cc); box.append(card);
+  }
+  // headline
+  const h=$("#headline"); h.replaceChildren();
+  const pre=val(e,y,"pre"), arr=val(e,y,"arr");
+  if(pre==null){ h.textContent=`Per ${e.name} non ci sono dati nel ${y} (comune accorpato ad un altro per segreto statistico, o senza strutture).`; return; }
+  const ranks = DATA.units.map(u=>({id:u.id,v:val(entity("C:"+u.id),y,"pre")})).filter(r=>r.v!=null).sort((a,b)=>b.v-a.v);
+  const rank = ranks.findIndex(r=>r.id===st.id)+1;
+  const tos=val(entity("TOS"),y,"pre");
+  const v19=val(e,2019,"pre"), sh=val(e,y,"shS_pre");
+  const B=t=>{const b=document.createElement("b"); b.textContent=t; return b;};
+  h.append("Nel ", B(String(y)), ", ", B(e.name), " ha registrato ", B(fInt(arr)+" arrivi"), " e ", B(fInt(pre)+" notti"),
+    ` (${rank}° su ${ranks.length} comuni toscani, ${fPct1(pre/tos)} delle presenze regionali). `);
+  if(v19 && y!==2019) h.append(`Rispetto al 2019 le notti sono ${pre>=v19?"cresciute":"calate"} del ${fPct(Math.abs(pre/v19-1))}; `);
+  h.append(`gli stranieri valgono il ${fPct(sh)} delle notti e ogni ospite si ferma in media ${f1(pre/arr)} notti.`);
+  const pab=val(e,y,"pab"); if(pab!=null) h.append(` In un anno ci sono ${f1(pab)} notti turistiche per ogni residente.`);
+}
+
+/* ---------- map ---------- */
+let geo, provMesh, proj, pathGen;
+function setupMap(){
+  const obj=TOPO.objects[Object.keys(TOPO.objects)[0]];
+  geo=topojson.feature(TOPO,obj);
+  provMesh=topojson.mesh(TOPO,obj,(a,b)=>a.properties.p!==b.properties.p);
+}
+function colorScale(ind, values){
+  const seq=[0,1,2,3,4,5,6].map(i=>css("--seq-"+i));
+  if(ind==="var19"||ind==="varPrev"){
+    const th=[-.3,-.15,-.05,.05,.15,.3];
+    const cols=["--div-n3","--div-n2","--div-n1","--div-0","--div-p1","--div-p2","--div-p3"].map(css);
+    return {s:d3.scaleThreshold().domain(th).range(cols), breaks:th, labels:["< −30%","","","±5%","","","> +30%"]};
+  }
+  const s=d3.scaleQuantile().domain(values).range(seq);
+  return {s, breaks:s.quantiles()};
+}
+function renderMap(){
+  const el=$("#map"); const w=Math.max(280, el.clientWidth||600), h=Math.round(Math.min(w*1.02, 660));
+  el.replaceChildren();
+  proj=d3.geoTransverseMercator().rotate([-11,0]).fitExtent([[6,6],[w-6,h-6]],geo); pathGen=d3.geoPath(proj);
+  const svg=d3.select(el).append("svg").attr("width",w).attr("height",h).attr("viewBox",[0,0,w,h]).attr("role","img").attr("aria-label","Mappa dei comuni toscani");
+  const ind=st.ind, y=st.year, fmt=indFmt(ind);
+  const vals=new Map(DATA.units.map(u=>[u.id, indVal(entity("C:"+u.id),y,ind)]));
+  const present=[...vals.values()].filter(v=>v!=null);
+  const {s:col, breaks, labels}=colorScale(ind, present);
+  $("#map-year").textContent=y;
+  svg.append("g").selectAll("path").data(geo.features).join("path")
+    .attr("class",d=>"c"+(d.properties.c===st.id?" sel":"")).attr("d",pathGen)
+    .attr("fill",d=>{const v=vals.get(d.properties.c); return v==null?css("--null"):col(v);})
+    .on("pointermove",(ev,d)=>{const u=U.get(d.properties.c), e=entity("C:"+u.id), v=vals.get(u.id);
+      showTip(ev,u.n,[{label:INDS().find(i=>i[0]===ind)[1],value:v==null?"n.d.":fmt(v)},{label:"Presenze",value:fmtN(val(e,y,"pre"))},{label:"Arrivi",value:fmtN(val(e,y,"arr"))},{label:"Ambito",value:u.a||"—"}]);})
+    .on("pointerleave",hideTip)
+    .on("click",(ev,d)=>{st.id=d.properties.c; $("#comune").value=U.get(st.id).n; fillCmp(); render();});
+  svg.append("path").attr("class","prov").attr("d",pathGen(provMesh));
+  svg.select("path.sel").raise();
+  // province labels
+  const pc=d3.rollup(geo.features,v=>d3.geoCentroid({type:"FeatureCollection",features:v}),d=>d.properties.p);
+  // legend
+  const lg=$("#map-legend"); lg.replaceChildren();
+  const cols=col.range();
+  cols.forEach((c,i)=>{ const d=document.createElement("div"); const b=document.createElement("i"); b.style.background=c; const t=document.createElement("span");
+    if(labels) t.textContent=labels[i]; else t.textContent = i===0? "meno" : i===cols.length-1? "più" : "";
+    if(!labels && i===Math.floor(cols.length/2)) t.textContent="mediana "+fmtShortInd(ind,d3.median(present));
+    d.append(b,t); lg.append(d); });
+  renderRank(vals, fmt);
+}
+const fmtN = v => v==null?"n.d.":fInt(v);
+function fmtShortInd(ind,v){ return ["pre","arr","letti"].includes(ind)? fShort(v) : indFmt(ind)(v); }
+function renderRank(vals, fmt){
+  const ind=st.ind, list=[...vals].filter(([,v])=>v!=null).sort((a,b)=>b[1]-a[1]);
+  const meIdx=list.findIndex(([id])=>id===st.id);
+  $("#rank-title").textContent=INDS().find(i=>i[0]===ind)[1];
+  $("#rank-me").textContent = meIdx>=0 ? `${U.get(st.id).n}: ${meIdx+1}° su ${list.length}` : `${U.get(st.id).n}: n.d.`;
+  $("#rank-note").textContent = `I primi 12 comuni nel ${st.year}`+(["perm","occ","sh"].includes(ind)?" (solo comuni con almeno 10.000 presenze)":"");
+  let L=list;
+  if(["perm","occ","sh"].includes(ind)) L=list.filter(([id])=> (val(entity("C:"+id),st.year,"pre")||0)>=10000);
+  const N=12, top=L.slice(0,N), mi=L.findIndex(([id])=>id===st.id);
+  const show=[...top]; if(mi>=N) show.push(null, L[mi]);
+  const max=d3.max(L,d=>Math.abs(d[1]))||1;
+  const ol=$("#rank"); ol.replaceChildren();
+  for(const r of show){
+    const li=document.createElement("li");
+    if(!r){ li.style.cssText="cursor:default;border:0;color:var(--ink-3)"; li.textContent="⋯"; ol.append(li); continue; }
+    const [id,v]=r; if(id===st.id) li.className="me";
+    const rk=document.createElement("span"); rk.className="r"; rk.textContent=(L.findIndex(x=>x[0]===id)+1)+"°";
+    const nm=document.createElement("span"); nm.textContent=U.get(id).n;
+    const bar=document.createElement("div"); bar.className="bar"; bar.style.width=Math.max(2,Math.abs(v)/max*100)+"%"; nm.append(bar);
+    const vv=document.createElement("span"); vv.className="num"; vv.textContent=fmtShortInd(ind,v);
+    li.append(rk,nm,vv); li.onclick=()=>{st.id=id; $("#comune").value=U.get(id).n; fillCmp(); render();};
+    ol.append(li);
+  }
+}
+
+/* ---------- time ---------- */
+function trio(){
+  const e=sel(), c=entity(cmpKey()), t=entity("TOS");
+  const out=[{e, name:e.name, color:css("--sel"), w:2.5}];
+  if(c.key!=="TOS") out.push({e:c, name:c.short||c.name, color:css("--cmp")});
+  out.push({e:t, name:"Toscana", color:css("--ref"), dash:true});
+  return out;
+}
+function renderTime(){
+  const e=sel(), m=st.metric;
+  $("#t1").textContent=`${e.name}: ${mName()} per anno`;
+  $("#time-sub").textContent=`Come sono cambiat${st.metric==="pre"?"e le presenze":"i gli arrivi"} dal ${Y0} al ${YN}. La barra più scura è l'anno scelto in alto.`;
+  stackChart($("#c-stack"),[{name:"Italiani",color:css("--ita"),get:y=>val(e,y,m+"I")},{name:"Stranieri",color:css("--str"),get:y=>val(e,y,m+"S")}]);
+  const base = st.base==="2019"?2019:Y0;
+  $("#idx-note").textContent=`Indice: ${mName()} del ${base} = 100. Sopra 100 = più del ${base}.`;
+  const T=trio();
+  const series=T.map(s=>{const b=val(s.e,base,m); return {...s, values:YEARS.map(y=>{const v=val(s.e,y,m); return {y, v: v!=null&&b? v/b*100 : null};})};});
+  legend($("#lg-idx"),series);
+  lineChart($("#c-idx"),series,{fmt:v=>it.format(",.0f")(v), axisFmt:v=>v, zero:false, refLine:100});
+}
+function renderOrigin(){
+  const T=trio(), m=st.metric;
+  $("#share-note").textContent=`Stranieri sul totale delle ${mName()}`;
+  const sh=T.map(s=>({...s, values:YEARS.map(y=>({y, v:val(s.e,y,"shS_"+m)}))}));
+  legend($("#lg-share"),sh);
+  lineChart($("#c-share"),sh,{fmt:fPct1, axisFmt:fPct, zero:true});
+  const e=sel();
+  const stay=[{name:e.name+" · italiani",color:css("--ita"),values:YEARS.map(y=>({y,v:val(e,y,"permI")}))},
+              {name:e.name+" · stranieri",color:css("--str"),values:YEARS.map(y=>({y,v:val(e,y,"permS")}))},
+              {name:"Toscana · tutti",color:css("--ref"),dash:true,values:YEARS.map(y=>({y,v:val(entity("TOS"),y,"perm")}))}];
+  legend($("#lg-stay"),stay);
+  lineChart($("#c-stay"),stay,{fmt:v=>f1(v)+" notti", axisFmt:v=>it.format(",.1~f")(v), zero:true});
+}
+function renderBeds(){
+  const e=sel(), y=st.year;
+  $("#t-beds").textContent=`${e.name}: posti letto dal ${TY[0]}`;
+  if(TIPI){
+    const T=tipiOf(e.key), E=tipiOf(e.key,"e");
+    legend2($("#lg-beds"), GRUPPI.map(g=>({name:g.n,color:css(g.c)})));
+    stackChart($("#c-beds"), GRUPPI.map(g=>({name:g.n,color:css(g.c),get:yy=>{const j=TY.indexOf(yy); return d3.sum(g.idx,k=>T[k][j]);}})), {years:TY});
+    renderGrowth(e, T, E);
+    renderTipiTable(e, T, E);
+  }
+  const Tr=trio().map(s=>({...s, values:YEARS.map(y=>({y, v:val(s.e,y,"occ")}))}));
+  legend($("#lg-occ"),Tr);
+  lineChart($("#c-occ"),Tr,{fmt:fPct1, axisFmt:fPct, zero:true});
+}
+function legend2(el, items){
+  el.replaceChildren();
+  for(const x of items){ const s=document.createElement("span"); const k=document.createElement("i"); k.className="key-rect"; k.style.background=x.color; s.append(k, document.createTextNode(x.name)); el.append(s); }
+}
+const growSt = { base: 2005 };
+function renderGrowth(e, T, E){
+  const y=Math.min(st.year, TY[TY.length-1]), j=TY.indexOf(y), b=TY.indexOf(Math.min(growSt.base, y)), base=TY[b];
+  $("#grow-note").textContent=`Variazione dei posti letto dal ${base} al ${y}, per tipo di struttura`;
+  const items=TIPI.names.map((n,k)=>({n, k, a:T[k][b], z:T[k][j], ea:E[k][b], ez:E[k][j]})).filter(o=>o.a>0||o.z>0).map(o=>({...o, d:o.z-o.a})).sort((p,q)=>q.d-p.d);
+  const el=$("#c-grow"); el.replaceChildren();
+  if(!items.length){ el.textContent="Nessuna struttura registrata."; return; }
+  const rowH=26, w=Math.max(260, el.clientWidth||460), narrow=w<480, labW=narrow? w*.4 : Math.min(190, w*.38), h=items.length*rowH+10;
+  const svg=d3.select(el).append("svg").attr("width",w).attr("height",h).attr("viewBox",[0,0,w,h]);
+  const m=d3.max(items,o=>Math.abs(o.d))||1, room=w-labW-10;
+  const hasNeg=items.some(o=>o.d<0);
+  const zero=labW+(hasNeg? room*0.35 : 0);
+  const x=d3.scaleLinear().domain([-m,m]).range([zero-(hasNeg?room*0.35:0), zero+room*(hasNeg?0.65:1)-(narrow?48:74)]);
+  const xs=v=>v>=0? zero+(x(v)-x(0)) : zero-(x(0)-x(v))*(hasNeg?0.35/0.65:1);
+  svg.append("line").attr("x1",zero).attr("x2",zero).attr("y1",2).attr("y2",h-4).attr("stroke",css("--line"));
+  const g=svg.selectAll("g.r").data(items).join("g").attr("class","r").attr("transform",(o,i)=>`translate(0,${i*rowH+5})`);
+  g.append("text").attr("x",labW-8).attr("y",rowH/2).attr("dy","0.32em").attr("text-anchor","end").style("fill","var(--ink-2)").style("font-size",narrow?"11px":"12.5px").text(o=>narrow&&o.n.length>17? o.n.slice(0,16)+"…" : o.n);
+  g.append("rect").attr("x",o=>o.d>=0?zero:xs(o.d)).attr("y",5).attr("height",rowH-10).attr("rx",3)
+    .attr("width",o=>Math.max(1.5,Math.abs(xs(o.d)-zero))).attr("fill",o=>css(tipoGruppo(o.k).c));
+  g.append("text").attr("x",o=>o.d>=0? Math.max(xs(o.d),zero)+6 : zero+6).attr("y",rowH/2).attr("dy","0.32em").style("fill","var(--ink-2)").style("font-variant-numeric","tabular-nums").style("font-size","12px")
+    .text(o=>fSigned(o.d,v=>fInt(Math.round(v)))+(narrow? "" : o.a>0? ` (${fSigned(o.z/o.a-1,fPct)})` : o.z>0? " (nuovo)":""));
+  g.append("rect").attr("width",w).attr("height",rowH).attr("fill","transparent")
+    .on("pointermove",(ev,o)=>showTip(ev,o.n,[{label:`Posti letto ${base}`,value:fInt(Math.round(o.a))},{label:`Posti letto ${y}`,value:fInt(Math.round(o.z))},{label:`Strutture ${base}`,value:f1(o.ea)},{label:`Strutture ${y}`,value:f1(o.ez)}]))
+    .on("pointerleave",hideTip);
+}
+function renderTipiTable(e, T, E){
+  const y=Math.min(st.year, TY[TY.length-1]), j=TY.indexOf(y), b=TY.indexOf(Math.min(growSt.base,y)), base=TY[b];
+  $("#t-tipi").textContent=`${e.name} nel ${y}`;
+  const tot=d3.sum(T,a=>a[j]), totE=d3.sum(E,a=>a[j]), totB=d3.sum(T,a=>a[b]);
+  const rows=TIPI.names.map((n,k)=>({n,k,l:T[k][j],e:E[k][j],lb:T[k][b]})).filter(r=>r.l>0||r.lb>0).sort((p,q)=>q.l-p.l);
+  const tb=$("#tbl-tipi"); tb.replaceChildren();
+  const th=document.createElement("tr"); for(const t of ["Tipo","Strutture","Posti letto","Quota",`Var. dal ${base}`,"Letti per struttura"]){ const c=document.createElement("th"); c.textContent=t; th.append(c);} tb.append(th);
+  const line=(cells,cls)=>{ const tr=document.createElement("tr"); if(cls) tr.className=cls; cells.forEach((v,i)=>{ const td=document.createElement("td"); if(i===0&&v.sw){ const sw=document.createElement("i"); sw.className="sw"; sw.style.background=v.sw; td.append(sw, document.createTextNode(v.t)); } else { td.textContent=v.t??v; if(v.cls) td.className=v.cls; } tr.append(td); }); tb.append(tr); };
+  for(const r of rows){ const d=r.lb>0? r.l/r.lb-1 : null;
+    line([{t:r.n, sw:css(tipoGruppo(r.k).c)}, f1(r.e), fInt(Math.round(r.l)), tot? fPct1(r.l/tot):"", {t: d==null? (r.l>0?"nuovo":"—") : fSigned(d,fPct), cls: d==null?"":d>=0?"up":"down"}, r.e>0? fInt(Math.round(r.l/r.e)):"—"]); }
+  const dT=totB>0? tot/totB-1:null;
+  line(["Totale", f1(totE), fInt(Math.round(tot)), "100%", {t:dT==null?"—":fSigned(dT,fPct), cls:dT==null?"":dT>=0?"up":"down"}, totE? fInt(Math.round(tot/totE)):"—"], "tot");
+}
+
+/* ---------- pressione turistica ---------- */
+const TRIM = DATA.trim;
+function trimOf(key, y){
+  if(!TRIM) return null; const i=TRIM.years.indexOf(y); if(i<0) return null;
+  const out=[0,0,0,0]; let ok=false; for(const id of unitsOf(key)){ const v=TRIM.v[id]; if(v&&v[i]){ v[i].forEach((x,q)=>out[q]+=x); ok=true; } } return ok? out : null;
+}
+const QDAYS=y=>[(y%4===0?91:90),91,92,92];
+function seasonPer100(key,y){ const t=trimOf(key,y), p=popOf(key,y); if(!t||!p) return null; const d=QDAYS(y); return t.map((x,q)=>x/d[q]/p*100); }
+function renderPress(){
+  const sec=$("#s-press"); if(!POP){ sec.hidden=true; return; }
+  const e=sel(), c=entity(cmpKey()), t=entity("TOS"), y=st.year, est=y>POP.lastReal;
+  $("#press-year").textContent=y; $("#str-year").textContent=Math.min(y, TY[TY.length-1]||y);
+  $("#press-sub").textContent=`Il numero di notti turistiche, da solo, non dice quanto un paese "si riempie": dipende da quante persone ci abitano. Qui le notti sono rapportate ai residenti.`;
+  const pop=popOf(e.key,y), pre=val(e,y,"pre"), pab=val(e,y,"pab"), t100=val(e,y,"t100"), sp=seasonPer100(e.key,y);
+  const ex=$("#press-explain"); ex.replaceChildren();
+  if(pop&&pre!=null){
+    const B=x=>{const b=document.createElement("b"); b.textContent=x; return b;};
+    ex.append(`A ${e.name} vivono `, B(fInt(pop)+" persone"), est?` (ultimo dato: ${POP.lastReal})`:"", `. Nel ${y} i turisti vi hanno passato `, B(fInt(pre)+" notti"), `. È come se `, B(`ogni residente ospitasse ${f1(pab)} notti di turisti all'anno`), `. Spalmate su tutto l'anno, vuol dire che in un giorno qualsiasi ci sono in media `, B(`${f1(t100)} turisti ogni 100 abitanti`));
+    if(sp) ex.append(`; tra luglio e settembre diventano `, B(`${f1(sp[2])} ogni 100`), `, mentre tra gennaio e marzo sono ${f1(sp[0])}.`); else ex.append(".");
+    const tp=val(t,y,"t100"); if(tp) ex.append(` Per confronto, la media toscana è ${f1(tp)} ogni 100 abitanti in un giorno qualsiasi.`);
+  } else ex.textContent="Dati non disponibili per questo comune e anno.";
+  const cards=[
+    {l:"Notti di turisti per ogni residente, in un anno", k:"pab", f:v=>f1(v)},
+    {l:"Turisti ogni 100 residenti, in un giorno medio d'estate (lug–set)", k:"sum", f:v=>f1(v)},
+    {l:"Posti letto turistici ogni 100 residenti", k:"lab", f:v=>f1(v)}];
+  const get=(ent,k)=>k==="sum"? (seasonPer100(ent.key,y)||[])[2]??null : val(ent,y,k);
+  const box=$("#press-kpis"); box.replaceChildren();
+  for(const k of cards){
+    const v=get(e,k.k), card=document.createElement("div"); card.className="card kpi";
+    const l=document.createElement("div"); l.className="l"; l.textContent=k.l;
+    const vv=document.createElement("div"); vv.className="v"; vv.textContent=v==null?"n.d.":k.f(v);
+    const d=document.createElement("div"); d.className="d";
+    const a=document.createElement("span"); const cv=get(c,k.k); a.textContent=`${c.short||c.name}: ${cv==null?"n.d.":k.f(cv)}`;
+    const b=document.createElement("span"); const tv=get(t,k.k); b.textContent=`Toscana: ${tv==null?"n.d.":k.f(tv)}`;
+    d.append(a); if(c.key!=="TOS") d.append(b);
+    card.append(l,vv,d); box.append(card);
+  }
+  // stagionalità: barre raggruppate per trimestre (comune, confronto, Toscana)
+  const el=$("#c-season"); el.replaceChildren();
+  $("#season-note").textContent=`Turisti presenti in media in un giorno di ciascun trimestre del ${y}, ogni 100 residenti`;
+  const T=trio(); legend2($("#lg-season"), T.map(s=>({name:s.name,color:s.color})));
+  const S=T.map(s=>({s, v:seasonPer100(s.e.key,y)})).filter(o=>o.v);
+  if(!S.length){ el.textContent="Dati non disponibili."; }
+  else {
+    const F=frame(el,250), g=F.svg.append("g").attr("transform",`translate(${F.m.l},${F.m.t})`);
+    const Q=["Gen–Mar","Apr–Giu","Lug–Set","Ott–Dic"];
+    const x0=d3.scaleBand().domain(Q).range([0,F.iw]).padding(.25), x1=d3.scaleBand().domain(S.map((o,i)=>i)).range([0,x0.bandwidth()]).padding(.12);
+    const yS=d3.scaleLinear().domain([0,d3.max(S,o=>d3.max(o.v))||1]).nice().range([F.ih,0]);
+    g.append("g").attr("class","grid").call(d3.axisLeft(yS).ticks(5).tickSize(-F.iw).tickFormat("")).call(s=>s.select(".domain").remove());
+    g.append("g").attr("class","axis").call(d3.axisLeft(yS).ticks(5).tickSize(0).tickPadding(8));
+    g.append("g").attr("class","axis").attr("transform",`translate(0,${F.ih})`).call(d3.axisBottom(x0).tickSize(0).tickPadding(8));
+    S.forEach((o,i)=>o.v.forEach((v,q)=>{
+      g.append("rect").attr("x",x0(Q[q])+x1(i)).attr("width",x1.bandwidth()).attr("y",yS(v)).attr("height",F.ih-yS(v)).attr("rx",3).attr("fill",o.s.color)
+       .on("pointermove",ev=>showTip(ev,`${Q[q]} ${y}`,S.map(z=>({label:z.s.name,color:z.s.color,value:f1(z.v[q])+" ogni 100"})))).on("pointerleave",hideTip);
+    }));
+  }
+  // classifica estiva
+  const list=DATA.units.map(u=>[u.id, (seasonPer100("C:"+u.id,y)||[])[2]]).filter(r=>r[1]!=null).sort((p,q)=>q[1]-p[1]);
+  const mi=list.findIndex(r=>r[0]===st.id);
+  $("#press-me").textContent = mi>=0? `${U.get(st.id).n}: ${mi+1}° su ${list.length}` : `${U.get(st.id).n}: n.d.`;
+  const show=list.slice(0,12); if(mi>=12) show.push(null,list[mi]);
+  const max=list.length? list[0][1]:1, ol=$("#press-rank"); ol.replaceChildren();
+  for(const r of show){
+    const li=document.createElement("li");
+    if(!r){ li.style.cssText="cursor:default;border:0;color:var(--ink-3)"; li.textContent="⋯"; ol.append(li); continue; }
+    const [id,v]=r; if(id===st.id) li.className="me";
+    const rk=document.createElement("span"); rk.className="r"; rk.textContent=(list.findIndex(x=>x[0]===id)+1)+"°";
+    const nm=document.createElement("span"); nm.textContent=U.get(id).n; const bar=document.createElement("div"); bar.className="bar"; bar.style.width=Math.max(2,v/max*100)+"%"; nm.append(bar);
+    const vv=document.createElement("span"); vv.className="num"; vv.textContent=f1(v);
+    li.append(rk,nm,vv); li.onclick=()=>{st.id=id; $("#comune").value=U.get(id).n; fillCmp(); render();}; ol.append(li);
+  }
+}
+
+/* ---------- il comune oltre il turismo ---------- */
+const ASIA = DATA.asia, DEMO = DATA.demo;
+function asiaOf(key, y){
+  if(!ASIA) return null; const i=ASIA.years.indexOf(y); if(i<0) return null;
+  const out=Array(12).fill(0); let ok=false; for(const id of unitsOf(key)){ const v=ASIA.v[id]; if(v&&v[i]){ v[i].forEach((x,k)=>out[k]+=x); ok=true; } } return ok? out : null;
+}
+const turShare=(key,y)=>{ const a=asiaOf(key,y); if(!a) return null; const tot=d3.sum(a.slice(0,6)); return tot? a[4]/tot : null; };
+function demoOf(key, y){
+  if(!DEMO) return null; const i=DEMO.years.indexOf(y); if(i<0) return null;
+  const out=[0,0,0,0]; let ok=false; for(const id of unitsOf(key)){ const v=DEMO.v[id]; if(v&&v[i]&&v[i][0]){ v[i].forEach((x,k)=>out[k]+=x); ok=true; } } return ok? out : null;
+}
+const ecoSt={m:"add"};
+function renderEco(){
+  const sec=$("#s-eco"); if(!ASIA&&!DEMO){ sec.hidden=true; return; }
+  const e=sel(), B=x=>{const b=document.createElement("b"); b.textContent=x; return b;};
+  const AY=ASIA?ASIA.years:[], ay=ASIA?Math.min(st.year, AY[AY.length-1]):null;
+  const DY=DEMO?DEMO.years:[], dy=DEMO?Math.min(st.year, DY[DY.length-1]):null;
+  $("#eco-year").textContent=[...new Set([dy,ay].filter(Boolean))].join(" · ");
+  // racconto
+  const ex=$("#eco-explain"); ex.replaceChildren();
+  const d=demoOf(e.key,dy), d0=demoOf(e.key,DY[0]), d12=demoOf(e.key,2012), eta=DEMO&&DEMO.eta[st.id];
+  if(d){
+    ex.append(`A fine ${dy} ${e.name} contava `, B(fInt(d[0])+" residenti"));
+    if(d0) ex.append(`, il ${fPct(Math.abs(d[0]/d0[0]-1))} ${d[0]>=d0[0]?"in più":"in meno"} rispetto al ${DY[0]}`);
+    const nat = d[1]<0 ? `i morti hanno superato i nati di ${fInt(-d[1])}` : d[1]>0 ? `i nati hanno superato i morti di ${fInt(d[1])}` : `nati e morti si sono pareggiati`;
+    const mig = d[2]>0 ? `si sono trasferite qui ${fInt(d[2])} persone in più di quante se ne sono andate` : d[2]<0 ? `se ne sono andate ${fInt(-d[2])} persone in più di quante sono arrivate` : `arrivi e partenze si sono pareggiati`;
+    ex.append(`. Nel ${dy} ${nat}, mentre ${mig}. `);
+    if(eta) ex.append(`L'età media è `, B(`${f1(eta[0])} anni`), ` e ci sono `, B(`${fInt(eta[1])} anziani ogni 100 ragazzi`), ` sotto i 15 anni (${DEMO.etaYear}). `);
+  }
+  const a=asiaOf(e.key,ay), a0=asiaOf(e.key,AY[0]);
+  if(a){
+    const tot=d3.sum(a.slice(0,6)), ul=d3.sum(a.slice(6)), tot0=a0?d3.sum(a0.slice(0,6)):null;
+    ex.append(`Nel ${ay} c'erano `, B(`${fInt(ul)} sedi di imprese`), ` con `, B(`${fInt(Math.round(tot))} addetti`));
+    if(tot0) ex.append(` (${fSigned(tot/tot0-1,fPct)} di addetti rispetto al ${AY[0]})`);
+    ex.append(`: alloggi, ristoranti e bar ne occupano il `, B(fPct1(a[4]/tot)), `.`);
+  }
+  // KPI
+  const box=$("#eco-kpis"); box.replaceChildren();
+  const card=(l,v,sub)=>{ const k=document.createElement("div"); k.className="card kpi"; const a1=document.createElement("div"); a1.className="l"; a1.textContent=l; const b1=document.createElement("div"); b1.className="v"; b1.textContent=v; const c1=document.createElement("div"); c1.className="d"; for(const x of sub){ const sp=document.createElement("span"); sp.append(...x); c1.append(sp);} k.append(a1,b1,c1); box.append(k); };
+  const dlt=(cur,prev,lab)=>{ if(cur==null||!prev) return [`${lab}: n.d.`]; const v=cur/prev-1; const b2=document.createElement("b"); b2.className=v>=0?"up":"down"; b2.textContent=(v>=0?"▲ ":"▼ ")+fSigned(v,fPct1); return [b2,` ${lab}`]; };
+  if(d) card(`Residenti (${dy})`, fInt(d[0]), [dlt(d[0], d12&&d12[0], "dal 2012"), dlt(d[0], d0&&d0[0], `dal ${DY[0]}`)]);
+  if(eta){ const all=Object.values(DEMO.eta).map(x=>x[0]), rk=all.filter(x=>x>eta[0]).length+1;
+    card(`Età media (${DEMO.etaYear})`, f1(eta[0])+" anni", [[`${rk}° comune più anziano su ${all.length}`],[`${fInt(eta[1])} anziani ogni 100 ragazzi`]]); }
+  if(a){ const ul=d3.sum(a.slice(6)), ul0=a0?d3.sum(a0.slice(6)):null, tot=d3.sum(a.slice(0,6)), tot0=a0?d3.sum(a0.slice(0,6)):null;
+    card(`Sedi di imprese (${ay})`, fInt(ul), [dlt(ul,ul0,`dal ${AY[0]}`),[`di cui ${fInt(a[10])} in alloggio e ristorazione`]]);
+    card(`Addetti (${ay})`, fInt(Math.round(tot)), [dlt(tot,tot0,`dal ${AY[0]}`),[`${fPct1(a[4]/tot)} in alloggio e ristorazione`]]); }
+  // residenti nel tempo (indice)
+  if(DEMO){
+    const T=trio().map(s=>{ const b0=demoOf(s.e.key,DY[0]); return {...s, values:DY.map(yy=>{ const v=demoOf(s.e.key,yy); return {y:yy, v: v&&b0? v[0]/b0[0]*100 : null}; })}; });
+    $("#pop-note").textContent=`Indice: residenti del ${DY[0]} = 100. Dal 2018 i dati vengono dal censimento permanente, con un piccolo salto nella serie.`;
+    legend($("#lg-pop"),T);
+    lineChart($("#c-pop"),T,{fmt:v=>it.format(",.1f")(v), axisFmt:v=>v, zero:false, refLine:100, years:DY});
+    $("#saldi-t").textContent=`${e.name}: nati, morti e chi arriva da fuori`;
+    const el=$("#c-saldi"), F=frame(el,260), g=F.svg.append("g").attr("transform",`translate(${F.m.l},${F.m.t})`);
+    const rows=DY.map(yy=>({y:yy, v:demoOf(e.key,yy)})).filter(r=>r.v);
+    if(rows.length){
+      const x0=d3.scaleBand().domain(rows.map(r=>r.y)).range([0,F.iw]).padding(.2), x1=d3.scaleBand().domain([0,1]).range([0,x0.bandwidth()]).padding(.08);
+      const yS=d3.scaleLinear().domain(d3.extent(rows.flatMap(r=>[r.v[1],r.v[2],0]))).nice().range([F.ih,0]);
+      g.append("g").attr("class","grid").call(d3.axisLeft(yS).ticks(5).tickSize(-F.iw).tickFormat("")).call(s=>s.select(".domain").remove());
+      g.append("g").attr("class","axis").call(d3.axisLeft(yS).ticks(5).tickSize(0).tickPadding(8).tickFormat(fAxis));
+      const step=F.iw<420?6:F.iw<620?4:3;
+      g.append("g").attr("class","axis").attr("transform",`translate(0,${F.ih})`).call(d3.axisBottom(x0).tickSize(0).tickPadding(8).tickValues(rows.map(r=>r.y).filter((yy,i)=>(i%step===0&&rows.length-1-i>=2)||i===rows.length-1)));
+      g.append("line").attr("x1",0).attr("x2",F.iw).attr("y1",yS(0)).attr("y2",yS(0)).attr("stroke",css("--ink-3"));
+      for(const r of rows){ [[1,"--t1"],[2,"--t3"]].forEach(([k,cv],j)=>{ const v=r.v[k]; g.append("rect").attr("x",x0(r.y)+x1(j)).attr("width",x1.bandwidth()).attr("y",yS(Math.max(0,v))).attr("height",Math.abs(yS(v)-yS(0))).attr("rx",2).attr("fill",css(cv)); });
+        g.append("rect").attr("x",x0(r.y)).attr("width",x0.bandwidth()).attr("y",0).attr("height",F.ih).attr("fill","transparent")
+          .on("pointermove",ev=>showTip(ev,String(r.y),[{label:"Residenti",value:fInt(r.v[0])},{label:"Saldo naturale",color:css("--t1"),value:fSigned(r.v[1],fInt)},{label:"Saldo migratorio",color:css("--t3"),value:fSigned(r.v[2],fInt)}])).on("pointerleave",hideTip); }
+    }
+  }
+  // settori
+  if(ASIA){
+    const off=ecoSt.m==="ul"?6:0, lab=ecoSt.m==="ul"?"sedi di imprese":"addetti";
+    $("#eco-t1").textContent=`${e.name}: ${lab} per settore nel ${ay}`;
+    $("#eco-n1").textContent=`Passa sopra una barra per i dettagli e la variazione dal ${AY[0]}`;
+    if(a){ const tot=d3.sum(a.slice(off,off+6));
+      barH($("#c-eco-bars"), ASIA.settori.map((n,k)=>({n, v:a[off+k], k, color: k===4? css("--t3") : css("--ref")})).sort((p,q)=>q.v-p.v),
+        {fmt:v=>fInt(Math.round(v)), tipRows:dd=>{ const r=[{label:ecoSt.m==="ul"?"Sedi":"Addetti",value:fInt(Math.round(dd.v))},{label:"Quota",value:fPct1(dd.v/tot)}]; if(a0&&a0[off+dd.k]) r.push({label:`Dal ${AY[0]}`,value:fSigned(dd.v/a0[off+dd.k]-1,fPct)}); return r; }});
+    } else $("#c-eco-bars").textContent="Dati non disponibili.";
+    $("#eco-n2").textContent=`${lab[0].toUpperCase()+lab.slice(1)} per settore dal ${AY[0]} al ${AY[AY.length-1]}. Il punto è il ${ay}.`;
+    const boxm=$("#c-eco-multi"); boxm.replaceChildren();
+    ASIA.settori.forEach((n,k)=>{
+      const ser=AY.map(yy=>{const v=asiaOf(e.key,yy); return v? v[off+k] : null;}); if(ser.every(v=>!v)) return;
+      const dv=document.createElement("div"); dv.className="mini";
+      const nm=document.createElement("div"); nm.className="mn"; nm.textContent=n;
+      const f0=ser.find(v=>v), cur=ser[AY.indexOf(ay)];
+      const vv=document.createElement("div"); vv.className="mv"; vv.textContent=fInt(Math.round(cur||0))+(f0? " · "+fSigned((cur||0)/f0-1,fPct)+" sul "+AY[0] : "");
+      dv.append(nm,vv); boxm.append(dv);
+      const w=Math.max(90,dv.clientWidth||110), h=44, col=k===4?css("--t3"):css("--sel");
+      const x=d3.scaleLinear().domain([0,AY.length-1]).range([2,w-3]), yy=d3.scaleLinear().domain([0,d3.max(ser)||1]).range([h-2,3]);
+      const svg=d3.select(dv).append("svg").attr("width",w).attr("height",h).attr("aria-hidden","true");
+      svg.append("path").attr("fill",col).attr("opacity",.14).attr("d",d3.area().defined(q=>q!=null).x((q,j)=>x(j)).y0(h-2).y1(q=>yy(q))(ser));
+      svg.append("path").attr("fill","none").attr("stroke",col).attr("stroke-width",1.6).attr("d",d3.line().defined(q=>q!=null).x((q,j)=>x(j)).y(q=>yy(q))(ser));
+      if(cur!=null) svg.append("circle").attr("cx",x(AY.indexOf(ay))).attr("cy",yy(cur)).attr("r",3).attr("fill",col).attr("stroke",css("--surface")).attr("stroke-width",1.5);
+      svg.append("rect").attr("width",w).attr("height",h).attr("fill","transparent").on("pointermove",ev=>{const [mx]=d3.pointer(ev); const j=Math.max(0,Math.min(AY.length-1,Math.round(x.invert(mx)))); showTip(ev,n+" · "+AY[j],[{label:lab,value:ser[j]==null?"n.d.":fInt(Math.round(ser[j]))}]);}).on("pointerleave",hideTip);
+    });
+    const T=trio().map(s=>({...s, values:AY.map(yy=>({y:yy, v:turShare(s.e.key,yy)}))}));
+    legend($("#lg-eco"),T);
+    lineChart($("#c-eco-line"),T,{fmt:fPct1, axisFmt:fPct, zero:true, years:AY, h:240});
+  }
+}
+
+/* ---------- table ---------- */
+function spark(e){
+  const w=84,h=22, vals=YEARS.map(y=>val(e,y,st.metric));
+  const x=d3.scaleLinear().domain([0,YEARS.length-1]).range([1,w-1]); const y=d3.scaleLinear().domain([0,d3.max(vals)||1]).range([h-2,2]);
+  const svg=d3.create("svg").attr("class","spark").attr("width",w).attr("height",h).attr("aria-hidden","true");
+  svg.append("path").attr("fill","none").attr("stroke",css("--sel")).attr("stroke-width",1.5).attr("d",d3.line().defined(v=>v!=null).x((v,i)=>x(i)).y(v=>y(v))(vals));
+  const yi2=yi(st.year); if(vals[yi2]!=null) svg.append("circle").attr("cx",x(yi2)).attr("cy",y(vals[yi2])).attr("r",2.2).attr("fill",css("--sel"));
+  return svg.node();
+}
+const COLS=[
+  {k:"rk",t:"#",num:true,f:v=>v},
+  {k:"n",t:"Nome"},{k:"a",t:"Ambito"},
+  {k:"arr",t:"Arrivi",num:true,f:fmtN},{k:"pre",t:"Presenze",num:true,f:fmtN},
+  {k:"var",t:"Var. anno prima",num:true,f:v=>v==null?"n.d.":fSigned(v,fPct1),cls:v=>v==null?"":v>=0?"up":"down"},
+  {k:"var19",t:"Var. sul 2019",num:true,f:v=>v==null?"n.d.":fSigned(v,fPct),cls:v=>v==null?"":v>=0?"up":"down"},
+  {k:"perm",t:"Notti/arrivo",num:true,f:v=>v==null?"n.d.":f1(v)},
+  {k:"sh",t:"% stranieri",num:true,f:v=>v==null?"n.d.":fPct(v)},
+  {k:"letti",t:"Posti letto",num:true,f:fmtN},
+  {k:"occ",t:"Utilizzo letti",num:true,f:v=>v==null?"n.d.":fPct(v)},
+  {k:"pab",t:"Notti per abitante",num:true,f:v=>v==null?"n.d.":f1(v)},
+  {k:"sp",t:"Andamento"}];
+function renderTable(){
+  const y=st.year, q=$("#q").value.trim().toLowerCase(), fa=$("#f-amb").value;
+  const thead=$("#tbl thead"), tbody=$("#tbl tbody");
+  const ents = st.tblKind==="amb" ? AMBITI.map(a=>({e:entity("A:"+a), n:a, a:"", id:null}))
+                                  : DATA.units.map(u=>({e:entity("C:"+u.id), n:u.n, a:u.a, id:u.id}));
+  let rows=ents.map(o=>({...o, arr:val(o.e,y,"arr"), pre:val(o.e,y,"pre"), var:val(o.e,y,"varPrev"), var19:val(o.e,y,"var19"), perm:val(o.e,y,"perm"), sh:val(o.e,y,"shS_"+st.metric), letti:val(o.e,y,"letti"), occ:val(o.e,y,"occ"), pab:val(o.e,y,"pab")}));
+  const rkKey=st.metric; const ranked=[...rows].filter(r=>r[rkKey]!=null).sort((a,b)=>b[rkKey]-a[rkKey]); ranked.forEach((r,i)=>r.rk=i+1);
+  if(q) rows=rows.filter(r=>r.n.toLowerCase().includes(q));
+  if(fa && st.tblKind==="com") rows=rows.filter(r=>r.a===fa);
+  const {k,dir}=st.sort; const sk = k==="v"? st.metric : k;
+  rows.sort((a,b)=>{const A=a[sk],B=b[sk]; if(A==null&&B==null) return 0; if(A==null) return 1; if(B==null) return -1; return typeof A==="string"? A.localeCompare(B,"it")*dir : (A-B)*dir;});
+  thead.replaceChildren(); const tr=document.createElement("tr");
+  for(const c of COLS){ if(st.tblKind==="amb"&&c.k==="a") continue; const th=document.createElement("th"); th.textContent=c.k==="n"&&st.tblKind==="amb"?"Ambito turistico":c.t; th.scope="col";
+    if(c.k!=="sp"&&c.k!=="rk"){ if(sk===c.k) th.setAttribute("aria-sort",dir>0?"ascending":"descending"); th.onclick=()=>{ st.sort={k:c.k,dir: sk===c.k? -dir : (c.k==="n"||c.k==="a"?1:-1)}; renderTable(); }; }
+    tr.append(th);}
+  thead.append(tr);
+  const frag=document.createDocumentFragment();
+  for(const r of rows){
+    const tr=document.createElement("tr"); if(r.id===st.id) tr.className="me";
+    for(const c of COLS){ if(st.tblKind==="amb"&&c.k==="a") continue; const td=document.createElement("td");
+      if(c.k==="sp") td.append(spark(r.e)); else { const v=r[c.k]; td.textContent=c.f? c.f(v??null) : (v||""); if(c.num) td.className="n"; if(c.cls){ const cl=c.cls(v); if(cl) td.classList.add(cl);} }
+      tr.append(td); }
+    if(r.id) tr.onclick=()=>{st.id=r.id; $("#comune").value=U.get(r.id).n; fillCmp(); render(); document.getElementById("s-kpi").scrollIntoView({behavior:"smooth"});};
+    frag.append(tr);
+  }
+  tbody.replaceChildren(frag);
+}
+
+/* ---------- provenienze per comune (caricate a parte) ---------- */
+let PROVD=null;
+const pioSt = { year: null, g: "all" };
+function setupPio(){
+  if(!DATA.provFile){ $("#s-pio").hidden=true; return; }
+  segs("#pio-g",v=>{pioSt.g=v; renderPio();}, "all");
+  fetch(DATA.provFile).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(j=>{
+    PROVD=j; const s=$("#pio-year"); for(const y of [...j.years].reverse()){ const o=document.createElement("option"); o.value=y; o.textContent=y; s.append(o); }
+    pioSt.year=Math.min(st.year, j.years[j.years.length-1]); s.value=pioSt.year; s.onchange=()=>{pioSt.year=+s.value; renderPio();};
+    renderPio(); renderFacts();
+  }).catch(()=>{ $("#pio-sub").textContent="Non è stato possibile caricare i dati sulle provenienze."; });
+}
+function barH(el, items, {fmt=fInt, tipRows}={}){
+  const rowH=24, longest=d3.max(items,d=>Math.min(24,d.n.length))||10, labW=Math.min(190, Math.max(110, longest*7+14));
+  const w=Math.max(280, el.clientWidth||400), h=items.length*rowH+8;
+  el.replaceChildren();
+  const svg=d3.select(el).append("svg").attr("width",w).attr("height",h).attr("viewBox",[0,0,w,h]);
+  const x=d3.scaleLinear().domain([0,d3.max(items,d=>d.v)||1]).range([0,w-labW-64]);
+  const g=svg.selectAll("g").data(items).join("g").attr("transform",(d,i)=>`translate(0,${i*rowH+4})`);
+  g.append("text").attr("x",labW-8).attr("y",rowH/2).attr("dy","0.32em").attr("text-anchor","end").style("fill","var(--ink-2)").style("font-size","12.5px").text(d=>d.n.length>24?d.n.slice(0,23)+"…":d.n);
+  g.append("path").attr("fill",d=>d.color).attr("d",d=>{const bw=Math.max(1,x(d.v)), bh=rowH-8, r=Math.min(4,bw/2,bh/2), x0=labW, y0=4;
+    return `M${x0},${y0}H${x0+bw-r}Q${x0+bw},${y0} ${x0+bw},${y0+r}V${y0+bh-r}Q${x0+bw},${y0+bh} ${x0+bw-r},${y0+bh}H${x0}Z`;});
+  g.append("text").attr("x",d=>labW+x(d.v)+6).attr("y",rowH/2).attr("dy","0.32em").style("fill","var(--ink-2)").style("font-variant-numeric","tabular-nums").text(d=>fmt(d.v));
+  g.append("rect").attr("x",0).attr("width",w).attr("height",rowH).attr("fill","transparent")
+    .on("pointermove",(ev,d)=>showTip(ev,d.n,tipRows(d))).on("pointerleave",hideTip);
+}
+function renderPio(){
+  if(!PROVD) return;
+  const Y=PROVD.years, n=Y.length, i=Y.indexOf(pioSt.year), off=st.metric==="pre"?n:0, i19=Y.indexOf(2019);
+  const e=sel(), raw=PROVD.d[st.id]||{};
+  const O=Object.entries(raw).map(([k,v])=>({n:PROVD.names[+k], area:PROVD.area[+k], g:PROVD.area[+k]==="Italia"?"Italia":"Estero", a:v.slice(0,n), p:v.slice(n), s:v.slice(off,off+n)}));
+  const tot=d3.sum(O,o=>o.s[i]);
+  const byArea=d3.rollup(O,v=>d3.sum(v,o=>o.s[i]),o=>o.area);
+  const parts=["Italia","Unione europea","Europa extra UE","Resto del mondo"].filter(a=>byArea.get(a)).map(a=>`${a} ${fPct(byArea.get(a)/tot)}`);
+  $("#pio-sub").textContent=`${e.name}, ${pioSt.year}: ${parts.join(" · ")}. Dati della banca dati turismo della Regione Toscana, ${Y[0]}–${Y[n-1]}.`;
+  const L=O.filter(o=>pioSt.g==="all"||o.g===pioSt.g).filter(o=>!/non indicat|non specificat/i.test(o.n));
+  const top=[...L].sort((a,b)=>b.s[i]-a.s[i]).filter(o=>o.s[i]>0).slice(0,15);
+  $("#pio-t1").textContent=`Le prime 15 provenienze nel ${pioSt.year}`;
+  $("#pio-n1").textContent=`${mName()[0].toUpperCase()+mName().slice(1)} per provenienza; passa sopra una barra per i dettagli`;
+  if(!top.length){ $("#c-pio-bars").textContent="Nessun dato per questo comune e anno."; $("#c-pio-multi").replaceChildren(); return; }
+  barH($("#c-pio-bars"), top.map(o=>({n:o.n, v:o.s[i], o, color: o.g==="Italia"?css("--ita"):css("--str")})), {
+    fmt:fInt,
+    tipRows:d=>{const o=d.o, a=o.a[i], p=o.p[i]; const rows=[{label:"Arrivi",value:fInt(a)},{label:"Presenze",value:fInt(p)},{label:"Notti per arrivo",value:a?f1(p/a):"n.d."},{label:"Quota sul totale",value:fPct1(o.s[i]/tot)},{label:"Area",value:o.area}];
+      if(i19>=0 && pioSt.year!==2019 && o.s[i19]) rows.push({label:"Variazione sul 2019",value:fSigned(o.s[i]/o.s[i19]-1,fPct)}); return rows;}
+  });
+  $("#pio-n2").textContent=`Le prime 12 provenienze, ${mName()} dal ${Y[0]} al ${Y[n-1]}. Il punto è il ${pioSt.year}.`;
+  const box=$("#c-pio-multi"); box.replaceChildren();
+  for(const o of top.slice(0,12)){
+    const d=document.createElement("div"); d.className="mini";
+    const nm=document.createElement("div"); nm.className="mn"; nm.textContent=o.n;
+    const fi=o.s.findIndex(v=>v>0), first=o.s[fi], cur=o.s[i];
+    const v=document.createElement("div"); v.className="mv"; v.textContent=fShort(cur)+(first&&fi<i? " · "+fSigned(cur/first-1,fPct)+" sul "+Y[fi] : "");
+    d.append(nm,v); box.append(d);
+    const w=Math.max(90,d.clientWidth||110), h=44;
+    const x=d3.scaleLinear().domain([0,n-1]).range([2,w-3]), yy=d3.scaleLinear().domain([0,d3.max(o.s)||1]).range([h-2,3]);
+    const svg=d3.select(d).append("svg").attr("width",w).attr("height",h).attr("aria-hidden","true");
+    const col=o.g==="Italia"?css("--ita"):css("--str");
+    svg.append("path").attr("fill",col).attr("opacity",.14).attr("d",d3.area().x((q,j)=>x(j)).y0(h-2).y1(q=>yy(q)).curve(d3.curveMonotoneX)(o.s));
+    svg.append("path").attr("fill","none").attr("stroke",col).attr("stroke-width",1.6).attr("d",d3.line().x((q,j)=>x(j)).y(q=>yy(q)).curve(d3.curveMonotoneX)(o.s));
+    svg.append("circle").attr("cx",x(i)).attr("cy",yy(cur)).attr("r",3).attr("fill",col).attr("stroke",css("--surface")).attr("stroke-width",1.5);
+    svg.append("rect").attr("width",w).attr("height",h).attr("fill","transparent").on("pointermove",ev=>{const [mx]=d3.pointer(ev); const j=Math.max(0,Math.min(n-1,Math.round(x.invert(mx)))); showTip(ev,o.n+" · "+Y[j],[{label:"Arrivi",value:fInt(o.a[j])},{label:"Presenze",value:fInt(o.p[j])}]);}).on("pointerleave",hideTip);
+  }
+}
+
+/* ---------- testata: mappa piccola, cose da sapere, link, sezioni ---------- */
+function renderHeroMap(){
+  const el=$("#hero-map"); if(!el||!geo) return; el.replaceChildren();
+  const w=260,h=270, pj=d3.geoTransverseMercator().rotate([-11,0]).fitExtent([[4,4],[w-4,h-4]],geo), pg=d3.geoPath(pj);
+  const u=U.get(st.id);
+  const svg=d3.select(el).append("svg").attr("width",w).attr("height",h).attr("viewBox",[0,0,w,h]);
+  svg.selectAll("path").data(geo.features).join("path").attr("d",pg)
+    .attr("class",d=>d.properties.c===st.id?"on":(U.get(d.properties.c)||{}).a===u.a&&u.a?"amb":null);
+  svg.select("path.on").raise();
+  $("#hero-cap").textContent=`${u.n} · ambito ${u.a||"n.d."} · provincia di ${PROV[u.p]}`;
+}
+function renderFacts(){
+  const box=$("#facts"); box.replaceChildren();
+  const e=sel(), y=st.year, B=t=>{const b=document.createElement("b"); b.textContent=t; return b;};
+  const add=(k,parts)=>{ const d=document.createElement("div"); d.className="fact"; const a=document.createElement("div"); a.className="fk"; a.textContent=k; const v=document.createElement("div"); v.className="fv"; v.append(...parts); d.append(a,v); box.append(d); };
+  const p=val(e,y,"pre"), p19=val(e,2019,"pre");
+  if(p!=null&&p19) add("Rispetto al 2019",[ "Le notti sono ", B((p>=p19?"cresciute del ":"calate del ")+fPct(Math.abs(p/p19-1))), y===2019?"":` nel ${y}.` ]);
+  if(TIPI){ const T=tipiOf(e.key), j=TY.indexOf(Math.min(y,TY[TY.length-1])); const b0=0;
+    const L=TIPI.names.map((n,k)=>({n,d:T[k][j]-T[k][b0],a:T[k][b0],z:T[k][j]}));
+    const best=[...L].sort((a,b)=>b.d-a.d)[0], fast=L.filter(o=>o.a>=30&&o.z>o.a).sort((a,b)=>b.z/b.a-a.z/a.a)[0];
+    if(best&&best.d>0){ const parts=[ "Più posti letto in ", B(best.n.toLowerCase()), ` (${fSigned(best.d,v=>fInt(Math.round(v)))})` ];
+      if(fast&&fast.n!==best.n&&fast.z/fast.a>=1.5) parts.push("; crescita più rapida per ", B(fast.n.toLowerCase()), ` (×${f1(fast.z/fast.a)})`);
+      parts.push("."); add(`Strutture dal ${TY[0]}`,parts); } }
+  if(PROVD){ const Y=PROVD.years, i=Y.indexOf(Math.min(y,Y[Y.length-1])), n=Y.length, raw=PROVD.d[st.id]||{};
+    const est=Object.entries(raw).filter(([k])=>PROVD.area[+k]!=="Italia"&&!/non /i.test(PROVD.names[+k])).map(([k,v])=>({n:PROVD.names[+k],v:v[n+i]})).sort((a,b)=>b.v-a.v);
+    const ita=Object.entries(raw).filter(([k])=>PROVD.area[+k]==="Italia"&&PROVD.names[+k]!==U.get(st.id).n).map(([k,v])=>({n:PROVD.names[+k],v:v[n+i]})).sort((a,b)=>b.v-a.v);
+    if(est[0]&&ita[0]) add("Da dove",[ "Dall'Italia soprattutto ", B(ita[0].n), ", dall'estero ", B(est[0].n), "." ]); }
+  else add("Da dove",["Caricamento delle provenienze…"]);
+  const sp=seasonPer100(e.key,y); if(sp) add("In estate",[ "Tra luglio e settembre ", B(`${f1(sp[2])} turisti ogni 100 abitanti`), "." ]);
+  if(ASIA){ const ay=Math.min(y,ASIA.years[ASIA.years.length-1]), sh=turShare(e.key,ay); if(sh!=null) add("Lavoro",[ B(fPct(sh)+" degli addetti"), ` lavora in alloggi, ristoranti e bar (${ay}).` ]); }
+}
+function setupShare(){
+  const b=$("#share"); b.onclick=async()=>{
+    const url=location.href.split("#")[0]+"#c="+st.id+"&y="+st.year+(st.metric==="arr"?"&m=arr":"")+(st.cmp!=="amb"?"&v="+st.cmp:"");
+    try{ await navigator.clipboard.writeText(url); b.textContent="Link copiato"; }catch(e){ b.textContent="Copia non riuscita"; }
+    setTimeout(()=>b.textContent="Copia link",1800);
+  };
+  const links=[...document.querySelectorAll("#secnav a")];
+  const obs=new IntersectionObserver(es=>{ for(const en of es) if(en.isIntersecting){ links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id)); } },{rootMargin:"-45% 0px -50% 0px"});
+  links.forEach(a=>{ const t=document.querySelector(a.getAttribute("href")); if(t) obs.observe(t); });
+}
+
+/* ---------- render all ---------- */
+function render(){
+  try{ history.replaceState(null,"","#c="+st.id+"&y="+st.year+(st.metric==="arr"?"&m=arr":"")+(st.cmp!=="amb"?"&v="+st.cmp:"")); }catch(e){}
+  document.title = `Turismo: ${U.get(st.id).n} e la Toscana`;
+  if(PROVD){ pioSt.year=Math.min(st.year, PROVD.years[PROVD.years.length-1]); $("#pio-year").value=pioSt.year; }
+  renderHeroMap(); renderFacts(); renderKPI(); renderMap(); renderTime(); renderOrigin(); renderPio(); renderBeds(); renderPress(); renderEco(); renderTable();
+}
+const d=new Date(DATA.updated);
+$("#meta").textContent=`Anni ${Y0}–${YN} · ${DATA.units.length} comuni · aggiornato il ${d.toLocaleDateString("it-IT",{day:"numeric",month:"long",year:"numeric"})}`;
+$("#foot").textContent=`Elaborazione The Mind Walker su dati Regione Toscana: open data (dati.toscana.it, licenza CC BY-SA) e banca dati turismo regionale.`;
+setupMap(); setupControls(); setupShare(); segs("#eco-m",v=>{ecoSt.m=v; renderEco();}, "add"); segs("#gbase",v=>{growSt.base=+v; renderBeds();}, "2005"); setupPio(); render();
+})();
+</script>
+</body>
+</html>

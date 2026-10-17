@@ -1,0 +1,55 @@
+---
+title: "On Self-Respect"
+categories:
+  - psicologia
+  - letteratura
+description: |
+  A beautiful text by Joan Didion, an American writer and journalist. If you search a way to understand where self-esteem comes from and the true meaning of self-respect, read this.
+author:
+  - name: The Mind Walker
+date: 2024-06-30
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+## How the essay was born
+
+Joan Didion was twenty-six and working at *Vogue* in New York when she wrote this piece in 1961. It was not planned: another writer had failed to deliver an article on the same subject, the magazine was about to go to press, and Didion was asked to fill the hole. She wrote it to fit the page, counting characters rather than words. It ran as "Self-Respect: Its Source, Its Power" and became famous seven years later, as "On Self-Respect", in her first collection of essays, *Slouching Towards Bethlehem* (1968).
+
+There is something fitting in that origin. An essay about not lying to yourself was written under pressure, with no room for padding, by someone who had to deliver whether she felt ready or not.
+
+## The opening of the essay
+
+Once, in a dry season, I wrote in large letters across two pages of a notebook that innocence ends when one is stripped of the delusion that one likes oneself. Although now, some years later, I marvel that a mind on the outs with itself should have nonetheless made painstaking record of its every tremor, I recall with embarrassing clarity the flavor of those particular ashes. It was a matter of misplaced self-respect.
+
+I had not been elected to Phi Beta Kappa. This failure could scarcely have been more predictable or less ambiguous (I simply did not have the grades), but I was unnerved by it; I had somehow thought myself a kind of academic Raskolnikov, curiously exempt from the cause-effect relationships that hampered others. Although the situation must have had even then the approximate tragic stature of Scott Fitzgerald's failure to become president of the Princeton Triangle Club, the day that I did not make Phi Beta Kappa nevertheless marked the end of something, and innocence may well be the word for it. I lost the conviction that lights would always turn green for me, the pleasant certainty that those rather passive virtues which had won me approval as a child automatically guaranteed me not only Phi Beta Kappa keys but happiness, honour, and the love of a good man (preferably a cross between Humphrey Bogart in Casablanca and one of the Murchisons in a proxy fight); lost a certain touching faith in the totem power of good manners, clean hair, and proven competence on the Stanford-Binet scale. To such doubtful amulets had my self-respect been pinned, and I faced myself that day with the nonplussed wonder of someone who has come across a vampire and found no garlands of garlic at hand.
+
+Source: [Joan Didion, *On Self-Respect*, Vogue, 1961](https://www.vogue.com/article/joan-didion-self-respect-essay-1961)
+
+<div style="text-align: center">
+
+<img src="images/self.jpg" width="400px" min-width="300px" max-width="300px" />
+<p style="text-align:center;"> Character, Joan Didion.</p>
+</div>
+
+
+## What Didion means by self-respect
+
+The essay starts from a small, almost embarrassing failure: not being admitted to an honour society at university. Didion uses it to show the moment an illusion breaks. Until then she had believed that good manners, good grades and doing what was expected would protect her. When that belief collapses, she has to look for something sturdier.
+
+What she finds is a distinction that is easy to state and hard to live. Self-respect has nothing to do with the approval of others, with reputation, or with feeling good about yourself. It comes from character, which for Didion means the willingness to accept responsibility for your own life: to own your choices, including the bad ones, and to pay their price without pretending they were someone else's fault.
+
+The opposite is not failure but self-deception. People without self-respect, she argues, end up trapped in two ways. They keep replaying their own mistakes with no way of closing the account, and they become unable to say no, because when you do not know who you are you depend on everyone else's idea of you. You end up living the life others project onto you.
+
+The most hopeful part is that self-respect is not a gift you are born with. Didion describes it as a discipline, a habit of mind that cannot be faked but can be trained, in the same way you train any other muscle: through small daily choices that nobody else sees.
+
+## Why it still speaks to us
+
+Sixty years later the essay reads almost as a reply to the culture of the like and the follower. We measure ourselves constantly through other people's eyes, and the language of self-esteem has become a kind of marketing. Didion goes in the other direction. She does not promise that we will like ourselves more; she asks us to stop needing to be liked in order to stand up straight.
+
+It is also, quietly, an essay about walking alone. Self-respect, in her sense, is what lets you take a road nobody else is taking without feeling the need to explain it. That is why it belongs on this blog.
+
+## Where to read it
+
+The full essay is available on [Vogue's website](https://www.vogue.com/article/joan-didion-self-respect-essay-1961) and in *Slouching Towards Bethlehem*, still in print.

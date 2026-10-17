@@ -1,0 +1,541 @@
+"Anno","Comune","CodIstatComune","Ambito","SiglaProvincia","ProvenienzaMacro","Arrivi","Presenze"
+2020,"Abbadia San Salvatore",52001,"Amiata","SI","Italiani",13305,39657
+2020,"Abbadia San Salvatore",52001,"Amiata","SI","Stranieri",515,1144
+2020,"Abetone Cutigliano",47023,"Pistoia e Montagna Pistoiese","PT","Italiani",23306,61359
+2020,"Abetone Cutigliano",47023,"Pistoia e Montagna Pistoiese","PT","Stranieri",1099,3542
+2020,"Agliana",47002,"Pistoia e Montagna Pistoiese","PT","Italiani",1357,3363
+2020,"Agliana",47002,"Pistoia e Montagna Pistoiese","PT","Stranieri",68,175
+2020,"Altopascio",46001,"Piana di Lucca","LU","Italiani",6324,21806
+2020,"Altopascio",46001,"Piana di Lucca","LU","Stranieri",1035,5128
+2020,"Anghiari",51001,"Valtiberina Toscana","AR","Italiani",4000,11392
+2020,"Anghiari",51001,"Valtiberina Toscana","AR","Stranieri",745,3900
+2020,"Arcidosso",53001,"Amiata","GR","Italiani",1502,5378
+2020,"Arcidosso",53001,"Amiata","GR","Stranieri",232,1334
+2020,"Arezzo",51002,"Arezzo","AR","Italiani",76519,165708
+2020,"Arezzo",51002,"Arezzo","AR","Stranieri",15875,47050
+2020,"Asciano",52002,"Terre di Siena","SI","Italiani",14046,38224
+2020,"Asciano",52002,"Terre di Siena","SI","Stranieri",4382,19748
+2020,"Aulla",45001,"Lunigiana","MS","Italiani",490,1406
+2020,"Aulla",45001,"Lunigiana","MS","Stranieri",80,101
+2020,"Badia Tedalda",51003,"Valtiberina Toscana","AR","Italiani",925,4632
+2020,"Badia Tedalda",51003,"Valtiberina Toscana","AR","Stranieri",48,276
+2020,"Bagni di Lucca",46002,"Garfagnana e media valle del Serchio","LU","Italiani",3441,7551
+2020,"Bagni di Lucca",46002,"Garfagnana e media valle del Serchio","LU","Stranieri",574,1874
+2020,"Bagno a Ripoli",48001,"Firenze e Area Fiorentina","FI","Italiani",8258,21841
+2020,"Bagno a Ripoli",48001,"Firenze e Area Fiorentina","FI","Stranieri",4967,18126
+2020,"Barberino di Mugello",48002,"Mugello","FI","Italiani",19267,37363
+2020,"Barberino di Mugello",48002,"Mugello","FI","Stranieri",3943,8256
+2020,"Barberino Tavarnelle",48054,"Chianti","FI","Italiani",11621,32272
+2020,"Barberino Tavarnelle",48054,"Chianti","FI","Stranieri",7878,42564
+2020,"Barga",46003,"Garfagnana e media valle del Serchio","LU","Italiani",7368,25578
+2020,"Barga",46003,"Garfagnana e media valle del Serchio","LU","Stranieri",3403,11865
+2020,"Bibbiena",51004,"Casentino","AR","Italiani",3746,12032
+2020,"Bibbiena",51004,"Casentino","AR","Stranieri",593,3015
+2020,"Bibbona",49001,"Costa degli Etruschi","LI","Italiani",84891,580888
+2020,"Bibbona",49001,"Costa degli Etruschi","LI","Stranieri",24878,167707
+2020,"Bientina",50001,"Terre di Pisa","PI","Italiani",5568,14850
+2020,"Bientina",50001,"Terre di Pisa","PI","Stranieri",221,573
+2020,"Borgo a Mozzano",46004,"Garfagnana e media valle del Serchio","LU","Italiani",248,2764
+2020,"Borgo a Mozzano",46004,"Garfagnana e media valle del Serchio","LU","Stranieri",63,999
+2020,"Borgo San Lorenzo",48004,"Mugello","FI","Italiani",8033,16308
+2020,"Borgo San Lorenzo",48004,"Mugello","FI","Stranieri",2645,10866
+2020,"Bucine",51005,"Valdarno Aretino","AR","Italiani",3399,16072
+2020,"Bucine",51005,"Valdarno Aretino","AR","Stranieri",3127,22781
+2020,"Buggiano",47003,"Valdinievole","PT","Italiani",860,3744
+2020,"Buggiano",47003,"Valdinievole","PT","Stranieri",946,3653
+2020,"Buonconvento",52003,"Terre di Siena","SI","Italiani",4216,14382
+2020,"Buonconvento",52003,"Terre di Siena","SI","Stranieri",1371,7798
+2020,"Buti",50002,"Terre di Pisa","PI","Italiani",120,977
+2020,"Buti",50002,"Terre di Pisa","PI","Stranieri",126,1082
+2020,"Calci",50003,"Terre di Pisa","PI","Italiani",411,2065
+2020,"Calci",50003,"Terre di Pisa","PI","Stranieri",400,2922
+2020,"Calcinaia",50004,"Terre di Pisa","PI","Italiani",585,1029
+2020,"Calcinaia",50004,"Terre di Pisa","PI","Stranieri",454,534
+2020,"Calenzano",48005,"Firenze e Area Fiorentina","FI","Italiani",23440,56865
+2020,"Calenzano",48005,"Firenze e Area Fiorentina","FI","Stranieri",12588,24434
+2020,"Camaiore",46005,"Versilia","LU","Italiani",48506,204768
+2020,"Camaiore",46005,"Versilia","LU","Stranieri",12432,53698
+2020,"Campagnatico",53002,"Maremma Toscana Area Sud","GR","Italiani",790,4090
+2020,"Campagnatico",53002,"Maremma Toscana Area Sud","GR","Stranieri",416,3834
+2020,"Campi Bisenzio",48006,"Firenze e Area Fiorentina","FI","Italiani",15149,30119
+2020,"Campi Bisenzio",48006,"Firenze e Area Fiorentina","FI","Stranieri",4454,9848
+2020,"Campiglia Marittima",49002,"Costa degli Etruschi","LI","Italiani",16737,79354
+2020,"Campiglia Marittima",49002,"Costa degli Etruschi","LI","Stranieri",2606,15845
+2020,"Campo nell'Elba",49003,"Elba e Isole di Toscana","LI","Italiani",41550,250989
+2020,"Campo nell'Elba",49003,"Elba e Isole di Toscana","LI","Stranieri",6563,42974
+2020,"Camporgiano",46006,"Garfagnana e media valle del Serchio","LU","Italiani",298,1798
+2020,"Camporgiano",46006,"Garfagnana e media valle del Serchio","LU","Stranieri",223,2401
+2020,"Cantagallo",100001,"Area Pratese","PO","Italiani",329,971
+2020,"Cantagallo",100001,"Area Pratese","PO","Stranieri",31,208
+2020,"Capalbio",53003,"Maremma Toscana Area Sud","GR","Italiani",22716,125977
+2020,"Capalbio",53003,"Maremma Toscana Area Sud","GR","Stranieri",1747,8786
+2020,"Capannoli",50005,"Terre di Pisa","PI","Italiani",293,1831
+2020,"Capannoli",50005,"Terre di Pisa","PI","Stranieri",219,1146
+2020,"Capannori",46007,"Piana di Lucca","LU","Italiani",9635,28029
+2020,"Capannori",46007,"Piana di Lucca","LU","Stranieri",2365,11359
+2020,"Capoliveri",49004,"Elba e Isole di Toscana","LI","Italiani",70251,480738
+2020,"Capoliveri",49004,"Elba e Isole di Toscana","LI","Stranieri",30083,225785
+2020,"Capolona",51006,"Arezzo","AR","Italiani",391,1782
+2020,"Capolona",51006,"Arezzo","AR","Stranieri",509,3539
+2020,"Capraia e Limite",48008,"Empolese Valdelsa e Montalbano","FI","Italiani",1356,10148
+2020,"Capraia e Limite",48008,"Empolese Valdelsa e Montalbano","FI","Stranieri",321,1960
+2020,"Capraia Isola",49005,"Livorno","LI","Italiani",968,3778
+2020,"Capraia Isola",49005,"Livorno","LI","Stranieri",5,21
+2020,"Caprese Michelangelo",51007,"Valtiberina Toscana","AR","Italiani",754,2406
+2020,"Caprese Michelangelo",51007,"Valtiberina Toscana","AR","Stranieri",143,933
+2020,"Careggine",46008,"Garfagnana e media valle del Serchio","LU","Italiani",70,309
+2020,"Careggine",46008,"Garfagnana e media valle del Serchio","LU","Stranieri",46,185
+2020,"Carmignano",100002,"Area Pratese","PO","Italiani",4771,11517
+2020,"Carmignano",100002,"Area Pratese","PO","Stranieri",2383,9585
+2020,"Carrara",45003,"Riviera Apuana","MS","Italiani",12604,57278
+2020,"Carrara",45003,"Riviera Apuana","MS","Stranieri",2947,8189
+2020,"Casale Marittimo",50006,"Costa degli Etruschi","PI","Italiani",2223,10421
+2020,"Casale Marittimo",50006,"Costa degli Etruschi","PI","Stranieri",2915,29601
+2020,"Casciana Terme Lari",50040,"Terre di Pisa","PI","Italiani",3227,16980
+2020,"Casciana Terme Lari",50040,"Terre di Pisa","PI","Stranieri",1622,11301
+2020,"Cascina",50008,"Terre di Pisa","PI","Italiani",3036,9167
+2020,"Cascina",50008,"Terre di Pisa","PI","Stranieri",1213,2731
+2020,"Casola in Lunigiana",45004,"Lunigiana","MS","Italiani",163,396
+2020,"Casola in Lunigiana",45004,"Lunigiana","MS","Stranieri",158,680
+2020,"Casole d'Elsa",52004,"Terre di Valdelsa e dellEtruria Volterrana","SI","Italiani",3176,17066
+2020,"Casole d'Elsa",52004,"Terre di Valdelsa e dellEtruria Volterrana","SI","Stranieri",3503,23506
+2020,"Castagneto Carducci",49006,"Costa degli Etruschi","LI","Italiani",70253,440782
+2020,"Castagneto Carducci",49006,"Costa degli Etruschi","LI","Stranieri",27479,197620
+2020,"Castel del Piano",53004,"Amiata","GR","Italiani",5912,14217
+2020,"Castel del Piano",53004,"Amiata","GR","Stranieri",529,1756
+2020,"Castelfiorentino",48010,"Empolese Valdelsa e Montalbano","FI","Italiani",2775,11460
+2020,"Castelfiorentino",48010,"Empolese Valdelsa e Montalbano","FI","Stranieri",926,6009
+2020,"Castel Focognano",51008,"Casentino","AR","Italiani",57,431
+2020,"Castel Focognano",51008,"Casentino","AR","Stranieri",57,486
+2020,"Castelfranco di Sotto",50009,"Terre di Pisa","PI","Italiani",376,2381
+2020,"Castelfranco di Sotto",50009,"Terre di Pisa","PI","Stranieri",485,3379
+2020,"Castelfranco Piandiscò",51040,"Valdarno Aretino","AR","Italiani",817,5157
+2020,"Castelfranco Piandiscò",51040,"Valdarno Aretino","AR","Stranieri",399,3658
+2020,"Castell'Azzara",53005,"Amiata","GR","Italiani",589,2334
+2020,"Castell'Azzara",53005,"Amiata","GR","Stranieri",189,1236
+2020,"Castellina in Chianti",52005,"Chianti","SI","Italiani",10368,28846
+2020,"Castellina in Chianti",52005,"Chianti","SI","Stranieri",8957,42711
+2020,"Castellina Marittima",50010,"Costa degli Etruschi","PI","Italiani",3856,9597
+2020,"Castellina Marittima",50010,"Costa degli Etruschi","PI","Stranieri",663,2654
+2020,"Castelnuovo Berardenga",52006,"Chianti","SI","Italiani",14494,40089
+2020,"Castelnuovo Berardenga",52006,"Chianti","SI","Stranieri",8357,30330
+2020,"Castelnuovo di Garfagnana",46009,"Garfagnana e media valle del Serchio","LU","Italiani",4019,8599
+2020,"Castelnuovo di Garfagnana",46009,"Garfagnana e media valle del Serchio","LU","Stranieri",497,1644
+2020,"Castelnuovo di Val di Cecina",50011,"Terre di Valdelsa e dellEtruria Volterrana","PI","Italiani",1601,5671
+2020,"Castelnuovo di Val di Cecina",50011,"Terre di Valdelsa e dellEtruria Volterrana","PI","Stranieri",545,4158
+2020,"Castel San Niccolò",51010,"Casentino","AR","Italiani",230,824
+2020,"Castel San Niccolò",51010,"Casentino","AR","Stranieri",234,1933
+2020,"Castiglione della Pescaia",53006,"Maremma Toscana Area Nord","GR","Italiani",139835,851799
+2020,"Castiglione della Pescaia",53006,"Maremma Toscana Area Nord","GR","Stranieri",37487,250027
+2020,"Castiglione di Garfagnana",46010,"Garfagnana e media valle del Serchio","LU","Italiani",2334,8421
+2020,"Castiglione di Garfagnana",46010,"Garfagnana e media valle del Serchio","LU","Stranieri",202,1368
+2020,"Castiglione d'Orcia",52007,"Val d'Orcia","SI","Italiani",8298,22080
+2020,"Castiglione d'Orcia",52007,"Val d'Orcia","SI","Stranieri",1854,7164
+2020,"Castiglion Fibocchi",51011,"Arezzo","AR","Italiani",363,1132
+2020,"Castiglion Fibocchi",51011,"Arezzo","AR","Stranieri",227,1641
+2020,"Castiglion Fiorentino",51012,"Val di Chiana Aretina","AR","Italiani",9576,23449
+2020,"Castiglion Fiorentino",51012,"Val di Chiana Aretina","AR","Stranieri",3094,18627
+2020,"Cavriglia",51013,"Valdarno Aretino","AR","Italiani",7742,28755
+2020,"Cavriglia",51013,"Valdarno Aretino","AR","Stranieri",2793,19957
+2020,"Cecina",49007,"Costa degli Etruschi","LI","Italiani",59496,334433
+2020,"Cecina",49007,"Costa degli Etruschi","LI","Stranieri",11953,77356
+2020,"Cerreto Guidi",48011,"Empolese Valdelsa e Montalbano","FI","Italiani",911,6063
+2020,"Cerreto Guidi",48011,"Empolese Valdelsa e Montalbano","FI","Stranieri",552,3882
+2020,"Certaldo",48012,"Empolese Valdelsa e Montalbano","FI","Italiani",4025,12544
+2020,"Certaldo",48012,"Empolese Valdelsa e Montalbano","FI","Stranieri",2559,15215
+2020,"Cetona",52008,"Val di Chiana Senese","SI","Italiani",1487,6448
+2020,"Cetona",52008,"Val di Chiana Senese","SI","Stranieri",565,3307
+2020,"Chianciano Terme",52009,"Val di Chiana Senese","SI","Italiani",73199,188218
+2020,"Chianciano Terme",52009,"Val di Chiana Senese","SI","Stranieri",8560,18103
+2020,"Chianni",50012,"Terre di Pisa","PI","Italiani",505,2829
+2020,"Chianni",50012,"Terre di Pisa","PI","Stranieri",304,2725
+2020,"Chitignano",51014,"Casentino","AR","Italiani",225,472
+2020,"Chitignano",51014,"Casentino","AR","Stranieri",7,14
+2020,"Chiusdino",52010,"Terre di Siena","SI","Italiani",5885,22192
+2020,"Chiusdino",52010,"Terre di Siena","SI","Stranieri",4017,28995
+2020,"Chiusi",52011,"Val di Chiana Senese","SI","Italiani",11940,22499
+2020,"Chiusi",52011,"Val di Chiana Senese","SI","Stranieri",2233,5211
+2020,"Chiusi della Verna",51015,"Casentino","AR","Italiani",5456,12566
+2020,"Chiusi della Verna",51015,"Casentino","AR","Stranieri",392,776
+2020,"Cinigiano",53007,"Maremma Toscana Area Sud","GR","Italiani",2235,9789
+2020,"Cinigiano",53007,"Maremma Toscana Area Sud","GR","Stranieri",1289,5652
+2020,"Civitella in Val di Chiana",51016,"Val di Chiana Aretina","AR","Italiani",3251,9765
+2020,"Civitella in Val di Chiana",51016,"Val di Chiana Aretina","AR","Stranieri",861,4055
+2020,"Civitella Paganico",53008,"Maremma Toscana Area Sud","GR","Italiani",3140,10293
+2020,"Civitella Paganico",53008,"Maremma Toscana Area Sud","GR","Stranieri",842,4873
+2020,"Colle di Val d'Elsa",52012,"Terre di Valdelsa e dellEtruria Volterrana","SI","Italiani",16522,41312
+2020,"Colle di Val d'Elsa",52012,"Terre di Valdelsa e dellEtruria Volterrana","SI","Stranieri",4017,14417
+2020,"Collesalvetti",49008,"Livorno","LI","Italiani",4906,17038
+2020,"Collesalvetti",49008,"Livorno","LI","Stranieri",1375,4070
+2020,"Comano",45005,"Lunigiana","MS","Italiani",347,906
+2020,"Comano",45005,"Lunigiana","MS","Stranieri",120,310
+2020,"Coreglia Antelminelli",46011,"Garfagnana e media valle del Serchio","LU","Italiani",330,1446
+2020,"Coreglia Antelminelli",46011,"Garfagnana e media valle del Serchio","LU","Stranieri",62,541
+2020,"Cortona",51017,"Val di Chiana Aretina","AR","Italiani",17398,55955
+2020,"Cortona",51017,"Val di Chiana Aretina","AR","Stranieri",7029,37934
+2020,"Crespina Lorenzana",50041,"Terre di Pisa","PI","Italiani",965,5762
+2020,"Crespina Lorenzana",50041,"Terre di Pisa","PI","Stranieri",606,4489
+2020,"Dicomano",48013,"Mugello","FI","Italiani",637,4459
+2020,"Dicomano",48013,"Mugello","FI","Stranieri",500,3312
+2020,"Empoli",48014,"Empolese Valdelsa e Montalbano","FI","Italiani",4820,18931
+2020,"Empoli",48014,"Empolese Valdelsa e Montalbano","FI","Stranieri",585,4443
+2020,"Fabbriche di Vergemoli",46036,"Garfagnana e media valle del Serchio","LU","Italiani",55,402
+2020,"Fabbriche di Vergemoli",46036,"Garfagnana e media valle del Serchio","LU","Stranieri",19,162
+2020,"Fiesole",48015,"Firenze e Area Fiorentina","FI","Italiani",9255,21698
+2020,"Fiesole",48015,"Firenze e Area Fiorentina","FI","Stranieri",8198,23722
+2020,"Figline e Incisa Valdarno",48052,"Firenze e Area Fiorentina","FI","Italiani",18171,50070
+2020,"Figline e Incisa Valdarno",48052,"Firenze e Area Fiorentina","FI","Stranieri",12478,84230
+2020,"Filattiera",45006,"Lunigiana","MS","Italiani",349,690
+2020,"Filattiera",45006,"Lunigiana","MS","Stranieri",280,810
+2020,"Firenze",48017,"Firenze e Area Fiorentina","FI","Italiani",406615,900885
+2020,"Firenze",48017,"Firenze e Area Fiorentina","FI","Stranieri",407697,1067175
+2020,"Firenzuola",48018,"Mugello","FI","Italiani",3549,8555
+2020,"Firenzuola",48018,"Mugello","FI","Stranieri",435,1626
+2020,"Fivizzano",45007,"Lunigiana","MS","Italiani",2105,6775
+2020,"Fivizzano",45007,"Lunigiana","MS","Stranieri",568,2375
+2020,"Foiano della Chiana",51018,"Val di Chiana Aretina","AR","Italiani",3206,8079
+2020,"Foiano della Chiana",51018,"Val di Chiana Aretina","AR","Stranieri",820,5189
+2020,"Follonica",53009,"Maremma Toscana Area Nord","GR","Italiani",58686,310478
+2020,"Follonica",53009,"Maremma Toscana Area Nord","GR","Stranieri",8723,59674
+2020,"Forte dei Marmi",46013,"Versilia","LU","Italiani",38716,122495
+2020,"Forte dei Marmi",46013,"Versilia","LU","Stranieri",14371,57551
+2020,"Fosciandora",46014,"Garfagnana e media valle del Serchio","LU","Italiani",126,686
+2020,"Fosciandora",46014,"Garfagnana e media valle del Serchio","LU","Stranieri",55,426
+2020,"Fosdinovo",45008,"Lunigiana","MS","Italiani",2785,7557
+2020,"Fosdinovo",45008,"Lunigiana","MS","Stranieri",446,1063
+2020,"Fucecchio",48019,"Empolese Valdelsa e Montalbano","FI","Italiani",1021,5112
+2020,"Fucecchio",48019,"Empolese Valdelsa e Montalbano","FI","Stranieri",589,2933
+2020,"Gaiole in Chianti",52013,"Chianti","SI","Italiani",7262,17884
+2020,"Gaiole in Chianti",52013,"Chianti","SI","Stranieri",4308,18324
+2020,"Gallicano",46015,"Garfagnana e media valle del Serchio","LU","Italiani",1150,2713
+2020,"Gallicano",46015,"Garfagnana e media valle del Serchio","LU","Stranieri",252,1821
+2020,"Gambassi Terme",48020,"Empolese Valdelsa e Montalbano","FI","Italiani",4119,10674
+2020,"Gambassi Terme",48020,"Empolese Valdelsa e Montalbano","FI","Stranieri",2559,16265
+2020,"Gavorrano",53010,"Maremma Toscana Area Nord","GR","Italiani",7002,28904
+2020,"Gavorrano",53010,"Maremma Toscana Area Nord","GR","Stranieri",3514,22997
+2020,"Greve in Chianti",48021,"Chianti","FI","Italiani",7785,24700
+2020,"Greve in Chianti",48021,"Chianti","FI","Stranieri",8235,33981
+2020,"Grosseto",53011,"Maremma Toscana Area Sud","GR","Italiani",155994,837591
+2020,"Grosseto",53011,"Maremma Toscana Area Sud","GR","Stranieri",16171,87530
+2020,"Guardistallo",50015,"Costa degli Etruschi","PI","Italiani",2353,17587
+2020,"Guardistallo",50015,"Costa degli Etruschi","PI","Stranieri",1498,12380
+2020,"Impruneta",48022,"Firenze e Area Fiorentina","FI","Italiani",7181,26257
+2020,"Impruneta",48022,"Firenze e Area Fiorentina","FI","Stranieri",3095,10758
+2020,"Isola del Giglio",53012,"Maremma Toscana Area Sud","GR","Italiani",13653,56726
+2020,"Isola del Giglio",53012,"Maremma Toscana Area Sud","GR","Stranieri",1160,5598
+2020,"Lajatico",50016,"Terre di Pisa","PI","Italiani",1273,5609
+2020,"Lajatico",50016,"Terre di Pisa","PI","Stranieri",737,5104
+2020,"Lamporecchio",47005,"Valdinievole","PT","Italiani",4786,13831
+2020,"Lamporecchio",47005,"Valdinievole","PT","Stranieri",4313,24319
+2020,"Larciano",47006,"Valdinievole","PT","Italiani",3081,7685
+2020,"Larciano",47006,"Valdinievole","PT","Stranieri",751,4185
+2020,"Lastra a Signa",48024,"Firenze e Area Fiorentina","FI","Italiani",4611,14624
+2020,"Lastra a Signa",48024,"Firenze e Area Fiorentina","FI","Stranieri",1282,5076
+2020,"Laterina Pergine Valdarno",51042,"Valdarno Aretino","AR","Italiani",6080,17902
+2020,"Laterina Pergine Valdarno",51042,"Valdarno Aretino","AR","Stranieri",1692,8111
+2020,"Licciana Nardi",45009,"Lunigiana","MS","Italiani",1212,2678
+2020,"Licciana Nardi",45009,"Lunigiana","MS","Stranieri",386,1133
+2020,"Livorno",49009,"Livorno","LI","Italiani",74811,175649
+2020,"Livorno",49009,"Livorno","LI","Stranieri",28825,78696
+2020,"Londa",48025,"Firenze e Area Fiorentina","FI","Italiani",164,488
+2020,"Londa",48025,"Firenze e Area Fiorentina","FI","Stranieri",149,820
+2020,"Loro Ciuffenna",51020,"Valdarno Aretino","AR","Italiani",1963,6615
+2020,"Loro Ciuffenna",51020,"Valdarno Aretino","AR","Stranieri",1752,9871
+2020,"Lucca",46017,"Piana di Lucca","LU","Italiani",42227,77409
+2020,"Lucca",46017,"Piana di Lucca","LU","Stranieri",22378,52435
+2020,"Lucignano",51021,"Val di Chiana Aretina","AR","Italiani",1040,4362
+2020,"Lucignano",51021,"Val di Chiana Aretina","AR","Stranieri",583,3917
+2020,"Magliano in Toscana",53013,"Maremma Toscana Area Sud","GR","Italiani",11738,53872
+2020,"Magliano in Toscana",53013,"Maremma Toscana Area Sud","GR","Stranieri",1185,5818
+2020,"Manciano",53014,"Maremma Toscana Area Sud","GR","Italiani",33757,88856
+2020,"Manciano",53014,"Maremma Toscana Area Sud","GR","Stranieri",4004,12167
+2020,"Marciana",49010,"Elba e Isole di Toscana","LI","Italiani",22220,126063
+2020,"Marciana",49010,"Elba e Isole di Toscana","LI","Stranieri",5140,27790
+2020,"Marciana Marina",49011,"Elba e Isole di Toscana","LI","Italiani",14774,64775
+2020,"Marciana Marina",49011,"Elba e Isole di Toscana","LI","Stranieri",2506,10032
+2020,"Marciano della Chiana",51022,"Val di Chiana Aretina","AR","Italiani",196,671
+2020,"Marciano della Chiana",51022,"Val di Chiana Aretina","AR","Stranieri",51,336
+2020,"Marliana",47007,"Pistoia e Montagna Pistoiese","PT","Italiani",821,2397
+2020,"Marliana",47007,"Pistoia e Montagna Pistoiese","PT","Stranieri",480,2022
+2020,"Marradi",48026,"Mugello","FI","Italiani",1421,7866
+2020,"Marradi",48026,"Mugello","FI","Stranieri",270,1917
+2020,"Massa",45010,"Riviera Apuana","MS","Italiani",113015,552951
+2020,"Massa",45010,"Riviera Apuana","MS","Stranieri",14410,53769
+2020,"Massa e Cozzile",47008,"Valdinievole","PT","Italiani",344,1104
+2020,"Massa e Cozzile",47008,"Valdinievole","PT","Stranieri",187,1008
+2020,"Massa Marittima",53015,"Maremma Toscana Area Nord","GR","Italiani",14002,54570
+2020,"Massa Marittima",53015,"Maremma Toscana Area Nord","GR","Stranieri",4600,31619
+2020,"Massarosa",46018,"Versilia","LU","Italiani",2513,8096
+2020,"Massarosa",46018,"Versilia","LU","Stranieri",573,3639
+2020,"Minucciano",46019,"Garfagnana e media valle del Serchio","LU","Italiani",3111,7693
+2020,"Minucciano",46019,"Garfagnana e media valle del Serchio","LU","Stranieri",483,1510
+2020,"Molazzana",46020,"Garfagnana e media valle del Serchio","LU","Italiani",98,799
+2020,"Molazzana",46020,"Garfagnana e media valle del Serchio","LU","Stranieri",171,1516
+2020,"Monsummano Terme",47009,"Valdinievole","PT","Italiani",3047,7851
+2020,"Monsummano Terme",47009,"Valdinievole","PT","Stranieri",829,4318
+2020,"Montaione",48027,"Empolese Valdelsa e Montalbano","FI","Italiani",8060,34042
+2020,"Montaione",48027,"Empolese Valdelsa e Montalbano","FI","Stranieri",9782,78460
+2020,"Montalcino",52037,"Val d'Orcia","SI","Italiani",24696,57573
+2020,"Montalcino",52037,"Val d'Orcia","SI","Stranieri",7955,28139
+2020,"Montale",47010,"Pistoia e Montagna Pistoiese","PT","Italiani",1323,3001
+2020,"Montale",47010,"Pistoia e Montagna Pistoiese","PT","Stranieri",136,387
+2020,"Monte Argentario",53016,"Maremma Toscana Area Sud","GR","Italiani",31831,105446
+2020,"Monte Argentario",53016,"Maremma Toscana Area Sud","GR","Stranieri",5952,20250
+2020,"Montecarlo",46021,"Piana di Lucca","LU","Italiani",2356,5936
+2020,"Montecarlo",46021,"Piana di Lucca","LU","Stranieri",889,3632
+2020,"Montecatini Terme",47011,"Valdinievole","PT","Italiani",76178,209018
+2020,"Montecatini Terme",47011,"Valdinievole","PT","Stranieri",33180,99379
+2020,"Montecatini Val di Cecina",50019,"Terre di Valdelsa e dellEtruria Volterrana","PI","Italiani",6053,18095
+2020,"Montecatini Val di Cecina",50019,"Terre di Valdelsa e dellEtruria Volterrana","PI","Stranieri",1777,11312
+2020,"Montelupo Fiorentino",48028,"Empolese Valdelsa e Montalbano","FI","Italiani",2234,12232
+2020,"Montelupo Fiorentino",48028,"Empolese Valdelsa e Montalbano","FI","Stranieri",415,1888
+2020,"Montemignaio",51023,"Casentino","AR","Italiani",493,6897
+2020,"Montemignaio",51023,"Casentino","AR","Stranieri",226,914
+2020,"Montemurlo",100003,"Area Pratese","PO","Italiani",414,2374
+2020,"Montemurlo",100003,"Area Pratese","PO","Stranieri",244,954
+2020,"Montepulciano",52015,"Val di Chiana Senese","SI","Italiani",39057,89285
+2020,"Montepulciano",52015,"Val di Chiana Senese","SI","Stranieri",12288,37222
+2020,"Monterchi",51024,"Valtiberina Toscana","AR","Italiani",69,415
+2020,"Monterchi",51024,"Valtiberina Toscana","AR","Stranieri",53,432
+2020,"Monteriggioni",52016,"Terre di Valdelsa e dellEtruria Volterrana","SI","Italiani",24898,52460
+2020,"Monteriggioni",52016,"Terre di Valdelsa e dellEtruria Volterrana","SI","Stranieri",7244,25265
+2020,"Monteroni d'Arbia",52017,"Terre di Siena","SI","Italiani",5560,18500
+2020,"Monteroni d'Arbia",52017,"Terre di Siena","SI","Stranieri",1558,9744
+2020,"Monterotondo Marittimo",53027,"Maremma Toscana Area Nord","GR","Italiani",1303,5424
+2020,"Monterotondo Marittimo",53027,"Maremma Toscana Area Nord","GR","Stranieri",330,2304
+2020,"Monte San Savino",51025,"Val di Chiana Aretina","AR","Italiani",6378,17177
+2020,"Monte San Savino",51025,"Val di Chiana Aretina","AR","Stranieri",1341,6654
+2020,"Montescudaio",50020,"Costa degli Etruschi","PI","Italiani",1863,9332
+2020,"Montescudaio",50020,"Costa degli Etruschi","PI","Stranieri",763,6345
+2020,"Montespertoli",48030,"Empolese Valdelsa e Montalbano","FI","Italiani",2169,8555
+2020,"Montespertoli",48030,"Empolese Valdelsa e Montalbano","FI","Stranieri",2695,17373
+2020,"Montevarchi",51026,"Valdarno Aretino","AR","Italiani",7553,19673
+2020,"Montevarchi",51026,"Valdarno Aretino","AR","Stranieri",1743,4763
+2020,"Monteverdi Marittimo",50021,"Terre di Valdelsa e dellEtruria Volterrana","PI","Italiani",2468,7863
+2020,"Monteverdi Marittimo",50021,"Terre di Valdelsa e dellEtruria Volterrana","PI","Stranieri",470,2676
+2020,"Monticiano",52018,"Terre di Siena","SI","Italiani",2127,6335
+2020,"Monticiano",52018,"Terre di Siena","SI","Stranieri",829,3605
+2020,"Montieri",53017,"Maremma Toscana Area Nord","GR","Italiani",1525,4800
+2020,"Montieri",53017,"Maremma Toscana Area Nord","GR","Stranieri",382,2411
+2020,"Montignoso",45011,"Riviera Apuana","MS","Italiani",10035,44424
+2020,"Montignoso",45011,"Riviera Apuana","MS","Stranieri",2047,11423
+2020,"Montopoli in Val d'Arno",50022,"Terre di Pisa","PI","Italiani",1972,8490
+2020,"Montopoli in Val d'Arno",50022,"Terre di Pisa","PI","Stranieri",1124,6771
+2020,"Mulazzo",45012,"Lunigiana","MS","Italiani",3198,9594
+2020,"Mulazzo",45012,"Lunigiana","MS","Stranieri",691,3028
+2020,"Murlo",52019,"Terre di Siena","SI","Italiani",7226,19653
+2020,"Murlo",52019,"Terre di Siena","SI","Stranieri",3346,14016
+2020,"Orbetello",53018,"Maremma Toscana Area Sud","GR","Italiani",140038,802990
+2020,"Orbetello",53018,"Maremma Toscana Area Sud","GR","Stranieri",11799,55665
+2020,"Ortignano Raggiolo",51027,"Casentino","AR","Italiani",522,2354
+2020,"Ortignano Raggiolo",51027,"Casentino","AR","Stranieri",261,1984
+2020,"Palaia",50024,"Terre di Pisa","PI","Italiani",2316,20194
+2020,"Palaia",50024,"Terre di Pisa","PI","Stranieri",3022,30608
+2020,"Palazzuolo sul Senio",48031,"Mugello","FI","Italiani",1996,8100
+2020,"Palazzuolo sul Senio",48031,"Mugello","FI","Stranieri",236,1029
+2020,"Peccioli",50025,"Terre di Pisa","PI","Italiani",1895,7295
+2020,"Peccioli",50025,"Terre di Pisa","PI","Stranieri",1638,12927
+2020,"Pelago",48032,"Firenze e Area Fiorentina","FI","Italiani",1829,5606
+2020,"Pelago",48032,"Firenze e Area Fiorentina","FI","Stranieri",912,5488
+2020,"Pescaglia",46022,"Garfagnana e media valle del Serchio","LU","Italiani",114,601
+2020,"Pescaglia",46022,"Garfagnana e media valle del Serchio","LU","Stranieri",270,2175
+2020,"Pescia",47012,"Valdinievole","PT","Italiani",3788,10293
+2020,"Pescia",47012,"Valdinievole","PT","Stranieri",1234,7067
+2020,"Piancastagnaio",52020,"Amiata","SI","Italiani",1616,4024
+2020,"Piancastagnaio",52020,"Amiata","SI","Stranieri",71,216
+2020,"Piazza al Serchio",46023,"Garfagnana e media valle del Serchio","LU","Italiani",284,2189
+2020,"Piazza al Serchio",46023,"Garfagnana e media valle del Serchio","LU","Stranieri",56,416
+2020,"Pienza",52021,"Val d'Orcia","SI","Italiani",24069,57156
+2020,"Pienza",52021,"Val d'Orcia","SI","Stranieri",7214,22763
+2020,"Pietrasanta",46024,"Versilia","LU","Italiani",47821,194299
+2020,"Pietrasanta",46024,"Versilia","LU","Stranieri",8277,36295
+2020,"Pieve a Nievole",47013,"Valdinievole","PT","Italiani",182,1624
+2020,"Pieve a Nievole",47013,"Valdinievole","PT","Stranieri",71,531
+2020,"Pieve Fosciana",46025,"Garfagnana e media valle del Serchio","LU","Italiani",966,3385
+2020,"Pieve Fosciana",46025,"Garfagnana e media valle del Serchio","LU","Stranieri",365,2060
+2020,"Pieve Santo Stefano",51030,"Valtiberina Toscana","AR","Italiani",4825,12544
+2020,"Pieve Santo Stefano",51030,"Valtiberina Toscana","AR","Stranieri",504,1576
+2020,"Piombino",49012,"Costa degli Etruschi","LI","Italiani",98393,575297
+2020,"Piombino",49012,"Costa degli Etruschi","LI","Stranieri",13656,80693
+2020,"Pisa",50026,"Terre di Pisa","PI","Italiani",161094,641497
+2020,"Pisa",50026,"Terre di Pisa","PI","Stranieri",106448,231422
+2020,"Pistoia",47014,"Pistoia e Montagna Pistoiese","PT","Italiani",24569,58078
+2020,"Pistoia",47014,"Pistoia e Montagna Pistoiese","PT","Stranieri",7970,23554
+2020,"Pitigliano",53019,"Maremma Toscana Area Sud","GR","Italiani",6223,13275
+2020,"Pitigliano",53019,"Maremma Toscana Area Sud","GR","Stranieri",936,1977
+2020,"Podenzana",45013,"Lunigiana","MS","Italiani",828,1863
+2020,"Podenzana",45013,"Lunigiana","MS","Stranieri",192,689
+2020,"Poggibonsi",52022,"Terre di Valdelsa e dellEtruria Volterrana","SI","Italiani",15289,39234
+2020,"Poggibonsi",52022,"Terre di Valdelsa e dellEtruria Volterrana","SI","Stranieri",4700,19878
+2020,"Poggio a Caiano",100004,"Area Pratese","PO","Italiani",2132,5603
+2020,"Poggio a Caiano",100004,"Area Pratese","PO","Stranieri",2004,3591
+2020,"Pomarance",50027,"Terre di Valdelsa e dellEtruria Volterrana","PI","Italiani",5208,21518
+2020,"Pomarance",50027,"Terre di Valdelsa e dellEtruria Volterrana","PI","Stranieri",2655,17427
+2020,"Ponsacco",50028,"Terre di Pisa","PI","Italiani",3056,6573
+2020,"Ponsacco",50028,"Terre di Pisa","PI","Stranieri",518,2944
+2020,"Pontassieve",48033,"Firenze e Area Fiorentina","FI","Italiani",3851,12336
+2020,"Pontassieve",48033,"Firenze e Area Fiorentina","FI","Stranieri",5785,14684
+2020,"Pontedera",50029,"Terre di Pisa","PI","Italiani",7531,15649
+2020,"Pontedera",50029,"Terre di Pisa","PI","Stranieri",2546,6092
+2020,"Pontremoli",45014,"Lunigiana","MS","Italiani",3927,7506
+2020,"Pontremoli",45014,"Lunigiana","MS","Stranieri",809,1891
+2020,"Poppi",51031,"Casentino","AR","Italiani",13703,37229
+2020,"Poppi",51031,"Casentino","AR","Stranieri",1790,10302
+2020,"Porcari",46026,"Piana di Lucca","LU","Italiani",2079,6745
+2020,"Porcari",46026,"Piana di Lucca","LU","Stranieri",185,910
+2020,"Porto Azzurro",49013,"Elba e Isole di Toscana","LI","Italiani",20393,132501
+2020,"Porto Azzurro",49013,"Elba e Isole di Toscana","LI","Stranieri",5254,35168
+2020,"Portoferraio",49014,"Elba e Isole di Toscana","LI","Italiani",54644,308930
+2020,"Portoferraio",49014,"Elba e Isole di Toscana","LI","Stranieri",18537,112303
+2020,"Prato",100005,"Area Pratese","PO","Italiani",46142,114188
+2020,"Prato",100005,"Area Pratese","PO","Stranieri",27262,61627
+2020,"Pratovecchio Stia",51041,"Casentino","AR","Italiani",2359,7052
+2020,"Pratovecchio Stia",51041,"Casentino","AR","Stranieri",436,2183
+2020,"Quarrata",47017,"Pistoia e Montagna Pistoiese","PT","Italiani",1949,6562
+2020,"Quarrata",47017,"Pistoia e Montagna Pistoiese","PT","Stranieri",654,2416
+2020,"Radda in Chianti",52023,"Chianti","SI","Italiani",9081,20120
+2020,"Radda in Chianti",52023,"Chianti","SI","Stranieri",4044,16964
+2020,"Radicofani",52024,"Val d'Orcia","SI","Italiani",3481,9846
+2020,"Radicofani",52024,"Val d'Orcia","SI","Stranieri",545,2015
+2020,"Radicondoli",52025,"Terre di Valdelsa e dellEtruria Volterrana","SI","Italiani",1084,6074
+2020,"Radicondoli",52025,"Terre di Valdelsa e dellEtruria Volterrana","SI","Stranieri",966,7164
+2020,"Rapolano Terme",52026,"Terre di Siena","SI","Italiani",22499,53233
+2020,"Rapolano Terme",52026,"Terre di Siena","SI","Stranieri",1969,8253
+2020,"Reggello",48035,"Firenze e Area Fiorentina","FI","Italiani",11676,34986
+2020,"Reggello",48035,"Firenze e Area Fiorentina","FI","Stranieri",5366,18808
+2020,"Rignano sull'Arno",48036,"Firenze e Area Fiorentina","FI","Italiani",3361,9570
+2020,"Rignano sull'Arno",48036,"Firenze e Area Fiorentina","FI","Stranieri",5133,19012
+2020,"Rio",49021,"Elba e Isole di Toscana","LI","Italiani",19623,119910
+2020,"Rio",49021,"Elba e Isole di Toscana","LI","Stranieri",3925,24858
+2020,"Riparbella",50030,"Costa degli Etruschi","PI","Italiani",7170,30138
+2020,"Riparbella",50030,"Costa degli Etruschi","PI","Stranieri",2485,19348
+2020,"Roccalbegna",53020,"Amiata","GR","Italiani",726,2383
+2020,"Roccalbegna",53020,"Amiata","GR","Stranieri",75,296
+2020,"Roccastrada",53021,"Maremma Toscana Area Nord","GR","Italiani",2928,12718
+2020,"Roccastrada",53021,"Maremma Toscana Area Nord","GR","Stranieri",1506,9305
+2020,"Rosignano Marittimo",49017,"Costa degli Etruschi","LI","Italiani",63010,324383
+2020,"Rosignano Marittimo",49017,"Costa degli Etruschi","LI","Stranieri",22535,136540
+2020,"Rufina",48037,"Firenze e Area Fiorentina","FI","Italiani",551,2056
+2020,"Rufina",48037,"Firenze e Area Fiorentina","FI","Stranieri",357,1796
+2020,"Sambuca Pistoiese",47018,"Pistoia e Montagna Pistoiese","PT","Italiani",140,463
+2020,"Sambuca Pistoiese",47018,"Pistoia e Montagna Pistoiese","PT","Stranieri",13,34
+2020,"San Casciano dei Bagni",52027,"Val di Chiana Senese","SI","Italiani",8803,29071
+2020,"San Casciano dei Bagni",52027,"Val di Chiana Senese","SI","Stranieri",1428,8287
+2020,"San Casciano in Val di Pesa",48038,"Chianti","FI","Italiani",9502,29989
+2020,"San Casciano in Val di Pesa",48038,"Chianti","FI","Stranieri",5850,24752
+2020,"San Gimignano",52028,"Terre di Valdelsa e dellEtruria Volterrana","SI","Italiani",65791,144016
+2020,"San Gimignano",52028,"Terre di Valdelsa e dellEtruria Volterrana","SI","Stranieri",32189,94775
+2020,"San Giovanni Valdarno",51033,"Valdarno Aretino","AR","Italiani",811,3571
+2020,"San Giovanni Valdarno",51033,"Valdarno Aretino","AR","Stranieri",190,1798
+2020,"San Giuliano Terme",50031,"Terre di Pisa","PI","Italiani",13852,284295
+2020,"San Giuliano Terme",50031,"Terre di Pisa","PI","Stranieri",6089,63870
+2020,"San Godenzo",48039,"Mugello","FI","Italiani",446,1216
+2020,"San Godenzo",48039,"Mugello","FI","Stranieri",61,404
+2020,"San Marcello Piteglio",47024,"Pistoia e Montagna Pistoiese","PT","Italiani",6594,31989
+2020,"San Marcello Piteglio",47024,"Pistoia e Montagna Pistoiese","PT","Stranieri",466,2787
+2020,"San Miniato",50032,"Terre di Pisa","PI","Italiani",7786,17462
+2020,"San Miniato",50032,"Terre di Pisa","PI","Stranieri",2257,8060
+2020,"San Quirico d'Orcia",52030,"Val d'Orcia","SI","Italiani",37550,88318
+2020,"San Quirico d'Orcia",52030,"Val d'Orcia","SI","Stranieri",5377,18603
+2020,"San Romano in Garfagnana",46027,"Garfagnana e media valle del Serchio","LU","Italiani",76,378
+2020,"San Romano in Garfagnana",46027,"Garfagnana e media valle del Serchio","LU","Stranieri",19,116
+2020,"Sansepolcro",51034,"Valtiberina Toscana","AR","Italiani",12184,30727
+2020,"Sansepolcro",51034,"Valtiberina Toscana","AR","Stranieri",1574,6418
+2020,"Santa Croce sull'Arno",50033,"Terre di Pisa","PI","Italiani",152,588
+2020,"Santa Croce sull'Arno",50033,"Terre di Pisa","PI","Stranieri",35,183
+2020,"Santa Fiora",53022,"Amiata","GR","Italiani",896,3743
+2020,"Santa Fiora",53022,"Amiata","GR","Stranieri",75,528
+2020,"Santa Luce",50034,"Costa degli Etruschi","PI","Italiani",2959,10732
+2020,"Santa Luce",50034,"Costa degli Etruschi","PI","Stranieri",591,3840
+2020,"Santa Maria a Monte",50035,"Terre di Pisa","PI","Italiani",1510,4071
+2020,"Santa Maria a Monte",50035,"Terre di Pisa","PI","Stranieri",476,725
+2020,"San Vincenzo",49018,"Costa degli Etruschi","LI","Italiani",93495,531154
+2020,"San Vincenzo",49018,"Costa degli Etruschi","LI","Stranieri",29794,245417
+2020,"Sarteano",52031,"Val di Chiana Senese","SI","Italiani",6698,25114
+2020,"Sarteano",52031,"Val di Chiana Senese","SI","Stranieri",2407,13997
+2020,"Sassetta",49019,"Costa degli Etruschi","LI","Italiani",4385,9933
+2020,"Sassetta",49019,"Costa degli Etruschi","LI","Stranieri",1720,7153
+2020,"Scandicci",48041,"Firenze e Area Fiorentina","FI","Italiani",5508,16873
+2020,"Scandicci",48041,"Firenze e Area Fiorentina","FI","Stranieri",826,3833
+2020,"Scansano",53023,"Maremma Toscana Area Sud","GR","Italiani",2613,8724
+2020,"Scansano",53023,"Maremma Toscana Area Sud","GR","Stranieri",411,2769
+2020,"Scarlino",53024,"Maremma Toscana Area Nord","GR","Italiani",33786,181103
+2020,"Scarlino",53024,"Maremma Toscana Area Nord","GR","Stranieri",5788,39130
+2020,"Scarperia e San Piero",48053,"Mugello","FI","Italiani",18714,31700
+2020,"Scarperia e San Piero",48053,"Mugello","FI","Stranieri",3139,8530
+2020,"Seggiano",53025,"Amiata","GR","Italiani",1731,4493
+2020,"Seggiano",53025,"Amiata","GR","Stranieri",609,2974
+2020,"Semproniano",53028,"Maremma Toscana Area Sud","GR","Italiani",3944,9553
+2020,"Semproniano",53028,"Maremma Toscana Area Sud","GR","Stranieri",456,969
+2020,"Seravezza",46028,"Versilia","LU","Italiani",817,5839
+2020,"Seravezza",46028,"Versilia","LU","Stranieri",94,807
+2020,"Serravalle Pistoiese",47020,"Pistoia e Montagna Pistoiese","PT","Italiani",9049,30450
+2020,"Serravalle Pistoiese",47020,"Pistoia e Montagna Pistoiese","PT","Stranieri",1562,6940
+2020,"Sestino",51035,"Valtiberina Toscana","AR","Italiani",88,250
+2020,"Sestino",51035,"Valtiberina Toscana","AR","Stranieri",46,387
+2020,"Sesto Fiorentino",48043,"Firenze e Area Fiorentina","FI","Italiani",25064,71340
+2020,"Sesto Fiorentino",48043,"Firenze e Area Fiorentina","FI","Stranieri",9761,40598
+2020,"Siena",52032,"Terre di Siena","SI","Italiani",141268,324979
+2020,"Siena",52032,"Terre di Siena","SI","Stranieri",59594,127242
+2020,"Signa",48044,"Firenze e Area Fiorentina","FI","Italiani",6541,21501
+2020,"Signa",48044,"Firenze e Area Fiorentina","FI","Stranieri",2165,5139
+2020,"Sillano Giuncugnano",46037,"Garfagnana e media valle del Serchio","LU","Italiani",1791,5266
+2020,"Sillano Giuncugnano",46037,"Garfagnana e media valle del Serchio","LU","Stranieri",373,934
+2020,"Sinalunga",52033,"Val di Chiana Senese","SI","Italiani",8799,21871
+2020,"Sinalunga",52033,"Val di Chiana Senese","SI","Stranieri",2257,9376
+2020,"Sorano",53026,"Maremma Toscana Area Sud","GR","Italiani",7226,17878
+2020,"Sorano",53026,"Maremma Toscana Area Sud","GR","Stranieri",718,2069
+2020,"Sovicille",52034,"Terre di Siena","SI","Italiani",9249,29201
+2020,"Sovicille",52034,"Terre di Siena","SI","Stranieri",3873,20403
+2020,"Stazzema",46030,"Versilia","LU","Italiani",627,1584
+2020,"Stazzema",46030,"Versilia","LU","Stranieri",40,246
+2020,"Subbiano",51037,"Casentino","AR","Italiani",2889,5425
+2020,"Subbiano",51037,"Casentino","AR","Stranieri",693,3496
+2020,"Suvereto",49020,"Costa degli Etruschi","LI","Italiani",8239,34651
+2020,"Suvereto",49020,"Costa degli Etruschi","LI","Stranieri",1629,11872
+2020,"Talla",51038,"Casentino","AR","Italiani",737,3076
+2020,"Talla",51038,"Casentino","AR","Stranieri",80,579
+2020,"Terranuova Bracciolini",51039,"Valdarno Aretino","AR","Italiani",13329,41110
+2020,"Terranuova Bracciolini",51039,"Valdarno Aretino","AR","Stranieri",3054,10127
+2020,"Terricciola",50036,"Terre di Pisa","PI","Italiani",1259,5631
+2020,"Terricciola",50036,"Terre di Pisa","PI","Stranieri",1398,9258
+2020,"Torrita di Siena",52035,"Val di Chiana Senese","SI","Italiani",3821,9809
+2020,"Torrita di Siena",52035,"Val di Chiana Senese","SI","Stranieri",1809,7380
+2020,"Trequanda",52036,"Val di Chiana Senese","SI","Italiani",8050,22488
+2020,"Trequanda",52036,"Val di Chiana Senese","SI","Stranieri",2464,8816
+2020,"Tresana",45015,"Lunigiana","MS","Italiani",453,1136
+2020,"Tresana",45015,"Lunigiana","MS","Stranieri",94,195
+2020,"Uzzano",47021,"Valdinievole","PT","Italiani",395,1603
+2020,"Uzzano",47021,"Valdinievole","PT","Stranieri",147,844
+2020,"Vaglia",48046,"Firenze e Area Fiorentina","FI","Italiani",4361,13476
+2020,"Vaglia",48046,"Firenze e Area Fiorentina","FI","Stranieri",1390,3907
+2020,"Vagli Sotto",46031,"Garfagnana e media valle del Serchio","LU","Italiani",181,425
+2020,"Vagli Sotto",46031,"Garfagnana e media valle del Serchio","LU","Stranieri",38,237
+2020,"Vaiano",100006,"Area Pratese","PO","Italiani",702,1921
+2020,"Vaiano",100006,"Area Pratese","PO","Stranieri",241,1289
+2020,"Vecchiano",50037,"Terre di Pisa","PI","Italiani",3537,8367
+2020,"Vecchiano",50037,"Terre di Pisa","PI","Stranieri",2074,4203
+2020,"Vernio",100007,"Area Pratese","PO","Italiani",1047,6195
+2020,"Vernio",100007,"Area Pratese","PO","Stranieri",38,180
+2020,"Viareggio",46033,"Versilia","LU","Italiani",92117,470662
+2020,"Viareggio",46033,"Versilia","LU","Stranieri",27981,106078
+2020,"Vicchio",48049,"Mugello","FI","Italiani",1869,8013
+2020,"Vicchio",48049,"Mugello","FI","Stranieri",1384,7123
+2020,"Vicopisano",50038,"Terre di Pisa","PI","Italiani",509,3506
+2020,"Vicopisano",50038,"Terre di Pisa","PI","Stranieri",154,608
+2020,"Villa Basilica",46034,"Piana di Lucca","LU","Italiani",41,225
+2020,"Villa Basilica",46034,"Piana di Lucca","LU","Stranieri",31,194
+2020,"Villa Collemandina",46035,"Garfagnana e media valle del Serchio","LU","Italiani",973,3743
+2020,"Villa Collemandina",46035,"Garfagnana e media valle del Serchio","LU","Stranieri",245,1939
+2020,"Vinci",48050,"Empolese Valdelsa e Montalbano","FI","Italiani",5345,12720
+2020,"Vinci",48050,"Empolese Valdelsa e Montalbano","FI","Stranieri",1993,9511
+2020,"Volterra",50039,"Terre di Valdelsa e dellEtruria Volterrana","PI","Italiani",28068,66818
+2020,"Volterra",50039,"Terre di Valdelsa e dellEtruria Volterrana","PI","Stranieri",7961,42007
+2020,"Zeri",45017,"Lunigiana","MS","Italiani",477,930
+2020,"Zeri",45017,"Lunigiana","MS","Stranieri",14,44
+2020,"Bagnone e Villafranca in Lunigiana","45002+45016","Lunigiana","MS","Italiani",624,2015
+2020,"Bagnone e Villafranca in Lunigiana","45002+45016","Lunigiana","MS","Stranieri",145,400
+2020,"Chiesina Uzzanese e Ponte Buggianese","47022+47016","Valdinievole","PT","Italiani",18713,25021
+2020,"Chiesina Uzzanese e Ponte Buggianese","47022+47016","Valdinievole","PT","Stranieri",646,1307
+2020,"Fauglia e Orciano Pisano","50014+50023","Terre di Pisa","PI","Italiani",1306,6293
+2020,"Fauglia e Orciano Pisano","50014+50023","Terre di Pisa","PI","Stranieri",576,4443

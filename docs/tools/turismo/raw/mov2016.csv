@@ -1,0 +1,552 @@
+Anno;Sigla_Provincia;Cod_Istat_Comune;Comune;Provenienza;Arrivi;Presenze
+2016;AR;51001;Anghiari;Italiani;4.542;20.667
+2016;AR;51001;Anghiari;Stranieri;1.101;6.457
+2016;AR;51002;Arezzo;Italiani;100.606;192.493
+2016;AR;51002;Arezzo;Stranieri;58.682;129.593
+2016;AR;51003;Badia Tedalda;Italiani;799;4.314
+2016;AR;51003;Badia Tedalda;Stranieri;37;100
+2016;AR;51004;Bibbiena;Italiani;6.705;17.638
+2016;AR;51004;Bibbiena;Stranieri;1.862;9.747
+2016;AR;51005;Bucine;Italiani;1.644;5.090
+2016;AR;51005;Bucine;Stranieri;9.529;70.043
+2016;AR;51006;Capolona;Italiani;151;425
+2016;AR;51006;Capolona;Stranieri;303;2.859
+2016;AR;51007;Caprese Michelangelo;Italiani;541;1.714
+2016;AR;51007;Caprese Michelangelo;Stranieri;257;1.161
+2016;AR;51008;Castel Focognano;Italiani;4;8
+2016;AR;51008;Castel Focognano;Stranieri;116;1.065
+2016;AR;51010;Castel San Niccolò;Italiani;428;2.503
+2016;AR;51010;Castel San Niccolò;Stranieri;805;5.366
+2016;AR;51011;Castiglion Fibocchi;Italiani;106;350
+2016;AR;51011;Castiglion Fibocchi;Stranieri;476;2.770
+2016;AR;51012;Castiglion Fiorentino;Italiani;6.988;17.685
+2016;AR;51012;Castiglion Fiorentino;Stranieri;15.115;45.325
+2016;AR;51013;Cavriglia;Italiani;5.486;25.449
+2016;AR;51013;Cavriglia;Stranieri;13.826;90.474
+2016;AR;51015;Chiusi della Verna;Italiani;9.176;21.939
+2016;AR;51015;Chiusi della Verna;Stranieri;3.877;5.497
+2016;AR;51016;Civitella in Val di Chiana;Italiani;4.554;9.465
+2016;AR;51016;Civitella in Val di Chiana;Stranieri;1.712;8.947
+2016;AR;51017;Cortona;Italiani;20.906;45.772
+2016;AR;51017;Cortona;Stranieri;27.775;129.651
+2016;AR;51018;Foiano della Chiana;Italiani;3.620;10.845
+2016;AR;51018;Foiano della Chiana;Stranieri;1.414;7.544
+2016;AR;51019;Laterina;Italiani;5.050;10.069
+2016;AR;51019;Laterina;Stranieri;7.018;12.287
+2016;AR;51020;Loro Ciuffenna;Italiani;1.558;2.750
+2016;AR;51020;Loro Ciuffenna;Stranieri;6.405;22.308
+2016;AR;51021;Lucignano;Italiani;1.036;3.052
+2016;AR;51021;Lucignano;Stranieri;1.264;18.165
+2016;AR;51022;Marciano della Chiana;Italiani;310;763
+2016;AR;51022;Marciano della Chiana;Stranieri;728;5.059
+2016;AR;51023;Montemignaio;Italiani;277;2.493
+2016;AR;51023;Montemignaio;Stranieri;678;2.491
+2016;AR;51024;Monterchi;Italiani;55;124
+2016;AR;51024;Monterchi;Stranieri;64;595
+2016;AR;51025;Monte San Savino;Italiani;6.742;12.636
+2016;AR;51025;Monte San Savino;Stranieri;4.420;17.614
+2016;AR;51026;Montevarchi;Italiani;9.457;21.403
+2016;AR;51026;Montevarchi;Stranieri;6.752;23.961
+2016;AR;51027;Ortignano Raggiolo;Italiani;260;684
+2016;AR;51027;Ortignano Raggiolo;Stranieri;450;3.611
+2016;AR;51028;Pergine Valdarno;Italiani;1.035;3.452
+2016;AR;51028;Pergine Valdarno;Stranieri;1.796;15.350
+2016;AR;51030;Pieve Santo Stefano;Italiani;5.677;12.933
+2016;AR;51030;Pieve Santo Stefano;Stranieri;2.845;4.793
+2016;AR;51031;Poppi;Italiani;14.027;38.794
+2016;AR;51031;Poppi;Stranieri;4.772;22.546
+2016;AR;51033;San Giovanni Valdarno;Italiani;2.316;7.193
+2016;AR;51033;San Giovanni Valdarno;Stranieri;949;5.870
+2016;AR;51034;Sansepolcro;Italiani;16.745;32.235
+2016;AR;51034;Sansepolcro;Stranieri;4.636;11.999
+2016;AR;51035;Sestino;Italiani;39;87
+2016;AR;51037;Subbiano;Italiani;3.260;6.858
+2016;AR;51037;Subbiano;Stranieri;2.265;12.330
+2016;AR;51038;Talla;Italiani;785;2.968
+2016;AR;51038;Talla;Stranieri;65;427
+2016;AR;51039;Terranuova Bracciolini;Italiani;19.750;35.525
+2016;AR;51039;Terranuova Bracciolini;Stranieri;9.301;22.743
+2016;AR;51040;Castelfranco Piandiscò;Italiani;863;2.285
+2016;AR;51040;Castelfranco Piandiscò;Stranieri;1.232;8.040
+2016;AR;51041;Pratovecchio Stia;Italiani;2.063;4.703
+2016;AR;51041;Pratovecchio Stia;Stranieri;769;3.369
+2016;FI;48001;Bagno a Ripoli;Italiani;11.511;57.553
+2016;FI;48001;Bagno a Ripoli;Stranieri;20.455;86.033
+2016;FI;48002;Barberino di Mugello;Italiani;29.690;86.243
+2016;FI;48002;Barberino di Mugello;Stranieri;15.334;70.536
+2016;FI;48003;Barberino Val d'Elsa;Italiani;10.239;21.963
+2016;FI;48003;Barberino Val d'Elsa;Stranieri;26.131;120.362
+2016;FI;48004;Borgo San Lorenzo;Italiani;11.856;23.447
+2016;FI;48004;Borgo San Lorenzo;Stranieri;11.942;41.385
+2016;FI;48005;Calenzano;Italiani;56.318;108.671
+2016;FI;48005;Calenzano;Stranieri;117.019;169.726
+2016;FI;48006;Campi Bisenzio;Italiani;37.617;125.676
+2016;FI;48006;Campi Bisenzio;Stranieri;49.764;135.174
+2016;FI;48008;Capraia e Limite;Italiani;3.032;16.030
+2016;FI;48008;Capraia e Limite;Stranieri;3.947;21.813
+2016;FI;48010;Castelfiorentino;Italiani;2.808;6.778
+2016;FI;48010;Castelfiorentino;Stranieri;5.716;39.376
+2016;FI;48011;Cerreto Guidi;Italiani;1.487;17.039
+2016;FI;48011;Cerreto Guidi;Stranieri;2.666;26.488
+2016;FI;48012;Certaldo;Italiani;7.560;17.014
+2016;FI;48012;Certaldo;Stranieri;17.161;91.381
+2016;FI;48013;Dicomano;Italiani;643;2.641
+2016;FI;48013;Dicomano;Stranieri;1.925;15.193
+2016;FI;48014;Empoli;Italiani;9.502;31.616
+2016;FI;48014;Empoli;Stranieri;3.689;17.057
+2016;FI;48015;Fiesole;Italiani;13.807;29.816
+2016;FI;48015;Fiesole;Stranieri;40.086;121.912
+2016;FI;48017;Firenze;Italiani;968.084;2.396.004
+2016;FI;48017;Firenze;Stranieri;2.653.946;7.033.528
+2016;FI;48018;Firenzuola;Italiani;3.808;9.803
+2016;FI;48018;Firenzuola;Stranieri;1.321;8.401
+2016;FI;48019;Fucecchio;Italiani;4.889;21.599
+2016;FI;48019;Fucecchio;Stranieri;4.427;29.240
+2016;FI;48020;Gambassi Terme;Italiani;5.510;13.877
+2016;FI;48020;Gambassi Terme;Stranieri;10.583;71.115
+2016;FI;48021;Greve in Chianti;Italiani;8.208;22.773
+2016;FI;48021;Greve in Chianti;Stranieri;37.198;156.709
+2016;FI;48022;Impruneta;Italiani;15.784;58.245
+2016;FI;48022;Impruneta;Stranieri;36.361;104.166
+2016;FI;48024;Lastra a Signa;Italiani;10.507;32.568
+2016;FI;48024;Lastra a Signa;Stranieri;9.943;42.968
+2016;FI;48025;Londa;Italiani;172;1.626
+2016;FI;48025;Londa;Stranieri;348;2.184
+2016;FI;48026;Marradi;Italiani;3.042;17.782
+2016;FI;48026;Marradi;Stranieri;817;6.413
+2016;FI;48027;Montaione;Italiani;7.276;23.476
+2016;FI;48027;Montaione;Stranieri;34.280;273.246
+2016;FI;48028;Montelupo Fiorentino;Italiani;4.249;9.086
+2016;FI;48028;Montelupo Fiorentino;Stranieri;1.878;8.020
+2016;FI;48030;Montespertoli;Italiani;7.487;28.185
+2016;FI;48030;Montespertoli;Stranieri;15.543;112.509
+2016;FI;48031;Palazzuolo sul Senio;Italiani;3.183;9.836
+2016;FI;48031;Palazzuolo sul Senio;Stranieri;1.781;13.467
+2016;FI;48032;Pelago;Italiani;4.203;15.957
+2016;FI;48032;Pelago;Stranieri;4.139;21.701
+2016;FI;48033;Pontassieve;Italiani;7.306;19.959
+2016;FI;48033;Pontassieve;Stranieri;42.982;91.655
+2016;FI;48035;Reggello;Italiani;15.615;46.690
+2016;FI;48035;Reggello;Stranieri;54.267;127.204
+2016;FI;48036;Rignano sull'Arno;Italiani;3.590;8.940
+2016;FI;48036;Rignano sull'Arno;Stranieri;19.715;91.072
+2016;FI;48037;Rufina;Italiani;1.205;4.719
+2016;FI;48037;Rufina;Stranieri;998;4.489
+2016;FI;48038;San Casciano in Val di Pesa;Italiani;11.123;28.265
+2016;FI;48038;San Casciano in Val di Pesa;Stranieri;27.786;123.907
+2016;FI;48039;San Godenzo;Italiani;1.583;4.572
+2016;FI;48039;San Godenzo;Stranieri;395;2.837
+2016;FI;48041;Scandicci;Italiani;12.107;39.030
+2016;FI;48041;Scandicci;Stranieri;4.497;25.746
+2016;FI;48043;Sesto Fiorentino;Italiani;46.643;102.908
+2016;FI;48043;Sesto Fiorentino;Stranieri;88.703;195.711
+2016;FI;48044;Signa;Italiani;16.568;51.258
+2016;FI;48044;Signa;Stranieri;25.946;46.683
+2016;FI;48045;Tavarnelle Val di Pesa;Italiani;11.634;29.271
+2016;FI;48045;Tavarnelle Val di Pesa;Stranieri;29.666;143.383
+2016;FI;48046;Vaglia;Italiani;5.492;27.519
+2016;FI;48046;Vaglia;Stranieri;9.801;34.723
+2016;FI;48049;Vicchio;Italiani;3.333;11.800
+2016;FI;48049;Vicchio;Stranieri;4.983;26.511
+2016;FI;48050;Vinci;Italiani;9.401;18.186
+2016;FI;48050;Vinci;Stranieri;10.591;39.021
+2016;FI;48052;Figline e Incisa Valdarno;Italiani;32.458;104.061
+2016;FI;48052;Figline e Incisa Valdarno;Stranieri;70.995;518.743
+2016;FI;48053;Scarperia e San Piero;Italiani;22.058;53.143
+2016;FI;48053;Scarperia e San Piero;Stranieri;13.374;61.712
+2016;GR;53001;Arcidosso;Italiani;2.264;6.282
+2016;GR;53001;Arcidosso;Stranieri;833;5.059
+2016;GR;53002;Campagnatico;Italiani;786;3.264
+2016;GR;53002;Campagnatico;Stranieri;948;6.796
+2016;GR;53003;Capalbio;Italiani;27.224;112.886
+2016;GR;53003;Capalbio;Stranieri;5.637;23.982
+2016;GR;53004;Castel del Piano;Italiani;8.906;19.593
+2016;GR;53004;Castel del Piano;Stranieri;3.038;10.425
+2016;GR;53005;Castell'Azzara;Italiani;1.022;4.153
+2016;GR;53005;Castell'Azzara;Stranieri;506;3.252
+2016;GR;53006;Castiglione della Pescaia;Italiani;143.573;933.783
+2016;GR;53006;Castiglione della Pescaia;Stranieri;66.740;464.461
+2016;GR;53007;Cinigiano;Italiani;2.034;6.938
+2016;GR;53007;Cinigiano;Stranieri;3.391;17.857
+2016;GR;53008;Civitella Paganico;Italiani;7.468;20.335
+2016;GR;53008;Civitella Paganico;Stranieri;4.289;22.849
+2016;GR;53009;Follonica;Italiani;73.052;441.023
+2016;GR;53009;Follonica;Stranieri;18.712;139.652
+2016;GR;53010;Gavorrano;Italiani;7.196;24.506
+2016;GR;53010;Gavorrano;Stranieri;10.707;76.223
+2016;GR;53011;Grosseto;Italiani;192.865;875.800
+2016;GR;53011;Grosseto;Stranieri;34.030;171.953
+2016;GR;53012;Isola del Giglio;Italiani;16.533;64.664
+2016;GR;53012;Isola del Giglio;Stranieri;1.786;8.365
+2016;GR;53013;Magliano in Toscana;Italiani;14.742;48.221
+2016;GR;53013;Magliano in Toscana;Stranieri;5.944;35.166
+2016;GR;53014;Manciano;Italiani;64.836;151.940
+2016;GR;53014;Manciano;Stranieri;11.460;39.503
+2016;GR;53015;Massa Marittima;Italiani;19.222;60.223
+2016;GR;53015;Massa Marittima;Stranieri;15.637;101.814
+2016;GR;53016;Monte Argentario;Italiani;38.046;115.692
+2016;GR;53016;Monte Argentario;Stranieri;16.449;60.237
+2016;GR;53017;Montieri;Italiani;1.711;4.389
+2016;GR;53017;Montieri;Stranieri;824;5.489
+2016;GR;53018;Orbetello;Italiani;160.166;916.816
+2016;GR;53018;Orbetello;Stranieri;31.033;200.578
+2016;GR;53019;Pitigliano;Italiani;8.591;16.134
+2016;GR;53019;Pitigliano;Stranieri;2.732;7.144
+2016;GR;53020;Roccalbegna;Italiani;985;2.112
+2016;GR;53020;Roccalbegna;Stranieri;444;2.543
+2016;GR;53021;Roccastrada;Italiani;5.735;19.560
+2016;GR;53021;Roccastrada;Stranieri;3.743;23.758
+2016;GR;53022;Santa Fiora;Italiani;1.244;3.475
+2016;GR;53022;Santa Fiora;Stranieri;304;1.887
+2016;GR;53023;Scansano;Italiani;8.118;20.329
+2016;GR;53023;Scansano;Stranieri;2.523;13.879
+2016;GR;53024;Scarlino;Italiani;37.200;216.826
+2016;GR;53024;Scarlino;Stranieri;13.595;109.787
+2016;GR;53025;Seggiano;Italiani;1.673;4.047
+2016;GR;53025;Seggiano;Stranieri;1.305;7.508
+2016;GR;53026;Sorano;Italiani;11.467;25.442
+2016;GR;53026;Sorano;Stranieri;3.973;17.541
+2016;GR;53027;Monterotondo Marittimo;Italiani;1.213;4.102
+2016;GR;53027;Monterotondo Marittimo;Stranieri;744;5.662
+2016;GR;53028;Semproniano;Italiani;4.926;10.682
+2016;GR;53028;Semproniano;Stranieri;875;2.814
+2016;LI;49001;Bibbona;Italiani;84.241;635.681
+2016;LI;49001;Bibbona;Stranieri;53.691;391.615
+2016;LI;49002;Campiglia Marittima;Italiani;20.336;67.215
+2016;LI;49002;Campiglia Marittima;Stranieri;8.028;51.533
+2016;LI;49003;Campo nell'Elba;Italiani;52.059;317.423
+2016;LI;49003;Campo nell'Elba;Stranieri;20.220;156.014
+2016;LI;49004;Capoliveri;Italiani;78.731;562.687
+2016;LI;49004;Capoliveri;Stranieri;43.437;370.683
+2016;LI;49005;Capraia Isola;Italiani;3.063;9.220
+2016;LI;49005;Capraia Isola;Stranieri;167;540
+2016;LI;49006;Castagneto Carducci;Italiani;58.825;394.415
+2016;LI;49006;Castagneto Carducci;Stranieri;42.109;315.440
+2016;LI;49007;Cecina;Italiani;60.914;435.944
+2016;LI;49007;Cecina;Stranieri;25.925;216.384
+2016;LI;49008;Collesalvetti;Italiani;8.655;16.781
+2016;LI;49008;Collesalvetti;Stranieri;5.002;10.129
+2016;LI;49009;Livorno;Italiani;87.930;191.727
+2016;LI;49009;Livorno;Stranieri;53.623;122.810
+2016;LI;49010;Marciana;Italiani;30.195;165.407
+2016;LI;49010;Marciana;Stranieri;15.134;86.583
+2016;LI;49011;Marciana Marina;Italiani;20.009;81.403
+2016;LI;49011;Marciana Marina;Stranieri;8.211;28.467
+2016;LI;49012;Piombino;Italiani;117.600;575.382
+2016;LI;49012;Piombino;Stranieri;29.649;182.744
+2016;LI;49013;Porto Azzurro;Italiani;20.851;135.234
+2016;LI;49013;Porto Azzurro;Stranieri;9.257;61.725
+2016;LI;49014;Portoferraio;Italiani;57.301;286.288
+2016;LI;49014;Portoferraio;Stranieri;36.407;227.877
+2016;LI;49015;Rio Marina;Italiani;18.406;119.028
+2016;LI;49015;Rio Marina;Stranieri;4.548;34.301
+2016;LI;49016;Rio nell'Elba;Italiani;7.009;45.197
+2016;LI;49016;Rio nell'Elba;Stranieri;4.512;36.264
+2016;LI;49017;Rosignano Marittimo;Italiani;61.143;331.777
+2016;LI;49017;Rosignano Marittimo;Stranieri;46.463;313.372
+2016;LI;49018;San Vincenzo;Italiani;81.616;480.650
+2016;LI;49018;San Vincenzo;Stranieri;72.956;661.151
+2016;LI;49019;Sassetta;Italiani;3.939;7.953
+2016;LI;49019;Sassetta;Stranieri;1.776;10.250
+2016;LI;49020;Suvereto;Italiani;6.041;26.234
+2016;LI;49020;Suvereto;Stranieri;3.802;30.457
+2016;LU;46001;Altopascio;Italiani;14.465;30.369
+2016;LU;46001;Altopascio;Stranieri;5.084;13.918
+2016;LU;46002;Bagni di Lucca;Italiani;6.515;13.217
+2016;LU;46002;Bagni di Lucca;Stranieri;3.121;15.759
+2016;LU;46003;Barga;Italiani;13.536;47.690
+2016;LU;46003;Barga;Stranieri;14.704;69.925
+2016;LU;46004;Borgo a Mozzano;Italiani;2.199;7.841
+2016;LU;46004;Borgo a Mozzano;Stranieri;1.566;8.688
+2016;LU;46005;Camaiore;Italiani;75.553;316.260
+2016;LU;46005;Camaiore;Stranieri;54.352;227.268
+2016;LU;46006;Camporgiano;Italiani;949;1.973
+2016;LU;46006;Camporgiano;Stranieri;1.064;12.150
+2016;LU;46008;Careggine;Italiani;1.031;1.810
+2016;LU;46008;Careggine;Stranieri;112;429
+2016;LU;46009;Castelnuovo di Garfagnana;Italiani;6.551;17.411
+2016;LU;46009;Castelnuovo di Garfagnana;Stranieri;2.414;11.292
+2016;LU;46010;Castiglione di Garfagnana;Italiani;5.544;14.022
+2016;LU;46010;Castiglione di Garfagnana;Stranieri;764;4.802
+2016;LU;46011;Coreglia Antelminelli;Italiani;568;2.166
+2016;LU;46011;Coreglia Antelminelli;Stranieri;1.925;14.701
+2016;LU;46013;Forte dei Marmi;Italiani;61.923;181.274
+2016;LU;46013;Forte dei Marmi;Stranieri;57.563;242.646
+2016;LU;46014;Fosciandora;Italiani;200;479
+2016;LU;46014;Fosciandora;Stranieri;156;1.252
+2016;LU;46015;Gallicano;Italiani;1.554;3.515
+2016;LU;46015;Gallicano;Stranieri;753;3.954
+2016;LU;46017;Lucca;Italiani;98.111;186.622
+2016;LU;46017;Lucca;Stranieri;130.170;319.575
+2016;LU;46018;Massarosa;Italiani;5.997;17.148
+2016;LU;46018;Massarosa;Stranieri;3.068;14.709
+2016;LU;46019;Minucciano;Italiani;2.466;6.297
+2016;LU;46019;Minucciano;Stranieri;984;4.742
+2016;LU;46020;Molazzana;Italiani;187;512
+2016;LU;46020;Molazzana;Stranieri;720;5.667
+2016;LU;46021;Montecarlo;Italiani;2.589;5.770
+2016;LU;46021;Montecarlo;Stranieri;1.612;7.592
+2016;LU;46022;Pescaglia;Italiani;444;1.792
+2016;LU;46022;Pescaglia;Stranieri;686;3.951
+2016;LU;46023;Piazza al Serchio;Italiani;1.478;4.090
+2016;LU;46023;Piazza al Serchio;Stranieri;380;2.540
+2016;LU;46024;Pietrasanta;Italiani;65.447;307.232
+2016;LU;46024;Pietrasanta;Stranieri;56.104;244.780
+2016;LU;46025;Pieve Fosciana;Italiani;879;3.641
+2016;LU;46025;Pieve Fosciana;Stranieri;751;4.033
+2016;LU;46026;Porcari;Italiani;3.570;10.760
+2016;LU;46026;Porcari;Stranieri;643;2.086
+2016;LU;46027;San Romano in Garfagnana;Italiani;759;3.392
+2016;LU;46027;San Romano in Garfagnana;Stranieri;210;1.752
+2016;LU;46028;Seravezza;Italiani;1.717;32.358
+2016;LU;46028;Seravezza;Stranieri;418;5.154
+2016;LU;46030;Stazzema;Italiani;2.323;4.210
+2016;LU;46030;Stazzema;Stranieri;288;1.131
+2016;LU;46031;Vagli Sotto;Italiani;352;905
+2016;LU;46031;Vagli Sotto;Stranieri;279;1.666
+2016;LU;46033;Viareggio;Italiani;132.113;578.269
+2016;LU;46033;Viareggio;Stranieri;95.148;558.514
+2016;LU;46035;Villa Collemandina;Italiani;2.398;9.962
+2016;LU;46035;Villa Collemandina;Stranieri;427;2.823
+2016;LU;46036;Fabbriche di Vergemoli;Italiani;47;112
+2016;LU;46036;Fabbriche di Vergemoli;Stranieri;104;743
+2016;LU;46037;Sillano Giuncugnano;Italiani;932;3.780
+2016;LU;46037;Sillano Giuncugnano;Stranieri;360;1.364
+2016;MS;45001;Aulla;Italiani;1.866;6.481
+2016;MS;45001;Aulla;Stranieri;877;2.214
+2016;MS;45002;Bagnone;Italiani;205;302
+2016;MS;45002;Bagnone;Stranieri;78;254
+2016;MS;45003;Carrara;Italiani;14.143;36.428
+2016;MS;45003;Carrara;Stranieri;7.010;17.002
+2016;MS;45004;Casola in Lunigiana;Italiani;25;170
+2016;MS;45004;Casola in Lunigiana;Stranieri;285;1.399
+2016;MS;45005;Comano;Italiani;239;825
+2016;MS;45005;Comano;Stranieri;339;768
+2016;MS;45006;Filattiera;Italiani;204;332
+2016;MS;45006;Filattiera;Stranieri;417;1.475
+2016;MS;45007;Fivizzano;Italiani;619;1.207
+2016;MS;45007;Fivizzano;Stranieri;983;4.411
+2016;MS;45008;Fosdinovo;Italiani;1.807;5.700
+2016;MS;45008;Fosdinovo;Stranieri;1.186;4.667
+2016;MS;45009;Licciana Nardi;Italiani;1.503;3.074
+2016;MS;45009;Licciana Nardi;Stranieri;796;3.005
+2016;MS;45010;Massa;Italiani;132.355;685.982
+2016;MS;45010;Massa;Stranieri;42.769;155.011
+2016;MS;45011;Montignoso;Italiani;12.369;52.756
+2016;MS;45011;Montignoso;Stranieri;3.577;16.480
+2016;MS;45012;Mulazzo;Italiani;4.554;10.423
+2016;MS;45012;Mulazzo;Stranieri;1.705;6.949
+2016;MS;45013;Podenzana;Italiani;851;1.413
+2016;MS;45013;Podenzana;Stranieri;416;889
+2016;MS;45014;Pontremoli;Italiani;3.184;6.204
+2016;MS;45014;Pontremoli;Stranieri;2.071;6.126
+2016;MS;45015;Tresana;Italiani;259;975
+2016;MS;45015;Tresana;Stranieri;151;487
+2016;MS;45016;Villafranca in Lunigiana;Italiani;1.804;5.623
+2016;MS;45016;Villafranca in Lunigiana;Stranieri;1.663;4.003
+2016;MS;45017;Zeri;Italiani;380;705
+2016;MS;45017;Zeri;Stranieri;101;169
+2016;PI;50001;Bientina;Italiani;9.320;21.038
+2016;PI;50001;Bientina;Stranieri;1.389;3.181
+2016;PI;50002;Buti;Italiani;212;402
+2016;PI;50002;Buti;Stranieri;608;3.664
+2016;PI;50003;Calci;Italiani;1.208;3.158
+2016;PI;50003;Calci;Stranieri;875;3.770
+2016;PI;50004;Calcinaia;Italiani;1.034;1.842
+2016;PI;50004;Calcinaia;Stranieri;1.557;4.512
+2016;PI;50005;Capannoli;Italiani;132;310
+2016;PI;50005;Capannoli;Stranieri;442;2.921
+2016;PI;50006;Casale Marittimo;Italiani;935;4.609
+2016;PI;50006;Casale Marittimo;Stranieri;7.462;80.642
+2016;PI;50008;Cascina;Italiani;8.185;14.152
+2016;PI;50008;Cascina;Stranieri;9.025;13.663
+2016;PI;50009;Castelfranco di Sotto;Italiani;327;585
+2016;PI;50009;Castelfranco di Sotto;Stranieri;822;6.017
+2016;PI;50010;Castellina Marittima;Italiani;2.882;11.292
+2016;PI;50010;Castellina Marittima;Stranieri;867;4.037
+2016;PI;50011;Castelnuovo di Val di Cecina;Italiani;1.487;4.211
+2016;PI;50011;Castelnuovo di Val di Cecina;Stranieri;1.202;8.473
+2016;PI;50012;Chianni;Italiani;787;2.881
+2016;PI;50012;Chianni;Stranieri;1.817;13.285
+2016;PI;50015;Guardistallo;Italiani;1.476;6.462
+2016;PI;50015;Guardistallo;Stranieri;3.120;26.827
+2016;PI;50016;Lajatico;Italiani;766;1.877
+2016;PI;50016;Lajatico;Stranieri;1.824;12.855
+2016;PI;50019;Montecatini Val di Cecina;Italiani;7.154;17.002
+2016;PI;50019;Montecatini Val di Cecina;Stranieri;6.890;42.749
+2016;PI;50020;Montescudaio;Italiani;3.216;18.317
+2016;PI;50020;Montescudaio;Stranieri;7.384;62.894
+2016;PI;50021;Monteverdi Marittimo;Italiani;1.483;3.387
+2016;PI;50021;Monteverdi Marittimo;Stranieri;1.598;8.412
+2016;PI;50022;Montopoli in Val d'Arno;Italiani;2.879;5.789
+2016;PI;50022;Montopoli in Val d'Arno;Stranieri;6.630;33.562
+2016;PI;50024;Palaia;Italiani;3.320;11.703
+2016;PI;50024;Palaia;Stranieri;7.376;43.405
+2016;PI;50025;Peccioli;Italiani;2.786;5.659
+2016;PI;50025;Peccioli;Stranieri;3.164;16.133
+2016;PI;50026;Pisa;Italiani;262.370;916.771
+2016;PI;50026;Pisa;Stranieri;410.112;798.156
+2016;PI;50027;Pomarance;Italiani;4.489;11.140
+2016;PI;50027;Pomarance;Stranieri;4.643;23.704
+2016;PI;50028;Ponsacco;Italiani;5.582;15.688
+2016;PI;50028;Ponsacco;Stranieri;1.442;5.279
+2016;PI;50029;Pontedera;Italiani;15.981;32.826
+2016;PI;50029;Pontedera;Stranieri;22.864;42.419
+2016;PI;50030;Riparbella;Italiani;6.313;27.690
+2016;PI;50030;Riparbella;Stranieri;7.154;57.117
+2016;PI;50031;San Giuliano Terme;Italiani;18.330;278.523
+2016;PI;50031;San Giuliano Terme;Stranieri;20.828;96.755
+2016;PI;50032;San Miniato;Italiani;4.828;10.731
+2016;PI;50032;San Miniato;Stranieri;4.194;21.042
+2016;PI;50033;Santa Croce sull'Arno;Italiani;405;726
+2016;PI;50033;Santa Croce sull'Arno;Stranieri;66;148
+2016;PI;50034;Santa Luce;Italiani;1.984;6.196
+2016;PI;50034;Santa Luce;Stranieri;2.088;15.492
+2016;PI;50035;Santa Maria a Monte;Italiani;918;2.709
+2016;PI;50035;Santa Maria a Monte;Stranieri;254;708
+2016;PI;50036;Terricciola;Italiani;1.419;2.991
+2016;PI;50036;Terricciola;Stranieri;3.747;20.709
+2016;PI;50037;Vecchiano;Italiani;1.433;3.689
+2016;PI;50037;Vecchiano;Stranieri;1.248;7.742
+2016;PI;50038;Vicopisano;Italiani;616;1.213
+2016;PI;50038;Vicopisano;Stranieri;546;1.732
+2016;PI;50039;Volterra;Italiani;24.568;50.649
+2016;PI;50039;Volterra;Stranieri;28.830;95.080
+2016;PI;50040;Casciana Terme Lari;Italiani;4.451;18.044
+2016;PI;50040;Casciana Terme Lari;Stranieri;3.486;17.752
+2016;PI;50041;Crespina Lorenzana;Italiani;892;3.881
+2016;PI;50041;Crespina Lorenzana;Stranieri;1.724;9.459
+2016;PO;100001;Cantagallo;Italiani;849;1.817
+2016;PO;100001;Cantagallo;Stranieri;105;610
+2016;PO;100002;Carmignano;Italiani;8.303;15.014
+2016;PO;100002;Carmignano;Stranieri;9.119;38.787
+2016;PO;100003;Montemurlo;Italiani;677;9.190
+2016;PO;100003;Montemurlo;Stranieri;311;1.945
+2016;PO;100004;Poggio a Caiano;Italiani;4.724;11.233
+2016;PO;100004;Poggio a Caiano;Stranieri;4.932;11.389
+2016;PO;100005;Prato;Italiani;69.234;185.847
+2016;PO;100005;Prato;Stranieri;131.232;233.088
+2016;PO;100006;Vaiano;Italiani;774;2.493
+2016;PO;100006;Vaiano;Stranieri;677;3.123
+2016;PO;100007;Vernio;Italiani;1.294;6.289
+2016;PO;100007;Vernio;Stranieri;249;1.334
+2016;PT;47001;Abetone;Italiani;25.735;60.464
+2016;PT;47001;Abetone;Stranieri;1.591;4.253
+2016;PT;47002;Agliana;Italiani;2.049;4.714
+2016;PT;47002;Agliana;Stranieri;220;535
+2016;PT;47003;Buggiano;Italiani;656;1.743
+2016;PT;47003;Buggiano;Stranieri;1.401;6.006
+2016;PT;47004;Cutigliano;Italiani;11.001;38.387
+2016;PT;47004;Cutigliano;Stranieri;520;2.257
+2016;PT;47005;Lamporecchio;Italiani;6.017;10.646
+2016;PT;47005;Lamporecchio;Stranieri;15.349;102.883
+2016;PT;47006;Larciano;Italiani;4.749;9.414
+2016;PT;47006;Larciano;Stranieri;3.125;12.126
+2016;PT;47007;Marliana;Italiani;920;1.933
+2016;PT;47007;Marliana;Stranieri;759;4.149
+2016;PT;47008;Massa e Cozzile;Italiani;369;859
+2016;PT;47008;Massa e Cozzile;Stranieri;1.016;6.548
+2016;PT;47009;Monsummano Terme;Italiani;9.561;19.006
+2016;PT;47009;Monsummano Terme;Stranieri;4.813;22.081
+2016;PT;47010;Montale;Italiani;1.789;3.397
+2016;PT;47010;Montale;Stranieri;555;1.797
+2016;PT;47011;Montecatini Terme;Italiani;182.458;426.170
+2016;PT;47011;Montecatini Terme;Stranieri;419.772;1.157.475
+2016;PT;47012;Pescia;Italiani;10.230;20.339
+2016;PT;47012;Pescia;Stranieri;12.541;44.373
+2016;PT;47013;Pieve a Nievole;Italiani;4.199;5.945
+2016;PT;47013;Pieve a Nievole;Stranieri;1.015;4.419
+2016;PT;47014;Pistoia;Italiani;35.096;65.793
+2016;PT;47014;Pistoia;Stranieri;22.753;70.755
+2016;PT;47015;Piteglio;Italiani;471;1.171
+2016;PT;47015;Piteglio;Stranieri;430;3.517
+2016;PT;47016;Ponte Buggianese;Italiani;1.140;2.831
+2016;PT;47016;Ponte Buggianese;Stranieri;662;2.009
+2016;PT;47017;Quarrata;Italiani;3.449;8.892
+2016;PT;47017;Quarrata;Stranieri;1.714;5.696
+2016;PT;47018;Sambuca Pistoiese;Italiani;210;447
+2016;PT;47018;Sambuca Pistoiese;Stranieri;14;24
+2016;PT;47019;San Marcello Pistoiese;Italiani;9.889;37.379
+2016;PT;47019;San Marcello Pistoiese;Stranieri;1.860;10.473
+2016;PT;47020;Serravalle Pistoiese;Italiani;11.376;23.881
+2016;PT;47020;Serravalle Pistoiese;Stranieri;9.719;21.771
+2016;PT;47021;Uzzano;Italiani;367;1.044
+2016;PT;47021;Uzzano;Stranieri;475;2.674
+2016;PT;47022;Chiesina Uzzanese;Italiani;32.093;35.761
+2016;PT;47022;Chiesina Uzzanese;Stranieri;1.737;2.494
+2016;SI;52001;Abbadia San Salvatore;Italiani;19.207;51.237
+2016;SI;52001;Abbadia San Salvatore;Stranieri;813;4.221
+2016;SI;52002;Asciano;Italiani;20.853;39.152
+2016;SI;52002;Asciano;Stranieri;16.778;56.172
+2016;SI;52003;Buonconvento;Italiani;4.188;10.104
+2016;SI;52003;Buonconvento;Stranieri;5.103;22.419
+2016;SI;52004;Casole d'Elsa;Italiani;8.370;23.160
+2016;SI;52004;Casole d'Elsa;Stranieri;18.215;96.366
+2016;SI;52005;Castellina in Chianti;Italiani;15.742;41.499
+2016;SI;52005;Castellina in Chianti;Stranieri;27.361;117.129
+2016;SI;52006;Castelnuovo Berardenga;Italiani;16.727;37.961
+2016;SI;52006;Castelnuovo Berardenga;Stranieri;28.586;104.229
+2016;SI;52007;Castiglione d'Orcia;Italiani;8.833;22.542
+2016;SI;52007;Castiglione d'Orcia;Stranieri;4.583;17.718
+2016;SI;52008;Cetona;Italiani;1.497;4.344
+2016;SI;52008;Cetona;Stranieri;1.818;12.489
+2016;SI;52009;Chianciano Terme;Italiani;138.631;370.452
+2016;SI;52009;Chianciano Terme;Stranieri;94.574;219.092
+2016;SI;52010;Chiusdino;Italiani;5.234;15.738
+2016;SI;52010;Chiusdino;Stranieri;10.768;82.845
+2016;SI;52011;Chiusi;Italiani;16.312;30.435
+2016;SI;52011;Chiusi;Stranieri;12.758;22.106
+2016;SI;52012;Colle di Val d'Elsa;Italiani;21.269;48.941
+2016;SI;52012;Colle di Val d'Elsa;Stranieri;19.676;66.813
+2016;SI;52013;Gaiole in Chianti;Italiani;6.307;12.734
+2016;SI;52013;Gaiole in Chianti;Stranieri;17.606;65.535
+2016;SI;52014;Montalcino;Italiani;19.152;35.699
+2016;SI;52014;Montalcino;Stranieri;32.566;84.756
+2016;SI;52015;Montepulciano;Italiani;39.116;74.853
+2016;SI;52015;Montepulciano;Stranieri;43.644;131.940
+2016;SI;52016;Monteriggioni;Italiani;30.981;58.425
+2016;SI;52016;Monteriggioni;Stranieri;27.493;99.768
+2016;SI;52017;Monteroni d'Arbia;Italiani;5.633;11.437
+2016;SI;52017;Monteroni d'Arbia;Stranieri;4.498;19.840
+2016;SI;52018;Monticiano;Italiani;3.516;6.857
+2016;SI;52018;Monticiano;Stranieri;1.991;7.543
+2016;SI;52019;Murlo;Italiani;4.559;9.689
+2016;SI;52019;Murlo;Stranieri;4.983;24.452
+2016;SI;52020;Piancastagnaio;Italiani;1.299;3.337
+2016;SI;52020;Piancastagnaio;Stranieri;188;570
+2016;SI;52021;Pienza;Italiani;21.399;46.625
+2016;SI;52021;Pienza;Stranieri;28.696;84.351
+2016;SI;52022;Poggibonsi;Italiani;31.506;67.223
+2016;SI;52022;Poggibonsi;Stranieri;30.206;89.128
+2016;SI;52023;Radda in Chianti;Italiani;6.965;13.602
+2016;SI;52023;Radda in Chianti;Stranieri;20.566;76.001
+2016;SI;52024;Radicofani;Italiani;4.275;7.337
+2016;SI;52024;Radicofani;Stranieri;2.660;10.032
+2016;SI;52025;Radicondoli;Italiani;716;6.083
+2016;SI;52025;Radicondoli;Stranieri;2.598;17.411
+2016;SI;52026;Rapolano Terme;Italiani;32.411;68.847
+2016;SI;52026;Rapolano Terme;Stranieri;8.504;36.692
+2016;SI;52027;San Casciano dei Bagni;Italiani;14.472;32.030
+2016;SI;52027;San Casciano dei Bagni;Stranieri;4.923;23.332
+2016;SI;52028;San Gimignano;Italiani;55.177;119.414
+2016;SI;52028;San Gimignano;Stranieri;109.433;337.066
+2016;SI;52029;San Giovanni d'Asso;Italiani;3.908;10.285
+2016;SI;52029;San Giovanni d'Asso;Stranieri;5.196;26.862
+2016;SI;52030;San Quirico d'Orcia;Italiani;44.912;102.400
+2016;SI;52030;San Quirico d'Orcia;Stranieri;19.057;63.383
+2016;SI;52031;Sarteano;Italiani;6.821;20.659
+2016;SI;52031;Sarteano;Stranieri;8.376;52.532
+2016;SI;52032;Siena;Italiani;208.075;449.296
+2016;SI;52032;Siena;Stranieri;265.485;555.482
+2016;SI;52033;Sinalunga;Italiani;10.446;17.412
+2016;SI;52033;Sinalunga;Stranieri;6.519;23.352
+2016;SI;52034;Sovicille;Italiani;10.136;26.989
+2016;SI;52034;Sovicille;Stranieri;11.976;70.703
+2016;SI;52035;Torrita di Siena;Italiani;4.393;9.258
+2016;SI;52035;Torrita di Siena;Stranieri;5.279;22.380
+2016;SI;52036;Trequanda;Italiani;5.079;15.890
+2016;SI;52036;Trequanda;Stranieri;4.655;23.174
+2016;LU;46007+46034;Capannori e Villa Basilica;Italiani;21.579;45.653
+2016;LU;46007+46034;Capannori e Villa Basilica;Stranieri;13.370;59.441
+2016;PI;50014+50023;Fauglia e Orciano Pisano;Italiani;1.265;2.641
+2016;PI;50014+50023;Fauglia e Orciano Pisano;Stranieri;635;2505

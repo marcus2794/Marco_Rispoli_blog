@@ -1,0 +1,532 @@
+codistat;comune;prov;tipo;Esercizi;Camere;Letti;Bagni
+045001;Aulla;MS;Esercizi Alberghieri;3;74;138;92
+045001;Aulla;MS;Esercizi Extralberghieri;18;84;202;80
+045002;Bagnone;MS;Esercizi Alberghieri;1;7;20;7
+045002;Bagnone;MS;Esercizi Extralberghieri;12;86;216;85
+045003;Carrara;MS;Esercizi Alberghieri;14;266;561;276
+045003;Carrara;MS;Esercizi Extralberghieri;38;317;983;194
+045004;Casola in Lunigiana;MS;Esercizi Extralberghieri;6;26;63;31
+045005;Comano;MS;Esercizi Alberghieri;2;28;52;31
+045005;Comano;MS;Esercizi Extralberghieri;4;18;41;20
+045006;Filattiera;MS;Esercizi Extralberghieri;8;41;101;40
+045007;Fivizzano;MS;Esercizi Alberghieri;6;55;97;54
+045007;Fivizzano;MS;Esercizi Extralberghieri;31;163;392;148
+045008;Fosdinovo;MS;Esercizi Alberghieri;2;39;84;46
+045008;Fosdinovo;MS;Esercizi Extralberghieri;20;72;160;68
+045009;Licciana Nardi;MS;Esercizi Extralberghieri;13;229;815;93
+045010;Massa;MS;Esercizi Alberghieri;77;1.724;3.661;1.791
+045010;Massa;MS;Esercizi Extralberghieri;78;5.827;22.336;2.085
+045011;Montignoso;MS;Esercizi Alberghieri;20;548;1.584;630
+045011;Montignoso;MS;Esercizi Extralberghieri;8;35;67;30
+045012;Mulazzo;MS;Esercizi Alberghieri;4;66;149;74
+045012;Mulazzo;MS;Esercizi Extralberghieri;15;77;193;63
+045013;Podenzana;MS;Esercizi Alberghieri;2;30;69;30
+045013;Podenzana;MS;Esercizi Extralberghieri;5;28;55;23
+045014;Pontremoli;MS;Esercizi Alberghieri;3;71;165;72
+045014;Pontremoli;MS;Esercizi Extralberghieri;24;113;263;104
+045015;Tresana;MS;Esercizi Alberghieri;2;23;39;19
+045015;Tresana;MS;Esercizi Extralberghieri;9;28;67;25
+045016;Villafranca in Lunigiana;MS;Esercizi Alberghieri;2;21;43;15
+045016;Villafranca in Lunigiana;MS;Esercizi Extralberghieri;10;125;438;79
+045017;Zeri;MS;Esercizi Alberghieri;3;40;76;45
+045017;Zeri;MS;Esercizi Extralberghieri;5;54;109;31
+046001;Altopascio;LU;Esercizi Alberghieri;7;236;425;265
+046001;Altopascio;LU;Esercizi Extralberghieri;22;130;263;97
+046002;Bagni di Lucca;LU;Esercizi Alberghieri;8;127;225;121
+046002;Bagni di Lucca;LU;Esercizi Extralberghieri;27;114;247;90
+046003;Barga;LU;Esercizi Alberghieri;9;365;702;375
+046003;Barga;LU;Esercizi Extralberghieri;54;248;512;179
+046004;Borgo a Mozzano;LU;Esercizi Alberghieri;2;31;64;32
+046004;Borgo a Mozzano;LU;Esercizi Extralberghieri;16;105;179;83
+046005;Camaiore;LU;Esercizi Alberghieri;81;2.430;4.800;2.533
+046005;Camaiore;LU;Esercizi Extralberghieri;56;396;1.014;338
+046006;Camporgiano;LU;Esercizi Extralberghieri;16;109;262;84
+046007;Capannori;LU;Esercizi Alberghieri;4;169;326;176
+046007;Capannori;LU;Esercizi Extralberghieri;76;389;760;344
+046008;Careggine;LU;Esercizi Alberghieri;3;33;70;35
+046008;Careggine;LU;Esercizi Extralberghieri;4;17;29;14
+046009;Castelnuovo di Garfagnana;LU;Esercizi Alberghieri;6;104;209;103
+046009;Castelnuovo di Garfagnana;LU;Esercizi Extralberghieri;20;117;217;87
+046010;Castiglione di Garfagnana;LU;Esercizi Alberghieri;3;75;177;81
+046010;Castiglione di Garfagnana;LU;Esercizi Extralberghieri;17;77;187;53
+046011;Coreglia Antelminelli;LU;Esercizi Alberghieri;3;51;110;43
+046011;Coreglia Antelminelli;LU;Esercizi Extralberghieri;12;131;354;77
+046013;Forte dei Marmi;LU;Esercizi Alberghieri;59;1.918;3.740;2.075
+046013;Forte dei Marmi;LU;Esercizi Extralberghieri;9;197;378;127
+046014;Fosciandora;LU;Esercizi Extralberghieri;8;33;69;21
+046015;Gallicano;LU;Esercizi Alberghieri;3;40;74;42
+046015;Gallicano;LU;Esercizi Extralberghieri;14;55;107;48
+046016;Giuncugnano;LU;Esercizi Alberghieri;1;10;20;11
+046016;Giuncugnano;LU;Esercizi Extralberghieri;4;81;232;27
+046017;Lucca;LU;Esercizi Alberghieri;31;949;1.817;1.011
+046017;Lucca;LU;Esercizi Extralberghieri;210;1.124;2.329;1.014
+046018;Massarosa;LU;Esercizi Alberghieri;5;61;113;63
+046018;Massarosa;LU;Esercizi Extralberghieri;38;277;515;204
+046019;Minucciano;LU;Esercizi Alberghieri;6;117;253;122
+046019;Minucciano;LU;Esercizi Extralberghieri;8;108;267;42
+046020;Molazzana;LU;Esercizi Alberghieri;1;7;12;2
+046020;Molazzana;LU;Esercizi Extralberghieri;17;71;168;52
+046021;Montecarlo;LU;Esercizi Extralberghieri;22;114;213;98
+046022;Pescaglia;LU;Esercizi Alberghieri;1;37;69;39
+046022;Pescaglia;LU;Esercizi Extralberghieri;17;83;154;64
+046023;Piazza al Serchio;LU;Esercizi Alberghieri;2;30;49;36
+046023;Piazza al Serchio;LU;Esercizi Extralberghieri;6;31;63;28
+046024;Pietrasanta;LU;Esercizi Alberghieri;94;2.472;5.572;2.577
+046024;Pietrasanta;LU;Esercizi Extralberghieri;44;347;747;350
+046025;Pieve Fosciana;LU;Esercizi Extralberghieri;20;106;205;89
+046026;Porcari;LU;Esercizi Alberghieri;3;55;113;48
+046026;Porcari;LU;Esercizi Extralberghieri;5;19;30;16
+046027;San Romano in Garfagnana;LU;Esercizi Alberghieri;1;16;24;16
+046027;San Romano in Garfagnana;LU;Esercizi Extralberghieri;12;76;143;57
+046028;Seravezza;LU;Esercizi Alberghieri;2;148;482;190
+046028;Seravezza;LU;Esercizi Extralberghieri;4;22;40;25
+046029;Sillano;LU;Esercizi Alberghieri;1;14;25;14
+046029;Sillano;LU;Esercizi Extralberghieri;7;44;144;23
+046030;Stazzema;LU;Esercizi Alberghieri;4;40;78;42
+046030;Stazzema;LU;Esercizi Extralberghieri;13;61;166;51
+046031;Vagli Sotto;LU;Esercizi Alberghieri;3;31;64;28
+046031;Vagli Sotto;LU;Esercizi Extralberghieri;6;44;153;25
+046033;Viareggio;LU;Esercizi Alberghieri;85;1.945;4.043;2.088
+046033;Viareggio;LU;Esercizi Extralberghieri;57;3.566;12.888;1.085
+046034;Villa Basilica;LU;Esercizi Extralberghieri;2;5;10;2
+046035;Villa Collemandina;LU;Esercizi Alberghieri;4;115;223;128
+046035;Villa Collemandina;LU;Esercizi Extralberghieri;12;51;115;45
+046036;Fabbriche di Vergemoli;LU;Esercizi Extralberghieri;9;41;78;32
+047001;Abetone;PT;Esercizi Alberghieri;14;422;961;429
+047001;Abetone;PT;Esercizi Extralberghieri;9;194;733;100
+047002;Agliana;PT;Esercizi Alberghieri;3;40;72;41
+047002;Agliana;PT;Esercizi Extralberghieri;2;7;9;6
+047003;Buggiano;PT;Esercizi Alberghieri;1;8;16;9
+047003;Buggiano;PT;Esercizi Extralberghieri;20;81;163;80
+047004;Cutigliano;PT;Esercizi Alberghieri;9;224;460;228
+047004;Cutigliano;PT;Esercizi Extralberghieri;18;238;851;170
+047005;Lamporecchio;PT;Esercizi Alberghieri;5;92;196;96
+047005;Lamporecchio;PT;Esercizi Extralberghieri;43;477;1.379;255
+047006;Larciano;PT;Esercizi Alberghieri;2;45;90;46
+047006;Larciano;PT;Esercizi Extralberghieri;22;106;202;84
+047007;Marliana;PT;Esercizi Alberghieri;4;54;107;53
+047007;Marliana;PT;Esercizi Extralberghieri;15;85;163;63
+047008;Massa e Cozzile;PT;Esercizi Extralberghieri;16;51;106;49
+047009;Monsummano Terme;PT;Esercizi Alberghieri;4;116;239;120
+047009;Monsummano Terme;PT;Esercizi Extralberghieri;32;143;290;137
+047010;Montale;PT;Esercizi Alberghieri;1;15;25;16
+047010;Montale;PT;Esercizi Extralberghieri;6;39;69;41
+047011;Montecatini Terme;PT;Esercizi Alberghieri;165;6.176;12.331;6.463
+047011;Montecatini Terme;PT;Esercizi Extralberghieri;30;319;831;197
+047012;Pescia;PT;Esercizi Alberghieri;3;234;498;256
+047012;Pescia;PT;Esercizi Extralberghieri;34;182;350;149
+047013;Pieve a Nievole;PT;Esercizi Alberghieri;3;33;62;34
+047013;Pieve a Nievole;PT;Esercizi Extralberghieri;7;46;76;29
+047014;Pistoia;PT;Esercizi Alberghieri;13;328;654;330
+047014;Pistoia;PT;Esercizi Extralberghieri;95;456;1.021;428
+047015;Piteglio;PT;Esercizi Alberghieri;3;52;119;49
+047015;Piteglio;PT;Esercizi Extralberghieri;9;42;91;42
+047016;Ponte Buggianese;PT;Esercizi Alberghieri;2;24;39;30
+047016;Ponte Buggianese;PT;Esercizi Extralberghieri;1;6;14;8
+047017;Quarrata;PT;Esercizi Alberghieri;2;21;38;21
+047017;Quarrata;PT;Esercizi Extralberghieri;23;102;224;101
+047018;Sambuca Pistoiese;PT;Esercizi Alberghieri;1;44;85;46
+047018;Sambuca Pistoiese;PT;Esercizi Extralberghieri;7;29;80;29
+047019;San Marcello Pistoiese;PT;Esercizi Alberghieri;14;232;418;240
+047019;San Marcello Pistoiese;PT;Esercizi Extralberghieri;25;247;808;138
+047020;Serravalle Pistoiese;PT;Esercizi Alberghieri;3;112;267;122
+047020;Serravalle Pistoiese;PT;Esercizi Extralberghieri;36;172;378;165
+047021;Uzzano;PT;Esercizi Extralberghieri;5;22;42;18
+047022;Chiesina Uzzanese;PT;Esercizi Alberghieri;2;137;251;139
+047022;Chiesina Uzzanese;PT;Esercizi Extralberghieri;2;7;14;8
+048001;Bagno a Ripoli;FI;Esercizi Alberghieri;3;130;272;150
+048001;Bagno a Ripoli;FI;Esercizi Extralberghieri;46;249;533;243
+048002;Barberino di Mugello;FI;Esercizi Alberghieri;7;237;507;245
+048002;Barberino di Mugello;FI;Esercizi Extralberghieri;32;274;583;189
+048003;Barberino Val d'Elsa;FI;Esercizi Alberghieri;3;112;254;128
+048003;Barberino Val d'Elsa;FI;Esercizi Extralberghieri;93;708;1.632;530
+048004;Borgo San Lorenzo;FI;Esercizi Alberghieri;8;287;561;289
+048004;Borgo San Lorenzo;FI;Esercizi Extralberghieri;39;275;690;214
+048005;Calenzano;FI;Esercizi Alberghieri;8;653;1.262;671
+048005;Calenzano;FI;Esercizi Extralberghieri;11;75;157;54
+048006;Campi Bisenzio;FI;Esercizi Alberghieri;8;439;877;465
+048006;Campi Bisenzio;FI;Esercizi Extralberghieri;17;105;213;101
+048008;Capraia e Limite;FI;Esercizi Alberghieri;2;29;50;31
+048008;Capraia e Limite;FI;Esercizi Extralberghieri;13;218;593;100
+048010;Castelfiorentino;FI;Esercizi Alberghieri;4;57;109;59
+048010;Castelfiorentino;FI;Esercizi Extralberghieri;32;229;445;200
+048011;Cerreto Guidi;FI;Esercizi Alberghieri;1;20;39;21
+048011;Cerreto Guidi;FI;Esercizi Extralberghieri;24;198;389;174
+048012;Certaldo;FI;Esercizi Alberghieri;4;70;150;82
+048012;Certaldo;FI;Esercizi Extralberghieri;78;566;1.309;432
+048013;Dicomano;FI;Esercizi Extralberghieri;25;174;323;126
+048014;Empoli;FI;Esercizi Alberghieri;4;87;189;89
+048014;Empoli;FI;Esercizi Extralberghieri;42;162;356;143
+048015;Fiesole;FI;Esercizi Alberghieri;10;264;568;280
+048015;Fiesole;FI;Esercizi Extralberghieri;38;289;834;228
+048017;Firenze;FI;Esercizi Alberghieri;377;13.994;31.484;14.590
+048017;Firenze;FI;Esercizi Extralberghieri;772;5.346;12.263;4.790
+048018;Firenzuola;FI;Esercizi Alberghieri;6;90;214;93
+048018;Firenzuola;FI;Esercizi Extralberghieri;25;182;511;145
+048019;Fucecchio;FI;Esercizi Alberghieri;4;65;132;69
+048019;Fucecchio;FI;Esercizi Extralberghieri;12;58;133;51
+048020;Gambassi Terme;FI;Esercizi Alberghieri;4;51;94;56
+048020;Gambassi Terme;FI;Esercizi Extralberghieri;62;543;1.035;455
+048021;Greve in Chianti;FI;Esercizi Alberghieri;8;115;226;126
+048021;Greve in Chianti;FI;Esercizi Extralberghieri;173;1.020;2.083;876
+048022;Impruneta;FI;Esercizi Alberghieri;4;89;172;92
+048022;Impruneta;FI;Esercizi Extralberghieri;62;648;1.462;398
+048024;Lastra a Signa;FI;Esercizi Alberghieri;2;81;156;81
+048024;Lastra a Signa;FI;Esercizi Extralberghieri;56;242;501;177
+048025;Londa;FI;Esercizi Extralberghieri;12;94;335;49
+048026;Marradi;FI;Esercizi Alberghieri;2;23;34;22
+048026;Marradi;FI;Esercizi Extralberghieri;26;151;403;106
+048027;Montaione;FI;Esercizi Alberghieri;4;101;223;110
+048027;Montaione;FI;Esercizi Extralberghieri;100;1.430;2.938;1.094
+048028;Montelupo Fiorentino;FI;Esercizi Alberghieri;4;75;147;77
+048028;Montelupo Fiorentino;FI;Esercizi Extralberghieri;16;115;237;96
+048030;Montespertoli;FI;Esercizi Alberghieri;4;61;179;67
+048030;Montespertoli;FI;Esercizi Extralberghieri;80;736;1.597;611
+048031;Palazzuolo sul Senio;FI;Esercizi Alberghieri;3;55;107;60
+048031;Palazzuolo sul Senio;FI;Esercizi Extralberghieri;14;255;747;175
+048032;Pelago;FI;Esercizi Alberghieri;1;14;25;16
+048032;Pelago;FI;Esercizi Extralberghieri;23;224;440;216
+048033;Pontassieve;FI;Esercizi Alberghieri;4;181;362;189
+048033;Pontassieve;FI;Esercizi Extralberghieri;49;324;682;279
+048035;Reggello;FI;Esercizi Alberghieri;18;836;1.778;852
+048035;Reggello;FI;Esercizi Extralberghieri;62;431;898;361
+048036;Rignano sull'Arno;FI;Esercizi Extralberghieri;43;519;1.265;330
+048037;Rufina;FI;Esercizi Alberghieri;2;27;36;22
+048037;Rufina;FI;Esercizi Extralberghieri;11;66;133;57
+048038;San Casciano in Val di Pesa;FI;Esercizi Alberghieri;6;49;115;50
+048038;San Casciano in Val di Pesa;FI;Esercizi Extralberghieri;92;651;1.399;595
+048039;San Godenzo;FI;Esercizi Alberghieri;2;33;62;28
+048039;San Godenzo;FI;Esercizi Extralberghieri;17;75;199;67
+048041;Scandicci;FI;Esercizi Alberghieri;4;82;150;87
+048041;Scandicci;FI;Esercizi Extralberghieri;48;191;384;159
+048043;Sesto Fiorentino;FI;Esercizi Alberghieri;9;757;1.511;766
+048043;Sesto Fiorentino;FI;Esercizi Extralberghieri;28;135;390;78
+048044;Signa;FI;Esercizi Alberghieri;4;181;377;193
+048044;Signa;FI;Esercizi Extralberghieri;23;96;173;90
+048045;Tavarnelle Val di Pesa;FI;Esercizi Alberghieri;5;210;467;244
+048045;Tavarnelle Val di Pesa;FI;Esercizi Extralberghieri;84;542;1.203;455
+048046;Vaglia;FI;Esercizi Alberghieri;7;209;441;218
+048046;Vaglia;FI;Esercizi Extralberghieri;8;105;354;37
+048049;Vicchio;FI;Esercizi Alberghieri;2;32;70;32
+048049;Vicchio;FI;Esercizi Extralberghieri;46;424;952;265
+048050;Vinci;FI;Esercizi Alberghieri;3;141;220;141
+048050;Vinci;FI;Esercizi Extralberghieri;41;234;487;191
+048052;Figline e Incisa Valdarno;FI;Esercizi Alberghieri;7;166;338;173
+048052;Figline e Incisa Valdarno;FI;Esercizi Extralberghieri;55;1.512;3.743;707
+048053;Scarperia e San Piero;FI;Esercizi Alberghieri;7;177;354;195
+048053;Scarperia e San Piero;FI;Esercizi Extralberghieri;44;283;777;204
+049001;Bibbona;LI;Esercizi Alberghieri;9;417;1.008;464
+049001;Bibbona;LI;Esercizi Extralberghieri;72;4.567;17.495;2.114
+049002;Campiglia Marittima;LI;Esercizi Alberghieri;8;178;380;196
+049002;Campiglia Marittima;LI;Esercizi Extralberghieri;72;676;1.851;541
+049003;Campo nell'Elba;LI;Esercizi Alberghieri;42;1.331;3.034;1.438
+049003;Campo nell'Elba;LI;Esercizi Extralberghieri;49;822;3.068;557
+049004;Capoliveri;LI;Esercizi Alberghieri;45;1.383;3.913;1.473
+049004;Capoliveri;LI;Esercizi Extralberghieri;103;2.525;9.517;1.367
+049005;Capraia Isola;LI;Esercizi Alberghieri;3;89;188;101
+049005;Capraia Isola;LI;Esercizi Extralberghieri;3;72;270;38
+049006;Castagneto Carducci;LI;Esercizi Alberghieri;17;631;1.622;673
+049006;Castagneto Carducci;LI;Esercizi Extralberghieri;83;2.564;9.436;1.121
+049007;Cecina;LI;Esercizi Alberghieri;21;657;1.833;736
+049007;Cecina;LI;Esercizi Extralberghieri;41;2.523;8.388;1.329
+049008;Collesalvetti;LI;Esercizi Alberghieri;2;65;137;66
+049008;Collesalvetti;LI;Esercizi Extralberghieri;32;191;425;152
+049009;Livorno;LI;Esercizi Alberghieri;35;944;1.954;996
+049009;Livorno;LI;Esercizi Extralberghieri;56;613;1.878;404
+049010;Marciana;LI;Esercizi Alberghieri;31;900;2.117;952
+049010;Marciana;LI;Esercizi Extralberghieri;20;153;452;144
+049011;Marciana Marina;LI;Esercizi Alberghieri;13;462;1.127;487
+049011;Marciana Marina;LI;Esercizi Extralberghieri;8;68;209;62
+049012;Piombino;LI;Esercizi Alberghieri;20;772;2.685;883
+049012;Piombino;LI;Esercizi Extralberghieri;66;2.318;8.646;1.197
+049013;Porto Azzurro;LI;Esercizi Alberghieri;17;415;1.156;449
+049013;Porto Azzurro;LI;Esercizi Extralberghieri;32;452;1.501;324
+049014;Portoferraio;LI;Esercizi Alberghieri;31;1.290;3.036;1.372
+049014;Portoferraio;LI;Esercizi Extralberghieri;43;893;2.879;557
+049015;Rio Marina;LI;Esercizi Alberghieri;12;361;827;381
+049015;Rio Marina;LI;Esercizi Extralberghieri;17;444;1.149;307
+049016;Rio nell'Elba;LI;Esercizi Alberghieri;3;66;143;70
+049016;Rio nell'Elba;LI;Esercizi Extralberghieri;12;331;1.197;278
+049017;Rosignano Marittimo;LI;Esercizi Alberghieri;32;815;2.045;892
+049017;Rosignano Marittimo;LI;Esercizi Extralberghieri;58;2.081;7.571;1.059
+049018;San Vincenzo;LI;Esercizi Alberghieri;27;1.269;2.863;1.375
+049018;San Vincenzo;LI;Esercizi Extralberghieri;59;2.231;9.069;2.070
+049019;Sassetta;LI;Esercizi Alberghieri;1;18;35;16
+049019;Sassetta;LI;Esercizi Extralberghieri;15;111;266;119
+049020;Suvereto;LI;Esercizi Alberghieri;2;155;615;164
+049020;Suvereto;LI;Esercizi Extralberghieri;47;300;769;280
+050001;Bientina;PI;Esercizi Alberghieri;3;63;142;67
+050001;Bientina;PI;Esercizi Extralberghieri;1;6;9;6
+050002;Buti;PI;Esercizi Extralberghieri;16;80;177;65
+050003;Calci;PI;Esercizi Alberghieri;1;9;19;4
+050003;Calci;PI;Esercizi Extralberghieri;27;172;316;162
+050004;Calcinaia;PI;Esercizi Alberghieri;1;67;182;76
+050004;Calcinaia;PI;Esercizi Extralberghieri;4;14;28;12
+050005;Capannoli;PI;Esercizi Alberghieri;2;36;98;23
+050005;Capannoli;PI;Esercizi Extralberghieri;9;44;91;43
+050006;Casale Marittimo;PI;Esercizi Alberghieri;1;58;217;58
+050006;Casale Marittimo;PI;Esercizi Extralberghieri;10;311;1.152;133
+050008;Cascina;PI;Esercizi Alberghieri;3;95;205;99
+050008;Cascina;PI;Esercizi Extralberghieri;26;98;200;85
+050009;Castelfranco di Sotto;PI;Esercizi Alberghieri;1;13;37;13
+050009;Castelfranco di Sotto;PI;Esercizi Extralberghieri;9;50;117;45
+050010;Castellina Marittima;PI;Esercizi Alberghieri;5;57;104;56
+050010;Castellina Marittima;PI;Esercizi Extralberghieri;5;15;37;16
+050011;Castelnuovo di Val di Cecina;PI;Esercizi Alberghieri;1;18;37;22
+050011;Castelnuovo di Val di Cecina;PI;Esercizi Extralberghieri;22;116;283;107
+050012;Chianni;PI;Esercizi Extralberghieri;24;159;353;144
+050014;Fauglia;PI;Esercizi Alberghieri;1;14;42;14
+050014;Fauglia;PI;Esercizi Extralberghieri;15;109;204;91
+050015;Guardistallo;PI;Esercizi Alberghieri;3;50;200;54
+050015;Guardistallo;PI;Esercizi Extralberghieri;14;210;659;171
+050016;Lajatico;PI;Esercizi Alberghieri;1;11;20;13
+050016;Lajatico;PI;Esercizi Extralberghieri;14;192;355;172
+050019;Montecatini Val di Cecina;PI;Esercizi Alberghieri;2;82;186;81
+050019;Montecatini Val di Cecina;PI;Esercizi Extralberghieri;41;274;642;258
+050020;Montescudaio;PI;Esercizi Alberghieri;1;7;26;10
+050020;Montescudaio;PI;Esercizi Extralberghieri;21;787;3.014;429
+050021;Monteverdi Marittimo;PI;Esercizi Alberghieri;2;50;90;43
+050021;Monteverdi Marittimo;PI;Esercizi Extralberghieri;13;85;186;79
+050022;Montopoli in Val d'Arno;PI;Esercizi Alberghieri;2;46;75;47
+050022;Montopoli in Val d'Arno;PI;Esercizi Extralberghieri;27;332;1.006;221
+050023;Orciano Pisano;PI;Esercizi Extralberghieri;1;3;6;4
+050024;Palaia;PI;Esercizi Alberghieri;2;22;44;26
+050024;Palaia;PI;Esercizi Extralberghieri;47;371;812;379
+050025;Peccioli;PI;Esercizi Alberghieri;1;30;65;30
+050025;Peccioli;PI;Esercizi Extralberghieri;38;233;483;219
+050026;Pisa;PI;Esercizi Alberghieri;70;2.717;6.080;2.808
+050026;Pisa;PI;Esercizi Extralberghieri;303;3.936;9.337;2.408
+050027;Pomarance;PI;Esercizi Alberghieri;3;51;89;56
+050027;Pomarance;PI;Esercizi Extralberghieri;63;469;995;387
+050028;Ponsacco;PI;Esercizi Alberghieri;3;47;88;49
+050028;Ponsacco;PI;Esercizi Extralberghieri;11;54;136;61
+050029;Pontedera;PI;Esercizi Alberghieri;5;154;294;174
+050029;Pontedera;PI;Esercizi Extralberghieri;22;94;210;88
+050030;Riparbella;PI;Esercizi Alberghieri;7;133;313;126
+050030;Riparbella;PI;Esercizi Extralberghieri;23;326;845;256
+050031;San Giuliano Terme;PI;Esercizi Alberghieri;8;372;840;391
+050031;San Giuliano Terme;PI;Esercizi Extralberghieri;41;699;1.242;685
+050032;San Miniato;PI;Esercizi Alberghieri;9;125;273;131
+050032;San Miniato;PI;Esercizi Extralberghieri;52;277;577;281
+050033;Santa Croce sull'Arno;PI;Esercizi Alberghieri;2;20;31;20
+050034;Santa Luce;PI;Esercizi Alberghieri;2;24;65;25
+050034;Santa Luce;PI;Esercizi Extralberghieri;25;160;514;144
+050035;Santa Maria a Monte;PI;Esercizi Alberghieri;2;79;154;83
+050035;Santa Maria a Monte;PI;Esercizi Extralberghieri;10;26;59;23
+050036;Terricciola;PI;Esercizi Alberghieri;1;22;37;22
+050036;Terricciola;PI;Esercizi Extralberghieri;28;184;430;176
+050037;Vecchiano;PI;Esercizi Alberghieri;1;62;124;67
+050037;Vecchiano;PI;Esercizi Extralberghieri;18;69;147;55
+050038;Vicopisano;PI;Esercizi Extralberghieri;28;85;195;76
+050039;Volterra;PI;Esercizi Alberghieri;20;479;938;518
+050039;Volterra;PI;Esercizi Extralberghieri;126;845;1.896;698
+050040;Casciana Terme Lari;PI;Esercizi Alberghieri;11;359;749;376
+050040;Casciana Terme Lari;PI;Esercizi Extralberghieri;38;184;424;168
+050041;Crespina Lorenzana;PI;Esercizi Alberghieri;1;11;22;11
+050041;Crespina Lorenzana;PI;Esercizi Extralberghieri;22;124;283;108
+051001;Anghiari;AR;Esercizi Alberghieri;3;70;166;72
+051001;Anghiari;AR;Esercizi Extralberghieri;36;221;440;187
+051002;Arezzo;AR;Esercizi Alberghieri;26;1.103;2.211;1.193
+051002;Arezzo;AR;Esercizi Extralberghieri;171;794;1.782;629
+051003;Badia Tedalda;AR;Esercizi Alberghieri;6;70;124;66
+051003;Badia Tedalda;AR;Esercizi Extralberghieri;8;43;122;49
+051004;Bibbiena;AR;Esercizi Alberghieri;5;82;149;84
+051004;Bibbiena;AR;Esercizi Extralberghieri;22;199;426;172
+051005;Bucine;AR;Esercizi Alberghieri;4;43;72;49
+051005;Bucine;AR;Esercizi Extralberghieri;74;786;1.782;676
+051006;Capolona;AR;Esercizi Extralberghieri;15;129;274;116
+051007;Caprese Michelangelo;AR;Esercizi Alberghieri;4;53;117;74
+051007;Caprese Michelangelo;AR;Esercizi Extralberghieri;19;165;493;113
+051008;Castel Focognano;AR;Esercizi Extralberghieri;6;35;58;31
+051010;Castel San Niccol•;AR;Esercizi Alberghieri;1;10;17;10
+051010;Castel San Niccol•;AR;Esercizi Extralberghieri;9;42;90;37
+051011;Castiglion Fibocchi;AR;Esercizi Alberghieri;1;7;21;7
+051011;Castiglion Fibocchi;AR;Esercizi Extralberghieri;4;26;52;20
+051012;Castiglion Fiorentino;AR;Esercizi Alberghieri;6;185;387;188
+051012;Castiglion Fiorentino;AR;Esercizi Extralberghieri;58;307;609;265
+051013;Cavriglia;AR;Esercizi Alberghieri;2;54;73;35
+051013;Cavriglia;AR;Esercizi Extralberghieri;32;606;1.827;350
+051014;Chitignano;AR;Esercizi Alberghieri;2;31;59;32
+051014;Chitignano;AR;Esercizi Extralberghieri;5;33;60;27
+051015;Chiusi della Verna;AR;Esercizi Alberghieri;5;62;113;77
+051015;Chiusi della Verna;AR;Esercizi Extralberghieri;16;365;766;311
+051016;Civitella in Val di Chiana;AR;Esercizi Alberghieri;4;85;202;91
+051016;Civitella in Val di Chiana;AR;Esercizi Extralberghieri;33;214;431;186
+051017;Cortona;AR;Esercizi Alberghieri;23;477;988;517
+051017;Cortona;AR;Esercizi Extralberghieri;182;1.149;2.347;1.024
+051018;Foiano della Chiana;AR;Esercizi Alberghieri;3;66;130;71
+051018;Foiano della Chiana;AR;Esercizi Extralberghieri;18;109;229;86
+051019;Laterina;AR;Esercizi Alberghieri;2;69;184;96
+051019;Laterina;AR;Esercizi Extralberghieri;4;39;71;24
+051020;Loro Ciuffenna;AR;Esercizi Alberghieri;4;53;98;48
+051020;Loro Ciuffenna;AR;Esercizi Extralberghieri;29;273;612;255
+051021;Lucignano;AR;Esercizi Alberghieri;2;24;68;20
+051021;Lucignano;AR;Esercizi Extralberghieri;27;133;293;114
+051022;Marciano della Chiana;AR;Esercizi Alberghieri;1;10;19;10
+051022;Marciano della Chiana;AR;Esercizi Extralberghieri;6;35;77;32
+051023;Montemignaio;AR;Esercizi Alberghieri;3;68;151;62
+051023;Montemignaio;AR;Esercizi Extralberghieri;2;28;45;25
+051024;Monterchi;AR;Esercizi Extralberghieri;8;38;100;36
+051025;Monte San Savino;AR;Esercizi Alberghieri;5;68;121;99
+051025;Monte San Savino;AR;Esercizi Extralberghieri;32;206;406;179
+051026;Montevarchi;AR;Esercizi Alberghieri;5;126;262;134
+051026;Montevarchi;AR;Esercizi Extralberghieri;15;98;194;85
+051027;Ortignano Raggiolo;AR;Esercizi Extralberghieri;6;40;66;27
+051028;Pergine Valdarno;AR;Esercizi Alberghieri;1;12;23;11
+051028;Pergine Valdarno;AR;Esercizi Extralberghieri;20;207;392;160
+051030;Pieve Santo Stefano;AR;Esercizi Alberghieri;8;138;289;147
+051030;Pieve Santo Stefano;AR;Esercizi Extralberghieri;14;123;306;106
+051031;Poppi;AR;Esercizi Alberghieri;16;332;715;338
+051031;Poppi;AR;Esercizi Extralberghieri;40;557;1.026;231
+051033;San Giovanni Valdarno;AR;Esercizi Alberghieri;3;97;193;94
+051033;San Giovanni Valdarno;AR;Esercizi Extralberghieri;10;67;142;76
+051034;Sansepolcro;AR;Esercizi Alberghieri;10;225;432;244
+051034;Sansepolcro;AR;Esercizi Extralberghieri;28;208;479;202
+051035;Sestino;AR;Esercizi Extralberghieri;2;4;7;3
+051037;Subbiano;AR;Esercizi Alberghieri;3;61;122;61
+051037;Subbiano;AR;Esercizi Extralberghieri;36;200;363;178
+051038;Talla;AR;Esercizi Alberghieri;1;14;24;10
+051038;Talla;AR;Esercizi Extralberghieri;8;80;285;28
+051039;Terranuova Bracciolini;AR;Esercizi Alberghieri;6;183;356;186
+051039;Terranuova Bracciolini;AR;Esercizi Extralberghieri;27;228;474;207
+051040;Castelfranco Piandisc•;AR;Esercizi Alberghieri;2;26;33;22
+051040;Castelfranco Piandisc•;AR;Esercizi Extralberghieri;25;189;449;166
+051041;Pratovecchio Stia;AR;Esercizi Alberghieri;2;34;74;12
+051041;Pratovecchio Stia;AR;Esercizi Extralberghieri;27;192;514;142
+052001;Abbadia San Salvatore;SI;Esercizi Alberghieri;20;450;920;496
+052001;Abbadia San Salvatore;SI;Esercizi Extralberghieri;4;24;48;27
+052002;Asciano;SI;Esercizi Alberghieri;7;170;365;188
+052002;Asciano;SI;Esercizi Extralberghieri;72;458;952;435
+052003;Buonconvento;SI;Esercizi Alberghieri;2;37;83;44
+052003;Buonconvento;SI;Esercizi Extralberghieri;39;265;587;277
+052004;Casole d'Elsa;SI;Esercizi Alberghieri;8;190;417;205
+052004;Casole d'Elsa;SI;Esercizi Extralberghieri;65;456;1.220;542
+052005;Castellina in Chianti;SI;Esercizi Alberghieri;10;186;495;206
+052005;Castellina in Chianti;SI;Esercizi Extralberghieri;90;722;1.689;586
+052006;Castelnuovo Berardenga;SI;Esercizi Alberghieri;8;208;494;242
+052006;Castelnuovo Berardenga;SI;Esercizi Extralberghieri;112;804;1.789;811
+052007;Castiglione d'Orcia;SI;Esercizi Alberghieri;5;77;156;86
+052007;Castiglione d'Orcia;SI;Esercizi Extralberghieri;67;356;744;324
+052008;Cetona;SI;Esercizi Alberghieri;1;12;25;13
+052008;Cetona;SI;Esercizi Extralberghieri;31;179;386;163
+052009;Chianciano Terme;SI;Esercizi Alberghieri;136;5.788;12.079;6.249
+052009;Chianciano Terme;SI;Esercizi Extralberghieri;38;236;461;229
+052010;Chiusdino;SI;Esercizi Alberghieri;1;7;14;6
+052010;Chiusdino;SI;Esercizi Extralberghieri;38;359;1.002;332
+052011;Chiusi;SI;Esercizi Alberghieri;12;284;626;294
+052011;Chiusi;SI;Esercizi Extralberghieri;38;274;617;186
+052012;Colle di Val d'Elsa;SI;Esercizi Alberghieri;8;213;467;234
+052012;Colle di Val d'Elsa;SI;Esercizi Extralberghieri;79;437;906;387
+052013;Gaiole in Chianti;SI;Esercizi Alberghieri;10;138;329;149
+052013;Gaiole in Chianti;SI;Esercizi Extralberghieri;82;449;946;423
+052014;Montalcino;SI;Esercizi Alberghieri;10;213;485;251
+052014;Montalcino;SI;Esercizi Extralberghieri;114;552;1.278;579
+052015;Montepulciano;SI;Esercizi Alberghieri;24;496;1.102;553
+052015;Montepulciano;SI;Esercizi Extralberghieri;163;977;2.150;992
+052016;Monteriggioni;SI;Esercizi Alberghieri;9;223;551;284
+052016;Monteriggioni;SI;Esercizi Extralberghieri;79;415;882;352
+052017;Monteroni d'Arbia;SI;Esercizi Alberghieri;3;61;107;64
+052017;Monteroni d'Arbia;SI;Esercizi Extralberghieri;43;276;598;260
+052018;Monticiano;SI;Esercizi Alberghieri;4;108;228;108
+052018;Monticiano;SI;Esercizi Extralberghieri;26;156;311;154
+052019;Murlo;SI;Esercizi Alberghieri;4;144;376;152
+052019;Murlo;SI;Esercizi Extralberghieri;34;337;813;246
+052020;Piancastagnaio;SI;Esercizi Alberghieri;4;50;93;51
+052020;Piancastagnaio;SI;Esercizi Extralberghieri;13;59;152;61
+052021;Pienza;SI;Esercizi Alberghieri;5;101;205;108
+052021;Pienza;SI;Esercizi Extralberghieri;122;730;1.517;714
+052022;Poggibonsi;SI;Esercizi Alberghieri;8;345;711;365
+052022;Poggibonsi;SI;Esercizi Extralberghieri;61;318;741;303
+052023;Radda in Chianti;SI;Esercizi Alberghieri;12;242;568;268
+052023;Radda in Chianti;SI;Esercizi Extralberghieri;51;277;632;286
+052024;Radicofani;SI;Esercizi Alberghieri;2;17;33;21
+052024;Radicofani;SI;Esercizi Extralberghieri;29;190;380;177
+052025;Radicondoli;SI;Esercizi Alberghieri;2;22;44;24
+052025;Radicondoli;SI;Esercizi Extralberghieri;43;250;536;225
+052026;Rapolano Terme;SI;Esercizi Alberghieri;5;197;421;222
+052026;Rapolano Terme;SI;Esercizi Extralberghieri;45;329;786;345
+052027;San Casciano dei Bagni;SI;Esercizi Alberghieri;4;105;221;108
+052027;San Casciano dei Bagni;SI;Esercizi Extralberghieri;42;257;512;237
+052028;San Gimignano;SI;Esercizi Alberghieri;20;603;1.315;666
+052028;San Gimignano;SI;Esercizi Extralberghieri;300;1.697;3.978;1.614
+052029;San Giovanni d'Asso;SI;Esercizi Alberghieri;4;60;151;65
+052029;San Giovanni d'Asso;SI;Esercizi Extralberghieri;38;234;600;212
+052030;San Quirico d'Orcia;SI;Esercizi Alberghieri;7;296;772;332
+052030;San Quirico d'Orcia;SI;Esercizi Extralberghieri;42;223;446;207
+052031;Sarteano;SI;Esercizi Alberghieri;8;123;274;142
+052031;Sarteano;SI;Esercizi Extralberghieri;34;781;2.367;401
+052032;Siena;SI;Esercizi Alberghieri;48;1.646;3.915;1.792
+052032;Siena;SI;Esercizi Extralberghieri;268;1.797;4.149;1.390
+052033;Sinalunga;SI;Esercizi Alberghieri;6;132;283;132
+052033;Sinalunga;SI;Esercizi Extralberghieri;53;342;754;327
+052034;Sovicille;SI;Esercizi Alberghieri;6;107;248;129
+052034;Sovicille;SI;Esercizi Extralberghieri;74;554;1.393;512
+052035;Torrita di Siena;SI;Esercizi Alberghieri;4;56;122;57
+052035;Torrita di Siena;SI;Esercizi Extralberghieri;40;221;436;211
+052036;Trequanda;SI;Esercizi Alberghieri;3;24;60;30
+052036;Trequanda;SI;Esercizi Extralberghieri;29;248;526;235
+053001;Arcidosso;GR;Esercizi Alberghieri;8;258;603;268
+053001;Arcidosso;GR;Esercizi Extralberghieri;27;203;421;192
+053002;Campagnatico;GR;Esercizi Extralberghieri;42;214;392;175
+053003;Capalbio;GR;Esercizi Alberghieri;7;151;451;170
+053003;Capalbio;GR;Esercizi Extralberghieri;61;748;2.474;435
+053004;Castel del Piano;GR;Esercizi Alberghieri;5;151;297;160
+053004;Castel del Piano;GR;Esercizi Extralberghieri;33;312;925;218
+053005;Castell'Azzara;GR;Esercizi Extralberghieri;9;58;124;50
+053006;Castiglione della Pescaia;GR;Esercizi Alberghieri;42;1.606;3.541;1.499
+053006;Castiglione della Pescaia;GR;Esercizi Extralberghieri;96;4.696;15.850;2.090
+053007;Cinigiano;GR;Esercizi Alberghieri;3;24;52;26
+053007;Cinigiano;GR;Esercizi Extralberghieri;38;325;767;245
+053008;Civitella Paganico;GR;Esercizi Alberghieri;6;159;390;254
+053008;Civitella Paganico;GR;Esercizi Extralberghieri;35;210;390;198
+053009;Follonica;GR;Esercizi Alberghieri;22;542;1.352;579
+053009;Follonica;GR;Esercizi Extralberghieri;41;2.088;7.415;1.042
+053010;Gavorrano;GR;Esercizi Alberghieri;4;218;592;175
+053010;Gavorrano;GR;Esercizi Extralberghieri;51;481;1.074;310
+053011;Grosseto;GR;Esercizi Alberghieri;48;1.699;3.753;1.777
+053011;Grosseto;GR;Esercizi Extralberghieri;276;4.888;14.911;2.659
+053012;Isola del Giglio;GR;Esercizi Alberghieri;13;279;594;292
+053012;Isola del Giglio;GR;Esercizi Extralberghieri;12;100;285;71
+053013;Magliano in Toscana;GR;Esercizi Alberghieri;3;77;153;82
+053013;Magliano in Toscana;GR;Esercizi Extralberghieri;89;638;1.176;576
+053014;Manciano;GR;Esercizi Alberghieri;31;478;1.046;520
+053014;Manciano;GR;Esercizi Extralberghieri;179;1.453;2.418;1.039
+053015;Massa Marittima;GR;Esercizi Alberghieri;7;304;816;317
+053015;Massa Marittima;GR;Esercizi Extralberghieri;90;716;1.603;649
+053016;Monte Argentario;GR;Esercizi Alberghieri;20;639;1.368;687
+053016;Monte Argentario;GR;Esercizi Extralberghieri;32;292;912;164
+053017;Montieri;GR;Esercizi Alberghieri;3;42;91;42
+053017;Montieri;GR;Esercizi Extralberghieri;20;109;273;96
+053018;Orbetello;GR;Esercizi Alberghieri;38;1.029;2.540;1.065
+053018;Orbetello;GR;Esercizi Extralberghieri;110;4.835;16.980;2.113
+053019;Pitigliano;GR;Esercizi Alberghieri;5;95;197;107
+053019;Pitigliano;GR;Esercizi Extralberghieri;46;196;379;185
+053020;Roccalbegna;GR;Esercizi Alberghieri;2;31;61;34
+053020;Roccalbegna;GR;Esercizi Extralberghieri;30;124;271;126
+053021;Roccastrada;GR;Esercizi Alberghieri;3;39;92;42
+053021;Roccastrada;GR;Esercizi Extralberghieri;61;335;634;318
+053022;Santa Fiora;GR;Esercizi Alberghieri;5;145;297;156
+053022;Santa Fiora;GR;Esercizi Extralberghieri;15;77;148;70
+053023;Scansano;GR;Esercizi Alberghieri;5;102;206;102
+053023;Scansano;GR;Esercizi Extralberghieri;65;306;647;298
+053024;Scarlino;GR;Esercizi Alberghieri;8;378;1.083;384
+053024;Scarlino;GR;Esercizi Extralberghieri;39;1.510;5.168;883
+053025;Seggiano;GR;Esercizi Alberghieri;3;28;63;29
+053025;Seggiano;GR;Esercizi Extralberghieri;22;144;303;129
+053026;Sorano;GR;Esercizi Alberghieri;8;107;219;121
+053026;Sorano;GR;Esercizi Extralberghieri;49;286;677;282
+053027;Monterotondo Marittimo;GR;Esercizi Alberghieri;1;23;32;22
+053027;Monterotondo Marittimo;GR;Esercizi Extralberghieri;16;127;235;114
+053028;Semproniano;GR;Esercizi Alberghieri;2;22;43;24
+053028;Semproniano;GR;Esercizi Extralberghieri;32;265;488;228
+100001;Cantagallo;PO;Esercizi Extralberghieri;8;32;111;50
+100002;Carmignano;PO;Esercizi Alberghieri;3;57;133;60
+100002;Carmignano;PO;Esercizi Extralberghieri;37;264;578;246
+100003;Montemurlo;PO;Esercizi Extralberghieri;17;73;159;57
+100004;Poggio a Caiano;PO;Esercizi Alberghieri;1;64;132;63
+100004;Poggio a Caiano;PO;Esercizi Extralberghieri;4;19;39;18
+100005;Prato;PO;Esercizi Alberghieri;16;756;1.582;790
+100005;Prato;PO;Esercizi Extralberghieri;57;351;703;324
+100006;Vaiano;PO;Esercizi Extralberghieri;9;34;77;35
+100007;Vernio;PO;Esercizi Alberghieri;2;38;71;42
+100007;Vernio;PO;Esercizi Extralberghieri;16;59;132;52

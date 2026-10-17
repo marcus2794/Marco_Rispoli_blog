@@ -1,0 +1,857 @@
+anno,Provincia,Comune (cod Istat),Comune (denominazione),Provenienza,arrivi,presenze
+2012,ar,051001,Anghiari,Italiani,4267,12097
+2012,ar,051001,Anghiari,Stranieri,1252,8170
+2012,ar,051001,Anghiari,Totale,5519,20267
+2012,ar,051002,Arezzo,Italiani,85876,155882
+2012,ar,051002,Arezzo,Stranieri,43432,109561
+2012,ar,051002,Arezzo,Totale,129308,265443
+2012,ar,051003,Badia Tedalda,Italiani,875,3997
+2012,ar,051003,Badia Tedalda,Stranieri,9,11
+2012,ar,051003,Badia Tedalda,Totale,884,4008
+2012,ar,051004,Bibbiena,Italiani,6501,21432
+2012,ar,051004,Bibbiena,Stranieri,1336,6639
+2012,ar,051004,Bibbiena,Totale,7837,28071
+2012,ar,051005,Bucine,Italiani,1748,7635
+2012,ar,051005,Bucine,Stranieri,10980,80099
+2012,ar,051005,Bucine,Totale,12728,87734
+2012,ar,051006,Capolona,Italiani,3476,5672
+2012,ar,051006,Capolona,Stranieri,3167,12891
+2012,ar,051006,Capolona,Totale,6643,18563
+2012,ar,051007,Caprese Michelangelo,Italiani,1223,3593
+2012,ar,051007,Caprese Michelangelo,Stranieri,793,4406
+2012,ar,051007,Caprese Michelangelo,Totale,2016,7999
+2012,ar,051008,Castel Focognano,Italiani,56,152
+2012,ar,051008,Castel Focognano,Stranieri,247,1813
+2012,ar,051008,Castel Focognano,Totale,303,1965
+2012,ar,051009,Castelfranco di Sopra,Italiani,658,1874
+2012,ar,051009,Castelfranco di Sopra,Stranieri,672,5363
+2012,ar,051009,Castelfranco di Sopra,Totale,1330,7237
+2012,ar,051010,Castel San Niccolo',Italiani,250,1454
+2012,ar,051010,Castel San Niccolo',Stranieri,442,3394
+2012,ar,051010,Castel San Niccolo',Totale,692,4848
+2012,ar,051012,Castiglion Fiorentino,Italiani,6150,12737
+2012,ar,051012,Castiglion Fiorentino,Stranieri,6366,27096
+2012,ar,051012,Castiglion Fiorentino,Totale,12516,39833
+2012,ar,051013,Cavriglia,Italiani,4029,10898
+2012,ar,051013,Cavriglia,Stranieri,5650,33288
+2012,ar,051013,Cavriglia,Totale,9679,44186
+2012,ar,051014,Chitignano,Italiani,271,1041
+2012,ar,051014,Chitignano,Stranieri,28,136
+2012,ar,051014,Chitignano,Totale,299,1177
+2012,ar,051015,Chiusi della Verna,Italiani,8934,20081
+2012,ar,051015,Chiusi della Verna,Stranieri,1937,3829
+2012,ar,051015,Chiusi della Verna,Totale,10871,23910
+2012,ar,051016,Civitella in Val di Chiana,Italiani,6998,14008
+2012,ar,051016,Civitella in Val di Chiana,Stranieri,2458,12421
+2012,ar,051016,Civitella in Val di Chiana,Totale,9456,26429
+2012,ar,051017,Cortona,Italiani,18989,40073
+2012,ar,051017,Cortona,Stranieri,26339,121855
+2012,ar,051017,Cortona,Totale,45328,161928
+2012,ar,051018,Foiano della Chiana,Italiani,2665,13244
+2012,ar,051018,Foiano della Chiana,Stranieri,2408,10133
+2012,ar,051018,Foiano della Chiana,Totale,5073,23377
+2012,ar,051019,Laterina,Italiani,5508,10516
+2012,ar,051019,Laterina,Stranieri,3310,6256
+2012,ar,051019,Laterina,Totale,8818,16772
+2012,ar,051020,Loro Ciuffenna,Italiani,1524,3627
+2012,ar,051020,Loro Ciuffenna,Stranieri,4896,29429
+2012,ar,051020,Loro Ciuffenna,Totale,6420,33056
+2012,ar,051021,Lucignano,Italiani,1701,3872
+2012,ar,051021,Lucignano,Stranieri,1049,10543
+2012,ar,051021,Lucignano,Totale,2750,14415
+2012,ar,051022,Marciano della Chiana,Italiani,694,1332
+2012,ar,051022,Marciano della Chiana,Stranieri,336,2546
+2012,ar,051022,Marciano della Chiana,Totale,1030,3878
+2012,ar,051023,Montemignaio,Italiani,155,842
+2012,ar,051023,Montemignaio,Stranieri,402,1143
+2012,ar,051023,Montemignaio,Totale,557,1985
+2012,ar,051024,Monterchi,Italiani,268,625
+2012,ar,051024,Monterchi,Stranieri,192,1390
+2012,ar,051024,Monterchi,Totale,460,2015
+2012,ar,051025,Monte San Savino,Italiani,4732,10088
+2012,ar,051025,Monte San Savino,Stranieri,2375,10066
+2012,ar,051025,Monte San Savino,Totale,7107,20154
+2012,ar,051026,Montevarchi,Italiani,7645,13171
+2012,ar,051026,Montevarchi,Stranieri,4618,14879
+2012,ar,051026,Montevarchi,Totale,12263,28050
+2012,ar,051027,Ortignano Raggiolo,Italiani,41,183
+2012,ar,051027,Ortignano Raggiolo,Stranieri,170,1419
+2012,ar,051027,Ortignano Raggiolo,Totale,211,1602
+2012,ar,051028,Pergine Valdarno,Italiani,886,2858
+2012,ar,051028,Pergine Valdarno,Stranieri,2126,17323
+2012,ar,051028,Pergine Valdarno,Totale,3012,20181
+2012,ar,051029,Pian di Sco,Italiani,182,313
+2012,ar,051029,Pian di Sco,Stranieri,441,3356
+2012,ar,051029,Pian di Sco,Totale,623,3669
+2012,ar,051030,Pieve Santo Stefano,Italiani,4774,9248
+2012,ar,051030,Pieve Santo Stefano,Stranieri,2428,4694
+2012,ar,051030,Pieve Santo Stefano,Totale,7202,13942
+2012,ar,051031,Poppi,Italiani,11539,42260
+2012,ar,051031,Poppi,Stranieri,3027,17617
+2012,ar,051031,Poppi,Totale,14566,59877
+2012,ar,051032,Pratovecchio,Italiani,789,1973
+2012,ar,051032,Pratovecchio,Stranieri,330,2793
+2012,ar,051032,Pratovecchio,Totale,1119,4766
+2012,ar,051033,San Giovanni Valdarno,Italiani,3287,8239
+2012,ar,051033,San Giovanni Valdarno,Stranieri,1200,5818
+2012,ar,051033,San Giovanni Valdarno,Totale,4487,14057
+2012,ar,051034,Sansepolcro,Italiani,14719,26855
+2012,ar,051034,Sansepolcro,Stranieri,4297,9634
+2012,ar,051034,Sansepolcro,Totale,19016,36489
+2012,ar,051036,Stia,Italiani,1549,5778
+2012,ar,051036,Stia,Stranieri,535,1613
+2012,ar,051036,Stia,Totale,2084,7391
+2012,ar,051037,Subbiano,Italiani,3349,9488
+2012,ar,051037,Subbiano,Stranieri,2107,11903
+2012,ar,051037,Subbiano,Totale,5456,21391
+2012,ar,051038,Talla,Italiani,0,0
+2012,ar,051038,Talla,Stranieri,44,402
+2012,ar,051038,Talla,Totale,44,402
+2012,ar,051039,Terranuova Bracciolini,Italiani,16923,32816
+2012,ar,051039,Terranuova Bracciolini,Stranieri,6344,21717
+2012,ar,051039,Terranuova Bracciolini,Totale,23267,54533
+2012,ar,051011+0510351,Altro comune della provincia di Arezzo,Italiani,326,951
+2012,ar,051011+0510351,Altro comune della provincia di Arezzo,Stranieri,237,1302
+2012,ar,051011+0510351,Altro comune della provincia di Arezzo,Totale,563,2253
+2012,fi,048001,Bagno a Ripoli,Italiani,12347,34688
+2012,fi,048001,Bagno a Ripoli,Stranieri,18744,67045
+2012,fi,048001,Bagno a Ripoli,Totale,31091,101733
+2012,fi,048002,Barberino di Mugello,Italiani,29085,69782
+2012,fi,048002,Barberino di Mugello,Stranieri,13508,47568
+2012,fi,048002,Barberino di Mugello,Totale,42593,117350
+2012,fi,048003,Barberino Val d'Elsa,Italiani,7214,27491
+2012,fi,048003,Barberino Val d'Elsa,Stranieri,18883,120224
+2012,fi,048003,Barberino Val d'Elsa,Totale,26097,147715
+2012,fi,048004,Borgo San Lorenzo,Italiani,9007,23741
+2012,fi,048004,Borgo San Lorenzo,Stranieri,7623,33324
+2012,fi,048004,Borgo San Lorenzo,Totale,16630,57065
+2012,fi,048005,Calenzano,Italiani,45788,95267
+2012,fi,048005,Calenzano,Stranieri,137419,194964
+2012,fi,048005,Calenzano,Totale,183207,290231
+2012,fi,048006,Campi Bisenzio,Italiani,43889,94192
+2012,fi,048006,Campi Bisenzio,Stranieri,58500,140679
+2012,fi,048006,Campi Bisenzio,Totale,102389,234871
+2012,fi,048008,Capraia e Limite,Italiani,2477,12968
+2012,fi,048008,Capraia e Limite,Stranieri,4692,25377
+2012,fi,048008,Capraia e Limite,Totale,7169,38345
+2012,fi,048010,Castelfiorentino,Italiani,3213,9380
+2012,fi,048010,Castelfiorentino,Stranieri,4657,32626
+2012,fi,048010,Castelfiorentino,Totale,7870,42006
+2012,fi,048011,Cerreto Guidi,Italiani,1803,11863
+2012,fi,048011,Cerreto Guidi,Stranieri,2747,23110
+2012,fi,048011,Cerreto Guidi,Totale,4550,34973
+2012,fi,048012,Certaldo,Italiani,7821,20218
+2012,fi,048012,Certaldo,Stranieri,13558,80747
+2012,fi,048012,Certaldo,Totale,21379,100965
+2012,fi,048013,Dicomano,Italiani,1094,5845
+2012,fi,048013,Dicomano,Stranieri,2135,17284
+2012,fi,048013,Dicomano,Totale,3229,23129
+2012,fi,048014,Empoli,Italiani,8357,27697
+2012,fi,048014,Empoli,Stranieri,2871,15043
+2012,fi,048014,Empoli,Totale,11228,42740
+2012,fi,048015,Fiesole,Italiani,11420,24285
+2012,fi,048015,Fiesole,Stranieri,30702,97029
+2012,fi,048015,Fiesole,Totale,42122,121314
+2012,fi,048016,Figline Valdarno,Italiani,19686,94779
+2012,fi,048016,Figline Valdarno,Stranieri,49442,344148
+2012,fi,048016,Figline Valdarno,Totale,69128,438927
+2012,fi,048017,Firenze,Italiani,884841,1975760
+2012,fi,048017,Firenze,Stranieri,2404848,6008039
+2012,fi,048017,Firenze,Totale,3289689,7983799
+2012,fi,048018,Firenzuola,Italiani,3802,13200
+2012,fi,048018,Firenzuola,Stranieri,1036,5074
+2012,fi,048018,Firenzuola,Totale,4838,18274
+2012,fi,048019,Fucecchio,Italiani,4425,12305
+2012,fi,048019,Fucecchio,Stranieri,2629,9716
+2012,fi,048019,Fucecchio,Totale,7054,22021
+2012,fi,048020,Gambassi Terme,Italiani,5160,19964
+2012,fi,048020,Gambassi Terme,Stranieri,10817,77454
+2012,fi,048020,Gambassi Terme,Totale,15977,97418
+2012,fi,048021,Greve in Chianti,Italiani,9675,27927
+2012,fi,048021,Greve in Chianti,Stranieri,33527,145387
+2012,fi,048021,Greve in Chianti,Totale,43202,173314
+2012,fi,048022,Impruneta,Italiani,14961,59206
+2012,fi,048022,Impruneta,Stranieri,34294,102071
+2012,fi,048022,Impruneta,Totale,49255,161277
+2012,fi,048023,Incisa in Val d'Arno,Italiani,5102,12923
+2012,fi,048023,Incisa in Val d'Arno,Stranieri,3250,11912
+2012,fi,048023,Incisa in Val d'Arno,Totale,8352,24835
+2012,fi,048024,Lastra a Signa,Italiani,7818,24187
+2012,fi,048024,Lastra a Signa,Stranieri,6839,41486
+2012,fi,048024,Lastra a Signa,Totale,14657,65673
+2012,fi,048025,Londa,Italiani,349,2060
+2012,fi,048025,Londa,Stranieri,371,2398
+2012,fi,048025,Londa,Totale,720,4458
+2012,fi,048026,Marradi,Italiani,2398,16497
+2012,fi,048026,Marradi,Stranieri,813,7512
+2012,fi,048026,Marradi,Totale,3211,24009
+2012,fi,048027,Montaione,Italiani,8998,28795
+2012,fi,048027,Montaione,Stranieri,27679,224443
+2012,fi,048027,Montaione,Totale,36677,253238
+2012,fi,048028,Montelupo Fiorentino,Italiani,6465,18380
+2012,fi,048028,Montelupo Fiorentino,Stranieri,3343,16721
+2012,fi,048028,Montelupo Fiorentino,Totale,9808,35101
+2012,fi,048030,Montespertoli,Italiani,5736,28654
+2012,fi,048030,Montespertoli,Stranieri,12691,111109
+2012,fi,048030,Montespertoli,Totale,18427,139763
+2012,fi,048031,Palazzuolo sul Senio,Italiani,4221,16639
+2012,fi,048031,Palazzuolo sul Senio,Stranieri,1177,9722
+2012,fi,048031,Palazzuolo sul Senio,Totale,5398,26361
+2012,fi,048032,Pelago,Italiani,1719,5502
+2012,fi,048032,Pelago,Stranieri,2162,16999
+2012,fi,048032,Pelago,Totale,3881,22501
+2012,fi,048033,Pontassieve,Italiani,9938,28563
+2012,fi,048033,Pontassieve,Stranieri,33393,70980
+2012,fi,048033,Pontassieve,Totale,43331,99543
+2012,fi,048035,Reggello,Italiani,24709,76448
+2012,fi,048035,Reggello,Stranieri,47088,174352
+2012,fi,048035,Reggello,Totale,71797,250800
+2012,fi,048036,Rignano sull'Arno,Italiani,2592,8949
+2012,fi,048036,Rignano sull'Arno,Stranieri,12360,73857
+2012,fi,048036,Rignano sull'Arno,Totale,14952,82806
+2012,fi,048037,Rufina,Italiani,945,5087
+2012,fi,048037,Rufina,Stranieri,540,2380
+2012,fi,048037,Rufina,Totale,1485,7467
+2012,fi,048038,San Casciano in Val di Pesa,Italiani,9315,24842
+2012,fi,048038,San Casciano in Val di Pesa,Stranieri,20864,102746
+2012,fi,048038,San Casciano in Val di Pesa,Totale,30179,127588
+2012,fi,048039,San Godenzo,Italiani,2247,7301
+2012,fi,048039,San Godenzo,Stranieri,616,3707
+2012,fi,048039,San Godenzo,Totale,2863,11008
+2012,fi,048040,San Piero a Sieve,Italiani,6629,13572
+2012,fi,048040,San Piero a Sieve,Stranieri,5530,22888
+2012,fi,048040,San Piero a Sieve,Totale,12159,36460
+2012,fi,048041,Scandicci,Italiani,12213,33154
+2012,fi,048041,Scandicci,Stranieri,4363,25576
+2012,fi,048041,Scandicci,Totale,16576,58730
+2012,fi,048042,Scarperia,Italiani,11237,23549
+2012,fi,048042,Scarperia,Stranieri,5575,23946
+2012,fi,048042,Scarperia,Totale,16812,47495
+2012,fi,048043,Sesto Fiorentino,Italiani,50086,117990
+2012,fi,048043,Sesto Fiorentino,Stranieri,60300,127529
+2012,fi,048043,Sesto Fiorentino,Totale,110386,245519
+2012,fi,048044,Signa,Italiani,12927,42620
+2012,fi,048044,Signa,Stranieri,8525,25236
+2012,fi,048044,Signa,Totale,21452,67856
+2012,fi,048045,Tavarnelle Val di Pesa,Italiani,9393,22838
+2012,fi,048045,Tavarnelle Val di Pesa,Stranieri,22841,120134
+2012,fi,048045,Tavarnelle Val di Pesa,Totale,32234,142972
+2012,fi,048046,Vaglia,Italiani,5800,23990
+2012,fi,048046,Vaglia,Stranieri,4674,66133
+2012,fi,048046,Vaglia,Totale,10474,90123
+2012,fi,048049,Vicchio,Italiani,3018,13817
+2012,fi,048049,Vicchio,Stranieri,5444,29985
+2012,fi,048049,Vicchio,Totale,8462,43802
+2012,fi,048050,Vinci,Italiani,9831,19817
+2012,fi,048050,Vinci,Stranieri,6943,26336
+2012,fi,048050,Vinci,Totale,16774,46153
+2012,gr,053001,Arcidosso,Italiani,12187,39783
+2012,gr,053001,Arcidosso,Stranieri,1148,5768
+2012,gr,053001,Arcidosso,Totale,13335,45551
+2012,gr,053002,Campagnatico,Italiani,1207,4630
+2012,gr,053002,Campagnatico,Stranieri,1113,8244
+2012,gr,053002,Campagnatico,Totale,2320,12874
+2012,gr,053003,Capalbio,Italiani,26928,117095
+2012,gr,053003,Capalbio,Stranieri,4260,17274
+2012,gr,053003,Capalbio,Totale,31188,134369
+2012,gr,053004,Castel del Piano,Italiani,6609,20262
+2012,gr,053004,Castel del Piano,Stranieri,2701,12853
+2012,gr,053004,Castel del Piano,Totale,9310,33115
+2012,gr,053005,Castell'Azzara,Italiani,1164,4314
+2012,gr,053005,Castell'Azzara,Stranieri,372,2451
+2012,gr,053005,Castell'Azzara,Totale,1536,6765
+2012,gr,053006,Castiglione della Pescaia,Italiani,118160,768711
+2012,gr,053006,Castiglione della Pescaia,Stranieri,52919,395049
+2012,gr,053006,Castiglione della Pescaia,Totale,171079,1163760
+2012,gr,053007,Cinigiano,Italiani,1372,6338
+2012,gr,053007,Cinigiano,Stranieri,2337,15342
+2012,gr,053007,Cinigiano,Totale,3709,21680
+2012,gr,053008,Civitella Paganico,Italiani,7539,19436
+2012,gr,053008,Civitella Paganico,Stranieri,3162,16036
+2012,gr,053008,Civitella Paganico,Totale,10701,35472
+2012,gr,053009,Follonica,Italiani,41909,276799
+2012,gr,053009,Follonica,Stranieri,18990,157003
+2012,gr,053009,Follonica,Totale,60899,433802
+2012,gr,053010,Gavorrano,Italiani,6704,27885
+2012,gr,053010,Gavorrano,Stranieri,10233,80501
+2012,gr,053010,Gavorrano,Totale,16937,108386
+2012,gr,053011,Grosseto,Italiani,178939,860711
+2012,gr,053011,Grosseto,Stranieri,33852,205766
+2012,gr,053011,Grosseto,Totale,212791,1066477
+2012,gr,053012,Isola del Giglio,Italiani,19019,69503
+2012,gr,053012,Isola del Giglio,Stranieri,3215,19538
+2012,gr,053012,Isola del Giglio,Totale,22234,89041
+2012,gr,053013,Magliano in Toscana,Italiani,11409,47507
+2012,gr,053013,Magliano in Toscana,Stranieri,4408,30458
+2012,gr,053013,Magliano in Toscana,Totale,15817,77965
+2012,gr,053014,Manciano,Italiani,55188,146576
+2012,gr,053014,Manciano,Stranieri,8111,31123
+2012,gr,053014,Manciano,Totale,63299,177699
+2012,gr,053015,Massa Marittima,Italiani,12200,38912
+2012,gr,053015,Massa Marittima,Stranieri,11320,76813
+2012,gr,053015,Massa Marittima,Totale,23520,115725
+2012,gr,053016,Monte Argentario,Italiani,34593,109133
+2012,gr,053016,Monte Argentario,Stranieri,14032,47631
+2012,gr,053016,Monte Argentario,Totale,48625,156764
+2012,gr,053017,Montieri,Italiani,2399,6528
+2012,gr,053017,Montieri,Stranieri,922,5270
+2012,gr,053017,Montieri,Totale,3321,11798
+2012,gr,053018,Orbetello,Italiani,162877,943150
+2012,gr,053018,Orbetello,Stranieri,25545,162769
+2012,gr,053018,Orbetello,Totale,188422,1105919
+2012,gr,053019,Pitigliano,Italiani,7718,16470
+2012,gr,053019,Pitigliano,Stranieri,2575,8483
+2012,gr,053019,Pitigliano,Totale,10293,24953
+2012,gr,053020,Roccalbegna,Italiani,1483,3239
+2012,gr,053020,Roccalbegna,Stranieri,632,4339
+2012,gr,053020,Roccalbegna,Totale,2115,7578
+2012,gr,053021,Roccastrada,Italiani,3858,21613
+2012,gr,053021,Roccastrada,Stranieri,3286,21484
+2012,gr,053021,Roccastrada,Totale,7144,43097
+2012,gr,053022,Santa Fiora,Italiani,1744,5651
+2012,gr,053022,Santa Fiora,Stranieri,402,3047
+2012,gr,053022,Santa Fiora,Totale,2146,8698
+2012,gr,053023,Scansano,Italiani,8270,21924
+2012,gr,053023,Scansano,Stranieri,2290,12425
+2012,gr,053023,Scansano,Totale,10560,34349
+2012,gr,053024,Scarlino,Italiani,33628,203889
+2012,gr,053024,Scarlino,Stranieri,13146,114677
+2012,gr,053024,Scarlino,Totale,46774,318566
+2012,gr,053025,Seggiano,Italiani,1432,4472
+2012,gr,053025,Seggiano,Stranieri,849,6431
+2012,gr,053025,Seggiano,Totale,2281,10903
+2012,gr,053026,Sorano,Italiani,10160,28209
+2012,gr,053026,Sorano,Stranieri,3352,14818
+2012,gr,053026,Sorano,Totale,13512,43027
+2012,gr,053027,Monterotondo Marittimo,Italiani,830,3551
+2012,gr,053027,Monterotondo Marittimo,Stranieri,676,5761
+2012,gr,053027,Monterotondo Marittimo,Totale,1506,9312
+2012,gr,053028,Semproniano,Italiani,6539,15820
+2012,gr,053028,Semproniano,Stranieri,1520,3938
+2012,gr,053028,Semproniano,Totale,8059,19758
+2012,li,049001,Bibbona,Italiani,77279,645578
+2012,li,049001,Bibbona,Stranieri,44179,374393
+2012,li,049001,Bibbona,Totale,121458,1019971
+2012,li,049002,Campiglia Marittima,Italiani,19971,84333
+2012,li,049002,Campiglia Marittima,Stranieri,8576,59910
+2012,li,049002,Campiglia Marittima,Totale,28547,144243
+2012,li,049003,Campo nell'Elba,Italiani,53822,350109
+2012,li,049003,Campo nell'Elba,Stranieri,22408,175023
+2012,li,049003,Campo nell'Elba,Totale,76230,525132
+2012,li,049004,Capoliveri,Italiani,66498,530374
+2012,li,049004,Capoliveri,Stranieri,40832,345864
+2012,li,049004,Capoliveri,Totale,107330,876238
+2012,li,049005,Capraia Isola,Italiani,4663,26386
+2012,li,049005,Capraia Isola,Stranieri,259,927
+2012,li,049005,Capraia Isola,Totale,4922,27313
+2012,li,049006,Castagneto Carducci,Italiani,64512,515639
+2012,li,049006,Castagneto Carducci,Stranieri,38067,192348
+2012,li,049006,Castagneto Carducci,Totale,102579,707987
+2012,li,049007,Cecina,Italiani,74011,464421
+2012,li,049007,Cecina,Stranieri,33036,265850
+2012,li,049007,Cecina,Totale,107047,730271
+2012,li,049008,Collesalvetti,Italiani,6483,15899
+2012,li,049008,Collesalvetti,Stranieri,2631,4594
+2012,li,049008,Collesalvetti,Totale,9114,20493
+2012,li,049009,Livorno,Italiani,82435,191493
+2012,li,049009,Livorno,Stranieri,45050,92488
+2012,li,049009,Livorno,Totale,127485,283981
+2012,li,049010,Marciana,Italiani,28703,159915
+2012,li,049010,Marciana,Stranieri,12616,69987
+2012,li,049010,Marciana,Totale,41319,229902
+2012,li,049011,Marciana Marina,Italiani,16841,80661
+2012,li,049011,Marciana Marina,Stranieri,7555,29625
+2012,li,049011,Marciana Marina,Totale,24396,110286
+2012,li,049012,Piombino,Italiani,95663,565838
+2012,li,049012,Piombino,Stranieri,22959,224064
+2012,li,049012,Piombino,Totale,118622,789902
+2012,li,049013,Porto Azzurro,Italiani,16695,103092
+2012,li,049013,Porto Azzurro,Stranieri,7541,51366
+2012,li,049013,Porto Azzurro,Totale,24236,154458
+2012,li,049014,Portoferraio,Italiani,57987,299940
+2012,li,049014,Portoferraio,Stranieri,31822,245435
+2012,li,049014,Portoferraio,Totale,89809,545375
+2012,li,049015,Rio Marina,Italiani,12373,86553
+2012,li,049015,Rio Marina,Stranieri,2402,10927
+2012,li,049015,Rio Marina,Totale,14775,97480
+2012,li,049016,Rio nell'Elba,Italiani,3885,34099
+2012,li,049016,Rio nell'Elba,Stranieri,2592,23242
+2012,li,049016,Rio nell'Elba,Totale,6477,57341
+2012,li,049017,Rosignano Marittimo,Italiani,51578,348622
+2012,li,049017,Rosignano Marittimo,Stranieri,34844,367555
+2012,li,049017,Rosignano Marittimo,Totale,86422,716177
+2012,li,049018,San Vincenzo,Italiani,78503,477417
+2012,li,049018,San Vincenzo,Stranieri,79384,624871
+2012,li,049018,San Vincenzo,Totale,157887,1102288
+2012,li,049019,Sassetta,Italiani,2954,8172
+2012,li,049019,Sassetta,Stranieri,1978,11376
+2012,li,049019,Sassetta,Totale,4932,19548
+2012,li,049020,Suvereto,Italiani,6303,27058
+2012,li,049020,Suvereto,Stranieri,4170,31464
+2012,li,049020,Suvereto,Totale,10473,58522
+2012,lu,046001,Altopascio,Italiani,15272,29139
+2012,lu,046001,Altopascio,Stranieri,6677,14611
+2012,lu,046001,Altopascio,Totale,21949,43750
+2012,lu,046002,Bagni di Lucca,Italiani,6086,12884
+2012,lu,046002,Bagni di Lucca,Stranieri,3351,19154
+2012,lu,046002,Bagni di Lucca,Totale,9437,32038
+2012,lu,046003,Barga,Italiani,12673,32397
+2012,lu,046003,Barga,Stranieri,11636,46860
+2012,lu,046003,Barga,Totale,24309,79257
+2012,lu,046004,Borgo a Mozzano,Italiani,3186,7135
+2012,lu,046004,Borgo a Mozzano,Stranieri,2232,11921
+2012,lu,046004,Borgo a Mozzano,Totale,5418,19056
+2012,lu,046005,Camaiore,Italiani,71143,310516
+2012,lu,046005,Camaiore,Stranieri,50462,215299
+2012,lu,046005,Camaiore,Totale,121605,525815
+2012,lu,046006,Camporgiano,Italiani,236,492
+2012,lu,046006,Camporgiano,Stranieri,812,7974
+2012,lu,046006,Camporgiano,Totale,1048,8466
+2012,lu,046007,Capannori,Italiani,12905,38515
+2012,lu,046007,Capannori,Stranieri,10525,53176
+2012,lu,046007,Capannori,Totale,23430,91691
+2012,lu,046008,Careggine,Italiani,915,2160
+2012,lu,046008,Careggine,Stranieri,32,45
+2012,lu,046008,Careggine,Totale,947,2205
+2012,lu,046009,Castelnuovo di Garfagnana,Italiani,7190,16067
+2012,lu,046009,Castelnuovo di Garfagnana,Stranieri,2454,13411
+2012,lu,046009,Castelnuovo di Garfagnana,Totale,9644,29478
+2012,lu,046010,Castiglione di Garfagnana,Italiani,6273,22645
+2012,lu,046010,Castiglione di Garfagnana,Stranieri,553,4302
+2012,lu,046010,Castiglione di Garfagnana,Totale,6826,26947
+2012,lu,046011,Coreglia Antelminelli,Italiani,193,931
+2012,lu,046011,Coreglia Antelminelli,Stranieri,1944,14589
+2012,lu,046011,Coreglia Antelminelli,Totale,2137,15520
+2012,lu,046012,Fabbriche di Vallico,Italiani,6,132
+2012,lu,046012,Fabbriche di Vallico,Stranieri,102,5552
+2012,lu,046012,Fabbriche di Vallico,Totale,108,5684
+2012,lu,046013,Forte dei Marmi,Italiani,61887,199253
+2012,lu,046013,Forte dei Marmi,Stranieri,49549,238225
+2012,lu,046013,Forte dei Marmi,Totale,111436,437478
+2012,lu,046014,Fosciandora,Italiani,140,695
+2012,lu,046014,Fosciandora,Stranieri,270,2295
+2012,lu,046014,Fosciandora,Totale,410,2990
+2012,lu,046015,Gallicano,Italiani,1511,3894
+2012,lu,046015,Gallicano,Stranieri,564,3335
+2012,lu,046015,Gallicano,Totale,2075,7229
+2012,lu,046016,Giuncugnano,Italiani,889,3129
+2012,lu,046016,Giuncugnano,Stranieri,567,2396
+2012,lu,046016,Giuncugnano,Totale,1456,5525
+2012,lu,046017,Lucca,Italiani,93415,192993
+2012,lu,046017,Lucca,Stranieri,127599,331201
+2012,lu,046017,Lucca,Totale,221014,524194
+2012,lu,046018,Massarosa,Italiani,4076,12253
+2012,lu,046018,Massarosa,Stranieri,2742,21631
+2012,lu,046018,Massarosa,Totale,6818,33884
+2012,lu,046019,Minucciano,Italiani,3017,7670
+2012,lu,046019,Minucciano,Stranieri,1086,4505
+2012,lu,046019,Minucciano,Totale,4103,12175
+2012,lu,046020,Molazzana,Italiani,205,664
+2012,lu,046020,Molazzana,Stranieri,663,4865
+2012,lu,046020,Molazzana,Totale,868,5529
+2012,lu,046021,Montecarlo,Italiani,1547,4366
+2012,lu,046021,Montecarlo,Stranieri,1385,8543
+2012,lu,046021,Montecarlo,Totale,2932,12909
+2012,lu,046022,Pescaglia,Italiani,173,668
+2012,lu,046022,Pescaglia,Stranieri,403,3525
+2012,lu,046022,Pescaglia,Totale,576,4193
+2012,lu,046023,Piazza al Serchio,Italiani,3270,5506
+2012,lu,046023,Piazza al Serchio,Stranieri,361,2048
+2012,lu,046023,Piazza al Serchio,Totale,3631,7554
+2012,lu,046024,Pietrasanta,Italiani,66972,331833
+2012,lu,046024,Pietrasanta,Stranieri,52570,233180
+2012,lu,046024,Pietrasanta,Totale,119542,565013
+2012,lu,046025,Pieve Fosciana,Italiani,886,2476
+2012,lu,046025,Pieve Fosciana,Stranieri,1432,8948
+2012,lu,046025,Pieve Fosciana,Totale,2318,11424
+2012,lu,046026,Porcari,Italiani,3661,10381
+2012,lu,046026,Porcari,Stranieri,882,2232
+2012,lu,046026,Porcari,Totale,4543,12613
+2012,lu,046027,San Romano in Garfagnana,Italiani,390,2391
+2012,lu,046027,San Romano in Garfagnana,Stranieri,288,2715
+2012,lu,046027,San Romano in Garfagnana,Totale,678,5106
+2012,lu,046028,Seravezza,Italiani,1839,43411
+2012,lu,046028,Seravezza,Stranieri,289,2194
+2012,lu,046028,Seravezza,Totale,2128,45605
+2012,lu,046029,Sillano,Italiani,216,964
+2012,lu,046029,Sillano,Stranieri,15,48
+2012,lu,046029,Sillano,Totale,231,1012
+2012,lu,046030,Stazzema,Italiani,2179,4439
+2012,lu,046030,Stazzema,Stranieri,197,623
+2012,lu,046030,Stazzema,Totale,2376,5062
+2012,lu,046031,Vagli Sotto,Italiani,466,1134
+2012,lu,046031,Vagli Sotto,Stranieri,259,1091
+2012,lu,046031,Vagli Sotto,Totale,725,2225
+2012,lu,046033,Viareggio,Italiani,126159,663042
+2012,lu,046033,Viareggio,Stranieri,83672,361160
+2012,lu,046033,Viareggio,Totale,209831,1024202
+2012,lu,046035,Villa Collemandina,Italiani,2252,9321
+2012,lu,046035,Villa Collemandina,Stranieri,521,3779
+2012,lu,046035,Villa Collemandina,Totale,2773,13100
+2012,lu,046032+0460341,Altro comune della provincia di Lucca,Italiani,25,154
+2012,lu,046032+0460341,Altro comune della provincia di Lucca,Stranieri,45,324
+2012,lu,046032+0460341,Altro comune della provincia di Lucca,Totale,70,478
+2012,ms,045001,Aulla,Italiani,3552,12876
+2012,ms,045001,Aulla,Stranieri,1440,3700
+2012,ms,045001,Aulla,Totale,4992,16576
+2012,ms,045002,Bagnone,Italiani,855,2058
+2012,ms,045002,Bagnone,Stranieri,632,5338
+2012,ms,045002,Bagnone,Totale,1487,7396
+2012,ms,045003,Carrara,Italiani,17059,45392
+2012,ms,045003,Carrara,Stranieri,6481,15351
+2012,ms,045003,Carrara,Totale,23540,60743
+2012,ms,045004,Casola in Lunigiana,Italiani,54,313
+2012,ms,045004,Casola in Lunigiana,Stranieri,357,2016
+2012,ms,045004,Casola in Lunigiana,Totale,411,2329
+2012,ms,045005,Comano,Italiani,181,922
+2012,ms,045005,Comano,Stranieri,259,651
+2012,ms,045005,Comano,Totale,440,1573
+2012,ms,045006,Filattiera,Italiani,208,427
+2012,ms,045006,Filattiera,Stranieri,302,1091
+2012,ms,045006,Filattiera,Totale,510,1518
+2012,ms,045007,Fivizzano,Italiani,1470,4127
+2012,ms,045007,Fivizzano,Stranieri,911,4658
+2012,ms,045007,Fivizzano,Totale,2381,8785
+2012,ms,045008,Fosdinovo,Italiani,2064,4930
+2012,ms,045008,Fosdinovo,Stranieri,864,2260
+2012,ms,045008,Fosdinovo,Totale,2928,7190
+2012,ms,045009,Licciana Nardi,Italiani,1705,3612
+2012,ms,045009,Licciana Nardi,Stranieri,704,2920
+2012,ms,045009,Licciana Nardi,Totale,2409,6532
+2012,ms,045010,Massa,Italiani,152326,767256
+2012,ms,045010,Massa,Stranieri,43768,168070
+2012,ms,045010,Massa,Totale,196094,935326
+2012,ms,045011,Montignoso,Italiani,17734,70987
+2012,ms,045011,Montignoso,Stranieri,4980,21508
+2012,ms,045011,Montignoso,Totale,22714,92495
+2012,ms,045012,Mulazzo,Italiani,4558,10427
+2012,ms,045012,Mulazzo,Stranieri,1571,7169
+2012,ms,045012,Mulazzo,Totale,6129,17596
+2012,ms,045013,Podenzana,Italiani,1273,4966
+2012,ms,045013,Podenzana,Stranieri,224,413
+2012,ms,045013,Podenzana,Totale,1497,5379
+2012,ms,045014,Pontremoli,Italiani,5545,8927
+2012,ms,045014,Pontremoli,Stranieri,2722,7416
+2012,ms,045014,Pontremoli,Totale,8267,16343
+2012,ms,045015,Tresana,Italiani,411,2495
+2012,ms,045015,Tresana,Stranieri,89,433
+2012,ms,045015,Tresana,Totale,500,2928
+2012,ms,045016,Villafranca in Lunigiana,Italiani,1539,5728
+2012,ms,045016,Villafranca in Lunigiana,Stranieri,1143,3010
+2012,ms,045016,Villafranca in Lunigiana,Totale,2682,8738
+2012,ms,045017,Zeri,Italiani,660,1833
+2012,ms,045017,Zeri,Stranieri,95,115
+2012,ms,045017,Zeri,Totale,755,1948
+2012,pi,050001,Bientina,Italiani,5552,14772
+2012,pi,050001,Bientina,Stranieri,821,3014
+2012,pi,050001,Bientina,Totale,6373,17786
+2012,pi,050002,Buti,Italiani,193,373
+2012,pi,050002,Buti,Stranieri,607,4261
+2012,pi,050002,Buti,Totale,800,4634
+2012,pi,050003,Calci,Italiani,1241,15197
+2012,pi,050003,Calci,Stranieri,1664,9837
+2012,pi,050003,Calci,Totale,2905,25034
+2012,pi,050004,Calcinaia,Italiani,4701,9134
+2012,pi,050004,Calcinaia,Stranieri,4112,9575
+2012,pi,050004,Calcinaia,Totale,8813,18709
+2012,pi,050005,Capannoli,Italiani,573,1540
+2012,pi,050005,Capannoli,Stranieri,646,4222
+2012,pi,050005,Capannoli,Totale,1219,5762
+2012,pi,050006,Casale Marittimo,Italiani,1085,6300
+2012,pi,050006,Casale Marittimo,Stranieri,6942,76694
+2012,pi,050006,Casale Marittimo,Totale,8027,82994
+2012,pi,050007,Casciana Terme,Italiani,7048,25299
+2012,pi,050007,Casciana Terme,Stranieri,3829,13446
+2012,pi,050007,Casciana Terme,Totale,10877,38745
+2012,pi,050008,Cascina,Italiani,8001,13503
+2012,pi,050008,Cascina,Stranieri,11200,14089
+2012,pi,050008,Cascina,Totale,19201,27592
+2012,pi,050009,Castelfranco di Sotto,Italiani,568,1250
+2012,pi,050009,Castelfranco di Sotto,Stranieri,606,5154
+2012,pi,050009,Castelfranco di Sotto,Totale,1174,6404
+2012,pi,050010,Castellina Marittima,Italiani,2891,8495
+2012,pi,050010,Castellina Marittima,Stranieri,813,3241
+2012,pi,050010,Castellina Marittima,Totale,3704,11736
+2012,pi,050011,Castelnuovo di Val di Cecina,Italiani,1261,3955
+2012,pi,050011,Castelnuovo di Val di Cecina,Stranieri,1045,8434
+2012,pi,050011,Castelnuovo di Val di Cecina,Totale,2306,12389
+2012,pi,050012,Chianni,Italiani,659,2446
+2012,pi,050012,Chianni,Stranieri,1938,14062
+2012,pi,050012,Chianni,Totale,2597,16508
+2012,pi,050013,Crespina,Italiani,689,4444
+2012,pi,050013,Crespina,Stranieri,1053,7045
+2012,pi,050013,Crespina,Totale,1742,11489
+2012,pi,050014,Fauglia,Italiani,1234,3231
+2012,pi,050014,Fauglia,Stranieri,1000,6033
+2012,pi,050014,Fauglia,Totale,2234,9264
+2012,pi,050015,Guardistallo,Italiani,1703,11822
+2012,pi,050015,Guardistallo,Stranieri,2837,23384
+2012,pi,050015,Guardistallo,Totale,4540,35206
+2012,pi,050016,Lajatico,Italiani,661,2263
+2012,pi,050016,Lajatico,Stranieri,1599,12657
+2012,pi,050016,Lajatico,Totale,2260,14920
+2012,pi,050017,Lari,Italiani,849,2229
+2012,pi,050017,Lari,Stranieri,956,6049
+2012,pi,050017,Lari,Totale,1805,8278
+2012,pi,050018,Lorenzana,Italiani,754,943
+2012,pi,050018,Lorenzana,Stranieri,521,3332
+2012,pi,050018,Lorenzana,Totale,1275,4275
+2012,pi,050019,Montecatini Val di Cecina,Italiani,6058,18246
+2012,pi,050019,Montecatini Val di Cecina,Stranieri,6949,45480
+2012,pi,050019,Montecatini Val di Cecina,Totale,13007,63726
+2012,pi,050020,Montescudaio,Italiani,1175,5375
+2012,pi,050020,Montescudaio,Stranieri,3134,22808
+2012,pi,050020,Montescudaio,Totale,4309,28183
+2012,pi,050021,Monteverdi Marittimo,Italiani,1271,3162
+2012,pi,050021,Monteverdi Marittimo,Stranieri,1861,9638
+2012,pi,050021,Monteverdi Marittimo,Totale,3132,12800
+2012,pi,050022,Montopoli in Val d'Arno,Italiani,2923,7594
+2012,pi,050022,Montopoli in Val d'Arno,Stranieri,8284,60427
+2012,pi,050022,Montopoli in Val d'Arno,Totale,11207,68021
+2012,pi,050024,Palaia,Italiani,2828,18340
+2012,pi,050024,Palaia,Stranieri,7902,49018
+2012,pi,050024,Palaia,Totale,10730,67358
+2012,pi,050025,Peccioli,Italiani,2546,7158
+2012,pi,050025,Peccioli,Stranieri,2888,16575
+2012,pi,050025,Peccioli,Totale,5434,23733
+2012,pi,050026,Pisa,Italiani,278683,1002096
+2012,pi,050026,Pisa,Stranieri,351507,727747
+2012,pi,050026,Pisa,Totale,630190,1729843
+2012,pi,050027,Pomarance,Italiani,6405,17348
+2012,pi,050027,Pomarance,Stranieri,4991,35670
+2012,pi,050027,Pomarance,Totale,11396,53018
+2012,pi,050028,Ponsacco,Italiani,4555,13162
+2012,pi,050028,Ponsacco,Stranieri,1423,8210
+2012,pi,050028,Ponsacco,Totale,5978,21372
+2012,pi,050029,Pontedera,Italiani,10514,28547
+2012,pi,050029,Pontedera,Stranieri,3677,12770
+2012,pi,050029,Pontedera,Totale,14191,41317
+2012,pi,050030,Riparbella,Italiani,4229,16538
+2012,pi,050030,Riparbella,Stranieri,5227,42860
+2012,pi,050030,Riparbella,Totale,9456,59398
+2012,pi,050031,San Giuliano Terme,Italiani,34763,284311
+2012,pi,050031,San Giuliano Terme,Stranieri,33555,138788
+2012,pi,050031,San Giuliano Terme,Totale,68318,423099
+2012,pi,050032,San Miniato,Italiani,7970,14982
+2012,pi,050032,San Miniato,Stranieri,5615,22123
+2012,pi,050032,San Miniato,Totale,13585,37105
+2012,pi,050034,Santa Luce,Italiani,1904,7071
+2012,pi,050034,Santa Luce,Stranieri,2881,23899
+2012,pi,050034,Santa Luce,Totale,4785,30970
+2012,pi,050035,Santa Maria a Monte,Italiani,2158,4178
+2012,pi,050035,Santa Maria a Monte,Stranieri,2022,4352
+2012,pi,050035,Santa Maria a Monte,Totale,4180,8530
+2012,pi,050036,Terricciola,Italiani,817,2456
+2012,pi,050036,Terricciola,Stranieri,2766,20198
+2012,pi,050036,Terricciola,Totale,3583,22654
+2012,pi,050037,Vecchiano,Italiani,8810,13757
+2012,pi,050037,Vecchiano,Stranieri,12955,18839
+2012,pi,050037,Vecchiano,Totale,21765,32596
+2012,pi,050038,Vicopisano,Italiani,910,7296
+2012,pi,050038,Vicopisano,Stranieri,566,1783
+2012,pi,050038,Vicopisano,Totale,1476,9079
+2012,pi,050039,Volterra,Italiani,27544,58605
+2012,pi,050039,Volterra,Stranieri,36869,123172
+2012,pi,050039,Volterra,Totale,64413,181777
+2012,pi,050023+0500331,Altro comune della provincia di Pisa,Italiani,454,926
+2012,pi,050023+0500331,Altro comune della provincia di Pisa,Stranieri,110,238
+2012,pi,050023+0500331,Altro comune della provincia di Pisa,Totale,564,1164
+2012,po,100001,Cantagallo,Italiani,790,2121
+2012,po,100001,Cantagallo,Stranieri,161,831
+2012,po,100001,Cantagallo,Totale,951,2952
+2012,po,100002,Carmignano,Italiani,8470,16751
+2012,po,100002,Carmignano,Stranieri,8487,39675
+2012,po,100002,Carmignano,Totale,16957,56426
+2012,po,100003,Montemurlo,Italiani,708,10514
+2012,po,100003,Montemurlo,Stranieri,324,2962
+2012,po,100003,Montemurlo,Totale,1032,13476
+2012,po,100004,Poggio a Caiano,Italiani,5403,14336
+2012,po,100004,Poggio a Caiano,Stranieri,4836,9065
+2012,po,100004,Poggio a Caiano,Totale,10239,23401
+2012,po,100005,Prato,Italiani,59093,177209
+2012,po,100005,Prato,Stranieri,127446,240529
+2012,po,100005,Prato,Totale,186539,417738
+2012,po,100006,Vaiano,Italiani,858,1809
+2012,po,100006,Vaiano,Stranieri,183,677
+2012,po,100006,Vaiano,Totale,1041,2486
+2012,po,100007,Vernio,Italiani,1320,8559
+2012,po,100007,Vernio,Stranieri,350,2466
+2012,po,100007,Vernio,Totale,1670,11025
+2012,pt,047001,Abetone,Italiani,25801,75156
+2012,pt,047001,Abetone,Stranieri,2039,6017
+2012,pt,047001,Abetone,Totale,27840,81173
+2012,pt,047002,Agliana,Italiani,2013,3746
+2012,pt,047002,Agliana,Stranieri,307,1005
+2012,pt,047002,Agliana,Totale,2320,4751
+2012,pt,047003,Buggiano,Italiani,651,2499
+2012,pt,047003,Buggiano,Stranieri,1162,5584
+2012,pt,047003,Buggiano,Totale,1813,8083
+2012,pt,047004,Cutigliano,Italiani,12401,44813
+2012,pt,047004,Cutigliano,Stranieri,626,3056
+2012,pt,047004,Cutigliano,Totale,13027,47869
+2012,pt,047005,Lamporecchio,Italiani,2966,7342
+2012,pt,047005,Lamporecchio,Stranieri,14071,100872
+2012,pt,047005,Lamporecchio,Totale,17037,108214
+2012,pt,047006,Larciano,Italiani,2133,5678
+2012,pt,047006,Larciano,Stranieri,2668,9874
+2012,pt,047006,Larciano,Totale,4801,15552
+2012,pt,047007,Marliana,Italiani,555,1495
+2012,pt,047007,Marliana,Stranieri,409,2847
+2012,pt,047007,Marliana,Totale,964,4342
+2012,pt,047008,Massa e Cozzile,Italiani,314,1562
+2012,pt,047008,Massa e Cozzile,Stranieri,820,6245
+2012,pt,047008,Massa e Cozzile,Totale,1134,7807
+2012,pt,047009,Monsummano Terme,Italiani,13451,25923
+2012,pt,047009,Monsummano Terme,Stranieri,4744,22772
+2012,pt,047009,Monsummano Terme,Totale,18195,48695
+2012,pt,047010,Montale,Italiani,1978,4670
+2012,pt,047010,Montale,Stranieri,564,2402
+2012,pt,047010,Montale,Totale,2542,7072
+2012,pt,047011,Montecatini-Terme,Italiani,193105,532380
+2012,pt,047011,Montecatini-Terme,Stranieri,440139,1201368
+2012,pt,047011,Montecatini-Terme,Totale,633244,1733748
+2012,pt,047012,Pescia,Italiani,12010,22630
+2012,pt,047012,Pescia,Stranieri,12632,39729
+2012,pt,047012,Pescia,Totale,24642,62359
+2012,pt,047013,Pieve a Nievole,Italiani,2752,4989
+2012,pt,047013,Pieve a Nievole,Stranieri,4535,21208
+2012,pt,047013,Pieve a Nievole,Totale,7287,26197
+2012,pt,047014,Pistoia,Italiani,30283,59771
+2012,pt,047014,Pistoia,Stranieri,19192,69943
+2012,pt,047014,Pistoia,Totale,49475,129714
+2012,pt,047015,Piteglio,Italiani,425,1448
+2012,pt,047015,Piteglio,Stranieri,166,1178
+2012,pt,047015,Piteglio,Totale,591,2626
+2012,pt,047016,Ponte Buggianese,Italiani,869,2195
+2012,pt,047016,Ponte Buggianese,Stranieri,295,1597
+2012,pt,047016,Ponte Buggianese,Totale,1164,3792
+2012,pt,047017,Quarrata,Italiani,3543,8818
+2012,pt,047017,Quarrata,Stranieri,1249,4700
+2012,pt,047017,Quarrata,Totale,4792,13518
+2012,pt,047018,Sambuca Pistoiese,Italiani,454,957
+2012,pt,047018,Sambuca Pistoiese,Stranieri,30,52
+2012,pt,047018,Sambuca Pistoiese,Totale,484,1009
+2012,pt,047019,San Marcello Pistoiese,Italiani,8756,34560
+2012,pt,047019,San Marcello Pistoiese,Stranieri,1808,11380
+2012,pt,047019,San Marcello Pistoiese,Totale,10564,45940
+2012,pt,047020,Serravalle Pistoiese,Italiani,10794,19576
+2012,pt,047020,Serravalle Pistoiese,Stranieri,10241,21936
+2012,pt,047020,Serravalle Pistoiese,Totale,21035,41512
+2012,pt,047021,Uzzano,Italiani,64,205
+2012,pt,047021,Uzzano,Stranieri,72,633
+2012,pt,047021,Uzzano,Totale,136,838
+2012,pt,047022,Chiesina Uzzanese,Italiani,35978,38660
+2012,pt,047022,Chiesina Uzzanese,Stranieri,1934,2428
+2012,pt,047022,Chiesina Uzzanese,Totale,37912,41088
+2012,si,052001,Abbadia San Salvatore,Italiani,19261,52517
+2012,si,052001,Abbadia San Salvatore,Stranieri,954,5053
+2012,si,052001,Abbadia San Salvatore,Totale,20215,57570
+2012,si,052002,Asciano,Italiani,17366,52788
+2012,si,052002,Asciano,Stranieri,15879,73491
+2012,si,052002,Asciano,Totale,33245,126279
+2012,si,052003,Buonconvento,Italiani,3936,9189
+2012,si,052003,Buonconvento,Stranieri,4402,20895
+2012,si,052003,Buonconvento,Totale,8338,30084
+2012,si,052004,Casole d'Elsa,Italiani,6667,22382
+2012,si,052004,Casole d'Elsa,Stranieri,15456,94464
+2012,si,052004,Casole d'Elsa,Totale,22123,116846
+2012,si,052005,Castellina in Chianti,Italiani,6712,15744
+2012,si,052005,Castellina in Chianti,Stranieri,27592,130964
+2012,si,052005,Castellina in Chianti,Totale,34304,146708
+2012,si,052006,Castelnuovo Berardenga,Italiani,16137,43720
+2012,si,052006,Castelnuovo Berardenga,Stranieri,29890,117775
+2012,si,052006,Castelnuovo Berardenga,Totale,46027,161495
+2012,si,052007,Castiglione d'Orcia,Italiani,9288,23724
+2012,si,052007,Castiglione d'Orcia,Stranieri,3887,19375
+2012,si,052007,Castiglione d'Orcia,Totale,13175,43099
+2012,si,052008,Cetona,Italiani,2971,6100
+2012,si,052008,Cetona,Stranieri,1986,11269
+2012,si,052008,Cetona,Totale,4957,17369
+2012,si,052009,Chianciano Terme,Italiani,149343,539829
+2012,si,052009,Chianciano Terme,Stranieri,108858,289857
+2012,si,052009,Chianciano Terme,Totale,258201,829686
+2012,si,052010,Chiusdino,Italiani,3890,16215
+2012,si,052010,Chiusdino,Stranieri,10385,95337
+2012,si,052010,Chiusdino,Totale,14275,111552
+2012,si,052011,Chiusi,Italiani,15118,28785
+2012,si,052011,Chiusi,Stranieri,19079,34034
+2012,si,052011,Chiusi,Totale,34197,62819
+2012,si,052012,Colle di Val d'Elsa,Italiani,17603,37490
+2012,si,052012,Colle di Val d'Elsa,Stranieri,17036,78988
+2012,si,052012,Colle di Val d'Elsa,Totale,34639,116478
+2012,si,052013,Gaiole in Chianti,Italiani,7587,16570
+2012,si,052013,Gaiole in Chianti,Stranieri,15902,70610
+2012,si,052013,Gaiole in Chianti,Totale,23489,87180
+2012,si,052014,Montalcino,Italiani,11677,27823
+2012,si,052014,Montalcino,Stranieri,23079,64403
+2012,si,052014,Montalcino,Totale,34756,92226
+2012,si,052015,Montepulciano,Italiani,32262,75208
+2012,si,052015,Montepulciano,Stranieri,38936,127548
+2012,si,052015,Montepulciano,Totale,71198,202756
+2012,si,052016,Monteriggioni,Italiani,25783,54336
+2012,si,052016,Monteriggioni,Stranieri,23503,84514
+2012,si,052016,Monteriggioni,Totale,49286,138850
+2012,si,052017,Monteroni d'Arbia,Italiani,7911,16449
+2012,si,052017,Monteroni d'Arbia,Stranieri,5971,26584
+2012,si,052017,Monteroni d'Arbia,Totale,13882,43033
+2012,si,052018,Monticiano,Italiani,5271,25051
+2012,si,052018,Monticiano,Stranieri,3981,21539
+2012,si,052018,Monticiano,Totale,9252,46590
+2012,si,052019,Murlo,Italiani,5761,13701
+2012,si,052019,Murlo,Stranieri,6028,47791
+2012,si,052019,Murlo,Totale,11789,61492
+2012,si,052020,Piancastagnaio,Italiani,1207,5998
+2012,si,052020,Piancastagnaio,Stranieri,88,753
+2012,si,052020,Piancastagnaio,Totale,1295,6751
+2012,si,052021,Pienza,Italiani,20648,44363
+2012,si,052021,Pienza,Stranieri,18869,63258
+2012,si,052021,Pienza,Totale,39517,107621
+2012,si,052022,Poggibonsi,Italiani,29165,62995
+2012,si,052022,Poggibonsi,Stranieri,26963,92334
+2012,si,052022,Poggibonsi,Totale,56128,155329
+2012,si,052023,Radda in Chianti,Italiani,6853,14791
+2012,si,052023,Radda in Chianti,Stranieri,22782,87902
+2012,si,052023,Radda in Chianti,Totale,29635,102693
+2012,si,052024,Radicofani,Italiani,1751,4912
+2012,si,052024,Radicofani,Stranieri,992,7682
+2012,si,052024,Radicofani,Totale,2743,12594
+2012,si,052025,Radicondoli,Italiani,626,2591
+2012,si,052025,Radicondoli,Stranieri,2248,18381
+2012,si,052025,Radicondoli,Totale,2874,20972
+2012,si,052026,Rapolano Terme,Italiani,26006,59580
+2012,si,052026,Rapolano Terme,Stranieri,7821,37667
+2012,si,052026,Rapolano Terme,Totale,33827,97247
+2012,si,052027,San Casciano dei Bagni,Italiani,14067,36472
+2012,si,052027,San Casciano dei Bagni,Stranieri,4160,21046
+2012,si,052027,San Casciano dei Bagni,Totale,18227,57518
+2012,si,052028,San Gimignano,Italiani,52367,106307
+2012,si,052028,San Gimignano,Stranieri,104008,364345
+2012,si,052028,San Gimignano,Totale,156375,470652
+2012,si,052029,San Giovanni d'Asso,Italiani,4026,11386
+2012,si,052029,San Giovanni d'Asso,Stranieri,4354,27568
+2012,si,052029,San Giovanni d'Asso,Totale,8380,38954
+2012,si,052030,San Quirico d'Orcia,Italiani,38526,101262
+2012,si,052030,San Quirico d'Orcia,Stranieri,14034,51517
+2012,si,052030,San Quirico d'Orcia,Totale,52560,152779
+2012,si,052031,Sarteano,Italiani,11861,34396
+2012,si,052031,Sarteano,Stranieri,7725,53531
+2012,si,052031,Sarteano,Totale,19586,87927
+2012,si,052032,Siena,Italiani,177770,553951
+2012,si,052032,Siena,Stranieri,235044,522328
+2012,si,052032,Siena,Totale,412814,1076279
+2012,si,052033,Sinalunga,Italiani,10693,20257
+2012,si,052033,Sinalunga,Stranieri,7968,30674
+2012,si,052033,Sinalunga,Totale,18661,50931
+2012,si,052034,Sovicille,Italiani,9771,30587
+2012,si,052034,Sovicille,Stranieri,15503,87443
+2012,si,052034,Sovicille,Totale,25274,118030
+2012,si,052035,Torrita di Siena,Italiani,6157,13058
+2012,si,052035,Torrita di Siena,Stranieri,3923,16911
+2012,si,052035,Torrita di Siena,Totale,10080,29969
+2012,si,052036,Trequanda,Italiani,4338,13920
+2012,si,052036,Trequanda,Stranieri,4626,24244
+2012,si,052036,Trequanda,Totale,8964,38164
+2012,rt,09,Toscana,Italiani,5557473,20539436
+2012,rt,09,Toscana,Stranieri,6503716,22484651
+2012,rt,09,Toscana,Totale,12061189,43024087
+(1) Aggregazione resa necessaria per la tutela del segreto statistico,,,,,,
