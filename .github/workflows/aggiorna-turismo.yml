@@ -25,7 +25,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tools/turismo/raw tools/turismo/raw_saiku turismo docs/turismo
+          git add tools/turismo/raw tools/turismo/raw_saiku tools/turismo/dati_puliti turismo docs/turismo
           if git diff --cached --quiet -- tools/turismo/raw tools/turismo/raw_saiku; then
             echo "Nessun dato nuovo dalla Regione: niente da pubblicare."
             exit 0

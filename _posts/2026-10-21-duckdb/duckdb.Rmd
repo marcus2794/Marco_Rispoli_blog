@@ -1,0 +1,378 @@
+---
+title: "Tuscany's tourism data, one SQL query at a time"
+subtitle: "A hands-on tour of DuckDB, from messy open data to answers"
+categories:
+  - turismo
+  - data
+  - duckdb
+  - R
+description: |
+  DuckDB 2.0 came out today. This post puts it to work on real data: fourteen years of tourism in all 273 Tuscan comuni, plus population and local businesses. With a few SQL queries we find where tourists sleep, how much they weigh on residents, which kinds of accommodation are growing, and how Piombino compares.
+author:
+  - name: The Mind Walker
+date: 2026-10-21
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
+                      fig.width = 8, fig.height = 4.6, dpi = 144)
+library(DBI)
+library(duckdb)
+library(ggplot2)
+
+# the clean tables are produced by the dashboard script (tools/turismo/build_dashboard.py)
+dati <- normalizePath("../../tools/turismo/dati_puliti", mustWork = TRUE)
+raw  <- normalizePath("../../tools/turismo/raw", mustWork = TRUE)
+con  <- dbConnect(duckdb())
+
+# the SQL chunks below run on this connection and print at most 12 rows
+knitr::opts_chunk$set(connection = "con", max.print = 12)
+
+# a quiet theme that matches the dashboard
+blu <- "#2a78d6"; verde <- "#1baf7a"; grigio <- "#8a8984"; arancio <- "#eb6834"
+theme_mw <- theme_minimal(base_size = 12) +
+  theme(panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(),
+        plot.title = element_text(face = "bold"), plot.title.position = "plot",
+        legend.position = "top", legend.title = element_blank())
+fmt_it <- scales::label_number(big.mark = ".", decimal.mark = ",")
+```
+
+<style>
+.callout { border-left: 4px solid #2a78d6; background: #f3f7fc; padding: 12px 16px; margin: 22px 0; border-radius: 0 8px 8px 0; }
+.callout p { margin: 0; }
+</style>
+
+Every Monday morning a small robot wakes up in this blog's repository. It downloads the latest tourism data from the Regione Toscana, cleans it, and rebuilds the [tourism dashboard](../../turismo/index.html). The dashboard is the finished product. This post is about the workshop behind it, and about a tool that makes the workshop much more pleasant: **DuckDB**.
+
+DuckDB 2.0 was released today, so it seems a good moment to show what it does with real data instead of toy examples.
+
+## What DuckDB is, in one paragraph
+
+DuckDB is a database that lives *inside* your program. There is no server to install, no user to create, no port to open. You load it in R or Python (or run a single executable in the terminal) and you can immediately query CSV, Parquet, JSON or Excel files with SQL, as if they were tables. It is built for analysis: summing, grouping, joining and ranking millions of rows on a laptop, quickly. People often describe it as "SQLite for analytics", and the comparison holds: SQLite is perfect for an app that saves and reads single records; DuckDB is made to crunch whole columns.
+
+In R it takes two lines:
+
+```{r, eval=FALSE}
+install.packages("duckdb")
+con <- DBI::dbConnect(duckdb::duckdb())   # an in-memory database, gone when R closes
+```
+
+From there on, every grey box in this post with SQL in it is a real query that ran while the page was built.
+
+## Step 1: look at the mess
+
+Open data rarely arrives clean. The Regione publishes one file per year with the arrivals and nights of tourists in each comune. DuckDB can read all fourteen of them with a single wildcard, and it is a good way to discover what we are dealing with:
+
+```{sql}
+SELECT filename, count(*) AS rows
+FROM read_csv(?raw || '/mov*.csv', union_by_name = true, all_varchar = true, filename = true)
+GROUP BY filename
+ORDER BY filename
+```
+
+```{r, include=FALSE}
+# the chunk above uses a parameter: knitr replaces ?raw with the R variable `raw`
+```
+
+Reading them all was easy. Making sense of them is another matter:
+
+```{sql}
+SELECT count(*) AS different_column_names
+FROM (DESCRIBE SELECT * FROM read_csv(?raw || '/mov*.csv', union_by_name = true, all_varchar = true))
+```
+
+Twenty-seven different column names for what are, in the end, the same seven or eight pieces of information. Over the years the files changed the header (`Comune (cod. Istat)`, `Cod_Istat_Comune`, `codi_istat_comune`…), the layout (one row per comune and origin, or one row with Italians and foreigners side by side), the separator, and even the number format: in 2016 the figures are written with a dot for thousands, so `4.542` means four thousand five hundred, not four and a half.
+
+<div class="callout"><p>This is the unglamorous part of any data project. The dashboard script takes care of it once, in Python, and writes a set of <b>clean, tidy tables</b> in <code>tools/turismo/dati_puliti/</code>: one row per comune and year, the same column names every year, real numbers. You can <a href="https://github.com/marcus2794/Marco_Rispoli_blog/tree/main/tools/turismo/dati_puliti">download them from GitHub</a> and follow along.</p></div>
+
+## Step 2: query the clean files directly
+
+With clean files, a CSV behaves like a table. No import step:
+
+```{sql}
+SELECT * FROM read_csv(?dati || '/comuni.csv') LIMIT 5
+```
+
+Look at the first column. Piombino's ISTAT code is `049012`, but DuckDB sniffed the column, saw only digits and decided it was a number, so the leading zero is gone. A classic trap. We tell it explicitly that the code is text, and while we are at it we give each file a proper name as a **view** (a saved query that reads the file whenever it is used):
+
+```{r}
+tabelle <- c("comuni", "movimenti", "posti_letto", "strutture_per_tipo",
+             "popolazione", "imprese_addetti")
+for (t in tabelle) {
+  dbExecute(con, sprintf(
+    "CREATE VIEW %s AS SELECT * FROM read_csv('%s/%s.csv', types = {'codice': 'VARCHAR'})",
+    t, dati, t))
+}
+```
+
+```{sql}
+SELECT * FROM comuni WHERE comune = 'Piombino'
+```
+
+Now the code keeps its zero, and we have six tables to play with:
+
+- **comuni**: name, province and *ambito turistico* (the tourism district) of each of the 273 comuni;
+- **movimenti**: arrivals and nights (*presenze*) of Italian and foreign guests, 2012–2025;
+- **posti_letto**: hotels and other accommodation, with their beds;
+- **strutture_per_tipo**: beds by type of accommodation (campsites, agriturismi, 4–5 star hotels…), 2005–2025;
+- **popolazione**: residents, births minus deaths, arrivals minus departures, 2002–2024;
+- **imprese_addetti**: local business units and employees by sector, 2017–2023 (ISTAT ASIA).
+
+One last convenience: a view that joins tourism and geography and adds the totals we will use all the time.
+
+```{sql}
+CREATE VIEW turismo AS
+SELECT m.*, c.comune, c.provincia, c.ambito,
+       arrivi_italiani + arrivi_stranieri     AS arrivi,
+       presenze_italiani + presenze_stranieri AS presenze
+FROM movimenti m
+JOIN comuni c USING (codice)
+```
+
+## Step 3: where do tourists sleep?
+
+The simplest question first: the top ten comuni by nights spent in 2025. `rank()` is a **window function**: it computes the position of each row without collapsing the table. And `QUALIFY` is a small DuckDB gift: it filters on the result of a window function, which in standard SQL would need a subquery.
+
+```{sql}
+SELECT rank() OVER (ORDER BY presenze DESC) AS pos,
+       comune, ambito,
+       presenze,
+       round(presenze / arrivi, 1) AS nights_per_guest
+FROM turismo
+WHERE anno = 2025
+QUALIFY pos <= 10
+ORDER BY pos
+```
+
+Florence alone hosts more than a fifth of all the nights in Tuscany. But look at the last column: in Florence, Pisa and Siena guests stay about two nights; in San Vincenzo, Bibbona, Capoliveri and Piombino they stay six. Two different kinds of tourism hide behind the same total, the city break and the seaside holiday. Piombino closes the top ten, with just over a million nights.
+
+Change one word, add a `PARTITION BY`, and we get the leader of each province instead:
+
+```{sql}
+SELECT provincia, comune, presenze
+FROM turismo
+WHERE anno = 2025
+QUALIFY rank() OVER (PARTITION BY provincia ORDER BY presenze DESC) = 1
+ORDER BY presenze DESC
+```
+
+## Step 4: who recovered from the pandemic?
+
+To compare places of very different size we use an index: each area's nights divided by its own nights in 2019, times 100. A value of 110 means ten percent more than before Covid. Here SQL does the bookkeeping: three series built with `UNION ALL`, and a window function that, inside each series, picks the 2019 value to divide by. `GROUP BY ALL` is another DuckDB shortcut: group by every column that is not an aggregate.
+
+```{sql, output.var = "indice"}
+WITH serie AS (
+  SELECT anno, 'Piombino' AS area, sum(presenze) AS presenze
+    FROM turismo WHERE comune = 'Piombino' GROUP BY ALL
+  UNION ALL
+  SELECT anno, 'Costa degli Etruschi', sum(presenze)
+    FROM turismo WHERE ambito = 'Costa degli Etruschi' GROUP BY ALL
+  UNION ALL
+  SELECT anno, 'Tuscany', sum(presenze)
+    FROM turismo GROUP BY ALL
+)
+SELECT anno, area,
+       round(100 * presenze / any_value(presenze) FILTER (WHERE anno = 2019)
+                   OVER (PARTITION BY area), 1) AS indice
+FROM serie
+ORDER BY area, anno
+```
+
+The `output.var` option sends the result straight into an R data frame, ready for a chart:
+
+```{r indice-plot}
+ggplot(indice, aes(anno, indice, colour = area, linetype = area)) +
+  geom_hline(yintercept = 100, colour = "grey70") +
+  geom_line(linewidth = 1.1) +
+  geom_point(data = subset(indice, anno == max(anno)), size = 2.2) +
+  scale_colour_manual(values = c("Piombino" = blu, "Costa degli Etruschi" = verde, "Tuscany" = grigio)) +
+  scale_linetype_manual(values = c("Piombino" = "solid", "Costa degli Etruschi" = "solid", "Tuscany" = "22")) +
+  scale_x_continuous(breaks = seq(2012, 2025, 2)) +
+  labs(title = "Nights spent by tourists, 2019 = 100", x = NULL, y = NULL) +
+  theme_mw
+```
+
+The coast barely noticed the pandemic compared with the region as a whole. In 2020 Tuscany lost more than half of its nights, mostly foreign tourists in the art cities, while the Costa degli Etruschi lost about a third: Italians who could not fly abroad drove to the sea instead. Piombino followed the same path as its coast and in 2025 is about fifteen percent above its 2019 level, while Tuscany as a whole is still a few points below it.
+
+A small warning, true of all open data: the Tuscan line here is the sum of the comuni, and in some years a few small comuni are published only as a group, for statistical secrecy. The sum is therefore a fraction of a percent lower than the official regional total. For an index it makes no difference; for a headline number, use the official figure.
+
+## Step 5: how heavy is tourism for the people who live there?
+
+A million nights mean very different things in a city of 360,000 people and in a village of 3,000. Joining tourism with population gives the number of tourist nights per resident:
+
+```{sql}
+SELECT comune, t.presenze, p.residenti,
+       round(t.presenze / p.residenti, 1) AS nights_per_resident
+FROM turismo t
+JOIN popolazione p ON p.codice = t.codice AND p.anno = t.anno
+WHERE t.anno = 2024
+ORDER BY nights_per_resident DESC
+LIMIT 10
+```
+
+In Bibbona there are 363 tourist nights per resident every year: as if each inhabitant had a guest at home every single night. Capoliveri, on Elba, follows with 271. Florence, the giant of the previous table, does not even appear: its tourists are many, but so are its residents. For Piombino the same query gives about 31, roughly two and a half times the Tuscan average.
+
+## Step 6: which kinds of accommodation are growing?
+
+The table of beds by type is "long": one row per comune, year and type. To read it like a spreadsheet we want years as columns. DuckDB has a `PIVOT` statement that does exactly this, without having to list the columns by hand:
+
+```{sql}
+PIVOT (
+  SELECT anno, tipo, posti_letto
+  FROM strutture_per_tipo JOIN comuni USING (codice)
+  WHERE comune = 'Piombino' AND anno IN (2005, 2015, 2025)
+)
+ON anno USING sum(posti_letto)
+ORDER BY "2025" DESC NULLS LAST
+```
+
+Campsites remain Piombino's backbone, but the most striking change is in the agriturismi: from a few hundred beds in 2005 to more than two thousand twenty years later. (An empty cell, `NULL`, means that no figure was published that year: when only one or two businesses of a type exist, the number is withheld for statistical secrecy.) Is this a local story or a regional one? Let's ask the whole of Tuscany, type by type, and compute the growth since 2005:
+
+```{sql, output.var = "crescita"}
+SELECT tipo,
+       sum(posti_letto) FILTER (WHERE anno = 2005) AS beds_2005,
+       sum(posti_letto) FILTER (WHERE anno = 2025) AS beds_2025,
+       beds_2025 / beds_2005 - 1                   AS growth
+FROM strutture_per_tipo
+GROUP BY tipo
+HAVING beds_2005 > 1000
+ORDER BY growth DESC
+```
+
+Notice that `growth` uses `beds_2005` and `beds_2025`, two columns defined a line earlier in the same `SELECT`. Standard SQL would not allow it; DuckDB does, and it makes queries much easier to read.
+
+```{r crescita-plot, fig.height = 3.8}
+crescita$tipo <- reorder(crescita$tipo, crescita$growth)
+ggplot(crescita, aes(growth, tipo, fill = tipo == "Agriturismi")) +
+  geom_col(width = .65) +
+  geom_vline(xintercept = 0, colour = "grey60") +
+  scale_fill_manual(values = c(`TRUE` = verde, `FALSE` = "grey75"), guide = "none") +
+  scale_x_continuous(labels = scales::label_percent()) +
+  labs(title = "Tuscany: change in beds by type of accommodation, 2005–2025", x = NULL, y = NULL) +
+  theme_mw + theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line())
+```
+
+So it is a regional story. Across Tuscany the beds in agriturismi have more than doubled since 2005, a growth matched only by private holiday rentals, while the small one- and two-star hotels have lost half of theirs. The countryside, the farmhouse and the flat have been winning over the traditional small hotel for twenty years.
+
+## Step 7: summaries at every level, in one go
+
+Districts, provinces, region: the same total at three levels of detail. `GROUP BY ROLLUP` computes them all in one pass, adding subtotal rows where a column is `NULL`:
+
+```{sql}
+SELECT coalesce(provincia, '— Tuscany —') AS provincia,
+       coalesce(ambito, '(all districts)') AS ambito,
+       sum(presenze) AS presenze
+FROM turismo
+WHERE anno = 2025 AND provincia IN ('Livorno', 'Grosseto')
+GROUP BY ROLLUP (provincia, ambito)
+ORDER BY provincia = '— Tuscany —', provincia, ambito = '(all districts)' DESC, presenze DESC
+```
+
+(The "Tuscany" line here only adds up the two provinces we selected, of course.)
+
+## Step 8: the town beyond tourism
+
+The same tools work for any table. How did jobs in Piombino change between 2017 and 2023, sector by sector?
+
+```{sql, output.var = "lavoro"}
+SELECT settore,
+       sum(addetti) FILTER (WHERE anno = 2017) AS jobs_2017,
+       sum(addetti) FILTER (WHERE anno = 2023) AS jobs_2023,
+       jobs_2023 - jobs_2017                   AS change
+FROM imprese_addetti JOIN comuni USING (codice)
+WHERE comune = 'Piombino'
+GROUP BY settore
+ORDER BY change
+```
+
+```{r lavoro-plot, fig.height = 3.4}
+lavoro$settore <- reorder(lavoro$settore, lavoro$change)
+ggplot(lavoro, aes(change, settore, fill = change > 0)) +
+  geom_col(width = .62) +
+  geom_vline(xintercept = 0, colour = "grey60") +
+  geom_text(aes(label = sprintf("%+d", round(change)), hjust = ifelse(change > 0, -0.15, 1.15)), size = 3.6, colour = "grey30") +
+  scale_fill_manual(values = c(`TRUE` = blu, `FALSE` = arancio), guide = "none") +
+  scale_x_continuous(expand = expansion(mult = .18)) +
+  labs(title = "Piombino: change in jobs by sector, 2017–2023", x = NULL, y = NULL) +
+  theme_mw + theme(panel.grid.major = element_blank(), axis.text.x = element_blank())
+```
+
+Industry, the steelworks above all, lost more than six hundred jobs in six years, and shops almost three hundred; construction, hotels, restaurants and bars gained about three hundred together. It is the same transition the tourism numbers tell from the other side, seen through employment.
+
+## If you prefer R to SQL
+
+You do not have to write SQL to benefit from DuckDB. With the `dbplyr` package, ordinary `dplyr` code is translated into SQL and executed inside DuckDB; only the final result travels to R.
+
+```{r}
+library(dplyr)
+
+tbl(con, "turismo") |>
+  filter(anno == 2025) |>
+  group_by(ambito) |>
+  summarise(nights = sum(presenze), guests = sum(arrivi)) |>
+  mutate(nights_per_guest = nights / guests) |>
+  arrange(desc(nights)) |>
+  head(5) |>
+  collect()
+```
+
+And if you are curious about what happens behind the scenes, `show_query()` prints the SQL that `dplyr` wrote for you:
+
+```{r}
+tbl(con, "turismo") |>
+  filter(anno == 2025) |>
+  group_by(ambito) |>
+  summarise(nights = sum(presenze)) |>
+  show_query()
+```
+
+## Saving the work: Parquet and database files
+
+So far DuckDB has been reading CSV files and forgetting everything at the end. Two ways to keep the results.
+
+**Parquet** is a compressed, column-based format that DuckDB, R, Python and Excel's Power Query all understand. One `COPY` statement writes it:
+
+```{r}
+pq <- file.path(tempdir(), "turismo.parquet")
+dbExecute(con, sprintf("COPY (SELECT * FROM turismo) TO '%s' (FORMAT parquet)", pq))
+csv_size <- sum(file.size(file.path(dati, c("movimenti.csv", "comuni.csv"))))
+c(csv_kb = round(csv_size / 1024), parquet_kb = round(file.size(pq) / 1024))
+```
+
+The Parquet file contains the joined table, comune names and districts included, and is still smaller than the two CSVs it came from. Columns of repeated values like `provincia` compress extremely well.
+
+**A database file** keeps tables, views and everything else between sessions. Just give the connection a file name:
+
+```{r, eval=FALSE}
+con <- dbConnect(duckdb(), dbdir = "turismo.duckdb")
+```
+
+## What's new in DuckDB 2.0
+
+All the queries above also work with older versions. The [2.0 release](https://duckdb.org/2026/10/21/announcing-duckdb-200) adds a few things worth knowing about:
+
+- **Server mode and `CONNECT`.** DuckDB can now run as a small server, and a session can connect to a remote PostgreSQL or MySQL database, sending the query there instead of copying whole tables over.
+- **Faster reading from cloud storage**: Parquet and CSV files on S3-like storage are read with many requests in flight at once.
+- **`VARIANT`**, a type for irregular, JSON-like data, stored efficiently.
+- **New SQL**: triggers, `NEAREST` joins (match each row to the closest value, for example the nearest date), `$variables`, functions to edit JSON.
+- **Agent mode** in the command-line tool: when an AI assistant drives DuckDB, results come back compact and long queries are announced before they run.
+- **Support until at least October 2027.** One caution: database files written by 2.0 cannot be opened by older versions, and the developers suggest waiting for the first patch release, in November, for anything critical.
+
+The command-line tool is a single file you can download from [duckdb.org](https://duckdb.org). It is handy for quick questions without opening RStudio:
+
+```{bash, eval=FALSE}
+duckdb -c "SELECT anno, sum(presenze_stranieri) FROM 'tools/turismo/dati_puliti/movimenti.csv' GROUP BY ALL ORDER BY anno"
+```
+
+## Why bother?
+
+The dashboard did not need DuckDB to exist, and the data here is small. A few megabytes, a few tens of thousands of rows. What changes is the *way of working*. Instead of writing loops that read files, add up numbers and keep dictionaries of totals, you ask questions: "rank the comuni within each province", "divide every series by its 2019 value", "turn years into columns". Each question is a few lines you can read again in six months. When the data grows, from one region to all of Italy, or from yearly to daily figures, the same queries keep working, just as fast.
+
+```{r, include=FALSE}
+dbDisconnect(con, shutdown = TRUE)
+```

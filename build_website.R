@@ -1,7 +1,7 @@
 # Rigenera tutto il sito "The Mind Walker" nella cartella docs/.
 # Da RStudio: apri questo file e premi "Source" (oppure Cmd+Shift+S).
 
-for (p in c("distill", "rmarkdown")) {
+for (p in c("distill", "rmarkdown", "DBI", "duckdb", "ggplot2", "dplyr", "dbplyr", "scales")) {
   if (!requireNamespace(p, quietly = TRUE)) install.packages(p)
 }
 library(distill)

@@ -9,4 +9,5 @@ listing:
     - 2025-01-18-capoliveri
     - 2026-10-16-liberte
     - 2026-10-16-itaca
+    - 2026-10-21-duckdb
 ---
