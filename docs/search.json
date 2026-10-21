@@ -6,20 +6,20 @@
       "description": "I am an eager walker in real life, it makes me think and clears my thoughts; but what I like even more is to walk with my mind and track my experiences. I hope this blog makes you think and motivates you to do small extraordinary things in life. Be humble and proud of yourself!",
       "author": [],
       "contents": "\n\n\nA Walker.\n\n\n\n\n\n",
-      "last_modified": "2026-10-21T20:27:13+02:00"
+      "last_modified": "2026-10-21T20:58:39+02:00"
     },
     {
       "path": "gallery.html",
       "title": "Gallery of featured posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2026-10-21T20:27:24+02:00"
+      "last_modified": "2026-10-21T20:58:44+02:00"
     },
     {
       "path": "GUIDA_PUBBLICAZIONE.html",
       "author": [],
       "contents": "\nCome pubblicare il sito (guida passo passo)\nUna volta sola\nApri GitHub Desktop → File → Add local repository → scegli la cartella Marco_Rispoli_blog.\nSu github.com, nel repository: Settings → Pages → Source “Deploy from a branch”, Branch main, cartella /docs → Save. (Il repository deve essere pubblico.)\nSettings → Actions → General → Workflow permissions → “Read and write permissions” → Save. Serve all’aggiornamento automatico settimanale.\nPuoi cancellare la vecchia cartella mind_walker/ (ormai vuota) e tools/turismo/_doppioni/.\nOgni volta che vuoi aggiornare\nIl modo più semplice: doppio clic su Aggiorna sito.command. Scarica i dati nuovi, ricostruisce dashboard e blog, fa commit e push. (La prima volta macOS potrebbe chiedere conferma: tasto destro → Apri.)\nSe hai modificato un post: apri mind_walker.Rproj in RStudio, apri build_website.R e premi Source. Poi in GitHub Desktop scrivi un messaggio (es. “Nuovo post”) → Commit to main → Push origin.\nDove si vede\nBlog: https://marcus2794.github.io/Marco_Rispoli_blog/\nDashboard: https://marcus2794.github.io/Marco_Rispoli_blog/turismo/\nNella dashboard il pulsante Copia link copia il link con il comune scelto (utile da mandare a qualcuno).\nDopo un push servono 1–2 minuti perché GitHub Pages pubblichi la nuova versione. Nella scheda Actions del repository puoi lanciare a mano l’aggiornamento dei dati con Run workflow.\n\n\n",
-      "last_modified": "2026-10-21T20:27:26+02:00"
+      "last_modified": "2026-10-21T20:58:45+02:00"
     },
     {
       "path": "index.html",
@@ -27,7 +27,7 @@
       "description": "Welcome to the Mind Walker blog, be ready to walk and to be surprised.\n",
       "author": [],
       "contents": "\n\nShe says, “Hey babe, take a walk on the wild side”\n\nMind-blowing.\n\n\n\n\n\n",
-      "last_modified": "2026-10-21T20:27:35+02:00"
+      "last_modified": "2026-10-21T20:58:50+02:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Una lente sul territorio piombinese</title>
+<meta name="description" content="Piombino a confronto con i comuni della provincia di Livorno e con i comuni costieri della sua taglia: popolazione, redditi, lavoro, agricoltura, cultura, servizi, mobilità e ambiente. Dati ISTAT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f6f4ef; --surface:#fcfcfb; --surface-2:#f0eee8; --line:#e2dfd7; --grid:#ebe8e1;
+  --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#7c7a74;
+  --sel:#2a78d6; --cmp:#1baf7a; --ref:#8a8984;
+  --ita:#eb6834; --str:#6250d6;
+  --up:#1c7a3e; --down:#c23b3b;
+  --null:#e6e3dc;
+  --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+  --div-n3:#c93f3e; --div-n2:#ee8f8e; --div-n1:#f6c6c5; --div-0:#f0efec; --div-p1:#b7d3f6; --div-p2:#5598e7; --div-p3:#1c5cab;
+  --accent:#a8552b;
+  --t1:#2a78d6; --t2:#eb6834; --t3:#1baf7a; --t4:#eda100; --t5:#e87ba4;
+  --shadow:0 1px 2px rgba(20,18,12,.05), 0 4px 16px rgba(20,18,12,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2f2f2c; --grid:#2a2a28;
+    --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8e86;
+    --sel:#3987e5; --cmp:#199e70; --ref:#8f8e86;
+    --ita:#d95926; --str:#9085e9;
+    --up:#4cbb6c; --down:#e66767;
+    --null:#2a2a28;
+    --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+    --div-n3:#e66767; --div-n2:#a94444; --div-n1:#5e3332; --div-0:#383835; --div-p1:#24406a; --div-p2:#2f6bbd; --div-p3:#6da7ec;
+    --accent:#e0915f;
+    --t1:#3987e5; --t2:#d95926; --t3:#199e70; --t4:#c98500; --t5:#d55181;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2f2f2c; --grid:#2a2a28;
+  --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8e86;
+  --sel:#3987e5; --cmp:#199e70; --ref:#8f8e86;
+  --ita:#d95926; --str:#9085e9;
+  --up:#4cbb6c; --down:#e66767;
+  --null:#2a2a28;
+  --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+  --div-n3:#e66767; --div-n2:#a94444; --div-n1:#5e3332; --div-0:#383835; --div-p1:#24406a; --div-p2:#2f6bbd; --div-p3:#6da7ec;
+  --accent:#e0915f;
+  --t1:#3987e5; --t2:#d95926; --t3:#199e70; --t4:#c98500; --t5:#d55181;
+  --shadow:none;
+}
+.picker{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 30px 7px 10px;min-width:200px;text-align:left;cursor:pointer;position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:260px}
+.picker::after{content:"";position:absolute;right:11px;top:50%;width:7px;height:7px;border-right:1.6px solid var(--ink-3);border-bottom:1.6px solid var(--ink-3);transform:translateY(-70%) rotate(45deg)}
+.picker:hover{border-color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:36px}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:13px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 6px 5px 10px;max-width:230px}
+.chip .dot{width:9px;height:9px;border-radius:50%;flex:none}
+.chip .dot.dash{background:none!important;border-top:2px dashed var(--ref);border-radius:0;width:12px;height:0}
+.chip .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.ctl-cmp{max-width:100%}
+.cmpt th:first-child,.cmpt td:first-child{position:sticky;left:0;background:var(--surface);z-index:1}
+.chip button{font:inherit;border:0;background:transparent;color:var(--ink-3);cursor:pointer;width:22px;height:22px;border-radius:50%;line-height:1;font-size:16px;flex:none}
+.chip button:hover{background:var(--line);color:var(--ink)}
+.chip.fixed{padding-right:10px;color:var(--ink-2)}
+.chip-add{font:inherit;font-size:13px;border:1px dashed var(--ink-3);background:transparent;color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip-add:hover{background:var(--surface)}
+.pop{position:fixed;z-index:60;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.18);width:340px;display:flex;flex-direction:column;max-height:min(70vh,520px);overflow:hidden}
+.pop input{font:inherit;font-size:15px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);padding:12px 14px;outline:none}
+.pop ul{list-style:none;margin:0;padding:6px;overflow:auto}
+.pop .grp{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600;padding:10px 8px 4px}
+.pop .opt{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:7px 8px;border-radius:7px;cursor:pointer;font-size:14px}
+.pop .opt .meta{font-size:12px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:55%}
+.pop .opt.on{background:color-mix(in srgb,var(--sel) 14%,transparent)}
+.pop .opt.cur{font-weight:600}
+.pop .empty{padding:14px;color:var(--ink-3);font-size:14px}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+header.hero{padding:40px 0 26px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;align-items:center}
+.hero-map{margin:0;text-align:center}
+.hero-map svg path{fill:color-mix(in srgb,var(--ink) 9%,var(--bg));stroke:var(--bg);stroke-width:.8}
+.hero-map svg path.on{fill:var(--accent)}
+.hero-map figcaption{font-size:12.5px;color:var(--ink-3);margin-top:6px}
+.back{font-size:13px;color:var(--ink-3);text-decoration:none}
+.back:hover{color:var(--ink)}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:18px 0 8px}
+h1{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:clamp(34px,5.4vw,56px);line-height:1.02;margin:0;letter-spacing:-.01em;max-width:880px}
+.lede{font-family:Newsreader,Georgia,serif;font-size:20px;line-height:1.45;color:var(--ink-2);max-width:760px;margin:14px 0 0}
+.meta{font-size:13px;color:var(--ink-3);margin-top:14px}
+.guide{margin-top:16px;max-width:720px;font-size:14px;color:var(--ink-2)}
+.guide summary{cursor:pointer;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:6px;list-style:none;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::before{content:"?";display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px}
+.guide ol{margin:12px 0 0;padding-left:20px;line-height:1.6}
+h2{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:28px;line-height:1.15;margin:0 0 4px}
+.sub{color:var(--ink-2);margin:0 0 18px;max-width:780px}
+section{padding:34px 0 8px;scroll-margin-top:150px}
+.btn{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 12px;border-radius:8px;cursor:pointer}
+.btn:hover{border-color:var(--ink-3)}
+.controls{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.controls .wrap{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end;padding-top:12px;padding-bottom:12px}
+.ctl{display:flex;flex-direction:column;gap:4px;min-width:0}
+.ctl label,.ctl .lab{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.ctl select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0;max-width:100%}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px;flex-wrap:wrap}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink-2);padding:6px 11px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:500}
+.theme{margin-left:auto}
+.secnav{display:flex;flex-wrap:nowrap !important;gap:4px;overflow-x:auto;padding-top:0 !important;padding-bottom:10px !important;scrollbar-width:none}
+.secnav::-webkit-scrollbar{display:none}
+.secnav a{flex:none;font-size:13px;text-decoration:none;color:var(--ink-2);padding:5px 11px;border-radius:999px}
+.secnav a:hover{background:var(--surface-2);color:var(--ink)}
+.secnav a.on{background:var(--ink);color:var(--bg)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.headline{font-family:Newsreader,Georgia,serif;font-size:22px;line-height:1.45;margin:0 0 22px;max-width:960px}
+.headline b{font-weight:600}
+.hl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.hl .card{padding:16px 18px 10px}
+.hl h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px;font-weight:600;display:flex;align-items:center;gap:8px}
+.hl h3 i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.hl ul{list-style:none;margin:0;padding:0}
+.hl li{padding:9px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.45;color:var(--ink-2);cursor:pointer}
+.hl li:first-child{border-top:0}
+.hl li b{color:var(--ink);font-weight:600}
+.hl li .vv{font-variant-numeric:tabular-nums;color:var(--ink)}
+.hl .none{color:var(--ink-3);font-size:14px;padding:6px 0 10px}
+.up{color:var(--up)} .down{color:var(--down)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.chips button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink-2);margin:0 0 12px}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.lg-dot{width:8px;height:8px;border-radius:50%;background:var(--ink-3);opacity:.55}
+.lg-sel{width:13px;height:13px;border-radius:50%;background:var(--sel);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--sel)}
+.lg-band{width:22px;height:10px;border-radius:3px;background:color-mix(in srgb,var(--ink) 12%,transparent)}
+.lg-med{width:2px;height:14px;background:var(--ink)}
+.lg-tos{width:0;height:14px;border-left:2px dashed var(--t2)}
+.lg-ita{width:0;height:14px;border-left:2px dotted var(--ink-2)}
+.strips{padding:6px 18px 10px}
+.tema-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:16px 0 6px;border-bottom:1px solid var(--line)}
+.tema-h h3{font-family:Newsreader,Georgia,serif;font-size:21px;font-weight:600;margin:0}
+.tema-h p{margin:0;font-size:13px;color:var(--ink-3)}
+.srow{display:grid;grid-template-columns:minmax(0,280px) 112px minmax(0,1fr) 170px;gap:14px;align-items:center;padding:7px 0;border-bottom:1px solid var(--grid)}
+.srow .nm{font-size:14px;line-height:1.3;color:var(--ink)}
+.srow .nm small{display:block;font-size:11.5px;color:var(--ink-3);margin-top:1px}
+.srow .val{font-variant-numeric:tabular-nums;font-weight:600;text-align:right;font-size:15px}
+.srow .pc{font-size:12.5px;line-height:1.3;color:var(--ink-2)}
+.srow .pc b{font-weight:600}
+.srow svg{display:block;overflow:visible}
+.srow .info{border:0;background:none;color:var(--ink-3);cursor:pointer;font:inherit;font-size:12px;padding:0 0 0 4px}
+.g2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:16px}
+.chart-card{padding:18px 18px 12px}
+.chart-card h3{font-size:15px;font-weight:600;margin:0}
+.chart-card .note{font-size:13px;color:var(--ink-3);margin:2px 0 10px}
+.map-leg{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-3);margin-top:6px;flex-wrap:wrap}
+.map-leg .sw{display:flex}
+.map-leg .sw i{width:26px;height:10px;display:block}
+#pmap path.c{stroke:var(--surface);stroke-width:1;cursor:pointer}
+#pmap path.c.on{stroke:var(--ink);stroke-width:2.2}
+#pmap text{font-size:11px;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:3px;pointer-events:none}
+.tbl-wrap{overflow:auto;border-radius:14px}
+table.t{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+table.t th,table.t td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+table.t th:first-child,table.t td:first-child{text-align:left;white-space:normal;min-width:200px}
+table.t thead th{font-size:12px;font-weight:600;color:var(--ink-2);position:sticky;top:0;background:var(--surface);z-index:1}
+table.t td.me{font-weight:600}
+table.t tr.sec td{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600;padding-top:16px;border-bottom:0}
+table.t td small{display:block;color:var(--ink-3);font-size:11.5px}
+.notes{font-size:14px;color:var(--ink-2);max-width:860px;line-height:1.65}
+.notes li{margin-bottom:8px}
+footer{padding:30px 0 60px;color:var(--ink-3);font-size:13px}
+.tip{position:fixed;pointer-events:none;z-index:70;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:13px;box-shadow:0 6px 24px rgba(0,0,0,.14);min-width:150px;max-width:300px;opacity:0;transition:opacity .08s}
+.tip .t{font-weight:600;margin-bottom:5px;color:var(--ink)}
+.tip .row{display:flex;align-items:center;gap:8px;color:var(--ink-2);line-height:1.6}
+.tip .row b{margin-left:auto;color:var(--ink);font-variant-numeric:tabular-nums;padding-left:12px}
+.tip .d{color:var(--ink-3);font-size:12.5px;margin-top:4px;line-height:1.4;white-space:normal}
+@media (max-width:1000px){
+  .hl{grid-template-columns:1fr}
+  .g2{grid-template-columns:1fr}
+  .srow{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}
+  .srow .st{grid-column:1 / -1;grid-row:2}
+  .srow .pc{grid-column:1 / -1;grid-row:3}
+}
+@media (max-width:700px){
+  .wrap{padding:0 16px}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-map{display:none}
+  .theme{margin-left:0}
+  .ctl-grp{flex-basis:100%}
+  .controls{position:static}
+  .controls .wrap{gap:10px 12px}
+  .headline{font-size:19px}
+  .strips{padding:4px 12px 8px}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <a class="back" href="../index.html">← The Mind Walker</a> &nbsp;·&nbsp; <a class="back" href="../turismo/index.html">Turismo in Toscana →</a>
+      <p class="eyebrow">Piombino in numeri</p>
+      <h1>Una lente sul territorio piombinese</h1>
+      <p class="lede">Una cinquantina di indicatori ufficiali, tutti rapportati agli abitanti, per vedere com'è fatta Piombino e metterla accanto ai comuni della provincia di Livorno, ai comuni costieri della sua taglia e a tutti i comuni italiani tra 20 e 50 mila abitanti.</p>
+      <p class="meta" id="meta"></p>
+      <details class="guide">
+        <summary>Come si legge</summary>
+        <ol>
+          <li><b>Scegli il comune</b> (Piombino è già selezionato) e <b>il gruppo di confronto</b>: provincia di Livorno, comuni costieri tra 20 e 50 mila abitanti, oppure tutti i comuni italiani della stessa taglia.</li>
+          <li>Nella <b>sintesi</b> trovi gli aspetti in cui il comune si distingue di più dal gruppo, in meglio, in peggio o semplicemente in modo diverso.</li>
+          <li>Nel <b>quadro completo</b> ogni riga è un indicatore: i puntini grigi sono i comuni del gruppo, la fascia scura contiene la metà centrale, il pallino blu è il comune scelto. Passa sopra i puntini per vedere di quale comune si tratta.</li>
+          <li>Tutti i numeri sono <b>per abitante, in percentuale o medi</b>, così un comune piccolo e uno grande si possono confrontare.</li>
+        </ol>
+      </details>
+    </div>
+    <figure class="hero-map" aria-hidden="true"><div id="hero-map"></div><figcaption>La provincia di Livorno</figcaption></figure>
+  </div>
+</header>
+
+<div class="controls" role="region" aria-label="Filtri">
+  <div class="wrap">
+    <div class="ctl"><span class="lab" id="lab-com">Comune</span>
+      <button id="comune" class="picker" type="button" aria-haspopup="listbox" aria-labelledby="lab-com"></button></div>
+    <div class="ctl ctl-grp"><span class="lab">Confronta con</span>
+      <div class="seg" id="grp" role="group" aria-label="Gruppo di confronto">
+        <button data-v="prov">Provincia di Livorno</button><button data-v="cost">Costieri 20–50 mila ab.</button><button data-v="simi">Tutti i comuni 20–50 mila ab.</button></div></div>
+    <div class="ctl"><span class="lab">&nbsp;</span><button class="btn" id="share" type="button">Copia link</button></div>
+    <div class="ctl theme"><span class="lab">Tema</span>
+      <div class="seg" id="theme" role="group" aria-label="Tema">
+        <button data-v="auto">Auto</button><button data-v="light">Chiaro</button><button data-v="dark">Scuro</button></div></div>
+  </div>
+  <nav class="wrap secnav" aria-label="Sezioni">
+    <a href="#s-sum">Sintesi</a><a href="#s-all">Il quadro completo</a><a href="#s-prov">Provincia di Livorno</a><a href="#s-tab">Tutti i numeri</a><a href="#s-notes">Note e fonti</a>
+  </nav>
+</div>
+
+<main class="wrap">
+  <section id="s-sum">
+    <p class="headline" id="headline"></p>
+    <div class="hl">
+      <div class="card"><h3 class="up"><i style="background:var(--up)"></i>Punti di forza</h3><ul id="hl-plus"></ul></div>
+      <div class="card"><h3 class="down"><i style="background:var(--down)"></i>Punti di attenzione</h3><ul id="hl-minus"></ul></div>
+      <div class="card"><h3 style="color:var(--accent)"><i style="background:var(--accent)"></i>Tratti distintivi</h3><ul id="hl-neu"></ul></div>
+    </div>
+    <p class="sub" style="margin-top:12px;font-size:13px;color:var(--ink-3)" id="hl-note"></p>
+  </section>
+
+  <section id="s-all">
+    <h2>Il quadro completo</h2>
+    <p class="sub" id="all-sub"></p>
+    <div class="chips" id="temi"></div>
+    <div class="legend">
+      <span><i class="lg-sel"></i><b id="lg-name"></b></span>
+      <span><i class="lg-dot"></i>un comune del gruppo</span>
+      <span><i class="lg-band"></i>metà centrale del gruppo</span>
+      <span><i class="lg-med"></i>mediana del gruppo</span>
+      <span><i class="lg-tos"></i>Toscana</span>
+      <span><i class="lg-ita"></i>Italia</span>
+    </div>
+    <div class="card strips" id="strips"></div>
+  </section>
+
+  <section id="s-prov">
+    <h2>Dentro la provincia di Livorno</h2>
+    <p class="sub">Scegli un indicatore per vedere i diciannove comuni della provincia sulla mappa e in classifica. Clicca un comune per selezionarlo.</p>
+    <div class="ctl" style="margin-bottom:14px;max-width:520px"><label for="pind">Indicatore</label><select id="pind"></select></div>
+    <div class="g2">
+      <div class="card chart-card"><h3 id="pmap-t"></h3><p class="note" id="pmap-n"></p><div id="pmap"></div><div class="map-leg" id="pmap-leg"></div></div>
+      <div class="card chart-card"><h3 id="pbar-t"></h3><p class="note" id="pbar-n"></p><div id="pbar"></div></div>
+    </div>
+  </section>
+
+  <section id="s-tab">
+    <h2>Tutti i numeri</h2>
+    <p class="sub" id="tab-sub"></p>
+    <div class="card tbl-wrap"><table class="t" id="tbl"></table></div>
+  </section>
+
+  <section id="s-notes">
+    <h2>Note e fonti</h2>
+    <div class="notes">
+      <ul>
+        <li><b>Da dove vengono i dati.</b> Tutti gli indicatori sono calcolati dai dati comunali dell'<a href="https://aster.istat.it/#/it/atlante_comuni">Atlante statistico dei comuni dell'ISTAT</a>, che raccoglie fonti diverse: ISTAT (popolazione, imprese, censimento dell'agricoltura, musei, biblioteche, incidenti, acqua, indice di fragilità), Ministero dell'Economia (redditi IRPEF), Banca d'Italia (sportelli e depositi), Ministero della Salute (ospedali), ACI (automobili). La classificazione dei comuni costieri è quella ufficiale ISTAT (portale SITUAS).</li>
+        <li><b>Anni diversi.</b> Ogni fonte ha il suo calendario: la popolazione è aggiornata al 1° gennaio 2026, i redditi al 2023, il censimento dell'agricoltura al 2020, gli agriturismi al 2019. L'anno di ogni indicatore è scritto sotto il nome.</li>
+        <li><b>Perché tutto è rapportato agli abitanti.</b> Piombino ha 32 mila abitanti, Livorno 150 mila, Capraia 400: i totali non si possono confrontare, i valori per abitante, le quote e le medie sì.</li>
+        <li><b>Toscana, Italia, provincia.</b> Sono calcolate come insieme: per esempio il reddito medio della Toscana è il reddito totale dei toscani diviso il numero di contribuenti, non la media dei redditi medi dei comuni. Per gli indicatori che l'ISTAT pubblica già in percentuale (occupazione, istruzione, rifiuti, suolo…) si usa la media pesata con la popolazione o con la superficie. Per l'indice di fragilità si usa la mediana dei comuni.</li>
+        <li><b>I gruppi di confronto.</b> "Costieri 20–50 mila" sono i comuni che si affacciano sul mare e hanno tra 20.000 e 50.000 abitanti (<span id="n-cost"></span> in tutta Italia); "Tutti i comuni 20–50 mila" sono tutti quelli della stessa fascia (<span id="n-simi"></span>). La "metà centrale" va dal 25° al 75° percentile.</li>
+        <li><b>Punti di forza e di attenzione.</b> Per alcuni indicatori un valore più alto è chiaramente meglio (redditi, occupazione) o peggio (incidenti, perdite d'acqua); per molti altri (età, settori, turismo) è solo una caratteristica, e finisce nei "tratti distintivi". Il giudizio riguarda il confronto con il gruppo scelto, non un valore assoluto.</li>
+        <li><b>Cosa non c'è, e perché.</b> L'Atlante contiene anche dati su aria, verde urbano, mobilità, energia e rumore, ma solo per i comuni capoluogo di provincia: per Piombino non esistono e sono stati esclusi. Esclusi anche i dati sugli studenti universitari (fermi al 2017).</li>
+        <li><b>Attenzione ai comuni turistici.</b> Indicatori come i rifiuti per abitante, l'acqua erogata o i posti letto in ospedale contano solo i residenti, ma servono anche turisti, pendolari o i comuni vicini: in un comune turistico come Piombino possono sembrare alti per questo.</li>
+      </ul>
+      <p>Pagina generata da uno script che scarica i dati dall'ISTAT. Ultimo aggiornamento: <span id="upd"></span>.</p>
+    </div>
+  </section>
+</main>
+<footer class="wrap">The Mind Walker · <a href="../index.html">Blog</a> · <a href="../turismo/index.html">Turismo in Toscana</a></footer>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const TOPO = /*__TOPO__*/null;
+const $ = s => document.querySelector(s);
+const it = d3.formatLocale({decimal:",",thousands:".",grouping:[3],currency:["€",""]});
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const IND = DATA.ind, TEMI = DATA.temi, NI = IND.length;
+const IX = Object.fromEntries(IND.map((d,i)=>[d.id,i]));
+const U = new Map(DATA.units.map(u=>[u.id,u]));
+const GRP = {prov:{n:"comuni della provincia di Livorno", s:"Provincia di Livorno"}, cost:{n:"comuni costieri tra 20 e 50 mila abitanti", s:"Costieri 20–50 mila"}, simi:{n:"comuni italiani tra 20 e 50 mila abitanti", s:"20–50 mila abitanti"}};
+const st = {id:DATA.focus, grp:"cost", tema:"all", pind:"r_med"};
+try{ const h=new URLSearchParams(location.hash.slice(1)); if(U.has(h.get("c"))) st.id=h.get("c"); if(GRP[h.get("g")]) st.grp=h.get("g"); if(IX[h.get("i")]!=null) st.pind=h.get("i"); }catch(e){}
+
+/* ---------- formati ---------- */
+function fmtV(ind, v, withUnit=true){
+  if(v==null||!isFinite(v)) return "n.d.";
+  const f=it.format(`,.${ind.dec}f`);
+  let t = ind.fmt==="signed" ? (v>0?"+":v<0?"−":"±")+f(Math.abs(v)) : f(v);
+  if(withUnit) t += ind.unit||"";
+  return t;
+}
+const fInt=it.format(",.0f");
+const val = (id, i) => { const v=DATA.v[id]; return v? v[i] : null; };
+const nameOf = id => U.get(id).n;
+
+/* ---------- statistiche di gruppo ---------- */
+function groupIds(){ return DATA.groups[st.grp]; }
+const _sc = new Map();
+function stats(i){
+  const key=st.grp+"|"+i; if(_sc.has(key)) return _sc.get(key);
+  const pts=groupIds().map(id=>({id, v:val(id,i)})).filter(p=>p.v!=null&&isFinite(p.v));
+  const vs=pts.map(p=>p.v).sort(d3.ascending);
+  const o={pts, vs, med:d3.quantileSorted(vs,.5), q1:d3.quantileSorted(vs,.25), q3:d3.quantileSorted(vs,.75), n:vs.length};
+  _sc.set(key,o); return o;
+}
+function pctl(i, id){
+  const v=val(id,i); if(v==null) return null;
+  const S=stats(i); const others=S.pts.filter(p=>p.id!==id); if(!others.length) return null;
+  let lo=0, eq=0; for(const p of others){ if(p.v<v) lo++; else if(p.v===v) eq++; }
+  return (lo+eq/2)/others.length*100;
+}
+function judge(ind, p){ // +1 favorevole, -1 sfavorevole, 0 neutro
+  if(p==null||!ind.pol) return 0;
+  if(ind.pol>0) return p>=60? 1 : p<=40? -1 : 0;
+  return p<=40? 1 : p>=60? -1 : 0;
+}
+function pcText(ind, p){
+  if(p==null) return "";
+  const r=Math.round(p);
+  if(r>=50) return `più alto del ${r}% dei comuni del gruppo`;
+  return `più basso del ${100-r}% dei comuni del gruppo`;
+}
+
+/* ---------- tooltip ---------- */
+const tip=$("#tip");
+function showTip(ev, title, rows, desc){
+  tip.replaceChildren();
+  const t=document.createElement("div"); t.className="t"; t.textContent=title; tip.append(t);
+  for(const r of rows){ const d=document.createElement("div"); d.className="row"; const s=document.createElement("span"); s.textContent=r[0]; const b=document.createElement("b"); b.textContent=r[1]; d.append(s,b); tip.append(d); }
+  if(desc){ const d=document.createElement("div"); d.className="d"; d.textContent=desc; tip.append(d); }
+  tip.style.opacity=1; moveTip(ev);
+}
+function moveTip(ev){ const w=tip.offsetWidth, h=tip.offsetHeight; let x=ev.clientX+14, y=ev.clientY+14; if(x+w>innerWidth-8) x=ev.clientX-w-14; if(y+h>innerHeight-8) y=ev.clientY-h-14; tip.style.left=Math.max(8,x)+"px"; tip.style.top=Math.max(8,y)+"px"; }
+function hideTip(){ tip.style.opacity=0; }
+addEventListener("scroll",hideTip,{passive:true});
+
+/* ---------- sintesi ---------- */
+function renderSummary(){
+  const u=U.get(st.id), G=GRP[st.grp], B=t=>{const b=document.createElement("b"); b.textContent=t; return b;};
+  const h=$("#headline"); h.replaceChildren();
+  let above=0, tot=0, plus=0, minus=0;
+  const items=[];
+  IND.forEach((ind,i)=>{ if(ind.kind==="size") return; const p=pctl(i,st.id); if(p==null) return; tot++; if(p>50) above++; const j=judge(ind,p); if(j>0) plus++; if(j<0) minus++; items.push({ind,i,p,j,dev:Math.abs(p-50)}); });
+  const n=groupIds().filter(id=>id!==st.id).length;
+  h.append(B(u.n), ` ha ${fInt(u.pop)} abitanti. Messo accanto ai ${n} ${G.n}, è sopra la mediana in `, B(`${above} indicatori su ${tot}`), `. Tra quelli in cui un valore più alto o più basso è chiaramente meglio, è dalla parte giusta in `, B(String(plus)), ` e da quella sbagliata in `, B(String(minus)), `.`);
+  const fill=(sel, arr)=>{ const ul=$(sel); ul.replaceChildren(); if(!arr.length){ const li=document.createElement("li"); li.className="none"; li.textContent="Nessun indicatore lontano dalla media del gruppo."; ul.append(li); return; }
+    for(const o of arr.slice(0,6)){ const S=stats(o.i); const li=document.createElement("li");
+      li.append(B(o.ind.nome), ": ");
+      const v=document.createElement("span"); v.className="vv"; v.textContent=fmtV(o.ind,val(st.id,o.i)); li.append(v);
+      li.append(`, ${pcText(o.ind,o.p)} (mediana ${fmtV(o.ind,S.med)}).`);
+      li.onclick=()=>{ st.tema=o.ind.tema; renderStrips(); document.getElementById("r-"+o.ind.id)?.scrollIntoView({behavior:"smooth",block:"center"}); };
+      ul.append(li); } };
+  const by=(f)=>items.filter(f).sort((a,b)=>b.dev-a.dev);
+  fill("#hl-plus", by(o=>o.j>0&&o.dev>=25));
+  fill("#hl-minus", by(o=>o.j<0&&o.dev>=25));
+  fill("#hl-neu", by(o=>!o.ind.pol&&o.dev>=35));
+  $("#hl-note").textContent=`Sono elencati gli indicatori in cui ${u.n} è più lontano dalla mediana dei ${G.n}. Clicca una voce per vederla nel quadro completo.`;
+}
+
+/* ---------- quadro completo ---------- */
+function renderChips(){
+  const box=$("#temi"); box.replaceChildren();
+  for(const t of [{id:"all",n:"Tutti i temi"},...TEMI]){ const b=document.createElement("button"); b.type="button"; b.textContent=t.n; b.setAttribute("aria-pressed",st.tema===t.id); b.onclick=()=>{st.tema=t.id; renderStrips();}; box.append(b); }
+}
+function renderStrips(){
+  renderChips();
+  const u=U.get(st.id), G=GRP[st.grp];
+  $("#lg-name").textContent=u.n;
+  $("#all-sub").textContent=`Ogni riga è un indicatore. I puntini sono i ${G.n}: la posizione del pallino blu dice dove si colloca ${u.n}.`;
+  const box=$("#strips"); box.replaceChildren();
+  const tos=DATA.agg.TOS, ita=DATA.agg.ITA;
+  for(const t of TEMI){
+    if(st.tema!=="all"&&st.tema!==t.id) continue;
+    const hd=document.createElement("div"); hd.className="tema-h"; const h3=document.createElement("h3"); h3.textContent=t.n; const p=document.createElement("p"); p.textContent=t.d; hd.append(h3,p); box.append(hd);
+    IND.forEach((ind,i)=>{ if(ind.tema!==t.id) return;
+      const row=document.createElement("div"); row.className="srow"; row.id="r-"+ind.id;
+      const nm=document.createElement("div"); nm.className="nm"; nm.textContent=ind.nome; const sm=document.createElement("small"); sm.textContent=ind.anno+" · "+ind.fonte;
+      const info=document.createElement("button"); info.className="info"; info.type="button"; info.textContent="ⓘ"; info.setAttribute("aria-label","Cosa misura");
+      info.onpointerenter=ev=>showTip(ev, ind.nome, [], ind.desc); info.onpointerleave=hideTip; info.onclick=ev=>showTip(ev, ind.nome, [], ind.desc); nm.append(info, sm);
+      const vv=document.createElement("div"); vv.className="val"; vv.textContent=fmtV(ind,val(st.id,i));
+      const sv=document.createElement("div"); sv.className="st";
+      const pc=document.createElement("div"); pc.className="pc"; const p=pctl(i,st.id), j=judge(ind,p);
+      if(p!=null){ const b=document.createElement("b"); b.className=j>0?"up":j<0?"down":""; b.textContent=pcText(ind,p); pc.append(b); }
+      row.append(nm,vv,sv,pc); box.append(row);
+      drawStrip(sv, ind, i, ind.kind==="size"?null:tos[i], ind.kind==="size"?null:ita[i]);
+    });
+  }
+}
+function drawStrip(el, ind, i, tv, iv){
+  const S=stats(i), me=val(st.id,i);
+  const w=Math.max(220, el.clientWidth||300), h=30;
+  const ext=[d3.quantileSorted(S.vs,.02), d3.quantileSorted(S.vs,.98), me, tv, iv].filter(v=>v!=null&&isFinite(v));
+  let [lo,hi]=d3.extent(ext); if(lo===hi){ lo-=1; hi+=1; }
+  const x=d3.scaleLinear().domain([lo,hi]).range([6,w-6]).clamp(true);
+  const svg=d3.select(el).append("svg").attr("width",w).attr("height",h).attr("role","img").attr("aria-label",`${ind.nome}: ${fmtV(ind,me)}; mediana del gruppo ${fmtV(ind,S.med)}`);
+  svg.append("line").attr("x1",6).attr("x2",w-6).attr("y1",h/2).attr("y2",h/2).attr("stroke",css("--line"));
+  if(S.n>3) svg.append("rect").attr("x",x(S.q1)).attr("width",Math.max(2,x(S.q3)-x(S.q1))).attr("y",h/2-6).attr("height",12).attr("rx",4).attr("fill",css("--ink")).attr("opacity",.1);
+  // puntini dei comuni, con un piccolo scostamento verticale deterministico
+  const jit=id=>((parseInt(id,10)*2654435761)%1000)/1000-.5;
+  svg.append("g").selectAll("circle").data(S.pts.filter(p=>p.id!==st.id)).join("circle")
+    .attr("cx",p=>x(p.v)).attr("cy",p=>h/2+jit(p.id)*12).attr("r",S.n>100?2.2:3).attr("fill",css("--ink-3")).attr("opacity",S.n>100?.35:.55)
+    .on("pointermove",(ev,p)=>showTip(ev,nameOf(p.id),[[ind.nome,fmtV(ind,p.v)]])).on("pointerleave",hideTip);
+  if(S.med!=null) svg.append("line").attr("x1",x(S.med)).attr("x2",x(S.med)).attr("y1",h/2-9).attr("y2",h/2+9).attr("stroke",css("--ink")).attr("stroke-width",2);
+  if(tv!=null) svg.append("line").attr("x1",x(tv)).attr("x2",x(tv)).attr("y1",1).attr("y2",h-1).attr("stroke",css("--t2")).attr("stroke-width",2).attr("stroke-dasharray","3 2");
+  if(iv!=null) svg.append("line").attr("x1",x(iv)).attr("x2",x(iv)).attr("y1",1).attr("y2",h-1).attr("stroke",css("--ink-2")).attr("stroke-width",2).attr("stroke-dasharray","1 2");
+  if(me!=null) svg.append("circle").attr("cx",x(me)).attr("cy",h/2).attr("r",6.5).attr("fill",css("--sel")).attr("stroke",css("--surface")).attr("stroke-width",2);
+  svg.append("rect").attr("width",w).attr("height",h).attr("fill","transparent").style("pointer-events","none");
+  // tooltip riassuntivo sull'area vuota
+  svg.on("pointermove",ev=>{ if(ev.target.tagName==="circle"&&ev.target.getAttribute("r")!=="6.5") return; showTip(ev, ind.nome, [[nameOf(st.id),fmtV(ind,me)],["Mediana del gruppo",fmtV(ind,S.med)],["Provincia di Livorno",fmtV(ind,DATA.agg.PLI[i])],["Toscana",fmtV(ind,tv)],["Italia",fmtV(ind,iv)]], ind.desc); }).on("pointerleave",hideTip);
+}
+
+/* ---------- provincia ---------- */
+let geo=null;
+function setupMap(){
+  const obj=TOPO.objects[Object.keys(TOPO.objects)[0]];
+  geo=topojson.feature(TOPO,obj);
+  const sel=$("#pind");
+  for(const t of TEMI){ const og=document.createElement("optgroup"); og.label=t.n; IND.forEach(ind=>{ if(ind.tema!==t.id||ind.kind==="size") return; const o=document.createElement("option"); o.value=ind.id; o.textContent=ind.nome; og.append(o); }); sel.append(og); }
+  sel.value=st.pind; sel.onchange=()=>{ st.pind=sel.value; renderProv(); syncHash(); };
+}
+function renderHero(){
+  const el=$("#hero-map"); el.replaceChildren(); const w=260, h=300;
+  const proj=d3.geoMercator().fitSize([w,h],geo); const path=d3.geoPath(proj);
+  const svg=d3.select(el).append("svg").attr("width",w).attr("height",h).attr("viewBox",[0,0,w,h]);
+  svg.selectAll("path").data(geo.features).join("path").attr("d",path).attr("class",f=>f.properties.c===st.id?"on":"");
+}
+function renderProv(){
+  const i=IX[st.pind], ind=IND[i];
+  const ids=DATA.groups.prov, vals=ids.map(id=>({id, v:val(id,i)}));
+  $("#pmap-t").textContent=ind.nome; $("#pmap-n").textContent=`${ind.anno}. Colore più scuro = valore più alto.`;
+  $("#pbar-t").textContent="Classifica dei comuni"; $("#pbar-n").textContent=ind.desc;
+  // mappa
+  const el=$("#pmap"); el.replaceChildren(); const w=Math.max(260, el.clientWidth||400), h=Math.round(w*1.05);
+  const proj=d3.geoMercator().fitExtent([[6,6],[w-6,h-6]],geo); const path=d3.geoPath(proj);
+  const vv=vals.map(d=>d.v).filter(v=>v!=null);
+  const seq=[0,1,2,3,4,5,6].map(k=>css("--seq-"+k));
+  const sc=d3.scaleQuantize().domain(d3.extent(vv)).range(seq.slice(0,6));
+  const svg=d3.select(el).append("svg").attr("width",w).attr("height",h).attr("viewBox",[0,0,w,h]);
+  svg.selectAll("path").data(geo.features).join("path").attr("class",f=>"c"+(f.properties.c===st.id?" on":"")).attr("d",path)
+    .attr("fill",f=>{ const v=val(f.properties.c,i); return v==null? css("--null") : sc(v); })
+    .on("pointermove",(ev,f)=>showTip(ev,f.properties.n,[[ind.nome,fmtV(ind,val(f.properties.c,i))]])).on("pointerleave",hideTip)
+    .on("click",(ev,f)=>{ if(U.has(f.properties.c)) setComune(f.properties.c); });
+  const sel=geo.features.find(f=>f.properties.c===st.id);
+  if(sel){ const [cx,cy]=path.centroid(sel); svg.append("text").attr("x",cx).attr("y",cy).attr("text-anchor","middle").attr("dy","0.35em").text(sel.properties.n); }
+  const lg=$("#pmap-leg"); lg.replaceChildren(); const a=document.createElement("span"); a.textContent=fmtV(ind,d3.min(vv)); const sw=document.createElement("span"); sw.className="sw"; for(const c of seq.slice(0,6)){ const k=document.createElement("i"); k.style.background=c; sw.append(k);} const b=document.createElement("span"); b.textContent=fmtV(ind,d3.max(vv)); lg.append(a,sw,b);
+  // barre
+  const rows=[...vals.filter(d=>d.v!=null).map(d=>({n:nameOf(d.id), v:d.v, id:d.id})).sort((a,b)=>b.v-a.v)];
+  const refs=[{n:"Provincia di Livorno", v:DATA.agg.PLI[i], ref:true},{n:"Toscana", v:DATA.agg.TOS[i], ref:true},{n:"Italia", v:DATA.agg.ITA[i], ref:true}].filter(r=>r.v!=null);
+  const all=[...rows,...refs];
+  const bel=$("#pbar"); bel.replaceChildren(); const bw=Math.max(280, bel.clientWidth||400), rh=22, labW=Math.min(bw*.45, 14+7*d3.max(all,d=>d.n.length)), bh=all.length*rh+16;
+  const neg=d3.min(all,d=>d.v)<0;
+  const x=d3.scaleLinear().domain(neg? d3.extent([0,...all.map(d=>d.v)]) : [0,d3.max(all,d=>d.v)||1]).nice().range([labW,bw-62]);
+  const bs=d3.select(bel).append("svg").attr("width",bw).attr("height",bh).attr("viewBox",[0,0,bw,bh]);
+  all.forEach((d,k)=>{ const y=k*rh+(d.ref?10:0)+2; const g=bs.append("g").attr("transform",`translate(0,${y})`).style("cursor",d.id?"pointer":"default");
+    g.append("text").attr("x",labW-8).attr("y",rh/2).attr("dy","0.32em").attr("text-anchor","end").attr("font-size",12.5).attr("fill",d.id===st.id?css("--ink"):css("--ink-2")).attr("font-weight",d.id===st.id?600:400).text(d.n);
+    const x0=x(Math.min(0,d.v)), x1=x(Math.max(0,d.v));
+    g.append("rect").attr("x",x0).attr("width",Math.max(1,x1-x0)).attr("y",4).attr("height",rh-8).attr("rx",3)
+      .attr("fill",d.ref? "none" : d.id===st.id? css("--sel") : css("--ref")).attr("opacity",d.ref?1:d.id===st.id?1:.55)
+      .attr("stroke",d.ref?css("--ink-3"):null).attr("stroke-dasharray",d.ref?"3 2":null);
+    g.append("text").attr("x",x1+6).attr("y",rh/2).attr("dy","0.32em").attr("font-size",12).attr("fill",css("--ink-2")).style("font-variant-numeric","tabular-nums").text(fmtV(ind,d.v));
+    if(d.id) g.on("click",()=>setComune(d.id));
+  });
+}
+
+/* ---------- tabella ---------- */
+function renderTable(){
+  const u=U.get(st.id), G=GRP[st.grp];
+  $("#tab-sub").textContent=`Tutti gli indicatori di ${u.n} accanto alla mediana dei ${G.n}, alla provincia di Livorno, alla Toscana e all'Italia.`;
+  const t=$("#tbl"); t.replaceChildren();
+  const th=document.createElement("thead"), tr=document.createElement("tr");
+  for(const c of ["Indicatore", u.n, "Mediana del gruppo", "Posizione (dal più alto)", "Prov. di Livorno", "Toscana", "Italia"]){ const h=document.createElement("th"); h.textContent=c; tr.append(h); }
+  th.append(tr); t.append(th);
+  const tb=document.createElement("tbody");
+  for(const tm of TEMI){
+    const s=document.createElement("tr"); s.className="sec"; const td=document.createElement("td"); td.colSpan=7; td.textContent=tm.n; s.append(td); tb.append(s);
+    IND.forEach((ind,i)=>{ if(ind.tema!==tm.id) return;
+      const S=stats(i), me=val(st.id,i); let pos="";
+      if(me!=null){ const better=S.pts.filter(p=>p.id!==st.id&&p.v>me).length; pos=`${better+1}° su ${S.pts.filter(p=>p.id!==st.id).length+1}`; }
+      const r=document.createElement("tr");
+      const c0=document.createElement("td"); c0.textContent=ind.nome; const sm=document.createElement("small"); sm.textContent=ind.anno; c0.append(sm); r.append(c0);
+      for(const [v,cls] of [[fmtV(ind,me),"me"],[fmtV(ind,S.med),""],[pos,""],[fmtV(ind,DATA.agg.PLI[i]),""],[fmtV(ind,DATA.agg.TOS[i]),""],[fmtV(ind,DATA.agg.ITA[i]),""]]){ const c=document.createElement("td"); c.textContent=v; if(cls) c.className=cls; r.append(c); }
+      tb.append(r); });
+  }
+  t.append(tb);
+}
+
+/* ---------- controlli ---------- */
+const norm = x => x.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+let _pop=null;
+function closePicker(){ if(_pop){ _pop.remove(); _pop=null; document.removeEventListener("pointerdown",_outside,true); } }
+function _outside(ev){ if(_pop && !_pop.contains(ev.target)) closePicker(); }
+function pickerGroups(q){
+  const opt=u=>({v:u.id, name:u.n, meta:(u.p==="049"?"Prov. di Livorno":"")+(u.lit?(u.p==="049"?" · ":"")+"costiero":"")+" · "+fInt(u.pop)+" ab."});
+  const all=[...DATA.units].sort((a,b)=>a.n.localeCompare(b.n,"it"));
+  if(q){ const n=norm(q); const a=all.filter(u=>norm(u.n).startsWith(n)), b=all.filter(u=>!norm(u.n).startsWith(n)&&norm(u.n).includes(n)); return [{label:"Comuni", items:[...a,...b].map(opt)}]; }
+  return [{label:"Provincia di Livorno", items:all.filter(u=>u.p==="049").map(opt)},{label:"Costieri tra 20 e 50 mila abitanti", items:all.filter(u=>u.lit&&u.p!=="049").map(opt)},{label:"Altri comuni tra 20 e 50 mila abitanti", items:all.filter(u=>!u.lit&&u.p!=="049").map(opt)}];
+}
+function openPicker(anchor){
+  closePicker();
+  const pop=document.createElement("div"); pop.className="pop"; pop.setAttribute("role","dialog");
+  const inp=document.createElement("input"); inp.placeholder="Cerca un comune…"; inp.setAttribute("aria-label","Cerca un comune"); inp.autocomplete="off"; inp.spellcheck=false;
+  const ul=document.createElement("ul"); ul.setAttribute("role","listbox"); pop.append(inp,ul); document.body.append(pop); _pop=pop;
+  const r=anchor.getBoundingClientRect(), w=Math.min(360, innerWidth-16);
+  pop.style.width=w+"px"; pop.style.left=Math.max(8,Math.min(r.left,innerWidth-w-8))+"px"; pop.style.top=(r.bottom+6)+"px"; pop.style.maxHeight=Math.max(220,Math.min(520,innerHeight-r.bottom-20))+"px";
+  let opts=[], act=0;
+  const mark=(scroll=true)=>{ opts.forEach((o,k)=>o.li.classList.toggle("on",k===act)); if(scroll&&opts[act]) opts[act].li.scrollIntoView({block:"nearest"}); };
+  const draw=()=>{ ul.replaceChildren(); opts=[];
+    for(const g of pickerGroups(inp.value.trim())){ if(!g.items.length) continue; const h=document.createElement("li"); h.className="grp"; h.textContent=g.label; ul.append(h);
+      for(const itm of g.items.slice(0,inp.value?60:500)){ const li=document.createElement("li"); li.className="opt"+(itm.v===st.id?" cur":""); li.setAttribute("role","option"); const a=document.createElement("span"); a.textContent=itm.name; const b=document.createElement("span"); b.className="meta"; b.textContent=itm.meta; li.append(a,b); const k=opts.length; li.onpointerenter=()=>{act=k; mark(false);}; li.onclick=()=>{closePicker(); setComune(itm.v);}; opts.push({li,itm}); ul.append(li); } }
+    if(!opts.length){ const li=document.createElement("li"); li.className="empty"; li.textContent="Nessun comune trovato (ci sono la provincia di Livorno e i comuni tra 20 e 50 mila abitanti)"; ul.append(li); }
+    act=0; mark(false); };
+  inp.oninput=draw;
+  inp.onkeydown=e=>{ if(e.key==="ArrowDown"){act=Math.min(opts.length-1,act+1); mark(); e.preventDefault();} else if(e.key==="ArrowUp"){act=Math.max(0,act-1); mark(); e.preventDefault();} else if(e.key==="Enter"&&opts[act]){ const v=opts[act].itm.v; closePicker(); setComune(v);} else if(e.key==="Escape"){ closePicker(); anchor.focus(); } };
+  draw(); setTimeout(()=>{ document.addEventListener("pointerdown",_outside,true); inp.focus({preventScroll:true}); },0);
+}
+function setComune(id){ st.id=id; render(); }
+function segs(sel, on, initial){
+  const el=$(sel), btns=[...el.querySelectorAll("button")];
+  const set=v=>btns.forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===v));
+  btns.forEach(b=>b.onclick=()=>{ set(b.dataset.v); on(b.dataset.v); }); set(initial);
+}
+function syncHash(){ try{ history.replaceState(null,"","#c="+st.id+"&g="+st.grp+"&i="+st.pind); }catch(e){} }
+function setup(){
+  $("#comune").onclick=ev=>openPicker(ev.currentTarget);
+  segs("#grp", v=>{ st.grp=v; render(); }, st.grp);
+  let th="auto"; try{ th=localStorage.getItem("lente-theme")||"auto"; }catch(e){}
+  const applyTheme=v=>{ if(v==="auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme",v); };
+  applyTheme(th);
+  segs("#theme", v=>{ applyTheme(v); try{ localStorage.setItem("lente-theme",v); }catch(e){} render(); }, th);
+  $("#share").onclick=async()=>{ syncHash(); const b=$("#share"); try{ await navigator.clipboard.writeText(location.href); b.textContent="Link copiato"; }catch(e){ b.textContent="Copia dalla barra"; } setTimeout(()=>b.textContent="Copia link",1600); };
+  $("#meta").textContent=`Dati ISTAT, Atlante statistico dei comuni · ${DATA.units.length} comuni a confronto · aggiornato il ${new Date(DATA.updated).toLocaleDateString("it-IT",{day:"numeric",month:"long",year:"numeric"})}`;
+  $("#upd").textContent=new Date(DATA.updated).toLocaleDateString("it-IT",{day:"numeric",month:"long",year:"numeric"});
+  $("#n-cost").textContent=DATA.groups.cost.length; $("#n-simi").textContent=DATA.groups.simi.length;
+  let t; addEventListener("resize",()=>{ clearTimeout(t); t=setTimeout(render,150); });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",render);
+  // sezione attiva nel menu
+  const links=[...document.querySelectorAll(".secnav a")];
+  const io=new IntersectionObserver(es=>{ for(const e of es) if(e.isIntersecting){ links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)); } },{rootMargin:"-40% 0px -55% 0px"});
+  document.querySelectorAll("main section").forEach(s=>io.observe(s));
+}
+function render(){
+  _sc.clear();
+  $("#comune").textContent=nameOf(st.id);
+  renderHero(); renderSummary(); renderStrips(); renderProv(); renderTable(); syncHash();
+}
+setup(); setupMap(); render();
+</script>
+</body>
+</html>
