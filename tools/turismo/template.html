@@ -104,6 +104,42 @@ section{padding:34px 0 8px}
 .ctl input,.ctl select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0}
 .ctl input:focus,.ctl select:focus{outline:2px solid var(--sel);outline-offset:1px}
 #comune{width:220px}
+.picker{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 30px 7px 10px;min-width:200px;text-align:left;cursor:pointer;position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:260px}
+.picker::after{content:"";position:absolute;right:11px;top:50%;width:7px;height:7px;border-right:1.6px solid var(--ink-3);border-bottom:1.6px solid var(--ink-3);transform:translateY(-70%) rotate(45deg)}
+.picker:hover{border-color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:36px}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:13px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 6px 5px 10px;max-width:230px}
+.chip .dot{width:9px;height:9px;border-radius:50%;flex:none}
+.chip .dot.dash{background:none!important;border-top:2px dashed var(--ref);border-radius:0;width:12px;height:0}
+.chip .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.ctl-cmp{max-width:100%}
+.cmpt th:first-child,.cmpt td:first-child{position:sticky;left:0;background:var(--surface);z-index:1}
+.chip button{font:inherit;border:0;background:transparent;color:var(--ink-3);cursor:pointer;width:22px;height:22px;border-radius:50%;line-height:1;font-size:16px;flex:none}
+.chip button:hover{background:var(--line);color:var(--ink)}
+.chip.fixed{padding-right:10px;color:var(--ink-2)}
+.chip-add{font:inherit;font-size:13px;border:1px dashed var(--ink-3);background:transparent;color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip-add:hover{background:var(--surface)}
+.pop{position:fixed;z-index:60;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.18);width:340px;display:flex;flex-direction:column;max-height:min(70vh,520px);overflow:hidden}
+.pop input{font:inherit;font-size:15px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);padding:12px 14px;outline:none}
+.pop ul{list-style:none;margin:0;padding:6px;overflow:auto}
+.pop .grp{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600;padding:10px 8px 4px}
+.pop .opt{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:7px 8px;border-radius:7px;cursor:pointer;font-size:14px}
+.pop .opt .meta{font-size:12px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:55%}
+.pop .opt.on{background:color-mix(in srgb,var(--sel) 14%,transparent)}
+.pop .opt.cur{font-weight:600}
+.pop .empty{padding:14px;color:var(--ink-3);font-size:14px}
+.cmpt{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+.cmpt th,.cmpt td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.cmpt th:first-child,.cmpt td:first-child{text-align:left;white-space:normal;color:var(--ink-2);min-width:170px}
+.cmpt thead th{font-size:12.5px;font-weight:600;color:var(--ink);vertical-align:bottom}
+.cmpt thead th .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+.cmpt thead th .dot.dash{background:none!important;border-top:2px dashed var(--ref);border-radius:0;width:12px;height:0;vertical-align:middle}
+.cmpt thead th:nth-child(n+2),.cmpt tbody td:nth-child(n+2){text-align:right;color:var(--ink-2);max-width:none;overflow:visible}
+.cmpt tbody td.me{font-weight:600;color:var(--ink)}
+.cmpt thead th:nth-child(n+2){color:var(--ink)}
+.cmpt td .bar{display:block;height:4px;border-radius:2px;margin-top:4px;margin-left:auto;opacity:.85}
+.cmpt tr.sec td{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600;border-bottom:0;padding-top:16px}
+.cmpt td.best{position:relative}
 .seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px}
 .seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink-2);padding:6px 11px;border-radius:6px;cursor:pointer}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:500}
@@ -217,6 +253,11 @@ footer{padding:30px 0 60px;color:var(--ink-3);font-size:13px}
   .kpi .v{font-size:26px}
   .controls{position:static}
   #comune{width:100%}
+  .picker{max-width:none;width:100%}
+  .ctl-cmp{flex-basis:100%}
+  .chip{max-width:100%}
+  .cmpt th:first-child,.cmpt td:first-child{min-width:132px;max-width:150px}
+  .pop{left:8px!important;right:8px;width:auto!important}
   .ctl{flex:1 1 140px}
   .theme{margin-left:0}
   h2{font-size:24px}
@@ -237,7 +278,7 @@ footer{padding:30px 0 60px;color:var(--ink-3);font-size:13px}
         <summary>Come si usa</summary>
         <ol>
           <li><b>Scegli un comune</b> nella casella in alto (si può scrivere il nome) oppure cliccalo sulla mappa.</li>
-          <li><b>Scegli con chi confrontarlo</b>: il suo ambito turistico, la provincia, la Toscana o un altro comune.</li>
+          <li><b>Scegli con chi confrontarlo</b>: fino a tre tra comuni, ambiti turistici e province (la Toscana è sempre presente). Premi <b>+ Aggiungi</b> e scrivi un nome; la tabella "Fianco a fianco" li mette in colonna.</li>
           <li><b>Scegli l'anno</b>: tutte le sezioni si aggiornano insieme. Passa sopra grafici e barre per vedere i numeri esatti.</li>
           <li>Usa il menu delle sezioni per saltare da un argomento all'altro, e <b>Copia link</b> per mandare a qualcuno la pagina già aperta sul comune che stai guardando.</li>
         </ol>
@@ -250,8 +291,8 @@ footer{padding:30px 0 60px;color:var(--ink-3);font-size:13px}
 <div class="controls" role="region" aria-label="Filtri">
   <div class="wrap">
     <div class="ctl"><label for="comune">Comune</label>
-      <input id="comune" list="comuni" autocomplete="off" spellcheck="false"><datalist id="comuni"></datalist></div>
-    <div class="ctl"><label for="cmp">Confronta con</label><select id="cmp"></select></div>
+      <button id="comune" class="picker" type="button" aria-haspopup="listbox"></button></div>
+    <div class="ctl ctl-cmp"><label>Confronta con <span style="text-transform:none;letter-spacing:0;font-weight:400">(fino a 3)</span></label><div class="chips" id="chips"></div></div>
     <div class="ctl"><label for="anno">Anno</label><select id="anno"></select></div>
     <div class="ctl"><label>Misura</label>
       <div class="seg" id="metric" role="group" aria-label="Misura">
@@ -272,6 +313,11 @@ footer{padding:30px 0 60px;color:var(--ink-3);font-size:13px}
     <p class="headline" id="headline"></p>
     <div class="facts" id="facts"></div>
     <div class="kpis" id="kpis"></div>
+    <div class="card chart-card" style="margin-top:16px">
+      <h3 id="cmpt-t">Fianco a fianco</h3>
+      <p class="note" id="cmpt-n"></p>
+      <div style="overflow-x:auto"><table class="cmpt" id="cmpt"></table></div>
+    </div>
   </section>
 
   <section id="s-map" aria-labelledby="h-map">
@@ -490,8 +536,8 @@ const AMBITI = [...new Set(DATA.units.map(u=>u.a).filter(Boolean))].sort((a,b)=>
 const PROV = {AR:"Arezzo",FI:"Firenze",GR:"Grosseto",LI:"Livorno",LU:"Lucca",MS:"Massa-Carrara",PI:"Pisa",PO:"Prato",PT:"Pistoia",SI:"Siena"};
 
 /* ---------- state ---------- */
-const st = { id:"049012", cmp:"amb", year:YN, metric:"pre", ind:"pre", base:"2019", tblKind:"com", sort:{k:"v",dir:-1} };
-try{ const h=new URLSearchParams(location.hash.slice(1)); if(h.get("c")&&U.has(h.get("c"))) st.id=h.get("c"); if(h.get("y")&&YEARS.includes(+h.get("y"))) st.year=+h.get("y"); if(h.get("m")==="arr") st.metric="arr"; if(h.get("v")) st.cmp=h.get("v"); }catch(e){}
+const st = { id:"049012", cmps:["amb"], year:YN, metric:"pre", ind:"pre", base:"2019", tblKind:"com", sort:{k:"v",dir:-1} };
+try{ const h=new URLSearchParams(location.hash.slice(1)); if(h.get("c")&&U.has(h.get("c"))) st.id=h.get("c"); if(h.get("y")&&YEARS.includes(+h.get("y"))) st.year=+h.get("y"); if(h.get("m")==="arr") st.metric="arr"; if(h.get("v")) st.cmps=h.get("v").split(",").filter(Boolean).slice(0,3); }catch(e){}
 
 /* ---------- data access ---------- */
 // row = [arrIt, preIt, arrStr, preStr] ; con = [esAlb, lettiAlb, esExt, lettiExt]
@@ -552,14 +598,17 @@ function popOf(key, y){
   if(!POP) return null; const i=YEARS.indexOf(y); if(i<0) return null;
   let s=0, ok=false; for(const id of unitsOf(key)){ const v=POP.v[id]; if(v&&v[i]){ s+=v[i]; ok=true; } } return ok? s : null;
 }
-function cmpKey(){
+function resolveCmp(c){
   const u=U.get(st.id);
-  if(st.cmp==="amb") return u.a? "A:"+u.a : "TOS";
-  if(st.cmp==="prov") return "P:"+u.p;
-  if(st.cmp==="tos") return "TOS";
-  if(st.cmp.startsWith("C:")) return st.cmp;
-  return "TOS";
+  if(c==="amb") return u.a? "A:"+u.a : null;
+  if(c==="prov") return "P:"+u.p;
+  if(c.startsWith("C:")) return U.has(c.slice(2)) && c!=="C:"+st.id ? c : null;
+  if(c.startsWith("A:")||c.startsWith("P:")) return c;
+  return null;
 }
+function cmpKeys(){ const out=[]; for(const c of st.cmps){ const k=resolveCmp(c); if(k&&!out.includes(k)) out.push(k); } return out.slice(0,3); }
+function cmpKey(){ return cmpKeys()[0] || "TOS"; }
+const CMPC=["--cmp","--t2","--t5"];
 const mName = () => st.metric==="pre" ? "presenze" : "arrivi";
 
 /* ---------- tooltip ---------- */
@@ -674,14 +723,10 @@ function legend(el, items){
 
 /* ---------- controls ---------- */
 function setupControls(){
-  const dl=$("#comuni"); for(const u of DATA.units){ const o=document.createElement("option"); o.value=u.n; dl.append(o); }
-  const inp=$("#comune"); inp.value=U.get(st.id).n;
-  const pick=()=>{ const id=byName.get(inp.value.trim().toLowerCase()); if(id){ st.id=id; if(st.cmp.startsWith("C:")&&st.cmp==="C:"+id) st.cmp="amb"; fillCmp(); render(); inp.blur(); } };
-  inp.addEventListener("change",pick); inp.addEventListener("keydown",e=>{ if(e.key==="Enter") pick(); });
-  inp.addEventListener("focus",()=>inp.select());
+  $("#comune").onclick=ev=>openPicker(ev.currentTarget, comuneGroups, v=>setComune(v.slice(2)), "Cerca un comune…");
   const ys=$("#anno"); for(const y of [...YEARS].reverse()){ const o=document.createElement("option"); o.value=y; o.textContent=y; ys.append(o); }
   ys.value=st.year; ys.onchange=()=>{st.year=+ys.value; render();};
-  fillCmp(); $("#cmp").onchange=e=>{st.cmp=e.target.value; render();};
+  fillCmp();
   segs("#metric",v=>{st.metric=v; if(["pre","arr"].includes(st.ind)) st.ind=v; fillInd(); render();}, st.metric);
   segs("#base",v=>{st.base=v; renderTime();}, st.base);
   $("#base-first").textContent=Y0+" = 100";
@@ -699,17 +744,94 @@ function segs(sel, on, initial){
   btns.forEach(b=>b.onclick=()=>{set(b.dataset.v); on(b.dataset.v);}); set(initial);
   if(sel==="#theme" && initial!=="auto") document.documentElement.setAttribute("data-theme",initial);
 }
+function setComune(id){ st.id=id; st.cmps=st.cmps.filter(c=>c!=="C:"+id); if(!st.cmps.length) st.cmps=["amb"]; fillCmp(); render(); }
+const norm = x => x.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const preOf = id => val(entity("C:"+id), st.year, "pre") || 0;
+const comOpt = (u, meta) => ({v:"C:"+u.id, name:u.n, meta: meta ?? [u.a, PROV[u.p]].filter(Boolean).join(" · ")});
+function searchComuni(q, skip=new Set()){
+  const n=norm(q), a=[], b=[];
+  for(const u of DATA.units){ if(skip.has("C:"+u.id)) continue; const m=norm(u.n); if(m.startsWith(n)) a.push(u); else if(m.includes(n)) b.push(u); }
+  return [...a.sort((x,y)=>x.n.localeCompare(y.n,"it")), ...b.sort((x,y)=>x.n.localeCompare(y.n,"it"))].map(u=>comOpt(u));
+}
+function comuneGroups(q){
+  if(q) return [{label:"Comuni", items:searchComuni(q)}];
+  const u=U.get(st.id), top=[...DATA.units].sort((a,b)=>preOf(b.id)-preOf(a.id)).slice(0,8);
+  return [
+    {label:"Stesso ambito"+(u.a?": "+u.a:""), items:DATA.units.filter(x=>x.a&&x.a===u.a).sort((a,b)=>preOf(b.id)-preOf(a.id)).map(x=>comOpt(x, fShort(preOf(x.id))+" notti"))},
+    {label:"I più visitati nel "+st.year, items:top.map(x=>comOpt(x, fShort(preOf(x.id))+" notti"))},
+    {label:"Tutti i comuni (A–Z)", items:[...DATA.units].sort((a,b)=>a.n.localeCompare(b.n,"it")).map(x=>comOpt(x))}];
+}
+function cmpGroups(q){
+  const u=U.get(st.id), used=new Set([...cmpKeys(), "C:"+st.id]);
+  const areas=[]; if(u.a&&!used.has("A:"+u.a)) areas.push({v:"amb", name:"Ambito "+u.a, meta:"il suo ambito"}); if(!used.has("P:"+u.p)) areas.push({v:"prov", name:"Provincia di "+PROV[u.p], meta:"la sua provincia"});
+  if(q){
+    const n=norm(q);
+    const amb=AMBITI.filter(a=>norm(a).includes(n)&&!used.has("A:"+a)).map(a=>({v:"A:"+a, name:"Ambito "+a, meta:"ambito turistico"}));
+    const prv=Object.entries(PROV).filter(([k,v])=>norm(v).includes(n)&&!used.has("P:"+k)).map(([k,v])=>({v:"P:"+k, name:"Provincia di "+v, meta:"provincia"}));
+    return [{label:"Comuni", items:searchComuni(q, used)}, {label:"Ambiti e province", items:[...amb,...prv]}];
+  }
+  const me=preOf(st.id)||1;
+  const sim=DATA.units.filter(x=>!used.has("C:"+x.id)&&x.a!==u.a&&preOf(x.id)>0).sort((a,b)=>Math.abs(Math.log(preOf(a.id)/me))-Math.abs(Math.log(preOf(b.id)/me))).slice(0,6);
+  return [
+    {label:"Aree", items:areas},
+    {label:"Stesso ambito", items:DATA.units.filter(x=>x.a&&x.a===u.a&&!used.has("C:"+x.id)).sort((a,b)=>preOf(b.id)-preOf(a.id)).map(x=>comOpt(x, fShort(preOf(x.id))+" notti"))},
+    {label:"Simili per numero di notti", items:sim.map(x=>comOpt(x, fShort(preOf(x.id))+" notti"))},
+    {label:"Tutti i comuni (A–Z)", items:[...DATA.units].filter(x=>!used.has("C:"+x.id)).sort((a,b)=>a.n.localeCompare(b.n,"it")).map(x=>comOpt(x))}];
+}
+let _pop=null;
+function closePicker(){ if(_pop){ _pop.remove(); _pop=null; document.removeEventListener("pointerdown",_outside,true); } }
+function _outside(ev){ if(_pop && !_pop.contains(ev.target)) closePicker(); }
+function openPicker(anchor, groupsFn, onPick, ph){
+  closePicker();
+  const pop=document.createElement("div"); pop.className="pop"; pop.setAttribute("role","dialog");
+  const inp=document.createElement("input"); inp.placeholder=ph; inp.setAttribute("aria-label",ph); inp.autocomplete="off"; inp.spellcheck=false;
+  const ul=document.createElement("ul"); ul.setAttribute("role","listbox");
+  pop.append(inp,ul); document.body.append(pop); _pop=pop;
+  const r=anchor.getBoundingClientRect(), w=Math.min(340, innerWidth-16);
+  pop.style.width=w+"px"; pop.style.left=Math.max(8, Math.min(r.left, innerWidth-w-8))+"px"; pop.style.top=(r.bottom+6)+"px";
+  pop.style.maxHeight=Math.max(220, Math.min(520, innerHeight-r.bottom-20))+"px";
+  let opts=[], act=0;
+  const draw=()=>{
+    ul.replaceChildren(); opts=[]; const seen=new Set();
+    for(const g of groupsFn(inp.value.trim())){
+      const items=g.items.filter(it=>{ const k=g.label.startsWith("Tutti")? it.v : g.label+it.v; if(seen.has(k)) return false; seen.add(k); return true; }).slice(0, inp.value? 60 : 400);
+      if(!items.length) continue;
+      const h=document.createElement("li"); h.className="grp"; h.textContent=g.label; ul.append(h);
+      for(const it of items){ const li=document.createElement("li"); li.className="opt"+(it.v==="C:"+st.id?" cur":""); li.setAttribute("role","option");
+        const a=document.createElement("span"); a.textContent=it.name; const b=document.createElement("span"); b.className="meta"; b.textContent=it.meta||"";
+        li.append(a,b); const i=opts.length; li.onpointerenter=()=>{act=i; mark();}; li.onclick=()=>{ closePicker(); onPick(it.v); }; opts.push({li,it}); ul.append(li); }
+    }
+    if(!opts.length){ const li=document.createElement("li"); li.className="empty"; li.textContent="Nessun risultato"; ul.append(li); }
+    act=0; mark(false);
+  };
+  const mark=(scroll=true)=>{ opts.forEach((o,i)=>o.li.classList.toggle("on",i===act)); if(scroll&&opts[act]) opts[act].li.scrollIntoView({block:"nearest"}); };
+  inp.oninput=draw;
+  inp.onkeydown=e=>{
+    if(e.key==="ArrowDown"){ act=Math.min(opts.length-1,act+1); mark(); e.preventDefault(); }
+    else if(e.key==="ArrowUp"){ act=Math.max(0,act-1); mark(); e.preventDefault(); }
+    else if(e.key==="Enter"&&opts[act]){ const v=opts[act].it.v; closePicker(); onPick(v); }
+    else if(e.key==="Escape"){ closePicker(); anchor.focus(); }
+  };
+  draw(); setTimeout(()=>{ document.addEventListener("pointerdown",_outside,true); inp.focus({preventScroll:true}); },0);
+}
+addEventListener("resize",()=>{ if(_pop&&innerWidth>700) closePicker(); });
 function fillCmp(){
-  const u=U.get(st.id), s=$("#cmp"); s.replaceChildren();
-  const add=(v,t)=>{const o=document.createElement("option"); o.value=v; o.textContent=t; s.append(o);};
-  add("amb", u.a? "Ambito: "+u.a : "Ambito (n.d.)"); add("prov","Provincia di "+PROV[u.p]); add("tos","Toscana");
-  const og=document.createElement("optgroup"); og.label="Un altro comune";
-  const nearby = DATA.units.filter(x=>x.a===u.a && x.id!==u.id).sort((a,b)=>(val(entity("C:"+b.id),YN,"pre")||0)-(val(entity("C:"+a.id),YN,"pre")||0));
-  const others = DATA.units.filter(x=>x.a!==u.a);
-  for(const x of [...nearby, ...others]){ const o=document.createElement("option"); o.value="C:"+x.id; o.textContent=x.n+(x.a===u.a?" · stesso ambito":""); og.append(o); }
-  s.append(og);
-  if(st.cmp.startsWith("C:") && !U.has(st.cmp.slice(2))) st.cmp="amb";
-  s.value=st.cmp;
+  $("#comune").textContent=U.get(st.id).n;
+  const box=$("#chips"); box.replaceChildren();
+  cmpKeys().forEach((k,i)=>{
+    const e=entity(k), c=document.createElement("span"); c.className="chip"; c.title=e.name;
+    const d=document.createElement("span"); d.className="dot"; d.style.background=css(CMPC[i]);
+    const n=document.createElement("span"); n.className="nm"; n.textContent=e.name;
+    const x=document.createElement("button"); x.type="button"; x.textContent="×"; x.setAttribute("aria-label","Togli "+e.name);
+    x.onclick=()=>{ st.cmps=st.cmps.filter(c0=>resolveCmp(c0)!==k); fillCmp(); render(); };
+    c.append(d,n,x); box.append(c);
+  });
+  const t=document.createElement("span"); t.className="chip fixed"; const td=document.createElement("span"); td.className="dot dash"; const tn=document.createElement("span"); tn.textContent="Toscana"; t.append(td,tn); box.append(t);
+  if(cmpKeys().length<3){
+    const add=document.createElement("button"); add.type="button"; add.className="chip-add"; add.textContent="+ Aggiungi";
+    add.onclick=ev=>openPicker(ev.currentTarget, cmpGroups, v=>{ st.cmps=[...st.cmps.filter(c=>resolveCmp(c)), v].slice(-3); fillCmp(); render(); }, "Comune, ambito o provincia…");
+    box.append(add);
+  }
 }
 const INDS = () => [
   ["pre","Presenze (notti)"],["arr","Arrivi"],["perm","Permanenza media"],["sh","Quota stranieri ("+mName()+")"],
@@ -815,7 +937,7 @@ function renderMap(){
     .on("pointermove",(ev,d)=>{const u=U.get(d.properties.c), e=entity("C:"+u.id), v=vals.get(u.id);
       showTip(ev,u.n,[{label:INDS().find(i=>i[0]===ind)[1],value:v==null?"n.d.":fmt(v)},{label:"Presenze",value:fmtN(val(e,y,"pre"))},{label:"Arrivi",value:fmtN(val(e,y,"arr"))},{label:"Ambito",value:u.a||"—"}]);})
     .on("pointerleave",hideTip)
-    .on("click",(ev,d)=>{st.id=d.properties.c; $("#comune").value=U.get(st.id).n; fillCmp(); render();});
+    .on("click",(ev,d)=>{setComune(d.properties.c);});
   svg.append("path").attr("class","prov").attr("d",pathGen(provMesh));
   svg.select("path.sel").raise();
   // province labels
@@ -851,16 +973,16 @@ function renderRank(vals, fmt){
     const nm=document.createElement("span"); nm.textContent=U.get(id).n;
     const bar=document.createElement("div"); bar.className="bar"; bar.style.width=Math.max(2,Math.abs(v)/max*100)+"%"; nm.append(bar);
     const vv=document.createElement("span"); vv.className="num"; vv.textContent=fmtShortInd(ind,v);
-    li.append(rk,nm,vv); li.onclick=()=>{st.id=id; $("#comune").value=U.get(id).n; fillCmp(); render();};
+    li.append(rk,nm,vv); li.onclick=()=>{setComune(id);};
     ol.append(li);
   }
 }
 
 /* ---------- time ---------- */
 function trio(){
-  const e=sel(), c=entity(cmpKey()), t=entity("TOS");
+  const e=sel(), t=entity("TOS");
   const out=[{e, name:e.name, color:css("--sel"), w:2.5}];
-  if(c.key!=="TOS") out.push({e:c, name:c.short||c.name, color:css("--cmp")});
+  cmpKeys().forEach((k,i)=>{ const x=entity(k); out.push({e:x, name:x.short||x.name, color:css(CMPC[i])}); });
   out.push({e:t, name:"Toscana", color:css("--ref"), dash:true});
   return out;
 }
@@ -875,6 +997,50 @@ function renderTime(){
   const series=T.map(s=>{const b=val(s.e,base,m); return {...s, values:YEARS.map(y=>{const v=val(s.e,y,m); return {y, v: v!=null&&b? v/b*100 : null};})};});
   legend($("#lg-idx"),series);
   lineChart($("#c-idx"),series,{fmt:v=>it.format(",.0f")(v), axisFmt:v=>v, zero:false, refLine:100});
+}
+function renderCmpTable(){
+  const y=st.year, cols=[{e:sel(), color:css("--sel")}, ...cmpKeys().map((k,i)=>({e:entity(k), color:css(CMPC[i])})), {e:entity("TOS"), color:css("--ref"), dash:true}];
+  const ty=TY.length? Math.min(y, TY[TY.length-1]) : null;
+  const ay=(typeof ASIA!=="undefined"&&ASIA)? Math.min(y, ASIA.years[ASIA.years.length-1]) : null;
+  const dyr=(typeof DEMO!=="undefined"&&DEMO)? Math.min(y, DEMO.years[DEMO.years.length-1]) : null;
+  const sp=e=>(seasonPer100(e.key,y)||[])[2]??null;
+  const rows=[
+    ["Quanto turismo"],
+    {l:"Notti (presenze)", g:e=>val(e,y,"pre"), f:fInt},
+    {l:"Arrivi", g:e=>val(e,y,"arr"), f:fInt},
+    {l:"Notti rispetto al 2019", g:e=>{const a=val(e,y,"pre"), b=val(e,2019,"pre"); return a!=null&&b? a/b-1 : null;}, f:v=>fSigned(v,fPct), bar:true, signed:true},
+    ["Che turismo"],
+    {l:"Notti per ospite", g:e=>val(e,y,"perm"), f:f1, bar:true},
+    {l:"Quota di stranieri (notti)", g:e=>val(e,y,"shS_pre"), f:fPct, bar:true},
+    {l:"Utilizzo dei posti letto", g:e=>val(e,y,"occ"), f:fPct, bar:true},
+    {l:`Posti letto in agriturismo (${ty})`, g:e=>ty? val(e,ty,"agri") : null, f:fPct, bar:true},
+    ["Peso sul territorio"],
+    {l:"Notti turistiche per residente, in un anno", g:e=>val(e,y,"pab"), f:f1, bar:true},
+    {l:"Turisti ogni 100 residenti, d'estate", g:sp, f:f1, bar:true},
+    {l:"Posti letto ogni 100 residenti", g:e=>val(e,y,"lab"), f:f1, bar:true},
+    {l:`Addetti in alloggio e ristorazione (${ay})`, g:e=>ay? turShare(e.key,ay) : null, f:fPct1, bar:true},
+    ["Il territorio"],
+    {l:`Residenti (${dyr})`, g:e=>{ const d=dyr? demoOf(e.key,dyr) : null; return d? d[0] : popOf(e.key,y); }, f:fInt},
+    {l:`Posti letto`, g:e=>val(e,y,"letti"), f:fInt},
+  ];
+  $("#cmpt-n").textContent=`Dati del ${y} salvo dove indicato. Le barre aiutano a confrontare i valori in proporzione (notti per abitante, quote, ecc.); i totali invece dipendono dalla dimensione dell'area.`;
+  const tb=$("#cmpt"); tb.replaceChildren();
+  const th=document.createElement("thead"), hr=document.createElement("tr"); hr.append(document.createElement("th"));
+  for(const c of cols){ const h=document.createElement("th"); const d=document.createElement("span"); d.className="dot"+(c.dash?" dash":""); if(!c.dash) d.style.background=c.color; h.append(d, c.e.short||c.e.name); hr.append(h); }
+  th.append(hr); tb.append(th);
+  const body=document.createElement("tbody");
+  for(const r of rows){
+    const tr=document.createElement("tr");
+    if(Array.isArray(r)){ tr.className="sec"; const td=document.createElement("td"); td.colSpan=cols.length+1; td.textContent=r[0]; tr.append(td); body.append(tr); continue; }
+    const vals=cols.map(c=>{ try{ return r.g(c.e); }catch(e){ return null; } });
+    const mx=d3.max(vals,v=>v==null?null:Math.abs(v))||1;
+    const l=document.createElement("td"); l.textContent=r.l; tr.append(l);
+    vals.forEach((v,i)=>{ const td=document.createElement("td"); if(i===0) td.className="me"; td.textContent=v==null||!isFinite(v)? "n.d." : r.f(v);
+      if(r.bar&&v!=null&&isFinite(v)){ const b=document.createElement("span"); b.className="bar"; b.style.width=Math.max(2,Math.abs(v)/mx*64)+"px"; b.style.background= r.signed? css(v>=0?"--div-p2":"--div-n2") : cols[i].color; td.append(b); }
+      tr.append(td); });
+    body.append(tr);
+  }
+  tb.append(body);
 }
 function renderOrigin(){
   const T=trio(), m=st.metric;
@@ -978,9 +1144,7 @@ function renderPress(){
     const l=document.createElement("div"); l.className="l"; l.textContent=k.l;
     const vv=document.createElement("div"); vv.className="v"; vv.textContent=v==null?"n.d.":k.f(v);
     const d=document.createElement("div"); d.className="d";
-    const a=document.createElement("span"); const cv=get(c,k.k); a.textContent=`${c.short||c.name}: ${cv==null?"n.d.":k.f(cv)}`;
-    const b=document.createElement("span"); const tv=get(t,k.k); b.textContent=`Toscana: ${tv==null?"n.d.":k.f(tv)}`;
-    d.append(a); if(c.key!=="TOS") d.append(b);
+    for(const ck of [...cmpKeys(),"TOS"]){ const ce=entity(ck), cv=get(ce,k.k), a=document.createElement("span"); a.textContent=`${ce.short||ce.name}: ${cv==null?"n.d.":k.f(cv)}`; d.append(a); }
     card.append(l,vv,d); box.append(card);
   }
   // stagionalità: barre raggruppate per trimestre (comune, confronto, Toscana)
@@ -1015,7 +1179,7 @@ function renderPress(){
     const rk=document.createElement("span"); rk.className="r"; rk.textContent=(list.findIndex(x=>x[0]===id)+1)+"°";
     const nm=document.createElement("span"); nm.textContent=U.get(id).n; const bar=document.createElement("div"); bar.className="bar"; bar.style.width=Math.max(2,v/max*100)+"%"; nm.append(bar);
     const vv=document.createElement("span"); vv.className="num"; vv.textContent=f1(v);
-    li.append(rk,nm,vv); li.onclick=()=>{st.id=id; $("#comune").value=U.get(id).n; fillCmp(); render();}; ol.append(li);
+    li.append(rk,nm,vv); li.onclick=()=>{setComune(id);}; ol.append(li);
   }
 }
 
@@ -1162,7 +1326,7 @@ function renderTable(){
     for(const c of COLS){ if(st.tblKind==="amb"&&c.k==="a") continue; const td=document.createElement("td");
       if(c.k==="sp") td.append(spark(r.e)); else { const v=r[c.k]; td.textContent=c.f? c.f(v??null) : (v||""); if(c.num) td.className="n"; if(c.cls){ const cl=c.cls(v); if(cl) td.classList.add(cl);} }
       tr.append(td); }
-    if(r.id) tr.onclick=()=>{st.id=r.id; $("#comune").value=U.get(r.id).n; fillCmp(); render(); document.getElementById("s-kpi").scrollIntoView({behavior:"smooth"});};
+    if(r.id) tr.onclick=()=>{setComune(r.id); document.getElementById("s-kpi").scrollIntoView({behavior:"smooth"});};
     frag.append(tr);
   }
   tbody.replaceChildren(frag);
@@ -1265,7 +1429,7 @@ function renderFacts(){
 }
 function setupShare(){
   const b=$("#share"); b.onclick=async()=>{
-    const url=location.href.split("#")[0]+"#c="+st.id+"&y="+st.year+(st.metric==="arr"?"&m=arr":"")+(st.cmp!=="amb"?"&v="+st.cmp:"");
+    const url=location.href.split("#")[0]+"#c="+st.id+"&y="+st.year+(st.metric==="arr"?"&m=arr":"")+(st.cmps.join(",")!=="amb"?"&v="+st.cmps.join(","):"");
     try{ await navigator.clipboard.writeText(url); b.textContent="Link copiato"; }catch(e){ b.textContent="Copia non riuscita"; }
     setTimeout(()=>b.textContent="Copia link",1800);
   };
@@ -1276,10 +1440,10 @@ function setupShare(){
 
 /* ---------- render all ---------- */
 function render(){
-  try{ history.replaceState(null,"","#c="+st.id+"&y="+st.year+(st.metric==="arr"?"&m=arr":"")+(st.cmp!=="amb"?"&v="+st.cmp:"")); }catch(e){}
+  try{ history.replaceState(null,"","#c="+st.id+"&y="+st.year+(st.metric==="arr"?"&m=arr":"")+(st.cmps.join(",")!=="amb"?"&v="+st.cmps.join(","):"")); }catch(e){}
   document.title = `Turismo: ${U.get(st.id).n} e la Toscana`;
   if(PROVD){ pioSt.year=Math.min(st.year, PROVD.years[PROVD.years.length-1]); $("#pio-year").value=pioSt.year; }
-  renderHeroMap(); renderFacts(); renderKPI(); renderMap(); renderTime(); renderOrigin(); renderPio(); renderBeds(); renderPress(); renderEco(); renderTable();
+  renderHeroMap(); renderFacts(); renderKPI(); renderCmpTable(); renderMap(); renderTime(); renderOrigin(); renderPio(); renderBeds(); renderPress(); renderEco(); renderTable();
 }
 const d=new Date(DATA.updated);
 $("#meta").textContent=`Anni ${Y0}–${YN} · ${DATA.units.length} comuni · aggiornato il ${d.toLocaleDateString("it-IT",{day:"numeric",month:"long",year:"numeric"})}`;
