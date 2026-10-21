@@ -709,6 +709,50 @@ def load_piombino():
     return {"years": years, "o": origins}
 
 
+PROV_NOMI = {"AR": "Arezzo", "FI": "Firenze", "GR": "Grosseto", "LI": "Livorno", "LU": "Lucca", "MS": "Massa-Carrara",
+             "PI": "Pisa", "PO": "Prato", "PT": "Pistoia", "SI": "Siena"}
+
+
+def export_tidy(data, folder):
+    """Scrive i dati in tabelle "lunghe" e pulite (CSV), comode per R, Excel o DuckDB."""
+    os.makedirs(folder, exist_ok=True)
+    def write(name, head, rows):
+        with open(os.path.join(folder, name), "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f); w.writerow(head); w.writerows(rows)
+    write("comuni.csv", ["codice", "comune", "provincia", "ambito"],
+          [[u["id"], u["n"], PROV_NOMI.get(u["p"], u["p"]), u["a"]] for u in data["units"]])
+    ys = data["years"]
+    write("movimenti.csv", ["anno", "codice", "arrivi_italiani", "presenze_italiani", "arrivi_stranieri", "presenze_stranieri"],
+          [[y, c, *v] for c, s in sorted(data["mov"].items()) for y, v in zip(ys, s) if v])
+    rows = []
+    for c, s in sorted(data["con"].items()):
+        for y, v in zip(ys, s):
+            if v: rows.append([y, c, v[0], v[1], v[2], v[3]])
+    write("posti_letto.csv", ["anno", "codice", "esercizi_alberghieri", "letti_alberghieri", "esercizi_extralberghieri", "letti_extralberghieri"], rows)
+    t = data.get("tipi")
+    if t:
+        rows = []
+        for c in sorted(t["l"]):
+            for k, ser in t["l"][c].items():
+                es = t["e"].get(c, {}).get(k, [None] * len(ser))
+                for y, l, e in zip(t["years"], ser, es):
+                    if l or e: rows.append([y, c, t["names"][k], e, l])
+        write("strutture_per_tipo.csv", ["anno", "codice", "tipo", "esercizi", "posti_letto"], rows)
+    d = data.get("demo")
+    if d:
+        write("popolazione.csv", ["anno", "codice", "residenti", "saldo_naturale", "saldo_migratorio"],
+              [[y, c, v[0], v[1], v[2]] for c, s in sorted(d["v"].items()) for y, v in zip(d["years"], s) if v and v[0]])
+    a = data.get("asia")
+    if a:
+        rows = []
+        for c, s in sorted(a["v"].items()):
+            for y, v in zip(a["years"], s):
+                if not v: continue
+                for k, nome in enumerate(SETTORI):
+                    rows.append([y, c, nome, round(v[k], 1), int(round(v[6 + k]))])
+        write("imprese_addetti.csv", ["anno", "codice", "settore", "addetti", "unita_locali"], rows)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--offline", action="store_true", help="non scaricare, usa raw/")
@@ -742,6 +786,7 @@ def main():
     last = data["agg"]["TOS"]["mov"][-1]
     assert last and last[0] + last[2] > 5_000_000, "Totale regionale anomalo nell'ultimo anno"
     assert len(data["mov"]) > 250, "Troppi pochi comuni"
+    export_tidy(data, os.path.join(HERE, "dati_puliti"))
     tpl = open(os.path.join(HERE, "template.html"), encoding="utf-8").read()
     html = (tpl.replace("/*__DATA__*/null", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
                .replace("/*__TOPO__*/null", json.dumps(topo, separators=(",", ":"))))
