@@ -120,6 +120,8 @@ def main():
         "agg": agg,
         "fascia": FASCIA,
     }
+    # gruppi di confronto, riusati dalla dashboard dei redditi
+    json.dump({**gruppi, "nomi": {c: nomi[c] for c in units}}, open(os.path.join(HERE, "gruppi.json"), "w", encoding="utf-8"), ensure_ascii=False)
     # controlli di qualità
     pio = dict(zip([i["id"] for i in IND], data["v"][FOCUS]))
     assert 30000 < pio["p_res"] < 35000, pio["p_res"]

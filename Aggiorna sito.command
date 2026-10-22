@@ -5,6 +5,8 @@ echo "== 1/3  Scarico i dati aggiornati (Regione Toscana e ISTAT)..."
 python3 tools/turismo/build_dashboard.py || { echo "Aggiornamento dati non riuscito."; read -p "Premi Invio per chiudere"; exit 1; }
 python3 tools/lente/aggiorna_dati.py
 python3 tools/lente/build_lente.py || echo "Attenzione: la pagina Piombino in numeri non si è rigenerata."
+python3 tools/redditi/aggiorna_redditi.py
+python3 tools/redditi/build_redditi.py || echo "Attenzione: la pagina dei redditi non si è rigenerata."
 echo
 echo "== 2/3  Rigenero il blog..."
 if command -v Rscript >/dev/null 2>&1; then

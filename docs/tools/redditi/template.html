@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I redditi del territorio piombinese</title>
+<meta name="description" content="Venticinque anni di dichiarazioni dei redditi a Piombino: reddito medio reale, stipendi e pensioni, IRPEF versata, disuguaglianza, a confronto con la provincia di Livorno, la Toscana e i comuni simili. Dati del Dipartimento delle Finanze.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f6f4ef; --surface:#fcfcfb; --surface-2:#f0eee8; --line:#e2dfd7; --grid:#ebe8e1;
+  --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#7c7a74;
+  --sel:#2a78d6; --cmp:#1baf7a; --ref:#8a8984;
+  --ita:#eb6834; --str:#6250d6;
+  --up:#1c7a3e; --down:#c23b3b;
+  --null:#e6e3dc;
+  --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+  --div-n3:#c93f3e; --div-n2:#ee8f8e; --div-n1:#f6c6c5; --div-0:#f0efec; --div-p1:#b7d3f6; --div-p2:#5598e7; --div-p3:#1c5cab;
+  --accent:#a8552b;
+  --t1:#2a78d6; --t2:#eb6834; --t3:#1baf7a; --t4:#eda100; --t5:#e87ba4;
+  --shadow:0 1px 2px rgba(20,18,12,.05), 0 4px 16px rgba(20,18,12,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2f2f2c; --grid:#2a2a28;
+    --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8e86;
+    --sel:#3987e5; --cmp:#199e70; --ref:#8f8e86;
+    --ita:#d95926; --str:#9085e9;
+    --up:#4cbb6c; --down:#e66767;
+    --null:#2a2a28;
+    --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+    --div-n3:#e66767; --div-n2:#a94444; --div-n1:#5e3332; --div-0:#383835; --div-p1:#24406a; --div-p2:#2f6bbd; --div-p3:#6da7ec;
+    --accent:#e0915f;
+    --t1:#3987e5; --t2:#d95926; --t3:#199e70; --t4:#c98500; --t5:#d55181;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2f2f2c; --grid:#2a2a28;
+  --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8e86;
+  --sel:#3987e5; --cmp:#199e70; --ref:#8f8e86;
+  --ita:#d95926; --str:#9085e9;
+  --up:#4cbb6c; --down:#e66767;
+  --null:#2a2a28;
+  --seq-0:#cde2fb; --seq-1:#9ec5f4; --seq-2:#6da7ec; --seq-3:#3987e5; --seq-4:#256abf; --seq-5:#184f95; --seq-6:#0d366b;
+  --div-n3:#e66767; --div-n2:#a94444; --div-n1:#5e3332; --div-0:#383835; --div-p1:#24406a; --div-p2:#2f6bbd; --div-p3:#6da7ec;
+  --accent:#e0915f;
+  --t1:#3987e5; --t2:#d95926; --t3:#199e70; --t4:#c98500; --t5:#d55181;
+  --shadow:none;
+}
+.picker{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 30px 7px 10px;min-width:200px;text-align:left;cursor:pointer;position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:260px}
+.picker::after{content:"";position:absolute;right:11px;top:50%;width:7px;height:7px;border-right:1.6px solid var(--ink-3);border-bottom:1.6px solid var(--ink-3);transform:translateY(-70%) rotate(45deg)}
+.picker:hover{border-color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:36px}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:13px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 6px 5px 10px;max-width:230px}
+.chip .dot{width:9px;height:9px;border-radius:50%;flex:none}
+.chip .dot.dash{background:none!important;border-top:2px dashed var(--ref);border-radius:0;width:12px;height:0}
+.chip .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.ctl-cmp{max-width:100%}
+.cmpt th:first-child,.cmpt td:first-child{position:sticky;left:0;background:var(--surface);z-index:1}
+.chip button{font:inherit;border:0;background:transparent;color:var(--ink-3);cursor:pointer;width:22px;height:22px;border-radius:50%;line-height:1;font-size:16px;flex:none}
+.chip button:hover{background:var(--line);color:var(--ink)}
+.chip.fixed{padding-right:10px;color:var(--ink-2)}
+.chip-add{font:inherit;font-size:13px;border:1px dashed var(--ink-3);background:transparent;color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip-add:hover{background:var(--surface)}
+.pop{position:fixed;z-index:60;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.18);width:340px;display:flex;flex-direction:column;max-height:min(70vh,520px);overflow:hidden}
+.pop input{font:inherit;font-size:15px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);padding:12px 14px;outline:none}
+.pop ul{list-style:none;margin:0;padding:6px;overflow:auto}
+.pop .grp{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600;padding:10px 8px 4px}
+.pop .opt{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:7px 8px;border-radius:7px;cursor:pointer;font-size:14px}
+.pop .opt .meta{font-size:12px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:55%}
+.pop .opt.on{background:color-mix(in srgb,var(--sel) 14%,transparent)}
+.pop .opt.cur{font-weight:600}
+.pop .empty{padding:14px;color:var(--ink-3);font-size:14px}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+header.hero{padding:40px 0 26px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;align-items:center}
+.hero-map{margin:0;text-align:center}
+.hero-map svg path{fill:color-mix(in srgb,var(--ink) 9%,var(--bg));stroke:var(--bg);stroke-width:.8}
+.hero-map svg path.on{fill:var(--accent)}
+.hero-map figcaption{font-size:12.5px;color:var(--ink-3);margin-top:6px}
+.back{font-size:13px;color:var(--ink-3);text-decoration:none}
+.back:hover{color:var(--ink)}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:18px 0 8px}
+h1{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:clamp(34px,5.4vw,56px);line-height:1.02;margin:0;letter-spacing:-.01em;max-width:880px}
+.lede{font-family:Newsreader,Georgia,serif;font-size:20px;line-height:1.45;color:var(--ink-2);max-width:760px;margin:14px 0 0}
+.meta{font-size:13px;color:var(--ink-3);margin-top:14px}
+.guide{margin-top:16px;max-width:720px;font-size:14px;color:var(--ink-2)}
+.guide summary{cursor:pointer;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:6px;list-style:none;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::before{content:"?";display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px}
+.guide ol{margin:12px 0 0;padding-left:20px;line-height:1.6}
+h2{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:28px;line-height:1.15;margin:0 0 4px}
+.sub{color:var(--ink-2);margin:0 0 18px;max-width:780px}
+section{padding:34px 0 8px;scroll-margin-top:150px}
+.btn{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 12px;border-radius:8px;cursor:pointer}
+.btn:hover{border-color:var(--ink-3)}
+.controls{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.controls .wrap{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end;padding-top:12px;padding-bottom:12px}
+.ctl{display:flex;flex-direction:column;gap:4px;min-width:0}
+.ctl label,.ctl .lab{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.ctl select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0;max-width:100%}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px;flex-wrap:wrap}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink-2);padding:6px 11px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:500}
+.theme{margin-left:auto}
+.secnav{display:flex;flex-wrap:nowrap !important;gap:4px;overflow-x:auto;padding-top:0 !important;padding-bottom:10px !important;scrollbar-width:none}
+.secnav::-webkit-scrollbar{display:none}
+.secnav a{flex:none;font-size:13px;text-decoration:none;color:var(--ink-2);padding:5px 11px;border-radius:999px}
+.secnav a:hover{background:var(--surface-2);color:var(--ink)}
+.secnav a.on{background:var(--ink);color:var(--bg)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.headline{font-family:Newsreader,Georgia,serif;font-size:22px;line-height:1.45;margin:0 0 22px;max-width:960px}
+.headline b{font-weight:600}
+.hl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.hl .card{padding:16px 18px 10px}
+.hl h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px;font-weight:600;display:flex;align-items:center;gap:8px}
+.hl h3 i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.hl ul{list-style:none;margin:0;padding:0}
+.hl li{padding:9px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.45;color:var(--ink-2);cursor:pointer}
+.hl li:first-child{border-top:0}
+.hl li b{color:var(--ink);font-weight:600}
+.hl li .vv{font-variant-numeric:tabular-nums;color:var(--ink)}
+.hl .none{color:var(--ink-3);font-size:14px;padding:6px 0 10px}
+.up{color:var(--up)} .down{color:var(--down)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.chips button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink-2);margin:0 0 12px}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.lg-dot{width:8px;height:8px;border-radius:50%;background:var(--ink-3);opacity:.55}
+.lg-sel{width:13px;height:13px;border-radius:50%;background:var(--sel);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--sel)}
+.lg-band{width:22px;height:10px;border-radius:3px;background:color-mix(in srgb,var(--ink) 12%,transparent)}
+.lg-med{width:2px;height:14px;background:var(--ink)}
+.lg-tos{width:0;height:14px;border-left:2px dashed var(--t2)}
+.lg-ita{width:0;height:14px;border-left:2px dotted var(--ink-2)}
+.strips{padding:6px 18px 10px}
+.tema-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:16px 0 6px;border-bottom:1px solid var(--line)}
+.tema-h h3{font-family:Newsreader,Georgia,serif;font-size:21px;font-weight:600;margin:0}
+.tema-h p{margin:0;font-size:13px;color:var(--ink-3)}
+.srow{display:grid;grid-template-columns:minmax(0,280px) 112px minmax(0,1fr) 170px;gap:14px;align-items:center;padding:7px 0;border-bottom:1px solid var(--grid)}
+.srow .nm{font-size:14px;line-height:1.3;color:var(--ink)}
+.srow .nm small{display:block;font-size:11.5px;color:var(--ink-3);margin-top:1px}
+.srow .val{font-variant-numeric:tabular-nums;font-weight:600;text-align:right;font-size:15px}
+.srow .pc{font-size:12.5px;line-height:1.3;color:var(--ink-2)}
+.srow .pc b{font-weight:600}
+.srow svg{display:block;overflow:visible}
+.srow .info{border:0;background:none;color:var(--ink-3);cursor:pointer;font:inherit;font-size:12px;padding:0 0 0 4px}
+.g2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:16px}
+.chart-card{padding:18px 18px 12px}
+.chart-card h3{font-size:15px;font-weight:600;margin:0}
+.chart-card .note{font-size:13px;color:var(--ink-3);margin:2px 0 10px}
+.map-leg{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-3);margin-top:6px;flex-wrap:wrap}
+.map-leg .sw{display:flex}
+.map-leg .sw i{width:26px;height:10px;display:block}
+#pmap path.c{stroke:var(--surface);stroke-width:1;cursor:pointer}
+#pmap path.c.on{stroke:var(--ink);stroke-width:2.2}
+#pmap text{font-size:11px;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:3px;pointer-events:none}
+.tbl-wrap{overflow:auto;border-radius:14px}
+table.t{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+table.t th,table.t td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+table.t th:first-child,table.t td:first-child{text-align:left;white-space:normal;min-width:200px}
+table.t thead th{font-size:12px;font-weight:600;color:var(--ink-2);position:sticky;top:0;background:var(--surface);z-index:1}
+table.t td.me{font-weight:600}
+table.t tr.sec td{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600;padding-top:16px;border-bottom:0}
+table.t td small{display:block;color:var(--ink-3);font-size:11.5px}
+.notes{font-size:14px;color:var(--ink-2);max-width:860px;line-height:1.65}
+.notes li{margin-bottom:8px}
+footer{padding:30px 0 60px;color:var(--ink-3);font-size:13px}
+.tip{position:fixed;pointer-events:none;z-index:70;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:13px;box-shadow:0 6px 24px rgba(0,0,0,.14);min-width:150px;max-width:300px;opacity:0;transition:opacity .08s}
+.tip .t{font-weight:600;margin-bottom:5px;color:var(--ink)}
+.tip .row{display:flex;align-items:center;gap:8px;color:var(--ink-2);line-height:1.6}
+.tip .row b{margin-left:auto;color:var(--ink);font-variant-numeric:tabular-nums;padding-left:12px}
+.tip .d{color:var(--ink-3);font-size:12.5px;margin-top:4px;line-height:1.4;white-space:normal}
+@media (max-width:1000px){
+  .hl{grid-template-columns:1fr}
+  .g2{grid-template-columns:1fr}
+  .srow{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}
+  .srow .st{grid-column:1 / -1;grid-row:2}
+  .srow .pc{grid-column:1 / -1;grid-row:3}
+}
+@media (max-width:700px){
+  .wrap{padding:0 16px}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-map{display:none}
+  .theme{margin-left:0}
+  .ctl-grp{flex-basis:100%}
+  .controls{position:static}
+  .controls .wrap{gap:10px 12px}
+  .headline{font-size:19px}
+  .strips{padding:4px 12px 8px}
+}
+/* ---- redditi: stile editoriale ---- */
+.hero-r{padding:44px 0 30px}
+.hero-r .lede{max-width:820px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:34px 0 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.stat{padding:16px 18px 16px 0;border-right:1px solid var(--line);margin-right:18px}
+.stat:last-child{border-right:0;margin-right:0}
+.stat .k{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.stat .v{font-family:Newsreader,Georgia,serif;font-size:42px;line-height:1.05;font-weight:600;margin-top:6px;font-variant-numeric:lining-nums tabular-nums}
+.stat .v small{font-size:18px;color:var(--ink-3);font-weight:500;margin-left:3px}
+.stat .d{font-size:13px;color:var(--ink-2);margin-top:6px;line-height:1.4}
+.stat .d b{font-weight:600}
+.up{color:var(--up)} .down{color:var(--down)}
+.chapter{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;padding:46px 0 10px;border-top:1px solid var(--line);margin-top:20px;scroll-margin-top:140px}
+.chapter .num{font-family:Newsreader,Georgia,serif;font-size:64px;line-height:.9;color:var(--accent);font-weight:600}
+.chapter .kick{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-top:10px}
+.chapter h2{font-size:34px;line-height:1.1;margin:0 0 10px;max-width:820px}
+.story{font-family:Newsreader,Georgia,serif;font-size:20px;line-height:1.5;color:var(--ink);max-width:780px;margin:0 0 22px}
+.story b{font-weight:600}
+.fig{margin:6px 0 26px}
+.fig .ft{font-size:15px;font-weight:600;margin:0 0 2px}
+.fig .fs{font-size:13px;color:var(--ink-3);margin:0 0 8px}
+.fig .src{font-size:12px;color:var(--ink-3);margin-top:6px}
+.fig2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.keys{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;color:var(--ink-2);margin:2px 0 6px}
+.keys span{display:inline-flex;align-items:center;gap:6px}
+.keys i{display:inline-block;width:14px;height:0;border-top:2px solid}
+.keys i.sq{width:10px;height:10px;border:0;border-radius:2px}
+.keys i.band{width:16px;height:9px;border:0;border-radius:2px;background:color-mix(in srgb,var(--ink) 12%,transparent)}
+svg text{font-family:Inter,system-ui,sans-serif}
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 14px;margin:0 0 22px;max-width:780px;font-size:14.5px;color:var(--ink-2);line-height:1.55}
+.callout b{color:var(--ink)}
+.minis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 22px}
+.mini{border-top:2px solid var(--ink);padding:10px 0 0}
+.mini .k{font-size:12px;color:var(--ink-3)}
+.mini .v{font-family:Newsreader,Georgia,serif;font-size:28px;font-weight:600;line-height:1.1;margin-top:2px;font-variant-numeric:tabular-nums}
+.mini .d{font-size:12.5px;color:var(--ink-2);margin-top:3px}
+.srow{display:grid;grid-template-columns:minmax(0,270px) 110px minmax(0,1fr) 170px;gap:14px;align-items:center;padding:8px 0;border-bottom:1px solid var(--grid)}
+.srow .nm{font-size:14px;line-height:1.3}
+.srow .nm small{display:block;font-size:11.5px;color:var(--ink-3);margin-top:1px}
+.srow .val{font-variant-numeric:tabular-nums;font-weight:600;text-align:right;font-size:15px}
+.srow .pc{font-size:12.5px;line-height:1.3;color:var(--ink-2)}
+.srow svg{display:block;overflow:visible}
+.legend2{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink-2);margin:0 0 10px}
+.legend2 span{display:inline-flex;align-items:center;gap:7px}
+.lg-dot{width:8px;height:8px;border-radius:50%;background:var(--ink-3);opacity:.55}
+.lg-sel{width:13px;height:13px;border-radius:50%;background:var(--sel);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--sel)}
+.lg-band{width:22px;height:10px;border-radius:3px;background:color-mix(in srgb,var(--ink) 12%,transparent)}
+.lg-med{width:2px;height:14px;background:var(--ink)}
+.segs-inline{margin:0 0 12px}
+@media (max-width:1000px){
+  .chapter{grid-template-columns:1fr;gap:6px}
+  .chapter .num{font-size:44px}
+  .fig2{grid-template-columns:1fr}
+  .srow{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}
+  .srow .st{grid-column:1 / -1;grid-row:2}
+  .srow .pc{grid-column:1 / -1;grid-row:3}
+}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat{border-right:0;margin-right:0;border-bottom:1px solid var(--line)}
+  .stat .v{font-size:32px}
+  .minis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .story{font-size:18px}
+  .chapter h2{font-size:27px}
+}
+</style>
+</head>
+<body>
+<header class="hero-r">
+  <div class="wrap">
+    <a class="back" href="../index.html">← The Mind Walker</a> &nbsp;·&nbsp; <a class="back" href="../lente/index.html">Piombino in numeri</a> &nbsp;·&nbsp; <a class="back" href="../turismo/index.html">Turismo in Toscana</a>
+    <p class="eyebrow">Venticinque anni di dichiarazioni dei redditi</p>
+    <h1 id="h1">I redditi del territorio piombinese</h1>
+    <p class="lede" id="lede"></p>
+    <div class="stats" id="stats"></div>
+    <p class="meta" id="meta"></p>
+  </div>
+</header>
+
+<div class="controls" role="region" aria-label="Filtri">
+  <div class="wrap">
+    <div class="ctl"><span class="lab" id="lab-com">Comune</span>
+      <button id="comune" class="picker" type="button" aria-haspopup="listbox" aria-labelledby="lab-com"></button></div>
+    <div class="ctl ctl-grp"><span class="lab">Confronta con</span>
+      <div class="seg" id="grp" role="group" aria-label="Gruppo di confronto">
+        <button data-v="prov">Provincia di Livorno</button><button data-v="cost">Costieri 20–50 mila ab.</button><button data-v="simi">Tutti i comuni 20–50 mila ab.</button></div></div>
+    <div class="ctl"><span class="lab">Valori in euro</span>
+      <div class="seg" id="real" role="group" aria-label="Valori">
+        <button data-v="1">Reali</button><button data-v="0">Correnti</button></div></div>
+    <div class="ctl"><span class="lab">&nbsp;</span><button class="btn" id="share" type="button">Copia link</button></div>
+    <div class="ctl theme"><span class="lab">Tema</span>
+      <div class="seg" id="theme" role="group" aria-label="Tema">
+        <button data-v="auto">Auto</button><button data-v="light">Chiaro</button><button data-v="dark">Scuro</button></div></div>
+  </div>
+  <nav class="wrap secnav" aria-label="Sezioni">
+    <a href="#c1">Reddito medio</a><a href="#c2">Stipendi e pensioni</a><a href="#c3">Di cosa è fatto</a><a href="#c4">Quanto versa</a><a href="#c5">Disuguaglianza</a><a href="#c6">Redditi bassi e alti</a><a href="#c7">Oggi a confronto</a><a href="#c8">Note</a>
+  </nav>
+</div>
+
+<main class="wrap">
+  <section class="chapter" id="c1">
+    <div><div class="num">1</div><div class="kick">Reddito medio</div></div>
+    <div>
+      <h2 id="t1"></h2>
+      <p class="story" id="s1"></p>
+      <div class="fig"><p class="ft" id="f1t"></p><p class="fs" id="f1s"></p><div class="keys" id="k1"></div><div id="c-rc"></div><p class="src">Reddito complessivo dichiarato diviso il numero di contribuenti. Fonte: Dipartimento delle Finanze; deflatore ISTAT FOI.</p></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="c2">
+    <div><div class="num">2</div><div class="kick">Stipendi e pensioni</div></div>
+    <div>
+      <h2 id="t2"></h2>
+      <p class="story" id="s2"></p>
+      <div class="fig2">
+        <div class="fig"><p class="ft">Reddito medio da lavoro dipendente e da pensione</p><p class="fs" id="f2s"></p><div class="keys" id="k2"></div><div id="c-dp"></div></div>
+        <div class="fig"><p class="ft">Quanti dichiarano uno stipendio e quanti una pensione</p><p class="fs">Contribuenti con reddito da lavoro dipendente e da pensione (una persona può averli entrambi)</p><div class="keys" id="k2b"></div><div id="c-dpn"></div></div>
+      </div>
+      <p class="callout" id="co2"></p>
+      <p class="fs" style="max-width:780px">Dal 2008 il Ministero include nel lavoro dipendente anche i redditi "assimilati" (cassa integrazione, collaborazioni, borse di studio, lavori socialmente utili): per questo nel 2008 il numero dei dipendenti sale di colpo e lo stipendio medio scende. I confronti sono fatti dal 2008 in poi.</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="c3">
+    <div><div class="num">3</div><div class="kick">Di cosa è fatto</div></div>
+    <div>
+      <h2 id="t3"></h2>
+      <p class="story" id="s3"></p>
+      <div class="fig"><p class="ft" id="f3t"></p><p class="fs">Quota di ciascuna fonte sul totale dei redditi dichiarati, anno per anno</p><div class="keys" id="k3"></div><div id="c-comp"></div><p class="src">Le linee verticali segnano due cambi di regole: dal 2011 gli affitti con cedolare secca e, soprattutto dal 2019, i redditi degli autonomi in regime forfettario non entrano più nell'IRPEF. Il calo di quelle fonti è in parte "fiscale". Nel 2012, inoltre, l'IMU ha sostituito l'IRPEF sugli immobili non affittati.</p></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="c4">
+    <div><div class="num">4</div><div class="kick">Quanto versa</div></div>
+    <div>
+      <h2 id="t4"></h2>
+      <p class="story" id="s4"></p>
+      <div class="minis" id="m4"></div>
+      <div class="fig2">
+        <div class="fig"><p class="ft" id="f4t"></p><p class="fs" id="f4s"></p><div class="keys" id="k4"></div><div id="c-tax"></div></div>
+        <div class="fig"><p class="ft">IRPEF netta per contribuente</p><p class="fs" id="f4bs"></p><div class="keys" id="k4b"></div><div id="c-taxpc"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="c5">
+    <div><div class="num">5</div><div class="kick">Disuguaglianza</div></div>
+    <div>
+      <h2 id="t5"></h2>
+      <p class="story" id="s5"></p>
+      <div class="seg segs-inline" id="ineq" role="group" aria-label="Indicatore">
+        <button data-v="t10">Top 10%</button><button data-v="t1">Top 1%</button><button data-v="gini">Indice di Gini</button><button data-v="b50">50% più povero</button></div>
+      <div class="fig"><p class="ft" id="f5t"></p><p class="fs" id="f5s"></p><div class="keys" id="k5"></div><div id="c-ineq"></div><p class="src">Stime dalle fasce di reddito pubblicate dal Ministero: interpolazione di Pareto per le quote dei redditi più alti, curva di Lorenz per Gini e 50% più povero (il Gini così calcolato è una stima per difetto).</p></div>
+      <p class="callout" id="co5"></p>
+    </div>
+  </section>
+
+  <section class="chapter" id="c6">
+    <div><div class="num">6</div><div class="kick">Redditi bassi e alti</div></div>
+    <div>
+      <h2 id="t6"></h2>
+      <p class="story" id="s6"></p>
+      <div class="fig2">
+        <div class="fig"><p class="ft" id="f6at"></p><p class="fs">Quota di contribuenti, soglia in euro di oggi</p><div class="keys" id="k6a"></div><div id="c-low"></div></div>
+        <div class="fig"><p class="ft" id="f6bt"></p><p class="fs">Quota di contribuenti, soglia in euro di oggi</p><div class="keys" id="k6b"></div><div id="c-high"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="c7">
+    <div><div class="num">7</div><div class="kick">Oggi a confronto</div></div>
+    <div>
+      <h2 id="t7"></h2>
+      <p class="story" id="s7"></p>
+      <div class="legend2">
+        <span><i class="lg-sel"></i><b id="lg-name"></b></span><span><i class="lg-dot"></i>un comune del gruppo</span><span><i class="lg-band"></i>metà centrale</span><span><i class="lg-med"></i>mediana</span>
+      </div>
+      <div id="strips"></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="c8">
+    <div><div class="num">8</div><div class="kick">Note</div></div>
+    <div class="notes">
+      <ul>
+        <li><b>Fonte.</b> <a href="https://www1.finanze.gov.it/finanze/analisi_stat/public/index.php?search_class%5B0%5D=cCOMUNE&opendata=yes">Dipartimento delle Finanze, statistiche sulle dichiarazioni IRPEF su base comunale</a>, anni d'imposta dal 2000. Ogni anno indica i redditi prodotti in quell'anno e dichiarati in quello successivo. Il comune è quello di residenza del contribuente, non quello in cui lavora.</li>
+        <li><b>Valori reali.</b> Gli euro di ogni anno sono riportati al potere d'acquisto dell'ultimo anno con l'indice ISTAT dei prezzi al consumo per le famiglie di operai e impiegati (FOI, senza tabacchi), il deflatore usato per legge per rivalutare affitti e assegni. Con il pulsante "Correnti" si vedono i valori come dichiarati.</li>
+        <li><b>Reddito complessivo.</b> È la somma dei redditi soggetti a IRPEF prima delle deduzioni. Non comprende i redditi tassati a parte: interessi, dividendi e plusvalenze, affitti con cedolare secca (dal 2011), redditi degli autonomi e delle piccole imprese in regime forfettario (dal 2015, ampliato nel 2019 e nel 2023), premi di produttività detassati.</li>
+        <li><b>IRPEF versata.</b> È l'imposta netta dovuta (dopo detrazioni), più le addizionali regionale e comunale. Non comprende i bonus restituiti in busta paga ("bonus 80 euro", poi "trattamento integrativo"), riportati a parte dal Ministero.</li>
+        <li><b>Disuguaglianza.</b> Le quote dei redditi più alti sono stimate dalle fasce di reddito con l'interpolazione di Pareto, come nei lavori di Atkinson, Piketty e, per i comuni italiani, Guzzardi e Morelli. Si riferiscono ai contribuenti, non a tutti gli adulti, e al solo reddito fiscale: i livelli sono più bassi di quelli del World Inequality Database e le quote del vertice sono sottostimate. Sono invece confrontabili tra comuni e nel tempo. Quando il Ministero oscura una fascia per segreto statistico, la si ricava per differenza dal totale quando possibile; altrimenti per quell'anno la stima manca. Il top 0,1% è mostrato solo nella fotografia e solo per i comuni con almeno 15.000 contribuenti.</li>
+        <li><b>Redditi bassi e alti.</b> Le soglie (<span id="n-s1"></span> e <span id="n-s2"></span> euro di oggi) sono riportate indietro nel tempo con l'inflazione; la quota di contribuenti sotto o sopra la soglia è stimata all'interno delle fasce.</li>
+        <li><b>Gruppi di confronto.</b> Sono gli stessi della dashboard <a href="../lente/index.html">Piombino in numeri</a>: i 19 comuni della provincia di Livorno, i comuni costieri tra 20 e 50 mila abitanti, tutti i comuni italiani tra 20 e 50 mila abitanti. Il gruppo è disegnato come mediana e fascia centrale (dal 25° al 75° percentile).</li>
+      </ul>
+      <p>Ultimo aggiornamento: <span id="upd"></span>.</p>
+    </div>
+  </section>
+</main>
+<footer class="wrap">The Mind Walker · <a href="../index.html">Blog</a> · <a href="../lente/index.html">Piombino in numeri</a> · <a href="../turismo/index.html">Turismo in Toscana</a></footer>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const $ = s => document.querySelector(s);
+const it = d3.formatLocale({decimal:",",thousands:".",grouping:[3],currency:["€",""]});
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const Y = DATA.years, YL = DATA.last, NY = Y.length;
+const U = new Map(DATA.units.map(u=>[u.id,u]));
+const GRP = {prov:{n:"comuni della provincia di Livorno",s:"Provincia di Livorno"}, cost:{n:"comuni costieri tra 20 e 50 mila abitanti",s:"Costieri 20–50 mila"}, simi:{n:"comuni italiani tra 20 e 50 mila abitanti",s:"Comuni 20–50 mila"}};
+const I = {c:0,rc:1,imp:2,net:3,reg:4,com:5,dipf:6,dipa:7,penf:8,pena:9,aut:10,impr:11,par:12,fab:13,low:14,high:15,t10:16,t1:17,t01:18,gini:19,b50:20,inc:21};
+const st = {id:DATA.focus, grp:"prov", real:true, ineq:"t10"};
+try{ const h=new URLSearchParams(location.hash.slice(1)); if(U.has(h.get("c"))) st.id=h.get("c"); if(GRP[h.get("g")]) st.grp=h.get("g"); if(h.get("r")==="0") st.real=false; if(["t10","t1","gini","b50"].includes(h.get("i"))) st.ineq=h.get("i"); }catch(e){}
+const EVENTS = [[2008,"Crisi finanziaria"],[2014,"Spento l'altoforno"],[2020,"Covid"]];
+
+/* ---------- formati ---------- */
+const fInt = it.format(",.0f"), f1 = it.format(",.1f"), fPct = it.format(".0%"), fPct1 = it.format(".1%");
+const fEur = v => v==null? "n.d." : fInt(Math.round(v))+" €";
+const fMln = v => v==null? "n.d." : (v>=1e9? it.format(",.2f")(v/1e9)+" mld €" : it.format(",.1f")(v/1e6)+" mln €");
+const fSgn = (v,fmt) => v==null? "n.d." : (v>0?"+":v<0?"−":"±")+fmt(Math.abs(v));
+const fAx = v => Math.abs(v)>=1e9? it.format(",.1~f")(v/1e9)+" mld" : Math.abs(v)>=1e6? it.format(",.0f")(v/1e6)+" mln" : Math.abs(v)>=1e3? it.format(",.0f")(v/1e3)+" mila" : it.format(",.0~f")(v);
+const euroLab = () => st.real? `euro ${YL}` : "euro correnti";
+
+/* ---------- accesso ai dati ---------- */
+const rowOf = (key, i) => (key==="PLI"||key==="TOS"||key==="ITA"? DATA.agg[key] : DATA.v[key]||[])[i] || null;
+const D = i => st.real? DATA.defl[i] : 1;
+// metriche: f(row, i) -> valore (euro già deflazionati dove serve)
+const M = {
+  rcm: (r,i)=> r[I.rc]!=null&&r[I.c]? r[I.rc]/r[I.c]*D(i) : null,
+  dipm:(r,i)=> r[I.dipf]? r[I.dipa]/r[I.dipf]*D(i) : null,
+  penm:(r,i)=> r[I.penf]? r[I.pena]/r[I.penf]*D(i) : null,
+  dipn:(r)=> r[I.dipf], penn:(r)=> r[I.penf],
+  pr100:(r)=> r[I.dipf]? r[I.penf]/r[I.dipf]*100 : null,
+  net:(r,i)=> r[I.net]!=null? r[I.net]*D(i) : null,
+  reg:(r,i)=> r[I.reg]!=null? r[I.reg]*D(i) : null,
+  com:(r,i)=> r[I.com]!=null? r[I.com]*D(i) : null,
+  netpc:(r,i)=> r[I.net]!=null&&r[I.c]? r[I.net]/r[I.c]*D(i) : null,
+  totpc:(r,i)=> r[I.net]!=null&&r[I.c]? (r[I.net]+(r[I.reg]||0)+(r[I.com]||0))/r[I.c]*D(i) : null,
+  compc:(r,i)=> r[I.com]!=null&&r[I.c]? r[I.com]/r[I.c]*D(i) : null,
+  pens:(r)=> { const t=tot(r); return t? r[I.pena]/t : null; },
+  autimp:(r)=> { const t=tot(r); return t? ((r[I.aut]||0)+(r[I.impr]||0))/t : null; },
+  t10:r=>r[I.t10], t1:r=>r[I.t1], t01:r=>r[I.t01], gini:r=>r[I.gini], b50:r=>r[I.b50], low:r=>r[I.low], high:r=>r[I.high],
+};
+const COMP = [["dipa","Lavoro dipendente","--t1"],["pena","Pensioni","--t2"],["aut","Lavoro autonomo","--t3"],["impr","Impresa","--t4"],["par","Partecipazioni","--t5"],["fab","Fabbricati","--ref"]];
+function tot(r){ return COMP.reduce((s,[k])=>s+(r[I[k]]||0),0); }
+const ser = (key, m) => Y.map((y,i)=>{ const r=rowOf(key,i); if(!r) return null; const v=M[m](r,i); return v==null||!isFinite(v)? null : v; });
+const at = (key, m, y=YL) => ser(key,m)[Y.indexOf(y)];
+const K = id => "C:"+id;
+const keyOf = id => id;  // le serie dei comuni sono indicizzate per codice
+function groupBand(m){
+  const ids=DATA.groups[st.grp].filter(id=>id!==st.id);
+  const S=ids.map(id=>ser(id,m));
+  return Y.map((y,i)=>{ const v=S.map(s=>s[i]).filter(v=>v!=null).sort(d3.ascending); if(v.length<4) return null; return {lo:d3.quantileSorted(v,.25), med:d3.quantileSorted(v,.5), hi:d3.quantileSorted(v,.75)}; });
+}
+const nameOf = id => U.get(id).n;
+
+/* ---------- tooltip ---------- */
+const tip=$("#tip");
+function showTip(ev, title, rows){
+  tip.replaceChildren(); const t=document.createElement("div"); t.className="t"; t.textContent=title; tip.append(t);
+  for(const r of rows){ const d=document.createElement("div"); d.className="row"; if(r.c){ const k=document.createElement("i"); k.className="k"; k.style.borderColor=r.c; if(r.dash) k.style.borderTopStyle="dashed"; d.append(k);} const s=document.createElement("span"); s.textContent=r.l; const b=document.createElement("b"); b.textContent=r.v; d.append(s,b); tip.append(d); }
+  tip.style.opacity=1; const w=tip.offsetWidth,h=tip.offsetHeight; let x=ev.clientX+14,y=ev.clientY+14; if(x+w>innerWidth-8) x=ev.clientX-w-14; if(y+h>innerHeight-8) y=ev.clientY-h-14; tip.style.left=Math.max(8,x)+"px"; tip.style.top=Math.max(8,y)+"px";
+}
+function hideTip(){ tip.style.opacity=0; }
+addEventListener("scroll",hideTip,{passive:true});
+
+/* ---------- grafici ---------- */
+function frame(el, h, m){
+  const w=Math.max(280, el.clientWidth||el.parentNode.clientWidth||600); el.replaceChildren();
+  const svg=d3.select(el).append("svg").attr("width",w).attr("height",h).attr("viewBox",[0,0,w,h]);
+  return {svg,w,h,m,iw:w-m.l-m.r,ih:h-m.t-m.b};
+}
+function keys(el, items){ el.replaceChildren(); for(const s of items){ const sp=document.createElement("span"); const i=document.createElement("i"); if(s.band){ i.className="band"; } else if(s.sq){ i.className="sq"; i.style.background=s.c; } else { i.style.borderColor=s.c; if(s.dash) i.style.borderTopStyle=s.dash==="dot"?"dotted":"dashed"; if(s.w) i.style.borderTopWidth=s.w+"px"; } sp.append(i, s.n); el.append(sp);} }
+/* serie: [{n, c, dash, w, v:[...]}], band: [{lo,med,hi}] */
+function lineChart(el, series, {fmt=fInt, axFmt=fAx, h=320, band=null, zero=false, events=true, endLabels=true, pct=false}={}){
+  const narrow=(el.clientWidth||600)<520;
+  const F=frame(el,h,{t:22,r:endLabels&&!narrow?118:16,b:26,l:54});
+  const g=F.svg.append("g").attr("transform",`translate(${F.m.l},${F.m.t})`);
+  const x=d3.scaleLinear().domain([Y[0],YL]).range([0,F.iw]);
+  const all=series.flatMap(s=>s.v).concat(band? band.flatMap(b=>b?[b.lo,b.hi]:[]):[]).filter(v=>v!=null);
+  let [lo,hi]=d3.extent(all); if(zero) lo=Math.min(0,lo); const pad=(hi-lo)*.08||1; const y=d3.scaleLinear().domain([zero?lo:lo-pad,hi+pad]).nice().range([F.ih,0]);
+  g.append("g").attr("class","grid").call(d3.axisLeft(y).ticks(5).tickSize(-F.iw).tickFormat("")).call(s=>s.select(".domain").remove()).selectAll("line").attr("stroke",css("--grid"));
+  g.append("g").call(d3.axisLeft(y).ticks(5).tickSize(0).tickPadding(8).tickFormat(axFmt)).call(s=>s.select(".domain").remove()).selectAll("text").attr("fill",css("--ink-3")).attr("font-size",11.5);
+  const step=narrow?6:4;
+  g.append("g").attr("transform",`translate(0,${F.ih})`).call(d3.axisBottom(x).tickValues(Y.filter((yy,i)=>i%step===0||yy===YL).filter((yy,i,a)=>yy===YL||YL-yy>=2)).tickFormat(d3.format("d")).tickSize(0).tickPadding(8)).call(s=>s.select(".domain").attr("stroke",css("--line"))).selectAll("text").attr("fill",css("--ink-3")).attr("font-size",11.5);
+  if(events){ const a=g.append("g"); for(const [yy,t] of EVENTS){ if(yy<Y[0]||yy>YL) continue; a.append("line").attr("x1",x(yy)).attr("x2",x(yy)).attr("y1",-6).attr("y2",F.ih).attr("stroke",css("--ink-3")).attr("stroke-dasharray","2 3").attr("opacity",.7); if(!narrow) a.append("text").attr("x",x(yy)+4).attr("y",-8).attr("font-size",11).attr("fill",css("--ink-3")).text(t); } }
+  if(band){ const ok=band.map((b,i)=>b?{...b,y:Y[i]}:null).filter(Boolean);
+    g.append("path").attr("d",d3.area().x(d=>x(d.y)).y0(d=>y(d.lo)).y1(d=>y(d.hi)).curve(d3.curveMonotoneX)(ok)).attr("fill",css("--ink")).attr("opacity",.08);
+    g.append("path").attr("d",d3.line().x(d=>x(d.y)).y(d=>y(d.med)).curve(d3.curveMonotoneX)(ok)).attr("fill","none").attr("stroke",css("--ink-3")).attr("stroke-width",1.5); }
+  const labs=[];
+  for(const s of series){ const pts=s.v.map((v,i)=>v==null?null:{y:Y[i],v}).filter(Boolean); if(!pts.length) continue;
+    g.append("path").attr("d",d3.line().defined(d=>d).x(d=>x(d.y)).y(d=>y(d.v)).curve(d3.curveMonotoneX)(s.v.map((v,i)=>v==null?null:{y:Y[i],v}))).attr("fill","none").attr("stroke",s.c).attr("stroke-width",s.w||2).attr("stroke-dasharray",s.dash==="dot"?"1.5 3":s.dash?"5 4":null).attr("stroke-linecap","round");
+    const last=pts.at(-1); g.append("circle").attr("cx",x(last.y)).attr("cy",y(last.v)).attr("r",s.w>2?4.5:3).attr("fill",s.c).attr("stroke",css("--bg")).attr("stroke-width",1.5);
+    if(endLabels&&!narrow) labs.push({n:s.n, c:s.c, y:y(last.v), v:fmt(last.v), b:s.w>2}); }
+  if(band&&endLabels&&!narrow){ const lb=band.filter(Boolean).at(-1); if(lb) labs.push({n:"mediana del gruppo", c:css("--ink-3"), y:y(lb.med), v:fmt(lb.med)}); }
+  // etichette a fine linea senza sovrapposizioni
+  labs.sort((a,b)=>a.y-b.y); for(let i=1;i<labs.length;i++) if(labs[i].y-labs[i-1].y<26) labs[i].y=labs[i-1].y+26;
+  const over=labs.length? labs.at(-1).y-F.ih : 0; if(over>0) labs.forEach(l=>l.y-=over);
+  for(const l of labs){ const t=g.append("text").attr("x",F.iw+10).attr("y",l.y-2).attr("font-size",11.5).attr("fill",l.c).attr("font-weight",l.b?600:500); t.append("tspan").text(l.v); g.append("text").attr("x",F.iw+10).attr("y",l.y+11).attr("font-size",10.5).attr("fill",css("--ink-3")).text(l.n.length>18?l.n.slice(0,17)+"…":l.n); }
+  // hover
+  const hv=g.append("g").style("display","none"); hv.append("line").attr("y1",0).attr("y2",F.ih).attr("stroke",css("--ink-3"));
+  g.append("rect").attr("width",F.iw).attr("height",F.ih).attr("fill","transparent")
+    .on("pointermove",ev=>{ const [mx]=d3.pointer(ev); const yy=Math.round(x.invert(mx)); const i=Y.indexOf(yy); if(i<0) return; hv.style("display",null).attr("transform",`translate(${x(yy)},0)`);
+      const rows=series.map(s=>({l:s.n, c:s.c, dash:!!s.dash, v:s.v[i]==null?"n.d.":fmt(s.v[i])})); if(band&&band[i]) rows.push({l:"Mediana del gruppo", v:fmt(band[i].med)}); showTip(ev,String(yy),rows); })
+    .on("pointerleave",()=>{ hv.style("display","none"); hideTip(); });
+}
+function trio(m){
+  const id=st.id, out=[{n:nameOf(id), c:css("--sel"), w:3, v:ser(id,m)}];
+  if(U.get(id).p!=="LI"||id!==DATA.focus) out.push({n:"Provincia di Livorno", c:css("--ink-2"), w:1.5, v:ser("PLI",m)});
+  else out.push({n:"Provincia di Livorno", c:css("--ink-2"), w:1.5, v:ser("PLI",m)});
+  out.push({n:"Toscana", c:css("--ink-3"), dash:true, w:1.5, v:ser("TOS",m)});
+  out.push({n:"Italia", c:css("--ink-3"), dash:"dot", w:1.5, v:ser("ITA",m)});
+  return out;
+}
+function trioKeys(el, withBand=true){ keys(el, [{n:nameOf(st.id), c:css("--sel"), w:3},{n:"Provincia di Livorno", c:css("--ink-2")},{n:"Toscana", c:css("--ink-3"), dash:true},{n:"Italia", c:css("--ink-3"), dash:"dot"}, ...(withBand?[{n:"mediana e metà centrale dei "+GRP[st.grp].n, band:true}]:[])]); }
+
+/* ---------- testo ---------- */
+const B = t => { const b=document.createElement("b"); b.textContent=t; return b; };
+function para(el, parts){ el.replaceChildren(...parts.map(p=>typeof p==="string"? document.createTextNode(p) : p)); }
+const chg = (a,b) => a!=null&&b? a/b-1 : null;
+
+/* ---------- hero ---------- */
+function renderHero(){
+  const id=st.id, n=nameOf(id), i0=0, iL=NY-1;
+  $("#h1").textContent = id===DATA.focus? "I redditi del territorio piombinese" : `I redditi di ${n}`;
+  const rc=ser(id,"rcm"), r0=rc.find(v=>v!=null), y0=Y[rc.findIndex(v=>v!=null)];
+  const tosR=ser("TOS","rcm");
+  para($("#lede"), [`Venticinque anni di dichiarazioni dei redditi, dal ${Y[0]} al ${YL}: quanto guadagnano gli abitanti di ${n}, da dove viene il loro reddito, quanta IRPEF versano e quanto sono distribuiti i redditi, messi a confronto con la provincia di Livorno, la Toscana e i comuni simili.`]);
+  const S=$("#stats"); S.replaceChildren();
+  const stat=(k,v,unit,d)=>{ const e=document.createElement("div"); e.className="stat"; const a=document.createElement("div"); a.className="k"; a.textContent=k; const b=document.createElement("div"); b.className="v"; b.textContent=v; if(unit){ const s=document.createElement("small"); s.textContent=unit; b.append(s);} const c=document.createElement("div"); c.className="d"; c.append(...d); e.append(a,b,c); S.append(e); };
+  const rL=rc[iL], ch=chg(rL,r0), chT=chg(tosR[iL],tosR[Y.indexOf(y0)]);
+  stat(`Reddito medio ${YL}`, fInt(Math.round(rL)), "€", [B(fSgn(ch,fPct)), ` dal ${y0} ${st.real?"in termini reali":"in euro correnti"} (Toscana ${fSgn(chT,fPct)})`]);
+  const tax=at(id,"net")+(at(id,"reg")||0)+(at(id,"com")||0);
+  stat(`IRPEF versata nel ${YL}`, it.format(",.1f")(tax/1e6), "mln €", [`imposta netta e addizionali; `, B(fEur(at(id,"totpc"))), ` per contribuente`]);
+  const pm=at(id,"penm"), dm=at(id,"dipm");
+  stat("Pensione media", fInt(Math.round(pm)), "€", [`stipendio medio `, B(fEur(dm)), pm>dm? " — la pensione è più alta" : ""]);
+  const t1=at(id,"t1");
+  stat("Quota del top 1%", t1==null?"n.d.":f1(t1*100), "%", [`del reddito dichiarato (Toscana ${at("TOS","t1")==null?"n.d.":f1(at("TOS","t1")*100)+"%"})`]);
+  $("#meta").textContent=`Dati del Dipartimento delle Finanze, ${Y[0]}–${YL} · valori ${st.real?`in euro ${YL} (deflatore ISTAT FOI)`:"in euro correnti"} · aggiornato il ${new Date(DATA.updated).toLocaleDateString("it-IT",{day:"numeric",month:"long",year:"numeric"})}`;
+}
+
+/* ---------- 1. reddito medio ---------- */
+function render1(){
+  const id=st.id, n=nameOf(id), s=ser(id,"rcm"), i0=s.findIndex(v=>v!=null), iL=NY-1;
+  const peak=d3.maxIndex(s), low=d3.minIndex(s.slice(peak).map(v=>v==null?Infinity:v))+peak;
+  const ch=chg(s[iL],s[i0]), chT=chg(ser("TOS","rcm")[iL],ser("TOS","rcm")[i0]);
+  $("#t1").textContent = st.real? (ch>=0? `In ${NY} anni il reddito medio reale è cresciuto del ${fPct(ch)}` : `In ${NY} anni il reddito medio ha perso il ${fPct(-ch)} del suo potere d'acquisto`) : `Il reddito medio dichiarato, anno per anno`;
+  const parts=[`Nel ${YL} un contribuente di ${n} ha dichiarato in media `, B(fEur(s[iL])), ` di reddito complessivo, contro `, B(fEur(ser("TOS","rcm")[iL])), ` in Toscana e `, B(fEur(ser("PLI","rcm")[iL])), ` in provincia di Livorno. `];
+  if(st.real) parts.push(`Al netto dell'inflazione, il reddito medio è ${ch>=0?"cresciuto":"calato"} del ${fPct(Math.abs(ch))} dal ${Y[i0]}, contro un ${fSgn(chT,fPct)} della Toscana. Il punto più alto è stato il ${Y[peak]}; dopo, il minimo è arrivato nel ${Y[low]} (${fSgn(chg(s[low],s[peak]),fPct)} rispetto al picco).`);
+  else parts.push(`In euro correnti la crescita dal ${Y[i0]} è del ${fPct(ch)}; passa a "Reali" per vedere quanto ne resta al netto dell'inflazione.`);
+  para($("#s1"), parts);
+  $("#f1t").textContent=`Reddito complessivo medio per contribuente (${euroLab()})`;
+  $("#f1s").textContent=`${n} a confronto con la provincia di Livorno, la Toscana, l'Italia e i ${GRP[st.grp].n}`;
+  trioKeys($("#k1"));
+  lineChart($("#c-rc"), trio("rcm"), {fmt:fEur, band:groupBand("rcm"), h:360});
+}
+
+/* ---------- 2. stipendi e pensioni ---------- */
+function render2(){
+  const id=st.id, n=nameOf(id), d=ser(id,"dipm"), p=ser(id,"penm"), dn=ser(id,"dipn"), pn=ser(id,"penn");
+  let cross=null; for(let i=1;i<NY;i++){ if(p[i]!=null&&d[i]!=null&&p[i]>d[i]&&!(p[i-1]>d[i-1])) cross=Y[i]; }
+  const always=p.every((v,i)=>v==null||d[i]==null||v>d[i]);
+  const iL=NY-1, i0=0;
+  $("#t2").textContent = cross? `Dal ${cross} la pensione media supera lo stipendio medio` : always? "La pensione media è più alta dello stipendio medio" : "Stipendi e pensioni: chi guadagna di più";
+  const dT=ser("TOS","dipm")[iL], pT=ser("TOS","penm")[iL];
+  para($("#s2"), [`Nel ${YL} la pensione media dichiarata a ${n} è di `, B(fEur(p[iL])), `, lo stipendio medio di `, B(fEur(d[iL])), `. In Toscana è il contrario: stipendio medio ${fEur(dT)}, pensione media ${fEur(pT)}. `,
+    (()=>{ const j=Y.indexOf(2008); return st.real? `In termini reali, dal 2008 (da quando la definizione è omogenea) la pensione media è ${chg(p[iL],p[j])>=0?"cresciuta":"calata"} del ${fPct(Math.abs(chg(p[iL],p[j])))}, lo stipendio medio è ${chg(d[iL],d[j])>=0?"cresciuto":"calato"} del ${fPct(Math.abs(chg(d[iL],d[j])))}.` : ""; })()]);
+  $("#f2s").textContent=`${n}, ${euroLab()}; tratteggio: Toscana`;
+  keys($("#k2"), [{n:"Stipendio medio", c:css("--t1"), w:3},{n:"Pensione media", c:css("--t2"), w:3},{n:"Toscana", c:css("--ink-3"), dash:true}]);
+  lineChart($("#c-dp"), [{n:"Stipendio medio", c:css("--t1"), w:3, v:d},{n:"Pensione media", c:css("--t2"), w:3, v:p},{n:"Stipendio, Toscana", c:css("--t1"), dash:true, w:1.5, v:ser("TOS","dipm")},{n:"Pensione, Toscana", c:css("--t2"), dash:true, w:1.5, v:ser("TOS","penm")}], {fmt:fEur, h:300});
+  keys($("#k2b"), [{n:"Con reddito da lavoro dipendente", c:css("--t1"), w:3},{n:"Con reddito da pensione", c:css("--t2"), w:3}]);
+  lineChart($("#c-dpn"), [{n:"Dipendenti", c:css("--t1"), w:3, v:dn},{n:"Pensionati", c:css("--t2"), w:3, v:pn}], {fmt:v=>fInt(v), axFmt:v=>fInt(v), h:300});
+  const r0=pn[i0]/dn[i0]*100, rL=pn[iL]/dn[iL]*100, rT=ser("TOS","pr100")[iL];
+  para($("#co2"), [B(`${fInt(Math.round(rL))} pensionati ogni 100 lavoratori dipendenti`), ` dichiarano un reddito a ${n} nel ${YL} (erano ${fInt(Math.round(r0))} nel ${Y[i0]}; in Toscana sono ${fInt(Math.round(rT))}). I dipendenti sono i residenti con un reddito da lavoro dipendente, ovunque lavorino: possono crescere anche quando le imprese del comune perdono addetti, se aumentano i pendolari, il lavoro pubblico o i contratti brevi.`]);
+}
+
+/* ---------- 3. composizione ---------- */
+function render3(){
+  const id=st.id, n=nameOf(id);
+  const rows=Y.map((y,i)=>{ const r=rowOf(id,i); if(!r) return null; const t=tot(r); return t? {y, ...Object.fromEntries(COMP.map(([k])=>[k,(r[I[k]]||0)/t]))} : null; }).filter(Boolean);
+  const L=rows.at(-1), F0=rows[0];
+  const tosL=(()=>{ const r=rowOf("TOS",NY-1); const t=tot(r); return Object.fromEntries(COMP.map(([k])=>[k,(r[I[k]]||0)/t])); })();
+  $("#t3").textContent=`Quasi ${Math.round((L.dipa+L.pena)*10)} euro su 10 vengono da stipendi e pensioni`;
+  para($("#s3"), [`Nel ${YL} il ${fPct(L.dipa)} del reddito dichiarato a ${n} viene da lavoro dipendente e il `, B(fPct(L.pena)+` da pensioni`), ` (in Toscana ${fPct(tosL.pena)}). Lavoro autonomo e impresa pesano insieme il ${fPct1(L.aut+L.impr)}, contro il ${fPct1(tosL.aut+tosL.impr)} della Toscana. Nel ${F0.y} la quota delle pensioni era del ${fPct(F0.pena)}.`]);
+  $("#f3t").textContent=`${n}: composizione del reddito dichiarato`;
+  keys($("#k3"), COMP.map(([k,nm,c])=>({n:nm, c:css(c), sq:true})));
+  const el=$("#c-comp"); const narrow=(el.clientWidth||600)<520;
+  const F=frame(el,340,{t:12,r:narrow?12:160,b:26,l:44}); const g=F.svg.append("g").attr("transform",`translate(${F.m.l},${F.m.t})`);
+  const x=d3.scaleLinear().domain([Y[0],YL]).range([0,F.iw]), y=d3.scaleLinear().domain([0,1]).range([F.ih,0]);
+  const stack=d3.stack().keys(COMP.map(c=>c[0]))(rows);
+  stack.forEach((s,k)=>{ g.append("path").attr("d",d3.area().x(d=>x(d.data.y)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveMonotoneX)(s)).attr("fill",css(COMP[k][2])).attr("opacity",k<2?.88:.8); });
+  g.append("g").call(d3.axisLeft(y).ticks(5).tickSize(0).tickPadding(8).tickFormat(fPct)).call(s=>s.select(".domain").remove()).selectAll("text").attr("fill",css("--ink-3")).attr("font-size",11.5);
+  g.append("g").attr("transform",`translate(0,${F.ih})`).call(d3.axisBottom(x).tickValues(Y.filter((yy,i)=>i%(narrow?6:4)===0||yy===YL).filter(yy=>yy===YL||YL-yy>=2)).tickFormat(d3.format("d")).tickSize(0).tickPadding(8)).call(s=>s.select(".domain").remove()).selectAll("text").attr("fill",css("--ink-3")).attr("font-size",11.5);
+  for(const yy of [2011,2019]){ g.append("line").attr("x1",x(yy)).attr("x2",x(yy)).attr("y1",0).attr("y2",F.ih).attr("stroke",css("--bg")).attr("stroke-width",1.5).attr("stroke-dasharray","3 3"); }
+  if(!narrow){ const last=stack.map((s,k)=>({k, y:(y(s.at(-1)[0])+y(s.at(-1)[1]))/2, v:s.at(-1)[1]-s.at(-1)[0]})); for(let i=last.length-2;i>=0;i--) if(last[i].y-last[i+1].y<14) last[i].y=last[i+1].y+14;
+    for(const l of last){ g.append("text").attr("x",F.iw+8).attr("y",l.y+4).attr("font-size",11.5).attr("fill",css("--ink-2")).text(`${COMP[l.k][1]} ${fPct(l.v)}`); } }
+  g.append("rect").attr("width",F.iw).attr("height",F.ih).attr("fill","transparent").on("pointermove",ev=>{ const [mx]=d3.pointer(ev); const yy=Math.round(x.invert(mx)); const r=rows.find(r=>r.y===yy); if(!r) return; showTip(ev,String(yy),COMP.map(([k,nm,c])=>({l:nm,c:css(c),v:fPct1(r[k])}))); }).on("pointerleave",hideTip);
+}
+
+/* ---------- 4. IRPEF ---------- */
+function render4(){
+  const id=st.id, n=nameOf(id), iL=NY-1, i0=0;
+  const net=ser(id,"net"), reg=ser(id,"reg"), com=ser(id,"com");
+  const totL=net[iL]+(reg[iL]||0)+(com[iL]||0), tot0=net[i0]+(reg[i0]||0)+(com[i0]||0);
+  const shareP = rowOf("PLI",iL)[I.net]? rowOf(id,iL)[I.net]/rowOf("PLI",iL)[I.net] : null;
+  const shareC = rowOf("PLI",iL)[I.c]? rowOf(id,iL)[I.c]/rowOf("PLI",iL)[I.c] : null;
+  $("#t4").textContent=`${n} versa ${it.format(",.0f")(totL/1e6)} milioni di euro di IRPEF all'anno`;
+  para($("#s4"), [`Nel ${YL} i contribuenti di ${n} hanno dovuto `, B(fMln(net[iL])), ` di IRPEF netta, più `, B(fMln((reg[iL]||0)+(com[iL]||0))), ` di addizionali regionale e comunale. `, st.real? `In termini reali il totale è ${chg(totL,tot0)>=0?"cresciuto":"calato"} del ${fPct(Math.abs(chg(totL,tot0)))} dal ${Y[i0]}. ` : "",
+    U.get(id).p==="LI"? `Con il ${fPct1(shareC)} dei contribuenti della provincia di Livorno, ${n} versa il ${fPct1(shareP)} della sua IRPEF.` : ""]);
+  const M4=$("#m4"); M4.replaceChildren();
+  const mini=(k,v,d)=>{ const e=document.createElement("div"); e.className="mini"; const a=document.createElement("div"); a.className="k"; a.textContent=k; const b=document.createElement("div"); b.className="v"; b.textContent=v; const c=document.createElement("div"); c.className="d"; c.textContent=d; e.append(a,b,c); M4.append(e); };
+  mini("IRPEF netta", fMln(net[iL]), `${YL}, ${euroLab()}`);
+  mini("Addizionale regionale", fMln(reg[iL]), "alla Regione Toscana");
+  mini("Addizionale comunale", fMln(com[iL]), `al Comune di ${n}`);
+  mini("Per contribuente", fEur(at(id,"totpc")), `Toscana ${fEur(at("TOS","totpc"))}`);
+  // barre impilate
+  $("#f4t").textContent=`IRPEF e addizionali versate, ${euroLab()}`; $("#f4s").textContent=`${n}, totale per anno`;
+  const parts=[["net","IRPEF netta","--sel"],["reg","Addizionale regionale","--t2"],["com","Addizionale comunale","--t4"]];
+  keys($("#k4"), parts.map(([k,nm,c])=>({n:nm,c:css(c),sq:true})));
+  const el=$("#c-tax"); const F=frame(el,300,{t:12,r:12,b:26,l:54}); const g=F.svg.append("g").attr("transform",`translate(${F.m.l},${F.m.t})`);
+  const rows=Y.map((y,i)=>({y, net:net[i]||0, reg:reg[i]||0, com:com[i]||0}));
+  const x=d3.scaleBand().domain(Y).range([0,F.iw]).padding(.18), yS=d3.scaleLinear().domain([0,d3.max(rows,r=>r.net+r.reg+r.com)]).nice().range([F.ih,0]);
+  g.append("g").call(d3.axisLeft(yS).ticks(5).tickSize(-F.iw).tickFormat("")).call(s=>s.select(".domain").remove()).selectAll("line").attr("stroke",css("--grid"));
+  g.append("g").call(d3.axisLeft(yS).ticks(5).tickSize(0).tickPadding(8).tickFormat(fAx)).call(s=>s.select(".domain").remove()).selectAll("text").attr("fill",css("--ink-3")).attr("font-size",11.5);
+  const narrow=F.w<520; g.append("g").attr("transform",`translate(0,${F.ih})`).call(d3.axisBottom(x).tickValues(Y.filter((yy,i)=>i%(narrow?6:4)===0||yy===YL).filter(yy=>yy===YL||YL-yy>=2)).tickSize(0).tickPadding(8)).call(s=>s.select(".domain").remove()).selectAll("text").attr("fill",css("--ink-3")).attr("font-size",11.5);
+  d3.stack().keys(parts.map(p=>p[0]))(rows).forEach((s,k)=>{ g.append("g").selectAll("rect").data(s).join("rect").attr("x",d=>x(d.data.y)).attr("width",x.bandwidth()).attr("y",d=>yS(d[1])).attr("height",d=>Math.max(0,yS(d[0])-yS(d[1]))).attr("fill",css(parts[k][2])).attr("opacity",k?.85:.9)
+    .on("pointermove",(ev,d)=>showTip(ev,String(d.data.y),[...parts.map(([kk,nm,c])=>({l:nm,c:css(c),v:fMln(d.data[kk])})),{l:"Totale",v:fMln(d.data.net+d.data.reg+d.data.com)}])).on("pointerleave",hideTip); });
+  $("#f4bs").textContent=`IRPEF netta più addizionali, diviso il numero di contribuenti (${euroLab()})`;
+  trioKeys($("#k4b"));
+  lineChart($("#c-taxpc"), trio("totpc"), {fmt:fEur, band:groupBand("totpc"), h:300});
+}
+
+/* ---------- 5. disuguaglianza ---------- */
+const INEQ = {t10:{n:"Quota del reddito del 10% più ricco", f:v=>fPct1(v), ax:v=>fPct(v)}, t1:{n:"Quota del reddito dell'1% più ricco", f:v=>fPct1(v), ax:v=>fPct(v)}, gini:{n:"Indice di Gini (0 = tutti uguali, 100 = uno ha tutto)", f:v=>f1(v*100), ax:v=>it.format(",.0f")(v*100)}, b50:{n:"Quota del reddito del 50% più povero", f:v=>fPct1(v), ax:v=>fPct(v)}};
+function render5(){
+  const id=st.id, n=nameOf(id), iL=NY-1;
+  const t10=at(id,"t10"), t1=at(id,"t1"), g=at(id,"gini");
+  $("#t5").textContent = t10!=null && t10 < at("TOS","t10") ? `${n} è più egualitario della Toscana e dell'Italia` : `Quanto è concentrato il reddito a ${n}`;
+  para($("#s5"), [`Nel ${YL} il 10% dei contribuenti con i redditi più alti dichiara il `, B(t10==null?"n.d.":fPct1(t10)), ` del reddito complessivo di ${n}, l'1% più ricco il `, B(t1==null?"n.d.":fPct1(t1)), `. In Toscana le stesse quote sono ${fPct1(at("TOS","t10"))} e ${fPct1(at("TOS","t1"))}, in Italia ${fPct1(at("ITA","t10"))} e ${fPct1(at("ITA","t1"))}.`]);
+  const m=st.ineq, D5=INEQ[m];
+  $("#f5t").textContent=D5.n; $("#f5s").textContent=`${n} a confronto; fascia grigia: metà centrale dei ${GRP[st.grp].n}`;
+  trioKeys($("#k5"));
+  lineChart($("#c-ineq"), trio(m), {fmt:D5.f, axFmt:D5.ax, band:groupBand(m), h:340});
+  const c=rowOf(id,iL)? rowOf(id,iL)[I.c] : null;
+  para($("#co5"), [B("Come si legge. "), `Il 10% più ricco a ${n} sono circa ${fInt(Math.round((c||0)*.1/10)*10)} contribuenti, l'1% circa ${fInt(Math.round((c||0)*.01/10)*10)}. Se il reddito fosse distribuito in modo perfettamente uguale, il top 10% avrebbe il 10% del reddito e il Gini sarebbe 0. Le stime riguardano il solo reddito dichiarato ai fini IRPEF: i redditi da capitale e quelli tassati a parte, concentrati in alto, non ci sono, quindi la disuguaglianza vera è più alta.`]);
+}
+
+/* ---------- 6. redditi bassi e alti ---------- */
+function render6(){
+  const id=st.id, n=nameOf(id), [s1,s2]=DATA.soglie, iL=NY-1;
+  const lo=ser(id,"low"), hi=ser(id,"high"), i0=lo.findIndex(v=>v!=null);
+  $("#t6").textContent=`Un contribuente su ${Math.round(1/lo[iL])} dichiara meno di ${fInt(s1)} euro`;
+  para($("#s6"), [`Nel ${YL} il `, B(fPct(lo[iL])), ` dei contribuenti di ${n} dichiara meno di ${fInt(s1)} euro l'anno (Toscana ${fPct(at("TOS","low"))}); il `, B(fPct1(hi[iL])), ` più di ${fInt(s2)} euro (Toscana ${fPct1(at("TOS","high"))}). Le soglie sono in euro di oggi e riportate indietro con l'inflazione, così le quote si confrontano nel tempo: nel ${Y[i0]} sotto la soglia c'era il ${fPct(lo[i0])} dei contribuenti.`]);
+  $("#f6at").textContent=`Sotto ${fInt(s1)} euro l'anno`; $("#f6bt").textContent=`Sopra ${fInt(s2)} euro l'anno`;
+  trioKeys($("#k6a"), false); trioKeys($("#k6b"), false);
+  lineChart($("#c-low"), trio("low"), {fmt:fPct1, axFmt:fPct, band:groupBand("low"), h:280});
+  lineChart($("#c-high"), trio("high"), {fmt:fPct1, axFmt:fPct, band:groupBand("high"), h:280});
+}
+
+/* ---------- 7. oggi a confronto ---------- */
+const SNAP = [
+  {n:"Reddito medio per contribuente", m:"rcm", f:fEur, pol:1},
+  {n:"Crescita reale del reddito medio", m:"grow", f:v=>fSgn(v,fPct), pol:1, sub:()=>`dal ${Y[0]}, al netto dell'inflazione`},
+  {n:"Stipendio medio", m:"dipm", f:fEur, pol:1},
+  {n:"Pensione media", m:"penm", f:fEur, pol:0},
+  {n:"Quota del reddito da pensioni", m:"pens", f:fPct1, pol:0},
+  {n:"Pensionati ogni 100 dipendenti", m:"pr100", f:v=>fInt(Math.round(v)), pol:0},
+  {n:"Quota del reddito da lavoro autonomo e impresa", m:"autimp", f:fPct1, pol:0},
+  {n:"IRPEF e addizionali per contribuente", m:"totpc", f:fEur, pol:0},
+  {n:"Addizionale comunale per contribuente", m:"compc", f:fEur, pol:0},
+  {n:`Contribuenti sotto i 15 mila euro`, m:"low", f:fPct1, pol:-1},
+  {n:"Quota del reddito del 10% più ricco", m:"t10", f:fPct1, pol:0},
+  {n:"Quota del reddito dello 0,1% più ricco", m:"t01", f:fPct1, pol:0, sub:()=>"solo comuni con almeno 15.000 contribuenti"},
+  {n:"Indice di Gini", m:"gini", f:v=>f1(v*100), pol:0},
+];
+function snapVal(id, s){
+  if(s.m==="grow"){ const v=ser(id,"rcm"); const a=v.find(x=>x!=null); const realS=st.real? v : v.map((x,i)=>x==null?null:x*DATA.defl[i]); const a2=realS.find(x=>x!=null); return realS.at(-1)!=null&&a2? realS.at(-1)/a2-1 : null; }
+  return at(id, s.m);
+}
+function render7(){
+  const id=st.id, n=nameOf(id), G=GRP[st.grp];
+  $("#t7").textContent=`${n} nel ${YL}, tra i ${G.n}`;
+  $("#lg-name").textContent=n;
+  const box=$("#strips"); box.replaceChildren(); let above=0, totn=0;
+  for(const s of SNAP){
+    const pts=DATA.groups[st.grp].filter(x=>x!==id).map(x=>({id:x, v:snapVal(x,s)})).filter(p=>p.v!=null&&isFinite(p.v));
+    const me=snapVal(id,s); const vs=pts.map(p=>p.v).sort(d3.ascending); if(vs.length<3) continue;
+    const q1=d3.quantileSorted(vs,.25), med=d3.quantileSorted(vs,.5), q3=d3.quantileSorted(vs,.75);
+    const p = me==null? null : (pts.filter(q=>q.v<me).length + pts.filter(q=>q.v===me).length/2)/pts.length*100;
+    if(p!=null){ totn++; if(p>50) above++; }
+    const row=document.createElement("div"); row.className="srow";
+    const nm=document.createElement("div"); nm.className="nm"; nm.textContent=s.n; const sm=document.createElement("small"); sm.textContent=(s.sub?s.sub():`${YL}${/€/.test(s.f(1))?", "+euroLab():""}`); nm.append(sm);
+    const vv=document.createElement("div"); vv.className="val"; vv.textContent=me==null?"n.d.":s.f(me);
+    const sv=document.createElement("div"); sv.className="st";
+    const pc=document.createElement("div"); pc.className="pc";
+    if(p!=null){ const r=Math.round(p); const b=document.createElement("b"); const good = s.pol? (s.pol>0? p>=60 : p<=40) : null, bad = s.pol? (s.pol>0? p<=40 : p>=60) : null; b.className= good?"up": bad?"down":""; b.textContent = r>=50? `più alto del ${r}% dei comuni` : `più basso del ${100-r}% dei comuni`; pc.append(b); }
+    row.append(nm,vv,sv,pc); box.append(row);
+    const w=Math.max(220, sv.clientWidth||300), h=30;
+    let [lo,hi]=d3.extent([d3.quantileSorted(vs,.02), d3.quantileSorted(vs,.98), me].filter(v=>v!=null)); if(lo===hi){lo-=1;hi+=1;}
+    const x=d3.scaleLinear().domain([lo,hi]).range([6,w-6]).clamp(true);
+    const svg=d3.select(sv).append("svg").attr("width",w).attr("height",h);
+    svg.append("line").attr("x1",6).attr("x2",w-6).attr("y1",h/2).attr("y2",h/2).attr("stroke",css("--line"));
+    svg.append("rect").attr("x",x(q1)).attr("width",Math.max(2,x(q3)-x(q1))).attr("y",h/2-6).attr("height",12).attr("rx",4).attr("fill",css("--ink")).attr("opacity",.1);
+    const jit=k=>((parseInt(k,10)*2654435761)%1000)/1000-.5;
+    svg.append("g").selectAll("circle").data(pts).join("circle").attr("cx",d=>x(d.v)).attr("cy",d=>h/2+jit(d.id)*12).attr("r",pts.length>100?2.2:3).attr("fill",css("--ink-3")).attr("opacity",pts.length>100?.35:.55)
+      .on("pointermove",(ev,d)=>showTip(ev,nameOf(d.id),[{l:s.n,v:s.f(d.v)}])).on("pointerleave",hideTip);
+    svg.append("line").attr("x1",x(med)).attr("x2",x(med)).attr("y1",h/2-9).attr("y2",h/2+9).attr("stroke",css("--ink")).attr("stroke-width",2);
+    if(me!=null) svg.append("circle").attr("cx",x(me)).attr("cy",h/2).attr("r",6.5).attr("fill",css("--sel")).attr("stroke",css("--surface")).attr("stroke-width",2);
+  }
+  para($("#s7"), [`Messo accanto ai ${DATA.groups[st.grp].filter(x=>x!==id).length} ${G.n}, ${n} è sopra la mediana in `, B(`${above} indicatori su ${totn}`), `. Ogni puntino è un comune; il pallino blu è ${n}. Passa sopra i puntini per leggere i nomi.`]);
+}
+
+/* ---------- controlli ---------- */
+const norm = x => x.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+let _pop=null;
+function closePicker(){ if(_pop){ _pop.remove(); _pop=null; document.removeEventListener("pointerdown",_outside,true); } }
+function _outside(ev){ if(_pop && !_pop.contains(ev.target)) closePicker(); }
+function pickerGroups(q){
+  const opt=u=>({v:u.id, name:u.n, meta:[u.p==="LI"?"Prov. di Livorno":u.p, u.lit?"costiero":""].filter(Boolean).join(" · ")});
+  const all=[...DATA.units].sort((a,b)=>a.n.localeCompare(b.n,"it"));
+  if(q){ const n=norm(q); return [{label:"Comuni", items:[...all.filter(u=>norm(u.n).startsWith(n)), ...all.filter(u=>!norm(u.n).startsWith(n)&&norm(u.n).includes(n))].map(opt)}]; }
+  const P=new Set(DATA.groups.prov), C=new Set(DATA.groups.cost);
+  return [{label:"Provincia di Livorno", items:all.filter(u=>P.has(u.id)).map(opt)},{label:"Costieri tra 20 e 50 mila abitanti", items:all.filter(u=>C.has(u.id)&&!P.has(u.id)).map(opt)},{label:"Altri comuni tra 20 e 50 mila abitanti", items:all.filter(u=>!C.has(u.id)&&!P.has(u.id)).map(opt)}];
+}
+function openPicker(anchor){
+  closePicker();
+  const pop=document.createElement("div"); pop.className="pop"; pop.setAttribute("role","dialog");
+  const inp=document.createElement("input"); inp.placeholder="Cerca un comune…"; inp.setAttribute("aria-label","Cerca un comune"); inp.autocomplete="off"; inp.spellcheck=false;
+  const ul=document.createElement("ul"); ul.setAttribute("role","listbox"); pop.append(inp,ul); document.body.append(pop); _pop=pop;
+  const r=anchor.getBoundingClientRect(), w=Math.min(360, innerWidth-16);
+  pop.style.width=w+"px"; pop.style.left=Math.max(8,Math.min(r.left,innerWidth-w-8))+"px"; pop.style.top=(r.bottom+6)+"px"; pop.style.maxHeight=Math.max(220,Math.min(520,innerHeight-r.bottom-20))+"px";
+  let opts=[], act=0;
+  const mark=(scroll=true)=>{ opts.forEach((o,k)=>o.li.classList.toggle("on",k===act)); if(scroll&&opts[act]) opts[act].li.scrollIntoView({block:"nearest"}); };
+  const draw=()=>{ ul.replaceChildren(); opts=[];
+    for(const g of pickerGroups(inp.value.trim())){ if(!g.items.length) continue; const h=document.createElement("li"); h.className="grp"; h.textContent=g.label; ul.append(h);
+      for(const itm of g.items.slice(0,inp.value?60:500)){ const li=document.createElement("li"); li.className="opt"+(itm.v===st.id?" cur":""); li.setAttribute("role","option"); const a=document.createElement("span"); a.textContent=itm.name; const b=document.createElement("span"); b.className="meta"; b.textContent=itm.meta; li.append(a,b); const k=opts.length; li.onpointerenter=()=>{act=k; mark(false);}; li.onclick=()=>{closePicker(); setComune(itm.v);}; opts.push({li,itm}); ul.append(li); } }
+    if(!opts.length){ const li=document.createElement("li"); li.className="empty"; li.textContent="Nessun comune trovato"; ul.append(li); }
+    act=0; mark(false); };
+  inp.oninput=draw;
+  inp.onkeydown=e=>{ if(e.key==="ArrowDown"){act=Math.min(opts.length-1,act+1); mark(); e.preventDefault();} else if(e.key==="ArrowUp"){act=Math.max(0,act-1); mark(); e.preventDefault();} else if(e.key==="Enter"&&opts[act]){ const v=opts[act].itm.v; closePicker(); setComune(v);} else if(e.key==="Escape"){ closePicker(); anchor.focus(); } };
+  draw(); setTimeout(()=>{ document.addEventListener("pointerdown",_outside,true); inp.focus({preventScroll:true}); },0);
+}
+function setComune(id){ st.id=id; render(); }
+function segs(sel, on, initial){ const el=$(sel), btns=[...el.querySelectorAll("button")]; const set=v=>btns.forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===v)); btns.forEach(b=>b.onclick=()=>{ set(b.dataset.v); on(b.dataset.v); }); set(initial); }
+function syncHash(){ try{ history.replaceState(null,"","#c="+st.id+"&g="+st.grp+(st.real?"":"&r=0")+(st.ineq!=="t10"?"&i="+st.ineq:"")); }catch(e){} }
+function setup(){
+  $("#comune").onclick=ev=>openPicker(ev.currentTarget);
+  segs("#grp", v=>{ st.grp=v; render(); }, st.grp);
+  segs("#real", v=>{ st.real=v==="1"; render(); }, st.real?"1":"0");
+  segs("#ineq", v=>{ st.ineq=v; render5(); syncHash(); }, st.ineq);
+  let th="auto"; try{ th=localStorage.getItem("redditi-theme")||"auto"; }catch(e){}
+  const applyTheme=v=>{ if(v==="auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme",v); };
+  applyTheme(th); segs("#theme", v=>{ applyTheme(v); try{ localStorage.setItem("redditi-theme",v); }catch(e){} render(); }, th);
+  $("#share").onclick=async()=>{ syncHash(); const b=$("#share"); try{ await navigator.clipboard.writeText(location.href); b.textContent="Link copiato"; }catch(e){ b.textContent="Copia dalla barra"; } setTimeout(()=>b.textContent="Copia link",1600); };
+  $("#upd").textContent=new Date(DATA.updated).toLocaleDateString("it-IT",{day:"numeric",month:"long",year:"numeric"});
+  $("#n-s1").textContent=fInt(DATA.soglie[0]); $("#n-s2").textContent=fInt(DATA.soglie[1]);
+  let t; addEventListener("resize",()=>{ clearTimeout(t); t=setTimeout(render,150); });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",render);
+  const links=[...document.querySelectorAll(".secnav a")];
+  const io=new IntersectionObserver(es=>{ for(const e of es) if(e.isIntersecting) links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)); },{rootMargin:"-40% 0px -55% 0px"});
+  document.querySelectorAll("main section").forEach(s=>io.observe(s));
+}
+function render(){
+  $("#comune").textContent=nameOf(st.id);
+  renderHero(); render1(); render2(); render3(); render4(); render5(); render6(); render7(); syncHash();
+}
+setup(); render();
+</script>
+</body>
+</html>

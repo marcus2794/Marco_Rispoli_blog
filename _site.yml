@@ -3,7 +3,7 @@ title: "The Mind Walker"
 description: |
   The Mind Walker
 output_dir: "docs"
-include: ["turismo", "lente"]
+include: ["turismo", "lente", "redditi"]
 navbar:
   logo: images/mind.jpg
   right:
@@ -17,4 +17,6 @@ navbar:
       href: turismo/index.html
     - text: "Piombino in numeri"
       href: lente/index.html
+    - text: "Redditi"
+      href: redditi/index.html
 output: distill::distill_article
