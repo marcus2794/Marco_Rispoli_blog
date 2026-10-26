@@ -1,374 +1,4 @@
 codice,comune
-100001,Cantagallo
-100002,Carmignano
-100003,Montemurlo
-100004,Poggio a Caiano
-100005,Prato
-100006,Vaiano
-100007,Vernio
-101001,Belvedere di Spinello
-101002,Caccuri
-101003,Carfizzi
-101004,Casabona
-101005,Castelsilano
-101006,Cerenzia
-101007,Cirò
-101008,Cirò Marina
-101009,Cotronei
-101010,Crotone
-101011,Crucoli
-101012,Cutro
-101013,Isola di Capo Rizzuto
-101014,Melissa
-101015,Mesoraca
-101016,Pallagorio
-101017,Petilia Policastro
-101018,Roccabernarda
-101019,Rocca di Neto
-101020,San Mauro Marchesato
-101021,San Nicola dell'Alto
-101022,Santa Severina
-101023,Savelli
-101024,Scandale
-101025,Strongoli
-101026,Umbriatico
-101027,Verzino
-102001,Acquaro
-102002,Arena
-102003,Briatico
-102004,Brognaturo
-102005,Capistrano
-102006,Cessaniti
-102007,Dasà
-102008,Dinami
-102009,Drapia
-102010,Fabrizia
-102011,Filadelfia
-102012,Filandari
-102013,Filogaso
-102014,Francavilla Angitola
-102015,Francica
-102016,Gerocarne
-102017,Ionadi
-102018,Joppolo
-102019,Limbadi
-102020,Maierato
-102021,Mileto
-102022,Mongiana
-102023,Monterosso Calabro
-102024,Nardodipace
-102025,Nicotera
-102026,Parghelia
-102027,Pizzo
-102028,Pizzoni
-102029,Polia
-102030,Ricadi
-102031,Rombiolo
-102032,San Calogero
-102033,San Costantino Calabro
-102034,San Gregorio d'Ippona
-102035,San Nicola da Crissa
-102036,Sant'Onofrio
-102037,Serra San Bruno
-102038,Simbario
-102039,Sorianello
-102040,Soriano Calabro
-102041,Spadola
-102042,Spilinga
-102043,Stefanaconi
-102044,Tropea
-102045,Vallelonga
-102046,Vazzano
-102047,Vibo Valentia
-102048,Zaccanopoli
-102049,Zambrone
-102050,Zungri
-103001,Antrona Schieranco
-103002,Anzola d'Ossola
-103003,Arizzano
-103004,Arola
-103005,Aurano
-103006,Baceno
-103007,Bannio Anzino
-103008,Baveno
-103009,Bee
-103010,Belgirate
-103011,Beura-Cardezza
-103012,Bognanco
-103013,Brovello-Carpugnino
-103014,Calasca-Castiglione
-103015,Cambiasca
-103016,Cannero Riviera
-103017,Cannobio
-103018,Caprezzo
-103019,Casale Corte Cerro
-103021,Ceppo Morelli
-103022,Cesara
-103023,Cossogno
-103024,Craveggia
-103025,Crevoladossola
-103026,Crodo
-103028,Domodossola
-103029,Druogno
-103031,Formazza
-103032,Germagno
-103033,Ghiffa
-103034,Gignese
-103035,Gravellona Toce
-103036,Gurro
-103037,Intragna
-103038,Loreglia
-103039,Macugnaga
-103040,Madonna del Sasso
-103041,Malesco
-103042,Masera
-103043,Massiola
-103044,Mergozzo
-103045,Miazzina
-103046,Montecrestese
-103047,Montescheno
-103048,Nonio
-103049,Oggebbio
-103050,Omegna
-103051,Ornavasso
-103052,Pallanzeno
-103053,Piedimulera
-103054,Pieve Vergonte
-103055,Premeno
-103056,Premia
-103057,Premosello-Chiovenda
-103058,Quarna Sopra
-103059,Quarna Sotto
-103060,Re
-103061,San Bernardino Verbano
-103062,Santa Maria Maggiore
-103064,Stresa
-103065,Toceno
-103066,Trarego Viggiona
-103067,Trasquera
-103068,Trontano
-103069,Valstrona
-103070,Vanzone con San Carlo
-103071,Varzo
-103072,Verbania
-103074,Vignone
-103075,Villadossola
-103076,Villette
-103077,Vogogna
-103078,Borgomezzavalle
-103079,Valle Cannobina
-108001,Agrate Brianza
-108002,Aicurzio
-108003,Albiate
-108004,Arcore
-108005,Barlassina
-108006,Bellusco
-108007,Bernareggio
-108008,Besana in Brianza
-108009,Biassono
-108010,Bovisio-Masciago
-108011,Briosco
-108012,Brugherio
-108013,Burago di Molgora
-108014,Camparada
-108015,Carate Brianza
-108016,Carnate
-108017,Cavenago di Brianza
-108018,Ceriano Laghetto
-108019,Cesano Maderno
-108020,Cogliate
-108021,Concorezzo
-108022,Correzzana
-108023,Desio
-108024,Giussano
-108025,Lazzate
-108026,Lesmo
-108027,Limbiate
-108028,Lissone
-108029,Macherio
-108030,Meda
-108031,Mezzago
-108032,Misinto
-108033,Monza
-108034,Muggiò
-108035,Nova Milanese
-108036,Ornago
-108037,Renate
-108038,Ronco Briantino
-108039,Seregno
-108040,Seveso
-108041,Sovico
-108042,Sulbiate
-108043,Triuggio
-108044,Usmate Velate
-108045,Varedo
-108046,Vedano al Lambro
-108047,Veduggio con Colzano
-108048,Verano Brianza
-108049,Villasanta
-108050,Vimercate
-108051,Busnago
-108052,Caponago
-108053,Cornate d'Adda
-108054,Lentate sul Seveso
-108055,Roncello
-109001,Altidona
-109002,Amandola
-109003,Belmonte Piceno
-109004,Campofilone
-109005,Falerone
-109006,Fermo
-109007,Francavilla d'Ete
-109008,Grottazzolina
-109009,Lapedona
-109010,Magliano di Tenna
-109011,Massa Fermana
-109012,Monsampietro Morico
-109013,Montappone
-109014,Montefalcone Appennino
-109015,Montefortino
-109016,Monte Giberto
-109017,Montegiorgio
-109018,Montegranaro
-109019,Monteleone di Fermo
-109020,Montelparo
-109021,Monte Rinaldo
-109022,Monterubbiano
-109023,Monte San Pietrangeli
-109024,Monte Urano
-109025,Monte Vidon Combatte
-109026,Monte Vidon Corrado
-109027,Montottone
-109028,Moresco
-109029,Ortezzano
-109030,Pedaso
-109031,Petritoli
-109032,Ponzano di Fermo
-109033,Porto San Giorgio
-109034,Porto Sant'Elpidio
-109035,Rapagnano
-109036,Santa Vittoria in Matenano
-109037,Sant'Elpidio a Mare
-109038,Servigliano
-109039,Smerillo
-109040,Torre San Patrizio
-110001,Andria
-110002,Barletta
-110003,Bisceglie
-110004,Canosa di Puglia
-110005,Margherita di Savoia
-110006,Minervino Murge
-110007,San Ferdinando di Puglia
-110008,Spinazzola
-110009,Trani
-110010,Trinitapoli
-111001,Arbus
-111002,Armungia
-111003,Ballao
-111004,Barrali
-111005,Barumini
-111006,Buggerru
-111007,Burcei
-111008,Calasetta
-111009,Carbonia
-111010,Carloforte
-111011,Castiadas
-111012,Collinas
-111013,Decimoputzu
-111014,Dolianova
-111015,Domus de Maria
-111016,Domusnovas
-111017,Donori
-111018,Escalaplano
-111019,Escolca
-111020,Esterzili
-111021,Fluminimaggiore
-111022,Furtei
-111023,Genoni
-111024,Genuri
-111025,Gergei
-111026,Gesico
-111027,Gesturi
-111028,Giba
-111029,Goni
-111030,Gonnesa
-111031,Gonnosfanadiga
-111032,Guamaggiore
-111033,Guasila
-111034,Guspini
-111035,Iglesias
-111036,Isili
-111037,Las Plassas
-111038,Lunamatrona
-111039,Mandas
-111040,Masainas
-111041,Monastir
-111042,Muravera
-111043,Musei
-111044,Narcao
-111045,Nuragus
-111046,Nurallao
-111047,Nuraminis
-111048,Nurri
-111049,Nuxis
-111050,Orroli
-111051,Ortacesus
-111052,Pabillonis
-111053,Pauli Arbarei
-111054,Perdaxius
-111055,Pimentel
-111056,Piscinas
-111057,Portoscuso
-111058,Sadali
-111059,Samassi
-111060,Samatzai
-111061,San Basilio
-111062,San Gavino Monreale
-111063,San Giovanni Suergiu
-111064,San Nicolò Gerrei
-111065,San Sperate
-111066,San Vito
-111067,Sanluri
-111068,Santadi
-111069,Sant'Andrea Frius
-111070,Sant'Anna Arresi
-111071,Sant'Antioco
-111072,Sardara
-111073,Segariu
-111074,Selegas
-111075,Senorbì
-111076,Serdiana
-111077,Serramanna
-111078,Serrenti
-111079,Serri
-111080,Setzu
-111081,Seui
-111082,Seulo
-111083,Siddi
-111084,Siliqua
-111085,Silius
-111086,Siurgus Donigala
-111087,Soleminis
-111088,Suelli
-111089,Teulada
-111090,Tratalias
-111091,Tuili
-111092,Turri
-111093,Ussana
-111094,Ussaramanna
-111095,Vallermosa
-111096,Villacidro
-111097,Villamar
-111098,Villamassargia
-111099,Villanova Tulo
-111100,Villanovaforru
-111101,Villanovafranca
-111102,Villaperuccio
-111103,Villaputzu
-111104,Villasalto
-111105,Villasimius
-111106,Villasor
-111107,Villaspeciosa
 001001,Agliè
 001002,Airasca
 001003,Ala di Stura
@@ -7895,3 +7525,373 @@ codice,comune
 099029,Montescudo-Monte Colombo
 099030,Montecopiolo
 099031,Sassofeltrio
+100001,Cantagallo
+100002,Carmignano
+100003,Montemurlo
+100004,Poggio a Caiano
+100005,Prato
+100006,Vaiano
+100007,Vernio
+101001,Belvedere di Spinello
+101002,Caccuri
+101003,Carfizzi
+101004,Casabona
+101005,Castelsilano
+101006,Cerenzia
+101007,Cirò
+101008,Cirò Marina
+101009,Cotronei
+101010,Crotone
+101011,Crucoli
+101012,Cutro
+101013,Isola di Capo Rizzuto
+101014,Melissa
+101015,Mesoraca
+101016,Pallagorio
+101017,Petilia Policastro
+101018,Roccabernarda
+101019,Rocca di Neto
+101020,San Mauro Marchesato
+101021,San Nicola dell'Alto
+101022,Santa Severina
+101023,Savelli
+101024,Scandale
+101025,Strongoli
+101026,Umbriatico
+101027,Verzino
+102001,Acquaro
+102002,Arena
+102003,Briatico
+102004,Brognaturo
+102005,Capistrano
+102006,Cessaniti
+102007,Dasà
+102008,Dinami
+102009,Drapia
+102010,Fabrizia
+102011,Filadelfia
+102012,Filandari
+102013,Filogaso
+102014,Francavilla Angitola
+102015,Francica
+102016,Gerocarne
+102017,Ionadi
+102018,Joppolo
+102019,Limbadi
+102020,Maierato
+102021,Mileto
+102022,Mongiana
+102023,Monterosso Calabro
+102024,Nardodipace
+102025,Nicotera
+102026,Parghelia
+102027,Pizzo
+102028,Pizzoni
+102029,Polia
+102030,Ricadi
+102031,Rombiolo
+102032,San Calogero
+102033,San Costantino Calabro
+102034,San Gregorio d'Ippona
+102035,San Nicola da Crissa
+102036,Sant'Onofrio
+102037,Serra San Bruno
+102038,Simbario
+102039,Sorianello
+102040,Soriano Calabro
+102041,Spadola
+102042,Spilinga
+102043,Stefanaconi
+102044,Tropea
+102045,Vallelonga
+102046,Vazzano
+102047,Vibo Valentia
+102048,Zaccanopoli
+102049,Zambrone
+102050,Zungri
+103001,Antrona Schieranco
+103002,Anzola d'Ossola
+103003,Arizzano
+103004,Arola
+103005,Aurano
+103006,Baceno
+103007,Bannio Anzino
+103008,Baveno
+103009,Bee
+103010,Belgirate
+103011,Beura-Cardezza
+103012,Bognanco
+103013,Brovello-Carpugnino
+103014,Calasca-Castiglione
+103015,Cambiasca
+103016,Cannero Riviera
+103017,Cannobio
+103018,Caprezzo
+103019,Casale Corte Cerro
+103021,Ceppo Morelli
+103022,Cesara
+103023,Cossogno
+103024,Craveggia
+103025,Crevoladossola
+103026,Crodo
+103028,Domodossola
+103029,Druogno
+103031,Formazza
+103032,Germagno
+103033,Ghiffa
+103034,Gignese
+103035,Gravellona Toce
+103036,Gurro
+103037,Intragna
+103038,Loreglia
+103039,Macugnaga
+103040,Madonna del Sasso
+103041,Malesco
+103042,Masera
+103043,Massiola
+103044,Mergozzo
+103045,Miazzina
+103046,Montecrestese
+103047,Montescheno
+103048,Nonio
+103049,Oggebbio
+103050,Omegna
+103051,Ornavasso
+103052,Pallanzeno
+103053,Piedimulera
+103054,Pieve Vergonte
+103055,Premeno
+103056,Premia
+103057,Premosello-Chiovenda
+103058,Quarna Sopra
+103059,Quarna Sotto
+103060,Re
+103061,San Bernardino Verbano
+103062,Santa Maria Maggiore
+103064,Stresa
+103065,Toceno
+103066,Trarego Viggiona
+103067,Trasquera
+103068,Trontano
+103069,Valstrona
+103070,Vanzone con San Carlo
+103071,Varzo
+103072,Verbania
+103074,Vignone
+103075,Villadossola
+103076,Villette
+103077,Vogogna
+103078,Borgomezzavalle
+103079,Valle Cannobina
+108001,Agrate Brianza
+108002,Aicurzio
+108003,Albiate
+108004,Arcore
+108005,Barlassina
+108006,Bellusco
+108007,Bernareggio
+108008,Besana in Brianza
+108009,Biassono
+108010,Bovisio-Masciago
+108011,Briosco
+108012,Brugherio
+108013,Burago di Molgora
+108014,Camparada
+108015,Carate Brianza
+108016,Carnate
+108017,Cavenago di Brianza
+108018,Ceriano Laghetto
+108019,Cesano Maderno
+108020,Cogliate
+108021,Concorezzo
+108022,Correzzana
+108023,Desio
+108024,Giussano
+108025,Lazzate
+108026,Lesmo
+108027,Limbiate
+108028,Lissone
+108029,Macherio
+108030,Meda
+108031,Mezzago
+108032,Misinto
+108033,Monza
+108034,Muggiò
+108035,Nova Milanese
+108036,Ornago
+108037,Renate
+108038,Ronco Briantino
+108039,Seregno
+108040,Seveso
+108041,Sovico
+108042,Sulbiate
+108043,Triuggio
+108044,Usmate Velate
+108045,Varedo
+108046,Vedano al Lambro
+108047,Veduggio con Colzano
+108048,Verano Brianza
+108049,Villasanta
+108050,Vimercate
+108051,Busnago
+108052,Caponago
+108053,Cornate d'Adda
+108054,Lentate sul Seveso
+108055,Roncello
+109001,Altidona
+109002,Amandola
+109003,Belmonte Piceno
+109004,Campofilone
+109005,Falerone
+109006,Fermo
+109007,Francavilla d'Ete
+109008,Grottazzolina
+109009,Lapedona
+109010,Magliano di Tenna
+109011,Massa Fermana
+109012,Monsampietro Morico
+109013,Montappone
+109014,Montefalcone Appennino
+109015,Montefortino
+109016,Monte Giberto
+109017,Montegiorgio
+109018,Montegranaro
+109019,Monteleone di Fermo
+109020,Montelparo
+109021,Monte Rinaldo
+109022,Monterubbiano
+109023,Monte San Pietrangeli
+109024,Monte Urano
+109025,Monte Vidon Combatte
+109026,Monte Vidon Corrado
+109027,Montottone
+109028,Moresco
+109029,Ortezzano
+109030,Pedaso
+109031,Petritoli
+109032,Ponzano di Fermo
+109033,Porto San Giorgio
+109034,Porto Sant'Elpidio
+109035,Rapagnano
+109036,Santa Vittoria in Matenano
+109037,Sant'Elpidio a Mare
+109038,Servigliano
+109039,Smerillo
+109040,Torre San Patrizio
+110001,Andria
+110002,Barletta
+110003,Bisceglie
+110004,Canosa di Puglia
+110005,Margherita di Savoia
+110006,Minervino Murge
+110007,San Ferdinando di Puglia
+110008,Spinazzola
+110009,Trani
+110010,Trinitapoli
+111001,Arbus
+111002,Armungia
+111003,Ballao
+111004,Barrali
+111005,Barumini
+111006,Buggerru
+111007,Burcei
+111008,Calasetta
+111009,Carbonia
+111010,Carloforte
+111011,Castiadas
+111012,Collinas
+111013,Decimoputzu
+111014,Dolianova
+111015,Domus de Maria
+111016,Domusnovas
+111017,Donori
+111018,Escalaplano
+111019,Escolca
+111020,Esterzili
+111021,Fluminimaggiore
+111022,Furtei
+111023,Genoni
+111024,Genuri
+111025,Gergei
+111026,Gesico
+111027,Gesturi
+111028,Giba
+111029,Goni
+111030,Gonnesa
+111031,Gonnosfanadiga
+111032,Guamaggiore
+111033,Guasila
+111034,Guspini
+111035,Iglesias
+111036,Isili
+111037,Las Plassas
+111038,Lunamatrona
+111039,Mandas
+111040,Masainas
+111041,Monastir
+111042,Muravera
+111043,Musei
+111044,Narcao
+111045,Nuragus
+111046,Nurallao
+111047,Nuraminis
+111048,Nurri
+111049,Nuxis
+111050,Orroli
+111051,Ortacesus
+111052,Pabillonis
+111053,Pauli Arbarei
+111054,Perdaxius
+111055,Pimentel
+111056,Piscinas
+111057,Portoscuso
+111058,Sadali
+111059,Samassi
+111060,Samatzai
+111061,San Basilio
+111062,San Gavino Monreale
+111063,San Giovanni Suergiu
+111064,San Nicolò Gerrei
+111065,San Sperate
+111066,San Vito
+111067,Sanluri
+111068,Santadi
+111069,Sant'Andrea Frius
+111070,Sant'Anna Arresi
+111071,Sant'Antioco
+111072,Sardara
+111073,Segariu
+111074,Selegas
+111075,Senorbì
+111076,Serdiana
+111077,Serramanna
+111078,Serrenti
+111079,Serri
+111080,Setzu
+111081,Seui
+111082,Seulo
+111083,Siddi
+111084,Siliqua
+111085,Silius
+111086,Siurgus Donigala
+111087,Soleminis
+111088,Suelli
+111089,Teulada
+111090,Tratalias
+111091,Tuili
+111092,Turri
+111093,Ussana
+111094,Ussaramanna
+111095,Vallermosa
+111096,Villacidro
+111097,Villamar
+111098,Villamassargia
+111099,Villanova Tulo
+111100,Villanovaforru
+111101,Villanovafranca
+111102,Villaperuccio
+111103,Villaputzu
+111104,Villasalto
+111105,Villasimius
+111106,Villasor
+111107,Villaspeciosa
